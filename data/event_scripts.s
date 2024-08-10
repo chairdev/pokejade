@@ -1079,7 +1079,7 @@ EventScript_VsSeekerChargingDone::
 
 	.include "data/maps/Route501/scripts.inc"
 
-	.include "data/maps/NewMap1/scripts.inc"
+	.include "data/maps/EverwoodTown_HawthornResearchLab/scripts.inc"
 
 	.include "data/maps/EverwoodTown_PlayersHouse_1F/scripts.inc"
 
