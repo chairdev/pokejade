@@ -1074,3 +1074,13 @@ EventScript_VsSeekerChargingDone::
 	.include "data/text/frontier_brain.inc"
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
+
+	.include "data/maps/EverwoodTown/scripts.inc"
+
+	.include "data/maps/Route501/scripts.inc"
+
+	.include "data/maps/NewMap1/scripts.inc"
+
+	.include "data/maps/EverwoodTown_PlayersHouse_1F/scripts.inc"
+
+	.include "data/maps/EverwoodTown_PlayersHouse_2F/scripts.inc"
