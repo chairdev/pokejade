@@ -459,49 +459,11 @@ static const struct MenuAction sMenuActions_Gender[] = {
 };
 
 static const u8 *const sMalePresetNames[] = {
-    gText_DefaultNameStu,
-    gText_DefaultNameMilton,
-    gText_DefaultNameTom,
-    gText_DefaultNameKenny,
-    gText_DefaultNameReid,
-    gText_DefaultNameJude,
-    gText_DefaultNameJaxson,
-    gText_DefaultNameEaston,
-    gText_DefaultNameWalker,
-    gText_DefaultNameTeru,
-    gText_DefaultNameJohnny,
-    gText_DefaultNameBrett,
-    gText_DefaultNameSeth,
-    gText_DefaultNameTerry,
-    gText_DefaultNameCasey,
-    gText_DefaultNameDarren,
-    gText_DefaultNameLandon,
-    gText_DefaultNameCollin,
-    gText_DefaultNameStanley,
-    gText_DefaultNameQuincy
+    gText_DefaultNameShinji
 };
 
 static const u8 *const sFemalePresetNames[] = {
-    gText_DefaultNameKimmy,
-    gText_DefaultNameTiara,
-    gText_DefaultNameBella,
-    gText_DefaultNameJayla,
-    gText_DefaultNameAllie,
-    gText_DefaultNameLianna,
-    gText_DefaultNameSara,
-    gText_DefaultNameMonica,
-    gText_DefaultNameCamila,
-    gText_DefaultNameAubree,
-    gText_DefaultNameRuthie,
-    gText_DefaultNameHazel,
-    gText_DefaultNameNadine,
-    gText_DefaultNameTanja,
-    gText_DefaultNameYasmin,
-    gText_DefaultNameNicola,
-    gText_DefaultNameLillie,
-    gText_DefaultNameTerra,
-    gText_DefaultNameLucy,
-    gText_DefaultNameHalie
+    gText_DefaultNameMaya
 };
 
 // The number of male vs. female names is assumed to be the same.
@@ -1374,7 +1336,7 @@ static void Task_NewGameBirchSpeechSub_InitPokeBall(u8 taskId)
     gSprites[spriteId].invisible = FALSE;
     gSprites[spriteId].data[0] = 0;
 
-    CreatePokeballSpriteToReleaseMon(spriteId, gSprites[spriteId].oam.paletteNum, 112, 58, 0, 0, 32, PALETTES_BG, SPECIES_LOTAD);
+    CreatePokeballSpriteToReleaseMon(spriteId, gSprites[spriteId].oam.paletteNum, 112, 58, 0, 0, 32, PALETTES_BG, SPECIES_GLIMMET);
     gTasks[taskId].func = Task_NewGameBirchSpeechSub_WaitForLotad;
     gTasks[sBirchSpeechMainTaskId].tTimer = 0;
 }
@@ -1876,7 +1838,7 @@ static void SpriteCB_MovePlayerDownWhileShrinking(struct Sprite *sprite)
 
 static u8 NewGameBirchSpeech_CreateLotadSprite(u8 x, u8 y)
 {
-    return CreateMonPicSprite_Affine(SPECIES_LOTAD, FALSE, 0, MON_PIC_AFFINE_FRONT, x, y, 14, TAG_NONE);
+    return CreateMonPicSprite_Affine(SPECIES_GLIMMET, FALSE, 0, MON_PIC_AFFINE_FRONT, x, y, 14, TAG_NONE);
 }
 
 static void AddBirchSpeechObjects(u8 taskId)

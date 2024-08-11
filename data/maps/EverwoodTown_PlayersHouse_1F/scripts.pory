@@ -21,17 +21,20 @@ script PlayersHouse_1F_MapScript_MeetMom {
 
     setvar(VAR_EVERWOOD_TOWN_STATE, 1)
     
+    
     releaseall
 }
 
 text MeetMomText1 {
     format("Oh! Good morning, {PLAYER}!\p"
            "You sure are up early today.\p"
-           "Well, it's a big day for you, after all!\p"
-           "Today is the day you get your first Pokémon!\p"
+           "I guess you're just as excited as I am!\p"
+           "Today is the day you become a Pokémon Trainer!\p"
+           "You'll get your first Pokémon from Professor Sanzashi at the Research Lab.\p"
            "I can't wait to see which one you choose!\p"
-           "Now, you should head over to the Hawthorn Research Lab!\p"
-           "I'm sure Professor Hawthorn is waiting for you!\p")
+           "I won't keep you any longer. I'm sure Professor Sanzashi is waiting for you!"
+           )
+              
 }
 
 movement MomApproachPlayer1 {
@@ -48,6 +51,32 @@ movement MomMoveBack {
 
 script PlayersHouse_1F_EventScript_MomN {
     lockall
-    msgbox("fortnite")
+    faceplayer
+
+    checkplayergender()
+    if(var(VAR_RESULT) ==  MALE)
+    {
+        msgbox(RivalCameByText1A)
+    }
+    else
+    {
+        msgbox(RivalCameByText1B)
+    }
+
     releaseall
 }
+
+text RivalCameByText1A {
+    format("Our neighbor {RIVAL} came looking for you earlier.\p"
+           "I told her you were still asleep.\p"
+           "...I wonder what she wanted?"
+           )
+}
+
+text RivalCameByText1B {
+    format("Our neighbor {RIVAL} came looking for you earlier.\p"
+           "I told him you were still asleep.\p"
+           "...I wonder what he wanted?"
+           )
+}
+

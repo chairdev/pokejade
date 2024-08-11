@@ -1,0 +1,58 @@
+mapscripts EverwoodTown_HawthornResearchLab_MapScripts {}
+
+script EverwoodTown_HawthornResearchLab_EventScript_Sanzashi {
+    lockall
+    faceplayer
+    
+    switch(var(VAR_SANZASHI_LAB_STATE))
+    {
+        case 0:
+            msgbox(MeetSanzashiText1)
+
+            checkplayergender()
+            if(var(VAR_RESULT) == MALE)
+            {
+                msgbox(MeetSanzashiText2A)
+            }
+            else
+            {
+                msgbox(MeetSanzashiText2B)
+            }
+
+            setvar(VAR_SANZASHI_LAB_STATE, 1)
+        case 1:
+            msgbox(GoLookForRivalText1)
+    }
+    
+    closemessage
+    releaseall
+}
+
+text MeetSanzashiText1 {
+    format("Ah, there you are {PLAYER}{KUN}?\l"
+           "I've been waiting for you!\p"
+           "Where's {RIVAL}?\p"
+           "... What do you mean you don't know who that is?\p"
+           "But {RIVAL} was supposed to bring you the bag with the Poké Balls!"
+           )
+}
+
+text MeetSanzashiText2A {
+    format("She said she couldn't sit still and wait for you to arrive and took off.\p"
+           "{PLAYER}{KUN}, I'm sorry to ask this of you, but could you go find her for me?\p"
+            "I'm sure she's just around the corner."
+           )
+}
+
+text MeetSanzashiText2B {
+    format("He said he couldn't sit still and wait for you to arrive and took off.\p"
+           "{PLAYER}{KUN}I'm sorry to ask this of you, but could you go find him for me?\p"
+            "I'm sure he's just around the corner."
+           )          
+}
+
+text GoLookForRivalText1 {
+   format("Please, {PLAYER}{KUN}, go look for {RIVAL}!\p"
+           "The bag with the Poké Balls is very important!"
+           )
+}

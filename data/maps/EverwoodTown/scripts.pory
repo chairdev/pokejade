@@ -1,0 +1,17 @@
+mapscripts EverwoodTown_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_EVERWOOD_TOWN_STATE, 2: EverwoodTown_MapScript_StartRivalRescue
+    ]
+}
+
+script EverwoodTown_MapScript_StartRivalRescue {
+    lockall
+    playbgm(MUS_HELP, 0)
+    
+    msgbox(format("No, stay back! Please!"))
+
+    setvar(VAR_EVERWOOD_TOWN_STATE, 2)
+    
+    fadedefaultbgm
+    releaseall
+}
