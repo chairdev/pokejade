@@ -1,39 +1,36 @@
 const OBJ_MOM = 1
 
-script PlayersHouse_1F_Trigger_MeetMom {
+mapscripts EverwoodTown_PlayersHouse_1F_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_EVERWOOD_TOWN_STATE, 0: PlayersHouse_1F_MapScript_MeetMom
+    ]
+}
+
+
+
+script PlayersHouse_1F_MapScript_MeetMom {
     lockall
-    playbgm(MUS_FOLLOW_ME)
-    applymovement(OBJ_MOM, MyMovement)
+    playbgm(MUS_FOLLOW_ME, 0)
+    applymovement(OBJ_MOM, MomApproachPlayer1)
     waitmovement(0)
     
-    msgbox(MeetMomText1, MSGBOX_YESNO)
-
-    if(var(VAR_RESULT) == 0)
-    {
-        msgbox(format("I'm so excited for you! I can't wait to see what you choose!\p"))
-    }
-    else
-    {
-        msgbox(format("Nervous, huh? That's okay! I'm sure everything will be fine!\p"))
-    }
-
-    msgbox(MeetMomText2)
+    msgbox(MeetMomText1)
+    fadedefaultbgm
     applymovement(OBJ_MOM, MomMoveBack)
     waitmovement(0)
 
     setvar(VAR_EVERWOOD_TOWN_STATE, 1)
-    fadedefaultbgm
+    
     releaseall
 }
 
 text MeetMomText1 {
     format("Oh! Good morning, {PLAYER}!\p"
            "You sure are up early today.\p"
-           "Are you all ready to receive your first Pokémon?\p")
-}
-
-text MeetMomText2 {
-    format("Now, you should head over to the Hawthorn Research Lab!"
+           "Well, it's a big day for you, after all!\p"
+           "Today is the day you get your first Pokémon!\p"
+           "I can't wait to see which one you choose!\p"
+           "Now, you should head over to the Hawthorn Research Lab!\p"
            "I'm sure Professor Hawthorn is waiting for you!\p")
 }
 
@@ -49,7 +46,8 @@ movement MomMoveBack {
     face_right
 }
 
-script PlayersHouse_1F_EventScript_Mom {
+script PlayersHouse_1F_EventScript_MomN {
     lockall
+    msgbox("fortnite")
     releaseall
 }
