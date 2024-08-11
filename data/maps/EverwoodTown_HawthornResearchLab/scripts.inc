@@ -11,12 +11,12 @@ EverwoodTown_HawthornResearchLab_EventScript_Sanzashi::
 	switch VAR_SANZASHI_LAB_STATE
 # 9 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	case 0, EverwoodTown_HawthornResearchLab_EventScript_Sanzashi_3
-# 23 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 24 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	case 1, EverwoodTown_HawthornResearchLab_EventScript_Sanzashi_4
 EverwoodTown_HawthornResearchLab_EventScript_Sanzashi_1:
-# 27 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
-	closemessage
 # 28 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+	closemessage
+# 29 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	releaseall
 	return
 
@@ -33,10 +33,12 @@ EverwoodTown_HawthornResearchLab_EventScript_Sanzashi_3:
 EverwoodTown_HawthornResearchLab_EventScript_Sanzashi_5:
 # 22 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	setvar VAR_SANZASHI_LAB_STATE, 1
+# 23 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+	setvar VAR_EVERWOOD_TOWN_STATE, 2
 	goto EverwoodTown_HawthornResearchLab_EventScript_Sanzashi_1
 
 EverwoodTown_HawthornResearchLab_EventScript_Sanzashi_4:
-# 24 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 25 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	msgbox GoLookForRivalText1
 	goto EverwoodTown_HawthornResearchLab_EventScript_Sanzashi_1
 
@@ -47,8 +49,8 @@ EverwoodTown_HawthornResearchLab_EventScript_Sanzashi_6:
 
 
 MeetSanzashiText1::
-# 31 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
-	.string "Ah, there you are {PLAYER}{KUN}?\p"
+# 32 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+	.string "Ah, there you are {PLAYER}{KUN}?\l"
 	.string "I've been waiting for you!\p"
 	.string "Where's {RIVAL}?\p"
 	.string "... What do you mean you don't know who\n"
@@ -57,7 +59,7 @@ MeetSanzashiText1::
 	.string "you the bag with the Poké Balls!$"
 
 MeetSanzashiText2A::
-# 40 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 41 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	.string "She said she couldn't sit still and wait\n"
 	.string "for you to arrive and took off.\p"
 	.string "{PLAYER}{KUN}, I'm sorry to ask this of you,\n"
@@ -65,7 +67,7 @@ MeetSanzashiText2A::
 	.string "I'm sure she's just around the corner.$"
 
 MeetSanzashiText2B::
-# 47 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 48 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	.string "He said he couldn't sit still and wait\n"
 	.string "for you to arrive and took off.\p"
 	.string "{PLAYER}{KUN}I'm sorry to ask this of you,\n"
@@ -73,7 +75,7 @@ MeetSanzashiText2B::
 	.string "I'm sure he's just around the corner.$"
 
 GoLookForRivalText1::
-# 54 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 55 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	.string "Please, {PLAYER}{KUN}, go look for\n"
 	.string "{RIVAL}!\p"
 	.string "The bag with the Poké Balls is very\n"

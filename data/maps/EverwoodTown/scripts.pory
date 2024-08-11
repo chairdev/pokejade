@@ -1,17 +1,80 @@
-mapscripts EverwoodTown_MapScripts {
-    MAP_SCRIPT_ON_FRAME_TABLE [
-        VAR_EVERWOOD_TOWN_STATE, 2: EverwoodTown_MapScript_StartRivalRescue
-    ]
+const OBJ_FAT_MAN = 1
+
+//Everwood Town States
+//0: Meet Mom
+//1: Go to the Research Lab
+//2: Find Rival
+
+mapscripts EverwoodTown_MapScripts {}
+
+script EverwoodTown_Trigger_DontGoIntoRouteLeft {
+    lockall
+
+    msgbox(format("Wait, wait, wait, wait, waaait!!"))
+    closemessage
+
+    applymovement(OBJ_EVENT_ID_PLAYER, PlayerMoveDown)
+    applymovement(OBJ_FAT_MAN, FatManApproachPlayer1)
+    waitmovement(1)
+
+    msgbox(DontGoIntoRouteText)
+    closemessage
+
+    applymovement(OBJ_FAT_MAN, FatManMoveBack1)
+    waitmovement(0)
+
+    releaseall
 }
 
-script EverwoodTown_MapScript_StartRivalRescue {
+script EverwoodTown_Trigger_DontGoIntoRouteRight {
     lockall
-    playbgm(MUS_HELP, 0)
-    
-    msgbox(format("No, stay back! Please!"))
 
-    setvar(VAR_EVERWOOD_TOWN_STATE, 2)
-    
-    fadedefaultbgm
+    msgbox(format("Wait, wait, wait, wait, waaait!!"))
+
+    applymovement(OBJ_EVENT_ID_PLAYER, PlayerMoveDown)
+    applymovement(OBJ_FAT_MAN, FatManApproachPlayer2)
+    waitmovement(1)
+
+    msgbox(DontGoIntoRouteText)
+
+    applymovement(OBJ_FAT_MAN, FatManMoveBack2)
+    waitmovement(0)
+
     releaseall
+}
+
+text DontGoIntoRouteText {
+    format("You can't go that way!\p"
+           "It's not safe to head out onto Route 501 without a Pokémon by your side.\p"
+           "Wild Pokémon might jump out at you, you know!\p"
+            "You'll need a partner to help keep you safe."
+              )
+}
+
+movement PlayerMoveDown {
+    walk_down
+}
+
+movement FatManApproachPlayer1 {
+    walk_left * 2
+    walk_up * 2
+    face_up
+}
+
+movement FatManApproachPlayer2 {
+    walk_left
+    walk_up * 2
+    face_up
+}
+
+movement FatManMoveBack1 {
+    walk_down * 2
+    walk_right * 2
+    face_down
+}
+
+movement FatManMoveBack2 {
+    walk_down * 2
+    walk_right
+    face_down
 }

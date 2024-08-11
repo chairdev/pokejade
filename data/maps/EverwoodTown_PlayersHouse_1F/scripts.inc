@@ -63,30 +63,22 @@ PlayersHouse_1F_EventScript_MomN::
 # 54 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	faceplayer
 # 56 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
-	msgbox PlayersHouse_1F_EventScript_MomN_Text_0
-# 58 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	checkplayergender
-# 59 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+# 57 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	compare VAR_RESULT, MALE
 	goto_if_eq PlayersHouse_1F_EventScript_MomN_2
-# 65 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+# 63 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	msgbox RivalCameByText1B
 PlayersHouse_1F_EventScript_MomN_1:
-# 68 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+# 66 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	releaseall
 	return
 
 PlayersHouse_1F_EventScript_MomN_2:
-# 61 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+# 59 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	msgbox RivalCameByText1A
 	goto PlayersHouse_1F_EventScript_MomN_1
 
-
-PlayersHouse_1F_EventScript_MomN_Text_0:
-# 56 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
-	.string "Our neighbor {RIVAL} came looking\n"
-	.string "for you earlier.\p"
-	.string "$"
 
 MeetMomText1::
 # 28 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
@@ -104,14 +96,14 @@ MeetMomText1::
 	.string "Professor Sanzashi is waiting for you!$"
 
 RivalCameByText1A::
-# 71 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+# 69 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	.string "Our neighbor {RIVAL} came looking\n"
 	.string "for you earlier.\p"
 	.string "I told her you were still asleep.\p"
 	.string "...I wonder what she wanted?$"
 
 RivalCameByText1B::
-# 78 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+# 76 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	.string "Our neighbor {RIVAL} came looking\n"
 	.string "for you earlier.\p"
 	.string "I told him you were still asleep.\p"

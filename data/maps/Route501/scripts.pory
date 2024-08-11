@@ -1,0 +1,118 @@
+const OBJ_RIVAL = 1
+
+mapscripts Route501_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        call(Common_EventScript_SetupRivalGfxId)
+    }
+}
+
+script Route501_Trigger_WalkToRivalLeft
+{
+    lockall
+
+    applymovement(OBJ_EVENT_ID_PLAYER, PlayerMoveToRivalLeft)
+    waitmovement(0)
+
+    checkplayergender
+    goto_if_eq(VAR_RESULT, MALE, Route501_RivalMaya)
+}
+
+script Route501_Trigger_WalkToRivalRight
+{
+    lockall
+
+    applymovement(OBJ_EVENT_ID_PLAYER, PlayerMoveToRivalRight)
+    waitmovement(0)
+
+    checkplayergender
+    goto_if_eq(VAR_RESULT, MALE, Route501_RivalMaya)
+}
+
+movement PlayerMoveToRivalLeft {
+    walk_right
+    walk_up * 2
+    face_right
+}
+
+movement PlayerMoveToRivalRight {
+    walk_up * 2
+    face_right
+}
+
+script Route501_RivalMaya {
+    applymovement(OBJ_RIVAL, RivalNoticePlayer)
+    waitmovement(0)
+
+    msgbox(RivalText1F)
+
+    applymovement(OBJ_RIVAL, RivalLookAround)
+    waitmovement(0)
+
+    msgbox(format("Oh, there it is!\p"))
+
+    applymovement(OBJ_RIVAL, RivalApproachBag)
+    applymovement(OBJ_EVENT_ID_PLAYER, PlayerApproachBag)
+    waitmovement(1)
+
+    msgbox(RivalText2F)
+
+
+    playbgm(MUS_HELP, 0)
+    
+    msgbox(format("No, stay back! Please!"))
+
+    setvar(VAR_EVERWOOD_TOWN_STATE, 2)
+    
+    fadedefaultbgm
+    releaseall
+
+
+
+}
+
+movement RivalNoticePlayer {
+    emote_exclamation_mark
+    face_left
+}
+
+movement RivalLookAround {
+    walk_in_place_fast_up
+    walk_in_place_fast_down
+    walk_in_place_fast_right
+    face_right
+    emote_exclamation_mark
+}
+
+movement RivalApproachBag {
+    walk_down
+    walk_right * 4
+    face_up
+}
+
+movement PlayerApproachBag {
+    walk_right * 4
+    face_right
+}
+
+text RivalText1F { //female rival
+    format("Huh? What the...?\p"
+           "Oh! Are you the {PLAYER}{KUN} that just moved in next door?\p"
+           "I'm your neighbor, {RIVAL}! Nice to meet you!\p"
+            "Oh, right! I have something for you from Professor Sanzashi!\p"
+            "I went to your house to deliver it, but your mom said you were asleep.\p"
+            "I didn't want to wake you up, so I decided to wander around a bit.\p"
+            "I guess I got a little carried away... Sorry about that!\p"
+            "Uh.. where did I put it...?\p"
+            "Don't tell me I dropped it somewhere..."
+            )
+}
+
+text RivalText2F {
+    format("Oh, there it is!\p"
+    "I really don't know what I would've done if I lost it...\p"
+    "The professor would've been so mad at me!\p"
+    )
+
+}
+
+

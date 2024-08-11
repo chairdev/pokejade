@@ -20,6 +20,7 @@ script EverwoodTown_HawthornResearchLab_EventScript_Sanzashi {
             }
 
             setvar(VAR_SANZASHI_LAB_STATE, 1)
+            setvar(VAR_EVERWOOD_TOWN_STATE, 2)
         case 1:
             msgbox(GoLookForRivalText1)
     }
