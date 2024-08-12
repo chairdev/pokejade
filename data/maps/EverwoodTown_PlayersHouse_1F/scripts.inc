@@ -5,11 +5,11 @@ EverwoodTown_PlayersHouse_1F_MapScripts::
 
 EverwoodTown_PlayersHouse_1F_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 # 5 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
-	map_script_2 VAR_EVERWOOD_TOWN_STATE, 0, PlayersHouse_1F_MapScript_MeetMom
+	map_script_2 VAR_EVERWOOD_TOWN_STATE, 0, EverwoodTown_PlayersHouse_1F_MapScript_MeetMom
 	.2byte 0
 
 
-PlayersHouse_1F_MapScript_MeetMom::
+EverwoodTown_PlayersHouse_1F_MapScript_MeetMom::
 # 12 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	lockall
 # 13 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
@@ -57,7 +57,7 @@ MomMoveBack:
 	face_right
 	step_end
 
-PlayersHouse_1F_EventScript_MomN::
+EverwoodTown_PlayersHouse_1F_EventScript_Mom::
 # 53 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	lockall
 # 54 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
@@ -66,19 +66,39 @@ PlayersHouse_1F_EventScript_MomN::
 	checkplayergender
 # 57 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	compare VAR_RESULT, MALE
-	goto_if_eq PlayersHouse_1F_EventScript_MomN_2
+	goto_if_eq EverwoodTown_PlayersHouse_1F_EventScript_Mom_2
 # 63 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	msgbox RivalCameByText1B
-PlayersHouse_1F_EventScript_MomN_1:
+EverwoodTown_PlayersHouse_1F_EventScript_Mom_1:
 # 66 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	releaseall
 	return
 
-PlayersHouse_1F_EventScript_MomN_2:
+EverwoodTown_PlayersHouse_1F_EventScript_Mom_2:
 # 59 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	msgbox RivalCameByText1A
-	goto PlayersHouse_1F_EventScript_MomN_1
+	goto EverwoodTown_PlayersHouse_1F_EventScript_Mom_1
 
+
+EverwoodTown_PlayersHouse_1F_EventScript_Delcatty::
+# 84 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+	lock
+# 85 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+	faceplayer
+# 86 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+	playmoncry SPECIES_DELCATTY, CRY_MODE_NORMAL
+# 87 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+	msgbox EverwoodTown_PlayersHouse_1F_EventScript_Delcatty_Text_0
+# 88 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+	waitmoncry
+# 89 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+	release
+	return
+
+
+EverwoodTown_PlayersHouse_1F_EventScript_Delcatty_Text_0:
+# 87 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+	.string "Mreeeow!$"
 
 MeetMomText1::
 # 28 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"

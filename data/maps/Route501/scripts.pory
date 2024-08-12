@@ -1,4 +1,6 @@
 const OBJ_RIVAL = 1
+const OBJ_PIDOVE1 = 3
+const OBJ_PIDOVE2 = 4
 
 mapscripts Route501_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
@@ -43,23 +45,43 @@ script Route501_RivalMaya {
     applymovement(OBJ_RIVAL, RivalNoticePlayer)
     waitmovement(0)
 
-    msgbox(RivalText1F)
+    playbgm(MUS_ENCOUNTER_MAY, 0)
 
+    msgbox(RivalText1F)
+    
     applymovement(OBJ_RIVAL, RivalLookAround)
     waitmovement(0)
 
-    msgbox(format("Oh, there it is!\p"))
-
+    msgbox(format("Oh, there it is!"))
+    
     applymovement(OBJ_RIVAL, RivalApproachBag)
     applymovement(OBJ_EVENT_ID_PLAYER, PlayerApproachBag)
     waitmovement(1)
 
     msgbox(RivalText2F)
 
-
     playbgm(MUS_HELP, 0)
-    
-    msgbox(format("No, stay back! Please!"))
+
+    setobjectxy(OBJ_PIDOVE1, 1, 17)
+    setobjectxy(OBJ_PIDOVE2, 1, 17)
+    applymovement(OBJ_PIDOVE1, PidoveApproachPlayer)
+    applymovement(OBJ_PIDOVE2, PidoveApprachRival)
+    waitmovement(1)
+
+    playmoncry(SPECIES_PIDOVE, CRY_MODE_NORMAL)
+
+    applymovement(OBJ_EVENT_ID_PLAYER, ExclemationMark)
+    applymovement(OBJ_RIVAL, ExclemationMark)
+    waitmovement(1)
+
+    msgbox(RivalText3F)
+
+    setflag(FLAG_SYS_POKEMON_GET)
+    fadescreen(FADE_TO_BLACK)
+    removeobject(OBJ_PIDOVE1)
+    removeobject(OBJ_PIDOVE2)
+	special(ChooseStarter)
+	waitstate
 
     setvar(VAR_EVERWOOD_TOWN_STATE, 2)
     
@@ -76,15 +98,15 @@ movement RivalNoticePlayer {
 }
 
 movement RivalLookAround {
-    walk_in_place_fast_up
-    walk_in_place_fast_down
-    walk_in_place_fast_right
+    walk_in_place_up
+    walk_in_place_down
+    walk_in_place_right
     face_right
     emote_exclamation_mark
 }
 
 movement RivalApproachBag {
-    walk_down
+    walk_up
     walk_right * 4
     face_up
 }
@@ -92,6 +114,18 @@ movement RivalApproachBag {
 movement PlayerApproachBag {
     walk_right * 4
     face_right
+}
+
+movement PidoveApproachPlayer {
+    walk_faster_right * 10
+}
+
+movement PidoveApprachRival {
+    walk_faster_down* 6
+}
+
+movement ExclemationMark {
+    emote_exclamation_mark
 }
 
 text RivalText1F { //female rival
@@ -108,11 +142,16 @@ text RivalText1F { //female rival
 }
 
 text RivalText2F {
-    format("Oh, there it is!\p"
-    "I really don't know what I would've done if I lost it...\p"
+    format("I really don't know what I would've done if I lost it...\p"
     "The professor would've been so mad at me!\p"
     )
 
 }
 
-
+text RivalText3F { //ATTACKED BY PIDOVE
+    format("Uwaaah! Wha... What's going on?!\p"
+           "A wild Pokémon?! This is bad! This is really bad!\p"
+           "{PLAYER}{KUN}, we have to use the Poké Balls in that bag to protect ourselves!\p"
+           "Grab one and let's battle them!"
+           )
+}

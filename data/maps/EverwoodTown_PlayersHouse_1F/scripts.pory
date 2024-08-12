@@ -2,13 +2,13 @@ const OBJ_MOM = 1
 
 mapscripts EverwoodTown_PlayersHouse_1F_MapScripts {
     MAP_SCRIPT_ON_FRAME_TABLE [
-        VAR_EVERWOOD_TOWN_STATE, 0: PlayersHouse_1F_MapScript_MeetMom
+        VAR_EVERWOOD_TOWN_STATE, 0: EverwoodTown_PlayersHouse_1F_MapScript_MeetMom
     ]
 }
 
 
 
-script PlayersHouse_1F_MapScript_MeetMom {
+script EverwoodTown_PlayersHouse_1F_MapScript_MeetMom {
     lockall
     playbgm(MUS_FOLLOW_ME, 0)
     applymovement(OBJ_MOM, MomApproachPlayer1)
@@ -49,7 +49,7 @@ movement MomMoveBack {
     face_right
 }
 
-script PlayersHouse_1F_EventScript_MomN {
+script EverwoodTown_PlayersHouse_1F_EventScript_Mom {
     lockall
     faceplayer
 
@@ -78,5 +78,14 @@ text RivalCameByText1B {
            "I told him you were still asleep.\p"
            "...I wonder what he wanted?"
            )
+}
+
+script EverwoodTown_PlayersHouse_1F_EventScript_Delcatty {
+    lock
+    faceplayer
+    playmoncry(SPECIES_DELCATTY, CRY_MODE_NORMAL)
+    msgbox(format("Mreeeow!"))
+    waitmoncry
+    release
 }
 
