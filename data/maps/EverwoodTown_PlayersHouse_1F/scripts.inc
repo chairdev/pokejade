@@ -63,41 +63,59 @@ EverwoodTown_PlayersHouse_1F_EventScript_Mom::
 # 54 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	faceplayer
 # 56 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
-	checkplayergender
-# 57 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
-	compare VAR_RESULT, MALE
-	goto_if_eq EverwoodTown_PlayersHouse_1F_EventScript_Mom_2
-# 63 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
-	msgbox RivalCameByText1B
+	compare VAR_EVERWOOD_TOWN_STATE, 4
+	goto_if_lt EverwoodTown_PlayersHouse_1F_EventScript_Mom_2
+# 70 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+	msgbox EverwoodTown_PlayersHouse_1F_Text_MomHealsParty
+# 71 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+	closemessage
+# 72 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+	call Common_EventScript_OutOfCenterPartyHeal
+# 73 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+	incrementgamestat GAME_STAT_RESTED_AT_HOME
+# 74 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+	msgbox EverwoodTown_PlayersHouse_1F_Text_GoGetEm
+# 75 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+	release
 EverwoodTown_PlayersHouse_1F_EventScript_Mom_1:
-# 66 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+# 80 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	releaseall
 	return
 
 EverwoodTown_PlayersHouse_1F_EventScript_Mom_2:
+# 58 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+	checkplayergender
 # 59 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+	compare VAR_RESULT, MALE
+	goto_if_eq EverwoodTown_PlayersHouse_1F_EventScript_Mom_5
+# 65 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+	msgbox RivalCameByText1B
+	goto EverwoodTown_PlayersHouse_1F_EventScript_Mom_1
+
+EverwoodTown_PlayersHouse_1F_EventScript_Mom_5:
+# 61 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	msgbox RivalCameByText1A
 	goto EverwoodTown_PlayersHouse_1F_EventScript_Mom_1
 
 
 EverwoodTown_PlayersHouse_1F_EventScript_Delcatty::
-# 84 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+# 111 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	lock
-# 85 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+# 112 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	faceplayer
-# 86 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+# 113 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	playmoncry SPECIES_DELCATTY, CRY_MODE_NORMAL
-# 87 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+# 114 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	msgbox EverwoodTown_PlayersHouse_1F_EventScript_Delcatty_Text_0
-# 88 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+# 115 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	waitmoncry
-# 89 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+# 116 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	release
 	return
 
 
 EverwoodTown_PlayersHouse_1F_EventScript_Delcatty_Text_0:
-# 87 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+# 114 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	.string "Mreeeow!$"
 
 MeetMomText1::
@@ -115,15 +133,26 @@ MeetMomText1::
 	.string "I won't keep you any longer. I'm sure\n"
 	.string "Professor Sanzashi is waiting for you!$"
 
+EverwoodTown_PlayersHouse_1F_Text_MomHealsParty::
+# 83 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+	.string "Welcome home, {PLAYER}!\p"
+	.string "You look tired. Why don't you rest a bit?$"
+
+EverwoodTown_PlayersHouse_1F_Text_GoGetEm::
+# 88 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+	.string "There! You look much better now!\p"
+	.string "Go get 'em, {PLAYER}!\p"
+	.string "$"
+
 RivalCameByText1A::
-# 69 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+# 96 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	.string "Our neighbor {RIVAL} came looking\n"
 	.string "for you earlier.\p"
 	.string "I told her you were still asleep.\p"
 	.string "...I wonder what she wanted?$"
 
 RivalCameByText1B::
-# 76 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+# 103 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	.string "Our neighbor {RIVAL} came looking\n"
 	.string "for you earlier.\p"
 	.string "I told him you were still asleep.\p"

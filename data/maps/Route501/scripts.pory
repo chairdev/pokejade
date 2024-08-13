@@ -191,3 +191,62 @@ text RivalText4F {
            "I'm sure he must be worried about us."
            )
 }
+
+script Route501_EventScript_SkwovetGirl {
+    lock
+    faceplayer
+
+    if(flag(FLAG_RECEIVED_POTION_ROUTE_501))
+    {
+        msgbox(Route501_Text_SkwovetGirl3)
+    }
+    else
+    {
+        msgbox(Route501_Text_SkwovetGirl1)
+        giveitem(ITEM_ORAN_BERRY, 1)
+        msgbox(Route501_Text_SkwovetGirl2)
+
+        setflag(FLAG_RECEIVED_POTION_ROUTE_501)
+    }
+
+    release
+}
+
+text Route501_Text_SkwovetGirl1 {
+    format( "Oh! I'm not a Trainer, don't worry!\p"
+            "I'm just here on to watch the Skwovet!\p"
+            "They're so cute when they eat! I just can't get enough of it!\p"
+            "It's so funny how they stuff their cheeks full of Berries!\p"
+            "Oh! Speaking of Berries, did you know that Skwovet has the ability Cheek Pouch?\p"
+            "It's a really useful ability that restores some of its HP when it eats any Berry.\p"
+            "I have a few extra Berries, so I'll give you one to try out!"
+        )
+}
+
+text Route501_Text_SkwovetGirl2 {
+    format("I hope you and your Pokémon enjoy the Berries!")
+}
+
+text Route501_Text_SkwovetGirl3 {
+    format("Skwovet are just too cute!")
+}
+
+script Route501_EventScript_Adrien {
+    trainerbattle_single(TRAINER_ADRIEN, Route501_Text_AdrienIntro, Route501_Text_AdrienDefeated)
+    msgbox(Route102_Text_AdrienPostBattle, MSGBOX_AUTOCLOSE)
+    waitmessage
+    end
+}
+
+text Route501_Text_AdrienIntro {
+    format("We've locked eyes! That means it's time for a battle!\p"
+           "I'll show you the power of my favorite Pokémon!")
+}
+
+text Route501_Text_AdrienDefeated {
+    format("You're so strong!")
+}
+
+text Route102_Text_AdrienPostBattle {
+    format("You're really good at this! I hope we can battle again sometime!")
+}

@@ -26,32 +26,32 @@
         },
     },
 #line 84
-    [TRAINER_SAWYER_1] =
+    [TRAINER_ADRIEN] =
     {
 #line 85
-        .trainerName = _("SAWYER"),
+        .trainerName = _("Adrien"),
 #line 86
-        .trainerClass = TRAINER_CLASS_HIKER,
+        .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 87
-        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerPic = TRAINER_PIC_YOUNGSTER,
         .encounterMusic_gender = 
 #line 89
-            TRAINER_ENCOUNTER_MUSIC_HIKER,
+            TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 90
         .doubleBattle = FALSE,
 #line 91
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
             {
 #line 93
-            .species = SPECIES_GEODUDE,
+            .species = SPECIES_SENTRET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 95
-            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 94
-            .lvl = 21,
+            .lvl = 3,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
