@@ -56,69 +56,78 @@ BaycrestCity_Trigger_Rival2::
 BaycrestCity_Maya::
 # 40 "data/maps/BaycrestCity/scripts.pory"
 	playbgm MUS_ENCOUNTER_MAY, 0
-# 42 "data/maps/BaycrestCity/scripts.pory"
+# 43 "data/maps/BaycrestCity/scripts.pory"
 	msgbox BaycrestCity_Text_Rival1F
 	return
 
 
 BaycrestCity_Shinji::
-# 46 "data/maps/BaycrestCity/scripts.pory"
+# 47 "data/maps/BaycrestCity/scripts.pory"
 	playbgm MUS_ENCOUNTER_BRENDAN, 0
-# 48 "data/maps/BaycrestCity/scripts.pory"
+# 50 "data/maps/BaycrestCity/scripts.pory"
 	msgbox BaycrestCity_Text_Rival1M
 	return
 
 
-# 52 "data/maps/BaycrestCity/scripts.pory"
-ApproachRival1:
-# 53 "data/maps/BaycrestCity/scripts.pory"
-	walk_up
-# 53 "data/maps/BaycrestCity/scripts.pory"
-	walk_up
-# 53 "data/maps/BaycrestCity/scripts.pory"
-	walk_up
 # 54 "data/maps/BaycrestCity/scripts.pory"
+ApproachRival1:
+# 55 "data/maps/BaycrestCity/scripts.pory"
+	walk_up
+# 55 "data/maps/BaycrestCity/scripts.pory"
+	walk_up
+# 55 "data/maps/BaycrestCity/scripts.pory"
+	walk_up
+# 55 "data/maps/BaycrestCity/scripts.pory"
+	walk_up
+# 56 "data/maps/BaycrestCity/scripts.pory"
 	walk_in_place_faster_right
 	step_end
 
-# 58 "data/maps/BaycrestCity/scripts.pory"
+# 60 "data/maps/BaycrestCity/scripts.pory"
 ApproachRival2:
-# 59 "data/maps/BaycrestCity/scripts.pory"
+# 61 "data/maps/BaycrestCity/scripts.pory"
 	walk_up
-# 59 "data/maps/BaycrestCity/scripts.pory"
+# 61 "data/maps/BaycrestCity/scripts.pory"
 	walk_up
 	step_end
 
-# 62 "data/maps/BaycrestCity/scripts.pory"
-LookLeft:
-# 63 "data/maps/BaycrestCity/scripts.pory"
-	emote_exclamation_mark
 # 64 "data/maps/BaycrestCity/scripts.pory"
+LookLeft:
+# 65 "data/maps/BaycrestCity/scripts.pory"
+	emote_exclamation_mark
+# 66 "data/maps/BaycrestCity/scripts.pory"
 	walk_in_place_faster_left
 	step_end
 
-# 67 "data/maps/BaycrestCity/scripts.pory"
-LookDown:
-# 68 "data/maps/BaycrestCity/scripts.pory"
-	emote_exclamation_mark
 # 69 "data/maps/BaycrestCity/scripts.pory"
+LookDown:
+# 70 "data/maps/BaycrestCity/scripts.pory"
+	emote_exclamation_mark
+# 71 "data/maps/BaycrestCity/scripts.pory"
 	walk_in_place_faster_down
 	step_end
 
 BaycrestCity_Text_Rival1F::
-# 72 "data/maps/BaycrestCity/scripts.pory"
+# 74 "data/maps/BaycrestCity/scripts.pory"
 	.string "{RIVAL}: Hey, {PLAYER}{KUN}! I've been\n"
 	.string "waiting for you!\p"
 	.string "I wanted to see how many Pokémon\n"
 	.string "you've caught so far.\p"
 	.string "I've caught a bunch of Pokémon myself,\n"
 	.string "so I'm sure I've got more than you!\p"
+	.string "You've caught... {STR_VAR_1}\n"
+	.string "Pokémon, right?$"
+
+BaycrestCity_Text_Rival1MonF::
+# 82 "data/maps/BaycrestCity/scripts.pory"
 	.string "$"
 
 BaycrestCity_Text_Rival1M::
-# 79 "data/maps/BaycrestCity/scripts.pory"
+# 86 "data/maps/BaycrestCity/scripts.pory"
 	.string "{RIVAL}: Oh, hey, {PLAYER}{KUN}!\n"
 	.string "There you are!\p"
 	.string "Have you caught any Pokémon yet?\p"
 	.string "I sure have!\n"
-	.string "Let's see who's caught more!$"
+	.string "Let's see who's caught more! Looks like\l"
+	.string "you've caught... {STR_VAR_1}\l"
+	.string "Pokémon, right?$"

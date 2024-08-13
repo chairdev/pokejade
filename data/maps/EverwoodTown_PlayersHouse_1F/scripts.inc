@@ -21,105 +21,107 @@ EverwoodTown_PlayersHouse_1F_MapScript_MeetMom::
 # 17 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	msgbox MeetMomText1
 # 18 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
-	fadedefaultbgm
-# 19 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
-	applymovement 1, MomMoveBack
+	closemessage
 # 20 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
-	waitmovement 0
+	fadedefaultbgm
+# 21 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+	applymovement 1, MomMoveBack
 # 22 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+	waitmovement 0
+# 24 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	setvar VAR_EVERWOOD_TOWN_STATE, 1
-# 25 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+# 27 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	releaseall
 	return
 
 
-# 40 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+# 42 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 MomApproachPlayer1:
-# 41 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
-	walk_up
-# 42 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
-	walk_right
-# 42 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
-	walk_right
 # 43 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+	walk_up
+# 44 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+	walk_right
+# 44 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+	walk_right
+# 45 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	walk_in_place_faster_up
 	step_end
 
-# 46 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
-MomMoveBack:
-# 47 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
-	walk_left
-# 47 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
-	walk_left
 # 48 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
-	walk_down
+MomMoveBack:
 # 49 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+	walk_left
+# 49 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+	walk_left
+# 50 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+	walk_down
+# 51 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	walk_in_place_faster_right
 	step_end
 
 EverwoodTown_PlayersHouse_1F_EventScript_Mom::
-# 53 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+# 55 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	lockall
-# 54 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
-	faceplayer
 # 56 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+	faceplayer
+# 58 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	compare VAR_EVERWOOD_TOWN_STATE, 4
 	goto_if_lt EverwoodTown_PlayersHouse_1F_EventScript_Mom_2
-# 70 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
-	msgbox EverwoodTown_PlayersHouse_1F_Text_MomHealsParty
-# 71 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
-	closemessage
 # 72 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
-	call Common_EventScript_OutOfCenterPartyHeal
+	msgbox EverwoodTown_PlayersHouse_1F_Text_MomHealsParty
 # 73 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
-	incrementgamestat GAME_STAT_RESTED_AT_HOME
+	closemessage
 # 74 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
-	msgbox EverwoodTown_PlayersHouse_1F_Text_GoGetEm
+	call Common_EventScript_OutOfCenterPartyHeal
 # 75 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+	incrementgamestat GAME_STAT_RESTED_AT_HOME
+# 76 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+	msgbox EverwoodTown_PlayersHouse_1F_Text_GoGetEm
+# 77 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	release
 EverwoodTown_PlayersHouse_1F_EventScript_Mom_1:
-# 80 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+# 82 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	releaseall
 	return
 
 EverwoodTown_PlayersHouse_1F_EventScript_Mom_2:
-# 58 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+# 60 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	checkplayergender
-# 59 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+# 61 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	compare VAR_RESULT, MALE
 	goto_if_eq EverwoodTown_PlayersHouse_1F_EventScript_Mom_5
-# 65 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+# 67 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	msgbox RivalCameByText1B
 	goto EverwoodTown_PlayersHouse_1F_EventScript_Mom_1
 
 EverwoodTown_PlayersHouse_1F_EventScript_Mom_5:
-# 61 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+# 63 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	msgbox RivalCameByText1A
 	goto EverwoodTown_PlayersHouse_1F_EventScript_Mom_1
 
 
 EverwoodTown_PlayersHouse_1F_EventScript_Delcatty::
-# 111 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
-	lock
-# 112 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
-	faceplayer
 # 113 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
-	playmoncry SPECIES_DELCATTY, CRY_MODE_NORMAL
+	lock
 # 114 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
-	msgbox EverwoodTown_PlayersHouse_1F_EventScript_Delcatty_Text_0
+	faceplayer
 # 115 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_DELCATTY, CRY_MODE_NORMAL
 # 116 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+	msgbox EverwoodTown_PlayersHouse_1F_EventScript_Delcatty_Text_0
+# 117 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+	waitmoncry
+# 118 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	release
 	return
 
 
 EverwoodTown_PlayersHouse_1F_EventScript_Delcatty_Text_0:
-# 114 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+# 116 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	.string "Mreeeow!$"
 
 MeetMomText1::
-# 28 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+# 30 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	.string "Oh! Good morning, {PLAYER}!\p"
 	.string "You sure are up early today.\p"
 	.string "I guess you're just as excited as I am!\p"
@@ -134,26 +136,26 @@ MeetMomText1::
 	.string "Professor Sanzashi is waiting for you!$"
 
 EverwoodTown_PlayersHouse_1F_Text_MomHealsParty::
-# 83 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+# 85 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	.string "Welcome home, {PLAYER}!\p"
 	.string "You look tired.\n"
 	.string "Why don't you rest a bit?$"
 
 EverwoodTown_PlayersHouse_1F_Text_GoGetEm::
-# 88 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+# 90 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	.string "There! You look like you're ready to\n"
 	.string "take on the world!\p"
 	.string "Go get 'em, {PLAYER}!$"
 
 RivalCameByText1A::
-# 96 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+# 98 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	.string "Our neighbor {RIVAL} came looking\n"
 	.string "for you earlier.\p"
 	.string "I told her you were still asleep.\p"
 	.string "...I wonder what she wanted?$"
 
 RivalCameByText1B::
-# 103 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
+# 105 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	.string "Our neighbor {RIVAL} came looking\n"
 	.string "for you earlier.\p"
 	.string "I told him you were still asleep.\p"

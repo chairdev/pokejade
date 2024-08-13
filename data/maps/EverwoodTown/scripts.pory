@@ -33,12 +33,14 @@ script EverwoodTown_Trigger_DontGoIntoRouteRight {
     lockall
 
     msgbox(format("Wait, wait, wait, wait, waaait!!"))
+    closemessage
 
     applymovement(OBJ_EVENT_ID_PLAYER, PlayerMoveDown)
     applymovement(OBJ_FAT_MAN, FatManApproachPlayer2)
     waitmovement(1)
 
     msgbox(DontGoIntoRouteText)
+    closemessage
 
     applymovement(OBJ_FAT_MAN, FatManMoveBack2)
     waitmovement(0)

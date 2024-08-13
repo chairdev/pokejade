@@ -15,6 +15,8 @@ script EverwoodTown_PlayersHouse_1F_MapScript_MeetMom {
     waitmovement(0)
     
     msgbox(MeetMomText1)
+    closemessage
+    
     fadedefaultbgm
     applymovement(OBJ_MOM, MomMoveBack)
     waitmovement(0)

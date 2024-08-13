@@ -33,313 +33,317 @@ EverwoodTown_Trigger_DontGoIntoRouteRight::
 	lockall
 # 35 "data/maps/EverwoodTown/scripts.pory"
 	msgbox EverwoodTown_Trigger_DontGoIntoRouteLeft_Text_0
-# 37 "data/maps/EverwoodTown/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, PlayerMoveDown
+# 36 "data/maps/EverwoodTown/scripts.pory"
+	closemessage
 # 38 "data/maps/EverwoodTown/scripts.pory"
-	applymovement 1, FatManApproachPlayer2
+	applymovement OBJ_EVENT_ID_PLAYER, PlayerMoveDown
 # 39 "data/maps/EverwoodTown/scripts.pory"
+	applymovement 1, FatManApproachPlayer2
+# 40 "data/maps/EverwoodTown/scripts.pory"
 	waitmovement 1
-# 41 "data/maps/EverwoodTown/scripts.pory"
+# 42 "data/maps/EverwoodTown/scripts.pory"
 	msgbox DontGoIntoRouteText
 # 43 "data/maps/EverwoodTown/scripts.pory"
+	closemessage
+# 45 "data/maps/EverwoodTown/scripts.pory"
 	applymovement 1, FatManMoveBack2
-# 44 "data/maps/EverwoodTown/scripts.pory"
-	waitmovement 0
 # 46 "data/maps/EverwoodTown/scripts.pory"
+	waitmovement 0
+# 48 "data/maps/EverwoodTown/scripts.pory"
 	releaseall
 	return
 
 
-# 57 "data/maps/EverwoodTown/scripts.pory"
+# 59 "data/maps/EverwoodTown/scripts.pory"
 PlayerMoveDown:
-# 58 "data/maps/EverwoodTown/scripts.pory"
+# 60 "data/maps/EverwoodTown/scripts.pory"
 	walk_down
 	step_end
 
-# 61 "data/maps/EverwoodTown/scripts.pory"
+# 63 "data/maps/EverwoodTown/scripts.pory"
 FatManApproachPlayer1:
-# 62 "data/maps/EverwoodTown/scripts.pory"
-	walk_left
-# 62 "data/maps/EverwoodTown/scripts.pory"
-	walk_left
-# 63 "data/maps/EverwoodTown/scripts.pory"
-	walk_up
-# 63 "data/maps/EverwoodTown/scripts.pory"
-	walk_up
 # 64 "data/maps/EverwoodTown/scripts.pory"
-	walk_in_place_faster_up
-	step_end
-
-# 67 "data/maps/EverwoodTown/scripts.pory"
-FatManApproachPlayer2:
-# 68 "data/maps/EverwoodTown/scripts.pory"
 	walk_left
-# 69 "data/maps/EverwoodTown/scripts.pory"
+# 64 "data/maps/EverwoodTown/scripts.pory"
+	walk_left
+# 65 "data/maps/EverwoodTown/scripts.pory"
 	walk_up
-# 69 "data/maps/EverwoodTown/scripts.pory"
+# 65 "data/maps/EverwoodTown/scripts.pory"
 	walk_up
-# 70 "data/maps/EverwoodTown/scripts.pory"
+# 66 "data/maps/EverwoodTown/scripts.pory"
 	walk_in_place_faster_up
 	step_end
 
-# 73 "data/maps/EverwoodTown/scripts.pory"
+# 69 "data/maps/EverwoodTown/scripts.pory"
+FatManApproachPlayer2:
+# 70 "data/maps/EverwoodTown/scripts.pory"
+	walk_left
+# 71 "data/maps/EverwoodTown/scripts.pory"
+	walk_up
+# 71 "data/maps/EverwoodTown/scripts.pory"
+	walk_up
+# 72 "data/maps/EverwoodTown/scripts.pory"
+	walk_in_place_faster_up
+	step_end
+
+# 75 "data/maps/EverwoodTown/scripts.pory"
 FatManMoveBack1:
-# 74 "data/maps/EverwoodTown/scripts.pory"
-	walk_down
-# 74 "data/maps/EverwoodTown/scripts.pory"
-	walk_down
-# 75 "data/maps/EverwoodTown/scripts.pory"
-	walk_right
-# 75 "data/maps/EverwoodTown/scripts.pory"
-	walk_right
 # 76 "data/maps/EverwoodTown/scripts.pory"
+	walk_down
+# 76 "data/maps/EverwoodTown/scripts.pory"
+	walk_down
+# 77 "data/maps/EverwoodTown/scripts.pory"
+	walk_right
+# 77 "data/maps/EverwoodTown/scripts.pory"
+	walk_right
+# 78 "data/maps/EverwoodTown/scripts.pory"
 	walk_in_place_faster_down
 	step_end
 
-# 79 "data/maps/EverwoodTown/scripts.pory"
-FatManMoveBack2:
-# 80 "data/maps/EverwoodTown/scripts.pory"
-	walk_down
-# 80 "data/maps/EverwoodTown/scripts.pory"
-	walk_down
 # 81 "data/maps/EverwoodTown/scripts.pory"
-	walk_right
+FatManMoveBack2:
 # 82 "data/maps/EverwoodTown/scripts.pory"
+	walk_down
+# 82 "data/maps/EverwoodTown/scripts.pory"
+	walk_down
+# 83 "data/maps/EverwoodTown/scripts.pory"
+	walk_right
+# 84 "data/maps/EverwoodTown/scripts.pory"
 	walk_in_place_faster_down
 	step_end
 
 EverwoodTown_Trigger_GoodbyeMom1::
-# 87 "data/maps/EverwoodTown/scripts.pory"
-	lockall
 # 89 "data/maps/EverwoodTown/scripts.pory"
+	lockall
+# 91 "data/maps/EverwoodTown/scripts.pory"
 	msgbox EverwoodTown_Trigger_GoodbyeMom1_Text_0
-# 90 "data/maps/EverwoodTown/scripts.pory"
-	closemessage
 # 92 "data/maps/EverwoodTown/scripts.pory"
+	closemessage
+# 94 "data/maps/EverwoodTown/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, PlayerApproachMom1
-# 93 "data/maps/EverwoodTown/scripts.pory"
-	waitmovement 0
 # 95 "data/maps/EverwoodTown/scripts.pory"
-	call EverwoodTown_GoodbyeMom
+	waitmovement 0
 # 97 "data/maps/EverwoodTown/scripts.pory"
+	call EverwoodTown_GoodbyeMom
+# 99 "data/maps/EverwoodTown/scripts.pory"
 	releaseall
 	return
 
 
 EverwoodTown_Trigger_GoodbyeMom2::
-# 102 "data/maps/EverwoodTown/scripts.pory"
-	lockall
 # 104 "data/maps/EverwoodTown/scripts.pory"
+	lockall
+# 106 "data/maps/EverwoodTown/scripts.pory"
 	msgbox EverwoodTown_Trigger_GoodbyeMom1_Text_0
-# 105 "data/maps/EverwoodTown/scripts.pory"
-	closemessage
 # 107 "data/maps/EverwoodTown/scripts.pory"
+	closemessage
+# 109 "data/maps/EverwoodTown/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, PlayerApproachMom2
-# 108 "data/maps/EverwoodTown/scripts.pory"
-	waitmovement 0
 # 110 "data/maps/EverwoodTown/scripts.pory"
-	call EverwoodTown_GoodbyeMom
+	waitmovement 0
 # 112 "data/maps/EverwoodTown/scripts.pory"
+	call EverwoodTown_GoodbyeMom
+# 114 "data/maps/EverwoodTown/scripts.pory"
 	releaseall
 	return
 
 
 EverwoodTown_Trigger_GoodbyeMom3::
-# 117 "data/maps/EverwoodTown/scripts.pory"
-	lockall
 # 119 "data/maps/EverwoodTown/scripts.pory"
+	lockall
+# 121 "data/maps/EverwoodTown/scripts.pory"
 	msgbox EverwoodTown_Trigger_GoodbyeMom1_Text_0
-# 120 "data/maps/EverwoodTown/scripts.pory"
-	closemessage
 # 122 "data/maps/EverwoodTown/scripts.pory"
+	closemessage
+# 124 "data/maps/EverwoodTown/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, PlayerApproachMom3
-# 123 "data/maps/EverwoodTown/scripts.pory"
-	waitmovement 0
 # 125 "data/maps/EverwoodTown/scripts.pory"
-	call EverwoodTown_GoodbyeMom
+	waitmovement 0
 # 127 "data/maps/EverwoodTown/scripts.pory"
+	call EverwoodTown_GoodbyeMom
+# 129 "data/maps/EverwoodTown/scripts.pory"
 	releaseall
 	return
 
 
 EverwoodTown_Trigger_GoodbyeMom4::
-# 132 "data/maps/EverwoodTown/scripts.pory"
-	lockall
 # 134 "data/maps/EverwoodTown/scripts.pory"
+	lockall
+# 136 "data/maps/EverwoodTown/scripts.pory"
 	msgbox EverwoodTown_Trigger_GoodbyeMom1_Text_0
-# 135 "data/maps/EverwoodTown/scripts.pory"
-	closemessage
 # 137 "data/maps/EverwoodTown/scripts.pory"
+	closemessage
+# 139 "data/maps/EverwoodTown/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, PlayerApproachMom4
-# 138 "data/maps/EverwoodTown/scripts.pory"
-	waitmovement 0
 # 140 "data/maps/EverwoodTown/scripts.pory"
-	call EverwoodTown_GoodbyeMom
+	waitmovement 0
 # 142 "data/maps/EverwoodTown/scripts.pory"
+	call EverwoodTown_GoodbyeMom
+# 144 "data/maps/EverwoodTown/scripts.pory"
 	releaseall
 	return
 
 
 EverwoodTown_GoodbyeMom::
-# 146 "data/maps/EverwoodTown/scripts.pory"
-	msgbox GoodbyeMomText1
-# 147 "data/maps/EverwoodTown/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
 # 148 "data/maps/EverwoodTown/scripts.pory"
-	msgbox EverwoodTown_GoodbyeMom_Text_0
+	msgbox GoodbyeMomText1
 # 149 "data/maps/EverwoodTown/scripts.pory"
-	waitfanfare
+	playfanfare MUS_OBTAIN_ITEM
 # 150 "data/maps/EverwoodTown/scripts.pory"
-	msgbox GoodbyeMomText2
+	msgbox EverwoodTown_GoodbyeMom_Text_0
 # 151 "data/maps/EverwoodTown/scripts.pory"
-	closemessage
+	waitfanfare
+# 152 "data/maps/EverwoodTown/scripts.pory"
+	msgbox GoodbyeMomText2
 # 153 "data/maps/EverwoodTown/scripts.pory"
-	applymovement 2, MomGoToDoor
-# 154 "data/maps/EverwoodTown/scripts.pory"
-	waitmovement 0
+	closemessage
 # 155 "data/maps/EverwoodTown/scripts.pory"
-	opendoor 14, 8
+	applymovement 2, MomGoToDoor
 # 156 "data/maps/EverwoodTown/scripts.pory"
-	waitdooranim
-# 157 "data/maps/EverwoodTown/scripts.pory"
-	applymovement 2, MomGoInside
-# 158 "data/maps/EverwoodTown/scripts.pory"
 	waitmovement 0
-# 159 "data/maps/EverwoodTown/scripts.pory"
-	hideobjectat 2, MAP_EVERWOOD_TOWN
-# 160 "data/maps/EverwoodTown/scripts.pory"
-	closedoor 14, 8
-# 161 "data/maps/EverwoodTown/scripts.pory"
+# 157 "data/maps/EverwoodTown/scripts.pory"
+	opendoor 14, 8
+# 158 "data/maps/EverwoodTown/scripts.pory"
 	waitdooranim
+# 159 "data/maps/EverwoodTown/scripts.pory"
+	applymovement 2, MomGoInside
+# 160 "data/maps/EverwoodTown/scripts.pory"
+	waitmovement 0
+# 161 "data/maps/EverwoodTown/scripts.pory"
+	hideobjectat 2, MAP_EVERWOOD_TOWN
+# 162 "data/maps/EverwoodTown/scripts.pory"
+	closedoor 14, 8
 # 163 "data/maps/EverwoodTown/scripts.pory"
-	setflag FLAG_RECEIVED_RUNNING_SHOES
-# 164 "data/maps/EverwoodTown/scripts.pory"
-	setflag FLAG_SYS_B_DASH
+	waitdooranim
 # 165 "data/maps/EverwoodTown/scripts.pory"
-	setflag FLAG_HIDE_EVERWOOD_TOWN_MOM_OUTSIDE
+	setflag FLAG_RECEIVED_RUNNING_SHOES
 # 166 "data/maps/EverwoodTown/scripts.pory"
+	setflag FLAG_SYS_B_DASH
+# 167 "data/maps/EverwoodTown/scripts.pory"
+	setflag FLAG_HIDE_EVERWOOD_TOWN_MOM_OUTSIDE
+# 168 "data/maps/EverwoodTown/scripts.pory"
 	setvar VAR_EVERWOOD_TOWN_STATE, 4
 	return
 
 
-# 169 "data/maps/EverwoodTown/scripts.pory"
+# 171 "data/maps/EverwoodTown/scripts.pory"
 PlayerApproachMom1:
-# 170 "data/maps/EverwoodTown/scripts.pory"
-	walk_up
-# 170 "data/maps/EverwoodTown/scripts.pory"
-	walk_up
-# 171 "data/maps/EverwoodTown/scripts.pory"
-	walk_right
-# 171 "data/maps/EverwoodTown/scripts.pory"
-	walk_right
-# 171 "data/maps/EverwoodTown/scripts.pory"
-	walk_right
-# 171 "data/maps/EverwoodTown/scripts.pory"
-	walk_right
-# 171 "data/maps/EverwoodTown/scripts.pory"
-	walk_right
 # 172 "data/maps/EverwoodTown/scripts.pory"
+	walk_up
+# 172 "data/maps/EverwoodTown/scripts.pory"
+	walk_up
+# 173 "data/maps/EverwoodTown/scripts.pory"
+	walk_right
+# 173 "data/maps/EverwoodTown/scripts.pory"
+	walk_right
+# 173 "data/maps/EverwoodTown/scripts.pory"
+	walk_right
+# 173 "data/maps/EverwoodTown/scripts.pory"
+	walk_right
+# 173 "data/maps/EverwoodTown/scripts.pory"
+	walk_right
+# 174 "data/maps/EverwoodTown/scripts.pory"
 	walk_in_place_faster_up
 	step_end
 
-# 175 "data/maps/EverwoodTown/scripts.pory"
+# 177 "data/maps/EverwoodTown/scripts.pory"
 PlayerApproachMom2:
-# 176 "data/maps/EverwoodTown/scripts.pory"
-	walk_up
-# 176 "data/maps/EverwoodTown/scripts.pory"
-	walk_up
-# 177 "data/maps/EverwoodTown/scripts.pory"
-	walk_right
-# 177 "data/maps/EverwoodTown/scripts.pory"
-	walk_right
-# 177 "data/maps/EverwoodTown/scripts.pory"
-	walk_right
-# 177 "data/maps/EverwoodTown/scripts.pory"
-	walk_right
 # 178 "data/maps/EverwoodTown/scripts.pory"
+	walk_up
+# 178 "data/maps/EverwoodTown/scripts.pory"
+	walk_up
+# 179 "data/maps/EverwoodTown/scripts.pory"
+	walk_right
+# 179 "data/maps/EverwoodTown/scripts.pory"
+	walk_right
+# 179 "data/maps/EverwoodTown/scripts.pory"
+	walk_right
+# 179 "data/maps/EverwoodTown/scripts.pory"
+	walk_right
+# 180 "data/maps/EverwoodTown/scripts.pory"
 	walk_in_place_faster_up
 	step_end
 
-# 181 "data/maps/EverwoodTown/scripts.pory"
+# 183 "data/maps/EverwoodTown/scripts.pory"
 PlayerApproachMom3:
-# 182 "data/maps/EverwoodTown/scripts.pory"
-	walk_up
-# 182 "data/maps/EverwoodTown/scripts.pory"
-	walk_up
-# 183 "data/maps/EverwoodTown/scripts.pory"
-	walk_right
-# 183 "data/maps/EverwoodTown/scripts.pory"
-	walk_right
-# 183 "data/maps/EverwoodTown/scripts.pory"
-	walk_right
 # 184 "data/maps/EverwoodTown/scripts.pory"
+	walk_up
+# 184 "data/maps/EverwoodTown/scripts.pory"
+	walk_up
+# 185 "data/maps/EverwoodTown/scripts.pory"
+	walk_right
+# 185 "data/maps/EverwoodTown/scripts.pory"
+	walk_right
+# 185 "data/maps/EverwoodTown/scripts.pory"
+	walk_right
+# 186 "data/maps/EverwoodTown/scripts.pory"
 	walk_in_place_faster_up
 	step_end
 
-# 187 "data/maps/EverwoodTown/scripts.pory"
+# 189 "data/maps/EverwoodTown/scripts.pory"
 PlayerApproachMom4:
-# 188 "data/maps/EverwoodTown/scripts.pory"
-	walk_up
-# 188 "data/maps/EverwoodTown/scripts.pory"
-	walk_up
-# 189 "data/maps/EverwoodTown/scripts.pory"
-	walk_right
-# 189 "data/maps/EverwoodTown/scripts.pory"
-	walk_right
 # 190 "data/maps/EverwoodTown/scripts.pory"
-	walk_in_place_faster_up
-	step_end
-
-# 193 "data/maps/EverwoodTown/scripts.pory"
-MomGoToDoor:
-# 194 "data/maps/EverwoodTown/scripts.pory"
+	walk_up
+# 190 "data/maps/EverwoodTown/scripts.pory"
+	walk_up
+# 191 "data/maps/EverwoodTown/scripts.pory"
 	walk_right
-# 195 "data/maps/EverwoodTown/scripts.pory"
+# 191 "data/maps/EverwoodTown/scripts.pory"
+	walk_right
+# 192 "data/maps/EverwoodTown/scripts.pory"
 	walk_in_place_faster_up
 	step_end
 
-# 198 "data/maps/EverwoodTown/scripts.pory"
+# 195 "data/maps/EverwoodTown/scripts.pory"
+MomGoToDoor:
+# 196 "data/maps/EverwoodTown/scripts.pory"
+	walk_right
+# 197 "data/maps/EverwoodTown/scripts.pory"
+	walk_in_place_faster_up
+	step_end
+
+# 200 "data/maps/EverwoodTown/scripts.pory"
 MomGoInside:
-# 199 "data/maps/EverwoodTown/scripts.pory"
+# 201 "data/maps/EverwoodTown/scripts.pory"
 	walk_up
 	step_end
 
 EverwoodTown_Sign_Town::
-# 225 "data/maps/EverwoodTown/scripts.pory"
-	lockall
-# 226 "data/maps/EverwoodTown/scripts.pory"
-	msgbox EverwoodTown_Sign_Town_Text_0
 # 227 "data/maps/EverwoodTown/scripts.pory"
+	lockall
+# 228 "data/maps/EverwoodTown/scripts.pory"
+	msgbox EverwoodTown_Sign_Town_Text_0
+# 229 "data/maps/EverwoodTown/scripts.pory"
 	releaseall
 	return
 
 
 EverwoodTown_Sign_PlayersHouse::
-# 230 "data/maps/EverwoodTown/scripts.pory"
-	lockall
-# 231 "data/maps/EverwoodTown/scripts.pory"
-	msgbox EverwoodTown_Sign_PlayersHouse_Text_0
 # 232 "data/maps/EverwoodTown/scripts.pory"
+	lockall
+# 233 "data/maps/EverwoodTown/scripts.pory"
+	msgbox EverwoodTown_Sign_PlayersHouse_Text_0
+# 234 "data/maps/EverwoodTown/scripts.pory"
 	releaseall
 	return
 
 
 EverwoodTown_Sign_RivalsHouse::
-# 236 "data/maps/EverwoodTown/scripts.pory"
-	lockall
-# 237 "data/maps/EverwoodTown/scripts.pory"
-	msgbox EverwoodTown_Sign_RivalsHouse_Text_0
 # 238 "data/maps/EverwoodTown/scripts.pory"
+	lockall
+# 239 "data/maps/EverwoodTown/scripts.pory"
+	msgbox EverwoodTown_Sign_RivalsHouse_Text_0
+# 240 "data/maps/EverwoodTown/scripts.pory"
 	releaseall
 	return
 
 
 EverwoodTown_Sign_ResearchLab::
-# 242 "data/maps/EverwoodTown/scripts.pory"
-	lockall
-# 243 "data/maps/EverwoodTown/scripts.pory"
-	msgbox EverwoodTown_Sign_ResearchLab_Text_0
 # 244 "data/maps/EverwoodTown/scripts.pory"
+	lockall
+# 245 "data/maps/EverwoodTown/scripts.pory"
+	msgbox EverwoodTown_Sign_ResearchLab_Text_0
+# 246 "data/maps/EverwoodTown/scripts.pory"
 	releaseall
 	return
 
@@ -349,33 +353,33 @@ EverwoodTown_Trigger_DontGoIntoRouteLeft_Text_0:
 	.string "Wait, wait, wait, wait, waaait!!$"
 
 EverwoodTown_Trigger_GoodbyeMom1_Text_0:
-# 89 "data/maps/EverwoodTown/scripts.pory"
+# 91 "data/maps/EverwoodTown/scripts.pory"
 	.string "{PLAYER}!$"
 
 EverwoodTown_GoodbyeMom_Text_0:
-# 148 "data/maps/EverwoodTown/scripts.pory"
+# 150 "data/maps/EverwoodTown/scripts.pory"
 	.string "You put on the Running Shoes!$"
 
 EverwoodTown_Sign_Town_Text_0:
-# 226 "data/maps/EverwoodTown/scripts.pory"
+# 228 "data/maps/EverwoodTown/scripts.pory"
 	.string "Everwood Town\n"
 	.string "“A town where the wind of beginnings\l"
 	.string "blows gently.”$"
 
 EverwoodTown_Sign_PlayersHouse_Text_0:
-# 231 "data/maps/EverwoodTown/scripts.pory"
+# 233 "data/maps/EverwoodTown/scripts.pory"
 	.string "{PLAYER}'s House$"
 
 EverwoodTown_Sign_RivalsHouse_Text_0:
-# 237 "data/maps/EverwoodTown/scripts.pory"
+# 239 "data/maps/EverwoodTown/scripts.pory"
 	.string "{RIVAL}'s House$"
 
 EverwoodTown_Sign_ResearchLab_Text_0:
-# 243 "data/maps/EverwoodTown/scripts.pory"
+# 245 "data/maps/EverwoodTown/scripts.pory"
 	.string "Hawthorn Research Lab$"
 
 DontGoIntoRouteText::
-# 49 "data/maps/EverwoodTown/scripts.pory"
+# 51 "data/maps/EverwoodTown/scripts.pory"
 	.string "You can't go that way!\p"
 	.string "It's not safe to head out onto Route\n"
 	.string "501 without a Pokémon by your side.\p"
@@ -385,7 +389,7 @@ DontGoIntoRouteText::
 	.string "safe.$"
 
 GoodbyeMomText1::
-# 202 "data/maps/EverwoodTown/scripts.pory"
+# 204 "data/maps/EverwoodTown/scripts.pory"
 	.string "Wow! What a cute Pokémon!\p"
 	.string "I can tell you two will make a great\n"
 	.string "team!\p"
@@ -393,7 +397,7 @@ GoodbyeMomText1::
 	.string "you from your father!$"
 
 GoodbyeMomText2::
-# 209 "data/maps/EverwoodTown/scripts.pory"
+# 211 "data/maps/EverwoodTown/scripts.pory"
 	.string "They're perfect for running around and\n"
 	.string "exploring new places!\p"
 	.string "Just hold the B Button while you move\n"

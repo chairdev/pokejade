@@ -51,6 +51,7 @@ script Route501_RivalMaya {
     playbgm(MUS_ENCOUNTER_MAY, 0)
 
     msgbox(Route501_Text_MeetRivalText1F)
+    closemessage
     
     applymovement(OBJ_RIVAL, RivalLookAround)
     waitmovement(0)
@@ -80,6 +81,7 @@ script Route501_RivalMaya {
     applymovement(OBJ_RIVAL, FaceUp)
 
     msgbox(Route501_Text_MeetRivalText3F)
+    closemessage
 
     applymovement(OBJ_EVENT_ID_PLAYER, FaceRight)
     applymovement(OBJ_RIVAL, FaceDown)
@@ -140,6 +142,7 @@ script Route501_RivalShinji {
     applymovement(OBJ_RIVAL, FaceUp)
 
     msgbox(Route501_Text_MeetRivalText3M)
+    closemessage
 
     applymovement(OBJ_EVENT_ID_PLAYER, FaceRight)
     applymovement(OBJ_RIVAL, FaceDown)
@@ -179,7 +182,7 @@ movement RivalLookAround {
 movement RivalApproachBag {
     walk_up
     walk_right * 4
-    walk_in_place_faster_up
+    walk_in_place_faster_down
 }
 
 movement PlayerApproachBag {

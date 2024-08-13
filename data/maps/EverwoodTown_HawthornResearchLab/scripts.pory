@@ -56,12 +56,18 @@ script EverwoodTown_HawthornResearchLab_MapScript_ReceiveStarter {
     applymovement(OBJ_RIVAL, ReceiveStarter_FaceRight)
     applymovement(OBJ_EVENT_ID_PLAYER, ReceiveStarter_FaceLeft)
     msgbox(ReceiveStarter_RivalText3)
+    closemessage
 
     applymovement(OBJ_EVENT_ID_PLAYER, ReceiveStarter_FaceDown)
     applymovement(OBJ_RIVAL, ReceiveStarter_RivalLeave)
     waitmovement(0)
     hideobjectat(OBJ_RIVAL, MAP_EVERWOOD_TOWN_HAWTHORN_RESEARCH_LAB)
 
+    applymovement(OBJ_EVENT_ID_PLAYER, ReceiveStarter_FaceUp)
+    msgbox(ReceiveStarter_SanzashiText7)
+    giveitem(ITEM_EXP_SHARE, 1)
+
+    setflag(FLAG_EXP_SHARE)
     setflag(FLAG_HIDE_EVERWOOD_TOWN_RESEARCH_LAB_RIVAL)
     setflag(FLAG_SYS_POKEDEX_GET)
 	special(SetUnlockedPokedexFlags)
@@ -92,7 +98,8 @@ text ReceiveStarter_SanzashiText2 {
 }
 
 text ReceiveStarter_SanzashiText3 {
-    format( "Prof. Sanzashi: Now, there's one more thing.\p"
+    format( "Prof. Sanzashi: Let's see...what else?\p"
+            "Ah, yes! This!"
             )
 }
 
@@ -112,7 +119,7 @@ text ReceiveStarter_RivalText1 {
 }
 
 text ReceiveStarter_SanzashiText5 {
-    format("Prof. Sanzashi: Hm? Did you say something, {RIVAL}?\p"
+    format("Prof. Sanzashi: Hm? Did you say something, {RIVAL}?"
            )
 }
 
@@ -131,6 +138,13 @@ text ReceiveStarter_SanzashiText6 {
 text ReceiveStarter_RivalText3 {
     format("{RIVAL}: I'll be waiting for you at the Pokémon Center, {PLAYER}{KUN}!\p"
             "See you!"
+           )
+}
+
+text ReceiveStarter_SanzashiText7 {
+    format("Prof. Sanzashi: I almost forgot! I have something else for you.\p"
+           "This is an Exp. Share.\nIt's a special item that allows Pokémon to gain experience points even if they don't participate in battle.\p"
+           "I hope you'll find it useful on your journey."
            )
 }
 
