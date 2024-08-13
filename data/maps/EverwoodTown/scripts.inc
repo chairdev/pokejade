@@ -304,6 +304,46 @@ MomGoInside:
 	walk_up
 	step_end
 
+EverwoodTown_Sign_Town::
+# 225 "data/maps/EverwoodTown/scripts.pory"
+	lockall
+# 226 "data/maps/EverwoodTown/scripts.pory"
+	msgbox EverwoodTown_Sign_Town_Text_0
+# 227 "data/maps/EverwoodTown/scripts.pory"
+	releaseall
+	return
+
+
+EverwoodTown_Sign_PlayersHouse::
+# 230 "data/maps/EverwoodTown/scripts.pory"
+	lockall
+# 231 "data/maps/EverwoodTown/scripts.pory"
+	msgbox EverwoodTown_Sign_PlayersHouse_Text_0
+# 232 "data/maps/EverwoodTown/scripts.pory"
+	releaseall
+	return
+
+
+EverwoodTown_Sign_RivalsHouse::
+# 236 "data/maps/EverwoodTown/scripts.pory"
+	lockall
+# 237 "data/maps/EverwoodTown/scripts.pory"
+	msgbox EverwoodTown_Sign_RivalsHouse_Text_0
+# 238 "data/maps/EverwoodTown/scripts.pory"
+	releaseall
+	return
+
+
+EverwoodTown_Sign_ResearchLab::
+# 242 "data/maps/EverwoodTown/scripts.pory"
+	lockall
+# 243 "data/maps/EverwoodTown/scripts.pory"
+	msgbox EverwoodTown_Sign_ResearchLab_Text_0
+# 244 "data/maps/EverwoodTown/scripts.pory"
+	releaseall
+	return
+
+
 EverwoodTown_Trigger_DontGoIntoRouteLeft_Text_0:
 # 16 "data/maps/EverwoodTown/scripts.pory"
 	.string "Wait, wait, wait, wait, waaait!!$"
@@ -315,6 +355,24 @@ EverwoodTown_Trigger_GoodbyeMom1_Text_0:
 EverwoodTown_GoodbyeMom_Text_0:
 # 148 "data/maps/EverwoodTown/scripts.pory"
 	.string "You put on the Running Shoes!$"
+
+EverwoodTown_Sign_Town_Text_0:
+# 226 "data/maps/EverwoodTown/scripts.pory"
+	.string "Everwood Town\n"
+	.string "“A town where the wind of beginnings\l"
+	.string "blows gently.”$"
+
+EverwoodTown_Sign_PlayersHouse_Text_0:
+# 231 "data/maps/EverwoodTown/scripts.pory"
+	.string "{PLAYER}'s House$"
+
+EverwoodTown_Sign_RivalsHouse_Text_0:
+# 237 "data/maps/EverwoodTown/scripts.pory"
+	.string "{RIVAL}'s House$"
+
+EverwoodTown_Sign_ResearchLab_Text_0:
+# 243 "data/maps/EverwoodTown/scripts.pory"
+	.string "Hawthorn Research Lab$"
 
 DontGoIntoRouteText::
 # 49 "data/maps/EverwoodTown/scripts.pory"

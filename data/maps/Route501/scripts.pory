@@ -328,7 +328,7 @@ text Route501_Text_SkwovetGirl2 {
 }
 
 text Route501_Text_SkwovetGirl3 {
-    format("Skwovet are just too cute when they eat!\nI could watch them all day!")
+    format("Skwovet are just too cute when they're eating!\nI could watch them all day!")
 }
 
 script Route501_EventScript_Adrien {

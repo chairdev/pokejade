@@ -220,3 +220,26 @@ text GoodbyeMomText2 {
             "Good luck, {PLAYER}!\nI love you!"
             )
 }
+
+script EverwoodTown_Sign_Town {
+    lockall
+    msgbox(format("Everwood Town\n“A town where the wind of beginnings blows gently.”"))
+    releaseall
+}
+script EverwoodTown_Sign_PlayersHouse {
+    lockall
+    msgbox("{PLAYER}'s House")
+    releaseall
+}
+
+script EverwoodTown_Sign_RivalsHouse {
+    lockall
+    msgbox("{RIVAL}'s House")
+    releaseall
+}
+
+script EverwoodTown_Sign_ResearchLab {
+    lockall
+    msgbox("Hawthorn Research Lab")
+    releaseall
+}

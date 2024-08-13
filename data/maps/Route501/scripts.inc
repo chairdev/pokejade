@@ -382,11 +382,11 @@ Route501_EventScript_SkwovetGirl_2:
 
 
 Route501_EventScript_Adrien::
-# 336 "data/maps/Route501/scripts.pory"
+# 335 "data/maps/Route501/scripts.pory"
 	trainerbattle_single TRAINER_ADRIEN, Route501_Text_AdrienIntro, Route501_Text_AdrienDefeated
-# 337 "data/maps/Route501/scripts.pory"
+# 336 "data/maps/Route501/scripts.pory"
 	msgbox Route102_Text_AdrienPostBattle, MSGBOX_AUTOCLOSE
-# 338 "data/maps/Route501/scripts.pory"
+# 337 "data/maps/Route501/scripts.pory"
 	waitmessage
 	end
 
@@ -495,8 +495,6 @@ Route501_Text_SkwovetGirl1::
 # 316 "data/maps/Route501/scripts.pory"
 	.string "Oh! I'm not a Trainer, don't worry!\p"
 	.string "I'm just here on to watch the Skwovet!\p"
-	.string "They're so cute when they eat! I just\n"
-	.string "can't get enough of it!\p"
 	.string "It's so funny how they stuff their\n"
 	.string "cheeks full of Berries!\p"
 	.string "Oh! Speaking of Berries, did you know\n"
@@ -509,26 +507,28 @@ Route501_Text_SkwovetGirl1::
 	.string "you one to try out!$"
 
 Route501_Text_SkwovetGirl2::
-# 327 "data/maps/Route501/scripts.pory"
+# 326 "data/maps/Route501/scripts.pory"
 	.string "I hope you and your Pokémon enjoy the\n"
 	.string "Berries!$"
 
 Route501_Text_SkwovetGirl3::
-# 331 "data/maps/Route501/scripts.pory"
-	.string "Skwovet are just too cute!$"
+# 330 "data/maps/Route501/scripts.pory"
+	.string "Skwovet are just too cute when they\n"
+	.string "eat!\n"
+	.string "I could watch them all day!$"
 
 Route501_Text_AdrienIntro::
-# 342 "data/maps/Route501/scripts.pory"
+# 341 "data/maps/Route501/scripts.pory"
 	.string "We've locked eyes! That means it's time\n"
 	.string "for a battle!\p"
 	.string "I'll show you the power of my favorite\n"
 	.string "Pokémon!$"
 
 Route501_Text_AdrienDefeated::
-# 347 "data/maps/Route501/scripts.pory"
+# 346 "data/maps/Route501/scripts.pory"
 	.string "You're so strong!$"
 
 Route102_Text_AdrienPostBattle::
-# 351 "data/maps/Route501/scripts.pory"
+# 350 "data/maps/Route501/scripts.pory"
 	.string "You're really good at this! I hope we\n"
 	.string "can battle again sometime!$"
