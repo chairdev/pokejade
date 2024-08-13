@@ -136,13 +136,14 @@ MeetMomText1::
 EverwoodTown_PlayersHouse_1F_Text_MomHealsParty::
 # 83 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	.string "Welcome home, {PLAYER}!\p"
-	.string "You look tired. Why don't you rest a bit?$"
+	.string "You look tired.\n"
+	.string "Why don't you rest a bit?$"
 
 EverwoodTown_PlayersHouse_1F_Text_GoGetEm::
 # 88 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
-	.string "There! You look much better now!\p"
-	.string "Go get 'em, {PLAYER}!\p"
-	.string "$"
+	.string "There! You look like you're ready to\n"
+	.string "take on the world!\p"
+	.string "Go get 'em, {PLAYER}!$"
 
 RivalCameByText1A::
 # 96 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"

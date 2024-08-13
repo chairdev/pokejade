@@ -214,7 +214,15 @@
 #define MAPSEC_ALTERING_CAVE                0xD2
 #define MAPSEC_NAVEL_ROCK                   0xD3
 #define MAPSEC_TRAINER_HILL                 0xD4
-#define MAPSEC_NONE                         0xD5
+#define MAPSEC_EVERWOOD_TOWN                0xD5
+#define MAPSEC_ROUTE_501                    0xD6
+#define MAPSEC_RESERVED1                    0xD7
+#define MAPSEC_RESERVED2                    0xD8
+#define MAPSEC_RESERVED3                    0xD9
+#define MAPSEC_RESERVED4                    0xDA
+#define MAPSEC_RESERVED5                    0xDB
+#define MAPSEC_NONE                         0xDC
+
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE

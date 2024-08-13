@@ -276,25 +276,27 @@ Route501_EventScript_SkwovetGirl::
 	msgbox Route501_Text_SkwovetGirl1
 # 206 "data/maps/Route501/scripts.pory"
 	giveitem ITEM_ORAN_BERRY, 1
-# 208 "data/maps/Route501/scripts.pory"
+# 207 "data/maps/Route501/scripts.pory"
+	msgbox Route501_Text_SkwovetGirl2
+# 209 "data/maps/Route501/scripts.pory"
 	setflag FLAG_RECEIVED_POTION_ROUTE_501
 Route501_EventScript_SkwovetGirl_1:
-# 211 "data/maps/Route501/scripts.pory"
+# 212 "data/maps/Route501/scripts.pory"
 	release
 	return
 
 Route501_EventScript_SkwovetGirl_2:
 # 201 "data/maps/Route501/scripts.pory"
-	msgbox Route501_Text_SkwovetGirl2
+	msgbox Route501_Text_SkwovetGirl3
 	goto Route501_EventScript_SkwovetGirl_1
 
 
 Route501_EventScript_Adrien::
-# 229 "data/maps/Route501/scripts.pory"
+# 235 "data/maps/Route501/scripts.pory"
 	trainerbattle_single TRAINER_ADRIEN, Route501_Text_AdrienIntro, Route501_Text_AdrienDefeated
-# 230 "data/maps/Route501/scripts.pory"
+# 236 "data/maps/Route501/scripts.pory"
 	msgbox Route102_Text_AdrienPostBattle, MSGBOX_AUTOCLOSE
-# 231 "data/maps/Route501/scripts.pory"
+# 237 "data/maps/Route501/scripts.pory"
 	waitmessage
 	end
 
@@ -355,13 +357,16 @@ RivalText4F::
 	.string "I'm sure he must be worried about us.$"
 
 Route501_Text_SkwovetGirl1::
-# 214 "data/maps/Route501/scripts.pory"
-	.string "Oh! I'm not a Trainer, don't worry! I'm\n"
-	.string "just here on to watch the Skwovet!\p"
+# 215 "data/maps/Route501/scripts.pory"
+	.string "Oh! I'm not a Trainer, don't worry!\p"
+	.string "I'm just here on to watch the Skwovet!\p"
 	.string "They're so cute when they eat! I just\n"
 	.string "can't get enough of it!\p"
-	.string "Did you know that Skwovet has the\n"
-	.string "ability Cheek Pouch?\p"
+	.string "It's so funny how they stuff their\n"
+	.string "cheeks full of Berries!\p"
+	.string "Oh! Speaking of Berries, did you know\n"
+	.string "that Skwovet has the ability Cheek\l"
+	.string "Pouch?\p"
 	.string "It's a really useful ability that\n"
 	.string "restores some of its HP when it eats\l"
 	.string "any Berry.\p"
@@ -369,22 +374,26 @@ Route501_Text_SkwovetGirl1::
 	.string "you one to try out!$"
 
 Route501_Text_SkwovetGirl2::
-# 224 "data/maps/Route501/scripts.pory"
+# 226 "data/maps/Route501/scripts.pory"
 	.string "I hope you and your Pokémon enjoy the\n"
 	.string "Berries!$"
 
+Route501_Text_SkwovetGirl3::
+# 230 "data/maps/Route501/scripts.pory"
+	.string "Skwovet are just too cute!$"
+
 Route501_Text_AdrienIntro::
-# 235 "data/maps/Route501/scripts.pory"
+# 241 "data/maps/Route501/scripts.pory"
 	.string "We've locked eyes! That means it's time\n"
 	.string "for a battle!\p"
 	.string "I'll show you the power of my favorite\n"
 	.string "Pokémon!$"
 
 Route501_Text_AdrienDefeated::
-# 240 "data/maps/Route501/scripts.pory"
+# 246 "data/maps/Route501/scripts.pory"
 	.string "You're so strong!$"
 
 Route102_Text_AdrienPostBattle::
-# 244 "data/maps/Route501/scripts.pory"
+# 250 "data/maps/Route501/scripts.pory"
 	.string "You're really good at this! I hope we\n"
 	.string "can battle again sometime!$"
