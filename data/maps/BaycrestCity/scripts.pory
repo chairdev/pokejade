@@ -1,1 +1,92 @@
-mapscripts BaycrestCity_MapScripts {}
+const OBJ_RIVAL = 1
+
+mapscripts BaycrestCity_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        call(Common_EventScript_SetupRivalGfxId)
+    }
+}
+
+script BaycrestCity_Trigger_Rival1 {
+    lockall
+
+    applymovement(OBJ_EVENT_ID_PLAYER, ApproachRival1)
+    waitmovement(0)
+    applymovement(OBJ_RIVAL, LookLeft)
+    waitmovement(0)
+
+    checkplayergender
+    goto_if_eq(VAR_RESULT, MALE, BaycrestCity_Maya)
+    goto_if_eq(VAR_RESULT, FEMALE, BaycrestCity_Shinji)
+
+    releaseall
+}
+
+script BaycrestCity_Trigger_Rival2 {
+    lockall
+
+    applymovement(OBJ_EVENT_ID_PLAYER, ApproachRival2)
+    waitmovement(0)
+    applymovement(OBJ_RIVAL, LookDown)
+    waitmovement(0)
+
+    checkplayergender
+    goto_if_eq(VAR_RESULT, MALE, BaycrestCity_Maya)
+    goto_if_eq(VAR_RESULT, FEMALE, BaycrestCity_Shinji)
+
+    releaseall
+}
+
+script BaycrestCity_Maya {
+    playbgm(MUS_ENCOUNTER_MAY, 0)
+
+    //buffernumberstring(STR_VAR_1, VAR_0x8009)
+    msgbox(BaycrestCity_Text_Rival1F)
+}
+
+script BaycrestCity_Shinji {
+    playbgm(MUS_ENCOUNTER_BRENDAN, 0)
+
+    //buffernumberstring(STR_VAR_1, VAR_0x8009)
+    msgbox(BaycrestCity_Text_Rival1M)
+}
+
+
+movement ApproachRival1 {
+    walk_up * 4
+    walk_in_place_faster_right
+    
+}
+
+movement ApproachRival2 {
+    walk_up * 2
+}
+
+movement LookLeft {
+    emote_exclamation_mark
+    walk_in_place_faster_left
+}
+
+movement LookDown {
+    emote_exclamation_mark
+    walk_in_place_faster_down
+}
+
+text BaycrestCity_Text_Rival1F { //Wants to see how many Pokémon you caught
+    format("{RIVAL}: Hey, {PLAYER}{KUN}! I've been waiting for you!\p"
+            "I wanted to see how many Pokémon you've caught so far.\p"
+            "I've caught a bunch of Pokémon myself, so I'm sure I've got more than you!\p"
+            "You've caught... {STR_VAR_1} Pokémon, right?"
+    )
+}
+
+text BaycrestCity_Text_Rival1MonF {
+    format("")
+}
+
+text BaycrestCity_Text_Rival1M {
+    format("{RIVAL}: Oh, hey, {PLAYER}{KUN}!\nThere you are!\p"
+            "Have you caught any Pokémon yet?\p"
+            "I sure have!\nLet's see who's caught more!"
+            "Looks like you've caught... {STR_VAR_1} Pokémon, right?"
+    )
+}

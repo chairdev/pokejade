@@ -269,8 +269,8 @@ ReceiveStarter_SanzashiText6::
 	.string "Prof. Sanzashi: You two must first\n"
 	.string "register for the Toshou League at the\l"
 	.string "Pokémon Center.\p"
-	.string "The nearest one is in NAME City, past\n"
-	.string "Route 501.$"
+	.string "The nearest one is in Baycrest City,\n"
+	.string "past Route 501.$"
 
 ReceiveStarter_RivalText3::
 # 131 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
