@@ -73,8 +73,13 @@ script Route501_RivalMaya {
     applymovement(OBJ_EVENT_ID_PLAYER, ExclemationMark)
     applymovement(OBJ_RIVAL, ExclemationMark)
     waitmovement(1)
+    applymovement(OBJ_EVENT_ID_PLAYER, FaceLeft)
+    applymovement(OBJ_RIVAL, FaceUp)
 
     msgbox(RivalText3F)
+
+    applymovement(OBJ_EVENT_ID_PLAYER, FaceRight)
+    applymovement(OBJ_RIVAL, FaceDown)
 
     setflag(FLAG_SYS_POKEMON_GET)
     fadescreen(FADE_TO_BLACK)
@@ -83,13 +88,16 @@ script Route501_RivalMaya {
 	special(ChooseStarter)
 	waitstate
 
-    setvar(VAR_EVERWOOD_TOWN_STATE, 2)
-    
-    fadedefaultbgm
-    releaseall
+    bufferleadmonspeciesname(STR_VAR_1)
+    msgbox(RivalText4F)
 
+    special(HealPlayerParty)
+    setflag(FLAG_ROUTE_501_SAVED_RIVAL)
+    clearflag(FLAG_HIDE_EVERWOOD_TOWN_RESEARCH_LAB_RIVAL)
+    setvar(VAR_ROUTE501_STATE, 1)
+    setvar(VAR_SANZASHI_LAB_STATE, 2)
 
-
+    warp(MAP_EVERWOOD_TOWN_HAWTHORN_RESEARCH_LAB, 6, 5)
 }
 
 movement RivalNoticePlayer {
@@ -128,6 +136,22 @@ movement ExclemationMark {
     emote_exclamation_mark
 }
 
+movement FaceUp {
+    face_up
+}
+
+movement FaceDown {
+    face_down
+}
+
+movement FaceLeft {
+    face_left
+}
+
+movement FaceRight {
+    face_right
+}
+
 text RivalText1F { //female rival
     format("Huh? What the...?\p"
            "Oh! Are you the {PLAYER}{KUN} that just moved in next door?\p"
@@ -153,5 +177,17 @@ text RivalText3F { //ATTACKED BY PIDOVE
            "A wild Pokémon?! This is bad! This is really bad!\p"
            "{PLAYER}{KUN}, we have to use the Poké Balls in that bag to protect ourselves!\p"
            "Grab one and let's battle them!"
+           )
+}
+
+text RivalText4F {
+    format("Whew... That was a close one!\p"
+           "I can't believe we were attacked by wild Pokémon!\p"
+           "Good thing you had {STR_VAR_1} to protect you!\p"
+           "You see, I don't really like Pokémon...\p"
+           "I just wanted a reason to go out and explore the reason.\p"
+           "But I guess I'll have to get used to them if I want to be a Trainer.\p"
+           "...We should probably head back to Professor Sanzashi's lab now.\p"
+           "I'm sure he must be worried about us."
            )
 }

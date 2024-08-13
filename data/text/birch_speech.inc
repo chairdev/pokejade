@@ -30,7 +30,7 @@ gText_Birch_MainSpeech::
 
 gText_Birch_AndYouAre::
 	.string "But before we dive into the excitement,\n"
-	.string "let's get to know a little more about\n"
+	.string "let's get to know a little more about\l"
 	.string "you!$"
 
 gText_Birch_BoyOrGirl::

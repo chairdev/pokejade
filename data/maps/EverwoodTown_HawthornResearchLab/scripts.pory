@@ -1,4 +1,162 @@
-mapscripts EverwoodTown_HawthornResearchLab_MapScripts {}
+const OBJ_RIVAL = 2
+
+//Sanzashi Lab State
+//0: Go to the Research Lab
+//1: Find Rival
+//2: Saved Rival
+//3: Done?
+
+mapscripts EverwoodTown_HawthornResearchLab_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION : EverwoodTown_HawthornResearchLab_MapScript_On_Transition
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_SANZASHI_LAB_STATE, 2: EverwoodTown_HawthornResearchLab_MapScript_ReceiveStarter
+    ]
+}
+
+script EverwoodTown_HawthornResearchLab_MapScript_On_Transition {
+    call(Common_EventScript_SetupRivalGfxId)
+}
+
+script EverwoodTown_HawthornResearchLab_MapScript_ReceiveStarter {
+    lockall 
+
+    applymovement(OBJ_EVENT_ID_PLAYER, ReceiveStarter_FaceUp)
+
+    msgbox(ReceiveStarter_SanzashiText1)
+    waitmessage
+	playfanfare(MUS_OBTAIN_ITEM)
+	waitfanfare
+    msgbox(format("Prof. Sanzashi: By the way, would you like to give it a nickname?"), MSGBOX_YESNO)
+
+    if(var(VAR_RESULT) == 1)
+    {
+        setvar(VAR_0x8004, 0)
+	    call(Common_EventScript_NameReceivedPartyMon)
+    }
+    else
+    {
+        msgbox(format("Prof. Sanzashi: That's fine. I hope you'll take good care of it."))
+    }
+
+    giveitem(ITEM_POKE_BALL, 5)
+    msgbox(ReceiveStarter_SanzashiText2)
+
+    msgbox(ReceiveStarter_SanzashiText3)
+    msgbox(format("You received the Pokédex!"))
+    waitmessage 
+    playfanfare(MUS_OBTAIN_ITEM)
+    waitfanfare
+    msgbox(ReceiveStarter_SanzashiText4)
+    waitmessage
+    msgbox(ReceiveStarter_RivalText1)
+    msgbox(ReceiveStarter_SanzashiText5)
+    msgbox(ReceiveStarter_RivalText2)
+    msgbox(ReceiveStarter_SanzashiText6)
+    applymovement(OBJ_RIVAL, ReceiveStarter_FaceRight)
+    applymovement(OBJ_EVENT_ID_PLAYER, ReceiveStarter_FaceLeft)
+    msgbox(ReceiveStarter_RivalText3)
+
+    applymovement(OBJ_EVENT_ID_PLAYER, ReceiveStarter_FaceDown)
+    applymovement(OBJ_RIVAL, ReceiveStarter_RivalLeave)
+    waitmovement(0)
+    hideobjectat(OBJ_RIVAL, MAP_EVERWOOD_TOWN_HAWTHORN_RESEARCH_LAB)
+
+    setflag(FLAG_HIDE_EVERWOOD_TOWN_RESEARCH_LAB_RIVAL)
+    setflag(FLAG_SYS_POKEDEX_GET)
+	special(SetUnlockedPokedexFlags)
+    clearflag(FLAG_HIDE_EVERWOOD_TOWN_MOM_OUTSIDE)
+    setvar (VAR_CABLE_CLUB_TUTORIAL_STATE, 1)
+    setvar(VAR_EVERWOOD_TOWN_STATE, 3)
+    setvar(VAR_SANZASHI_LAB_STATE, 3)
+    
+
+    releaseall
+}
+
+text ReceiveStarter_SanzashiText1 { //After they fought off the wild Pokémon
+    format( "Prof. Sanzashi: ...\p"
+            "...I see. So that's what happened.\p"
+            "I'm glad you're both safe.\p"
+            "By the way, {PLAYER}{KUN}, may I see the Pokémon you chose?\p"
+            "I'd like to see how it's doing.\p"
+            "Ah, I see. You chose {STR_VAR_1}.\p"
+            "It seems to have taken a liking to you.\p"
+            "I hope you'll take good care of it.\p"
+            "You received the {STR_VAR_1}!"
+            )
+}
+
+text ReceiveStarter_SanzashiText2 {
+    "Prof. Sanzashi: These are Poké Balls.\nThey're used to catch wild Pokémon.\p"
+    "Please, take these with you."
+}
+
+text ReceiveStarter_SanzashiText3 {
+    format( "Prof. Sanzashi: Now, there's one more thing.\p"
+            )
+}
+
+text ReceiveStarter_SanzashiText4 {
+    format( "Prof. Sanzashi: This is a Pokédex.\nIt's a high-tech encyclopedia that records data on every Pokémon you encounter.\p"
+            "As you travel through Toshou, I'd like you to help me with my research by filling it with information on the various Pokémon species that inhabit this region.\p"
+            
+            "You two have already proven that you're ready to take on the responsibilities of a Pokémon Trainer.\p"
+            "I'm sure that if you try your best, you'll both become great Trainers.\p"
+            "I wish you both the best of luck on your journey!"
+            )
+}
+
+text ReceiveStarter_RivalText1 {
+    format("{RIVAL}: (He says that, but I didn't really intend to become a Trainer...)"
+           )
+}
+
+text ReceiveStarter_SanzashiText5 {
+    format("Prof. Sanzashi: Hm? Did you say something, {RIVAL}?\p"
+           )
+}
+
+text ReceiveStarter_RivalText2 {
+    format("{RIVAL}: No, nothing!\nLet's go do our best, {PLAYER}{KUN}!\p"
+            "Ahaha...ha..."
+           )
+}
+
+text ReceiveStarter_SanzashiText6 {
+    format("Prof. Sanzashi: You two must first register for the Toshou League at the Pokémon Center.\p"
+            "The nearest one is in NAME City, past Route 501."
+           )
+}
+
+text ReceiveStarter_RivalText3 {
+    format("{RIVAL}: I'll be waiting for you at the Pokémon Center, {PLAYER}{KUN}!\p"
+            "See you!"
+           )
+}
+
+movement ReceiveStarter_FaceUp {
+    face_up
+}
+
+movement ReceiveStarter_FaceDown {
+    face_down
+}
+
+movement ReceiveStarter_FaceLeft {
+    face_left
+}
+
+movement ReceiveStarter_FaceRight {
+    face_right
+}
+
+movement ReceiveStarter_RivalLeave {
+    walk_down * 5
+}
+
+
+
+
 
 script EverwoodTown_HawthornResearchLab_EventScript_Sanzashi {
     lockall
@@ -30,7 +188,7 @@ script EverwoodTown_HawthornResearchLab_EventScript_Sanzashi {
 }
 
 text MeetSanzashiText1 {
-    format("Ah, there you are {PLAYER}{KUN}?\l"
+    format("Prof. Sanzashi: Ah, there you are!\nYou must be {PLAYER}{KUN}.\l"
            "I've been waiting for you!\p"
            "Where's {RIVAL}?\p"
            "... What do you mean you don't know who that is?\p"
@@ -53,7 +211,7 @@ text MeetSanzashiText2B {
 }
 
 text GoLookForRivalText1 {
-   format("Please, {PLAYER}{KUN}, go look for {RIVAL}!\p"
+   format("Prof. Sanzashi: Please, {PLAYER}{KUN}, go look for {RIVAL}!\p"
            "The bag with the Poké Balls is very important!"
            )
 }

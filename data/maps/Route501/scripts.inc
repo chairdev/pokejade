@@ -102,125 +102,167 @@ Route501_RivalMaya::
 	applymovement 1, ExclemationMark
 # 75 "data/maps/Route501/scripts.pory"
 	waitmovement 1
+# 76 "data/maps/Route501/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, FaceLeft
 # 77 "data/maps/Route501/scripts.pory"
-	msgbox RivalText3F
+	applymovement 1, FaceUp
 # 79 "data/maps/Route501/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
-# 80 "data/maps/Route501/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	msgbox RivalText3F
 # 81 "data/maps/Route501/scripts.pory"
-	removeobject 3
+	applymovement OBJ_EVENT_ID_PLAYER, FaceRight
 # 82 "data/maps/Route501/scripts.pory"
-	removeobject 4
-# 83 "data/maps/Route501/scripts.pory"
-	special ChooseStarter
+	applymovement 1, FaceDown
 # 84 "data/maps/Route501/scripts.pory"
-	waitstate
+	setflag FLAG_SYS_POKEMON_GET
+# 85 "data/maps/Route501/scripts.pory"
+	fadescreen FADE_TO_BLACK
 # 86 "data/maps/Route501/scripts.pory"
-	setvar VAR_EVERWOOD_TOWN_STATE, 2
+	removeobject 3
+# 87 "data/maps/Route501/scripts.pory"
+	removeobject 4
 # 88 "data/maps/Route501/scripts.pory"
-	fadedefaultbgm
+	special ChooseStarter
 # 89 "data/maps/Route501/scripts.pory"
-	releaseall
+	waitstate
+# 91 "data/maps/Route501/scripts.pory"
+	bufferleadmonspeciesname STR_VAR_1
+# 92 "data/maps/Route501/scripts.pory"
+	msgbox RivalText4F
+# 94 "data/maps/Route501/scripts.pory"
+	special HealPlayerParty
+# 95 "data/maps/Route501/scripts.pory"
+	setflag FLAG_ROUTE_501_SAVED_RIVAL
+# 96 "data/maps/Route501/scripts.pory"
+	clearflag FLAG_HIDE_EVERWOOD_TOWN_RESEARCH_LAB_RIVAL
+# 97 "data/maps/Route501/scripts.pory"
+	setvar VAR_ROUTE501_STATE, 1
+# 98 "data/maps/Route501/scripts.pory"
+	setvar VAR_SANZASHI_LAB_STATE, 2
+# 100 "data/maps/Route501/scripts.pory"
+	warp MAP_EVERWOOD_TOWN_HAWTHORN_RESEARCH_LAB, 6, 5
 	return
 
 
-# 95 "data/maps/Route501/scripts.pory"
+# 103 "data/maps/Route501/scripts.pory"
 RivalNoticePlayer:
-# 96 "data/maps/Route501/scripts.pory"
+# 104 "data/maps/Route501/scripts.pory"
 	emote_exclamation_mark
-# 97 "data/maps/Route501/scripts.pory"
+# 105 "data/maps/Route501/scripts.pory"
 	face_left
 	step_end
 
-# 100 "data/maps/Route501/scripts.pory"
+# 108 "data/maps/Route501/scripts.pory"
 RivalLookAround:
-# 101 "data/maps/Route501/scripts.pory"
+# 109 "data/maps/Route501/scripts.pory"
 	walk_in_place_up
-# 102 "data/maps/Route501/scripts.pory"
+# 110 "data/maps/Route501/scripts.pory"
 	walk_in_place_down
-# 103 "data/maps/Route501/scripts.pory"
+# 111 "data/maps/Route501/scripts.pory"
 	walk_in_place_right
-# 104 "data/maps/Route501/scripts.pory"
+# 112 "data/maps/Route501/scripts.pory"
 	face_right
-# 105 "data/maps/Route501/scripts.pory"
+# 113 "data/maps/Route501/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 108 "data/maps/Route501/scripts.pory"
+# 116 "data/maps/Route501/scripts.pory"
 RivalApproachBag:
-# 109 "data/maps/Route501/scripts.pory"
+# 117 "data/maps/Route501/scripts.pory"
 	walk_up
-# 110 "data/maps/Route501/scripts.pory"
+# 118 "data/maps/Route501/scripts.pory"
 	walk_right
-# 110 "data/maps/Route501/scripts.pory"
+# 118 "data/maps/Route501/scripts.pory"
 	walk_right
-# 110 "data/maps/Route501/scripts.pory"
+# 118 "data/maps/Route501/scripts.pory"
 	walk_right
-# 110 "data/maps/Route501/scripts.pory"
+# 118 "data/maps/Route501/scripts.pory"
 	walk_right
-# 111 "data/maps/Route501/scripts.pory"
+# 119 "data/maps/Route501/scripts.pory"
 	face_up
 	step_end
 
-# 114 "data/maps/Route501/scripts.pory"
+# 122 "data/maps/Route501/scripts.pory"
 PlayerApproachBag:
-# 115 "data/maps/Route501/scripts.pory"
+# 123 "data/maps/Route501/scripts.pory"
 	walk_right
-# 115 "data/maps/Route501/scripts.pory"
+# 123 "data/maps/Route501/scripts.pory"
 	walk_right
-# 115 "data/maps/Route501/scripts.pory"
+# 123 "data/maps/Route501/scripts.pory"
 	walk_right
-# 115 "data/maps/Route501/scripts.pory"
+# 123 "data/maps/Route501/scripts.pory"
 	walk_right
-# 116 "data/maps/Route501/scripts.pory"
+# 124 "data/maps/Route501/scripts.pory"
 	face_right
 	step_end
 
-# 119 "data/maps/Route501/scripts.pory"
-PidoveApproachPlayer:
-# 120 "data/maps/Route501/scripts.pory"
-	walk_faster_right
-# 120 "data/maps/Route501/scripts.pory"
-	walk_faster_right
-# 120 "data/maps/Route501/scripts.pory"
-	walk_faster_right
-# 120 "data/maps/Route501/scripts.pory"
-	walk_faster_right
-# 120 "data/maps/Route501/scripts.pory"
-	walk_faster_right
-# 120 "data/maps/Route501/scripts.pory"
-	walk_faster_right
-# 120 "data/maps/Route501/scripts.pory"
-	walk_faster_right
-# 120 "data/maps/Route501/scripts.pory"
-	walk_faster_right
-# 120 "data/maps/Route501/scripts.pory"
-	walk_faster_right
-# 120 "data/maps/Route501/scripts.pory"
-	walk_faster_right
-	step_end
-
-# 123 "data/maps/Route501/scripts.pory"
-PidoveApprachRival:
-# 124 "data/maps/Route501/scripts.pory"
-	walk_faster_down
-# 124 "data/maps/Route501/scripts.pory"
-	walk_faster_down
-# 124 "data/maps/Route501/scripts.pory"
-	walk_faster_down
-# 124 "data/maps/Route501/scripts.pory"
-	walk_faster_down
-# 124 "data/maps/Route501/scripts.pory"
-	walk_faster_down
-# 124 "data/maps/Route501/scripts.pory"
-	walk_faster_down
-	step_end
-
 # 127 "data/maps/Route501/scripts.pory"
-ExclemationMark:
+PidoveApproachPlayer:
 # 128 "data/maps/Route501/scripts.pory"
+	walk_faster_right
+# 128 "data/maps/Route501/scripts.pory"
+	walk_faster_right
+# 128 "data/maps/Route501/scripts.pory"
+	walk_faster_right
+# 128 "data/maps/Route501/scripts.pory"
+	walk_faster_right
+# 128 "data/maps/Route501/scripts.pory"
+	walk_faster_right
+# 128 "data/maps/Route501/scripts.pory"
+	walk_faster_right
+# 128 "data/maps/Route501/scripts.pory"
+	walk_faster_right
+# 128 "data/maps/Route501/scripts.pory"
+	walk_faster_right
+# 128 "data/maps/Route501/scripts.pory"
+	walk_faster_right
+# 128 "data/maps/Route501/scripts.pory"
+	walk_faster_right
+	step_end
+
+# 131 "data/maps/Route501/scripts.pory"
+PidoveApprachRival:
+# 132 "data/maps/Route501/scripts.pory"
+	walk_faster_down
+# 132 "data/maps/Route501/scripts.pory"
+	walk_faster_down
+# 132 "data/maps/Route501/scripts.pory"
+	walk_faster_down
+# 132 "data/maps/Route501/scripts.pory"
+	walk_faster_down
+# 132 "data/maps/Route501/scripts.pory"
+	walk_faster_down
+# 132 "data/maps/Route501/scripts.pory"
+	walk_faster_down
+	step_end
+
+# 135 "data/maps/Route501/scripts.pory"
+ExclemationMark:
+# 136 "data/maps/Route501/scripts.pory"
 	emote_exclamation_mark
+	step_end
+
+# 139 "data/maps/Route501/scripts.pory"
+FaceUp:
+# 140 "data/maps/Route501/scripts.pory"
+	face_up
+	step_end
+
+# 143 "data/maps/Route501/scripts.pory"
+FaceDown:
+# 144 "data/maps/Route501/scripts.pory"
+	face_down
+	step_end
+
+# 147 "data/maps/Route501/scripts.pory"
+FaceLeft:
+# 148 "data/maps/Route501/scripts.pory"
+	face_left
+	step_end
+
+# 151 "data/maps/Route501/scripts.pory"
+FaceRight:
+# 152 "data/maps/Route501/scripts.pory"
+	face_right
 	step_end
 
 Route501_RivalMaya_Text_0:
@@ -228,7 +270,7 @@ Route501_RivalMaya_Text_0:
 	.string "Oh, there it is!$"
 
 RivalText1F::
-# 131 "data/maps/Route501/scripts.pory"
+# 155 "data/maps/Route501/scripts.pory"
 	.string "Huh? What the...?\p"
 	.string "Oh! Are you the {PLAYER}{KUN} that just\n"
 	.string "moved in next door?\p"
@@ -246,7 +288,7 @@ RivalText1F::
 	.string "Don't tell me I dropped it somewhere...$"
 
 RivalText2F::
-# 144 "data/maps/Route501/scripts.pory"
+# 168 "data/maps/Route501/scripts.pory"
 	.string "I really don't know what I would've done\n"
 	.string "if I lost it...\p"
 	.string "The professor would've been so mad at\n"
@@ -254,10 +296,26 @@ RivalText2F::
 	.string "$"
 
 RivalText3F::
-# 151 "data/maps/Route501/scripts.pory"
+# 175 "data/maps/Route501/scripts.pory"
 	.string "Uwaaah! Wha... What's going on?!\p"
 	.string "A wild Pokémon?! This is bad! This is\n"
 	.string "really bad!\p"
 	.string "{PLAYER}{KUN}, we have to use the Poké\n"
 	.string "Balls in that bag to protect ourselves!\p"
 	.string "Grab one and let's battle them!$"
+
+RivalText4F::
+# 183 "data/maps/Route501/scripts.pory"
+	.string "Whew... That was a close one!\p"
+	.string "I can't believe we were attacked by wild\n"
+	.string "Pokémon!\p"
+	.string "Good thing you had {STR_VAR_1} to\n"
+	.string "protect you!\p"
+	.string "You see, I don't really like Pokémon...\p"
+	.string "I just wanted a reason to go out and\n"
+	.string "explore the reason.\p"
+	.string "But I guess I'll have to get used to\n"
+	.string "them if I want to be a Trainer.\p"
+	.string "...We should probably head back to\n"
+	.string "Professor Sanzashi's lab now.\p"
+	.string "I'm sure he must be worried about us.$"
