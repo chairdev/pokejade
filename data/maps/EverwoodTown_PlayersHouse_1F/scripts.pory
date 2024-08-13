@@ -40,13 +40,13 @@ text MeetMomText1 {
 movement MomApproachPlayer1 {
     walk_up
     walk_right * 2
-    face_up
+    walk_in_place_faster_up
 }
 
 movement MomMoveBack {
     walk_left * 2
     walk_down
-    face_right
+    walk_in_place_faster_right
 }
 
 script EverwoodTown_PlayersHouse_1F_EventScript_Mom {

@@ -61,25 +61,25 @@ movement PlayerMoveDown {
 movement FatManApproachPlayer1 {
     walk_left * 2
     walk_up * 2
-    face_up
+    walk_in_place_faster_up
 }
 
 movement FatManApproachPlayer2 {
     walk_left
     walk_up * 2
-    face_up
+    walk_in_place_faster_up
 }
 
 movement FatManMoveBack1 {
     walk_down * 2
     walk_right * 2
-    face_down
+    walk_in_place_faster_down
 }
 
 movement FatManMoveBack2 {
     walk_down * 2
     walk_right
-    face_down
+    walk_in_place_faster_down
 }
 
 script EverwoodTown_Trigger_GoodbyeMom1 {
@@ -87,6 +87,7 @@ script EverwoodTown_Trigger_GoodbyeMom1 {
     lockall
 
     msgbox(format("{PLAYER}!"))
+    closemessage
 
     applymovement(OBJ_EVENT_ID_PLAYER, PlayerApproachMom1)
     waitmovement(0)
@@ -101,6 +102,7 @@ script EverwoodTown_Trigger_GoodbyeMom2 {
     lockall
 
     msgbox(format("{PLAYER}!"))
+    closemessage
 
     applymovement(OBJ_EVENT_ID_PLAYER, PlayerApproachMom2)
     waitmovement(0)
@@ -115,6 +117,7 @@ script EverwoodTown_Trigger_GoodbyeMom3 {
     lockall
 
     msgbox(format("{PLAYER}!"))
+    closemessage
 
     applymovement(OBJ_EVENT_ID_PLAYER, PlayerApproachMom3)
     waitmovement(0)
@@ -129,6 +132,7 @@ script EverwoodTown_Trigger_GoodbyeMom4 {
     lockall
 
     msgbox(format("{PLAYER}!"))
+    closemessage
 
     applymovement(OBJ_EVENT_ID_PLAYER, PlayerApproachMom4)
     waitmovement(0)
@@ -144,9 +148,17 @@ script EverwoodTown_GoodbyeMom {
     msgbox(format("You put on the Running Shoes!"))
 	waitfanfare
     msgbox(GoodbyeMomText2)
+    closemessage
 
-    applymovement(OBJ_EVENT_ID_PLAYER, MomGoInside)
+    applymovement(OBJ_MOM, MomGoToDoor)
+    waitmovement(0)
+    opendoor(14, 8)
+	waitdooranim
+    applymovement(OBJ_MOM, MomGoInside)
+    waitmovement(0)
     hideobjectat(OBJ_MOM, MAP_EVERWOOD_TOWN)
+    closedoor(14, 8)
+	waitdooranim
 
     setflag(FLAG_RECEIVED_RUNNING_SHOES)
     setflag(FLAG_SYS_B_DASH)
@@ -155,29 +167,33 @@ script EverwoodTown_GoodbyeMom {
 }
 
 movement PlayerApproachMom1 {
-    walk_up
+    walk_up * 2
     walk_right * 5
-    face_up
+    walk_in_place_faster_up
 }
 
 movement PlayerApproachMom2 {
-    walk_up
+    walk_up * 2
     walk_right * 4
-    face_up
+    walk_in_place_faster_up
 }
 
 movement PlayerApproachMom3 {
-    walk_up
+    walk_up * 2
     walk_right * 3
-    face_up
+    walk_in_place_faster_up
 }
 
 movement PlayerApproachMom4 {
-    walk_up
+    walk_up * 2
     walk_right * 2
-    face_up
+    walk_in_place_faster_up
 }
 
+movement MomGoToDoor {
+    walk_right
+    walk_in_place_faster_up
+}
 
 movement MomGoInside {
     walk_up

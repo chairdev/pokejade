@@ -106,86 +106,86 @@ EverwoodTown_HawthornResearchLab_MapScript_ReceiveStarter_2:
 	goto EverwoodTown_HawthornResearchLab_MapScript_ReceiveStarter_1
 
 
-# 138 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 137 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 ReceiveStarter_FaceUp:
-# 139 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
-	face_up
+# 138 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+	walk_in_place_faster_up
 	step_end
 
-# 142 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 141 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 ReceiveStarter_FaceDown:
-# 143 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
-	face_down
+# 142 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+	walk_in_place_faster_down
 	step_end
 
-# 146 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 145 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 ReceiveStarter_FaceLeft:
-# 147 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
-	face_left
+# 146 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+	walk_in_place_faster_left
 	step_end
 
-# 150 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 149 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 ReceiveStarter_FaceRight:
-# 151 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
-	face_right
+# 150 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+	walk_in_place_faster_right
 	step_end
 
-# 154 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 153 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 ReceiveStarter_RivalLeave:
-# 155 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 154 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	walk_down
-# 155 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 154 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	walk_down
-# 155 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 154 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	walk_down
-# 155 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 154 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	walk_down
-# 155 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 154 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	walk_down
 	step_end
 
 EverwoodTown_HawthornResearchLab_EventScript_Sanzashi::
-# 163 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 162 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	lockall
-# 164 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 163 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	faceplayer
-# 166 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 165 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	switch VAR_SANZASHI_LAB_STATE
-# 168 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 167 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	case 0, EverwoodTown_HawthornResearchLab_EventScript_Sanzashi_3
-# 183 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 182 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	case 1, EverwoodTown_HawthornResearchLab_EventScript_Sanzashi_4
 EverwoodTown_HawthornResearchLab_EventScript_Sanzashi_1:
-# 187 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 186 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	closemessage
-# 188 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 187 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	releaseall
 	return
 
 EverwoodTown_HawthornResearchLab_EventScript_Sanzashi_3:
-# 169 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 168 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	msgbox MeetSanzashiText1
-# 171 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 170 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	checkplayergender
-# 172 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 171 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	compare VAR_RESULT, MALE
 	goto_if_eq EverwoodTown_HawthornResearchLab_EventScript_Sanzashi_6
-# 178 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 177 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	msgbox MeetSanzashiText2B
 EverwoodTown_HawthornResearchLab_EventScript_Sanzashi_5:
-# 181 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 180 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	setvar VAR_SANZASHI_LAB_STATE, 1
-# 182 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 181 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	setvar VAR_EVERWOOD_TOWN_STATE, 2
 	goto EverwoodTown_HawthornResearchLab_EventScript_Sanzashi_1
 
 EverwoodTown_HawthornResearchLab_EventScript_Sanzashi_4:
-# 184 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 183 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	msgbox GoLookForRivalText1
 	goto EverwoodTown_HawthornResearchLab_EventScript_Sanzashi_1
 
 EverwoodTown_HawthornResearchLab_EventScript_Sanzashi_6:
-# 174 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 173 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	msgbox MeetSanzashiText2A
 	goto EverwoodTown_HawthornResearchLab_EventScript_Sanzashi_5
 
@@ -212,24 +212,24 @@ ReceiveStarter_SanzashiText1::
 	.string "By the way, {PLAYER}{KUN}, may I see the\n"
 	.string "Pokémon you chose?\p"
 	.string "I'd like to see how it's doing.\p"
-	.string "Ah, I see. You chose {STR_VAR_1}.\p"
+	.string "Ah, I see. You chose {STR_VAR_1}.\n"
 	.string "It seems to have taken a liking to you.\p"
 	.string "I hope you'll take good care of it.\p"
 	.string "You received the {STR_VAR_1}!$"
 
 ReceiveStarter_SanzashiText2::
-# 90 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 89 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	.string "Prof. Sanzashi: These are Poké Balls.\nThey're used to catch wild Pokémon.\p"
 	.string "Please, take these with you.$"
 
 ReceiveStarter_SanzashiText3::
-# 95 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 94 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	.string "Prof. Sanzashi: Now, there's one more\n"
 	.string "thing.\p"
 	.string "$"
 
 ReceiveStarter_SanzashiText4::
-# 100 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 99 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	.string "Prof. Sanzashi: This is a Pokédex.\n"
 	.string "It's a high-tech encyclopedia that\l"
 	.string "records data on every Pokémon you\l"
@@ -248,24 +248,24 @@ ReceiveStarter_SanzashiText4::
 	.string "journey!$"
 
 ReceiveStarter_RivalText1::
-# 110 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 109 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	.string "{RIVAL}: (He says that, but I didn't\n"
 	.string "really intend to become a Trainer...)$"
 
 ReceiveStarter_SanzashiText5::
-# 115 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 114 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	.string "Prof. Sanzashi: Hm? Did you say\n"
 	.string "something, {RIVAL}?\p"
 	.string "$"
 
 ReceiveStarter_RivalText2::
-# 120 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 119 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	.string "{RIVAL}: No, nothing!\n"
 	.string "Let's go do our best, {PLAYER}{KUN}!\p"
 	.string "Ahaha...ha...$"
 
 ReceiveStarter_SanzashiText6::
-# 126 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 125 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	.string "Prof. Sanzashi: You two must first\n"
 	.string "register for the Toshou League at the\l"
 	.string "Pokémon Center.\p"
@@ -273,13 +273,13 @@ ReceiveStarter_SanzashiText6::
 	.string "Route 501.$"
 
 ReceiveStarter_RivalText3::
-# 132 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 131 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	.string "{RIVAL}: I'll be waiting for you at\n"
 	.string "the Pokémon Center, {PLAYER}{KUN}!\p"
 	.string "See you!$"
 
 MeetSanzashiText1::
-# 191 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 190 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	.string "Prof. Sanzashi: Ah, there you are!\n"
 	.string "You must be {PLAYER}{KUN}.\l"
 	.string "I've been waiting for you!\p"
@@ -290,7 +290,7 @@ MeetSanzashiText1::
 	.string "you the bag with the Poké Balls!$"
 
 MeetSanzashiText2A::
-# 200 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 199 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	.string "She said she couldn't sit still and wait\n"
 	.string "for you to arrive and took off.\p"
 	.string "{PLAYER}{KUN}, I'm sorry to ask this of you,\n"
@@ -298,15 +298,15 @@ MeetSanzashiText2A::
 	.string "I'm sure she's just around the corner.$"
 
 MeetSanzashiText2B::
-# 207 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 206 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	.string "He said he couldn't sit still and wait\n"
 	.string "for you to arrive and took off.\p"
-	.string "{PLAYER}{KUN}I'm sorry to ask this of you,\n"
+	.string "{PLAYER}{KUN}, I'm sorry to ask this of you,\n"
 	.string "but could you go find him for me?\p"
 	.string "I'm sure he's just around the corner.$"
 
 GoLookForRivalText1::
-# 214 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
+# 213 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	.string "Prof. Sanzashi: Please, {PLAYER}{KUN}, go\n"
 	.string "look for {RIVAL}!\p"
 	.string "The bag with the Poké Balls is very\n"

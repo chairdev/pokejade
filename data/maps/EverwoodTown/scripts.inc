@@ -67,7 +67,7 @@ FatManApproachPlayer1:
 # 63 "data/maps/EverwoodTown/scripts.pory"
 	walk_up
 # 64 "data/maps/EverwoodTown/scripts.pory"
-	face_up
+	walk_in_place_faster_up
 	step_end
 
 # 67 "data/maps/EverwoodTown/scripts.pory"
@@ -79,7 +79,7 @@ FatManApproachPlayer2:
 # 69 "data/maps/EverwoodTown/scripts.pory"
 	walk_up
 # 70 "data/maps/EverwoodTown/scripts.pory"
-	face_up
+	walk_in_place_faster_up
 	step_end
 
 # 73 "data/maps/EverwoodTown/scripts.pory"
@@ -93,7 +93,7 @@ FatManMoveBack1:
 # 75 "data/maps/EverwoodTown/scripts.pory"
 	walk_right
 # 76 "data/maps/EverwoodTown/scripts.pory"
-	face_down
+	walk_in_place_faster_down
 	step_end
 
 # 79 "data/maps/EverwoodTown/scripts.pory"
@@ -105,7 +105,7 @@ FatManMoveBack2:
 # 81 "data/maps/EverwoodTown/scripts.pory"
 	walk_right
 # 82 "data/maps/EverwoodTown/scripts.pory"
-	face_down
+	walk_in_place_faster_down
 	step_end
 
 EverwoodTown_Trigger_GoodbyeMom1::
@@ -113,127 +113,119 @@ EverwoodTown_Trigger_GoodbyeMom1::
 	lockall
 # 89 "data/maps/EverwoodTown/scripts.pory"
 	msgbox EverwoodTown_Trigger_GoodbyeMom1_Text_0
-# 91 "data/maps/EverwoodTown/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, PlayerApproachMom1
+# 90 "data/maps/EverwoodTown/scripts.pory"
+	closemessage
 # 92 "data/maps/EverwoodTown/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, PlayerApproachMom1
+# 93 "data/maps/EverwoodTown/scripts.pory"
 	waitmovement 0
-# 94 "data/maps/EverwoodTown/scripts.pory"
+# 95 "data/maps/EverwoodTown/scripts.pory"
 	call EverwoodTown_GoodbyeMom
-# 96 "data/maps/EverwoodTown/scripts.pory"
+# 97 "data/maps/EverwoodTown/scripts.pory"
 	releaseall
 	return
 
 
 EverwoodTown_Trigger_GoodbyeMom2::
-# 101 "data/maps/EverwoodTown/scripts.pory"
+# 102 "data/maps/EverwoodTown/scripts.pory"
 	lockall
-# 103 "data/maps/EverwoodTown/scripts.pory"
+# 104 "data/maps/EverwoodTown/scripts.pory"
 	msgbox EverwoodTown_Trigger_GoodbyeMom1_Text_0
 # 105 "data/maps/EverwoodTown/scripts.pory"
+	closemessage
+# 107 "data/maps/EverwoodTown/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, PlayerApproachMom2
-# 106 "data/maps/EverwoodTown/scripts.pory"
-	waitmovement 0
 # 108 "data/maps/EverwoodTown/scripts.pory"
-	call EverwoodTown_GoodbyeMom
+	waitmovement 0
 # 110 "data/maps/EverwoodTown/scripts.pory"
+	call EverwoodTown_GoodbyeMom
+# 112 "data/maps/EverwoodTown/scripts.pory"
 	releaseall
 	return
 
 
 EverwoodTown_Trigger_GoodbyeMom3::
-# 115 "data/maps/EverwoodTown/scripts.pory"
-	lockall
 # 117 "data/maps/EverwoodTown/scripts.pory"
-	msgbox EverwoodTown_Trigger_GoodbyeMom1_Text_0
+	lockall
 # 119 "data/maps/EverwoodTown/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, PlayerApproachMom3
+	msgbox EverwoodTown_Trigger_GoodbyeMom1_Text_0
 # 120 "data/maps/EverwoodTown/scripts.pory"
-	waitmovement 0
+	closemessage
 # 122 "data/maps/EverwoodTown/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, PlayerApproachMom3
+# 123 "data/maps/EverwoodTown/scripts.pory"
+	waitmovement 0
+# 125 "data/maps/EverwoodTown/scripts.pory"
 	call EverwoodTown_GoodbyeMom
-# 124 "data/maps/EverwoodTown/scripts.pory"
+# 127 "data/maps/EverwoodTown/scripts.pory"
 	releaseall
 	return
 
 
 EverwoodTown_Trigger_GoodbyeMom4::
-# 129 "data/maps/EverwoodTown/scripts.pory"
+# 132 "data/maps/EverwoodTown/scripts.pory"
 	lockall
-# 131 "data/maps/EverwoodTown/scripts.pory"
-	msgbox EverwoodTown_Trigger_GoodbyeMom1_Text_0
-# 133 "data/maps/EverwoodTown/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, PlayerApproachMom4
 # 134 "data/maps/EverwoodTown/scripts.pory"
-	waitmovement 0
-# 136 "data/maps/EverwoodTown/scripts.pory"
-	call EverwoodTown_GoodbyeMom
+	msgbox EverwoodTown_Trigger_GoodbyeMom1_Text_0
+# 135 "data/maps/EverwoodTown/scripts.pory"
+	closemessage
+# 137 "data/maps/EverwoodTown/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, PlayerApproachMom4
 # 138 "data/maps/EverwoodTown/scripts.pory"
+	waitmovement 0
+# 140 "data/maps/EverwoodTown/scripts.pory"
+	call EverwoodTown_GoodbyeMom
+# 142 "data/maps/EverwoodTown/scripts.pory"
 	releaseall
 	return
 
 
 EverwoodTown_GoodbyeMom::
-# 142 "data/maps/EverwoodTown/scripts.pory"
-	msgbox GoodbyeMomText1
-# 143 "data/maps/EverwoodTown/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 144 "data/maps/EverwoodTown/scripts.pory"
-	msgbox EverwoodTown_GoodbyeMom_Text_0
-# 145 "data/maps/EverwoodTown/scripts.pory"
-	waitfanfare
 # 146 "data/maps/EverwoodTown/scripts.pory"
-	msgbox GoodbyeMomText2
+	msgbox GoodbyeMomText1
+# 147 "data/maps/EverwoodTown/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
 # 148 "data/maps/EverwoodTown/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MomGoInside
+	msgbox EverwoodTown_GoodbyeMom_Text_0
 # 149 "data/maps/EverwoodTown/scripts.pory"
-	hideobjectat 2, MAP_EVERWOOD_TOWN
+	waitfanfare
+# 150 "data/maps/EverwoodTown/scripts.pory"
+	msgbox GoodbyeMomText2
 # 151 "data/maps/EverwoodTown/scripts.pory"
-	setflag FLAG_RECEIVED_RUNNING_SHOES
-# 152 "data/maps/EverwoodTown/scripts.pory"
-	setflag FLAG_SYS_B_DASH
+	closemessage
 # 153 "data/maps/EverwoodTown/scripts.pory"
-	setflag FLAG_HIDE_EVERWOOD_TOWN_MOM_OUTSIDE
+	applymovement 2, MomGoToDoor
 # 154 "data/maps/EverwoodTown/scripts.pory"
+	waitmovement 0
+# 155 "data/maps/EverwoodTown/scripts.pory"
+	opendoor 14, 8
+# 156 "data/maps/EverwoodTown/scripts.pory"
+	waitdooranim
+# 157 "data/maps/EverwoodTown/scripts.pory"
+	applymovement 2, MomGoInside
+# 158 "data/maps/EverwoodTown/scripts.pory"
+	waitmovement 0
+# 159 "data/maps/EverwoodTown/scripts.pory"
+	hideobjectat 2, MAP_EVERWOOD_TOWN
+# 160 "data/maps/EverwoodTown/scripts.pory"
+	closedoor 14, 8
+# 161 "data/maps/EverwoodTown/scripts.pory"
+	waitdooranim
+# 163 "data/maps/EverwoodTown/scripts.pory"
+	setflag FLAG_RECEIVED_RUNNING_SHOES
+# 164 "data/maps/EverwoodTown/scripts.pory"
+	setflag FLAG_SYS_B_DASH
+# 165 "data/maps/EverwoodTown/scripts.pory"
+	setflag FLAG_HIDE_EVERWOOD_TOWN_MOM_OUTSIDE
+# 166 "data/maps/EverwoodTown/scripts.pory"
 	setvar VAR_EVERWOOD_TOWN_STATE, 4
 	return
 
 
-# 157 "data/maps/EverwoodTown/scripts.pory"
-PlayerApproachMom1:
-# 158 "data/maps/EverwoodTown/scripts.pory"
-	walk_up
-# 159 "data/maps/EverwoodTown/scripts.pory"
-	walk_right
-# 159 "data/maps/EverwoodTown/scripts.pory"
-	walk_right
-# 159 "data/maps/EverwoodTown/scripts.pory"
-	walk_right
-# 159 "data/maps/EverwoodTown/scripts.pory"
-	walk_right
-# 159 "data/maps/EverwoodTown/scripts.pory"
-	walk_right
-# 160 "data/maps/EverwoodTown/scripts.pory"
-	face_up
-	step_end
-
-# 163 "data/maps/EverwoodTown/scripts.pory"
-PlayerApproachMom2:
-# 164 "data/maps/EverwoodTown/scripts.pory"
-	walk_up
-# 165 "data/maps/EverwoodTown/scripts.pory"
-	walk_right
-# 165 "data/maps/EverwoodTown/scripts.pory"
-	walk_right
-# 165 "data/maps/EverwoodTown/scripts.pory"
-	walk_right
-# 165 "data/maps/EverwoodTown/scripts.pory"
-	walk_right
-# 166 "data/maps/EverwoodTown/scripts.pory"
-	face_up
-	step_end
-
 # 169 "data/maps/EverwoodTown/scripts.pory"
-PlayerApproachMom3:
+PlayerApproachMom1:
+# 170 "data/maps/EverwoodTown/scripts.pory"
+	walk_up
 # 170 "data/maps/EverwoodTown/scripts.pory"
 	walk_up
 # 171 "data/maps/EverwoodTown/scripts.pory"
@@ -242,25 +234,73 @@ PlayerApproachMom3:
 	walk_right
 # 171 "data/maps/EverwoodTown/scripts.pory"
 	walk_right
+# 171 "data/maps/EverwoodTown/scripts.pory"
+	walk_right
+# 171 "data/maps/EverwoodTown/scripts.pory"
+	walk_right
 # 172 "data/maps/EverwoodTown/scripts.pory"
-	face_up
+	walk_in_place_faster_up
 	step_end
 
 # 175 "data/maps/EverwoodTown/scripts.pory"
-PlayerApproachMom4:
+PlayerApproachMom2:
+# 176 "data/maps/EverwoodTown/scripts.pory"
+	walk_up
 # 176 "data/maps/EverwoodTown/scripts.pory"
 	walk_up
 # 177 "data/maps/EverwoodTown/scripts.pory"
 	walk_right
 # 177 "data/maps/EverwoodTown/scripts.pory"
 	walk_right
+# 177 "data/maps/EverwoodTown/scripts.pory"
+	walk_right
+# 177 "data/maps/EverwoodTown/scripts.pory"
+	walk_right
 # 178 "data/maps/EverwoodTown/scripts.pory"
-	face_up
+	walk_in_place_faster_up
 	step_end
 
+# 181 "data/maps/EverwoodTown/scripts.pory"
+PlayerApproachMom3:
 # 182 "data/maps/EverwoodTown/scripts.pory"
-MomGoInside:
+	walk_up
+# 182 "data/maps/EverwoodTown/scripts.pory"
+	walk_up
 # 183 "data/maps/EverwoodTown/scripts.pory"
+	walk_right
+# 183 "data/maps/EverwoodTown/scripts.pory"
+	walk_right
+# 183 "data/maps/EverwoodTown/scripts.pory"
+	walk_right
+# 184 "data/maps/EverwoodTown/scripts.pory"
+	walk_in_place_faster_up
+	step_end
+
+# 187 "data/maps/EverwoodTown/scripts.pory"
+PlayerApproachMom4:
+# 188 "data/maps/EverwoodTown/scripts.pory"
+	walk_up
+# 188 "data/maps/EverwoodTown/scripts.pory"
+	walk_up
+# 189 "data/maps/EverwoodTown/scripts.pory"
+	walk_right
+# 189 "data/maps/EverwoodTown/scripts.pory"
+	walk_right
+# 190 "data/maps/EverwoodTown/scripts.pory"
+	walk_in_place_faster_up
+	step_end
+
+# 193 "data/maps/EverwoodTown/scripts.pory"
+MomGoToDoor:
+# 194 "data/maps/EverwoodTown/scripts.pory"
+	walk_right
+# 195 "data/maps/EverwoodTown/scripts.pory"
+	walk_in_place_faster_up
+	step_end
+
+# 198 "data/maps/EverwoodTown/scripts.pory"
+MomGoInside:
+# 199 "data/maps/EverwoodTown/scripts.pory"
 	walk_up
 	step_end
 
@@ -273,7 +313,7 @@ EverwoodTown_Trigger_GoodbyeMom1_Text_0:
 	.string "{PLAYER}!$"
 
 EverwoodTown_GoodbyeMom_Text_0:
-# 144 "data/maps/EverwoodTown/scripts.pory"
+# 148 "data/maps/EverwoodTown/scripts.pory"
 	.string "You put on the Running Shoes!$"
 
 DontGoIntoRouteText::
@@ -287,7 +327,7 @@ DontGoIntoRouteText::
 	.string "safe.$"
 
 GoodbyeMomText1::
-# 186 "data/maps/EverwoodTown/scripts.pory"
+# 202 "data/maps/EverwoodTown/scripts.pory"
 	.string "Wow! What a cute Pokémon!\p"
 	.string "I can tell you two will make a great\n"
 	.string "team!\p"
@@ -295,7 +335,7 @@ GoodbyeMomText1::
 	.string "you from your father!$"
 
 GoodbyeMomText2::
-# 193 "data/maps/EverwoodTown/scripts.pory"
+# 209 "data/maps/EverwoodTown/scripts.pory"
 	.string "They're perfect for running around and\n"
 	.string "exploring new places!\p"
 	.string "Just hold the B Button while you move\n"

@@ -46,7 +46,7 @@
         {
             {
 #line 93
-            .species = SPECIES_SENTRET,
+            .species = SPECIES_SKWOVET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 95
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),

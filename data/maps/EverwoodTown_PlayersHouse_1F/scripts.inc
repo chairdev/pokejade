@@ -42,7 +42,7 @@ MomApproachPlayer1:
 # 42 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	walk_right
 # 43 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
-	face_up
+	walk_in_place_faster_up
 	step_end
 
 # 46 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
@@ -54,7 +54,7 @@ MomMoveBack:
 # 48 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
 	walk_down
 # 49 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
-	face_right
+	walk_in_place_faster_right
 	step_end
 
 EverwoodTown_PlayersHouse_1F_EventScript_Mom::

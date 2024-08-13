@@ -80,8 +80,7 @@ text ReceiveStarter_SanzashiText1 { //After they fought off the wild Pokémon
             "I'm glad you're both safe.\p"
             "By the way, {PLAYER}{KUN}, may I see the Pokémon you chose?\p"
             "I'd like to see how it's doing.\p"
-            "Ah, I see. You chose {STR_VAR_1}.\p"
-            "It seems to have taken a liking to you.\p"
+            "Ah, I see. You chose {STR_VAR_1}.\nIt seems to have taken a liking to you.\p"
             "I hope you'll take good care of it.\p"
             "You received the {STR_VAR_1}!"
             )
@@ -136,19 +135,19 @@ text ReceiveStarter_RivalText3 {
 }
 
 movement ReceiveStarter_FaceUp {
-    face_up
+    walk_in_place_faster_up
 }
 
 movement ReceiveStarter_FaceDown {
-    face_down
+    walk_in_place_faster_down
 }
 
 movement ReceiveStarter_FaceLeft {
-    face_left
+    walk_in_place_faster_left
 }
 
 movement ReceiveStarter_FaceRight {
-    face_right
+    walk_in_place_faster_right
 }
 
 movement ReceiveStarter_RivalLeave {
@@ -206,7 +205,7 @@ text MeetSanzashiText2A {
 
 text MeetSanzashiText2B {
     format("He said he couldn't sit still and wait for you to arrive and took off.\p"
-           "{PLAYER}{KUN}I'm sorry to ask this of you, but could you go find him for me?\p"
+           "{PLAYER}{KUN}, I'm sorry to ask this of you, but could you go find him for me?\p"
             "I'm sure he's just around the corner."
            )          
 }
