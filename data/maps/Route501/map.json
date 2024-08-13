@@ -17,6 +17,11 @@
       "map": "MAP_EVERWOOD_TOWN",
       "offset": -10,
       "direction": "down"
+    },
+    {
+      "map": "MAP_BAYCREST_CITY",
+      "offset": 34,
+      "direction": "up"
     }
   ],
   "object_events": [

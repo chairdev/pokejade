@@ -513,8 +513,8 @@ Route501_Text_SkwovetGirl2::
 
 Route501_Text_SkwovetGirl3::
 # 330 "data/maps/Route501/scripts.pory"
-	.string "Skwovet are just too cute when they\n"
-	.string "eat!\n"
+	.string "Skwovet are just too cute when they're\n"
+	.string "eating!\n"
 	.string "I could watch them all day!$"
 
 Route501_Text_AdrienIntro::

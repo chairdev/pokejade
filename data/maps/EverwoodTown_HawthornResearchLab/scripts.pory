@@ -124,7 +124,7 @@ text ReceiveStarter_RivalText2 {
 
 text ReceiveStarter_SanzashiText6 {
     format("Prof. Sanzashi: You two must first register for the Toshou League at the Pokémon Center.\p"
-            "The nearest one is in NAME City, past Route 501."
+            "The nearest one is in Baycrest City, past Route 501."
            )
 }
 

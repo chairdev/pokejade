@@ -4460,6 +4460,16 @@
       "secondary_tileset": "gTileset_BrendansMaysHouse",
       "border_filepath": "data/layouts/EverwoodTown_PlayersHouse_2F/border.bin",
       "blockdata_filepath": "data/layouts/EverwoodTown_PlayersHouse_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_BAYCREST_CITY",
+      "name": "BaycrestCity_Layout",
+      "width": 20,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/BaycrestCity/border.bin",
+      "blockdata_filepath": "data/layouts/BaycrestCity/map.bin"
     }
   ]
 }
