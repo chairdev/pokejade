@@ -28,6 +28,8 @@ script Route501_Trigger_WalkToRivalRight
 
     checkplayergender
     goto_if_eq(VAR_RESULT, MALE, Route501_RivalMaya)
+    goto_if_eq(VAR_RESULT, FEMALE, Route501_RivalShinji)
+
 }
 
 movement PlayerMoveToRivalLeft {
@@ -47,7 +49,7 @@ script Route501_RivalMaya {
 
     playbgm(MUS_ENCOUNTER_MAY, 0)
 
-    msgbox(RivalText1F)
+    msgbox(Route501_Text_MeetRivalText1F)
     
     applymovement(OBJ_RIVAL, RivalLookAround)
     waitmovement(0)
@@ -58,7 +60,7 @@ script Route501_RivalMaya {
     applymovement(OBJ_EVENT_ID_PLAYER, PlayerApproachBag)
     waitmovement(1)
 
-    msgbox(RivalText2F)
+    msgbox(Route501_Text_MeetRivalText2F)
 
     playbgm(MUS_HELP, 0)
 
@@ -76,7 +78,7 @@ script Route501_RivalMaya {
     applymovement(OBJ_EVENT_ID_PLAYER, FaceLeft)
     applymovement(OBJ_RIVAL, FaceUp)
 
-    msgbox(RivalText3F)
+    msgbox(Route501_Text_MeetRivalText3F)
 
     applymovement(OBJ_EVENT_ID_PLAYER, FaceRight)
     applymovement(OBJ_RIVAL, FaceDown)
@@ -89,7 +91,66 @@ script Route501_RivalMaya {
 	waitstate
 
     bufferleadmonspeciesname(STR_VAR_1)
-    msgbox(RivalText4F)
+    msgbox(Route501_Text_MeetRivalText4F)
+
+    special(HealPlayerParty)
+    setflag(FLAG_ROUTE_501_SAVED_RIVAL)
+    clearflag(FLAG_HIDE_EVERWOOD_TOWN_RESEARCH_LAB_RIVAL)
+    setvar(VAR_ROUTE501_STATE, 1)
+    setvar(VAR_SANZASHI_LAB_STATE, 2)
+
+    warp(MAP_EVERWOOD_TOWN_HAWTHORN_RESEARCH_LAB, 6, 5)
+}
+
+script Route501_RivalShinji {
+    applymovement(OBJ_RIVAL, RivalNoticePlayer)
+    waitmovement(0)
+
+    playbgm(MUS_ENCOUNTER_BRENDAN, 0)
+
+    msgbox(Route501_Text_MeetRivalText1M)
+    
+    applymovement(OBJ_RIVAL, RivalLookAround)
+    waitmovement(0)
+
+    msgbox(format("Oh, there it is!"))
+    
+    applymovement(OBJ_RIVAL, RivalApproachBag)
+    applymovement(OBJ_EVENT_ID_PLAYER, PlayerApproachBag)
+    waitmovement(1)
+
+    msgbox(Route501_Text_MeetRivalText2M)
+
+    playbgm(MUS_HELP, 0)
+
+    setobjectxy(OBJ_PIDOVE1, 1, 17)
+    setobjectxy(OBJ_PIDOVE2, 1, 17)
+    applymovement(OBJ_PIDOVE1, PidoveApproachPlayer)
+    applymovement(OBJ_PIDOVE2, PidoveApprachRival)
+    waitmovement(1)
+
+    playmoncry(SPECIES_PIDOVE, CRY_MODE_NORMAL)
+
+    applymovement(OBJ_EVENT_ID_PLAYER, ExclemationMark)
+    applymovement(OBJ_RIVAL, ExclemationMark)
+    waitmovement(1)
+    applymovement(OBJ_EVENT_ID_PLAYER, FaceLeft)
+    applymovement(OBJ_RIVAL, FaceUp)
+
+    msgbox(Route501_Text_MeetRivalText3M)
+
+    applymovement(OBJ_EVENT_ID_PLAYER, FaceRight)
+    applymovement(OBJ_RIVAL, FaceDown)
+
+    setflag(FLAG_SYS_POKEMON_GET)
+    fadescreen(FADE_TO_BLACK)
+    removeobject(OBJ_PIDOVE1)
+    removeobject(OBJ_PIDOVE2)
+	special(ChooseStarter)
+	waitstate
+
+    bufferleadmonspeciesname(STR_VAR_1)
+    msgbox(Route501_Text_MeetRivalText4M)
 
     special(HealPlayerParty)
     setflag(FLAG_ROUTE_501_SAVED_RIVAL)
@@ -152,7 +213,7 @@ movement FaceRight {
     face_right
 }
 
-text RivalText1F { //female rival
+text Route501_Text_MeetRivalText1F { //female rival
     format("Huh? What the...?\p"
            "Oh! Are you the {PLAYER}{KUN} that just moved in next door?\p"
            "I'm your neighbor, {RIVAL}! Nice to meet you!\p"
@@ -165,14 +226,14 @@ text RivalText1F { //female rival
             )
 }
 
-text RivalText2F {
+text Route501_Text_MeetRivalText2F {
     format("I really don't know what I would've done if I lost it...\p"
-    "The professor would've been so mad at me!\p"
+    "The professor would've been so mad at me!"
     )
 
 }
 
-text RivalText3F { //ATTACKED BY PIDOVE
+text Route501_Text_MeetRivalText3F {
     format("Uwaaah! Wha... What's going on?!\p"
            "A wild Pokémon?! This is bad! This is really bad!\p"
            "{PLAYER}{KUN}, we have to use the Poké Balls in that bag to protect ourselves!\p"
@@ -180,7 +241,7 @@ text RivalText3F { //ATTACKED BY PIDOVE
            )
 }
 
-text RivalText4F {
+text Route501_Text_MeetRivalText4F {
     format("Whew... That was a close one!\p"
            "I can't believe we were attacked by wild Pokémon!\p"
            "Good thing you had {STR_VAR_1} to protect you!\p"
@@ -191,6 +252,44 @@ text RivalText4F {
            "I'm sure he must be worried about us."
            )
 }
+
+text Route501_Text_MeetRivalText1M { //He's a bit less chatty and more to the point than Maya.
+    format("Whoa!\p"
+            "You're the new kid, {PLAYER}{KUN}, right?\p"
+            "I'm {RIVAL}, your neighbor.\p"
+            "I was supposed to deliver something from Professor Sanzashi to you but you were asleep.\p"
+            "I got bored waiting, so I decided to explore a bit.\p"
+            "But since you're here, that means you went to the lab, right?\p"
+            "My bad! I should've just waited for you to wake up.\p"
+            "One sec, let me take a look in the bag...\p"
+            "Funny, I could've sworn I had it with me..."
+            )
+           
+}
+
+text Route501_Text_MeetRivalText2M {
+    format( "Geez, I can't believe I lost it...\p"
+            "The professor would've flipped if he found out!\p"  
+            )
+}
+
+text Route501_Text_MeetRivalText3M {
+    format("What the heck?! A wild Pokémon?! This is bad!\p"
+           "Grab a Poké Ball from that bag so we can protect ourselves!"
+           )
+}
+
+text Route501_Text_MeetRivalText4M {
+    format("Phew... That was a close one!\p"
+           "I can't believe we were attacked by wild Pokémon!\p"
+           "Good thing you had {STR_VAR_1} to protect you!\p"
+           "I'm not really a fan of Pokémon, but I guess I'll have to get used to them if I want to be a Trainer.\p"
+           "...We should probably head back to Professor Sanzashi's lab now.\p"
+           "I'm sure he must be worried about us."
+           )
+}
+
+
 
 script Route501_EventScript_SkwovetGirl {
     lock
