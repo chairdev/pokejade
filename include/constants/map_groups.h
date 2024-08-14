@@ -66,6 +66,7 @@
 #define MAP_EVERWOOD_TOWN       (57 | (0 << 8))
 #define MAP_ROUTE501            (58 | (0 << 8))
 #define MAP_BAYCREST_CITY       (59 | (0 << 8))
+#define MAP_ROUTE502            (60 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
