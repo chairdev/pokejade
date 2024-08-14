@@ -350,11 +350,13 @@ script Route501_EventScript_MartEmployee {
 
 text Route501_Text_MartEmployee1 {
     format("Hello! Are you a Pokémon Trainer?\p"
-           "We're giving away free Potions to all Trainers who pass through here as a promotion!")
+           "We're giving away free Potions to all Trainers who pass through here as a promotion!\p"
+           "Please take them as a gift from the Baycrest City Poké Mart!"
+           )
 }
 
 text Route501_Text_MartEmployee2 {
-    format("We hope you'll visit our store when you get to Baycrest City!\p"
+    format("We hope you'll continue to shop with us in the future!\p"
            "We have a wide selection of items that will help you on your journey!")
 }
 

@@ -362,37 +362,61 @@ FaceRight:
 	step_end
 
 Route501_EventScript_SkwovetGirl::
-# 300 "data/maps/Route501/scripts.pory"
+# 298 "data/maps/Route501/scripts.pory"
 	lock
-# 301 "data/maps/Route501/scripts.pory"
+# 299 "data/maps/Route501/scripts.pory"
 	faceplayer
-# 303 "data/maps/Route501/scripts.pory"
+# 301 "data/maps/Route501/scripts.pory"
 	goto_if_set FLAG_RECEIVED_POTION_ROUTE_501, Route501_EventScript_SkwovetGirl_2
-# 309 "data/maps/Route501/scripts.pory"
+# 307 "data/maps/Route501/scripts.pory"
 	msgbox Route501_Text_SkwovetGirl1
-# 310 "data/maps/Route501/scripts.pory"
+# 308 "data/maps/Route501/scripts.pory"
 	giveitem ITEM_ORAN_BERRY, 1
-# 311 "data/maps/Route501/scripts.pory"
+# 309 "data/maps/Route501/scripts.pory"
 	msgbox Route501_Text_SkwovetGirl2
-# 313 "data/maps/Route501/scripts.pory"
+# 311 "data/maps/Route501/scripts.pory"
 	setflag FLAG_RECEIVED_POTION_ROUTE_501
 Route501_EventScript_SkwovetGirl_1:
-# 316 "data/maps/Route501/scripts.pory"
+# 314 "data/maps/Route501/scripts.pory"
 	release
 	return
 
 Route501_EventScript_SkwovetGirl_2:
-# 305 "data/maps/Route501/scripts.pory"
+# 303 "data/maps/Route501/scripts.pory"
 	msgbox Route501_Text_SkwovetGirl3
 	goto Route501_EventScript_SkwovetGirl_1
 
 
-Route501_EventScript_Yuuto::
-# 338 "data/maps/Route501/scripts.pory"
-	trainerbattle_single TRAINER_YUUTO, Route501_Text_YuutoIntro, Route501_Text_YuutoDefeated
+Route501_EventScript_MartEmployee::
+# 336 "data/maps/Route501/scripts.pory"
+	lock
+# 337 "data/maps/Route501/scripts.pory"
+	faceplayer
 # 339 "data/maps/Route501/scripts.pory"
+	goto_if_unset FLAG_RECEIVED_POTION_ROUTE501, Route501_EventScript_MartEmployee_2
+Route501_EventScript_MartEmployee_1:
+# 347 "data/maps/Route501/scripts.pory"
+	msgbox Route501_Text_MartEmployee2
+# 348 "data/maps/Route501/scripts.pory"
+	release
+	return
+
+Route501_EventScript_MartEmployee_2:
+# 341 "data/maps/Route501/scripts.pory"
+	msgbox Route501_Text_MartEmployee1
+# 342 "data/maps/Route501/scripts.pory"
+	giveitem ITEM_POTION, 5
+# 344 "data/maps/Route501/scripts.pory"
+	setflag FLAG_RECEIVED_POTION_ROUTE501
+	goto Route501_EventScript_MartEmployee_1
+
+
+Route501_EventScript_Yuuto::
+# 362 "data/maps/Route501/scripts.pory"
+	trainerbattle_single TRAINER_YUUTO, Route501_Text_YuutoIntro, Route501_Text_YuutoDefeated
+# 363 "data/maps/Route501/scripts.pory"
 	msgbox Route102_Text_YuutoPostBattle, MSGBOX_AUTOCLOSE
-# 340 "data/maps/Route501/scripts.pory"
+# 364 "data/maps/Route501/scripts.pory"
 	waitmessage
 	end
 
@@ -498,7 +522,7 @@ Route501_Text_MeetRivalText4M::
 	.string "I'm sure he must be worried about us.$"
 
 Route501_Text_SkwovetGirl1::
-# 319 "data/maps/Route501/scripts.pory"
+# 317 "data/maps/Route501/scripts.pory"
 	.string "Oh! I'm not a Trainer, don't worry!\p"
 	.string "I'm just here on to watch the Skwovet!\p"
 	.string "It's so funny how they stuff their\n"
@@ -513,28 +537,42 @@ Route501_Text_SkwovetGirl1::
 	.string "you one to try out!$"
 
 Route501_Text_SkwovetGirl2::
-# 329 "data/maps/Route501/scripts.pory"
+# 327 "data/maps/Route501/scripts.pory"
 	.string "I hope you and your Pokémon enjoy the\n"
 	.string "Berries!$"
 
 Route501_Text_SkwovetGirl3::
-# 333 "data/maps/Route501/scripts.pory"
+# 331 "data/maps/Route501/scripts.pory"
 	.string "Skwovet are just too cute when they're\n"
 	.string "eating!\n"
 	.string "I could watch them all day!$"
 
+Route501_Text_MartEmployee1::
+# 351 "data/maps/Route501/scripts.pory"
+	.string "Hello! Are you a Pokémon Trainer?\p"
+	.string "We're giving away free Potions to all\n"
+	.string "Trainers who pass through here as a\l"
+	.string "promotion!$"
+
+Route501_Text_MartEmployee2::
+# 356 "data/maps/Route501/scripts.pory"
+	.string "We hope you'll visit our store when you\n"
+	.string "get to Baycrest City!\p"
+	.string "We have a wide selection of items that\n"
+	.string "will help you on your journey!$"
+
 Route501_Text_YuutoIntro::
-# 344 "data/maps/Route501/scripts.pory"
+# 368 "data/maps/Route501/scripts.pory"
 	.string "We've locked eyes! That means it's time\n"
 	.string "for a battle!\p"
 	.string "I'll show you the power of my favorite\n"
 	.string "Pokémon!$"
 
 Route501_Text_YuutoDefeated::
-# 349 "data/maps/Route501/scripts.pory"
+# 373 "data/maps/Route501/scripts.pory"
 	.string "You're so strong!$"
 
 Route102_Text_YuutoPostBattle::
-# 353 "data/maps/Route501/scripts.pory"
+# 377 "data/maps/Route501/scripts.pory"
 	.string "You're really good at this! I hope we\n"
 	.string "can battle again sometime!$"
