@@ -31,7 +31,7 @@ BaycrestCity_Trigger_Rival1::
 # 22 "data/maps/BaycrestCity/scripts.pory"
 	waitmovement 0
 # 23 "data/maps/BaycrestCity/scripts.pory"
-	hideobjectat 1, MAP_BAYCREST_CITY
+	removeobject 1
 # 25 "data/maps/BaycrestCity/scripts.pory"
 	setvar VAR_BAYCREST_CITY_STATE, 1
 # 26 "data/maps/BaycrestCity/scripts.pory"
@@ -88,7 +88,7 @@ BaycrestCity_Kanami_1:
 # 67 "data/maps/BaycrestCity/scripts.pory"
 	waitmovement 0
 # 68 "data/maps/BaycrestCity/scripts.pory"
-	hideobjectat 1, MAP_BAYCREST_CITY
+	removeobject 1
 # 70 "data/maps/BaycrestCity/scripts.pory"
 	setvar VAR_BAYCREST_CITY_STATE, 1
 # 71 "data/maps/BaycrestCity/scripts.pory"

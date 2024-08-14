@@ -210,7 +210,7 @@ EverwoodTown_GoodbyeMom::
 # 160 "data/maps/EverwoodTown/scripts.pory"
 	waitmovement 0
 # 161 "data/maps/EverwoodTown/scripts.pory"
-	hideobjectat 2, MAP_EVERWOOD_TOWN
+	removeobject 2
 # 162 "data/maps/EverwoodTown/scripts.pory"
 	closedoor 14, 8
 # 163 "data/maps/EverwoodTown/scripts.pory"
