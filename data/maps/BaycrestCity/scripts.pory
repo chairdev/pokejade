@@ -20,7 +20,7 @@ script BaycrestCity_Trigger_Rival1 {
 
     applymovement(OBJ_RIVAL, RivalLeave)
     waitmovement(0)
-    hideobjectat(OBJ_RIVAL, MAP_BAYCREST_CITY)
+    removeobject(OBJ_RIVAL)
 
     setvar(VAR_BAYCREST_CITY_STATE, 1)
     setflag(FLAG_HIDE_BAYCREST_CITY_RIVAL)
@@ -65,7 +65,7 @@ script BaycrestCity_Kanami {
     
     applymovement(OBJ_RIVAL, RivalLeave)
     waitmovement(0)
-    hideobjectat(OBJ_RIVAL, MAP_BAYCREST_CITY)
+    removeobject(OBJ_RIVAL)
 
     setvar(VAR_BAYCREST_CITY_STATE, 1)
     setflag(FLAG_HIDE_BAYCREST_CITY_RIVAL)

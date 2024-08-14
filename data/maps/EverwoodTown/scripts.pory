@@ -158,7 +158,7 @@ script EverwoodTown_GoodbyeMom {
 	waitdooranim
     applymovement(OBJ_MOM, MomGoInside)
     waitmovement(0)
-    hideobjectat(OBJ_MOM, MAP_EVERWOOD_TOWN)
+    removeobject(OBJ_MOM)
     closedoor(14, 8)
 	waitdooranim
 
