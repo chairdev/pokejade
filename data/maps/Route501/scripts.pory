@@ -294,8 +294,6 @@ text Route501_Text_MeetRivalText4M {
            )
 }
 
-
-
 script Route501_EventScript_SkwovetGirl {
     lock
     faceplayer
@@ -332,6 +330,32 @@ text Route501_Text_SkwovetGirl2 {
 
 text Route501_Text_SkwovetGirl3 {
     format("Skwovet are just too cute when they're eating!\nI could watch them all day!")
+}
+
+script Route501_EventScript_MartEmployee {
+    lock
+    faceplayer
+
+    if(!flag(FLAG_RECEIVED_POTION_ROUTE501))
+    {
+        msgbox(Route501_Text_MartEmployee1)
+        giveitem(ITEM_POTION, 5)
+
+        setflag(FLAG_RECEIVED_POTION_ROUTE501)
+    }
+
+    msgbox(Route501_Text_MartEmployee2)
+    release
+}
+
+text Route501_Text_MartEmployee1 {
+    format("Hello! Are you a Pokémon Trainer?\p"
+           "We're giving away free Potions to all Trainers who pass through here as a promotion!")
+}
+
+text Route501_Text_MartEmployee2 {
+    format("We hope you'll visit our store when you get to Baycrest City!\p"
+           "We have a wide selection of items that will help you on your journey!")
 }
 
 script Route501_EventScript_Yuuto {
