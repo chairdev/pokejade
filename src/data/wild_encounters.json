@@ -11653,63 +11653,63 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "min_level": 7,
-                "max_level": 9,
+                "min_level": 6,
+                "max_level": 8,
                 "species": "SPECIES_NICKIT"
               },
               {
-                "min_level": 7,
-                "max_level": 9,
+                "min_level": 6,
+                "max_level": 8,
                 "species": "SPECIES_WATTREL"
               },
               {
-                "min_level": 7,
-                "max_level": 9,
+                "min_level": 6,
+                "max_level": 8,
                 "species": "SPECIES_WATTREL"
               },
               {
-                "min_level": 7,
-                "max_level": 9,
+                "min_level": 6,
+                "max_level": 8,
                 "species": "SPECIES_WATTREL"
               },
               {
-                "min_level": 7,
-                "max_level": 9,
+                "min_level": 6,
+                "max_level": 8,
                 "species": "SPECIES_NICKIT"
               },
               {
-                "min_level": 7,
-                "max_level": 9,
+                "min_level": 6,
+                "max_level": 8,
                 "species": "SPECIES_NICKIT"
               },
               {
-                "min_level": 7,
-                "max_level": 9,
+                "min_level": 6,
+                "max_level": 8,
                 "species": "SPECIES_WIGLETT"
               },
               {
-                "min_level": 7,
-                "max_level": 9,
+                "min_level": 6,
+                "max_level": 8,
                 "species": "SPECIES_WIGLETT"
               },
               {
-                "min_level": 7,
-                "max_level": 9,
+                "min_level": 6,
+                "max_level": 8,
                 "species": "SPECIES_WIGLETT"
               },
               {
-                "min_level": 7,
-                "max_level": 9,
+                "min_level": 6,
+                "max_level": 8,
                 "species": "SPECIES_WIGLETT"
               },
               {
-                "min_level": 7,
-                "max_level": 9,
+                "min_level": 6,
+                "max_level": 8,
                 "species": "SPECIES_WIGLETT"
               },
               {
-                "min_level": 7,
-                "max_level": 9,
+                "min_level": 6,
+                "max_level": 8,
                 "species": "SPECIES_WIGLETT"
               }
             ]
