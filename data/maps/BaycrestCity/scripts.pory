@@ -11,12 +11,19 @@ script BaycrestCity_Trigger_Rival1 {
 
     applymovement(OBJ_EVENT_ID_PLAYER, ApproachRival1)
     waitmovement(0)
-    applymovement(OBJ_RIVAL, LookLeft)
+    applymovement(OBJ_RIVAL, LookDown)
     waitmovement(0)
 
     checkplayergender
     goto_if_eq(VAR_RESULT, MALE, BaycrestCity_Kanami)
     goto_if_eq(VAR_RESULT, FEMALE, BaycrestCity_Shinji)
+
+    applymovement(OBJ_RIVAL, RivalLeave)
+    waitmovement(0)
+    hideobjectat(OBJ_RIVAL, MAP_BAYCREST_CITY)
+
+    setvar(VAR_BAYCREST_CITY_STATE, 1)
+    setflag(FLAG_HIDE_BAYCREST_CITY_RIVAL)
 
     releaseall
 }
@@ -32,32 +39,77 @@ script BaycrestCity_Trigger_Rival2 {
     checkplayergender
     goto_if_eq(VAR_RESULT, MALE, BaycrestCity_Kanami)
     goto_if_eq(VAR_RESULT, FEMALE, BaycrestCity_Shinji)
-
-    releaseall
 }
 
 script BaycrestCity_Kanami {
     playbgm(MUS_ENCOUNTER_MAY, 0)
 
-    //buffernumberstring(STR_VAR_1, VAR_0x8009)
     msgbox(BaycrestCity_Text_Rival1F)
+
+    switch(var(VAR_STARTER_MON)) {
+        case 0:
+            trainerbattle_no_intro(TRAINER_KANAMI_BAYCREST_TURTWIG, BaycrestCity_Text_KanamiDefeated)
+            break
+        case 1:
+            trainerbattle_no_intro(TRAINER_KANAMI_BAYCREST_FENNEKIN, BaycrestCity_Text_KanamiDefeated)
+            break
+        case 2:
+            trainerbattle_no_intro(TRAINER_KANAMI_BAYCREST_QUAXLY, BaycrestCity_Text_KanamiDefeated)
+            break
+    }
+
     msgbox(BaycrestCity_Text_Rival2F)
+    giveitem(ITEM_TM_SWIFT)
+    msgbox(BaycrestCity_Text_Rival3F)
+    closemessage
+    
+    applymovement(OBJ_RIVAL, RivalLeave)
+    waitmovement(0)
+    hideobjectat(OBJ_RIVAL, MAP_BAYCREST_CITY)
+
+    setvar(VAR_BAYCREST_CITY_STATE, 1)
+    setflag(FLAG_HIDE_BAYCREST_CITY_RIVAL)
+
+    releaseall
 }
 
 script BaycrestCity_Shinji {
     playbgm(MUS_ENCOUNTER_BRENDAN, 0)
 
-    //buffernumberstring(STR_VAR_1, VAR_0x8009)
     msgbox(BaycrestCity_Text_Rival1M)
 
+    switch(var(VAR_STARTER_MON)) {
+        case 0:
+            trainerbattle_no_intro(TRAINER_SHINJI_BAYCREST_TURTWIG, BaycrestCity_Text_ShinjiDefeated)
+            break
+        case 1:
+            trainerbattle_no_intro(TRAINER_SHINJI_BAYCREST_FENNEKIN, BaycrestCity_Text_ShinjiDefeated)
+            break
+        case 2:
+            trainerbattle_no_intro(TRAINER_SHINJI_BAYCREST_QUAXLY, BaycrestCity_Text_ShinjiDefeated)
+            break
+    }
+
     msgbox(BaycrestCity_Text_Rival2M)
+    giveitem(ITEM_TM_SWIFT)
+    msgbox(BaycrestCity_Text_Rival3M)
+    closemessage
+
+    applymovement(OBJ_RIVAL, RivalLeave)
+    waitmovement(0)
+    hideobjectat(OBJ_RIVAL, MAP_BAYCREST_CITY)
+
+    setvar(VAR_BAYCREST_CITY_STATE, 1)
+    setflag(FLAG_HIDE_BAYCREST_CITY_RIVAL)
+
+    releaseall
 }
 
 
 movement ApproachRival1 {
-    walk_up * 4
-    walk_in_place_faster_right
-    
+    walk_up * 2
+    walk_right
+    walk_in_place_faster_up
 }
 
 movement ApproachRival2 {
@@ -74,47 +126,64 @@ movement LookDown {
     walk_in_place_faster_down
 }
 
-text BaycrestCity_Text_Rival1F { //Wants to see how many Pokémon you caught
+movement RivalLeave {
+    walk_left 
+    walk_up * 6
+}
+
+text BaycrestCity_Text_Rival1F {
     format("{RIVAL}: Hey, {PLAYER}{KUN}! I've been waiting for you!\p"
-            "I wanted to see how many Pokémon you've caught so far.\p"
-            "I've caught a bunch of Pokémon myself, so I'm sure I've got more than you!\p"
-            "You've caught... {STR_VAR_1} Pokémon, right?"
-    )
-}
-
-text BaycrestCity_Text_Rival1MonF {
-    format("test")
-}
-
-text BaycrestCity_Text_Rival2MonF {
-    format("test")
-}
-
-text BaycrestCity_Text_Rival3MonF {
-    format("test")
-}
-
-
-text BaycrestCity_Text_Rival2F { //Ask to battle
-    format( "I've already registered for the Toshou League, but I don't really know how to battle...\p"
-            "I was hoping I could practice with you, {PLAYER}{KUN}!\p"
+            "I've already registered for the Toshou League, so I need to practice battling.\p"
+            "You're the perfect person to help me with that!\p"
             "Let's battle!"
-    
     )
 }
 
+text BaycrestCity_Text_Rival2F { //After battle, GIVE TM
+    format("{RIVAL}: Wow, you're really good at this!\p"
+            "I guess I'll have to train harder if I want to beat you!\p"
+            "Here, take this TM as a thank you for the battle!\p"
+    )
+}
+
+text BaycrestCity_Text_Rival3F {
+    format("{RIVAL}: It's the TM for Swift! It's a great move that never misses!\p"
+            "I hope you find it useful!\p"
+            "I'll see you later!"
+    )
+}
+
+text BaycrestCity_Text_KanamiDefeated {
+    format( "My battle career started off with a loss...\p"
+            "Geez, this is the worst!"
+    )
+}
+
+text BaycrestCity_Text_ShinjiDefeated {
+    format( "My first battle ended in a loss...\p"
+            "I can't believe it!"
+    )
+}
 
 text BaycrestCity_Text_Rival1M {
     format("{RIVAL}: Oh, hey, {PLAYER}{KUN}!\nThere you are!\p"
-            "Have you caught any Pokémon yet?\p"
-            "I sure have!\nLet's see who's caught more!"
-            "Looks like you've caught... {STR_VAR_1} Pokémon, right?"
+            "I've been waiting for you!\p"
+            "Just so you know, I've already registered for the Toshou League.\p"
+            "I need to practice, so you and I are going to have a battle!\p"
+            "Let's do this!"
     )
 }
 
 text BaycrestCity_Text_Rival2M {
-    format("{RIVAL}: By the way, I've already registered for the Toshou League.\p"
-            "I'd really like to practice before I take on the Gym, though.\p"
-            "Which means... I need to battle you, {PLAYER}{KUN}!"
+    format("{RIVAL}: You're pretty good at this, {PLAYER}{KUN}!\p"
+            "I'm gonna train hard so I can beat you next time!\p"
+            "I'll give you this since you helped me practice!\p"
+    )
+}
+
+text BaycrestCity_Text_Rival3M {
+    format("{RIVAL}: This TM is for the move Swift!\p"
+            "It never misses, so it's a great move to have!\p"
+            "I'll see you later, {PLAYER}{KUN}!"
     )
 }

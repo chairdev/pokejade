@@ -50,7 +50,7 @@
       "elevation": 0,
       "var": "VAR_BAYCREST_CITY_STATE",
       "var_value": "0",
-      "script": "BaycrestCity_Trigger_Rival2"
+      "script": "BaycrestCity_Trigger_Rival1"
     },
     {
       "type": "trigger",

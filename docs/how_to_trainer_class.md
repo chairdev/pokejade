@@ -161,7 +161,7 @@ Remember to count the number next to the trainer class up by one!
 ## Usage
 You can test your trainer type by going to [src/data/trainers](https://github.com/rh-hideout/pokeemerald-expansion/blob/master/src/data/trainers.h) and changing a trainer type. For example:
 ```diff
-    [TRAINER_BRENDAN_PLACEHOLDER] =
+    [TRAINER_SHINJI_PLACEHOLDER] =
     {
         .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_RS_PROTAG,

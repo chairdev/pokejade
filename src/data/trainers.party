@@ -8797,8 +8797,8 @@ Minun
 Level: 27
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_YUMI_AND_FUMI_1 ===
-Name: Yumi & Fumi
+=== TRAINER_RUI_AND_YUI_1 ===
+Name: Rui & Yui
 Class: Twins
 Pic: Twins
 Gender: Male
@@ -8807,11 +8807,11 @@ Double Battle: Yes
 AI: Check Bad Move
 
 Psyduck
-Level: 8
+Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Slowpoke
-Level: 8
+Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MIU_AND_YUKI ===
@@ -9501,8 +9501,8 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Psychic
 - Future Sight
 
-=== TRAINER_BRENDAN_ROUTE_103_MUDKIP ===
-Name: BRENDAN
+=== TRAINER_SHINJI_BAYCREST_QUAXLY ===
+Name: Shinji
 Class: Rival
 Pic: Brendan
 Gender: Male
@@ -9510,11 +9510,15 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Treecko
+Pidove
 Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-=== TRAINER_BRENDAN_ROUTE_110_MUDKIP ===
+Turtwig
+Level: 7
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+
+=== TRAINER_SHINJI_ROUTE_110_MUDKIP ===
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -9535,7 +9539,7 @@ Grovyle
 Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_BRENDAN_ROUTE_119_MUDKIP ===
+=== TRAINER_SHINJI_ROUTE_119_MUDKIP ===
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -9556,8 +9560,8 @@ Grovyle
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_BRENDAN_ROUTE_103_TREECKO ===
-Name: BRENDAN
+=== TRAINER_SHINJI_BAYCREST_TURTWIG ===
+Name: Shinji
 Class: Rival
 Pic: Brendan
 Gender: Male
@@ -9565,11 +9569,15 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Setup First Turn
 
-Torchic
+Pidove
 Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-=== TRAINER_BRENDAN_ROUTE_110_TREECKO ===
+Fennekin
+Level: 7
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+
+=== TRAINER_SHINJI_ROUTE_110_TREECKO ===
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -9590,7 +9598,7 @@ Combusken
 Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_BRENDAN_ROUTE_119_TREECKO ===
+=== TRAINER_SHINJI_ROUTE_119_TREECKO ===
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -9611,8 +9619,8 @@ Combusken
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_BRENDAN_ROUTE_103_TORCHIC ===
-Name: BRENDAN
+=== TRAINER_SHINJI_BAYCREST_FENNEKIN ===
+Name: Shinji
 Class: Rival
 Pic: Brendan
 Gender: Male
@@ -9620,11 +9628,15 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Mudkip
+Pidove
 Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-=== TRAINER_BRENDAN_ROUTE_110_TORCHIC ===
+Quaxly
+Level: 7
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+
+=== TRAINER_SHINJI_ROUTE_110_TORCHIC ===
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -9645,7 +9657,7 @@ Marshtomp
 Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_BRENDAN_ROUTE_119_TORCHIC ===
+=== TRAINER_SHINJI_ROUTE_119_TORCHIC ===
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -9666,8 +9678,8 @@ Marshtomp
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_MAY_ROUTE_103_MUDKIP ===
-Name: MAY
+=== TRAINER_KANAMI_BAYCREST_QUAXLY ===
+Name: Kanami
 Class: Rival
 Pic: May
 Gender: Female
@@ -9675,9 +9687,13 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Treecko
+Pidove
 Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Turtwig
+Level: 7
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_MAY_ROUTE_110_MUDKIP ===
 Name: MAY
@@ -9721,8 +9737,8 @@ Grovyle
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_MAY_ROUTE_103_TREECKO ===
-Name: MAY
+=== TRAINER_KANAMI_BAYCREST_TURTWIG ===
+Name: Kanami
 Class: Rival
 Pic: May
 Gender: Female
@@ -9730,9 +9746,13 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Torchic
+Pidove
 Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Fennekin
+Level: 7
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_MAY_ROUTE_110_TREECKO ===
 Name: MAY
@@ -9776,8 +9796,8 @@ Combusken
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_MAY_ROUTE_103_TORCHIC ===
-Name: MAY
+=== TRAINER_KANAMI_BAYCREST_FENNEKIN ===
+Name: Kanami
 Class: Rival
 Pic: May
 Gender: Female
@@ -9785,9 +9805,13 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Mudkip
+Pidove
 Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Quaxly
+Level: 7
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_MAY_ROUTE_110_TORCHIC ===
 Name: MAY
@@ -10842,7 +10866,7 @@ Natu
 Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BRENDAN_RUSTBORO_TREECKO ===
+=== TRAINER_SHINJI_RUSTBORO_TREECKO ===
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -10859,7 +10883,7 @@ Torchic
 Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-=== TRAINER_BRENDAN_RUSTBORO_MUDKIP ===
+=== TRAINER_SHINJI_RUSTBORO_MUDKIP ===
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -10966,7 +10990,7 @@ Loudred
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BRENDAN_RUSTBORO_TORCHIC ===
+=== TRAINER_SHINJI_RUSTBORO_TORCHIC ===
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -12245,7 +12269,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Psychic
 - Future Sight
 
-=== TRAINER_BRENDAN_LILYCOVE_MUDKIP ===
+=== TRAINER_SHINJI_LILYCOVE_MUDKIP ===
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -12270,7 +12294,7 @@ Grovyle
 Level: 34
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-=== TRAINER_BRENDAN_LILYCOVE_TREECKO ===
+=== TRAINER_SHINJI_LILYCOVE_TREECKO ===
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -12295,7 +12319,7 @@ Combusken
 Level: 34
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-=== TRAINER_BRENDAN_LILYCOVE_TORCHIC ===
+=== TRAINER_SHINJI_LILYCOVE_TORCHIC ===
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -16850,7 +16874,7 @@ Bulbasaur
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BRENDAN_PLACEHOLDER ===
+=== TRAINER_SHINJI_PLACEHOLDER ===
 Name: BRENDAN
 Class: RS Protag
 Pic: RS Brendan
