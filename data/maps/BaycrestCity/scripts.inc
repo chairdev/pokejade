@@ -23,7 +23,7 @@ BaycrestCity_Trigger_Rival1::
 # 17 "data/maps/BaycrestCity/scripts.pory"
 	checkplayergender
 # 18 "data/maps/BaycrestCity/scripts.pory"
-	goto_if_eq VAR_RESULT, MALE, BaycrestCity_Maya
+	goto_if_eq VAR_RESULT, MALE, BaycrestCity_Kanami
 # 19 "data/maps/BaycrestCity/scripts.pory"
 	goto_if_eq VAR_RESULT, FEMALE, BaycrestCity_Shinji
 # 21 "data/maps/BaycrestCity/scripts.pory"
@@ -45,7 +45,7 @@ BaycrestCity_Trigger_Rival2::
 # 32 "data/maps/BaycrestCity/scripts.pory"
 	checkplayergender
 # 33 "data/maps/BaycrestCity/scripts.pory"
-	goto_if_eq VAR_RESULT, MALE, BaycrestCity_Maya
+	goto_if_eq VAR_RESULT, MALE, BaycrestCity_Kanami
 # 34 "data/maps/BaycrestCity/scripts.pory"
 	goto_if_eq VAR_RESULT, FEMALE, BaycrestCity_Shinji
 # 36 "data/maps/BaycrestCity/scripts.pory"
@@ -53,7 +53,7 @@ BaycrestCity_Trigger_Rival2::
 	return
 
 
-BaycrestCity_Maya::
+BaycrestCity_Kanami::
 # 40 "data/maps/BaycrestCity/scripts.pory"
 	playbgm MUS_ENCOUNTER_MAY, 0
 # 43 "data/maps/BaycrestCity/scripts.pory"

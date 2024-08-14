@@ -463,7 +463,7 @@ static const u8 *const sMalePresetNames[] = {
 };
 
 static const u8 *const sFemalePresetNames[] = {
-    gText_DefaultNameMaya
+    gText_DefaultNameKanami
 };
 
 // The number of male vs. female names is assumed to be the same.

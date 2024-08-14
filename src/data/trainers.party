@@ -81,8 +81,8 @@ Gender: Male
 Music: Male
 Double Battle: No
 
-=== TRAINER_ADRIEN ===
-Name: Adrien
+=== TRAINER_YUUTO ===
+Name: Yuuto
 Class: Youngster
 Pic: Youngster
 Gender: Male
@@ -8797,8 +8797,8 @@ Minun
 Level: 27
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_GINA_AND_MIA_1 ===
-Name: GINA & MIA
+=== TRAINER_YUMI_AND_FUMI_1 ===
+Name: Yumi & Fumi
 Class: Twins
 Pic: Twins
 Gender: Male
@@ -8806,12 +8806,12 @@ Music: Twins
 Double Battle: Yes
 AI: Check Bad Move
 
-Seedot
-Level: 6
+Psyduck
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Lotad
-Level: 6
+Slowpoke
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MIU_AND_YUKI ===

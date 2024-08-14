@@ -19,7 +19,7 @@ Route501_Trigger_WalkToRivalLeft::
 # 18 "data/maps/Route501/scripts.pory"
 	checkplayergender
 # 19 "data/maps/Route501/scripts.pory"
-	goto_if_eq VAR_RESULT, MALE, Route501_RivalMaya
+	goto_if_eq VAR_RESULT, MALE, Route501_RivalKanami
 # 20 "data/maps/Route501/scripts.pory"
 	goto_if_eq VAR_RESULT, FEMALE, Route501_RivalShinji
 	return
@@ -35,7 +35,7 @@ Route501_Trigger_WalkToRivalRight::
 # 30 "data/maps/Route501/scripts.pory"
 	checkplayergender
 # 31 "data/maps/Route501/scripts.pory"
-	goto_if_eq VAR_RESULT, MALE, Route501_RivalMaya
+	goto_if_eq VAR_RESULT, MALE, Route501_RivalKanami
 # 32 "data/maps/Route501/scripts.pory"
 	goto_if_eq VAR_RESULT, FEMALE, Route501_RivalShinji
 	return
@@ -63,7 +63,7 @@ PlayerMoveToRivalRight:
 	walk_in_place_faster_right
 	step_end
 
-Route501_RivalMaya::
+Route501_RivalKanami::
 # 48 "data/maps/Route501/scripts.pory"
 	applymovement 1, RivalNoticePlayer
 # 49 "data/maps/Route501/scripts.pory"
@@ -79,7 +79,7 @@ Route501_RivalMaya::
 # 57 "data/maps/Route501/scripts.pory"
 	waitmovement 0
 # 59 "data/maps/Route501/scripts.pory"
-	msgbox Route501_RivalMaya_Text_0
+	msgbox Route501_RivalKanami_Text_0
 # 61 "data/maps/Route501/scripts.pory"
 	applymovement 1, RivalApproachBag
 # 62 "data/maps/Route501/scripts.pory"
@@ -167,7 +167,7 @@ Route501_RivalShinji::
 # 118 "data/maps/Route501/scripts.pory"
 	waitmovement 0
 # 120 "data/maps/Route501/scripts.pory"
-	msgbox Route501_RivalMaya_Text_0
+	msgbox Route501_RivalKanami_Text_0
 # 122 "data/maps/Route501/scripts.pory"
 	applymovement 1, RivalApproachBag
 # 123 "data/maps/Route501/scripts.pory"
@@ -387,17 +387,17 @@ Route501_EventScript_SkwovetGirl_2:
 	goto Route501_EventScript_SkwovetGirl_1
 
 
-Route501_EventScript_Adrien::
+Route501_EventScript_Yuuto::
 # 338 "data/maps/Route501/scripts.pory"
-	trainerbattle_single TRAINER_ADRIEN, Route501_Text_AdrienIntro, Route501_Text_AdrienDefeated
+	trainerbattle_single TRAINER_YUUTO, Route501_Text_YuutoIntro, Route501_Text_YuutoDefeated
 # 339 "data/maps/Route501/scripts.pory"
-	msgbox Route102_Text_AdrienPostBattle, MSGBOX_AUTOCLOSE
+	msgbox Route102_Text_YuutoPostBattle, MSGBOX_AUTOCLOSE
 # 340 "data/maps/Route501/scripts.pory"
 	waitmessage
 	end
 
 
-Route501_RivalMaya_Text_0:
+Route501_RivalKanami_Text_0:
 # 59 "data/maps/Route501/scripts.pory"
 	.string "Oh, there it is!$"
 
@@ -523,18 +523,18 @@ Route501_Text_SkwovetGirl3::
 	.string "eating!\n"
 	.string "I could watch them all day!$"
 
-Route501_Text_AdrienIntro::
+Route501_Text_YuutoIntro::
 # 344 "data/maps/Route501/scripts.pory"
 	.string "We've locked eyes! That means it's time\n"
 	.string "for a battle!\p"
 	.string "I'll show you the power of my favorite\n"
 	.string "Pokémon!$"
 
-Route501_Text_AdrienDefeated::
+Route501_Text_YuutoDefeated::
 # 349 "data/maps/Route501/scripts.pory"
 	.string "You're so strong!$"
 
-Route102_Text_AdrienPostBattle::
+Route102_Text_YuutoPostBattle::
 # 353 "data/maps/Route501/scripts.pory"
 	.string "You're really good at this! I hope we\n"
 	.string "can battle again sometime!$"

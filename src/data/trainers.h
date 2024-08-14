@@ -26,10 +26,10 @@
         },
     },
 #line 84
-    [TRAINER_ADRIEN] =
+    [TRAINER_YUUTO] =
     {
 #line 85
-        .trainerName = _("Adrien"),
+        .trainerName = _("Yuuto"),
 #line 86
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 87
@@ -21974,7 +21974,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 8800
-    [TRAINER_GINA_AND_MIA_1] =
+    [TRAINER_YUMI_AND_FUMI_1] =
     {
 #line 8801
         .trainerName = _("GINA & MIA"),

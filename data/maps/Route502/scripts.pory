@@ -1,1 +1,44 @@
 mapscripts Route502_MapScripts {}
+
+script Route502_EventScript_Yumi {
+    trainerbattle_double(TRAINER_YUMI_AND_FUMI_1, Route502_Text_YumiIntro, Route502_Text_YumiDefeat, Route502_Text_YumiNotEnoughMons)
+    msgbox(Route102_Text_YuutoPostBattle, MSGBOX_AUTOCLOSE)
+    waitmessage
+    end
+}
+
+script Route502_EventScript_Fumi {
+    trainerbattle_double(TRAINER_YUMI_AND_FUMI_1, Route502_Text_FumiIntro, Route502_Text_FumiDefeat, Route502_Text_FumiNotEnoughMons)
+    msgbox(Route102_Text_YuutoPostBattle, MSGBOX_AUTOCLOSE)
+    waitmessage
+    end
+}
+
+text Route502_Text_YumiIntro { //batles with sister
+    format("Hey! I'm Yumi, and this is my sister Fumi!\p"
+           "We're twins, and we love to battle together!\p"
+           "Let's have a double battle!")
+}
+
+text Route502_Text_YumiDefeat {
+    format("This is all your fault, Fumi!")
+}
+
+text Route502_Text_YumiNotEnoughMons {
+    format("Oh no! You don't have enough Pokémon to battle us!\p"
+           "Come back when you have at least two!")
+}
+
+text Route502_Text_FumiIntro {
+    format("Um... I'm Fumi. I'm Yumi's sister.\p"
+           "I'm not as good at battling as she is, but I'll do my best!")
+}
+
+text Route502_Text_FumiDefeat {
+    format("Yumi, you're so bad at battling!")
+}
+
+text Route502_Text_FumiNotEnoughMons {
+    format("Um... I don't think we can battle right now.\p"
+           "You need at least two Pokémon to battle us.")
+}

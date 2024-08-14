@@ -15,7 +15,7 @@ script BaycrestCity_Trigger_Rival1 {
     waitmovement(0)
 
     checkplayergender
-    goto_if_eq(VAR_RESULT, MALE, BaycrestCity_Maya)
+    goto_if_eq(VAR_RESULT, MALE, BaycrestCity_Kanami)
     goto_if_eq(VAR_RESULT, FEMALE, BaycrestCity_Shinji)
 
     releaseall
@@ -30,17 +30,18 @@ script BaycrestCity_Trigger_Rival2 {
     waitmovement(0)
 
     checkplayergender
-    goto_if_eq(VAR_RESULT, MALE, BaycrestCity_Maya)
+    goto_if_eq(VAR_RESULT, MALE, BaycrestCity_Kanami)
     goto_if_eq(VAR_RESULT, FEMALE, BaycrestCity_Shinji)
 
     releaseall
 }
 
-script BaycrestCity_Maya {
+script BaycrestCity_Kanami {
     playbgm(MUS_ENCOUNTER_MAY, 0)
 
     //buffernumberstring(STR_VAR_1, VAR_0x8009)
     msgbox(BaycrestCity_Text_Rival1F)
+    msgbox(BaycrestCity_Text_Rival2F)
 }
 
 script BaycrestCity_Shinji {
@@ -48,6 +49,8 @@ script BaycrestCity_Shinji {
 
     //buffernumberstring(STR_VAR_1, VAR_0x8009)
     msgbox(BaycrestCity_Text_Rival1M)
+
+    msgbox(BaycrestCity_Text_Rival2M)
 }
 
 
@@ -80,13 +83,38 @@ text BaycrestCity_Text_Rival1F { //Wants to see how many Pokémon you caught
 }
 
 text BaycrestCity_Text_Rival1MonF {
-    format("")
+    format("test")
 }
+
+text BaycrestCity_Text_Rival2MonF {
+    format("test")
+}
+
+text BaycrestCity_Text_Rival3MonF {
+    format("test")
+}
+
+
+text BaycrestCity_Text_Rival2F { //Ask to battle
+    format( "I've already registered for the Toshou League, but I don't really know how to battle...\p"
+            "I was hoping I could practice with you, {PLAYER}{KUN}!\p"
+            "Let's battle!"
+    
+    )
+}
+
 
 text BaycrestCity_Text_Rival1M {
     format("{RIVAL}: Oh, hey, {PLAYER}{KUN}!\nThere you are!\p"
             "Have you caught any Pokémon yet?\p"
             "I sure have!\nLet's see who's caught more!"
             "Looks like you've caught... {STR_VAR_1} Pokémon, right?"
+    )
+}
+
+text BaycrestCity_Text_Rival2M {
+    format("{RIVAL}: By the way, I've already registered for the Toshou League.\p"
+            "I'd really like to practice before I take on the Gym, though.\p"
+            "Which means... I need to battle you, {PLAYER}{KUN}!"
     )
 }

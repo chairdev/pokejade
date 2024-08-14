@@ -4,7 +4,7 @@
 #include "constants/battle_partner.h"
 
 #define TRAINER_NONE                          0
-#define TRAINER_ADRIEN                      1
+#define TRAINER_YUUTO                      1
 #define TRAINER_GRUNT_AQUA_HIDEOUT_1          2
 #define TRAINER_GRUNT_AQUA_HIDEOUT_2          3
 #define TRAINER_GRUNT_AQUA_HIDEOUT_3          4
@@ -486,7 +486,7 @@
 #define TRAINER_DIANA_5                     480
 #define TRAINER_AMY_AND_LIV_1               481
 #define TRAINER_AMY_AND_LIV_2               482
-#define TRAINER_GINA_AND_MIA_1              483
+#define TRAINER_YUMI_AND_FUMI_1              483
 #define TRAINER_MIU_AND_YUKI                484
 #define TRAINER_AMY_AND_LIV_3               485
 #define TRAINER_GINA_AND_MIA_2              486

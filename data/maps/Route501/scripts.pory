@@ -16,7 +16,7 @@ script Route501_Trigger_WalkToRivalLeft
     waitmovement(0)
 
     checkplayergender
-    goto_if_eq(VAR_RESULT, MALE, Route501_RivalMaya)
+    goto_if_eq(VAR_RESULT, MALE, Route501_RivalKanami)
     goto_if_eq(VAR_RESULT, FEMALE, Route501_RivalShinji)
 }
 
@@ -28,7 +28,7 @@ script Route501_Trigger_WalkToRivalRight
     waitmovement(0)
 
     checkplayergender
-    goto_if_eq(VAR_RESULT, MALE, Route501_RivalMaya)
+    goto_if_eq(VAR_RESULT, MALE, Route501_RivalKanami)
     goto_if_eq(VAR_RESULT, FEMALE, Route501_RivalShinji)
 
 }
@@ -44,7 +44,7 @@ movement PlayerMoveToRivalRight {
     walk_in_place_faster_right
 }
 
-script Route501_RivalMaya {
+script Route501_RivalKanami {
     applymovement(OBJ_RIVAL, RivalNoticePlayer)
     waitmovement(0)
 
@@ -258,7 +258,7 @@ text Route501_Text_MeetRivalText4F {
            )
 }
 
-text Route501_Text_MeetRivalText1M { //He's a bit less chatty and more to the point than Maya.
+text Route501_Text_MeetRivalText1M { //He's a bit less chatty and more to the point than Kanami.
     format("Whoa!\p"
             "You're the new kid, {PLAYER}{KUN}, right?\p"
             "I'm {RIVAL}, your neighbor.\p"
@@ -334,22 +334,22 @@ text Route501_Text_SkwovetGirl3 {
     format("Skwovet are just too cute when they're eating!\nI could watch them all day!")
 }
 
-script Route501_EventScript_Adrien {
-    trainerbattle_single(TRAINER_ADRIEN, Route501_Text_AdrienIntro, Route501_Text_AdrienDefeated)
-    msgbox(Route102_Text_AdrienPostBattle, MSGBOX_AUTOCLOSE)
+script Route501_EventScript_Yuuto {
+    trainerbattle_single(TRAINER_YUUTO, Route501_Text_YuutoIntro, Route501_Text_YuutoDefeated)
+    msgbox(Route102_Text_YuutoPostBattle, MSGBOX_AUTOCLOSE)
     waitmessage
     end
 }
 
-text Route501_Text_AdrienIntro {
+text Route501_Text_YuutoIntro {
     format("We've locked eyes! That means it's time for a battle!\p"
            "I'll show you the power of my favorite Pokémon!")
 }
 
-text Route501_Text_AdrienDefeated {
+text Route501_Text_YuutoDefeated {
     format("You're so strong!")
 }
 
-text Route102_Text_AdrienPostBattle {
+text Route102_Text_YuutoPostBattle {
     format("You're really good at this! I hope we can battle again sometime!")
 }
