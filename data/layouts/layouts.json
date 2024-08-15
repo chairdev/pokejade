@@ -4490,6 +4490,16 @@
       "secondary_tileset": "gTileset_PokemonCenter",
       "border_filepath": "data/layouts/BaycrestCity_PokemonCenter_1F/border.bin",
       "blockdata_filepath": "data/layouts/BaycrestCity_PokemonCenter_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_BAYCREST_CITY_GYM",
+      "name": "BaycrestCity_Gym_Layout",
+      "width": 12,
+      "height": 22,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonSchool",
+      "border_filepath": "data/layouts/BaycrestCity_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/BaycrestCity_Gym/map.bin"
     }
   ]
 }

@@ -633,6 +633,7 @@
     "EverwoodTown_PlayersHouse_2F"
   ],
   "gMapGroup_IndoorBaycrest": [
-    "BaycrestCity_PokemonCenter_1F"
+    "BaycrestCity_PokemonCenter_1F",
+    "BaycrestCity_Gym"
   ]
 }

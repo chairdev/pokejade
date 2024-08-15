@@ -1090,3 +1090,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route502/scripts.inc"
 
 	.include "data/maps/BaycrestCity_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/BaycrestCity_Gym/scripts.inc"
