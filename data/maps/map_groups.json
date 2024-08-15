@@ -34,7 +34,8 @@
     "gMapGroup_IndoorRoute123",
     "gMapGroup_IndoorRoute119",
     "gMapGroup_IndoorRoute124",
-    "gMapGroup_IndoorEverwood"
+    "gMapGroup_IndoorEverwood",
+    "gMapGroup_IndoorBaycrest"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -630,5 +631,8 @@
     "EverwoodTown_HawthornResearchLab",
     "EverwoodTown_PlayersHouse_1F",
     "EverwoodTown_PlayersHouse_2F"
+  ],
+  "gMapGroup_IndoorBaycrest": [
+    "BaycrestCity_PokemonCenter_1F"
   ]
 }

@@ -1,0 +1,67 @@
+const LOCALID_NURSE = 1
+
+mapscripts BaycrestCity_PokemonCenter_1F_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION : BaycrestCity_PokemonCenter_1F_OnTransition
+    MAP_SCRIPT_ON_RESUME : CableClub_OnResume
+}
+
+script BaycrestCity_PokemonCenter_1F_OnTransition {
+    setrespawn(HEAL_LOCATION_BAYCREST_CITY)
+    call(Common_EventScript_UpdateBrineyLocation)
+}
+
+script BaycrestCity_PokemonCenter_1F_EventScript_Nurse {
+
+    if(!flag(FLAG_REGISTERED_TO_LEAGUE))
+    {
+        goto(BaycrestCity_PokemonCenter_1F_EventScript_RegisterLeague)
+    }
+    else
+    {
+        setvar(VAR_0x800B, LOCALID_NURSE)
+        call(Common_EventScript_PkmnCenterNurse)
+        waitmessage
+        waitbuttonpress
+        release
+    }
+}
+
+script BaycrestCity_PokemonCenter_1F_EventScript_RegisterLeague {
+    lock
+
+    msgbox(BaycrestCity_PokemonCenter_1F_Text_RegisterToLeague1)
+    closemessage
+    fadescreen(FADE_TO_BLACK)
+    playse(SE_M_LOCK_ON)
+    waitse
+    msgbox(BaycrestCity_PokemonCenter_1F_Text_RegisterToLeague2)
+    closemessage
+    playse(SE_M_CHARGE)
+    fadescreen(FADE_FROM_BLACK)
+    msgbox(BaycrestCity_PokemonCenter_1F_Text_RegisterToLeague3)
+
+    setflag(FLAG_REGISTERED_TO_LEAGUE)
+    release
+}
+
+text BaycrestCity_PokemonCenter_1F_Text_RegisterToLeague1 { //give pokedex to nurse
+    format("Welcome to the Pokémon Center!\nHow may I help you today?\p"
+            "Oh, you're here to register for the Toshou Pokémon League?\p"
+            "I can help you with that!\nJust give me your Pokédex, and I'll take care of the rest."
+    )
+}
+
+text BaycrestCity_PokemonCenter_1F_Text_RegisterToLeague2 { //computer
+    format("{PLAYER}-kun from Everwood Town.\p"
+            "Registration for the Toshou Pokémon League recognized.\p"
+            "Registration complete."
+    )
+}
+
+text BaycrestCity_PokemonCenter_1F_Text_RegisterToLeague3 { //after giving pokedex
+    format("There you go! You're all set to compete in the Toshou League!\p"
+            "The nearest Gym is here in Baycrest City, so you can start by getting your first badge there.\p"
+            "Once you have all eight badges, you can participate in the Paragon Conference to earn the right to challenge the Elite Four and the Champion!\p"
+            "Good luck on your journey to become the Toshou Champion!"
+    )
+}

@@ -412,11 +412,11 @@ Route501_EventScript_MartEmployee_2:
 
 
 Route501_EventScript_Yuuto::
-# 362 "data/maps/Route501/scripts.pory"
-	trainerbattle_single TRAINER_YUUTO, Route501_Text_YuutoIntro, Route501_Text_YuutoDefeated
-# 363 "data/maps/Route501/scripts.pory"
-	msgbox Route102_Text_YuutoPostBattle, MSGBOX_AUTOCLOSE
 # 364 "data/maps/Route501/scripts.pory"
+	trainerbattle_single TRAINER_YUUTO, Route501_Text_YuutoIntro, Route501_Text_YuutoDefeated
+# 365 "data/maps/Route501/scripts.pory"
+	msgbox Route102_Text_YuutoPostBattle, MSGBOX_AUTOCLOSE
+# 366 "data/maps/Route501/scripts.pory"
 	waitmessage
 	end
 
@@ -552,27 +552,29 @@ Route501_Text_MartEmployee1::
 	.string "Hello! Are you a Pokémon Trainer?\p"
 	.string "We're giving away free Potions to all\n"
 	.string "Trainers who pass through here as a\l"
-	.string "promotion!$"
+	.string "promotion!\p"
+	.string "Please take them as a gift from the\n"
+	.string "Baycrest City Poké Mart!$"
 
 Route501_Text_MartEmployee2::
-# 356 "data/maps/Route501/scripts.pory"
-	.string "We hope you'll visit our store when you\n"
-	.string "get to Baycrest City!\p"
+# 358 "data/maps/Route501/scripts.pory"
+	.string "We hope you'll continue to shop with us\n"
+	.string "in the future!\p"
 	.string "We have a wide selection of items that\n"
 	.string "will help you on your journey!$"
 
 Route501_Text_YuutoIntro::
-# 368 "data/maps/Route501/scripts.pory"
+# 370 "data/maps/Route501/scripts.pory"
 	.string "We've locked eyes! That means it's time\n"
 	.string "for a battle!\p"
 	.string "I'll show you the power of my favorite\n"
 	.string "Pokémon!$"
 
 Route501_Text_YuutoDefeated::
-# 373 "data/maps/Route501/scripts.pory"
+# 375 "data/maps/Route501/scripts.pory"
 	.string "You're so strong!$"
 
 Route102_Text_YuutoPostBattle::
-# 377 "data/maps/Route501/scripts.pory"
+# 379 "data/maps/Route501/scripts.pory"
 	.string "You're really good at this! I hope we\n"
 	.string "can battle again sometime!$"
