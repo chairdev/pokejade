@@ -10973,19 +10973,19 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_FIRE_BLAST,
     },
 
-    [ITEM_TM_ROCK_TOMB] =
+    [ITEM_TM_SAND_TOMB] =
     {
         .name = _("TM39"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "Stops the foe from\n"
-            "moving with rocks.\n"
-            "May lower Speed."),
+            "Traps and hurts the\n"
+            "foe in quicksand\n"
+            "for 2 to 5 turns."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_ROCK_TOMB,
+        .secondaryId = MOVE_SAND_TOMB,
     },
 
     [ITEM_TM_AERIAL_ACE] =

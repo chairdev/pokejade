@@ -4788,39 +4788,44 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Rock Slide
 - Crunch
 
-=== TRAINER_ROXANNE_1 ===
-Name: ROXANNE
+=== TRAINER_RIKU_1 ===
+Name: Riku
 Class: Leader
-Pic: Leader Roxanne
+Pic: Leader Brawly
 Gender: Female
 Music: Female
 Items: Potion / Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Geodude
+Wooper @ Rindo Berry  
 Level: 12
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
-- Defense Curl
-- Rock Throw
-- Rock Tomb
+Ability: Water Absorb  
+Quiet Nature  
+IVs: 20 HP / 20 Def / 20 SpA / 20 SpD / 20 Spe  
+- Tail Whip  
+- Water Gun  
+- Mud Shot  
+- Sand Tomb
 
-Geodude
+Mudbray @ Soft Sand
 Level: 12
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
-- Defense Curl
-- Rock Throw
-- Rock Tomb
+Brave Nature  
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe  
+- Mud-Slap  
+- Double Kick  
+- Iron Defense  
+- Sand Tomb
 
-Nosepass @ Oran Berry
-Level: 15
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Block
-- Harden
-- Tackle
-- Rock Tomb
+Toedscool  @Berry Juice
+Level: 13
+EVs: 252 HP  
+Hasty Nature  
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe  
+- Rapid Spin  
+- Absorb  
+- Mud-Slap  
+- Sand Tomb
 
 === TRAINER_BRAWLY_1 ===
 Name: BRAWLY
@@ -5970,22 +5975,21 @@ Seedot
 Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_JOSH ===
-Name: JOSH
-Class: Youngster
-Pic: Youngster
+=== TRAINER_SHU ===
+Name: Shu
+Class: School Kid
+Pic: School Kid M
 Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move
 
 Geodude
-Level: 10
+Level: 9
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
 
-=== TRAINER_TOMMY ===
-Name: TOMMY
+=== TRAINER_JUNPEI ===
+Name: Junpei
 Class: Youngster
 Pic: Youngster
 Gender: Male
@@ -5994,11 +5998,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Geodude
-Level: 8
+Level: 9
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
-Geodude
-Level: 8
+Wooper
+Level: 10
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_JOEY ===
@@ -8806,11 +8810,11 @@ Music: Twins
 Double Battle: Yes
 AI: Check Bad Move
 
-Psyduck
+SPECIES_SHELLOS_EAST_SEA
 Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Slowpoke
+SPECIES_SHELLOS_WEST_SEA
 Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 

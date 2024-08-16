@@ -40,7 +40,7 @@
     F(SLUDGE_BOMB) \
     F(SANDSTORM) \
     F(FIRE_BLAST) \
-    F(ROCK_TOMB) \
+    F(SAND_TOMB) \
     F(AERIAL_ACE) \
     F(TORMENT) \
     F(FACADE) \

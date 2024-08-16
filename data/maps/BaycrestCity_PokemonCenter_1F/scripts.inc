@@ -45,7 +45,7 @@ BaycrestCity_PokemonCenter_1F_EventScript_RegisterLeague::
 # 34 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
 	fadescreen FADE_TO_BLACK
 # 35 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
-	playse SE_M_CHARGE
+	playse SE_M_LOCK_ON
 # 36 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
 	waitse
 # 37 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
@@ -53,7 +53,7 @@ BaycrestCity_PokemonCenter_1F_EventScript_RegisterLeague::
 # 38 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
 	closemessage
 # 39 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
-	playse SE_M_LOCK_ON
+	playse SE_M_CHARGE
 # 40 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
 	fadescreen FADE_FROM_BLACK
 # 41 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
@@ -61,12 +61,14 @@ BaycrestCity_PokemonCenter_1F_EventScript_RegisterLeague::
 # 43 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
 	setflag FLAG_REGISTERED_TO_LEAGUE
 # 44 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
+	setvar VAR_BAYCREST_CITY_STATE, 2
+# 45 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
 	release
 	return
 
 
 BaycrestCity_PokemonCenter_1F_Text_RegisterToLeague1::
-# 47 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
+# 48 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
 	.string "Welcome to the Pokémon Center!\n"
 	.string "How may I help you today?\p"
 	.string "Oh, you're here to register for the\n"
@@ -76,14 +78,14 @@ BaycrestCity_PokemonCenter_1F_Text_RegisterToLeague1::
 	.string "care of the rest.$"
 
 BaycrestCity_PokemonCenter_1F_Text_RegisterToLeague2::
-# 54 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
+# 55 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
 	.string "{PLAYER}-kun from Everwood Town.\p"
 	.string "Registration for the Toshou Pokémon\n"
 	.string "League recognized.\p"
 	.string "Registration complete.$"
 
 BaycrestCity_PokemonCenter_1F_Text_RegisterToLeague3::
-# 61 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
+# 62 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
 	.string "There you go! You're all set to compete\n"
 	.string "in the Toshou League!\p"
 	.string "The nearest Gym is here in Baycrest\n"

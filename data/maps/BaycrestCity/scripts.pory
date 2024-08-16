@@ -1,3 +1,8 @@
+//Baycrest City States
+//0: Meet Rival
+//1: Rival Defeated
+//2: Registered to League
+
 const OBJ_RIVAL = 1
 
 mapscripts BaycrestCity_MapScripts {

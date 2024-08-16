@@ -46,6 +46,20 @@
       "elevation": 0,
       "dest_map": "MAP_BAYCREST_CITY_POKEMON_CENTER_1F",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 5,
+      "y": 27,
+      "elevation": 0,
+      "dest_map": "MAP_BAYCREST_CITY_GYM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 7,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_BAYCREST_CITY_GYM",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

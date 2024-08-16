@@ -1,1 +1,309 @@
+const OBJ_GYM_GUIDE = 1
+
 mapscripts BaycrestCity_Gym_MapScripts {}
+
+script BaycrestCity_Gym_Trigger_NotAChallenger1 {
+    lockall
+
+    applymovement(OBJ_EVENT_ID_PLAYER, PlayerMoveDown)
+    applymovement(OBJ_GYM_GUIDE, BaycrestCity_Gym_Movement_GuideApproachPlayer1)
+    waitmovement(1)
+
+    msgbox(BaycrestCity_Gym_Text_NotAChallenger)
+    closemessage
+
+    applymovement(OBJ_GYM_GUIDE, BaycrestCity_Gym_Movement_GuideWalkBack1)
+    waitmovement(0)
+    
+    releaseall   
+}
+
+script BaycrestCity_Gym_Trigger_NotAChallenger2 {
+    lockall
+
+    applymovement(OBJ_EVENT_ID_PLAYER, PlayerMoveDown)
+    applymovement(OBJ_GYM_GUIDE, BaycrestCity_Gym_Movement_GuideApproachPlayer2)
+    waitmovement(1)
+
+    msgbox(BaycrestCity_Gym_Text_NotAChallenger)
+    closemessage
+
+    applymovement(OBJ_GYM_GUIDE, BaycrestCity_Gym_Movement_GuideWalkBack2)
+    waitmovement(0)
+
+    releaseall
+}
+
+script BaycrestCity_Gym_Trigger_NotAChallenger3 {
+    lockall
+
+    applymovement(OBJ_EVENT_ID_PLAYER, PlayerMoveDown)
+    applymovement(OBJ_GYM_GUIDE, BaycrestCity_Gym_Movement_GuideApproachPlayer3)
+    waitmovement(1)
+
+    msgbox(BaycrestCity_Gym_Text_NotAChallenger)
+    closemessage
+
+    applymovement(OBJ_GYM_GUIDE, BaycrestCity_Gym_Movement_GuideWalkBack3)
+    waitmovement(0)
+
+    releaseall
+}
+
+script BaycrestCity_Gym_Trigger_NotAChallenger4 {
+    lockall
+
+    applymovement(OBJ_EVENT_ID_PLAYER, PlayerMoveDown)
+    applymovement(OBJ_GYM_GUIDE, BaycrestCity_Gym_Movement_GuideApproachPlayer4)
+    waitmovement(1)
+
+    msgbox(BaycrestCity_Gym_Text_NotAChallenger)
+
+    applymovement(OBJ_GYM_GUIDE, BaycrestCity_Gym_Movement_GuideWalkBack4)
+    waitmovement(0)
+
+    releaseall
+}
+
+movement BaycrestCity_Gym_Movement_GuideApproachPlayer1 {
+    walk_up * 3
+    walk_left * 3
+    walk_in_place_faster_up
+}
+
+movement BaycrestCity_Gym_Movement_GuideWalkBack1 {
+    walk_down * 3
+    walk_right * 3
+    walk_in_place_faster_down
+}
+
+movement BaycrestCity_Gym_Movement_GuideApproachPlayer2 {
+    walk_up * 3
+    walk_left * 2
+    walk_in_place_faster_up
+}
+
+movement BaycrestCity_Gym_Movement_GuideWalkBack2 {
+    walk_down * 3
+    walk_right * 2
+    walk_in_place_faster_down
+}
+
+movement BaycrestCity_Gym_Movement_GuideApproachPlayer3 {
+    walk_up * 3
+    walk_left
+    walk_in_place_faster_up
+}
+
+movement BaycrestCity_Gym_Movement_GuideWalkBack3 {
+    walk_down * 3
+    walk_right
+    walk_in_place_faster_down
+}
+
+movement BaycrestCity_Gym_Movement_GuideApproachPlayer4 {
+    walk_up * 3
+    walk_in_place_faster_up
+}
+
+movement BaycrestCity_Gym_Movement_GuideWalkBack4 {
+    walk_down * 3
+    walk_in_place_faster_down
+}
+
+
+text BaycrestCity_Gym_Text_NotAChallenger {
+    format( "Hey there!\nYou don't look like you're here to learn about the technicalities of Pokémon battling.\p"
+            "Register for the League at the Pokémon Center if you want to challenge the Gym!"
+    )
+}
+
+script BaycrestCity_Gym_EventScript_GymGuide {
+    lock
+    faceplayer
+
+    if(flag(FLAG_TEMP_1))
+    {
+        msgbox(BaycrestCity_Gym_Text_GymGuide3)
+    }
+    else
+    {
+        msgbox(BaycrestCity_Gym_Text_GymGuide1)
+    }
+
+    if(!flag(FLAG_RECEIVED_FRESH_WATER_BAYCREST_GYM))
+    {
+        msgbox(BaycrestCity_Gym_Text_GymGuide2)
+        giveitem(ITEM_FRESH_WATER)
+        setflag(FLAG_RECEIVED_FRESH_WATER_BAYCREST_GYM)
+    }
+
+    setflag(FLAG_TEMP_1)
+    release
+}
+
+text BaycrestCity_Gym_Text_GymGuide1 { //ground gym, gym leader is a kid, but hes good.
+    format("Yo!\nChamp in the making!\p"
+            "This is your first gym, right?\nHow could I tell?\p"
+            "Well, you look like a total newbie!\p"
+            "But don't worry, I'm here to help!\p"
+            "The trainers in this gym all use Ground-type Pokémon.\p"
+            "That means Water, Grass, and Ice-type moves are super effective against them!\p"
+            "But be careful!\nGround-types are immune to Electric-type moves!\p"
+            "And if you're using a Fire-type, watch out for their Rock-type moves!\p"
+            "You got all that?\nGood luck!"
+    )
+}
+
+text BaycrestCity_Gym_Text_GymGuide2 {
+    format("...Hey, relax!\nYou still look nervous!\p"
+            "Take this to calm your nerves!"
+    )
+}
+
+text BaycrestCity_Gym_Text_GymGuide3 {
+    format( "The trainers in this gym all use Ground-type Pokémon.\p"
+            "That means Water, Grass, and Ice-type moves are super effective against them!\p"
+            "But be careful!\nGround-types are immune to Electric-type moves!\p"
+            "And if you're using a Fire-type, watch out for their Rock-type moves!\p"
+            "You got all that?\nGood luck!"
+    )
+}
+
+script BaycrestCity_Gym_EventScript_EntranceAttendant {
+    lock
+    msgbox(BaycrestCity_Gym_Text_EntranceAttendant1)
+    release
+}
+
+text BaycrestCity_Gym_Text_EntranceAttendant1 { //this gym doubles also the trainer school
+    format( "Hey there!\nWelcome to the Baycrest City Gym!\p"
+            "This place is also the Baycrest City Trainer School!\p"
+            "So please keep your conversations appropriate for a school environment!"
+    )
+}
+
+
+script BaycrestCity_Gym_EventScript_Shu { //know it all kid
+    trainerbattle_single(TRAINER_SHU, BaycrestCity_Gym_Text_ShuIntro, BaycrestCity_Gym_Text_ShuDefeated)
+    msgbox(BaycrestCity_Gym_Text_ShuPostBattle, MSGBOX_AUTOCLOSE)
+    waitmessage
+    end
+}
+
+text BaycrestCity_Gym_Text_ShuIntro {
+    format("I know everything there is to know about Pokémon!\p"
+            "I'll show you how much I know in battle!")
+}
+
+text BaycrestCity_Gym_Text_ShuDefeated {
+    format("B-But in the simulations, I've always won!")
+}
+
+text BaycrestCity_Gym_Text_ShuPostBattle {
+    format("Maybe I need to study more...")
+}
+
+script BaycrestCity_Gym_EventScript_Junpei { //stupid kid, doesnt study
+    trainerbattle_single(TRAINER_JUNPEI, BaycrestCity_Gym_Text_JunpeiIntro, BaycrestCity_Gym_Text_JunpeiDefeated)
+    msgbox(BaycrestCity_Gym_Text_JunpeiPostBattle, MSGBOX_AUTOCLOSE)
+    waitmessage
+    end
+}
+
+text BaycrestCity_Gym_Text_JunpeiIntro {
+    format("Psh, who needs to study when you can just battle?"
+    )
+}
+
+text BaycrestCity_Gym_Text_JunpeiDefeated {
+    format("Welp, I think it's time to hit the books!")
+}
+
+text BaycrestCity_Gym_Text_JunpeiPostBattle {
+    format("Maybe studying isn't only for losers after all...")
+}
+
+script BaycrestCity_Gym_EventScript_Riku { //leader
+    trainerbattle_single(TRAINER_RIKU_1, BaycrestCity_Gym_Text_RikuIntro, BaycrestCity_Gym_Text_RikuDefeat, BaycrestCity_Gym_EventScript_RikuDefeated, NO_MUSIC)
+    if(flag(FLAG_RECEIVED_TM_SAND_TOMB) == FALSE)
+    {
+        goto(BaycrestCity_Gym_EventScript_GiveSandTomb)
+    }
+
+    msgbox(BaycrestCity_Gym_Text_RikuPostBattle, MSGBOX_AUTOCLOSE)
+    release
+}
+
+script BaycrestCity_Gym_EventScript_RikuDefeated {
+    msgbox(BaycrestCity_Gym_Text_RikuDefeated)
+    playfanfare(MUS_OBTAIN_BADGE)
+    msgbox(BaycrestCity_Gym_Text_ReceivedFoundationBadge)
+    waitfanfare
+    msgbox(BaycrestCity_Gym_Text_FoundationBadgeInfo)
+
+   	setflag(FLAG_DEFEATED_BAYCREST_GYM)
+    setflag(FLAG_BADGE01_GET)
+
+    goto(BaycrestCity_Gym_EventScript_GiveSandTomb)
+
+    call(Common_EventScript_SetGymTrainers)
+    release
+}
+
+script BaycrestCity_Gym_EventScript_GiveSandTomb {
+    giveitem(ITEM_TM_SAND_TOMB)
+
+    if(var(VAR_RESULT) == FALSE)
+    {
+        goto(Common_EventScript_ShowBagIsFull)
+    }
+
+    setflag(FLAG_RECEIVED_TM_SAND_TOMB)
+    msgbox(BaycrestCity_Gym_Text_ExplainSandTomb)
+    release
+}
+
+text BaycrestCity_Gym_Text_RikuIntro {
+    format("Are you my next challenger?\nI'm Riku, the Baycrest City Gym Leader!\p"
+            "I may be a kid, but I graduated from the Trainer School with top marks a few years ago!\p"
+            "I think that Ground-type is one of the best offensive types in the world!\p"
+            "You could say it's the foundation of a good team!\p"
+            "But don't think I'm going to go easy on you!\p"
+            "I'll show you and the world that Ground-types aren't pushovers!"
+    )
+}
+
+text BaycrestCity_Gym_Text_RikuDefeat {
+    format( "My solid foundation crumbled...\p"
+            "Even though I'm a Gym Leader, I still have a lot to learn...")
+}
+
+text BaycrestCity_Gym_Text_RikuDefeated {
+    format( "Ahem!\nCongratulations, {PLAYER}-san!\p"
+            "According to the official rules of the Pokémon League, once you defeat a Gym Leader, you will receive a badge as proof of your victory!\p"
+            "That's right!\nThe Pokémon League's official Foundation Badge is yours!")
+}
+
+text BaycrestCity_Gym_Text_ReceivedFoundationBadge {
+    "You received the Foundation Badge!"
+}
+
+text BaycrestCity_Gym_Text_FoundationBadgeInfo {
+    format( "With this badge, Pokémon of up to level 20 will be easier to catch and will listen to your commands!\p"
+            "Plus, you can use the HM move Rock Smash outside of battle!\p"
+            "One more thing!\nTake this TM as a reward for your victory!"
+    )
+}
+
+text BaycrestCity_Gym_Text_ExplainSandTomb {
+    format( "This is the TM--Technical Machine--for Sand Tomb!\p"
+            "It's a Ground-type move that traps the opponent in a vortex of sand for 4-5 turns!\p"
+            "It's a great move to keep your opponent grounded!\nGet it? Grounded? Ahaha!"
+    )
+}
+
+text BaycrestCity_Gym_Text_RikuPostBattle {
+    format("You were a great challenger!\nI hope you'll come back to challenge me again!")
+    
+}

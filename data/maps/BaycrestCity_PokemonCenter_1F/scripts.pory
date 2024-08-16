@@ -41,6 +41,7 @@ script BaycrestCity_PokemonCenter_1F_EventScript_RegisterLeague {
     msgbox(BaycrestCity_PokemonCenter_1F_Text_RegisterToLeague3)
 
     setflag(FLAG_REGISTERED_TO_LEAGUE)
+    setvar(VAR_BAYCREST_CITY_STATE, 2)
     release
 }
 
