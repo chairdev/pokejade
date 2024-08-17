@@ -360,6 +360,18 @@ text Route501_Text_MartEmployee2 {
            "We have a wide selection of items that will help you on your journey!")
 }
 
+script Route501_EventScript_Boy { //he's a joke on the pokemon npc thats like did you know that pokemon can be found in the grass?
+    lock
+    faceplayer
+    msgbox(Route501_Text_Boy)
+    release
+}
+
+text Route501_Text_Boy {
+    format("Did you know that Pokémon can be found in the tall grass?\p"
+           "I know, it's a shocker!\nLike, who doesn't know that?")
+}
+
 script Route501_EventScript_Yuuto {
     trainerbattle_single(TRAINER_YUUTO, Route501_Text_YuutoIntro, Route501_Text_YuutoDefeated)
     msgbox(Route102_Text_YuutoPostBattle, MSGBOX_AUTOCLOSE)
