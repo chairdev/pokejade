@@ -411,14 +411,36 @@ Route501_EventScript_MartEmployee_2:
 	goto Route501_EventScript_MartEmployee_1
 
 
-Route501_EventScript_Yuuto::
+Route501_EventScript_Boy::
 # 364 "data/maps/Route501/scripts.pory"
-	trainerbattle_single TRAINER_YUUTO, Route501_Text_YuutoIntro, Route501_Text_YuutoDefeated
+	lock
 # 365 "data/maps/Route501/scripts.pory"
-	msgbox Route102_Text_YuutoPostBattle, MSGBOX_AUTOCLOSE
+	faceplayer
 # 366 "data/maps/Route501/scripts.pory"
+	msgbox Route501_Text_Boy
+# 367 "data/maps/Route501/scripts.pory"
+	release
+	return
+
+
+Route501_EventScript_Yuuto::
+# 376 "data/maps/Route501/scripts.pory"
+	trainerbattle_single TRAINER_YUUTO, Route501_Text_YuutoIntro, Route501_Text_YuutoDefeated
+# 377 "data/maps/Route501/scripts.pory"
+	msgbox Route102_Text_YuutoPostBattle, MSGBOX_AUTOCLOSE
+# 378 "data/maps/Route501/scripts.pory"
 	waitmessage
 	end
+
+
+Route501_Sign_Route::
+# 396 "data/maps/Route501/scripts.pory"
+	lock
+# 397 "data/maps/Route501/scripts.pory"
+	msgbox Route501_Text_Sign
+# 398 "data/maps/Route501/scripts.pory"
+	release
+	return
 
 
 Route501_RivalKanami_Text_0:
@@ -563,18 +585,31 @@ Route501_Text_MartEmployee2::
 	.string "We have a wide selection of items that\n"
 	.string "will help you on your journey!$"
 
-Route501_Text_YuutoIntro::
+Route501_Text_Boy::
 # 370 "data/maps/Route501/scripts.pory"
+	.string "Did you know that Pokémon can be found\n"
+	.string "in the tall grass?\p"
+	.string "I know, it's a shocker!\n"
+	.string "Like, who doesn't know that?$"
+
+Route501_Text_YuutoIntro::
+# 382 "data/maps/Route501/scripts.pory"
 	.string "We've locked eyes! That means it's time\n"
 	.string "for a battle!\p"
 	.string "I'll show you the power of my favorite\n"
 	.string "Pokémon!$"
 
 Route501_Text_YuutoDefeated::
-# 375 "data/maps/Route501/scripts.pory"
+# 387 "data/maps/Route501/scripts.pory"
 	.string "You're so strong!$"
 
 Route102_Text_YuutoPostBattle::
-# 379 "data/maps/Route501/scripts.pory"
+# 391 "data/maps/Route501/scripts.pory"
 	.string "You're really good at this! I hope we\n"
 	.string "can battle again sometime!$"
+
+Route501_Text_Sign::
+# 401 "data/maps/Route501/scripts.pory"
+	.string "Route 501\n"
+	.string "{RIGHT_ARROW} Baycrest City\p"
+	.string "{DOWN_ARROW} Everwood Town$"

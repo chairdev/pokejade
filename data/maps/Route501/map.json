@@ -160,7 +160,7 @@
       "y": 16,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "Route501_EventScript_RouteSign"
+      "script": "Route501_Sign_Route"
     }
   ]
 }
