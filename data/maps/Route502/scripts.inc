@@ -82,8 +82,7 @@ Route502_Text_RodMan1::
 	.string "... ... ...\p"
 	.string "You're not going to leave me alone, are\n"
 	.string "you?\p"
-	.string "If I give you this, will you go away?\p"
-	.string "$"
+	.string "If I give you this, will you go away?$"
 
 Route502_Text_RodMan2::
 # 29 "data/maps/Route502/scripts.pory"
@@ -95,8 +94,8 @@ Route502_Text_RodMan2::
 
 Route502_Text_RodMan3::
 # 35 "data/maps/Route502/scripts.pory"
-	.string "Go away and let me fish in peace! Man,\n"
-	.string "kids these days...$"
+	.string "Go away and let me fish in peace!\p"
+	.string "Man, kids these days...$"
 
 Route502_Text_EmiriIntro::
 # 45 "data/maps/Route502/scripts.pory"

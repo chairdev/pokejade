@@ -634,6 +634,7 @@
   ],
   "gMapGroup_IndoorBaycrest": [
     "BaycrestCity_PokemonCenter_1F",
-    "BaycrestCity_Gym"
+    "BaycrestCity_Gym",
+    "BaycrestCity_Mart"
   ]
 }

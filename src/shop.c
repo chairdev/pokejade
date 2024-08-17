@@ -167,12 +167,14 @@ static const u16 sShopInventory_ZeroBadges[] = {
     ITEM_AWAKENING,
     ITEM_PARALYZE_HEAL,
     ITEM_REVIVE,
+    ITEM_POKE_DOLL,
     ITEM_NONE
 };
 
 static const u16 sShopInventory_OneBadge[] = {
     ITEM_POKE_BALL,
     ITEM_GREAT_BALL,
+    ITEM_HEAL_BALL,
     ITEM_POTION,
     ITEM_SUPER_POTION,
     ITEM_ANTIDOTE,
@@ -181,12 +183,15 @@ static const u16 sShopInventory_OneBadge[] = {
     ITEM_AWAKENING,
     ITEM_PARALYZE_HEAL,
     ITEM_REVIVE,
+    ITEM_POKE_DOLL,
     ITEM_NONE
 };
 
 static const u16 sShopInventory_TwoBadges[] = {
     ITEM_POKE_BALL,
     ITEM_GREAT_BALL,
+    ITEM_HEAL_BALL,
+    ITEM_NET_BALL,
     ITEM_POTION,
     ITEM_SUPER_POTION,
     ITEM_ANTIDOTE,
@@ -202,6 +207,10 @@ static const u16 sShopInventory_TwoBadges[] = {
 static const u16 sShopInventory_ThreeBadges[] = {
     ITEM_POKE_BALL,
     ITEM_GREAT_BALL,
+    ITEM_HEAL_BALL,
+    ITEM_NET_BALL,
+    ITEM_REPEAT_BALL,
+    ITEM_NEST_BALL,
     ITEM_POTION,
     ITEM_SUPER_POTION,
     ITEM_ANTIDOTE,
@@ -218,6 +227,11 @@ static const u16 sShopInventory_ThreeBadges[] = {
 static const u16 sShopInventory_FourBadges[] = {
     ITEM_POKE_BALL,
     ITEM_GREAT_BALL,
+    ITEM_HEAL_BALL,
+    ITEM_NET_BALL,
+    ITEM_REPEAT_BALL,
+    ITEM_NEST_BALL,
+    ITEM_LUXURY_BALL,
     ITEM_POTION,
     ITEM_SUPER_POTION,
     ITEM_HYPER_POTION,
@@ -236,6 +250,12 @@ static const u16 sShopInventory_FiveBadges[] = {
     ITEM_POKE_BALL,
     ITEM_GREAT_BALL,
     ITEM_ULTRA_BALL,
+    ITEM_HEAL_BALL,
+    ITEM_NET_BALL,
+    ITEM_REPEAT_BALL,
+    ITEM_NEST_BALL,
+    ITEM_LUXURY_BALL,
+    ITEM_DIVE_BALL,
     ITEM_POTION,
     ITEM_SUPER_POTION,
     ITEM_HYPER_POTION,
@@ -255,6 +275,13 @@ static const u16 sShopInventory_SixBadges[] = {
     ITEM_POKE_BALL,
     ITEM_GREAT_BALL,
     ITEM_ULTRA_BALL,
+    ITEM_HEAL_BALL,
+    ITEM_NET_BALL,
+    ITEM_REPEAT_BALL,
+    ITEM_NEST_BALL,
+    ITEM_LUXURY_BALL,
+    ITEM_DIVE_BALL,
+    ITEM_QUICK_BALL,
     ITEM_POTION,
     ITEM_SUPER_POTION,
     ITEM_HYPER_POTION,
@@ -275,6 +302,14 @@ static const u16 sShopInventory_SevenBadges[] = {
     ITEM_POKE_BALL,
     ITEM_GREAT_BALL,
     ITEM_ULTRA_BALL,
+    ITEM_HEAL_BALL,
+    ITEM_NET_BALL,
+    ITEM_REPEAT_BALL,
+    ITEM_NEST_BALL,
+    ITEM_LUXURY_BALL,
+    ITEM_DIVE_BALL,
+    ITEM_QUICK_BALL,
+    ITEM_DUSK_BALL,
     ITEM_POTION,
     ITEM_SUPER_POTION,
     ITEM_HYPER_POTION,
@@ -297,6 +332,15 @@ static const u16 sShopInventory_EightBadges[] = {
     ITEM_POKE_BALL,
     ITEM_GREAT_BALL,
     ITEM_ULTRA_BALL,
+    ITEM_HEAL_BALL,
+    ITEM_NET_BALL,
+    ITEM_REPEAT_BALL,
+    ITEM_NEST_BALL,
+    ITEM_LUXURY_BALL,
+    ITEM_DIVE_BALL,
+    ITEM_QUICK_BALL,
+    ITEM_DUSK_BALL,
+    ITEM_TIMER_BALL,
     ITEM_POTION,
     ITEM_SUPER_POTION,
     ITEM_HYPER_POTION,
@@ -309,6 +353,7 @@ static const u16 sShopInventory_EightBadges[] = {
     ITEM_PARALYZE_HEAL,
     ITEM_FULL_HEAL,
     ITEM_REVIVE,
+    ITEM_MAX_REVIVE,
     ITEM_REPEL,
     ITEM_SUPER_REPEL,
     ITEM_MAX_REPEL,
@@ -570,11 +615,11 @@ static void SetShopItemsForSale(const u16 *items)
     u8 badgeCount = GetNumberOfBadges();
 
     if (items == NULL)
-        gMartInfo.itemList = sShopInventories[badgeCount];
+        sMartInfo.itemList = sShopInventories[badgeCount];
     else
-        gMartInfo.itemList = items;
+        sMartInfo.itemList = items;
 
-    gMartInfo.itemCount = 0;
+    sMartInfo.itemCount = 0;
     // Read items until ITEM_NONE / DECOR_NONE is reached
     while (sMartInfo.itemList[i])
     {

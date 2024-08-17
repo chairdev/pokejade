@@ -1,0 +1,11 @@
+mapscripts BaycrestCity_Mart_MapScripts {}
+
+script BaycrestCity_Mart_EventScript_Clerk {
+    lock
+	faceplayer
+	message(gText_HowMayIServeYou)
+    waitmessage
+    pokemart(0)
+    msgbox(gText_PleaseComeAgain)
+    release
+}

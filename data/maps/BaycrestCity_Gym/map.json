@@ -86,14 +86,14 @@
       "y": 21,
       "elevation": 0,
       "dest_map": "MAP_BAYCREST_CITY",
-      "dest_warp_id": "1"
+      "dest_warp_id": "2"
     },
     {
       "x": 6,
       "y": 21,
       "elevation": 0,
       "dest_map": "MAP_BAYCREST_CITY",
-      "dest_warp_id": "1"
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [

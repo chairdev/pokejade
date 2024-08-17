@@ -4500,6 +4500,16 @@
       "secondary_tileset": "gTileset_PokemonSchool",
       "border_filepath": "data/layouts/BaycrestCity_Gym/border.bin",
       "blockdata_filepath": "data/layouts/BaycrestCity_Gym/map.bin"
+    },
+    {
+      "id": "LAYOUT_BAYCREST_CITY_MART",
+      "name": "BaycrestCity_Mart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/BaycrestCity_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/BaycrestCity_Mart/map.bin"
     }
   ]
 }

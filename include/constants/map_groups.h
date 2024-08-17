@@ -603,6 +603,7 @@
 // gMapGroup_IndoorBaycrest
 #define MAP_BAYCREST_CITY_POKEMON_CENTER_1F (0 | (35 << 8))
 #define MAP_BAYCREST_CITY_GYM               (1 | (35 << 8))
+#define MAP_BAYCREST_CITY_MART              (2 | (35 << 8))
 
 #define MAP_GROUPS_COUNT 36
 
