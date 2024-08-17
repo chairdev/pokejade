@@ -122,23 +122,30 @@ script BaycrestCity_Gym_EventScript_GymGuide {
     lock
     faceplayer
 
-    if(flag(FLAG_TEMP_1))
+    if(flag(FLAG_DEFEATED_BAYCREST_GYM))
     {
-        msgbox(BaycrestCity_Gym_Text_GymGuide3)
+        msgbox(BaycrestCity_Gym_Text_GymGuideWin)
     }
     else
     {
-        msgbox(BaycrestCity_Gym_Text_GymGuide1)
-    }
+        if(flag(FLAG_TEMP_1))
+        {
+            msgbox(BaycrestCity_Gym_Text_GymGuide3)
+        }
+        else
+        {
+            msgbox(BaycrestCity_Gym_Text_GymGuide1)
+        }
 
-    if(!flag(FLAG_RECEIVED_FRESH_WATER_BAYCREST_GYM))
-    {
-        msgbox(BaycrestCity_Gym_Text_GymGuide2)
-        giveitem(ITEM_FRESH_WATER)
-        setflag(FLAG_RECEIVED_FRESH_WATER_BAYCREST_GYM)
-    }
+        if(!flag(FLAG_RECEIVED_FRESH_WATER_BAYCREST_GYM))
+        {
+            msgbox(BaycrestCity_Gym_Text_GymGuide2)
+            giveitem(ITEM_FRESH_WATER)
+            setflag(FLAG_RECEIVED_FRESH_WATER_BAYCREST_GYM)
+        }
 
-    setflag(FLAG_TEMP_1)
+        setflag(FLAG_TEMP_1)
+    }
     release
 }
 
@@ -167,6 +174,13 @@ text BaycrestCity_Gym_Text_GymGuide3 {
             "But be careful!\nGround-types are immune to Electric-type moves!\p"
             "And if you're using a Fire-type, watch out for their Rock-type moves!\p"
             "You got all that?\nGood luck!"
+    )
+}
+
+text BaycrestCity_Gym_Text_GymGuideWin {
+    format("You won?\nThat's amazing!\p"
+            "You're on your way to becoming a real champ!\p"
+            "Keep it up, kid!"
     )
 }
 

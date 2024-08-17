@@ -214,123 +214,131 @@ BaycrestCity_Gym_EventScript_GymGuide::
 # 123 "data/maps/BaycrestCity_Gym/scripts.pory"
 	faceplayer
 # 125 "data/maps/BaycrestCity_Gym/scripts.pory"
-	goto_if_set FLAG_TEMP_1, BaycrestCity_Gym_EventScript_GymGuide_2
+	goto_if_set FLAG_DEFEATED_BAYCREST_GYM, BaycrestCity_Gym_EventScript_GymGuide_2
 # 131 "data/maps/BaycrestCity_Gym/scripts.pory"
+	goto_if_set FLAG_TEMP_1, BaycrestCity_Gym_EventScript_GymGuide_6
+# 137 "data/maps/BaycrestCity_Gym/scripts.pory"
 	msgbox BaycrestCity_Gym_Text_GymGuide1
-BaycrestCity_Gym_EventScript_GymGuide_1:
-# 134 "data/maps/BaycrestCity_Gym/scripts.pory"
-	goto_if_unset FLAG_RECEIVED_FRESH_WATER_BAYCREST_GYM, BaycrestCity_Gym_EventScript_GymGuide_6
 BaycrestCity_Gym_EventScript_GymGuide_5:
-# 141 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 140 "data/maps/BaycrestCity_Gym/scripts.pory"
+	goto_if_unset FLAG_RECEIVED_FRESH_WATER_BAYCREST_GYM, BaycrestCity_Gym_EventScript_GymGuide_10
+BaycrestCity_Gym_EventScript_GymGuide_9:
+# 147 "data/maps/BaycrestCity_Gym/scripts.pory"
 	setflag FLAG_TEMP_1
-# 142 "data/maps/BaycrestCity_Gym/scripts.pory"
+BaycrestCity_Gym_EventScript_GymGuide_1:
+# 149 "data/maps/BaycrestCity_Gym/scripts.pory"
 	release
 	return
 
 BaycrestCity_Gym_EventScript_GymGuide_2:
 # 127 "data/maps/BaycrestCity_Gym/scripts.pory"
-	msgbox BaycrestCity_Gym_Text_GymGuide3
+	msgbox BaycrestCity_Gym_Text_GymGuideWin
 	goto BaycrestCity_Gym_EventScript_GymGuide_1
 
 BaycrestCity_Gym_EventScript_GymGuide_6:
-# 136 "data/maps/BaycrestCity_Gym/scripts.pory"
-	msgbox BaycrestCity_Gym_Text_GymGuide2
-# 137 "data/maps/BaycrestCity_Gym/scripts.pory"
-	giveitem ITEM_FRESH_WATER
-# 138 "data/maps/BaycrestCity_Gym/scripts.pory"
-	setflag FLAG_RECEIVED_FRESH_WATER_BAYCREST_GYM
+# 133 "data/maps/BaycrestCity_Gym/scripts.pory"
+	msgbox BaycrestCity_Gym_Text_GymGuide3
 	goto BaycrestCity_Gym_EventScript_GymGuide_5
+
+BaycrestCity_Gym_EventScript_GymGuide_10:
+# 142 "data/maps/BaycrestCity_Gym/scripts.pory"
+	msgbox BaycrestCity_Gym_Text_GymGuide2
+# 143 "data/maps/BaycrestCity_Gym/scripts.pory"
+	giveitem ITEM_FRESH_WATER
+# 144 "data/maps/BaycrestCity_Gym/scripts.pory"
+	setflag FLAG_RECEIVED_FRESH_WATER_BAYCREST_GYM
+	goto BaycrestCity_Gym_EventScript_GymGuide_9
 
 
 BaycrestCity_Gym_EventScript_EntranceAttendant::
-# 174 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 188 "data/maps/BaycrestCity_Gym/scripts.pory"
 	lock
-# 175 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 189 "data/maps/BaycrestCity_Gym/scripts.pory"
 	msgbox BaycrestCity_Gym_Text_EntranceAttendant1
-# 176 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 190 "data/maps/BaycrestCity_Gym/scripts.pory"
 	release
 	return
 
 
 BaycrestCity_Gym_EventScript_Shu::
-# 188 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 202 "data/maps/BaycrestCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_SHU, BaycrestCity_Gym_Text_ShuIntro, BaycrestCity_Gym_Text_ShuDefeated
-# 189 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 203 "data/maps/BaycrestCity_Gym/scripts.pory"
 	msgbox BaycrestCity_Gym_Text_ShuPostBattle, MSGBOX_AUTOCLOSE
-# 190 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 204 "data/maps/BaycrestCity_Gym/scripts.pory"
 	waitmessage
 	end
 
 
 BaycrestCity_Gym_EventScript_Junpei::
-# 208 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 222 "data/maps/BaycrestCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_JUNPEI, BaycrestCity_Gym_Text_JunpeiIntro, BaycrestCity_Gym_Text_JunpeiDefeated
-# 209 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 223 "data/maps/BaycrestCity_Gym/scripts.pory"
 	msgbox BaycrestCity_Gym_Text_JunpeiPostBattle, MSGBOX_AUTOCLOSE
-# 210 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 224 "data/maps/BaycrestCity_Gym/scripts.pory"
 	waitmessage
 	end
 
 
 BaycrestCity_Gym_EventScript_Riku::
-# 228 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 242 "data/maps/BaycrestCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_RIKU_1, BaycrestCity_Gym_Text_RikuIntro, BaycrestCity_Gym_Text_RikuDefeat, BaycrestCity_Gym_EventScript_RikuDefeated, NO_MUSIC
-# 229 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 243 "data/maps/BaycrestCity_Gym/scripts.pory"
 	goto_if_unset FLAG_RECEIVED_TM_SAND_TOMB, BaycrestCity_Gym_EventScript_Riku_2
 BaycrestCity_Gym_EventScript_Riku_1:
-# 234 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 248 "data/maps/BaycrestCity_Gym/scripts.pory"
 	msgbox BaycrestCity_Gym_Text_RikuPostBattle, MSGBOX_AUTOCLOSE
-# 235 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 249 "data/maps/BaycrestCity_Gym/scripts.pory"
 	release
 	return
 
 BaycrestCity_Gym_EventScript_Riku_2:
-# 231 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 245 "data/maps/BaycrestCity_Gym/scripts.pory"
 	goto BaycrestCity_Gym_EventScript_GiveSandTomb
 	goto BaycrestCity_Gym_EventScript_Riku_1
 
 
 BaycrestCity_Gym_EventScript_RikuDefeated::
-# 239 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 253 "data/maps/BaycrestCity_Gym/scripts.pory"
 	msgbox BaycrestCity_Gym_Text_RikuDefeated
-# 240 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 254 "data/maps/BaycrestCity_Gym/scripts.pory"
 	playfanfare MUS_OBTAIN_BADGE
-# 241 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 255 "data/maps/BaycrestCity_Gym/scripts.pory"
 	msgbox BaycrestCity_Gym_Text_ReceivedFoundationBadge
-# 242 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 256 "data/maps/BaycrestCity_Gym/scripts.pory"
 	waitfanfare
-# 243 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 257 "data/maps/BaycrestCity_Gym/scripts.pory"
 	msgbox BaycrestCity_Gym_Text_FoundationBadgeInfo
-# 245 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 259 "data/maps/BaycrestCity_Gym/scripts.pory"
 	setflag FLAG_DEFEATED_BAYCREST_GYM
-# 246 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 260 "data/maps/BaycrestCity_Gym/scripts.pory"
 	setflag FLAG_BADGE01_GET
-# 248 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 262 "data/maps/BaycrestCity_Gym/scripts.pory"
 	goto BaycrestCity_Gym_EventScript_GiveSandTomb
-# 250 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 264 "data/maps/BaycrestCity_Gym/scripts.pory"
 	call Common_EventScript_SetGymTrainers
-# 251 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 265 "data/maps/BaycrestCity_Gym/scripts.pory"
 	release
 	return
 
 
 BaycrestCity_Gym_EventScript_GiveSandTomb::
-# 255 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 269 "data/maps/BaycrestCity_Gym/scripts.pory"
 	giveitem ITEM_TM_SAND_TOMB
-# 257 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 271 "data/maps/BaycrestCity_Gym/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq BaycrestCity_Gym_EventScript_GiveSandTomb_2
 BaycrestCity_Gym_EventScript_GiveSandTomb_1:
-# 262 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 276 "data/maps/BaycrestCity_Gym/scripts.pory"
 	setflag FLAG_RECEIVED_TM_SAND_TOMB
-# 263 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 277 "data/maps/BaycrestCity_Gym/scripts.pory"
 	msgbox BaycrestCity_Gym_Text_ExplainSandTomb
-# 264 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 278 "data/maps/BaycrestCity_Gym/scripts.pory"
 	release
 	return
 
 BaycrestCity_Gym_EventScript_GiveSandTomb_2:
-# 259 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 273 "data/maps/BaycrestCity_Gym/scripts.pory"
 	goto Common_EventScript_ShowBagIsFull
 	goto BaycrestCity_Gym_EventScript_GiveSandTomb_1
 
@@ -346,7 +354,7 @@ BaycrestCity_Gym_Text_NotAChallenger::
 	.string "Gym!$"
 
 BaycrestCity_Gym_Text_GymGuide1::
-# 145 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 152 "data/maps/BaycrestCity_Gym/scripts.pory"
 	.string "Yo!\n"
 	.string "Champ in the making!\p"
 	.string "This is your first gym, right?\n"
@@ -367,13 +375,13 @@ BaycrestCity_Gym_Text_GymGuide1::
 	.string "Good luck!$"
 
 BaycrestCity_Gym_Text_GymGuide2::
-# 158 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 165 "data/maps/BaycrestCity_Gym/scripts.pory"
 	.string "...Hey, relax!\n"
 	.string "You still look nervous!\p"
 	.string "Take this to calm your nerves!$"
 
 BaycrestCity_Gym_Text_GymGuide3::
-# 164 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 171 "data/maps/BaycrestCity_Gym/scripts.pory"
 	.string "The trainers in this gym all use\n"
 	.string "Ground-type Pokémon.\p"
 	.string "That means Water, Grass, and Ice-type\n"
@@ -387,8 +395,16 @@ BaycrestCity_Gym_Text_GymGuide3::
 	.string "You got all that?\n"
 	.string "Good luck!$"
 
+BaycrestCity_Gym_Text_GymGuideWin::
+# 180 "data/maps/BaycrestCity_Gym/scripts.pory"
+	.string "You won?\n"
+	.string "That's amazing!\p"
+	.string "You're on your way to becoming a real\n"
+	.string "champ!\p"
+	.string "Keep it up, kid!$"
+
 BaycrestCity_Gym_Text_EntranceAttendant1::
-# 179 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 193 "data/maps/BaycrestCity_Gym/scripts.pory"
 	.string "Hey there!\n"
 	.string "Welcome to the Baycrest City Gym!\p"
 	.string "This place is also the Baycrest City\n"
@@ -397,36 +413,36 @@ BaycrestCity_Gym_Text_EntranceAttendant1::
 	.string "appropriate for a school environment!$"
 
 BaycrestCity_Gym_Text_ShuIntro::
-# 194 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 208 "data/maps/BaycrestCity_Gym/scripts.pory"
 	.string "I know everything there is to know\n"
 	.string "about Pokémon!\p"
 	.string "I'll show you how much I know in battle!$"
 
 BaycrestCity_Gym_Text_ShuDefeated::
-# 199 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 213 "data/maps/BaycrestCity_Gym/scripts.pory"
 	.string "B-But in the simulations, I've always\n"
 	.string "won!$"
 
 BaycrestCity_Gym_Text_ShuPostBattle::
-# 203 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 217 "data/maps/BaycrestCity_Gym/scripts.pory"
 	.string "Maybe I need to study more...$"
 
 BaycrestCity_Gym_Text_JunpeiIntro::
-# 214 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 228 "data/maps/BaycrestCity_Gym/scripts.pory"
 	.string "Psh, who needs to study when you can\n"
 	.string "just battle?$"
 
 BaycrestCity_Gym_Text_JunpeiDefeated::
-# 219 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 233 "data/maps/BaycrestCity_Gym/scripts.pory"
 	.string "Welp, I think it's time to hit the books!$"
 
 BaycrestCity_Gym_Text_JunpeiPostBattle::
-# 223 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 237 "data/maps/BaycrestCity_Gym/scripts.pory"
 	.string "Maybe studying isn't only for losers\n"
 	.string "after all...$"
 
 BaycrestCity_Gym_Text_RikuIntro::
-# 267 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 281 "data/maps/BaycrestCity_Gym/scripts.pory"
 	.string "Are you my next challenger?\n"
 	.string "I'm Riku, the Baycrest City Gym Leader!\p"
 	.string "I may be a kid, but I graduated from the\n"
@@ -442,13 +458,13 @@ BaycrestCity_Gym_Text_RikuIntro::
 	.string "Ground-types aren't pushovers!$"
 
 BaycrestCity_Gym_Text_RikuDefeat::
-# 277 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 291 "data/maps/BaycrestCity_Gym/scripts.pory"
 	.string "My solid foundation crumbled...\p"
 	.string "Even though I'm a Gym Leader, I still\n"
 	.string "have a lot to learn...$"
 
 BaycrestCity_Gym_Text_RikuDefeated::
-# 282 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 296 "data/maps/BaycrestCity_Gym/scripts.pory"
 	.string "Ahem!\n"
 	.string "Congratulations, {PLAYER}-san!\p"
 	.string "According to the official rules of the\n"
@@ -460,11 +476,11 @@ BaycrestCity_Gym_Text_RikuDefeated::
 	.string "Foundation Badge is yours!$"
 
 BaycrestCity_Gym_Text_ReceivedFoundationBadge::
-# 288 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 302 "data/maps/BaycrestCity_Gym/scripts.pory"
 	.string "You received the Foundation Badge!$"
 
 BaycrestCity_Gym_Text_FoundationBadgeInfo::
-# 292 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 306 "data/maps/BaycrestCity_Gym/scripts.pory"
 	.string "With this badge, Pokémon of up to level\n"
 	.string "20 will be easier to catch and will\l"
 	.string "listen to your commands!\p"
@@ -475,7 +491,7 @@ BaycrestCity_Gym_Text_FoundationBadgeInfo::
 	.string "victory!$"
 
 BaycrestCity_Gym_Text_ExplainSandTomb::
-# 299 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 313 "data/maps/BaycrestCity_Gym/scripts.pory"
 	.string "This is the TM--Technical Machine--for\n"
 	.string "Sand Tomb!\p"
 	.string "It's a Ground-type move that traps the\n"
@@ -486,7 +502,7 @@ BaycrestCity_Gym_Text_ExplainSandTomb::
 	.string "Get it? Grounded? Ahaha!$"
 
 BaycrestCity_Gym_Text_RikuPostBattle::
-# 306 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 320 "data/maps/BaycrestCity_Gym/scripts.pory"
 	.string "You were a great challenger!\n"
 	.string "I hope you'll come back to challenge me\l"
 	.string "again!$"

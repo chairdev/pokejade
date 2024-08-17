@@ -1,5 +1,94 @@
 mapscripts Route502_MapScripts {}
 
+script Route502_EventScript_RodMan {
+    lock
+    faceplayer
+
+    if(!flag(FLAG_RECEIVED_SUPER_ROD))
+    {
+        msgbox(Route502_Text_RodMan1)
+        giveitem(ITEM_SUPER_ROD, 1)
+        setflag(FLAG_RECEIVED_SUPER_ROD)
+        msgbox(Route502_Text_RodMan2)
+    }
+    msgbox(Route502_Text_RodMan3)
+
+    release
+}
+
+text Route502_Text_RodMan1 { //gives a fishing rod
+    format( "Hey, kid.\nCould you stop stomping around so much?\p"
+            "You're scaring away all the fish!\p"
+            "I'm trying to catch something here!\p"
+            "... ... ...\p"
+            "You're not going to leave me alone, are you?\p"
+            "If I give you this, will you go away?"
+    )
+}
+
+text Route502_Text_RodMan2 {
+    format("With that Super Rod, you can catch some really cool Pokémon!\p"
+           "Just don't scare them away like you did to me!\p"
+           "So uh...")
+}
+
+text Route502_Text_RodMan3 {
+    format("Go away and let me fish in peace!\p"
+           "Man, kids these days...")
+}
+
+script Route502_EventScript_Emiri {
+    trainerbattle_single(TRAINER_EMIRI, Route502_Text_EmiriIntro, Route502_Text_EmiriDefeat)
+    msgbox(Route502_Text_EmiriPostBattle, MSGBOX_AUTOCLOSE)
+}
+
+text Route502_Text_EmiriIntro {
+    format("My Pokémon are cute and strong, just like me!")
+}
+
+text Route502_Text_EmiriDefeat {
+    format("OK, so we're not as strong as we are cute.")
+}
+
+text Route502_Text_EmiriPostBattle {
+    format("I think our strength is in our cuteness!")
+}
+
+script Route502_EventScript_Takao {
+    trainerbattle_single(TRAINER_MASAKI, Route502_Text_TakaoIntro, Route502_Text_TakaoDefeat)
+    msgbox(Route502_Text_TakaoPostBattle, MSGBOX_AUTOCLOSE)
+}
+
+text Route502_Text_TakaoIntro {
+    format( "I just lost against a wild Pokémon, but I won't lose against you!")
+}
+
+text Route502_Text_TakaoDefeat {
+    format("I lose against a lot of things, don't I?")
+}
+
+text Route502_Text_TakaoPostBattle {
+    format("Maybe I should go back to Pokémon School...")
+}
+
+script Route502_EventScript_Keiichi {
+    trainerbattle_single(TRAINER_KEIICHI, Route502_Text_KeiichiIntro, Route502_Text_KeiichiDefeat)
+    msgbox(Route502_Text_KeiichiPostBattle, MSGBOX_AUTOCLOSE)
+}
+
+text Route502_Text_KeiichiIntro {
+    format("Wow! I just caught a big one!\p")
+}
+
+text Route502_Text_KeiichiDefeat {
+    format("That was a big one, alright!")
+}
+
+text Route502_Text_KeiichiPostBattle {
+    format("I think I'll  need a bigger rod if I want to win against trainers like you!")
+}
+
+
 script Route502_EventScript_Rui {
     trainerbattle_double(TRAINER_RUI_AND_YUI_1, Route502_Text_RuiIntro, Route502_Text_RuiDefeat, Route502_Text_RuiNotEnoughMons)
     msgbox(Route502_Text_RuiPostBattle, MSGBOX_AUTOCLOSE)

@@ -322,7 +322,7 @@
 #define TRAINER_SHELBY_4                    316
 #define TRAINER_SHELBY_5                    317
 #define TRAINER_CALVIN_1                    318
-#define TRAINER_BILLY                       319
+#define TRAINER_MASAKI                       319
 #define TRAINER_SHU                        320
 #define TRAINER_JUNPEI                       321
 #define TRAINER_JOEY                        322
@@ -606,7 +606,7 @@
 #define TRAINER_MAY_RUSTBORO_MUDKIP         600
 #define TRAINER_MAXIE_MAGMA_HIDEOUT         601
 #define TRAINER_MAXIE_MT_CHIMNEY            602
-#define TRAINER_TIANA                       603
+#define TRAINER_EMIRI                       603
 #define TRAINER_HALEY_1                     604
 #define TRAINER_JANICE                      605
 #define TRAINER_VIVI                        606
@@ -699,7 +699,7 @@
 #define TRAINER_CHRIS                       693
 #define TRAINER_DAWSON                      694
 #define TRAINER_SARAH                       695
-#define TRAINER_DARIAN                      696
+#define TRAINER_KEIICHI                      696
 #define TRAINER_HAILEY                      697
 #define TRAINER_CHANDLER                    698
 #define TRAINER_KALEB                       699
