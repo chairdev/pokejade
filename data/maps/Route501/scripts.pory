@@ -391,3 +391,13 @@ text Route501_Text_YuutoDefeated {
 text Route102_Text_YuutoPostBattle {
     format("You're really good at this! I hope we can battle again sometime!")
 }
+
+script Route501_Sign_Route {
+    lock
+    msgbox(Route501_Text_Sign)
+    release
+}
+
+text Route501_Text_Sign {
+    format("Route 501\n{RIGHT_ARROW} Baycrest City\p{DOWN_ARROW} Everwood Town")
+}
