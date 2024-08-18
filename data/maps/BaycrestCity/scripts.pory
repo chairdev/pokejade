@@ -49,6 +49,7 @@ script BaycrestCity_Trigger_Rival2 {
 script BaycrestCity_Kanami {
     playbgm(MUS_ENCOUNTER_MAY, 0)
 
+    special(HealPlayerParty)
     msgbox(BaycrestCity_Text_Rival1F)
 
     switch(var(VAR_STARTER_MON)) {
@@ -81,6 +82,7 @@ script BaycrestCity_Kanami {
 script BaycrestCity_Shinji {
     playbgm(MUS_ENCOUNTER_BRENDAN, 0)
 
+    special(HealPlayerParty)
     msgbox(BaycrestCity_Text_Rival1M)
 
     switch(var(VAR_STARTER_MON)) {
@@ -190,5 +192,97 @@ text BaycrestCity_Text_Rival3M {
     format("{RIVAL}: This TM is for the move Swift!\p"
             "It never misses, so it's a great move to have!\p"
             "I'll see you later, {PLAYER}{KUN}!"
+    )
+}
+
+script BaycrestCity_EventScript_TrendyTrainer {
+    lock
+    faceplayer
+    msgbox(Baycrest_Text_TrendyTrainer)
+    release
+}
+
+text Baycrest_Text_TrendyTrainer {
+    format( "These days double battles are all the rage!\p"
+            "It's when you and your opponent each use two Pokemon in battle... AT THE SAME TIME!\p"
+            "I heard that Hoennians brought the idea over to Toshou!\p"
+            "I wonder if it'll catch on in places like Kanto and Johto too!"
+    )
+}
+
+script BaycrestCity_EventScript_NostalgicGrandpa {
+    lock
+    faceplayer
+    msgbox(Baycrest_Text_NostalgicGrandpa)
+    release
+}
+
+text Baycrest_Text_NostalgicGrandpa {
+    format( "Back in my day, we didn't have fancy things like EXP Shares!\p"
+            "We had to rely on our own strength to train our Pokemon!\p"
+            "It was tough, but it made us stronger!\p"
+            "I wonder if the kids these days could handle it..."
+    )
+}
+
+script BaycrestCity_EventScript_UnsureYoungster {
+    lock
+    faceplayer
+    msgbox(Baycrest_Text_UnsureYoungster)
+    release
+}
+
+text Baycrest_Text_UnsureYoungster {
+    format( "I want to challenge the Toshou League, but I'm not sure if I'm ready...\p"
+            "I asked my friend for advice, but she told me that my Lillipup is too friendly to fight seriously...\p"
+            "I don't know what to do... I don't want to give up on my dream, but I don't want to hurt my Pokemon either..."
+    )
+}
+
+script BaycrestCity_EventScript_HonestLass {
+    lock
+    faceplayer
+    msgbox(BaycrestCity_Text_HonestLass)
+    release
+}
+
+text BaycrestCity_Text_HonestLass {
+    format( "My childhood friend wants to challenge the Toshou League with a Lillipup!\p"
+            "I told him that I think he's got a long way to go before he's ready, but he seemed really discouraged...\p"
+            "I don't want to see him give up on his dream, but I don't want him to give him false hope either."
+    )
+}
+
+script BaycrestCity_EventScript_Lillipup {
+    lock
+    faceplayer
+    playmoncry(SPECIES_LILLIPUP, CRY_MODE_NORMAL)
+    msgbox(format("Lillipup: Terieee!"))
+    waitmoncry
+    release
+}
+
+script BaycrestCity_Sign_City {
+    lockall
+    msgbox(format("Baycrest City\n“A city of the sea breeze and the setting sun.”"))
+    releaseall
+}
+
+script BaycrestCity_Sign_RockSmashManHouse {
+    lockall
+    msgbox(format("Rock Smash Man's House"))
+    releaseall
+}
+
+script BaycrestCity_Sign_Gym {
+    lockall
+    msgbox(BaycrestCity_Text_GymSign)
+    releaseall
+}
+
+text BaycrestCity_Text_GymSign {
+    format( "Baycrest City Pokémon Gym\nGym Leader: Riku\p"
+            "“The Grounded Wunderkind”"
+
     )
 }

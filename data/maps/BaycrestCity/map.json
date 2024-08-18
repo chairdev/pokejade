@@ -37,6 +37,71 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_HIDE_BAYCREST_CITY_RIVAL"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "x": 11,
+      "y": 28,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 2,
+      "movement_range_y": 2,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "BaycrestCity_EventScript_TrendyTrainer",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_OLD_MAN",
+      "x": 17,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "BaycrestCity_EventScript_NostalgicGrandpa",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
+      "x": 15,
+      "y": 22,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "BaycrestCity_EventScript_UnsureYoungster",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LASS",
+      "x": 16,
+      "y": 22,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "BaycrestCity_EventScript_HonestLass",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(LILLIPUP)",
+      "x": 15,
+      "y": 23,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_RIGHT_UP_LEFT",
+      "movement_range_x": 2,
+      "movement_range_y": 3,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "BaycrestCity_EventScript_Lillipup",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -59,6 +124,20 @@
       "y": 14,
       "elevation": 0,
       "dest_map": "MAP_BAYCREST_CITY_GYM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 9,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_BAYCREST_CITY_ROCK_SMASH_MANS_HOUSE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 5,
+      "y": 34,
+      "elevation": 0,
+      "dest_map": "MAP_BAYCREST_CITY_HOUSE1",
       "dest_warp_id": "0"
     }
   ],
@@ -83,6 +162,29 @@
     }
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 11,
+      "y": 24,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "BaycrestCity_Sign_RockSmashManHouse"
+    },
+    {
+      "type": "sign",
+      "x": 9,
+      "y": 16,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "BaycrestCity_Sign_Gym"
+    },
+    {
+      "type": "sign",
+      "x": 11,
+      "y": 33,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "BaycrestCity_Sign_City"
+    }
   ]
 }

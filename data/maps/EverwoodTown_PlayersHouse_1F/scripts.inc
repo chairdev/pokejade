@@ -118,7 +118,7 @@ EverwoodTown_PlayersHouse_1F_EventScript_Delcatty::
 
 EverwoodTown_PlayersHouse_1F_EventScript_Delcatty_Text_0:
 # 116 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"
-	.string "Mreeeow!$"
+	.string "Delcatty: Mreeeow!$"
 
 MeetMomText1::
 # 30 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"

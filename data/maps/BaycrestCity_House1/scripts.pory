@@ -1,0 +1,37 @@
+mapscripts BaycrestCity_House1_MapScripts {}
+
+script BaycrestCity_House1_EventScript_OldMan {
+    lock
+    faceplayer
+    if(!flag(FLAG_RECEIVED_QUICK_CLAW)) {
+        msgbox(BaycrestCity_House1_Text_OldMan1)
+        giveitem(ITEM_QUICK_CLAW, 1)
+        setflag(FLAG_RECEIVED_QUICK_CLAW)
+    }
+    msgbox(BaycrestCity_House1_Text_OldMan2)
+    release
+}
+
+text BaycrestCity_House1_Text_OldMan1 {
+    format("Are you a rookie trainer?\nDon't answer, I can tell by the look in your eyes.\p"
+           "I'll give you this Quick Claw, then.\nIt's a useful held item that occasionally lets your Pokémon move first in battle regardless of their speed.") 
+}
+
+text BaycrestCity_House1_Text_OldMan2 {
+    format("I'm sure you'll put it to good use.")
+}
+
+script BaycrestCity_House1_EventScript_OldWoman {
+    lock
+    faceplayer
+    msgbox(BaycrestCity_House1_Text_OldWoman)
+    release
+}
+
+text BaycrestCity_House1_Text_OldWoman {
+    format("Held items are a great way to give your Pokémon an edge in battle.\p"
+           "Some items can increase the power of certain types of moves, while others can heal your Pokémon during battle.\p"
+           "You can only give one held item to each Pokémon, so choose wisely!\p"
+           "Speaking of which, my husband has tons of items he's collected over the years.\p"
+           "Maybe you should ask him for some advice.")
+}

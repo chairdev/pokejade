@@ -601,9 +601,11 @@
 #define MAP_EVERWOOD_TOWN_PLAYERS_HOUSE_2F      (2 | (34 << 8))
 
 // gMapGroup_IndoorBaycrest
-#define MAP_BAYCREST_CITY_POKEMON_CENTER_1F (0 | (35 << 8))
-#define MAP_BAYCREST_CITY_GYM               (1 | (35 << 8))
-#define MAP_BAYCREST_CITY_MART              (2 | (35 << 8))
+#define MAP_BAYCREST_CITY_POKEMON_CENTER_1F     (0 | (35 << 8))
+#define MAP_BAYCREST_CITY_GYM                   (1 | (35 << 8))
+#define MAP_BAYCREST_CITY_MART                  (2 | (35 << 8))
+#define MAP_BAYCREST_CITY_ROCK_SMASH_MANS_HOUSE (3 | (35 << 8))
+#define MAP_BAYCREST_CITY_HOUSE1                (4 | (35 << 8))
 
 #define MAP_GROUPS_COUNT 36
 

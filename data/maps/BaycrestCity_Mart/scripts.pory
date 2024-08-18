@@ -9,3 +9,16 @@ script BaycrestCity_Mart_EventScript_Clerk {
     msgbox(gText_PleaseComeAgain)
     release
 }
+
+script BaycrestCity_Mart_EventScript_Woman { //says that marts have different stocks for trainers with more gym badges
+    lock
+    faceplayer
+    msgbox(BaycrestCity_Mart_Text_Woman)
+    release
+}
+
+text BaycrestCity_Mart_Text_Woman {
+    format( "Recently the Poké Marts in Toshou have started changing their stock depending on how strong you are as a Trainer.\p"
+            "Now I finally don't have to go to another city just for some Ultra Balls!"
+            )
+}

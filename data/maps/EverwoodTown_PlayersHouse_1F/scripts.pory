@@ -113,7 +113,7 @@ script EverwoodTown_PlayersHouse_1F_EventScript_Delcatty {
     lock
     faceplayer
     playmoncry(SPECIES_DELCATTY, CRY_MODE_NORMAL)
-    msgbox(format("Mreeeow!"))
+    msgbox(format("Delcatty: Mreeeow!"))
     waitmoncry
     release
 }
