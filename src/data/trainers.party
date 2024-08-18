@@ -9521,6 +9521,9 @@ IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 Turtwig
 Level: 7
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+- Tackle
+- Withdraw
+
 
 === TRAINER_SHINJI_ROUTE_110_MUDKIP ===
 Name: BRENDAN
@@ -9580,6 +9583,8 @@ IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 Fennekin
 Level: 7
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+- Scratch
+- Tail Whip
 
 === TRAINER_SHINJI_ROUTE_110_TREECKO ===
 Name: BRENDAN
@@ -9639,6 +9644,8 @@ IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 Quaxly
 Level: 7
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+- Pound
+- Growl
 
 === TRAINER_SHINJI_ROUTE_110_TORCHIC ===
 Name: BRENDAN
@@ -9698,6 +9705,8 @@ IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 Turtwig
 Level: 7
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+- Tackle
+- Withdraw
 
 === TRAINER_MAY_ROUTE_110_MUDKIP ===
 Name: MAY
@@ -9757,6 +9766,9 @@ IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 Fennekin
 Level: 7
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+- Scratch
+- Tail Whip
+
 
 === TRAINER_MAY_ROUTE_110_TREECKO ===
 Name: MAY
@@ -9816,6 +9828,8 @@ IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 Quaxly
 Level: 7
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+- Pound
+- Growl
 
 === TRAINER_MAY_ROUTE_110_TORCHIC ===
 Name: MAY
