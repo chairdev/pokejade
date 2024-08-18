@@ -43,15 +43,15 @@ BaycrestCity_House1_Text_OldMan1::
 	.string "Are you a rookie trainer?\n"
 	.string "Don't answer, I can tell by the look in\l"
 	.string "your eyes.\p"
-	.string "I'll give you this Quick Claw. It's a\n"
-	.string "useful held item that occasionally lets\l"
-	.string "your Pokémon move first in battle\l"
-	.string "regardless of their speed.$"
+	.string "I'll give you this Quick Claw, then.\n"
+	.string "It's a useful held item that\l"
+	.string "occasionally lets your Pokémon move\l"
+	.string "first in battle regardless of their\l"
+	.string "speed.$"
 
 BaycrestCity_House1_Text_OldMan2::
 # 20 "data/maps/BaycrestCity_House1/scripts.pory"
-	.string "I'm sure you'll put it to good use.\p"
-	.string "$"
+	.string "I'm sure you'll put it to good use.$"
 
 BaycrestCity_House1_Text_OldWoman::
 # 31 "data/maps/BaycrestCity_House1/scripts.pory"
@@ -61,8 +61,8 @@ BaycrestCity_House1_Text_OldWoman::
 	.string "certain types of moves, while others\l"
 	.string "can heal your Pokémon during battle.\p"
 	.string "You can only give one held item to each\n"
-	.string "Pokémon, so choose wisely! Speaking of\l"
-	.string "which, my husband has tons of items\l"
-	.string "he's collected over the years.\p"
+	.string "Pokémon, so choose wisely!\p"
+	.string "Speaking of which, my husband has tons\n"
+	.string "of items he's collected over the years.\p"
 	.string "Maybe you should ask him for some\n"
 	.string "advice.$"

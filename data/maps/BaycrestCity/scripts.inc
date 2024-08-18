@@ -272,61 +272,63 @@ BaycrestCity_EventScript_HonestLass::
 
 
 BaycrestCity_EventScript_Lillipup::
-# 258 "data/maps/BaycrestCity/scripts.pory"
+# 257 "data/maps/BaycrestCity/scripts.pory"
 	lock
-# 259 "data/maps/BaycrestCity/scripts.pory"
+# 258 "data/maps/BaycrestCity/scripts.pory"
 	faceplayer
-# 260 "data/maps/BaycrestCity/scripts.pory"
+# 259 "data/maps/BaycrestCity/scripts.pory"
 	playmoncry SPECIES_LILLIPUP, CRY_MODE_NORMAL
-# 261 "data/maps/BaycrestCity/scripts.pory"
+# 260 "data/maps/BaycrestCity/scripts.pory"
 	msgbox BaycrestCity_EventScript_Lillipup_Text_0
-# 262 "data/maps/BaycrestCity/scripts.pory"
+# 261 "data/maps/BaycrestCity/scripts.pory"
 	waitmoncry
-# 263 "data/maps/BaycrestCity/scripts.pory"
+# 262 "data/maps/BaycrestCity/scripts.pory"
 	release
 	return
 
 
 BaycrestCity_Sign_City::
-# 267 "data/maps/BaycrestCity/scripts.pory"
+# 266 "data/maps/BaycrestCity/scripts.pory"
 	lockall
-# 268 "data/maps/BaycrestCity/scripts.pory"
+# 267 "data/maps/BaycrestCity/scripts.pory"
 	msgbox BaycrestCity_Sign_City_Text_0
-# 269 "data/maps/BaycrestCity/scripts.pory"
+# 268 "data/maps/BaycrestCity/scripts.pory"
 	releaseall
 	return
 
 
 BaycrestCity_Sign_RockSmashManHouse::
-# 273 "data/maps/BaycrestCity/scripts.pory"
+# 272 "data/maps/BaycrestCity/scripts.pory"
 	lockall
-# 274 "data/maps/BaycrestCity/scripts.pory"
+# 273 "data/maps/BaycrestCity/scripts.pory"
 	msgbox BaycrestCity_Sign_RockSmashManHouse_Text_0
-# 275 "data/maps/BaycrestCity/scripts.pory"
+# 274 "data/maps/BaycrestCity/scripts.pory"
 	releaseall
 	return
 
 
 BaycrestCity_Sign_Gym::
-# 279 "data/maps/BaycrestCity/scripts.pory"
+# 278 "data/maps/BaycrestCity/scripts.pory"
 	lockall
-# 280 "data/maps/BaycrestCity/scripts.pory"
+# 279 "data/maps/BaycrestCity/scripts.pory"
 	msgbox BaycrestCity_Text_GymSign
-# 281 "data/maps/BaycrestCity/scripts.pory"
+# 280 "data/maps/BaycrestCity/scripts.pory"
 	releaseall
 	return
 
 
 BaycrestCity_EventScript_Lillipup_Text_0:
-# 261 "data/maps/BaycrestCity/scripts.pory"
+# 260 "data/maps/BaycrestCity/scripts.pory"
 	.string "Lillipup: Terieee!$"
 
 BaycrestCity_Sign_City_Text_0:
-# 268 "data/maps/BaycrestCity/scripts.pory"
-	.string "Baycrest City\n“A city of the sea breeze and the setting sun.”$"
+# 267 "data/maps/BaycrestCity/scripts.pory"
+	.string "Baycrest City\n"
+	.string "“A city of the sea breeze and the\l"
+	.string "setting sun.”$"
 
 BaycrestCity_Sign_RockSmashManHouse_Text_0:
-# 274 "data/maps/BaycrestCity/scripts.pory"
+# 273 "data/maps/BaycrestCity/scripts.pory"
 	.string "Rock Smash Man's House$"
 
 BaycrestCity_Text_Rival1F::
@@ -437,12 +439,11 @@ BaycrestCity_Text_HonestLass::
 	.string "way to go before he's ready, but he\l"
 	.string "seemed really discouraged...\p"
 	.string "I don't want to see him give up on his\n"
-	.string "dream, but I don't want him to get hurt\l"
-	.string "either..\p"
-	.string ". What a dilemma...$"
+	.string "dream, but I don't want him to give him\l"
+	.string "false hope either.$"
 
 BaycrestCity_Text_GymSign::
-# 284 "data/maps/BaycrestCity/scripts.pory"
+# 283 "data/maps/BaycrestCity/scripts.pory"
 	.string "Baycrest City Pokémon Gym\n"
 	.string "Gym Leader: Riku\p"
 	.string "“The Grounded Wunderkind”$"
