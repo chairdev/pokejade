@@ -37,6 +37,22 @@ text Route502_Text_RodMan3 {
            "Man, kids these days...")
 }
 
+script Route502_EventScript_AnnoyedHiker {
+    lock
+    faceplayer
+    msgbox(Route502_Text_AnnoyedHiker)
+    release
+}
+
+text Route502_Text_AnnoyedHiker {
+    format( "What? Did you think I was a Pokémon Trainer?\p"
+            "Not everyone who stands around is looking for a battle, you know!\p"
+            "I'm just a hiker who likes to walk around and enjoy the scenery.\p"
+    )
+}
+
+// Trainers
+
 script Route502_EventScript_Emiri {
     trainerbattle_single(TRAINER_EMIRI, Route502_Text_EmiriIntro, Route502_Text_EmiriDefeat)
     msgbox(Route502_Text_EmiriPostBattle, MSGBOX_AUTOCLOSE)
@@ -88,7 +104,6 @@ text Route502_Text_KeiichiPostBattle {
     format("I think I'll  need a bigger rod if I want to win against trainers like you!")
 }
 
-
 script Route502_EventScript_Rui {
     trainerbattle_double(TRAINER_RUI_AND_YUI_1, Route502_Text_RuiIntro, Route502_Text_RuiDefeat, Route502_Text_RuiNotEnoughMons)
     msgbox(Route502_Text_RuiPostBattle, MSGBOX_AUTOCLOSE)
@@ -138,4 +153,21 @@ text Route502_Text_YuiNotEnoughMons {
 
 text Route502_Text_YuiPostBattle {
     format("This is why I don't like battling, Rui!")
+}
+
+script Route502_EventScript_Aiko {
+    trainerbattle_single(TRAINER_AIKO, Route502_Text_AikoIntro, Route502_Text_AikoDefeat)
+    msgbox(Route502_Text_AikoPostBattle, MSGBOX_AUTOCLOSE)
+}
+
+text Route502_Text_AikoIntro {
+    format("It's a beautiful day for a picnic!\nIt's also a beautiful day for a battle!")
+}
+
+text Route502_Text_AikoDefeat {
+   format("...I think I'll stick to picnics from now on.")
+}
+
+text Route502_Text_AikoPostBattle {
+    format("Nobody can top my homemade rice balls!")
 }

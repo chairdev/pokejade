@@ -1100,3 +1100,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/BaycrestCity_House1/scripts.inc"
 
 	.include "data/maps/FortuneCave/scripts.inc"
+
+	.include "data/maps/Route503/scripts.inc"

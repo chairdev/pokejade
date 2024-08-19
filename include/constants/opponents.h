@@ -102,7 +102,7 @@
 #define TRAINER_HOPE                         96
 #define TRAINER_SHANNON                      97
 #define TRAINER_MICHELLE                     98
-#define TRAINER_CAROLINE                     99
+#define TRAINER_AIKOINE                     99
 #define TRAINER_JULIE                       100
 #define TRAINER_BROOKE_2                    101
 #define TRAINER_BROOKE_3                    102
@@ -474,7 +474,7 @@
 #define TRAINER_JENNY_5                     468
 #define TRAINER_HEIDI                       469
 #define TRAINER_BECKY                       470
-#define TRAINER_CAROL                       471
+#define TRAINER_AIKO                       471
 #define TRAINER_NANCY                       472
 #define TRAINER_MARTHA                      473
 #define TRAINER_DIANA_1                     474
@@ -744,7 +744,7 @@
 #define TRAINER_JOSUE                       738
 #define TRAINER_CAMRON                      739
 #define TRAINER_CORY_1                      740
-#define TRAINER_CAROLINA                    741
+#define TRAINER_AIKOINA                    741
 #define TRAINER_ELIJAH                      742
 #define TRAINER_CELIA                       743
 #define TRAINER_BRYAN                       744

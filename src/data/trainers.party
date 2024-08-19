@@ -1836,7 +1836,7 @@ Ludicolo
 Level: 42
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_CAROLINE ===
+=== TRAINER_AIKOINE ===
 Name: CAROLINE
 Class: Cooltrainer
 Pic: Cooltrainer F
@@ -8571,8 +8571,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tail Whip
 - Defense Curl
 
-=== TRAINER_CAROL ===
-Name: CAROL
+=== TRAINER_AIKO ===
+Name: Aiko
 Class: Picnicker
 Pic: Picnicker
 Gender: Female
@@ -8580,12 +8580,12 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Taillow
-Level: 17
+Pidove
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Lombre
-Level: 17
+Marill
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_NANCY ===
@@ -13697,7 +13697,7 @@ Tentacool
 Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CAROLINA ===
+=== TRAINER_AIKOINA ===
 Name: CAROLINA
 Class: Cooltrainer
 Pic: Cooltrainer F

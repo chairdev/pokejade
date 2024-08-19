@@ -4417,7 +4417,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 1839
-    [TRAINER_CAROLINE] =
+    [TRAINER_AIKOINE] =
     {
 #line 1840
         .trainerName = _("CAROLINE"),
@@ -21383,10 +21383,10 @@ F_TRAINER_FEMALE |
         },
     },
 #line 8574
-    [TRAINER_CAROL] =
+    [TRAINER_AIKO] =
     {
 #line 8575
-        .trainerName = _("CAROL"),
+        .trainerName = _("Aiko"),
 #line 8576
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 8577
@@ -21405,23 +21405,23 @@ F_TRAINER_FEMALE |
         {
             {
 #line 8583
-            .species = SPECIES_TAILLOW,
+            .species = SPECIES_PIDOVE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8585
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 8584
-            .lvl = 17,
+            .lvl = 13,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
 #line 8587
-            .species = SPECIES_LOMBRE,
+            .species = SPECIES_MARILL,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8589
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 8588
-            .lvl = 17,
+            .lvl = 15,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -34354,7 +34354,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 13700
-    [TRAINER_CAROLINA] =
+    [TRAINER_AIKOINA] =
     {
 #line 13701
         .trainerName = _("CAROLINA"),
