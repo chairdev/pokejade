@@ -8169,7 +8169,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 3314
-    [TRAINER_YUJI] =
+    [TRAINER_ITOSHI] =
     {
 #line 3315
         .trainerName = _("YUJI"),
@@ -28848,7 +28848,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 11490
-    [TRAINER_BRICE] =
+    [TRAINER_AYATO] =
     {
 #line 11491
         .trainerName = _("BRICE"),

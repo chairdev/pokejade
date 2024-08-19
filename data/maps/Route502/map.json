@@ -100,7 +100,20 @@
     }
   ],
   "warp_events": [
-
+    {
+      "x": 15,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_FORTUNE_CAVE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 33,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_FORTUNE_CAVE",
+      "dest_warp_id": "1"
+    }
   ],
   "coord_events": [
 

@@ -1,1 +1,49 @@
 mapscripts FortuneCave_MapScripts {}
+
+script FortuneCave_EventScript_StrandedCamper {
+    lock
+    faceplayer
+    msgbox(FortuneCave_Text_StrandedCamper)
+    release
+}
+
+text FortuneCave_Text_StrandedPicknicker {
+    format( "Gah! I'm such an idiot!\p"
+            "I was so excited to explore this cave that I didn't even think about how I'd get out!\p"
+            "I need the HM Rock Smash to get past these rocks, but I don't have it!\p"
+            "This is the worst!")
+}
+
+script FortuneCave_EventScript_HikerAyato {
+    trainerbattle_single(TRAINER_AYATO, FortuneCave_Text_HikerAyatoIntro, FortuneCave_Text_HikerAyatoDefeat)
+    msgbox(FortuneCave_Text_HikerAyatoPostBattle, MSGBOX_AUTOCLOSE)
+}
+
+text FortuneCave_Text_HikerAyatoIntro {
+    format("You! Trainer!\nYou scared away the Glimmet I was trying to catch!")
+}
+
+text FortuneCave_Text_HikerAyatoDefeat {
+    format("I guess I'll have to find another one...")
+}
+
+text FortuneCave_Text_HikerAyatoPostBattle {
+    format("I'll find one eventually!")
+}
+
+script FortuneCave_EventScript_BlackBeltItoshi {
+    trainerbattle_single(TRAINER_ITOSHI, FortuneCave_Text_BlackBeltItoshiIntro, FortuneCave_Text_BlackBeltItoshiDefeat)
+    msgbox(FortuneCave_Text_BlackBeltItoshiPostBattle, MSGBOX_AUTOCLOSE)
+}
+
+text FortuneCave_Text_BlackBeltItoshiIntro {
+    format("My Pokémon and I come here to train every day!")
+}
+
+text FortuneCave_Text_BlackBeltItoshiDefeat {
+    format("To lose is to learn!")
+}
+
+text FortuneCave_Text_BlackBeltItoshiPostBattle {
+    format("I must learn from this loss and become stronger!")
+}

@@ -218,8 +218,8 @@
 #define MAPSEC_ROUTE_501                    0xD6
 #define MAPSEC_BAYCREST_CITY                0xD7
 #define MAPSEC_ROUTE_502                    0xD8
-#define MAPSEC_RESERVED3                    0xD9
-#define MAPSEC_RESERVED4                    0xDA
+#define MAPSEC_FORTUNE_CAVE                 0xD9
+#define MAPSEC_ROUTE_503                    0xDA
 #define MAPSEC_RESERVED5                    0xDB
 #define MAPSEC_NONE                         0xDC
 

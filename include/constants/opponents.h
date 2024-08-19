@@ -191,7 +191,7 @@
 #define TRAINER_NOB_3                       185
 #define TRAINER_NOB_4                       186
 #define TRAINER_NOB_5                       187
-#define TRAINER_YUJI                        188
+#define TRAINER_ITOSHI                        188
 #define TRAINER_DAISUKE                     189
 #define TRAINER_ATSUSHI                     190
 #define TRAINER_KIRK                        191
@@ -629,7 +629,7 @@
 #define TRAINER_JAMES_3                     623
 #define TRAINER_JAMES_4                     624
 #define TRAINER_JAMES_5                     625
-#define TRAINER_BRICE                       626
+#define TRAINER_AYATO                       626
 #define TRAINER_TRENT_1                     627
 #define TRAINER_LENNY                       628
 #define TRAINER_LUCAS_1                     629
