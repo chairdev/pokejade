@@ -91,6 +91,8 @@ script EverwoodTown_Trigger_GoodbyeMom1 {
     msgbox(format("{PLAYER}!"))
     closemessage
 
+    playbgm(MUS_FOLLOW_ME, 0)
+
     applymovement(OBJ_EVENT_ID_PLAYER, PlayerApproachMom1)
     waitmovement(0)
 
@@ -105,6 +107,8 @@ script EverwoodTown_Trigger_GoodbyeMom2 {
 
     msgbox(format("{PLAYER}!"))
     closemessage
+
+    playbgm(MUS_FOLLOW_ME, 0)
 
     applymovement(OBJ_EVENT_ID_PLAYER, PlayerApproachMom2)
     waitmovement(0)
@@ -121,6 +125,8 @@ script EverwoodTown_Trigger_GoodbyeMom3 {
     msgbox(format("{PLAYER}!"))
     closemessage
 
+    playbgm(MUS_FOLLOW_ME, 0)
+
     applymovement(OBJ_EVENT_ID_PLAYER, PlayerApproachMom3)
     waitmovement(0)
 
@@ -135,6 +141,8 @@ script EverwoodTown_Trigger_GoodbyeMom4 {
 
     msgbox(format("{PLAYER}!"))
     closemessage
+
+    playbgm(MUS_FOLLOW_ME, 0)
 
     applymovement(OBJ_EVENT_ID_PLAYER, PlayerApproachMom4)
     waitmovement(0)
@@ -156,6 +164,7 @@ script EverwoodTown_GoodbyeMom {
     waitmovement(0)
     opendoor(14, 8)
 	waitdooranim
+    fadedefaultbgm
     applymovement(OBJ_MOM, MomGoInside)
     waitmovement(0)
     removeobject(OBJ_MOM)
@@ -221,6 +230,20 @@ text GoodbyeMomText2 {
             "Remember that you can always come back home no matter what happens, okay?\p"
             "Good luck, {PLAYER}!\nI love you!"
             )
+}
+
+script EverwoodTown_EventScript_LittleBoy {
+    lock
+    faceplayer
+    msgbox(format("I'm playing hide-and-seek with my sister but she's taking forever to find me!"))
+    release
+}
+
+script EverwoodTown_EventScript_LittleGirl {
+    lock
+    faceplayer
+    msgbox(format("I'm playing tag with my brother but he's not coming after me."))
+    release
 }
 
 script EverwoodTown_Sign_Town {

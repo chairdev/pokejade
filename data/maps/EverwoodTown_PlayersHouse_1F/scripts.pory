@@ -10,6 +10,7 @@ mapscripts EverwoodTown_PlayersHouse_1F_MapScripts {
 
 script EverwoodTown_PlayersHouse_1F_MapScript_MeetMom {
     lockall
+    setrespawn(HEAL_LOCATION_EVERWOOD_TOWN)
     playbgm(MUS_FOLLOW_ME, 0)
     applymovement(OBJ_MOM, MomApproachPlayer1)
     waitmovement(0)

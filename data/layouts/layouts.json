@@ -4530,6 +4530,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/BaycrestCity_House1/border.bin",
       "blockdata_filepath": "data/layouts/BaycrestCity_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_FORTUNE_CAVE",
+      "name": "FortuneCave_Layout",
+      "width": 20,
+      "height": 18,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/FortuneCave/border.bin",
+      "blockdata_filepath": "data/layouts/FortuneCave/map.bin"
     }
   ]
 }

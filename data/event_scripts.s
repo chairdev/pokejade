@@ -1098,3 +1098,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/BaycrestCity_RockSmashMansHouse/scripts.inc"
 
 	.include "data/maps/BaycrestCity_House1/scripts.inc"
+
+	.include "data/maps/FortuneCave/scripts.inc"

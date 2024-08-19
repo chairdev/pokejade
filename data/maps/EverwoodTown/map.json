@@ -47,7 +47,7 @@
       "flag": "FLAG_HIDE_EVERWOOD_TOWN_MOM_OUTSIDE"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "graphics_id": "OBJ_EVENT_GFX_LITTLE_GIRL",
       "x": 0,
       "y": 15,
       "elevation": 0,
@@ -56,11 +56,11 @@
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "EverwoodTown_EventScript_LittleGirl",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY",
       "x": 19,
       "y": 13,
       "elevation": 0,
@@ -69,7 +69,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "EverwoodTown_EventScript_LittleBoy",
       "flag": "0"
     }
   ],

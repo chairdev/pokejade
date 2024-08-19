@@ -2,12 +2,10 @@ const LOCALID_NURSE = 1
 
 mapscripts BaycrestCity_PokemonCenter_1F_MapScripts {
     MAP_SCRIPT_ON_TRANSITION : BaycrestCity_PokemonCenter_1F_OnTransition
-    MAP_SCRIPT_ON_RESUME : CableClub_OnResume
 }
 
 script BaycrestCity_PokemonCenter_1F_OnTransition {
     setrespawn(HEAL_LOCATION_BAYCREST_CITY)
-    call(Common_EventScript_UpdateBrineyLocation)
 }
 
 script BaycrestCity_PokemonCenter_1F_EventScript_Nurse {
