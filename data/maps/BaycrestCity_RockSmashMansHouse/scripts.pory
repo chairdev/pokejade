@@ -1,1 +1,60 @@
 mapscripts BaycrestCity_RockSmashMansHouse_MapScripts {}
+
+script BaycrestCity_RockSmashMansHouse_EventScript_RockSmashMan {
+    lock
+    faceplayer
+
+    if(!flag(FLAG_RECEIVED_HM_ROCK_SMASH)) {
+        msgbox(BaycrestCity_RockSmashMansHouse_Text_RockSmashMan1)
+        
+        if(flag(FLAG_BADGE01_GET)) {
+            msgbox(BaycrestCity_RockSmashMansHouse_Text_RockSmashMan2)
+            giveitem(ITEM_HM_ROCK_SMASH)
+            msgbox(BaycrestCity_RockSmashMansHouse_Text_RockSmashMan3)
+            setflag(FLAG_RECEIVED_HM_ROCK_SMASH)
+        }
+    } 
+    else {
+        msgbox(BaycrestCity_RockSmashMansHouse_Text_RockSmashMan4)
+    }
+    
+    release
+}
+
+text BaycrestCity_RockSmashMansHouse_Text_RockSmashMan1 {
+    format( "I'm the one they call the “Rock Smash Man”!\p"
+            "I've been training my Pokémon to use Rock Smash for years, and now they're the best in the business!\p"
+            "But the truth is, I'm getting too old for this.\p"
+            "I can't keep up with the daily training anymore.\p"
+            "If only there was a young, promising trainer with a Gym Badge out there who could take over for me..."
+            )
+}
+
+text BaycrestCity_RockSmashMansHouse_Text_RockSmashMan2 {
+    format( "Oh, you have a Gym Badge? That's fantastic!\p"
+            "I think you're just the trainer I've been looking for!\p"
+            "I'll give you the HM Rock Smash, but only if you promise to use it to help others!"
+            )
+}
+
+text BaycrestCity_RockSmashMansHouse_Text_RockSmashMan3 {
+    format( "You don't even need to teach it to a Pokémon to use it!\p"
+            "Just have a Pokémon that can learn it in your party, and you'll be able to break rocks that are blocking your path.\p"
+            "The Pokémon of the Toshou Region are just smart like that, I guess."
+            )
+}
+
+text BaycrestCity_RockSmashMansHouse_Text_RockSmashMan4 {
+    format( "I'm counting on you to use Rock Smash to help others, young trainer!\p"
+            "Good luck on your journey!"
+            )
+}
+
+script BaycrestCity_RockSmashMansHouse_EventScript_Machamp {
+    lock
+    faceplayer
+    playmoncry(SPECIES_MACHAMP, CRY_MODE_NORMAL)
+    msgbox(format("Machamp: Rikiii!"))
+    waitmoncry
+    release
+}

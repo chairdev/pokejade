@@ -287,32 +287,44 @@ BaycrestCity_EventScript_Lillipup::
 	return
 
 
-BaycrestCity_Sign_City::
+BaycrestCity_EventScript_HelpfulGentleman::
 # 266 "data/maps/BaycrestCity/scripts.pory"
-	lockall
+	lock
 # 267 "data/maps/BaycrestCity/scripts.pory"
-	msgbox BaycrestCity_Sign_City_Text_0
+	faceplayer
 # 268 "data/maps/BaycrestCity/scripts.pory"
+	msgbox BaycrestCity_Text_HelpfulGentleman
+# 269 "data/maps/BaycrestCity/scripts.pory"
+	release
+	return
+
+
+BaycrestCity_Sign_City::
+# 281 "data/maps/BaycrestCity/scripts.pory"
+	lockall
+# 282 "data/maps/BaycrestCity/scripts.pory"
+	msgbox BaycrestCity_Sign_City_Text_0
+# 283 "data/maps/BaycrestCity/scripts.pory"
 	releaseall
 	return
 
 
 BaycrestCity_Sign_RockSmashManHouse::
-# 272 "data/maps/BaycrestCity/scripts.pory"
+# 287 "data/maps/BaycrestCity/scripts.pory"
 	lockall
-# 273 "data/maps/BaycrestCity/scripts.pory"
+# 288 "data/maps/BaycrestCity/scripts.pory"
 	msgbox BaycrestCity_Sign_RockSmashManHouse_Text_0
-# 274 "data/maps/BaycrestCity/scripts.pory"
+# 289 "data/maps/BaycrestCity/scripts.pory"
 	releaseall
 	return
 
 
 BaycrestCity_Sign_Gym::
-# 278 "data/maps/BaycrestCity/scripts.pory"
+# 293 "data/maps/BaycrestCity/scripts.pory"
 	lockall
-# 279 "data/maps/BaycrestCity/scripts.pory"
+# 294 "data/maps/BaycrestCity/scripts.pory"
 	msgbox BaycrestCity_Text_GymSign
-# 280 "data/maps/BaycrestCity/scripts.pory"
+# 295 "data/maps/BaycrestCity/scripts.pory"
 	releaseall
 	return
 
@@ -322,13 +334,13 @@ BaycrestCity_EventScript_Lillipup_Text_0:
 	.string "Lillipup: Terieee!$"
 
 BaycrestCity_Sign_City_Text_0:
-# 267 "data/maps/BaycrestCity/scripts.pory"
+# 282 "data/maps/BaycrestCity/scripts.pory"
 	.string "Baycrest City\n"
 	.string "“A city of the sea breeze and the\l"
 	.string "setting sun.”$"
 
 BaycrestCity_Sign_RockSmashManHouse_Text_0:
-# 273 "data/maps/BaycrestCity/scripts.pory"
+# 288 "data/maps/BaycrestCity/scripts.pory"
 	.string "Rock Smash Man's House$"
 
 BaycrestCity_Text_Rival1F::
@@ -442,8 +454,17 @@ BaycrestCity_Text_HonestLass::
 	.string "dream, but I don't want him to give him\l"
 	.string "false hope either.$"
 
+BaycrestCity_Text_HelpfulGentleman::
+# 272 "data/maps/BaycrestCity/scripts.pory"
+	.string "If you're planning to challenge the\n"
+	.string "Baycrest City Gym, you should train on\l"
+	.string "Route 502 first!\p"
+	.string "There are a lot of Pokémon there that\n"
+	.string "can help you prepare for the Gym\l"
+	.string "Leader's team!$"
+
 BaycrestCity_Text_GymSign::
-# 283 "data/maps/BaycrestCity/scripts.pory"
+# 298 "data/maps/BaycrestCity/scripts.pory"
 	.string "Baycrest City Pokémon Gym\n"
 	.string "Gym Leader: Riku\p"
 	.string "“The Grounded Wunderkind”$"

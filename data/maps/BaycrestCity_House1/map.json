@@ -2,7 +2,7 @@
   "id": "MAP_BAYCREST_CITY_HOUSE1",
   "name": "BaycrestCity_House1",
   "layout": "LAYOUT_BAYCREST_CITY_HOUSE1",
-  "music": "MUS_DUMMY",
+  "music": "MUS_PETALBURG",
   "region_map_section": "MAPSEC_PETALBURG_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

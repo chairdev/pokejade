@@ -139,6 +139,13 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "hidden_item",
+      "x": 2,
+      "y": 15,
+      "elevation": 3,
+      "item": "ITEM_DUSK_BALL",
+      "flag": "FLAG_HIDDEN_ITEM_FORTUNE_CAVE_DUSK_BALL"
+    }
   ]
 }

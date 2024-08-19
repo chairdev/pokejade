@@ -7,7 +7,7 @@ script FortuneCave_EventScript_StrandedCamper {
     release
 }
 
-text FortuneCave_Text_StrandedPicknicker {
+text FortuneCave_Text_StrandedCamper {
     format( "Gah! I'm such an idiot!\p"
             "I was so excited to explore this cave that I didn't even think about how I'd get out!\p"
             "I need the HM Rock Smash to get past these rocks, but I don't have it!\p"
