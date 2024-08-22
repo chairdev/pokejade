@@ -20,8 +20,8 @@ script BaycrestCity_Trigger_Rival1 {
     waitmovement(0)
 
     checkplayergender
-    goto_if_eq(VAR_RESULT, MALE, BaycrestCity_Kanami)
-    goto_if_eq(VAR_RESULT, FEMALE, BaycrestCity_Shinji)
+    goto_if_eq(VAR_RESULT, MALE, BaycrestCity_Holly)
+    goto_if_eq(VAR_RESULT, FEMALE, BaycrestCity_Caden)
 
     applymovement(OBJ_RIVAL, RivalLeave)
     waitmovement(0)
@@ -42,11 +42,11 @@ script BaycrestCity_Trigger_Rival2 {
     waitmovement(0)
 
     checkplayergender
-    goto_if_eq(VAR_RESULT, MALE, BaycrestCity_Kanami)
-    goto_if_eq(VAR_RESULT, FEMALE, BaycrestCity_Shinji)
+    goto_if_eq(VAR_RESULT, MALE, BaycrestCity_Holly)
+    goto_if_eq(VAR_RESULT, FEMALE, BaycrestCity_Caden)
 }
 
-script BaycrestCity_Kanami {
+script BaycrestCity_Holly {
     playbgm(MUS_ENCOUNTER_MAY, 0)
 
     special(HealPlayerParty)
@@ -54,13 +54,13 @@ script BaycrestCity_Kanami {
 
     switch(var(VAR_STARTER_MON)) {
         case 0:
-            trainerbattle_no_intro(TRAINER_KANAMI_BAYCREST_TURTWIG, BaycrestCity_Text_KanamiDefeated)
+            trainerbattle_no_intro(TRAINER_HOLLY_BAYCREST_TURTWIG, BaycrestCity_Text_HollyDefeated)
             break
         case 1:
-            trainerbattle_no_intro(TRAINER_KANAMI_BAYCREST_FENNEKIN, BaycrestCity_Text_KanamiDefeated)
+            trainerbattle_no_intro(TRAINER_HOLLY_BAYCREST_FENNEKIN, BaycrestCity_Text_HollyDefeated)
             break
         case 2:
-            trainerbattle_no_intro(TRAINER_KANAMI_BAYCREST_QUAXLY, BaycrestCity_Text_KanamiDefeated)
+            trainerbattle_no_intro(TRAINER_HOLLY_BAYCREST_QUAXLY, BaycrestCity_Text_HollyDefeated)
             break
     }
 
@@ -79,7 +79,7 @@ script BaycrestCity_Kanami {
     releaseall
 }
 
-script BaycrestCity_Shinji {
+script BaycrestCity_Caden {
     playbgm(MUS_ENCOUNTER_BRENDAN, 0)
 
     special(HealPlayerParty)
@@ -87,13 +87,13 @@ script BaycrestCity_Shinji {
 
     switch(var(VAR_STARTER_MON)) {
         case 0:
-            trainerbattle_no_intro(TRAINER_SHINJI_BAYCREST_TURTWIG, BaycrestCity_Text_ShinjiDefeated)
+            trainerbattle_no_intro(TRAINER_CADEN_BAYCREST_TURTWIG, BaycrestCity_Text_CadenDefeated)
             break
         case 1:
-            trainerbattle_no_intro(TRAINER_SHINJI_BAYCREST_FENNEKIN, BaycrestCity_Text_ShinjiDefeated)
+            trainerbattle_no_intro(TRAINER_CADEN_BAYCREST_FENNEKIN, BaycrestCity_Text_CadenDefeated)
             break
         case 2:
-            trainerbattle_no_intro(TRAINER_SHINJI_BAYCREST_QUAXLY, BaycrestCity_Text_ShinjiDefeated)
+            trainerbattle_no_intro(TRAINER_CADEN_BAYCREST_QUAXLY, BaycrestCity_Text_CadenDefeated)
             break
     }
 
@@ -160,13 +160,13 @@ text BaycrestCity_Text_Rival3F {
     )
 }
 
-text BaycrestCity_Text_KanamiDefeated {
+text BaycrestCity_Text_HollyDefeated {
     format( "My battle career started off with a loss...\p"
             "Geez, this is the worst!"
     )
 }
 
-text BaycrestCity_Text_ShinjiDefeated {
+text BaycrestCity_Text_CadenDefeated {
     format( "My first battle ended in a loss...\p"
             "I can't believe it!"
     )

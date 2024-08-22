@@ -77,7 +77,7 @@ BaycrestCity_PokemonCenter_1F_Text_RegisterToLeague1::
 
 BaycrestCity_PokemonCenter_1F_Text_RegisterToLeague2::
 # 54 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
-	.string "{PLAYER}-kun from Everwood Town.\p"
+	.string "{PLAYER} from Everwood Town.\p"
 	.string "Registration for the Toshou Pokémon\n"
 	.string "League recognized.\p"
 	.string "Registration complete.$"

@@ -5,8 +5,8 @@
 
 ALIGNED(4)
 const u8 gText_ExpandedPlaceholder_Empty[] = _("");
-const u8 gText_ExpandedPlaceholder_Kun[] = _("-kun");
-const u8 gText_ExpandedPlaceholder_Chan[] = _("-chan");
+const u8 gText_ExpandedPlaceholder_Kun[] = _("");
+const u8 gText_ExpandedPlaceholder_Chan[] = _("");
 const u8 gText_ExpandedPlaceholder_Sapphire[] = _("SAPPHIRE");
 const u8 gText_ExpandedPlaceholder_Ruby[] = _("RUBY");
 const u8 gText_ExpandedPlaceholder_Emerald[] = _("EMERALD");
@@ -16,8 +16,8 @@ const u8 gText_ExpandedPlaceholder_Archie[] = _("ARCHIE");
 const u8 gText_ExpandedPlaceholder_Maxie[] = _("MAXIE");
 const u8 gText_ExpandedPlaceholder_Kyogre[] = _("KYOGRE");
 const u8 gText_ExpandedPlaceholder_Groudon[] = _("GROUDON");
-const u8 gText_ExpandedPlaceholder_Brendan[] = _("Shinji");
-const u8 gText_ExpandedPlaceholder_May[] = _("Kanami");
+const u8 gText_ExpandedPlaceholder_Brendan[] = _("Caden");
+const u8 gText_ExpandedPlaceholder_May[] = _("Holly");
 const u8 gText_EggNickname[] = _("EGG");
 const u8 gText_Pokemon[] = _("POKéMON");
 const u8 gText_ProfBirchMatchCallName[] = _("PROF. BIRCH");
@@ -57,8 +57,8 @@ ALIGNED(4) const u8 gText_PickCancel[] = _("{DPAD_UPDOWN}PICK {A_BUTTON}{B_BUTTO
 ALIGNED(4) const u8 gText_AButtonExit[] = _("{A_BUTTON}EXIT");
 const u8 gText_BirchBoy[] = _("Male");
 const u8 gText_BirchGirl[] = _("Female");
-const u8 gText_DefaultNameShinji[] = _("Shinji");
-const u8 gText_DefaultNameKanami[] = _("Kanami");
+const u8 gText_DefaultNameCaden[] = _("Caden");
+const u8 gText_DefaultNameHolly[] = _("Holly");
 const u8 gText_ThisIsAPokemon[] = _("This is one of the many Pokémon that\ninhabit this world.{PAUSE 96}\p");
 const u8 gText_5MarksPokemon[] = _("????? POKéMON");
 const u8 gText_UnkHeight[] = _("{CLEAR_TO 0x0C}??'??”");

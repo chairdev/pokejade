@@ -2,7 +2,7 @@ gText_Birch_Welcome::
 	.string "Ah, hello there!\p"
 	.string "Welcome to the wonderful world of\n"
 	.string "Pokémon!\p"
-	.string "My name is Professor Eiji Sanzashi,\n"
+	.string "My name is Professor Callum Hawthorne,\n"
 	.string "and I'm thrilled to be your guide as you\l"
 	.string "embark on your adventure through the\l"
 	.string "Toshou region.\p"

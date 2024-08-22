@@ -437,7 +437,8 @@
     "TerraCave_End",
     "AlteringCave",
     "MeteorFalls_StevensCave",
-    "FortuneCave"
+    "FortuneCave",
+    "KismetForest"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

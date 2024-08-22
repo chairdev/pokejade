@@ -19,9 +19,9 @@ Route501_Trigger_WalkToRivalLeft::
 # 18 "data/maps/Route501/scripts.pory"
 	checkplayergender
 # 19 "data/maps/Route501/scripts.pory"
-	goto_if_eq VAR_RESULT, MALE, Route501_RivalKanami
+	goto_if_eq VAR_RESULT, MALE, Route501_RivalHolly
 # 20 "data/maps/Route501/scripts.pory"
-	goto_if_eq VAR_RESULT, FEMALE, Route501_RivalShinji
+	goto_if_eq VAR_RESULT, FEMALE, Route501_RivalCaden
 	return
 
 
@@ -35,9 +35,9 @@ Route501_Trigger_WalkToRivalRight::
 # 30 "data/maps/Route501/scripts.pory"
 	checkplayergender
 # 31 "data/maps/Route501/scripts.pory"
-	goto_if_eq VAR_RESULT, MALE, Route501_RivalKanami
+	goto_if_eq VAR_RESULT, MALE, Route501_RivalHolly
 # 32 "data/maps/Route501/scripts.pory"
-	goto_if_eq VAR_RESULT, FEMALE, Route501_RivalShinji
+	goto_if_eq VAR_RESULT, FEMALE, Route501_RivalCaden
 	return
 
 
@@ -63,7 +63,7 @@ PlayerMoveToRivalRight:
 	walk_in_place_faster_right
 	step_end
 
-Route501_RivalKanami::
+Route501_RivalHolly::
 # 48 "data/maps/Route501/scripts.pory"
 	applymovement 1, RivalNoticePlayer
 # 49 "data/maps/Route501/scripts.pory"
@@ -79,7 +79,7 @@ Route501_RivalKanami::
 # 57 "data/maps/Route501/scripts.pory"
 	waitmovement 0
 # 59 "data/maps/Route501/scripts.pory"
-	msgbox Route501_RivalKanami_Text_0
+	msgbox Route501_RivalHolly_Text_0
 # 61 "data/maps/Route501/scripts.pory"
 	applymovement 1, RivalApproachBag
 # 62 "data/maps/Route501/scripts.pory"
@@ -145,13 +145,13 @@ Route501_RivalKanami::
 # 102 "data/maps/Route501/scripts.pory"
 	setvar VAR_ROUTE501_STATE, 1
 # 103 "data/maps/Route501/scripts.pory"
-	setvar VAR_SANZASHI_LAB_STATE, 2
+	setvar VAR_HAWTHORNE_LAB_STATE, 2
 # 105 "data/maps/Route501/scripts.pory"
 	warp MAP_EVERWOOD_TOWN_HAWTHORN_RESEARCH_LAB, 6, 5
 	return
 
 
-Route501_RivalShinji::
+Route501_RivalCaden::
 # 109 "data/maps/Route501/scripts.pory"
 	applymovement 1, RivalNoticePlayer
 # 110 "data/maps/Route501/scripts.pory"
@@ -167,7 +167,7 @@ Route501_RivalShinji::
 # 118 "data/maps/Route501/scripts.pory"
 	waitmovement 0
 # 120 "data/maps/Route501/scripts.pory"
-	msgbox Route501_RivalKanami_Text_0
+	msgbox Route501_RivalHolly_Text_0
 # 122 "data/maps/Route501/scripts.pory"
 	applymovement 1, RivalApproachBag
 # 123 "data/maps/Route501/scripts.pory"
@@ -233,7 +233,7 @@ Route501_RivalShinji::
 # 163 "data/maps/Route501/scripts.pory"
 	setvar VAR_ROUTE501_STATE, 1
 # 164 "data/maps/Route501/scripts.pory"
-	setvar VAR_SANZASHI_LAB_STATE, 2
+	setvar VAR_HAWTHORNE_LAB_STATE, 2
 # 166 "data/maps/Route501/scripts.pory"
 	warp MAP_EVERWOOD_TOWN_HAWTHORN_RESEARCH_LAB, 6, 5
 	return
@@ -443,7 +443,7 @@ Route501_Sign_Route::
 	return
 
 
-Route501_RivalKanami_Text_0:
+Route501_RivalHolly_Text_0:
 # 59 "data/maps/Route501/scripts.pory"
 	.string "Oh, there it is!$"
 
@@ -455,7 +455,7 @@ Route501_Text_MeetRivalText1F::
 	.string "I'm your neighbor, {RIVAL}! Nice to\n"
 	.string "meet you!\p"
 	.string "Oh, right! I have something for you from\n"
-	.string "Professor Sanzashi!\p"
+	.string "Professor Hawthorne!\p"
 	.string "I went to your house to deliver it, but\n"
 	.string "your mom said you were asleep.\p"
 	.string "I didn't want to wake you up, so I\n"
@@ -494,7 +494,7 @@ Route501_Text_MeetRivalText4F::
 	.string "But I guess I'll have to get used to\n"
 	.string "them if I want to be a Trainer.\p"
 	.string "...We should probably head back to\n"
-	.string "Professor Sanzashi's lab now.\p"
+	.string "Professor Hawthorne's lab now.\p"
 	.string "I'm sure he must be worried about us.$"
 
 Route501_Text_MeetRivalText1M::
@@ -503,7 +503,7 @@ Route501_Text_MeetRivalText1M::
 	.string "You're the new kid, {PLAYER}{KUN}, right?\p"
 	.string "I'm {RIVAL}, your neighbor.\p"
 	.string "I was supposed to deliver something\n"
-	.string "from Professor Sanzashi to you but you\l"
+	.string "from Professor Hawthorne to you but you\l"
 	.string "were asleep.\p"
 	.string "I got bored waiting, so I decided to\n"
 	.string "explore a bit.\p"
@@ -540,7 +540,7 @@ Route501_Text_MeetRivalText4M::
 	.string "guess I'll have to get used to them if I\l"
 	.string "want to be a Trainer.\p"
 	.string "...We should probably head back to\n"
-	.string "Professor Sanzashi's lab now.\p"
+	.string "Professor Hawthorne's lab now.\p"
 	.string "I'm sure he must be worried about us.$"
 
 Route501_Text_SkwovetGirl1::

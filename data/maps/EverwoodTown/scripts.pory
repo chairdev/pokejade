@@ -265,6 +265,6 @@ script EverwoodTown_Sign_RivalsHouse {
 
 script EverwoodTown_Sign_ResearchLab {
     lockall
-    msgbox("Hawthorn Research Lab")
+    msgbox("Hawthorne Research Lab")
     releaseall
 }

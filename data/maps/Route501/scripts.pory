@@ -16,8 +16,8 @@ script Route501_Trigger_WalkToRivalLeft
     waitmovement(0)
 
     checkplayergender
-    goto_if_eq(VAR_RESULT, MALE, Route501_RivalKanami)
-    goto_if_eq(VAR_RESULT, FEMALE, Route501_RivalShinji)
+    goto_if_eq(VAR_RESULT, MALE, Route501_RivalHolly)
+    goto_if_eq(VAR_RESULT, FEMALE, Route501_RivalCaden)
 }
 
 script Route501_Trigger_WalkToRivalRight
@@ -28,8 +28,8 @@ script Route501_Trigger_WalkToRivalRight
     waitmovement(0)
 
     checkplayergender
-    goto_if_eq(VAR_RESULT, MALE, Route501_RivalKanami)
-    goto_if_eq(VAR_RESULT, FEMALE, Route501_RivalShinji)
+    goto_if_eq(VAR_RESULT, MALE, Route501_RivalHolly)
+    goto_if_eq(VAR_RESULT, FEMALE, Route501_RivalCaden)
 
 }
 
@@ -44,7 +44,7 @@ movement PlayerMoveToRivalRight {
     walk_in_place_faster_right
 }
 
-script Route501_RivalKanami {
+script Route501_RivalHolly {
     applymovement(OBJ_RIVAL, RivalNoticePlayer)
     waitmovement(0)
 
@@ -100,12 +100,12 @@ script Route501_RivalKanami {
     setflag(FLAG_ROUTE_501_SAVED_RIVAL)
     clearflag(FLAG_HIDE_EVERWOOD_TOWN_RESEARCH_LAB_RIVAL)
     setvar(VAR_ROUTE501_STATE, 1)
-    setvar(VAR_SANZASHI_LAB_STATE, 2)
+    setvar(VAR_HAWTHORNE_LAB_STATE, 2)
 
     warp(MAP_EVERWOOD_TOWN_HAWTHORN_RESEARCH_LAB, 6, 5)
 }
 
-script Route501_RivalShinji {
+script Route501_RivalCaden {
     applymovement(OBJ_RIVAL, RivalNoticePlayer)
     waitmovement(0)
 
@@ -161,7 +161,7 @@ script Route501_RivalShinji {
     setflag(FLAG_ROUTE_501_SAVED_RIVAL)
     clearflag(FLAG_HIDE_EVERWOOD_TOWN_RESEARCH_LAB_RIVAL)
     setvar(VAR_ROUTE501_STATE, 1)
-    setvar(VAR_SANZASHI_LAB_STATE, 2)
+    setvar(VAR_HAWTHORNE_LAB_STATE, 2)
 
     warp(MAP_EVERWOOD_TOWN_HAWTHORN_RESEARCH_LAB, 6, 5)
 }
@@ -222,7 +222,7 @@ text Route501_Text_MeetRivalText1F { //female rival
     format("Huh? What the...?\p"
            "Oh! Are you the {PLAYER}{KUN} that just moved in next door?\p"
            "I'm your neighbor, {RIVAL}! Nice to meet you!\p"
-            "Oh, right! I have something for you from Professor Sanzashi!\p"
+            "Oh, right! I have something for you from Professor Hawthorne!\p"
             "I went to your house to deliver it, but your mom said you were asleep.\p"
             "I didn't want to wake you up, so I decided to wander around a bit.\p"
             "I guess I got a little carried away... Sorry about that!\p"
@@ -253,16 +253,16 @@ text Route501_Text_MeetRivalText4F {
            "You see, I don't really like Pokémon...\p"
            "I just wanted a reason to go out and explore the reason.\p"
            "But I guess I'll have to get used to them if I want to be a Trainer.\p"
-           "...We should probably head back to Professor Sanzashi's lab now.\p"
+           "...We should probably head back to Professor Hawthorne's lab now.\p"
            "I'm sure he must be worried about us."
            )
 }
 
-text Route501_Text_MeetRivalText1M { //He's a bit less chatty and more to the point than Kanami.
+text Route501_Text_MeetRivalText1M { //He's a bit less chatty and more to the point than Holly.
     format("Whoa!\p"
             "You're the new kid, {PLAYER}{KUN}, right?\p"
             "I'm {RIVAL}, your neighbor.\p"
-            "I was supposed to deliver something from Professor Sanzashi to you but you were asleep.\p"
+            "I was supposed to deliver something from Professor Hawthorne to you but you were asleep.\p"
             "I got bored waiting, so I decided to explore a bit.\p"
             "But since you're here, that means you went to the lab, right?\p"
             "My bad! I should've just waited for you to wake up.\p"
@@ -289,7 +289,7 @@ text Route501_Text_MeetRivalText4M {
            "I can't believe we were attacked by wild Pokémon!\p"
            "Good thing you had {STR_VAR_1} to protect you!\p"
            "I'm not really a fan of Pokémon, but I guess I'll have to get used to them if I want to be a Trainer.\p"
-           "...We should probably head back to Professor Sanzashi's lab now.\p"
+           "...We should probably head back to Professor Hawthorne's lab now.\p"
            "I'm sure he must be worried about us."
            )
 }

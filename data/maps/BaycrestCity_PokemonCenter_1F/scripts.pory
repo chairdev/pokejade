@@ -52,7 +52,7 @@ text BaycrestCity_PokemonCenter_1F_Text_RegisterToLeague1 { //give pokedex to nu
 }
 
 text BaycrestCity_PokemonCenter_1F_Text_RegisterToLeague2 { //computer
-    format("{PLAYER}-kun from Everwood Town.\p"
+    format("{PLAYER} from Everwood Town.\p"
             "Registration for the Toshou Pokémon League recognized.\p"
             "Registration complete."
     )

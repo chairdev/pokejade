@@ -4550,6 +4550,16 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/Route503/border.bin",
       "blockdata_filepath": "data/layouts/Route503/map.bin"
+    },
+    {
+      "id": "LAYOUT_KISMET_FOREST",
+      "name": "KismetForest_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/KismetForest/border.bin",
+      "blockdata_filepath": "data/layouts/KismetForest/map.bin"
     }
   ]
 }

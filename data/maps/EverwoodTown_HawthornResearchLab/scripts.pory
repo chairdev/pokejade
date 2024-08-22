@@ -1,6 +1,6 @@
 const OBJ_RIVAL = 2
 
-//Sanzashi Lab State
+//Hawthorne Lab State
 //0: Go to the Research Lab
 //1: Find Rival
 //2: Saved Rival
@@ -9,7 +9,7 @@ const OBJ_RIVAL = 2
 mapscripts EverwoodTown_HawthornResearchLab_MapScripts {
     MAP_SCRIPT_ON_TRANSITION : EverwoodTown_HawthornResearchLab_MapScript_On_Transition
     MAP_SCRIPT_ON_FRAME_TABLE [
-        VAR_SANZASHI_LAB_STATE, 2: EverwoodTown_HawthornResearchLab_MapScript_ReceiveStarter
+        VAR_HAWTHORNE_LAB_STATE, 2: EverwoodTown_HawthornResearchLab_MapScript_ReceiveStarter
     ]
 }
 
@@ -23,11 +23,11 @@ script EverwoodTown_HawthornResearchLab_MapScript_ReceiveStarter {
     applymovement(OBJ_EVENT_ID_PLAYER, ReceiveStarter_FaceUp)
 
     bufferleadmonspeciesname(STR_VAR_1)
-    msgbox(ReceiveStarter_SanzashiText1)
+    msgbox(ReceiveStarter_HawthorneText1)
     waitmessage
 	playfanfare(MUS_OBTAIN_ITEM)
 	waitfanfare
-    msgbox(format("Prof. Sanzashi: By the way, would you like to give it a nickname?"), MSGBOX_YESNO)
+    msgbox(format("Prof. Hawthorne: By the way, would you like to give it a nickname?"), MSGBOX_YESNO)
 
     if(var(VAR_RESULT) == 1)
     {
@@ -36,23 +36,23 @@ script EverwoodTown_HawthornResearchLab_MapScript_ReceiveStarter {
     }
     else
     {
-        msgbox(format("Prof. Sanzashi: That's fine. I hope you'll take good care of it."))
+        msgbox(format("Prof. Hawthorne: That's fine. I hope you'll take good care of it."))
     }
 
     giveitem(ITEM_POKE_BALL, 5)
-    msgbox(ReceiveStarter_SanzashiText2)
+    msgbox(ReceiveStarter_HawthorneText2)
 
-    msgbox(ReceiveStarter_SanzashiText3)
+    msgbox(ReceiveStarter_HawthorneText3)
     msgbox(format("You received the Pokédex!"))
     waitmessage 
     playfanfare(MUS_OBTAIN_ITEM)
     waitfanfare
-    msgbox(ReceiveStarter_SanzashiText4)
+    msgbox(ReceiveStarter_HawthorneText4)
     waitmessage
     msgbox(ReceiveStarter_RivalText1)
-    msgbox(ReceiveStarter_SanzashiText5)
+    msgbox(ReceiveStarter_HawthorneText5)
     msgbox(ReceiveStarter_RivalText2)
-    msgbox(ReceiveStarter_SanzashiText6)
+    msgbox(ReceiveStarter_HawthorneText6)
     applymovement(OBJ_RIVAL, ReceiveStarter_FaceRight)
     applymovement(OBJ_EVENT_ID_PLAYER, ReceiveStarter_FaceLeft)
     msgbox(ReceiveStarter_RivalText3)
@@ -64,7 +64,7 @@ script EverwoodTown_HawthornResearchLab_MapScript_ReceiveStarter {
     hideobjectat(OBJ_RIVAL, MAP_EVERWOOD_TOWN_HAWTHORN_RESEARCH_LAB)
 
     applymovement(OBJ_EVENT_ID_PLAYER, ReceiveStarter_FaceUp)
-    msgbox(ReceiveStarter_SanzashiText7)
+    msgbox(ReceiveStarter_HawthorneText7)
     giveitem(ITEM_EXP_SHARE, 1)
 
     setflag(FLAG_EXP_SHARE)
@@ -74,14 +74,14 @@ script EverwoodTown_HawthornResearchLab_MapScript_ReceiveStarter {
     clearflag(FLAG_HIDE_EVERWOOD_TOWN_MOM_OUTSIDE)
     setvar (VAR_CABLE_CLUB_TUTORIAL_STATE, 1)
     setvar(VAR_EVERWOOD_TOWN_STATE, 3)
-    setvar(VAR_SANZASHI_LAB_STATE, 3)
+    setvar(VAR_HAWTHORNE_LAB_STATE, 3)
     
 
     releaseall
 }
 
-text ReceiveStarter_SanzashiText1 { //After they fought off the wild Pokémon
-    format( "Prof. Sanzashi: ...\p"
+text ReceiveStarter_HawthorneText1 { //After they fought off the wild Pokémon
+    format( "Prof. Hawthorne: ...\p"
             "...I see. So that's what happened.\p"
             "I'm glad you're both safe.\p"
             "By the way, {PLAYER}{KUN}, may I see the Pokémon you chose?\p"
@@ -92,19 +92,19 @@ text ReceiveStarter_SanzashiText1 { //After they fought off the wild Pokémon
             )
 }
 
-text ReceiveStarter_SanzashiText2 {
-    "Prof. Sanzashi: These are Poké Balls.\nThey're used to catch wild Pokémon.\p"
+text ReceiveStarter_HawthorneText2 {
+    "Prof. Hawthorne: These are Poké Balls.\nThey're used to catch wild Pokémon.\p"
     "Please, take these with you."
 }
 
-text ReceiveStarter_SanzashiText3 {
-    format( "Prof. Sanzashi: Let's see...what else?\p"
+text ReceiveStarter_HawthorneText3 {
+    format( "Prof. Hawthorne: Let's see...what else?\p"
             "Ah, yes! This!"
             )
 }
 
-text ReceiveStarter_SanzashiText4 {
-    format( "Prof. Sanzashi: This is a Pokédex.\nIt's a high-tech encyclopedia that records data on every Pokémon you encounter.\p"
+text ReceiveStarter_HawthorneText4 {
+    format( "Prof. Hawthorne: This is a Pokédex.\nIt's a high-tech encyclopedia that records data on every Pokémon you encounter.\p"
             "As you travel through Toshou, I'd like you to help me with my research by filling it with information on the various Pokémon species that inhabit this region.\p"
             
             "You two have already proven that you're ready to take on the responsibilities of a Pokémon Trainer.\p"
@@ -118,8 +118,8 @@ text ReceiveStarter_RivalText1 {
            )
 }
 
-text ReceiveStarter_SanzashiText5 {
-    format("Prof. Sanzashi: Hm? Did you say something, {RIVAL}?"
+text ReceiveStarter_HawthorneText5 {
+    format("Prof. Hawthorne: Hm? Did you say something, {RIVAL}?"
            )
 }
 
@@ -129,8 +129,8 @@ text ReceiveStarter_RivalText2 {
            )
 }
 
-text ReceiveStarter_SanzashiText6 {
-    format("Prof. Sanzashi: You two must first register for the Toshou League at the Pokémon Center.\p"
+text ReceiveStarter_HawthorneText6 {
+    format("Prof. Hawthorne: You two must first register for the Toshou League at the Pokémon Center.\p"
             "The nearest one is in Baycrest City, past Route 501."
            )
 }
@@ -141,8 +141,8 @@ text ReceiveStarter_RivalText3 {
            )
 }
 
-text ReceiveStarter_SanzashiText7 {
-    format("Prof. Sanzashi: I almost forgot! I have something else for you.\p"
+text ReceiveStarter_HawthorneText7 {
+    format("Prof. Hawthorne: I almost forgot! I have something else for you.\p"
            "This is an Exp. Share.\nIt's a special item that allows Pokémon to gain experience points even if they don't participate in battle.\p"
            "I hope you'll find it useful on your journey."
            )
@@ -172,26 +172,26 @@ movement ReceiveStarter_RivalLeave {
 
 
 
-script EverwoodTown_HawthornResearchLab_EventScript_Sanzashi {
+script EverwoodTown_HawthornResearchLab_EventScript_Hawthorne {
     lockall
     faceplayer
     
-    switch(var(VAR_SANZASHI_LAB_STATE))
+    switch(var(VAR_HAWTHORNE_LAB_STATE))
     {
         case 0:
-            msgbox(MeetSanzashiText1)
+            msgbox(MeetHawthorneText1)
 
             checkplayergender()
             if(var(VAR_RESULT) == MALE)
             {
-                msgbox(MeetSanzashiText2A)
+                msgbox(MeetHawthorneText2A)
             }
             else
             {
-                msgbox(MeetSanzashiText2B)
+                msgbox(MeetHawthorneText2B)
             }
 
-            setvar(VAR_SANZASHI_LAB_STATE, 1)
+            setvar(VAR_HAWTHORNE_LAB_STATE, 1)
             setvar(VAR_EVERWOOD_TOWN_STATE, 2)
         case 1:
             msgbox(GoLookForRivalText1)
@@ -201,8 +201,8 @@ script EverwoodTown_HawthornResearchLab_EventScript_Sanzashi {
     releaseall
 }
 
-text MeetSanzashiText1 {
-    format("Prof. Sanzashi: Ah, there you are!\nYou must be {PLAYER}{KUN}.\l"
+text MeetHawthorneText1 {
+    format("Prof. Hawthorne: Ah, there you are!\nYou must be {PLAYER}{KUN}.\l"
            "I've been waiting for you!\p"
            "Where's {RIVAL}?\p"
            "... What do you mean you don't know who that is?\p"
@@ -210,14 +210,14 @@ text MeetSanzashiText1 {
            )
 }
 
-text MeetSanzashiText2A {
+text MeetHawthorneText2A {
     format("She said she couldn't sit still and wait for you to arrive and took off.\p"
            "{PLAYER}{KUN}, I'm sorry to ask this of you, but could you go find her for me?\p"
             "I'm sure she's just around the corner."
            )
 }
 
-text MeetSanzashiText2B {
+text MeetHawthorneText2B {
     format("He said he couldn't sit still and wait for you to arrive and took off.\p"
            "{PLAYER}{KUN}, I'm sorry to ask this of you, but could you go find him for me?\p"
             "I'm sure he's just around the corner."
@@ -225,7 +225,7 @@ text MeetSanzashiText2B {
 }
 
 text GoLookForRivalText1 {
-   format("Prof. Sanzashi: Please, {PLAYER}{KUN}, go look for {RIVAL}!\p"
+   format("Prof. Hawthorne: Please, {PLAYER}{KUN}, go look for {RIVAL}!\p"
            "The bag with the Poké Balls is very important!"
            )
 }

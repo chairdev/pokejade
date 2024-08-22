@@ -130,12 +130,12 @@ MeetMomText1::
 	.string "Today is the day you become a Pokémon\n"
 	.string "Trainer!\p"
 	.string "You'll get your first Pokémon from\n"
-	.string "Professor Sanzashi at the Research\l"
+	.string "Professor Hawthorne at the Research\l"
 	.string "Lab.\p"
 	.string "I can't wait to see which one you\n"
 	.string "choose!\p"
 	.string "I won't keep you any longer. I'm sure\n"
-	.string "Professor Sanzashi is waiting for you!$"
+	.string "Professor Hawthorne is waiting for you!$"
 
 EverwoodTown_PlayersHouse_1F_Text_MomHealsParty::
 # 86 "data/maps/EverwoodTown_PlayersHouse_1F/scripts.pory"

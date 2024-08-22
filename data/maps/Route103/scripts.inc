@@ -61,32 +61,32 @@ Route103_EventScript_RivalBrendan::
 	end
 
 Route103_EventScript_StartMayBattleTreecko::
-	trainerbattle_no_intro TRAINER_KANAMI_BAYCREST_TURTWIG, Route103_Text_MayDefeated
+	trainerbattle_no_intro TRAINER_HOLLY_BAYCREST_TURTWIG, Route103_Text_MayDefeated
 	goto Route103_EventScript_AfterMayBattle
 	end
 
 Route103_EventScript_StartMayBattleTorchic::
-	trainerbattle_no_intro TRAINER_KANAMI_BAYCREST_FENNEKIN, Route103_Text_MayDefeated
+	trainerbattle_no_intro TRAINER_HOLLY_BAYCREST_FENNEKIN, Route103_Text_MayDefeated
 	goto Route103_EventScript_AfterMayBattle
 	end
 
 Route103_EventScript_StartMayBattleMudkip::
-	trainerbattle_no_intro TRAINER_KANAMI_BAYCREST_QUAXLY, Route103_Text_MayDefeated
+	trainerbattle_no_intro TRAINER_HOLLY_BAYCREST_QUAXLY, Route103_Text_MayDefeated
 	goto Route103_EventScript_AfterMayBattle
 	end
 
 Route103_EventScript_StartBrendanBattleTreecko::
-	trainerbattle_no_intro TRAINER_SHINJI_BAYCREST_TURTWIG, Route103_Text_BrendanDefeated
+	trainerbattle_no_intro TRAINER_CADEN_BAYCREST_TURTWIG, Route103_Text_BrendanDefeated
 	goto Route103_EventScript_AfterBrendanBattle
 	end
 
 Route103_EventScript_StartBrendanBattleTorchic::
-	trainerbattle_no_intro TRAINER_SHINJI_BAYCREST_FENNEKIN, Route103_Text_BrendanDefeated
+	trainerbattle_no_intro TRAINER_CADEN_BAYCREST_FENNEKIN, Route103_Text_BrendanDefeated
 	goto Route103_EventScript_AfterBrendanBattle
 	end
 
 Route103_EventScript_StartBrendanBattleMudkip::
-	trainerbattle_no_intro TRAINER_SHINJI_BAYCREST_QUAXLY, Route103_Text_BrendanDefeated
+	trainerbattle_no_intro TRAINER_CADEN_BAYCREST_QUAXLY, Route103_Text_BrendanDefeated
 	goto Route103_EventScript_AfterBrendanBattle
 	end
 
@@ -140,7 +140,7 @@ Route103_EventScript_RivalExitFacingSouth::
 
 Route103_EventScript_RivalEnd::
 	removeobject LOCALID_RIVAL
-	setvar VAR_SANZASHI_LAB_STATE, 4
+	setvar VAR_HAWTHORNE_LAB_STATE, 4
 	clearflag FLAG_HIDE_EVERWOOD_TOWN_RESEARCH_LAB_RIVAL
 	setflag FLAG_DEFEATED_RIVAL_ROUTE103
 	setvar VAR_OLDALE_RIVAL_STATE, 1

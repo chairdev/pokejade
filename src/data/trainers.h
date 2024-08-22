@@ -23720,10 +23720,10 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9502
-    [TRAINER_SHINJI_BAYCREST_QUAXLY] =
+    [TRAINER_CADEN_BAYCREST_QUAXLY] =
     {
 #line 9503
-        .trainerName = _("Shinji"),
+        .trainerName = _("Caden"),
 #line 9504
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 9505
@@ -23768,7 +23768,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9522
-    [TRAINER_SHINJI_ROUTE_110_MUDKIP] =
+    [TRAINER_CADEN_ROUTE_110_MUDKIP] =
     {
 #line 9523
         .trainerName = _("BRENDAN"),
@@ -23822,7 +23822,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9543
-    [TRAINER_SHINJI_ROUTE_119_MUDKIP] =
+    [TRAINER_CADEN_ROUTE_119_MUDKIP] =
     {
 #line 9544
         .trainerName = _("BRENDAN"),
@@ -23876,10 +23876,10 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9564
-    [TRAINER_SHINJI_BAYCREST_TURTWIG] =
+    [TRAINER_CADEN_BAYCREST_TURTWIG] =
     {
 #line 9565
-        .trainerName = _("Shinji"),
+        .trainerName = _("Caden"),
 #line 9566
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 9567
@@ -23924,7 +23924,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9583
-    [TRAINER_SHINJI_ROUTE_110_TREECKO] =
+    [TRAINER_CADEN_ROUTE_110_TREECKO] =
     {
 #line 9584
         .trainerName = _("BRENDAN"),
@@ -23978,7 +23978,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9604
-    [TRAINER_SHINJI_ROUTE_119_TREECKO] =
+    [TRAINER_CADEN_ROUTE_119_TREECKO] =
     {
 #line 9605
         .trainerName = _("BRENDAN"),
@@ -24032,10 +24032,10 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9625
-    [TRAINER_SHINJI_BAYCREST_FENNEKIN] =
+    [TRAINER_CADEN_BAYCREST_FENNEKIN] =
     {
 #line 9626
-        .trainerName = _("Shinji"),
+        .trainerName = _("Caden"),
 #line 9627
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 9628
@@ -24080,7 +24080,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9644
-    [TRAINER_SHINJI_ROUTE_110_TORCHIC] =
+    [TRAINER_CADEN_ROUTE_110_TORCHIC] =
     {
 #line 9645
         .trainerName = _("BRENDAN"),
@@ -24134,7 +24134,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9665
-    [TRAINER_SHINJI_ROUTE_119_TORCHIC] =
+    [TRAINER_CADEN_ROUTE_119_TORCHIC] =
     {
 #line 9666
         .trainerName = _("BRENDAN"),
@@ -24188,10 +24188,10 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9686
-    [TRAINER_KANAMI_BAYCREST_QUAXLY] =
+    [TRAINER_HOLLY_BAYCREST_QUAXLY] =
     {
 #line 9687
-        .trainerName = _("Kanami"),
+        .trainerName = _("Holly"),
 #line 9688
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 9689
@@ -24350,10 +24350,10 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9747
-    [TRAINER_KANAMI_BAYCREST_TURTWIG] =
+    [TRAINER_HOLLY_BAYCREST_TURTWIG] =
     {
 #line 9748
-        .trainerName = _("Kanami"),
+        .trainerName = _("Holly"),
 #line 9749
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 9750
@@ -24512,10 +24512,10 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9809
-    [TRAINER_KANAMI_BAYCREST_FENNEKIN] =
+    [TRAINER_HOLLY_BAYCREST_FENNEKIN] =
     {
 #line 9810
-        .trainerName = _("Kanami"),
+        .trainerName = _("Holly"),
 #line 9811
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 9812
@@ -27273,7 +27273,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 10881
-    [TRAINER_SHINJI_RUSTBORO_TREECKO] =
+    [TRAINER_CADEN_RUSTBORO_TREECKO] =
     {
 #line 10882
         .trainerName = _("BRENDAN"),
@@ -27316,7 +27316,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 10898
-    [TRAINER_SHINJI_RUSTBORO_MUDKIP] =
+    [TRAINER_CADEN_RUSTBORO_MUDKIP] =
     {
 #line 10899
         .trainerName = _("BRENDAN"),
@@ -27591,7 +27591,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 11005
-    [TRAINER_SHINJI_RUSTBORO_TORCHIC] =
+    [TRAINER_CADEN_RUSTBORO_TORCHIC] =
     {
 #line 11006
         .trainerName = _("BRENDAN"),
@@ -30783,7 +30783,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 12284
-    [TRAINER_SHINJI_LILYCOVE_MUDKIP] =
+    [TRAINER_CADEN_LILYCOVE_MUDKIP] =
     {
 #line 12285
         .trainerName = _("BRENDAN"),
@@ -30848,7 +30848,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 12309
-    [TRAINER_SHINJI_LILYCOVE_TREECKO] =
+    [TRAINER_CADEN_LILYCOVE_TREECKO] =
     {
 #line 12310
         .trainerName = _("BRENDAN"),
@@ -30913,7 +30913,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 12334
-    [TRAINER_SHINJI_LILYCOVE_TORCHIC] =
+    [TRAINER_CADEN_LILYCOVE_TORCHIC] =
     {
 #line 12335
         .trainerName = _("BRENDAN"),
@@ -42267,7 +42267,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 16909
-    [TRAINER_SHINJI_PLACEHOLDER] =
+    [TRAINER_CADEN_PLACEHOLDER] =
     {
 #line 16910
         .trainerName = _("BRENDAN"),

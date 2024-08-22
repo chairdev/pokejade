@@ -1102,3 +1102,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/FortuneCave/scripts.inc"
 
 	.include "data/maps/Route503/scripts.inc"
+
+	.include "data/maps/KismetForest/scripts.inc"

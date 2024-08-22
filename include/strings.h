@@ -353,8 +353,8 @@ extern const u8 gText_ContinueMenuPokedex[];
 extern const u8 gText_ContinueMenuBadges[];
 extern const u8 gText_BirchBoy[];
 extern const u8 gText_BirchGirl[];
-extern const u8 gText_DefaultNameShinji[];
-extern const u8 gText_DefaultNameKanami[];
+extern const u8 gText_DefaultNameCaden[];
+extern const u8 gText_DefaultNameHolly[];
 
 extern const u8 gText_BirchInTrouble[];
 extern const u8 gText_ConfirmStarterChoice[];

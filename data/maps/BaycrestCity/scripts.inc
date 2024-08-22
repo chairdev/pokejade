@@ -23,9 +23,9 @@ BaycrestCity_Trigger_Rival1::
 # 22 "data/maps/BaycrestCity/scripts.pory"
 	checkplayergender
 # 23 "data/maps/BaycrestCity/scripts.pory"
-	goto_if_eq VAR_RESULT, MALE, BaycrestCity_Kanami
+	goto_if_eq VAR_RESULT, MALE, BaycrestCity_Holly
 # 24 "data/maps/BaycrestCity/scripts.pory"
-	goto_if_eq VAR_RESULT, FEMALE, BaycrestCity_Shinji
+	goto_if_eq VAR_RESULT, FEMALE, BaycrestCity_Caden
 # 26 "data/maps/BaycrestCity/scripts.pory"
 	applymovement 1, RivalLeave
 # 27 "data/maps/BaycrestCity/scripts.pory"
@@ -55,13 +55,13 @@ BaycrestCity_Trigger_Rival2::
 # 44 "data/maps/BaycrestCity/scripts.pory"
 	checkplayergender
 # 45 "data/maps/BaycrestCity/scripts.pory"
-	goto_if_eq VAR_RESULT, MALE, BaycrestCity_Kanami
+	goto_if_eq VAR_RESULT, MALE, BaycrestCity_Holly
 # 46 "data/maps/BaycrestCity/scripts.pory"
-	goto_if_eq VAR_RESULT, FEMALE, BaycrestCity_Shinji
+	goto_if_eq VAR_RESULT, FEMALE, BaycrestCity_Caden
 	return
 
 
-BaycrestCity_Kanami::
+BaycrestCity_Holly::
 # 50 "data/maps/BaycrestCity/scripts.pory"
 	playbgm MUS_ENCOUNTER_MAY, 0
 # 52 "data/maps/BaycrestCity/scripts.pory"
@@ -71,12 +71,12 @@ BaycrestCity_Kanami::
 # 55 "data/maps/BaycrestCity/scripts.pory"
 	switch VAR_STARTER_MON
 # 56 "data/maps/BaycrestCity/scripts.pory"
-	case 0, BaycrestCity_Kanami_3
+	case 0, BaycrestCity_Holly_3
 # 59 "data/maps/BaycrestCity/scripts.pory"
-	case 1, BaycrestCity_Kanami_4
+	case 1, BaycrestCity_Holly_4
 # 62 "data/maps/BaycrestCity/scripts.pory"
-	case 2, BaycrestCity_Kanami_5
-BaycrestCity_Kanami_1:
+	case 2, BaycrestCity_Holly_5
+BaycrestCity_Holly_1:
 # 67 "data/maps/BaycrestCity/scripts.pory"
 	msgbox BaycrestCity_Text_Rival2F
 # 68 "data/maps/BaycrestCity/scripts.pory"
@@ -99,23 +99,23 @@ BaycrestCity_Kanami_1:
 	releaseall
 	return
 
-BaycrestCity_Kanami_3:
+BaycrestCity_Holly_3:
 # 57 "data/maps/BaycrestCity/scripts.pory"
-	trainerbattle_no_intro TRAINER_KANAMI_BAYCREST_TURTWIG, BaycrestCity_Text_KanamiDefeated
-	goto BaycrestCity_Kanami_1
+	trainerbattle_no_intro TRAINER_HOLLY_BAYCREST_TURTWIG, BaycrestCity_Text_HollyDefeated
+	goto BaycrestCity_Holly_1
 
-BaycrestCity_Kanami_4:
+BaycrestCity_Holly_4:
 # 60 "data/maps/BaycrestCity/scripts.pory"
-	trainerbattle_no_intro TRAINER_KANAMI_BAYCREST_FENNEKIN, BaycrestCity_Text_KanamiDefeated
-	goto BaycrestCity_Kanami_1
+	trainerbattle_no_intro TRAINER_HOLLY_BAYCREST_FENNEKIN, BaycrestCity_Text_HollyDefeated
+	goto BaycrestCity_Holly_1
 
-BaycrestCity_Kanami_5:
+BaycrestCity_Holly_5:
 # 63 "data/maps/BaycrestCity/scripts.pory"
-	trainerbattle_no_intro TRAINER_KANAMI_BAYCREST_QUAXLY, BaycrestCity_Text_KanamiDefeated
-	goto BaycrestCity_Kanami_1
+	trainerbattle_no_intro TRAINER_HOLLY_BAYCREST_QUAXLY, BaycrestCity_Text_HollyDefeated
+	goto BaycrestCity_Holly_1
 
 
-BaycrestCity_Shinji::
+BaycrestCity_Caden::
 # 83 "data/maps/BaycrestCity/scripts.pory"
 	playbgm MUS_ENCOUNTER_BRENDAN, 0
 # 85 "data/maps/BaycrestCity/scripts.pory"
@@ -125,12 +125,12 @@ BaycrestCity_Shinji::
 # 88 "data/maps/BaycrestCity/scripts.pory"
 	switch VAR_STARTER_MON
 # 89 "data/maps/BaycrestCity/scripts.pory"
-	case 0, BaycrestCity_Shinji_3
+	case 0, BaycrestCity_Caden_3
 # 92 "data/maps/BaycrestCity/scripts.pory"
-	case 1, BaycrestCity_Shinji_4
+	case 1, BaycrestCity_Caden_4
 # 95 "data/maps/BaycrestCity/scripts.pory"
-	case 2, BaycrestCity_Shinji_5
-BaycrestCity_Shinji_1:
+	case 2, BaycrestCity_Caden_5
+BaycrestCity_Caden_1:
 # 100 "data/maps/BaycrestCity/scripts.pory"
 	msgbox BaycrestCity_Text_Rival2M
 # 101 "data/maps/BaycrestCity/scripts.pory"
@@ -153,20 +153,20 @@ BaycrestCity_Shinji_1:
 	releaseall
 	return
 
-BaycrestCity_Shinji_3:
+BaycrestCity_Caden_3:
 # 90 "data/maps/BaycrestCity/scripts.pory"
-	trainerbattle_no_intro TRAINER_SHINJI_BAYCREST_TURTWIG, BaycrestCity_Text_ShinjiDefeated
-	goto BaycrestCity_Shinji_1
+	trainerbattle_no_intro TRAINER_CADEN_BAYCREST_TURTWIG, BaycrestCity_Text_CadenDefeated
+	goto BaycrestCity_Caden_1
 
-BaycrestCity_Shinji_4:
+BaycrestCity_Caden_4:
 # 93 "data/maps/BaycrestCity/scripts.pory"
-	trainerbattle_no_intro TRAINER_SHINJI_BAYCREST_FENNEKIN, BaycrestCity_Text_ShinjiDefeated
-	goto BaycrestCity_Shinji_1
+	trainerbattle_no_intro TRAINER_CADEN_BAYCREST_FENNEKIN, BaycrestCity_Text_CadenDefeated
+	goto BaycrestCity_Caden_1
 
-BaycrestCity_Shinji_5:
+BaycrestCity_Caden_5:
 # 96 "data/maps/BaycrestCity/scripts.pory"
-	trainerbattle_no_intro TRAINER_SHINJI_BAYCREST_QUAXLY, BaycrestCity_Text_ShinjiDefeated
-	goto BaycrestCity_Shinji_1
+	trainerbattle_no_intro TRAINER_CADEN_BAYCREST_QUAXLY, BaycrestCity_Text_CadenDefeated
+	goto BaycrestCity_Caden_1
 
 
 # 116 "data/maps/BaycrestCity/scripts.pory"
@@ -370,13 +370,13 @@ BaycrestCity_Text_Rival3F::
 	.string "I hope you find it useful!\p"
 	.string "I'll see you later!$"
 
-BaycrestCity_Text_KanamiDefeated::
+BaycrestCity_Text_HollyDefeated::
 # 163 "data/maps/BaycrestCity/scripts.pory"
 	.string "My battle career started off with a\n"
 	.string "loss...\p"
 	.string "Geez, this is the worst!$"
 
-BaycrestCity_Text_ShinjiDefeated::
+BaycrestCity_Text_CadenDefeated::
 # 169 "data/maps/BaycrestCity/scripts.pory"
 	.string "My first battle ended in a loss...\p"
 	.string "I can't believe it!$"
