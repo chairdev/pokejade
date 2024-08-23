@@ -4,7 +4,7 @@
 #include "constants/battle_partner.h"
 
 #define TRAINER_NONE                          0
-#define TRAINER_YUUTO                      1
+#define TRAINER_MICHAEL                      1
 #define TRAINER_GRUNT_AQUA_HIDEOUT_1          2
 #define TRAINER_GRUNT_AQUA_HIDEOUT_2          3
 #define TRAINER_GRUNT_AQUA_HIDEOUT_3          4
@@ -268,7 +268,7 @@
 #define TRAINER_PHOEBE                      262
 #define TRAINER_GLACIA                      263
 #define TRAINER_DRAKE                       264
-#define TRAINER_RIKU_1                   265
+#define TRAINER_GEO_1                   265
 #define TRAINER_BRAWLY_1                    266
 #define TRAINER_WATTSON_1                   267
 #define TRAINER_FLANNERY_1                  268
@@ -322,9 +322,9 @@
 #define TRAINER_SHELBY_4                    316
 #define TRAINER_SHELBY_5                    317
 #define TRAINER_CALVIN_1                    318
-#define TRAINER_MASAKI                       319
-#define TRAINER_SHU                        320
-#define TRAINER_JUNPEI                       321
+#define TRAINER_DANIEL                       319
+#define TRAINER_CHRISTOPHER                        320
+#define TRAINER_KENNETH                       321
 #define TRAINER_JOEY                        322
 #define TRAINER_BEN                         323
 #define TRAINER_QUINCY                      324
@@ -474,7 +474,7 @@
 #define TRAINER_JENNY_5                     468
 #define TRAINER_HEIDI                       469
 #define TRAINER_BECKY                       470
-#define TRAINER_AIKO                       471
+#define TRAINER_SUSAN                       471
 #define TRAINER_NANCY                       472
 #define TRAINER_MARTHA                      473
 #define TRAINER_DIANA_1                     474
@@ -486,7 +486,7 @@
 #define TRAINER_DIANA_5                     480
 #define TRAINER_AMY_AND_LIV_1               481
 #define TRAINER_AMY_AND_LIV_2               482
-#define TRAINER_RUI_AND_YUI_1              483
+#define TRAINER_ARI_AND_ALI_1              483
 #define TRAINER_MIU_AND_YUKI                484
 #define TRAINER_AMY_AND_LIV_3               485
 #define TRAINER_GINA_AND_MIA_2              486
@@ -606,7 +606,7 @@
 #define TRAINER_MAY_RUSTBORO_MUDKIP         600
 #define TRAINER_MAXIE_MAGMA_HIDEOUT         601
 #define TRAINER_MAXIE_MT_CHIMNEY            602
-#define TRAINER_EMIRI                       603
+#define TRAINER_BARBARA                       603
 #define TRAINER_HALEY_1                     604
 #define TRAINER_JANICE                      605
 #define TRAINER_VIVI                        606
@@ -629,7 +629,7 @@
 #define TRAINER_JAMES_3                     623
 #define TRAINER_JAMES_4                     624
 #define TRAINER_JAMES_5                     625
-#define TRAINER_AYATO                       626
+#define TRAINER_GARY                       626
 #define TRAINER_TRENT_1                     627
 #define TRAINER_LENNY                       628
 #define TRAINER_LUCAS_1                     629
@@ -699,7 +699,7 @@
 #define TRAINER_CHRIS                       693
 #define TRAINER_DAWSON                      694
 #define TRAINER_SARAH                       695
-#define TRAINER_KEIICHI                      696
+#define TRAINER_FRANK                       696
 #define TRAINER_HAILEY                      697
 #define TRAINER_CHANDLER                    698
 #define TRAINER_KALEB                       699

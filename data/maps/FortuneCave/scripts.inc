@@ -14,11 +14,11 @@ FortuneCave_EventScript_StrandedCamper::
 	return
 
 
-FortuneCave_EventScript_HikerAyato::
+FortuneCave_EventScript_HikerGary::
 # 18 "data/maps/FortuneCave/scripts.pory"
-	trainerbattle_single TRAINER_AYATO, FortuneCave_Text_HikerAyatoIntro, FortuneCave_Text_HikerAyatoDefeat
+	trainerbattle_single TRAINER_GARY, FortuneCave_Text_HikerGaryIntro, FortuneCave_Text_HikerGaryDefeat
 # 19 "data/maps/FortuneCave/scripts.pory"
-	msgbox FortuneCave_Text_HikerAyatoPostBattle, MSGBOX_AUTOCLOSE
+	msgbox FortuneCave_Text_HikerGaryPostBattle, MSGBOX_AUTOCLOSE
 	return
 
 
@@ -40,17 +40,17 @@ FortuneCave_Text_StrandedCamper::
 	.string "these rocks, but I don't have it!\p"
 	.string "This is the worst!$"
 
-FortuneCave_Text_HikerAyatoIntro::
+FortuneCave_Text_HikerGaryIntro::
 # 22 "data/maps/FortuneCave/scripts.pory"
 	.string "You! Trainer!\n"
 	.string "You scared away the Glimmet I was\l"
 	.string "trying to catch!$"
 
-FortuneCave_Text_HikerAyatoDefeat::
+FortuneCave_Text_HikerGaryDefeat::
 # 26 "data/maps/FortuneCave/scripts.pory"
 	.string "I guess I'll have to find another one...$"
 
-FortuneCave_Text_HikerAyatoPostBattle::
+FortuneCave_Text_HikerGaryPostBattle::
 # 30 "data/maps/FortuneCave/scripts.pory"
 	.string "I'll find one eventually!$"
 

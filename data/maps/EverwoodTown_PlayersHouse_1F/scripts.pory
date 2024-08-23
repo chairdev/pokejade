@@ -15,6 +15,7 @@ script EverwoodTown_PlayersHouse_1F_MapScript_MeetMom {
     applymovement(OBJ_MOM, MomApproachPlayer1)
     waitmovement(0)
     
+    speakername("Mom")
     msgbox(MeetMomText1)
     closemessage
     
@@ -114,7 +115,7 @@ script EverwoodTown_PlayersHouse_1F_EventScript_Delcatty {
     lock
     faceplayer
     playmoncry(SPECIES_DELCATTY, CRY_MODE_NORMAL)
-    msgbox(format("Delcatty: Mreeeow!"))
+    msgbox(format("Mreeeow!"))
     waitmoncry
     release
 }

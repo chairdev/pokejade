@@ -14,20 +14,20 @@ text FortuneCave_Text_StrandedCamper {
             "This is the worst!")
 }
 
-script FortuneCave_EventScript_HikerAyato {
-    trainerbattle_single(TRAINER_AYATO, FortuneCave_Text_HikerAyatoIntro, FortuneCave_Text_HikerAyatoDefeat)
-    msgbox(FortuneCave_Text_HikerAyatoPostBattle, MSGBOX_AUTOCLOSE)
+script FortuneCave_EventScript_HikerGary {
+    trainerbattle_single(TRAINER_GARY, FortuneCave_Text_HikerGaryIntro, FortuneCave_Text_HikerGaryDefeat)
+    msgbox(FortuneCave_Text_HikerGaryPostBattle, MSGBOX_AUTOCLOSE)
 }
 
-text FortuneCave_Text_HikerAyatoIntro {
+text FortuneCave_Text_HikerGaryIntro {
     format("You! Trainer!\nYou scared away the Glimmet I was trying to catch!")
 }
 
-text FortuneCave_Text_HikerAyatoDefeat {
+text FortuneCave_Text_HikerGaryDefeat {
     format("I guess I'll have to find another one...")
 }
 
-text FortuneCave_Text_HikerAyatoPostBattle {
+text FortuneCave_Text_HikerGaryPostBattle {
     format("I'll find one eventually!")
 }
 

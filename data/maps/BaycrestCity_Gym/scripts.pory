@@ -199,7 +199,7 @@ text BaycrestCity_Gym_Text_EntranceAttendant1 { //this gym doubles also the trai
 
 
 script BaycrestCity_Gym_EventScript_Shu { //know it all kid
-    trainerbattle_single(TRAINER_SHU, BaycrestCity_Gym_Text_ShuIntro, BaycrestCity_Gym_Text_ShuDefeated)
+    trainerbattle_single(TRAINER_CHRISTOPHER, BaycrestCity_Gym_Text_ShuIntro, BaycrestCity_Gym_Text_ShuDefeated)
     msgbox(BaycrestCity_Gym_Text_ShuPostBattle, MSGBOX_AUTOCLOSE)
     waitmessage
     end
@@ -219,7 +219,7 @@ text BaycrestCity_Gym_Text_ShuPostBattle {
 }
 
 script BaycrestCity_Gym_EventScript_Junpei { //stupid kid, doesnt study
-    trainerbattle_single(TRAINER_JUNPEI, BaycrestCity_Gym_Text_JunpeiIntro, BaycrestCity_Gym_Text_JunpeiDefeated)
+    trainerbattle_single(TRAINER_KENNETH, BaycrestCity_Gym_Text_JunpeiIntro, BaycrestCity_Gym_Text_JunpeiDefeated)
     msgbox(BaycrestCity_Gym_Text_JunpeiPostBattle, MSGBOX_AUTOCLOSE)
     waitmessage
     end
@@ -238,22 +238,26 @@ text BaycrestCity_Gym_Text_JunpeiPostBattle {
     format("Maybe studying isn't only for losers after all...")
 }
 
-script BaycrestCity_Gym_EventScript_Riku { //leader
-    trainerbattle_single(TRAINER_RIKU_1, BaycrestCity_Gym_Text_RikuIntro, BaycrestCity_Gym_Text_RikuDefeat, BaycrestCity_Gym_EventScript_RikuDefeated, NO_MUSIC)
+script BaycrestCity_Gym_EventScript_Geo { //leader
+    trainerbattle_single(TRAINER_GEO_1, BaycrestCity_Gym_Text_GeoIntro, BaycrestCity_Gym_Text_GeoDefeat, BaycrestCity_Gym_EventScript_GeoDefeated, NO_MUSIC)
     if(flag(FLAG_RECEIVED_TM_SAND_TOMB) == FALSE)
     {
         goto(BaycrestCity_Gym_EventScript_GiveSandTomb)
     }
 
-    msgbox(BaycrestCity_Gym_Text_RikuPostBattle, MSGBOX_AUTOCLOSE)
+    speakername("Geo")
+    msgbox(BaycrestCity_Gym_Text_GeoPostBattle, MSGBOX_AUTOCLOSE)
     release
 }
 
-script BaycrestCity_Gym_EventScript_RikuDefeated {
-    msgbox(BaycrestCity_Gym_Text_RikuDefeated)
+script BaycrestCity_Gym_EventScript_GeoDefeated {
+    speakername("Geo")
+    msgbox(BaycrestCity_Gym_Text_GeoDefeated)
     playfanfare(MUS_OBTAIN_BADGE)
+    closemessage
     msgbox(BaycrestCity_Gym_Text_ReceivedFoundationBadge)
     waitfanfare
+    speakername("Geo")
     msgbox(BaycrestCity_Gym_Text_FoundationBadgeInfo)
 
    	setflag(FLAG_DEFEATED_BAYCREST_GYM)
@@ -274,12 +278,13 @@ script BaycrestCity_Gym_EventScript_GiveSandTomb {
     }
 
     setflag(FLAG_RECEIVED_TM_SAND_TOMB)
+    speakername("Geo")
     msgbox(BaycrestCity_Gym_Text_ExplainSandTomb)
     release
 }
 
-text BaycrestCity_Gym_Text_RikuIntro {
-    format("Are you my next challenger?\nI'm Riku, the Baycrest City Gym Leader!\p"
+text BaycrestCity_Gym_Text_GeoIntro {
+    format("Are you my next challenger?\nI'm Geo, the Baycrest City Gym Leader!\p"
             "I may be a kid, but I graduated from the Trainer School with top marks a few years ago!\p"
             "I think that Ground-type is one of the best offensive types in the world!\p"
             "You could say it's the foundation of a good team!\p"
@@ -288,12 +293,12 @@ text BaycrestCity_Gym_Text_RikuIntro {
     )
 }
 
-text BaycrestCity_Gym_Text_RikuDefeat {
+text BaycrestCity_Gym_Text_GeoDefeat {
     format( "My solid foundation crumbled...\p"
             "Even though I'm a Gym Leader, I still have a lot to learn...")
 }
 
-text BaycrestCity_Gym_Text_RikuDefeated {
+text BaycrestCity_Gym_Text_GeoDefeated {
     format( "Ahem!\nCongratulations, {PLAYER}-san!\p"
             "According to the official rules of the Pokémon League, once you defeat a Gym Leader, you will receive a badge as proof of your victory!\p"
             "That's right!\nThe Pokémon League's official Foundation Badge is yours!")
@@ -317,7 +322,7 @@ text BaycrestCity_Gym_Text_ExplainSandTomb {
     )
 }
 
-text BaycrestCity_Gym_Text_RikuPostBattle {
+text BaycrestCity_Gym_Text_GeoPostBattle {
     format("You were a great challenger!\nI hope you'll come back to challenge me again!")
     
 }

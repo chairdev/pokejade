@@ -153,10 +153,13 @@ script EverwoodTown_Trigger_GoodbyeMom4 {
 }
 
 script EverwoodTown_GoodbyeMom {
+    speakername("Mom")
     msgbox(GoodbyeMomText1)
     playfanfare(MUS_OBTAIN_ITEM)
+    closemessage
     msgbox(format("You put on the Running Shoes!"))
 	waitfanfare
+    speakername("Mom")
     msgbox(GoodbyeMomText2)
     closemessage
 

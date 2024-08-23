@@ -50,19 +50,24 @@ script Route501_RivalHolly {
 
     playbgm(MUS_ENCOUNTER_MAY, 0)
 
+    speakername("{RIVAL}")
     msgbox(Route501_Text_MeetRivalText1F)
     closemessage
     
     applymovement(OBJ_RIVAL, RivalLookAround)
     waitmovement(0)
 
+    speakername("{RIVAL}")
     msgbox(format("Oh, there it is!"))
+    closemessage
     
     applymovement(OBJ_RIVAL, RivalApproachBag)
     applymovement(OBJ_EVENT_ID_PLAYER, PlayerApproachBag)
     waitmovement(1)
 
+    speakername("{RIVAL}")
     msgbox(Route501_Text_MeetRivalText2F)
+    closemessage    
 
     playbgm(MUS_HELP, 0)
 
@@ -80,12 +85,14 @@ script Route501_RivalHolly {
     applymovement(OBJ_EVENT_ID_PLAYER, FaceLeft)
     applymovement(OBJ_RIVAL, FaceUp)
 
+    speakername("{RIVAL}")
     msgbox(Route501_Text_MeetRivalText3F)
     closemessage
 
     applymovement(OBJ_EVENT_ID_PLAYER, FaceRight)
     applymovement(OBJ_RIVAL, FaceDown)
 
+    
     setflag(FLAG_SYS_POKEMON_GET)
     fadescreen(FADE_TO_BLACK)
     removeobject(OBJ_PIDOVE1)
@@ -94,6 +101,7 @@ script Route501_RivalHolly {
 	waitstate
 
     bufferleadmonspeciesname(STR_VAR_1)
+    speakername("{RIVAL}")
     msgbox(Route501_Text_MeetRivalText4F)
 
     special(HealPlayerParty)
@@ -111,19 +119,24 @@ script Route501_RivalCaden {
 
     playbgm(MUS_ENCOUNTER_BRENDAN, 0)
 
+    speakername("{RIVAL}")
     msgbox(Route501_Text_MeetRivalText1M)
     closemessage
     
     applymovement(OBJ_RIVAL, RivalLookAround)
     waitmovement(0)
 
+    speakername("{RIVAL}")
     msgbox(format("Oh, there it is!"))
+    closemessage
     
     applymovement(OBJ_RIVAL, RivalApproachBag)
     applymovement(OBJ_EVENT_ID_PLAYER, PlayerApproachBag)
     waitmovement(1)
 
+    speakername("{RIVAL}")
     msgbox(Route501_Text_MeetRivalText2M)
+    closemessage
 
     playbgm(MUS_HELP, 0)
 
@@ -141,6 +154,7 @@ script Route501_RivalCaden {
     applymovement(OBJ_EVENT_ID_PLAYER, FaceLeft)
     applymovement(OBJ_RIVAL, FaceUp)
 
+    speakername("{RIVAL}")
     msgbox(Route501_Text_MeetRivalText3M)
     closemessage
 
@@ -155,6 +169,7 @@ script Route501_RivalCaden {
 	waitstate
 
     bufferleadmonspeciesname(STR_VAR_1)
+     speakername("{RIVAL}")
     msgbox(Route501_Text_MeetRivalText4M)
 
     special(HealPlayerParty)
@@ -372,23 +387,23 @@ text Route501_Text_Boy {
            "I know, it's a shocker!\nLike, who doesn't know that?")
 }
 
-script Route501_EventScript_Yuuto {
-    trainerbattle_single(TRAINER_YUUTO, Route501_Text_YuutoIntro, Route501_Text_YuutoDefeated)
-    msgbox(Route102_Text_YuutoPostBattle, MSGBOX_AUTOCLOSE)
+script Route501_EventScript_Michael {
+    trainerbattle_single(TRAINER_MICHAEL, Route501_Text_MichaelIntro, Route501_Text_MichaelDefeated)
+    msgbox(Route102_Text_MichaelPostBattle, MSGBOX_AUTOCLOSE)
     waitmessage
     end
 }
 
-text Route501_Text_YuutoIntro {
+text Route501_Text_MichaelIntro {
     format("We've locked eyes! That means it's time for a battle!\p"
            "I'll show you the power of my favorite Pokémon!")
 }
 
-text Route501_Text_YuutoDefeated {
+text Route501_Text_MichaelDefeated {
     format("You're so strong!")
 }
 
-text Route102_Text_YuutoPostBattle {
+text Route102_Text_MichaelPostBattle {
     format("You're really good at this! I hope we can battle again sometime!")
 }
 

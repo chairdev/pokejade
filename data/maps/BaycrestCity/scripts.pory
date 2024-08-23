@@ -50,6 +50,7 @@ script BaycrestCity_Holly {
     playbgm(MUS_ENCOUNTER_MAY, 0)
 
     special(HealPlayerParty)
+    speakername("{RIVAL}")
     msgbox(BaycrestCity_Text_Rival1F)
 
     switch(var(VAR_STARTER_MON)) {
@@ -64,8 +65,10 @@ script BaycrestCity_Holly {
             break
     }
 
+    speakername("{RIVAL}")
     msgbox(BaycrestCity_Text_Rival2F)
     giveitem(ITEM_TM_SWIFT)
+    speakername("{RIVAL}")
     msgbox(BaycrestCity_Text_Rival3F)
     closemessage
     
@@ -83,6 +86,7 @@ script BaycrestCity_Caden {
     playbgm(MUS_ENCOUNTER_BRENDAN, 0)
 
     special(HealPlayerParty)
+    speakername("{RIVAL}")
     msgbox(BaycrestCity_Text_Rival1M)
 
     switch(var(VAR_STARTER_MON)) {
@@ -97,8 +101,10 @@ script BaycrestCity_Caden {
             break
     }
 
+    speakername("{RIVAL}")
     msgbox(BaycrestCity_Text_Rival2M)
     giveitem(ITEM_TM_SWIFT)
+    speakername("{RIVAL}")
     msgbox(BaycrestCity_Text_Rival3M)
     closemessage
 
@@ -139,7 +145,7 @@ movement RivalLeave {
 }
 
 text BaycrestCity_Text_Rival1F {
-    format("{RIVAL}: Hey, {PLAYER}{KUN}! I've been waiting for you!\p"
+    format("Hey, {PLAYER}{KUN}! I've been waiting for you!\p"
             "I've already registered for the Toshou League, so I need to practice battling.\p"
             "You're the perfect person to help me with that!\p"
             "Let's battle!"
@@ -147,14 +153,14 @@ text BaycrestCity_Text_Rival1F {
 }
 
 text BaycrestCity_Text_Rival2F { //After battle, GIVE TM
-    format("{RIVAL}: Wow, you're really good at this!\p"
+    format("Wow, you're really good at this!\p"
             "I guess I'll have to train harder if I want to beat you!\p"
             "Here, take this TM as a thank you for the battle!\p"
     )
 }
 
 text BaycrestCity_Text_Rival3F {
-    format("{RIVAL}: It's the TM for Swift! It's a great move that never misses!\p"
+    format("It's the TM for Swift! It's a great move that never misses!\p"
             "I hope you find it useful!\p"
             "I'll see you later!"
     )
@@ -173,7 +179,7 @@ text BaycrestCity_Text_CadenDefeated {
 }
 
 text BaycrestCity_Text_Rival1M {
-    format("{RIVAL}: Oh, hey, {PLAYER}{KUN}!\nThere you are!\p"
+    format("Oh, hey, {PLAYER}{KUN}!\nThere you are!\p"
             "I've been waiting for you!\p"
             "Just so you know, I've already registered for the Toshou League.\p"
             "I need to practice, so you and I are going to have a battle!\p"
@@ -182,14 +188,14 @@ text BaycrestCity_Text_Rival1M {
 }
 
 text BaycrestCity_Text_Rival2M {
-    format("{RIVAL}: You're pretty good at this, {PLAYER}{KUN}!\p"
+    format("You're pretty good at this, {PLAYER}{KUN}!\p"
             "I'm gonna train hard so I can beat you next time!\p"
             "I'll give you this since you helped me practice!\p"
     )
 }
 
 text BaycrestCity_Text_Rival3M {
-    format("{RIVAL}: This TM is for the move Swift!\p"
+    format("This TM is for the move Swift!\p"
             "It never misses, so it's a great move to have!\p"
             "I'll see you later, {PLAYER}{KUN}!"
     )
@@ -257,7 +263,7 @@ script BaycrestCity_EventScript_Lillipup {
     lock
     faceplayer
     playmoncry(SPECIES_LILLIPUP, CRY_MODE_NORMAL)
-    msgbox(format("Lillipup: Terieee!"))
+    msgbox(format("Terieee!"))
     waitmoncry
     release
 }
@@ -296,7 +302,7 @@ script BaycrestCity_Sign_Gym {
 }
 
 text BaycrestCity_Text_GymSign {
-    format( "Baycrest City Pokémon Gym\nGym Leader: Riku\p"
+    format( "Baycrest City Pokémon Gym\nGym Leader: Geo\p"
             "“The Grounded Wunderkind”"
 
     )

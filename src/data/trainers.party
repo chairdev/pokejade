@@ -81,8 +81,8 @@ Gender: Male
 Music: Male
 Double Battle: No
 
-=== TRAINER_YUUTO ===
-Name: Yuuto
+=== TRAINER_MICHAEL ===
+Name: Michael
 Class: Youngster
 Pic: Youngster
 Gender: Male
@@ -4784,8 +4784,8 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Rock Slide
 - Crunch
 
-=== TRAINER_RIKU_1 ===
-Name: Riku
+=== TRAINER_GEO_1 ===
+Name: Geo
 Class: Leader
 Pic: Leader Brawly
 Gender: Female
@@ -5952,8 +5952,8 @@ Poochyena
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_MASAKI ===
-Name: Masaki
+=== TRAINER_DANIEL ===
+Name: Daniel
 Class: Youngster
 Pic: Youngster
 Gender: Male
@@ -5969,8 +5969,8 @@ Skiddo
 Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SHU ===
-Name: Shu
+=== TRAINER_CHRISTOPHER ===
+Name: Christopher
 Class: School Kid
 Pic: School Kid M
 Gender: Male
@@ -5982,8 +5982,8 @@ Geodude
 Level: 9
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_JUNPEI ===
-Name: Junpei
+=== TRAINER_KENNETH ===
+Name: Kenneth
 Class: Youngster
 Pic: Youngster
 Gender: Male
@@ -8571,8 +8571,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tail Whip
 - Defense Curl
 
-=== TRAINER_AIKO ===
-Name: Aiko
+=== TRAINER_SUSAN ===
+Name: Susan
 Class: Picnicker
 Pic: Picnicker
 Gender: Female
@@ -8795,8 +8795,8 @@ Minun
 Level: 27
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_RUI_AND_YUI_1 ===
-Name: Rui & Yui
+=== TRAINER_ARI_AND_ALI_1 ===
+Name: Ari & Ali
 Class: Twins
 Pic: Twins
 Gender: Male
@@ -11080,8 +11080,8 @@ Camerupt
 Level: 25
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_EMIRI ===
-Name: Emiri
+=== TRAINER_BARBARA ===
+Name: Barbara
 Class: Lass
 Pic: Lass
 Gender: Female
@@ -11483,8 +11483,8 @@ Ninjask
 Level: 33
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_AYATO ===
-Name: Ayato
+=== TRAINER_GARY ===
+Name: Gary
 Class: Hiker
 Pic: Hiker
 Gender: Male
@@ -13003,8 +13003,8 @@ Zigzagoon @ Nugget
 Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_KEIICHI ===
-Name: Keiichi
+=== TRAINER_FRANK ===
+Name: Frank
 Class: Fisherman
 Pic: Fisherman
 Gender: Male

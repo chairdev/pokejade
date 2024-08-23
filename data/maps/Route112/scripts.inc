@@ -64,7 +64,7 @@ Route112_EventScript_Hiker::
 	end
 
 Route112_EventScript_Brice::
-	trainerbattle_single TRAINER_AYATO, Route112_Text_BriceIntro, Route112_Text_BriceDefeat
+	trainerbattle_single TRAINER_GARY, Route112_Text_BriceIntro, Route112_Text_BriceDefeat
 	msgbox Route112_Text_BricePostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -95,7 +95,7 @@ Route112_EventScript_Larry::
 	end
 
 Route112_EventScript_Carol::
-	trainerbattle_single TRAINER_AIKO, Route112_Text_CarolIntro, Route112_Text_CarolDefeat
+	trainerbattle_single TRAINER_SUSAN, Route112_Text_CarolIntro, Route112_Text_CarolDefeat
 	msgbox Route112_Text_CarolPostBattle, MSGBOX_AUTOCLOSE
 	end
 

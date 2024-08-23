@@ -67,286 +67,302 @@ BaycrestCity_Holly::
 # 52 "data/maps/BaycrestCity/scripts.pory"
 	special HealPlayerParty
 # 53 "data/maps/BaycrestCity/scripts.pory"
+	speakername BaycrestCity_Holly_Text_0
+# 54 "data/maps/BaycrestCity/scripts.pory"
 	msgbox BaycrestCity_Text_Rival1F
-# 55 "data/maps/BaycrestCity/scripts.pory"
-	switch VAR_STARTER_MON
 # 56 "data/maps/BaycrestCity/scripts.pory"
+	switch VAR_STARTER_MON
+# 57 "data/maps/BaycrestCity/scripts.pory"
 	case 0, BaycrestCity_Holly_3
-# 59 "data/maps/BaycrestCity/scripts.pory"
+# 60 "data/maps/BaycrestCity/scripts.pory"
 	case 1, BaycrestCity_Holly_4
-# 62 "data/maps/BaycrestCity/scripts.pory"
+# 63 "data/maps/BaycrestCity/scripts.pory"
 	case 2, BaycrestCity_Holly_5
 BaycrestCity_Holly_1:
-# 67 "data/maps/BaycrestCity/scripts.pory"
-	msgbox BaycrestCity_Text_Rival2F
 # 68 "data/maps/BaycrestCity/scripts.pory"
-	giveitem ITEM_TM_SWIFT
+	speakername BaycrestCity_Holly_Text_0
 # 69 "data/maps/BaycrestCity/scripts.pory"
-	msgbox BaycrestCity_Text_Rival3F
+	msgbox BaycrestCity_Text_Rival2F
 # 70 "data/maps/BaycrestCity/scripts.pory"
-	closemessage
+	giveitem ITEM_TM_SWIFT
+# 71 "data/maps/BaycrestCity/scripts.pory"
+	speakername BaycrestCity_Holly_Text_0
 # 72 "data/maps/BaycrestCity/scripts.pory"
-	applymovement 1, RivalLeave
+	msgbox BaycrestCity_Text_Rival3F
 # 73 "data/maps/BaycrestCity/scripts.pory"
-	waitmovement 0
-# 74 "data/maps/BaycrestCity/scripts.pory"
-	removeobject 1
+	closemessage
+# 75 "data/maps/BaycrestCity/scripts.pory"
+	applymovement 1, RivalLeave
 # 76 "data/maps/BaycrestCity/scripts.pory"
-	setvar VAR_BAYCREST_CITY_STATE, 1
+	waitmovement 0
 # 77 "data/maps/BaycrestCity/scripts.pory"
-	setflag FLAG_HIDE_BAYCREST_CITY_RIVAL
+	removeobject 1
 # 79 "data/maps/BaycrestCity/scripts.pory"
+	setvar VAR_BAYCREST_CITY_STATE, 1
+# 80 "data/maps/BaycrestCity/scripts.pory"
+	setflag FLAG_HIDE_BAYCREST_CITY_RIVAL
+# 82 "data/maps/BaycrestCity/scripts.pory"
 	releaseall
 	return
 
 BaycrestCity_Holly_3:
-# 57 "data/maps/BaycrestCity/scripts.pory"
+# 58 "data/maps/BaycrestCity/scripts.pory"
 	trainerbattle_no_intro TRAINER_HOLLY_BAYCREST_TURTWIG, BaycrestCity_Text_HollyDefeated
 	goto BaycrestCity_Holly_1
 
 BaycrestCity_Holly_4:
-# 60 "data/maps/BaycrestCity/scripts.pory"
+# 61 "data/maps/BaycrestCity/scripts.pory"
 	trainerbattle_no_intro TRAINER_HOLLY_BAYCREST_FENNEKIN, BaycrestCity_Text_HollyDefeated
 	goto BaycrestCity_Holly_1
 
 BaycrestCity_Holly_5:
-# 63 "data/maps/BaycrestCity/scripts.pory"
+# 64 "data/maps/BaycrestCity/scripts.pory"
 	trainerbattle_no_intro TRAINER_HOLLY_BAYCREST_QUAXLY, BaycrestCity_Text_HollyDefeated
 	goto BaycrestCity_Holly_1
 
 
 BaycrestCity_Caden::
-# 83 "data/maps/BaycrestCity/scripts.pory"
-	playbgm MUS_ENCOUNTER_BRENDAN, 0
-# 85 "data/maps/BaycrestCity/scripts.pory"
-	special HealPlayerParty
 # 86 "data/maps/BaycrestCity/scripts.pory"
-	msgbox BaycrestCity_Text_Rival1M
+	playbgm MUS_ENCOUNTER_BRENDAN, 0
 # 88 "data/maps/BaycrestCity/scripts.pory"
-	switch VAR_STARTER_MON
+	special HealPlayerParty
 # 89 "data/maps/BaycrestCity/scripts.pory"
-	case 0, BaycrestCity_Caden_3
+	speakername BaycrestCity_Holly_Text_0
+# 90 "data/maps/BaycrestCity/scripts.pory"
+	msgbox BaycrestCity_Text_Rival1M
 # 92 "data/maps/BaycrestCity/scripts.pory"
+	switch VAR_STARTER_MON
+# 93 "data/maps/BaycrestCity/scripts.pory"
+	case 0, BaycrestCity_Caden_3
+# 96 "data/maps/BaycrestCity/scripts.pory"
 	case 1, BaycrestCity_Caden_4
-# 95 "data/maps/BaycrestCity/scripts.pory"
+# 99 "data/maps/BaycrestCity/scripts.pory"
 	case 2, BaycrestCity_Caden_5
 BaycrestCity_Caden_1:
-# 100 "data/maps/BaycrestCity/scripts.pory"
-	msgbox BaycrestCity_Text_Rival2M
-# 101 "data/maps/BaycrestCity/scripts.pory"
-	giveitem ITEM_TM_SWIFT
-# 102 "data/maps/BaycrestCity/scripts.pory"
-	msgbox BaycrestCity_Text_Rival3M
-# 103 "data/maps/BaycrestCity/scripts.pory"
-	closemessage
+# 104 "data/maps/BaycrestCity/scripts.pory"
+	speakername BaycrestCity_Holly_Text_0
 # 105 "data/maps/BaycrestCity/scripts.pory"
-	applymovement 1, RivalLeave
+	msgbox BaycrestCity_Text_Rival2M
 # 106 "data/maps/BaycrestCity/scripts.pory"
-	waitmovement 0
+	giveitem ITEM_TM_SWIFT
 # 107 "data/maps/BaycrestCity/scripts.pory"
-	hideobjectat 1, MAP_BAYCREST_CITY
+	speakername BaycrestCity_Holly_Text_0
+# 108 "data/maps/BaycrestCity/scripts.pory"
+	msgbox BaycrestCity_Text_Rival3M
 # 109 "data/maps/BaycrestCity/scripts.pory"
-	setvar VAR_BAYCREST_CITY_STATE, 1
-# 110 "data/maps/BaycrestCity/scripts.pory"
-	setflag FLAG_HIDE_BAYCREST_CITY_RIVAL
+	closemessage
+# 111 "data/maps/BaycrestCity/scripts.pory"
+	applymovement 1, RivalLeave
 # 112 "data/maps/BaycrestCity/scripts.pory"
+	waitmovement 0
+# 113 "data/maps/BaycrestCity/scripts.pory"
+	hideobjectat 1, MAP_BAYCREST_CITY
+# 115 "data/maps/BaycrestCity/scripts.pory"
+	setvar VAR_BAYCREST_CITY_STATE, 1
+# 116 "data/maps/BaycrestCity/scripts.pory"
+	setflag FLAG_HIDE_BAYCREST_CITY_RIVAL
+# 118 "data/maps/BaycrestCity/scripts.pory"
 	releaseall
 	return
 
 BaycrestCity_Caden_3:
-# 90 "data/maps/BaycrestCity/scripts.pory"
+# 94 "data/maps/BaycrestCity/scripts.pory"
 	trainerbattle_no_intro TRAINER_CADEN_BAYCREST_TURTWIG, BaycrestCity_Text_CadenDefeated
 	goto BaycrestCity_Caden_1
 
 BaycrestCity_Caden_4:
-# 93 "data/maps/BaycrestCity/scripts.pory"
+# 97 "data/maps/BaycrestCity/scripts.pory"
 	trainerbattle_no_intro TRAINER_CADEN_BAYCREST_FENNEKIN, BaycrestCity_Text_CadenDefeated
 	goto BaycrestCity_Caden_1
 
 BaycrestCity_Caden_5:
-# 96 "data/maps/BaycrestCity/scripts.pory"
+# 100 "data/maps/BaycrestCity/scripts.pory"
 	trainerbattle_no_intro TRAINER_CADEN_BAYCREST_QUAXLY, BaycrestCity_Text_CadenDefeated
 	goto BaycrestCity_Caden_1
 
 
-# 116 "data/maps/BaycrestCity/scripts.pory"
+# 122 "data/maps/BaycrestCity/scripts.pory"
 ApproachRival1:
-# 117 "data/maps/BaycrestCity/scripts.pory"
+# 123 "data/maps/BaycrestCity/scripts.pory"
 	walk_up
-# 117 "data/maps/BaycrestCity/scripts.pory"
+# 123 "data/maps/BaycrestCity/scripts.pory"
 	walk_up
-# 118 "data/maps/BaycrestCity/scripts.pory"
+# 124 "data/maps/BaycrestCity/scripts.pory"
 	walk_right
-# 119 "data/maps/BaycrestCity/scripts.pory"
+# 125 "data/maps/BaycrestCity/scripts.pory"
 	walk_in_place_faster_up
 	step_end
 
-# 122 "data/maps/BaycrestCity/scripts.pory"
+# 128 "data/maps/BaycrestCity/scripts.pory"
 ApproachRival2:
-# 123 "data/maps/BaycrestCity/scripts.pory"
+# 129 "data/maps/BaycrestCity/scripts.pory"
 	walk_up
-# 123 "data/maps/BaycrestCity/scripts.pory"
+# 129 "data/maps/BaycrestCity/scripts.pory"
 	walk_up
 	step_end
 
-# 126 "data/maps/BaycrestCity/scripts.pory"
+# 132 "data/maps/BaycrestCity/scripts.pory"
 LookLeft:
-# 127 "data/maps/BaycrestCity/scripts.pory"
+# 133 "data/maps/BaycrestCity/scripts.pory"
 	emote_exclamation_mark
-# 128 "data/maps/BaycrestCity/scripts.pory"
+# 134 "data/maps/BaycrestCity/scripts.pory"
 	walk_in_place_faster_left
 	step_end
 
-# 131 "data/maps/BaycrestCity/scripts.pory"
+# 137 "data/maps/BaycrestCity/scripts.pory"
 LookDown:
-# 132 "data/maps/BaycrestCity/scripts.pory"
+# 138 "data/maps/BaycrestCity/scripts.pory"
 	emote_exclamation_mark
-# 133 "data/maps/BaycrestCity/scripts.pory"
+# 139 "data/maps/BaycrestCity/scripts.pory"
 	walk_in_place_faster_down
 	step_end
 
-# 136 "data/maps/BaycrestCity/scripts.pory"
+# 142 "data/maps/BaycrestCity/scripts.pory"
 RivalLeave:
-# 137 "data/maps/BaycrestCity/scripts.pory"
+# 143 "data/maps/BaycrestCity/scripts.pory"
 	walk_left
-# 138 "data/maps/BaycrestCity/scripts.pory"
+# 144 "data/maps/BaycrestCity/scripts.pory"
 	walk_up
-# 138 "data/maps/BaycrestCity/scripts.pory"
+# 144 "data/maps/BaycrestCity/scripts.pory"
 	walk_up
-# 138 "data/maps/BaycrestCity/scripts.pory"
+# 144 "data/maps/BaycrestCity/scripts.pory"
 	walk_up
-# 138 "data/maps/BaycrestCity/scripts.pory"
+# 144 "data/maps/BaycrestCity/scripts.pory"
 	walk_up
-# 138 "data/maps/BaycrestCity/scripts.pory"
+# 144 "data/maps/BaycrestCity/scripts.pory"
 	walk_up
-# 138 "data/maps/BaycrestCity/scripts.pory"
+# 144 "data/maps/BaycrestCity/scripts.pory"
 	walk_up
 	step_end
 
 BaycrestCity_EventScript_TrendyTrainer::
-# 199 "data/maps/BaycrestCity/scripts.pory"
+# 205 "data/maps/BaycrestCity/scripts.pory"
 	lock
-# 200 "data/maps/BaycrestCity/scripts.pory"
+# 206 "data/maps/BaycrestCity/scripts.pory"
 	faceplayer
-# 201 "data/maps/BaycrestCity/scripts.pory"
+# 207 "data/maps/BaycrestCity/scripts.pory"
 	msgbox Baycrest_Text_TrendyTrainer
-# 202 "data/maps/BaycrestCity/scripts.pory"
+# 208 "data/maps/BaycrestCity/scripts.pory"
 	release
 	return
 
 
 BaycrestCity_EventScript_NostalgicGrandpa::
-# 214 "data/maps/BaycrestCity/scripts.pory"
+# 220 "data/maps/BaycrestCity/scripts.pory"
 	lock
-# 215 "data/maps/BaycrestCity/scripts.pory"
+# 221 "data/maps/BaycrestCity/scripts.pory"
 	faceplayer
-# 216 "data/maps/BaycrestCity/scripts.pory"
+# 222 "data/maps/BaycrestCity/scripts.pory"
 	msgbox Baycrest_Text_NostalgicGrandpa
-# 217 "data/maps/BaycrestCity/scripts.pory"
+# 223 "data/maps/BaycrestCity/scripts.pory"
 	release
 	return
 
 
 BaycrestCity_EventScript_UnsureYoungster::
-# 229 "data/maps/BaycrestCity/scripts.pory"
+# 235 "data/maps/BaycrestCity/scripts.pory"
 	lock
-# 230 "data/maps/BaycrestCity/scripts.pory"
+# 236 "data/maps/BaycrestCity/scripts.pory"
 	faceplayer
-# 231 "data/maps/BaycrestCity/scripts.pory"
+# 237 "data/maps/BaycrestCity/scripts.pory"
 	msgbox Baycrest_Text_UnsureYoungster
-# 232 "data/maps/BaycrestCity/scripts.pory"
+# 238 "data/maps/BaycrestCity/scripts.pory"
 	release
 	return
 
 
 BaycrestCity_EventScript_HonestLass::
-# 243 "data/maps/BaycrestCity/scripts.pory"
+# 249 "data/maps/BaycrestCity/scripts.pory"
 	lock
-# 244 "data/maps/BaycrestCity/scripts.pory"
+# 250 "data/maps/BaycrestCity/scripts.pory"
 	faceplayer
-# 245 "data/maps/BaycrestCity/scripts.pory"
+# 251 "data/maps/BaycrestCity/scripts.pory"
 	msgbox BaycrestCity_Text_HonestLass
-# 246 "data/maps/BaycrestCity/scripts.pory"
+# 252 "data/maps/BaycrestCity/scripts.pory"
 	release
 	return
 
 
 BaycrestCity_EventScript_Lillipup::
-# 257 "data/maps/BaycrestCity/scripts.pory"
+# 263 "data/maps/BaycrestCity/scripts.pory"
 	lock
-# 258 "data/maps/BaycrestCity/scripts.pory"
+# 264 "data/maps/BaycrestCity/scripts.pory"
 	faceplayer
-# 259 "data/maps/BaycrestCity/scripts.pory"
+# 265 "data/maps/BaycrestCity/scripts.pory"
 	playmoncry SPECIES_LILLIPUP, CRY_MODE_NORMAL
-# 260 "data/maps/BaycrestCity/scripts.pory"
+# 266 "data/maps/BaycrestCity/scripts.pory"
 	msgbox BaycrestCity_EventScript_Lillipup_Text_0
-# 261 "data/maps/BaycrestCity/scripts.pory"
+# 267 "data/maps/BaycrestCity/scripts.pory"
 	waitmoncry
-# 262 "data/maps/BaycrestCity/scripts.pory"
+# 268 "data/maps/BaycrestCity/scripts.pory"
 	release
 	return
 
 
 BaycrestCity_EventScript_HelpfulGentleman::
-# 266 "data/maps/BaycrestCity/scripts.pory"
+# 272 "data/maps/BaycrestCity/scripts.pory"
 	lock
-# 267 "data/maps/BaycrestCity/scripts.pory"
+# 273 "data/maps/BaycrestCity/scripts.pory"
 	faceplayer
-# 268 "data/maps/BaycrestCity/scripts.pory"
+# 274 "data/maps/BaycrestCity/scripts.pory"
 	msgbox BaycrestCity_Text_HelpfulGentleman
-# 269 "data/maps/BaycrestCity/scripts.pory"
+# 275 "data/maps/BaycrestCity/scripts.pory"
 	release
 	return
 
 
 BaycrestCity_Sign_City::
-# 281 "data/maps/BaycrestCity/scripts.pory"
-	lockall
-# 282 "data/maps/BaycrestCity/scripts.pory"
-	msgbox BaycrestCity_Sign_City_Text_0
-# 283 "data/maps/BaycrestCity/scripts.pory"
-	releaseall
-	return
-
-
-BaycrestCity_Sign_RockSmashManHouse::
 # 287 "data/maps/BaycrestCity/scripts.pory"
 	lockall
 # 288 "data/maps/BaycrestCity/scripts.pory"
-	msgbox BaycrestCity_Sign_RockSmashManHouse_Text_0
+	msgbox BaycrestCity_Sign_City_Text_0
 # 289 "data/maps/BaycrestCity/scripts.pory"
 	releaseall
 	return
 
 
-BaycrestCity_Sign_Gym::
+BaycrestCity_Sign_RockSmashManHouse::
 # 293 "data/maps/BaycrestCity/scripts.pory"
 	lockall
 # 294 "data/maps/BaycrestCity/scripts.pory"
-	msgbox BaycrestCity_Text_GymSign
+	msgbox BaycrestCity_Sign_RockSmashManHouse_Text_0
 # 295 "data/maps/BaycrestCity/scripts.pory"
 	releaseall
 	return
 
 
+BaycrestCity_Sign_Gym::
+# 299 "data/maps/BaycrestCity/scripts.pory"
+	lockall
+# 300 "data/maps/BaycrestCity/scripts.pory"
+	msgbox BaycrestCity_Text_GymSign
+# 301 "data/maps/BaycrestCity/scripts.pory"
+	releaseall
+	return
+
+
+BaycrestCity_Holly_Text_0:
+# 53 "data/maps/BaycrestCity/scripts.pory"
+	.string "{RIVAL}$"
+
 BaycrestCity_EventScript_Lillipup_Text_0:
-# 260 "data/maps/BaycrestCity/scripts.pory"
-	.string "Lillipup: Terieee!$"
+# 266 "data/maps/BaycrestCity/scripts.pory"
+	.string "Terieee!$"
 
 BaycrestCity_Sign_City_Text_0:
-# 282 "data/maps/BaycrestCity/scripts.pory"
+# 288 "data/maps/BaycrestCity/scripts.pory"
 	.string "Baycrest City\n"
 	.string "“A city of the sea breeze and the\l"
 	.string "setting sun.”$"
 
 BaycrestCity_Sign_RockSmashManHouse_Text_0:
-# 288 "data/maps/BaycrestCity/scripts.pory"
+# 294 "data/maps/BaycrestCity/scripts.pory"
 	.string "Rock Smash Man's House$"
 
 BaycrestCity_Text_Rival1F::
-# 141 "data/maps/BaycrestCity/scripts.pory"
-	.string "{RIVAL}: Hey, {PLAYER}{KUN}! I've been\n"
-	.string "waiting for you!\p"
+# 147 "data/maps/BaycrestCity/scripts.pory"
+	.string "Hey, {PLAYER}{KUN}! I've been waiting for\n"
+	.string "you!\p"
 	.string "I've already registered for the Toshou\n"
 	.string "League, so I need to practice battling.\p"
 	.string "You're the perfect person to help me\n"
@@ -354,9 +370,8 @@ BaycrestCity_Text_Rival1F::
 	.string "Let's battle!$"
 
 BaycrestCity_Text_Rival2F::
-# 149 "data/maps/BaycrestCity/scripts.pory"
-	.string "{RIVAL}: Wow, you're really good at\n"
-	.string "this!\p"
+# 155 "data/maps/BaycrestCity/scripts.pory"
+	.string "Wow, you're really good at this!\p"
 	.string "I guess I'll have to train harder if I\n"
 	.string "want to beat you!\p"
 	.string "Here, take this TM as a thank you for\n"
@@ -364,26 +379,26 @@ BaycrestCity_Text_Rival2F::
 	.string "$"
 
 BaycrestCity_Text_Rival3F::
-# 156 "data/maps/BaycrestCity/scripts.pory"
-	.string "{RIVAL}: It's the TM for Swift! It's\n"
-	.string "a great move that never misses!\p"
+# 162 "data/maps/BaycrestCity/scripts.pory"
+	.string "It's the TM for Swift! It's a great move\n"
+	.string "that never misses!\p"
 	.string "I hope you find it useful!\p"
 	.string "I'll see you later!$"
 
 BaycrestCity_Text_HollyDefeated::
-# 163 "data/maps/BaycrestCity/scripts.pory"
+# 169 "data/maps/BaycrestCity/scripts.pory"
 	.string "My battle career started off with a\n"
 	.string "loss...\p"
 	.string "Geez, this is the worst!$"
 
 BaycrestCity_Text_CadenDefeated::
-# 169 "data/maps/BaycrestCity/scripts.pory"
+# 175 "data/maps/BaycrestCity/scripts.pory"
 	.string "My first battle ended in a loss...\p"
 	.string "I can't believe it!$"
 
 BaycrestCity_Text_Rival1M::
-# 175 "data/maps/BaycrestCity/scripts.pory"
-	.string "{RIVAL}: Oh, hey, {PLAYER}{KUN}!\n"
+# 181 "data/maps/BaycrestCity/scripts.pory"
+	.string "Oh, hey, {PLAYER}{KUN}!\n"
 	.string "There you are!\p"
 	.string "I've been waiting for you!\p"
 	.string "Just so you know, I've already\n"
@@ -393,9 +408,8 @@ BaycrestCity_Text_Rival1M::
 	.string "Let's do this!$"
 
 BaycrestCity_Text_Rival2M::
-# 184 "data/maps/BaycrestCity/scripts.pory"
-	.string "{RIVAL}: You're pretty good at this,\n"
-	.string "{PLAYER}{KUN}!\p"
+# 190 "data/maps/BaycrestCity/scripts.pory"
+	.string "You're pretty good at this, {PLAYER}{KUN}!\p"
 	.string "I'm gonna train hard so I can beat you\n"
 	.string "next time!\p"
 	.string "I'll give you this since you helped me\n"
@@ -403,15 +417,14 @@ BaycrestCity_Text_Rival2M::
 	.string "$"
 
 BaycrestCity_Text_Rival3M::
-# 191 "data/maps/BaycrestCity/scripts.pory"
-	.string "{RIVAL}: This TM is for the move\n"
-	.string "Swift!\p"
+# 197 "data/maps/BaycrestCity/scripts.pory"
+	.string "This TM is for the move Swift!\p"
 	.string "It never misses, so it's a great move to\n"
 	.string "have!\p"
 	.string "I'll see you later, {PLAYER}{KUN}!$"
 
 Baycrest_Text_TrendyTrainer::
-# 205 "data/maps/BaycrestCity/scripts.pory"
+# 211 "data/maps/BaycrestCity/scripts.pory"
 	.string "These days double battles are all the\n"
 	.string "rage!\p"
 	.string "It's when you and your opponent each\n"
@@ -423,7 +436,7 @@ Baycrest_Text_TrendyTrainer::
 	.string "Kanto and Johto too!$"
 
 Baycrest_Text_NostalgicGrandpa::
-# 220 "data/maps/BaycrestCity/scripts.pory"
+# 226 "data/maps/BaycrestCity/scripts.pory"
 	.string "Back in my day, we didn't have fancy\n"
 	.string "things like EXP Shares!\p"
 	.string "We had to rely on our own strength to\n"
@@ -433,7 +446,7 @@ Baycrest_Text_NostalgicGrandpa::
 	.string "handle it...$"
 
 Baycrest_Text_UnsureYoungster::
-# 235 "data/maps/BaycrestCity/scripts.pory"
+# 241 "data/maps/BaycrestCity/scripts.pory"
 	.string "I want to challenge the Toshou League,\n"
 	.string "but I'm not sure if I'm ready...\p"
 	.string "I asked my friend for advice, but she\n"
@@ -444,7 +457,7 @@ Baycrest_Text_UnsureYoungster::
 	.string "to hurt my Pokemon either...$"
 
 BaycrestCity_Text_HonestLass::
-# 249 "data/maps/BaycrestCity/scripts.pory"
+# 255 "data/maps/BaycrestCity/scripts.pory"
 	.string "My childhood friend wants to challenge\n"
 	.string "the Toshou League with a Lillipup!\p"
 	.string "I told him that I think he's got a long\n"
@@ -455,7 +468,7 @@ BaycrestCity_Text_HonestLass::
 	.string "false hope either.$"
 
 BaycrestCity_Text_HelpfulGentleman::
-# 272 "data/maps/BaycrestCity/scripts.pory"
+# 278 "data/maps/BaycrestCity/scripts.pory"
 	.string "If you're planning to challenge the\n"
 	.string "Baycrest City Gym, you should train on\l"
 	.string "Route 502 first!\p"
@@ -464,7 +477,7 @@ BaycrestCity_Text_HelpfulGentleman::
 	.string "Leader's team!$"
 
 BaycrestCity_Text_GymSign::
-# 298 "data/maps/BaycrestCity/scripts.pory"
+# 304 "data/maps/BaycrestCity/scripts.pory"
 	.string "Baycrest City Pokémon Gym\n"
-	.string "Gym Leader: Riku\p"
+	.string "Gym Leader: Geo\p"
 	.string "“The Grounded Wunderkind”$"
