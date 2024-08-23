@@ -1,1 +1,229 @@
-mapscripts Route503_MapScripts {}
+const OBJ_RIVAL = 9
+const OBJ_DIO = 8
+
+//VAR_ROUTE503_STATE
+//0: Not met Dio
+//1: Met Dio
+
+mapscripts Route503_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        call(Common_EventScript_SetupRivalGfxId)
+    }
+}
+
+script Route503_Trigger_MeetDio1 {
+    lockall
+
+    speakername("???")
+    msgbox(format("What a pathetic excuse for a trainer!\nYou're not even worth my time!"))
+    closemessage
+
+    speakername("{RIVAL}")
+    msgbox(format("What did you just say?"))
+    closemessage
+
+    applymovement(OBJ_EVENT_ID_PLAYER, Route503_Movement_PlayerApproachRival1)
+    waitmovement(0)
+
+    goto(Route503_MeetDio)
+}
+
+script Route503_Trigger_MeetDio2 {
+    lockall
+
+    speakername("???")
+    msgbox(format("What a pathetic excuse for a trainer!\nYou're not even worth my time!"))
+    closemessage
+
+    speakername("{RIVAL}")
+    msgbox(format("What did you just say?"))
+    closemessage
+
+    applymovement(OBJ_EVENT_ID_PLAYER, Route503_Movement_PlayerApproachRival2)
+    waitmovement(0)
+
+    goto(Route503_MeetDio)
+}
+
+movement Route503_Movement_PlayerApproachRival1 {
+    walk_right * 3
+}
+
+movement Route503_Movement_PlayerApproachRival2 {
+    walk_right * 1
+    walk_up
+    walk_right * 2
+}
+
+script Route503_MeetDio { //the rival and dio just faught, and the rival lost
+    applymovement(OBJ_RIVAL, Route503_RivalFaceUp)
+    waitmovement(0)
+
+    speakername("{RIVAL}")
+    msgbox(Route503_Text_MeetDio_Rival1)
+
+    applymovement(OBJ_RIVAL, Route503_RivalFaceRight)
+
+    speakername("???")
+    msgbox(Route503_Text_MeetDio_Dio1)
+
+    speakername("{RIVAL}")
+    msgbox(Route503_Text_MeetDio_Rival2, MSGBOX_YESNO)
+
+    applymovement(OBJ_RIVAL, Route503_RivalFaceUp)
+
+    if (var(VAR_RESULT) == NO) {
+        while {
+            msgbox(Route503_Text_MeetDio_Rival3, MSGBOX_YESNO)
+            if (var(VAR_RESULT)  == YES) {
+                break
+            }
+        }
+    }
+
+    msgbox(format("That's what I thought!"))
+
+    applymovement(OBJ_RIVAL, Route503_RivalFaceRight)
+
+    speakername("Dio")
+    msgbox(Route503_Text_MeetDio_Dio2)
+
+    trainerbattle_no_intro(TRAINER_DIO_ROUTE_503, Route503_Text_DioDefeated)
+
+    applymovement(OBJ_DIO, Route503_DioStepBack)
+    waitmovement(0)
+
+    speakername("Dio")
+    msgbox(Route503_Text_MeetDio_Dio3)
+    closemessage
+
+    applymovement(OBJ_DIO, Route503_DioLeave)
+    applymovement(OBJ_EVENT_ID_PLAYER, Route503_RivalFaceUp)
+    applymovement(OBJ_RIVAL, Route503_RivalFaceUp)
+    waitmovement(0)
+    removeobject(OBJ_DIO)
+
+    speakername("Dio")
+    msgbox(format("Out of my way, stupid Sudowoodo!"))
+    closemessage
+
+    applymovement(OBJ_EVENT_ID_PLAYER, Route503_Movement_PlayerFaceDown)
+
+    speakername("{RIVAL}")
+    msgbox(Route503_Text_MeetDio_Rival4)
+    closemessage
+
+    switch(var(VAR_STARTER_MON)) {
+        case 0:
+            giveitem(ITEM_MIRACLE_SEED)
+            break
+        case 1:
+            giveitem(ITEM_CHARCOAL)
+            break
+        case 2:
+            giveitem(ITEM_MYSTIC_WATER)
+            break
+    }
+
+    speakername("{RIVAL}")
+    msgbox(Route503_Text_MeetDio_Rival5)
+    
+    applymovement(OBJ_RIVAL, Route503_RivalLeave)
+    waitmovement(0)
+    removeobject(OBJ_RIVAL)
+
+    setvar(VAR_ROUTE503_STATE, 1)
+    setflag(FLAG_ROUTE_503_METDIO)
+
+    releaseall
+}
+
+movement Route503_Movement_PlayerFaceDown {
+    walk_in_place_faster_down
+}
+
+movement Route503_RivalFaceUp {
+    walk_in_place_faster_up
+}
+
+movement Route503_RivalFaceRight {
+    walk_in_place_faster_right
+}
+
+movement Route503_DioStepBack {
+    lock_facing_direction
+    walk_right
+    unlock_facing_direction
+}
+
+movement Route503_DioLeave {
+    walk_left
+    walk_up * 6
+}
+
+movement Route503_RivalLeave {
+    walk_right * 7
+    walk_down * 4
+}
+
+text Route503_Text_MeetDio_Rival1 {
+    format("Oh, it's you, {PLAYER}!\nI'm glad you're here!\p"
+            "Listen, I was busy working on my Pokédex when this guy suddenly challenged me to a battle!\p"
+            "I didn't want to, but he wouldn't take no for an answer!\p"
+            "I tried my best, but I just couldn't beat him!"
+    )
+
+
+}
+
+text Route503_Text_MeetDio_Dio1 {
+    format("That's because you're weak!\nWeak trainers like you need to just give up and go home!\p"
+            "You're not cut out for this!\p"
+            "I, Dio, on the other hand, am a beautiful, powerful trainer!"
+    )
+}
+
+text Route503_Text_MeetDio_Rival2 {
+    format("Gah! You're so annoying!\nYou know what? I'm going to make you pay for this!\p"
+            "{PLAYER}, go and show him what you're made of!\n"
+    )
+}
+
+text Route503_Text_MeetDio_Rival3 {
+    format( "What's that, {PLAYER}?\nI can't hear you!\p"
+            "You're going to battle him, right?")
+}
+
+text Route503_Text_MeetDio_Dio2 {
+    format( "Hmph! You think you can beat me?\p"
+            "You don't look AS weak as your friend, but you're still no match for me!\p"
+            "I'll show you what a real trainer is capable of!"
+    )
+}
+
+text Route503_Text_DioDefeated {
+    format("What? How could I lose to a weakling like you?")
+}
+
+text Route503_Text_MeetDio_Dio3 {
+    format("These Pokémon are all useless!\nUseless, I tell you!\p"
+            "I need to find more powerful Pokémon to add to my team!\p"
+            "I'll be back, and when I am, you'll see just how beautiful a powerful trainer can be!"
+    )
+}
+
+text Route503_Text_MeetDio_Rival4 {
+    format( "...What a jerk!\nI can't believe I lost to him!\p"
+            "Did you see how he treated his Pokémon?\nHe's nothing but a bully!\p"
+            "But, wow! You're amazing, {PLAYER}!\nYou really showed him!\p"
+            "I'm still not sure about this whole battling thing, but I'm glad I have you to help me out!\p"
+            "Oh, and I almost forgot! I found this while I was out looking for Pokémon!\p"
+            "I think it's a held item! You should take it! I'm sure you'll put it to good use!"
+    )
+}
+
+text Route503_Text_MeetDio_Rival5 {
+    format( "OK! That's enough chit-chat!\nLet's get back to training!\p"
+            "I'll see you later, {PLAYER}! Let's battle again soon!"
+    )
+}

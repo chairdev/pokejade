@@ -12068,8 +12068,8 @@ Swablu
 Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_WALLY_MAUVILLE ===
-Name: WALLY
+=== TRAINER_DIO_ROUTE_503 ===
+Name: Dio
 Class: Rival
 Pic: Wally
 Gender: Male
@@ -12077,9 +12077,17 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Ralts
+Zorua
+Level: 13
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Zubat
+Level: 15
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Eevee
 Level: 16
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_WALLY_VR_2 ===
 Name: WALLY
