@@ -308,7 +308,7 @@ BaycrestCity_Gym_EventScript_GeoDefeated::
 # 256 "data/maps/BaycrestCity_Gym/scripts.pory"
 	playfanfare MUS_OBTAIN_BADGE
 # 257 "data/maps/BaycrestCity_Gym/scripts.pory"
-	speakername BaycrestCity_Gym_EventScript_GeoDefeated_Text_0
+	closemessage
 # 258 "data/maps/BaycrestCity_Gym/scripts.pory"
 	msgbox BaycrestCity_Gym_Text_ReceivedFoundationBadge
 # 259 "data/maps/BaycrestCity_Gym/scripts.pory"
@@ -356,10 +356,6 @@ BaycrestCity_Gym_EventScript_GiveSandTomb_2:
 BaycrestCity_Gym_EventScript_Geo_Text_0:
 # 248 "data/maps/BaycrestCity_Gym/scripts.pory"
 	.string "Geo$"
-
-BaycrestCity_Gym_EventScript_GeoDefeated_Text_0:
-# 257 "data/maps/BaycrestCity_Gym/scripts.pory"
-	.string "$"
 
 BaycrestCity_Gym_Text_NotAChallenger::
 # 115 "data/maps/BaycrestCity_Gym/scripts.pory"

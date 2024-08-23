@@ -29,7 +29,7 @@
     [TRAINER_MICHAEL] =
     {
 #line 85
-        .trainerName = _("Yuuto"),
+        .trainerName = _("Michael"),
 #line 86
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 87
@@ -8189,7 +8189,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 3323
-            .species = SPECIES_MAKUHITA,
+            .species = SPECIES_TYROGUE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 3325
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),

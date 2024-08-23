@@ -200,9 +200,9 @@ EverwoodTown_GoodbyeMom::
 # 158 "data/maps/EverwoodTown/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 159 "data/maps/EverwoodTown/scripts.pory"
-	speakername EverwoodTown_GoodbyeMom_Text_1
+	closemessage
 # 160 "data/maps/EverwoodTown/scripts.pory"
-	msgbox EverwoodTown_GoodbyeMom_Text_2
+	msgbox EverwoodTown_GoodbyeMom_Text_1
 # 161 "data/maps/EverwoodTown/scripts.pory"
 	waitfanfare
 # 162 "data/maps/EverwoodTown/scripts.pory"
@@ -401,10 +401,6 @@ EverwoodTown_GoodbyeMom_Text_0:
 	.string "Mom$"
 
 EverwoodTown_GoodbyeMom_Text_1:
-# 159 "data/maps/EverwoodTown/scripts.pory"
-	.string "$"
-
-EverwoodTown_GoodbyeMom_Text_2:
 # 160 "data/maps/EverwoodTown/scripts.pory"
 	.string "You put on the Running Shoes!$"
 
