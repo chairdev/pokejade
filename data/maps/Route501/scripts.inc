@@ -202,12 +202,10 @@ Route501_RivalCaden::
 	closemessage
 # 141 "data/maps/Route501/scripts.pory"
 	playbgm MUS_HELP, 0
-# 143 "data/maps/Route501/scripts.pory"
-	setobjectxy 3, 1, 17
 # 144 "data/maps/Route501/scripts.pory"
-	setobjectxy 4, 1, 17
-# 145 "data/maps/Route501/scripts.pory"
 	applymovement 3, PidoveApproachPlayer
+# 145 "data/maps/Route501/scripts.pory"
+	waitmovement 0
 # 146 "data/maps/Route501/scripts.pory"
 	applymovement 4, PidoveApprachRival
 # 147 "data/maps/Route501/scripts.pory"

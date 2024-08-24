@@ -140,9 +140,9 @@ script Route501_RivalCaden {
 
     playbgm(MUS_HELP, 0)
 
-    setobjectxy(OBJ_PIDOVE1, 1, 17)
-    setobjectxy(OBJ_PIDOVE2, 1, 17)
+
     applymovement(OBJ_PIDOVE1, PidoveApproachPlayer)
+    waitmovement(0)
     applymovement(OBJ_PIDOVE2, PidoveApprachRival)
     waitmovement(1)
 

@@ -127,51 +127,55 @@ Route503_MeetDio_1:
 # 100 "data/maps/Route503/scripts.pory"
 	applymovement 8, Route503_DioLeave
 # 101 "data/maps/Route503/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Route503_LookAtDioLeave
-# 102 "data/maps/Route503/scripts.pory"
-	applymovement 9, Route503_LookAtDioLeave
-# 103 "data/maps/Route503/scripts.pory"
 	waitmovement 0
+# 102 "data/maps/Route503/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route503_RivalFaceUp
+# 103 "data/maps/Route503/scripts.pory"
+	applymovement 9, Route503_RivalFaceUp
 # 104 "data/maps/Route503/scripts.pory"
-	removeobject 8
+	waitmovement 0
 # 106 "data/maps/Route503/scripts.pory"
-	speakername Route503_MeetDio_Text_1
+	waitmovement 0
 # 107 "data/maps/Route503/scripts.pory"
-	msgbox Route503_MeetDio_Text_2
-# 108 "data/maps/Route503/scripts.pory"
-	closemessage
+	removeobject 8
+# 109 "data/maps/Route503/scripts.pory"
+	speakername Route503_MeetDio_Text_1
 # 110 "data/maps/Route503/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Route503_Movement_PlayerFaceDown
-# 112 "data/maps/Route503/scripts.pory"
-	speakername Route503_Trigger_MeetDio1_Text_2
-# 113 "data/maps/Route503/scripts.pory"
-	msgbox Route503_Text_MeetDio_Rival4
-# 114 "data/maps/Route503/scripts.pory"
+	msgbox Route503_MeetDio_Text_2
+# 111 "data/maps/Route503/scripts.pory"
 	closemessage
+# 113 "data/maps/Route503/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route503_Movement_PlayerFaceDown
+# 115 "data/maps/Route503/scripts.pory"
+	speakername Route503_Trigger_MeetDio1_Text_2
 # 116 "data/maps/Route503/scripts.pory"
-	switch VAR_STARTER_MON
+	msgbox Route503_Text_MeetDio_Rival4
 # 117 "data/maps/Route503/scripts.pory"
-	case 0, Route503_MeetDio_6
+	closemessage
+# 119 "data/maps/Route503/scripts.pory"
+	switch VAR_STARTER_MON
 # 120 "data/maps/Route503/scripts.pory"
-	case 1, Route503_MeetDio_7
+	case 0, Route503_MeetDio_6
 # 123 "data/maps/Route503/scripts.pory"
+	case 1, Route503_MeetDio_7
+# 126 "data/maps/Route503/scripts.pory"
 	case 2, Route503_MeetDio_8
 Route503_MeetDio_4:
-# 128 "data/maps/Route503/scripts.pory"
-	speakername Route503_Trigger_MeetDio1_Text_2
-# 129 "data/maps/Route503/scripts.pory"
-	msgbox Route503_Text_MeetDio_Rival5
 # 131 "data/maps/Route503/scripts.pory"
-	applymovement 9, Route503_RivalLeave
+	speakername Route503_Trigger_MeetDio1_Text_2
 # 132 "data/maps/Route503/scripts.pory"
-	waitmovement 0
-# 133 "data/maps/Route503/scripts.pory"
-	removeobject 9
+	msgbox Route503_Text_MeetDio_Rival5
+# 134 "data/maps/Route503/scripts.pory"
+	applymovement 9, Route503_RivalLeave
 # 135 "data/maps/Route503/scripts.pory"
-	setvar VAR_ROUTE503_STATE, 1
+	waitmovement 0
 # 136 "data/maps/Route503/scripts.pory"
-	setflag FLAG_ROUTE_503_METDIO
+	removeobject 9
 # 138 "data/maps/Route503/scripts.pory"
+	setvar VAR_ROUTE503_STATE, 1
+# 139 "data/maps/Route503/scripts.pory"
+	setflag FLAG_ROUTE_503_METDIO
+# 141 "data/maps/Route503/scripts.pory"
 	releaseall
 	return
 
@@ -185,17 +189,17 @@ Route503_MeetDio_9:
 	goto Route503_MeetDio_9
 
 Route503_MeetDio_6:
-# 118 "data/maps/Route503/scripts.pory"
+# 121 "data/maps/Route503/scripts.pory"
 	giveitem ITEM_MIRACLE_SEED
 	goto Route503_MeetDio_4
 
 Route503_MeetDio_7:
-# 121 "data/maps/Route503/scripts.pory"
+# 124 "data/maps/Route503/scripts.pory"
 	giveitem ITEM_CHARCOAL
 	goto Route503_MeetDio_4
 
 Route503_MeetDio_8:
-# 124 "data/maps/Route503/scripts.pory"
+# 127 "data/maps/Route503/scripts.pory"
 	giveitem ITEM_MYSTIC_WATER
 	goto Route503_MeetDio_4
 
@@ -203,85 +207,127 @@ Route503_MeetDio_11:
 	goto Route503_MeetDio_1
 
 
-# 141 "data/maps/Route503/scripts.pory"
-Route503_LookAtDioLeave:
-# 142 "data/maps/Route503/scripts.pory"
-	delay_16
-# 142 "data/maps/Route503/scripts.pory"
-	delay_16
-# 143 "data/maps/Route503/scripts.pory"
-	walk_in_place_faster_up
-	step_end
-
-# 146 "data/maps/Route503/scripts.pory"
+# 144 "data/maps/Route503/scripts.pory"
 Route503_Movement_PlayerFaceDown:
-# 147 "data/maps/Route503/scripts.pory"
+# 145 "data/maps/Route503/scripts.pory"
 	walk_in_place_faster_down
 	step_end
 
-# 150 "data/maps/Route503/scripts.pory"
+# 148 "data/maps/Route503/scripts.pory"
 Route503_RivalFaceUp:
-# 151 "data/maps/Route503/scripts.pory"
+# 149 "data/maps/Route503/scripts.pory"
 	walk_in_place_faster_up
 	step_end
 
-# 154 "data/maps/Route503/scripts.pory"
+# 152 "data/maps/Route503/scripts.pory"
 Route503_RivalFaceRight:
-# 155 "data/maps/Route503/scripts.pory"
+# 153 "data/maps/Route503/scripts.pory"
 	walk_in_place_faster_right
 	step_end
 
-# 158 "data/maps/Route503/scripts.pory"
+# 156 "data/maps/Route503/scripts.pory"
 Route503_DioStepBack:
-# 159 "data/maps/Route503/scripts.pory"
+# 157 "data/maps/Route503/scripts.pory"
 	lock_facing_direction
-# 160 "data/maps/Route503/scripts.pory"
+# 158 "data/maps/Route503/scripts.pory"
 	walk_right
-# 161 "data/maps/Route503/scripts.pory"
+# 159 "data/maps/Route503/scripts.pory"
 	unlock_facing_direction
 	step_end
 
-# 164 "data/maps/Route503/scripts.pory"
+# 162 "data/maps/Route503/scripts.pory"
 Route503_DioLeave:
-# 165 "data/maps/Route503/scripts.pory"
+# 163 "data/maps/Route503/scripts.pory"
+	walk_left
+# 164 "data/maps/Route503/scripts.pory"
 	walk_up
-# 165 "data/maps/Route503/scripts.pory"
+# 164 "data/maps/Route503/scripts.pory"
 	walk_up
-# 165 "data/maps/Route503/scripts.pory"
+# 164 "data/maps/Route503/scripts.pory"
 	walk_up
-# 165 "data/maps/Route503/scripts.pory"
+# 164 "data/maps/Route503/scripts.pory"
 	walk_up
-# 165 "data/maps/Route503/scripts.pory"
+# 164 "data/maps/Route503/scripts.pory"
 	walk_up
-# 165 "data/maps/Route503/scripts.pory"
+# 164 "data/maps/Route503/scripts.pory"
 	walk_up
 	step_end
 
-# 168 "data/maps/Route503/scripts.pory"
+# 167 "data/maps/Route503/scripts.pory"
 Route503_RivalLeave:
+# 168 "data/maps/Route503/scripts.pory"
+	walk_right
+# 168 "data/maps/Route503/scripts.pory"
+	walk_right
+# 168 "data/maps/Route503/scripts.pory"
+	walk_right
+# 168 "data/maps/Route503/scripts.pory"
+	walk_right
+# 168 "data/maps/Route503/scripts.pory"
+	walk_right
+# 168 "data/maps/Route503/scripts.pory"
+	walk_right
+# 168 "data/maps/Route503/scripts.pory"
+	walk_right
 # 169 "data/maps/Route503/scripts.pory"
-	walk_fast_right
+	walk_down
 # 169 "data/maps/Route503/scripts.pory"
-	walk_fast_right
+	walk_down
 # 169 "data/maps/Route503/scripts.pory"
-	walk_fast_right
+	walk_down
 # 169 "data/maps/Route503/scripts.pory"
-	walk_fast_right
-# 169 "data/maps/Route503/scripts.pory"
-	walk_fast_right
-# 169 "data/maps/Route503/scripts.pory"
-	walk_fast_right
-# 169 "data/maps/Route503/scripts.pory"
-	walk_fast_right
-# 170 "data/maps/Route503/scripts.pory"
-	walk_fast_down
-# 170 "data/maps/Route503/scripts.pory"
-	walk_fast_down
-# 170 "data/maps/Route503/scripts.pory"
-	walk_fast_down
-# 170 "data/maps/Route503/scripts.pory"
-	walk_fast_down
+	walk_down
 	step_end
+
+Route503_EventScript_Sudowoodo1::
+# 235 "data/maps/Route503/scripts.pory"
+	goto Route503_Sudowoodo
+	return
+
+
+Route503_Sudowoodo::
+# 239 "data/maps/Route503/scripts.pory"
+	lock
+# 241 "data/maps/Route503/scripts.pory"
+	msgbox Route503_Sudowoodo_Text_0
+# 243 "data/maps/Route503/scripts.pory"
+	checkitem ITEM_WAILMER_PAIL
+# 244 "data/maps/Route503/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq Route503_Sudowoodo_1
+# 269 "data/maps/Route503/scripts.pory"
+	msgbox Route503_Sudowoodo_Text_6
+	return
+
+Route503_Sudowoodo_1:
+# 245 "data/maps/Route503/scripts.pory"
+	msgbox Route503_Sudowoodo_Text_1, MSGBOX_YESNO
+# 247 "data/maps/Route503/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq Route503_Sudowoodo_4
+	return
+
+Route503_Sudowoodo_4:
+# 248 "data/maps/Route503/scripts.pory"
+	msgbox Route503_Sudowoodo_Text_2
+# 249 "data/maps/Route503/scripts.pory"
+	closemessage
+# 253 "data/maps/Route503/scripts.pory"
+	speakername Route503_Sudowoodo_Text_3
+# 254 "data/maps/Route503/scripts.pory"
+	msgbox Route503_Sudowoodo_Text_4
+# 255 "data/maps/Route503/scripts.pory"
+	closemessage
+# 258 "data/maps/Route503/scripts.pory"
+	waitmovement 0
+# 260 "data/maps/Route503/scripts.pory"
+	speakername Route503_Sudowoodo_Text_3
+# 261 "data/maps/Route503/scripts.pory"
+	msgbox Route503_Sudowoodo_Text_5
+# 262 "data/maps/Route503/scripts.pory"
+	closemessage
+	return
+
 
 Route503_Trigger_MeetDio1_Text_0:
 # 17 "data/maps/Route503/scripts.pory"
@@ -309,11 +355,40 @@ Route503_MeetDio_Text_1:
 	.string "Dio$"
 
 Route503_MeetDio_Text_2:
-# 107 "data/maps/Route503/scripts.pory"
+# 110 "data/maps/Route503/scripts.pory"
 	.string "Out of my way, stupid Sudowoodo!$"
 
+Route503_Sudowoodo_Text_0:
+# 241 "data/maps/Route503/scripts.pory"
+	.string "There's a weird tree blocking the path!$"
+
+Route503_Sudowoodo_Text_1:
+# 245 "data/maps/Route503/scripts.pory"
+	.string "Use the Wailmer Pail?$"
+
+Route503_Sudowoodo_Text_2:
+# 248 "data/maps/Route503/scripts.pory"
+	.string "You used the Wailmer Pail!$"
+
+Route503_Sudowoodo_Text_3:
+# 253 "data/maps/Route503/scripts.pory"
+	.string "Sudowoodo$"
+
+Route503_Sudowoodo_Text_4:
+# 254 "data/maps/Route503/scripts.pory"
+	.string "Sudowoodo is enraged by the water!$"
+
+Route503_Sudowoodo_Text_5:
+# 261 "data/maps/Route503/scripts.pory"
+	.string "Sudowoodo attacked!$"
+
+Route503_Sudowoodo_Text_6:
+# 269 "data/maps/Route503/scripts.pory"
+	.string "It looks like it could be watered with\n"
+	.string "something...$"
+
 Route503_Text_MeetDio_Rival1::
-# 173 "data/maps/Route503/scripts.pory"
+# 172 "data/maps/Route503/scripts.pory"
 	.string "Oh, it's you, {PLAYER}!\n"
 	.string "I'm glad you're here!\p"
 	.string "Listen, I was busy working on my\n"
@@ -325,7 +400,7 @@ Route503_Text_MeetDio_Rival1::
 	.string "beat him!$"
 
 Route503_Text_MeetDio_Dio1::
-# 183 "data/maps/Route503/scripts.pory"
+# 182 "data/maps/Route503/scripts.pory"
 	.string "That's because you're weak!\n"
 	.string "Weak trainers like you need to just give\l"
 	.string "up and go home!\p"
@@ -334,7 +409,7 @@ Route503_Text_MeetDio_Dio1::
 	.string "beautiful, powerful trainer!$"
 
 Route503_Text_MeetDio_Rival2::
-# 190 "data/maps/Route503/scripts.pory"
+# 189 "data/maps/Route503/scripts.pory"
 	.string "Gah! You're so annoying!\n"
 	.string "You know what? I'm going to make you\l"
 	.string "pay for this!\p"
@@ -343,13 +418,13 @@ Route503_Text_MeetDio_Rival2::
 	.string "$"
 
 Route503_Text_MeetDio_Rival3::
-# 196 "data/maps/Route503/scripts.pory"
+# 195 "data/maps/Route503/scripts.pory"
 	.string "What's that, {PLAYER}?\n"
 	.string "I can't hear you!\p"
 	.string "You're going to battle him, right?$"
 
 Route503_Text_MeetDio_Dio2::
-# 201 "data/maps/Route503/scripts.pory"
+# 200 "data/maps/Route503/scripts.pory"
 	.string "Hmph! You think you can beat me?\p"
 	.string "You don't look AS weak as your friend,\n"
 	.string "but you're still no match for me!\p"
@@ -357,22 +432,22 @@ Route503_Text_MeetDio_Dio2::
 	.string "capable of!$"
 
 Route503_Text_DioDefeated::
-# 208 "data/maps/Route503/scripts.pory"
+# 207 "data/maps/Route503/scripts.pory"
 	.string "What? How could I lose to a weakling\n"
 	.string "like you?$"
 
 Route503_Text_MeetDio_Dio3::
-# 212 "data/maps/Route503/scripts.pory"
+# 211 "data/maps/Route503/scripts.pory"
 	.string "These Pokémon are all useless!\n"
 	.string "Useless, I tell you!\p"
-	.string "I need to find more bpowerful Pokémon\n"
-	.string "to add to my team!\p"
+	.string "I need to find more powerful Pokémon to\n"
+	.string "add to my team!\p"
 	.string "I'll be back, and when I am, you'll see\n"
 	.string "just how beautiful a powerful trainer\l"
 	.string "can be!$"
 
 Route503_Text_MeetDio_Rival4::
-# 219 "data/maps/Route503/scripts.pory"
+# 218 "data/maps/Route503/scripts.pory"
 	.string "...What a jerk!\n"
 	.string "I can't believe I lost to him!\p"
 	.string "Did you see how he treated his Pokémon?\n"
@@ -388,11 +463,8 @@ Route503_Text_MeetDio_Rival4::
 	.string "it! I'm sure you'll put it to good use!$"
 
 Route503_Text_MeetDio_Rival5::
-# 229 "data/maps/Route503/scripts.pory"
+# 228 "data/maps/Route503/scripts.pory"
 	.string "OK! That's enough chit-chat!\n"
 	.string "Let's get back to training!\p"
-	.string "I want to be able to beat jerks like him,\n"
-	.string "and I can't do that by standing around\l"
-	.string "talking all day!\p"
 	.string "I'll see you later, {PLAYER}! Let's\n"
 	.string "battle again soon!$"
