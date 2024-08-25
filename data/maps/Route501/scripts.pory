@@ -45,6 +45,7 @@ movement PlayerMoveToRivalRight {
 }
 
 script Route501_RivalHolly {
+    
     applymovement(OBJ_RIVAL, RivalNoticePlayer)
     waitmovement(0)
 
@@ -65,16 +66,16 @@ script Route501_RivalHolly {
     applymovement(OBJ_EVENT_ID_PLAYER, PlayerApproachBag)
     waitmovement(1)
 
+
     speakername("{RIVAL}")
     msgbox(Route501_Text_MeetRivalText2F)
     closemessage    
 
     playbgm(MUS_HELP, 0)
 
-    setobjectxy(OBJ_PIDOVE1, 1, 17)
-    setobjectxy(OBJ_PIDOVE2, 1, 17)
     applymovement(OBJ_PIDOVE1, PidoveApproachPlayer)
     applymovement(OBJ_PIDOVE2, PidoveApprachRival)
+    waitmovement(0)
     waitmovement(1)
 
     playmoncry(SPECIES_PIDOVE, CRY_MODE_NORMAL)
@@ -140,10 +141,9 @@ script Route501_RivalCaden {
 
     playbgm(MUS_HELP, 0)
 
-
     applymovement(OBJ_PIDOVE1, PidoveApproachPlayer)
-    waitmovement(0)
     applymovement(OBJ_PIDOVE2, PidoveApprachRival)
+    waitmovement(0)
     waitmovement(1)
 
     playmoncry(SPECIES_PIDOVE, CRY_MODE_NORMAL)
@@ -206,11 +206,12 @@ movement PlayerApproachBag {
 }
 
 movement PidoveApproachPlayer {
-    walk_faster_right * 10
+    walk_faster_down * 6
+    face_right
 }
 
 movement PidoveApprachRival {
-    walk_faster_down* 6
+    walk_faster_down* 4
 }
 
 movement ExclemationMark {
