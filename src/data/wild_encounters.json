@@ -11517,7 +11517,7 @@
               {
                 "min_level": 3,
                 "max_level": 4,
-                "species": "SPECIES_SCATTERBUG"
+                "species": "SPECIES_SCATTERBUG_ELEGANT"
               },
               {
                 "min_level": 3,
@@ -11532,12 +11532,12 @@
               {
                 "min_level": 3,
                 "max_level": 4,
-                "species": "SPECIES_SCATTERBUG"
+                "species": "SPECIES_SCATTERBUG_ELEGANT"
               },
               {
                 "min_level": 3,
                 "max_level": 4,
-                "species": "SPECIES_SCATTERBUG"
+                "species": "SPECIES_SCATTERBUG_ELEGANT"
               },
               {
                 "min_level": 3,
@@ -11998,7 +11998,7 @@
               {
                 "min_level": 18,
                 "max_level": 21,
-                "species": "SPECIES_VIVILLON"
+                "species": "SPECIES_VIVILLON_ELEGANT"
               },
               {
                 "min_level": 18,
