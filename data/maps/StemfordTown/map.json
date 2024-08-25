@@ -1,0 +1,40 @@
+{
+  "id": "MAP_STEMFORD_TOWN",
+  "name": "StemfordTown",
+  "layout": "LAYOUT_STEMFORD_TOWN",
+  "music": "MUS_DEWFORD",
+  "region_map_section": "MAPSEC_DEWFORD_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_TOWN",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ROUTE503",
+      "offset": -5,
+      "direction": "left"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 0,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_STEMFORD_GATE",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

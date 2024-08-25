@@ -68,6 +68,7 @@
 #define MAP_BAYCREST_CITY       (59 | (0 << 8))
 #define MAP_ROUTE502            (60 | (0 << 8))
 #define MAP_ROUTE503            (61 | (0 << 8))
+#define MAP_STEMFORD_TOWN       (62 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -610,6 +611,11 @@
 #define MAP_BAYCREST_CITY_ROCK_SMASH_MANS_HOUSE (3 | (35 << 8))
 #define MAP_BAYCREST_CITY_HOUSE1                (4 | (35 << 8))
 
-#define MAP_GROUPS_COUNT 36
+// gMapGroup_IndoorRoute503
+#define MAP_STEMFORD_GATE (0 | (36 << 8))
+
+// gMapGroup_IndoorStemford
+
+#define MAP_GROUPS_COUNT 38
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

@@ -35,7 +35,9 @@
     "gMapGroup_IndoorRoute119",
     "gMapGroup_IndoorRoute124",
     "gMapGroup_IndoorEverwood",
-    "gMapGroup_IndoorBaycrest"
+    "gMapGroup_IndoorBaycrest",
+    "gMapGroup_IndoorRoute503",
+    "gMapGroup_IndoorStemford"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -99,7 +101,8 @@
     "Route501",
     "BaycrestCity",
     "Route502",
-    "Route503"
+    "Route503",
+    "StemfordTown"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -641,5 +644,11 @@
     "BaycrestCity_Mart",
     "BaycrestCity_RockSmashMansHouse",
     "BaycrestCity_House1"
+  ],
+  "gMapGroup_IndoorRoute503": [
+    "StemfordGate"
+  ],
+  "gMapGroup_IndoorStemford": [
+
   ]
 }

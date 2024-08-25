@@ -4560,6 +4560,26 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/KismetForest/border.bin",
       "blockdata_filepath": "data/layouts/KismetForest/map.bin"
+    },
+    {
+      "id": "LAYOUT_STEMFORD_TOWN",
+      "name": "StemfordTown_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/StemfordTown/border.bin",
+      "blockdata_filepath": "data/layouts/StemfordTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_STEMFORD_GATE",
+      "name": "StemfordGate_Layout",
+      "width": 15,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/StemfordGate/border.bin",
+      "blockdata_filepath": "data/layouts/StemfordGate/map.bin"
     }
   ]
 }

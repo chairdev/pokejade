@@ -17,6 +17,11 @@
       "map": "MAP_ROUTE502",
       "offset": 0,
       "direction": "left"
+    },
+    {
+      "map": "MAP_STEMFORD_TOWN",
+      "offset": 5,
+      "direction": "right"
     }
   ],
   "object_events": [
@@ -61,8 +66,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ANABEL",
-      "x": 59,
-      "y": 23,
+      "x": 50,
+      "y": 33,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -149,10 +154,43 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "x": 35,
+      "y": 38,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_LEFT_AND_RIGHT",
+      "movement_range_x": 8,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "NULL",
+      "flag": "0"
     }
   ],
   "warp_events": [
-
+    {
+      "x": 53,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_STEMFORD_GATE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 36,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_KISMET_FOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 37,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_KISMET_FOREST",
+      "dest_warp_id": "1"
+    }
   ],
   "coord_events": [
     {

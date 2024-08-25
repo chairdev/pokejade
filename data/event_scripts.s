@@ -1104,3 +1104,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route503/scripts.inc"
 
 	.include "data/maps/KismetForest/scripts.inc"
+
+	.include "data/maps/StemfordTown/scripts.inc"
+
+	.include "data/maps/StemfordGate/scripts.inc"
