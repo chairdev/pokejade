@@ -269,3 +269,80 @@ script Route503_Sudowoodo {
         msgbox(format("It looks like it could be watered with something..."))
     }
 }
+
+
+script Route503_EventScript_CamperAndrew {
+    trainerbattle_single(TRAINER_ANDREW, Route503_Text_CamperAndrewIntro, Route503_Text_CamperAndrewDefeated)
+    msgbox(Route503_Text_CamperAndrewPostBattle, MSGBOX_AUTOCLOSE)
+    waitmessage
+    end
+}
+
+text Route503_Text_CamperAndrewIntro {
+    format("I love camping out in the wild and battling with my Pokémon!")
+}
+
+text Route503_Text_CamperAndrewDefeated {
+    format("Camping out in the wild is fun, but battling with my Pokémon is even better!")
+}
+
+text Route503_Text_CamperAndrewPostBattle {
+    format("Now to set up camp and relax for a bit!")
+}
+
+script Route503_EventScript_YoungsterEric {
+    trainerbattle_single(TRAINER_ERIC, Route503_Text_YoungsterEricIntro, Route503_Text_YoungsterEricDefeated)
+    msgbox(Route503_Text_YoungsterEricPostBattle, MSGBOX_AUTOCLOSE)
+    waitmessage
+    end
+}
+
+text Route503_Text_YoungsterEricIntro {
+    format( "1, 2, 3! 1, 2, 3!\nI can beat you in 1, 2, 3 moves!")
+}
+
+text Route503_Text_YoungsterEricDefeated {
+    format("1, 2, 3!\nI lost in 1, 2, 3 moves!")
+}
+
+text Route503_Text_YoungsterEricPostBattle {
+    format("1, 2, 3! 1, 2, 3!\nNeed to focus!")
+}
+
+script Route503_EventScript_PicnickerMargaret {
+    trainerbattle_single(TRAINER_MARGARET, Route503_Text_PicnickerMargaretIntro, Route503_Text_PicnickerMargaretDefeated)
+    msgbox(Route503_Text_PicnickerMargaretPostBattle, MSGBOX_AUTOCLOSE)
+    waitmessage
+    end
+}
+
+text Route503_Text_PicnickerMargaretIntro {
+    format("Argh! You're getting in the way of my picnic!")
+}
+
+text Route503_Text_PicnickerMargaretDefeated {
+    format("Now my picnic is ruined...")
+}
+
+text Route503_Text_PicnickerMargaretPostBattle {
+    format("I'll just have to find a new spot for my picnic!")
+}
+
+script Route503_EventScript_RichboyCarl {
+    trainerbattle_single(TRAINER_CARL_1, Route503_Text_RichboyCarlIntro, Route503_Text_RichboyCarlDefeated)
+    msgbox(Route503_Text_RichboyCarlPostBattle, MSGBOX_AUTOCLOSE)
+    waitmessage
+    end
+}
+
+text Route503_Text_RichboyCarlIntro {
+    format("I love to come here and watch all the poor people struggle to train their Pokémon!")
+}
+
+text Route503_Text_RichboyCarlDefeated {
+    format("...Can I pay you to forget that ever happened?")
+}
+
+text Route503_Text_RichboyCarlPostBattle {
+    format("I may have lost, but I'm still rich!")
+}

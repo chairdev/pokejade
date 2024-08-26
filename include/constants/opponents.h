@@ -139,7 +139,7 @@
 #define TRAINER_JESSICA_3                   133
 #define TRAINER_JESSICA_4                   134
 #define TRAINER_JESSICA_5                   135
-#define TRAINER_WINSTON_1                   136
+#define TRAINER_CARL_1                   136
 #define TRAINER_MOLLIE                      137
 #define TRAINER_GARRET                      138
 #define TRAINER_WINSTON_2                   139
@@ -479,7 +479,7 @@
 #define TRAINER_MARTHA                      473
 #define TRAINER_DIANA_1                     474
 #define TRAINER_CEDRIC                      475
-#define TRAINER_IRENE                       476
+#define TRAINER_MARGARET                       476
 #define TRAINER_DIANA_2                     477
 #define TRAINER_DIANA_3                     478
 #define TRAINER_DIANA_4                     479
