@@ -11861,7 +11861,7 @@ F_TRAINER_FEMALE |
 #line 4794
         .doubleBattle = FALSE,
 #line 4795
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN | AI_FLAG_ACE_POKEMON,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -15598,7 +15598,7 @@ F_TRAINER_FEMALE |
     [TRAINER_ANDREW] =
     {
 #line 6301
-        .trainerName = _("ANDREW"),
+        .trainerName = _("Andrew"),
 #line 6302
         .trainerClass = TRAINER_CLASS_CAMPER,
 #line 6303
@@ -23734,7 +23734,7 @@ F_TRAINER_FEMALE |
 #line 9508
         .doubleBattle = FALSE,
 #line 9509
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN | AI_FLAG_ACE_POKEMON,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -23890,7 +23890,7 @@ F_TRAINER_FEMALE |
 #line 9570
         .doubleBattle = FALSE,
 #line 9571
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN | AI_FLAG_ACE_POKEMON,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -24046,7 +24046,7 @@ F_TRAINER_FEMALE |
 #line 9631
         .doubleBattle = FALSE,
 #line 9632
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN | AI_FLAG_ACE_POKEMON,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -24204,7 +24204,7 @@ F_TRAINER_FEMALE |
 #line 9692
         .doubleBattle = FALSE,
 #line 9693
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN | AI_FLAG_ACE_POKEMON,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -24528,7 +24528,7 @@ F_TRAINER_FEMALE |
 #line 9815
         .doubleBattle = FALSE,
 #line 9816
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN | AI_FLAG_ACE_POKEMON,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -29109,7 +29109,7 @@ F_TRAINER_FEMALE |
     [TRAINER_ERIC] =
     {
 #line 11593
-        .trainerName = _("ERIC"),
+        .trainerName = _("Eric"),
 #line 11594
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 11595
@@ -29126,7 +29126,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 11601
-            .species = SPECIES_SHELLOS,
+            .species = SPECIES_SHELLOS_EAST_SEA,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11603
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -30313,7 +30313,7 @@ F_TRAINER_FEMALE |
 #line 12077
         .doubleBattle = FALSE,
 #line 12078
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN | AI_FLAG_ACE_POKEMON,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {

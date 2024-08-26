@@ -615,6 +615,8 @@
 #define MAP_STEMFORD_GATE (0 | (36 << 8))
 
 // gMapGroup_IndoorStemford
+#define MAP_STEMFORD_TOWN_POKEMON_CENTER_1F (0 | (37 << 8))
+#define MAP_STEMFORD_TOWN_MART              (1 | (37 << 8))
 
 #define MAP_GROUPS_COUNT 38
 

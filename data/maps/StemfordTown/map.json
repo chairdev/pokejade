@@ -3,7 +3,7 @@
   "name": "StemfordTown",
   "layout": "LAYOUT_STEMFORD_TOWN",
   "music": "MUS_DEWFORD",
-  "region_map_section": "MAPSEC_DEWFORD_TOWN",
+  "region_map_section": "MAPSEC_STEMFORD_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_TOWN",
@@ -28,6 +28,20 @@
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_STEMFORD_GATE",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 17,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_STEMFORD_TOWN_POKEMON_CENTER_1F",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 3,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_STEMFORD_TOWN_MART",
       "dest_warp_id": "0"
     }
   ],

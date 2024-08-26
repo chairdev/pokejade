@@ -65,6 +65,18 @@ BaycrestCity_PokemonCenter_1F_EventScript_RegisterLeague::
 	return
 
 
+BaycrestCity_PokemonCenter_1F_EventScript_Boy::
+# 70 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
+	lock
+# 72 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
+	msgbox BaycrestCity_PokemonCenter_1F_Text_Boy
+# 73 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
+	closemessage
+# 74 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
+	release
+	return
+
+
 BaycrestCity_PokemonCenter_1F_Text_RegisterToLeague1::
 # 47 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
 	.string "Welcome to the Pokémon Center!\n"
@@ -95,3 +107,12 @@ BaycrestCity_PokemonCenter_1F_Text_RegisterToLeague3::
 	.string "Four and the Champion!\p"
 	.string "Good luck on your journey to become the\n"
 	.string "Toshou Champion!$"
+
+BaycrestCity_PokemonCenter_1F_Text_Boy::
+# 77 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
+	.string "Pokémon Centers are great!\n"
+	.string "No matter where you go, they're always\l"
+	.string "super recognizable!\p"
+	.string "Ours are... not as cool as the ones with\n"
+	.string "Poké Marts in them like in Paldea and\l"
+	.string "other regions, but they're still cool!$"

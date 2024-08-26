@@ -1,0 +1,11 @@
+mapscripts StemfordTown_Mart_MapScripts {}
+
+script StemfordTown_Mart_EventScript_Clerk {
+    lock
+	faceplayer
+	message(gText_HowMayIServeYou)
+    waitmessage
+    pokemart(0)
+    msgbox(gText_PleaseComeAgain)
+    release
+}

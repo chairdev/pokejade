@@ -221,7 +221,9 @@
 #define MAPSEC_FORTUNE_CAVE                 0xD9
 #define MAPSEC_ROUTE_503                    0xDA
 #define MAPSEC_KISMET_FOREST                0xDB
-#define MAPSEC_NONE                         0xDC
+#define MAPSEC_STEMFORD_TOWN                0xDC
+#define MAPSEC_ROUTE_504                    0xDD
+#define MAPSEC_NONE                         0xDE
 
 
 #define METLOC_SPECIAL_EGG                  0xFD

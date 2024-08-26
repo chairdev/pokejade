@@ -649,6 +649,7 @@
     "StemfordGate"
   ],
   "gMapGroup_IndoorStemford": [
-
+    "StemfordTown_PokemonCenter_1F",
+    "StemfordTown_Mart"
   ]
 }

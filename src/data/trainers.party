@@ -4792,7 +4792,7 @@ Gender: Female
 Music: Female
 Items: Potion / Potion
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Setup First Turn / Ace Pokemon
 
 Wooper @ Rindo Berry  
 Level: 12
@@ -9506,7 +9506,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Setup First Turn / Ace Pokemon
 
 Pidove
 Level: 5
@@ -9568,7 +9568,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Setup First Turn
+AI: Check Bad Move / Try To Faint / Setup First Turn / Ace Pokemon
 
 Pidove
 Level: 5
@@ -9629,7 +9629,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Setup First Turn / Ace Pokemon
 
 Pidove
 Level: 5
@@ -9690,7 +9690,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Setup First Turn / Ace Pokemon
 
 Pidove
 Level: 5
@@ -9813,7 +9813,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Setup First Turn / Ace Pokemon
 
 Pidove
 Level: 5
@@ -12075,7 +12075,7 @@ Pic: Wally
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Setup First Turn / Ace Pokemon
 
 Zorua
 Level: 13

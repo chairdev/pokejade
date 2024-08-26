@@ -1,0 +1,16 @@
+mapscripts StemfordTown_PokemonCenter_1F_MapScripts {    
+    MAP_SCRIPT_ON_TRANSITION : StemfordTown_PokemonCenter_1F_OnTransition
+    MAP_SCRIPT_ON_RESUME : CableClub_OnResume
+}
+
+script StemfordTown_PokemonCenter_1F_OnTransition {
+    setrespawn(HEAL_LOCATION_STEMFORD_TOWN)
+}
+
+script StemfordTown_PokemonCenter_1F_EventScript_Nurse {
+    setvar(VAR_0x800B, LOCALID_NURSE)
+    call(Common_EventScript_PkmnCenterNurse)
+    waitmessage
+    waitbuttonpress
+    release
+}
