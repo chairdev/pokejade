@@ -23,11 +23,13 @@ script EverwoodTown_HawthornResearchLab_MapScript_ReceiveStarter {
     applymovement(OBJ_EVENT_ID_PLAYER, ReceiveStarter_FaceUp)
 
     bufferleadmonspeciesname(STR_VAR_1)
+    speakername("Hawthorne")
     msgbox(ReceiveStarter_HawthorneText1)
     closemessage
+    playfanfare(MUS_EVOLVED)
     msgbox(format("You received the {STR_VAR_1}!"))
-    waitmessage
-	playfanfare(MUS_OBTAIN_ITEM)
+    waitfanfare
+	
 	waitfanfare
     speakername("Hawthorne")
     msgbox(format("By the way, would you like to give it a nickname?"), MSGBOX_YESNO)

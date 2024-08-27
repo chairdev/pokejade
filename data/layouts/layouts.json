@@ -4600,6 +4600,16 @@
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/StemfordTown_Mart/border.bin",
       "blockdata_filepath": "data/layouts/StemfordTown_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_STEMFORD_TOWN_POKEMON_FAN_CLUB",
+      "name": "StemfordTown_PokemonFanClub_Layout",
+      "width": 14,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonFanClub",
+      "border_filepath": "data/layouts/StemfordTown_PokemonFanClub/border.bin",
+      "blockdata_filepath": "data/layouts/StemfordTown_PokemonFanClub/map.bin"
     }
   ]
 }

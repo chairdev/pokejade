@@ -1,0 +1,148 @@
+const OBJ_GRUNT = 3
+const OBJ_NURSERY_MAN = 6
+
+mapscripts StemfordTown_PokemonFanClub_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_STEMFORD_TOWN_STATE, 0: StemfordTown_PokemonFanClub_TeamUpsilonIntro
+    ]
+}
+
+script StemfordTown_PokemonFanClub_TeamUpsilonIntro {
+    lockall
+    getplayerxy(VAR_TEMP_0, VAR_TEMP_1)
+    playbgm(MUS_ENCOUNTER_AQUA, FALSE)
+
+    speakername("???")
+    msgbox(format("Hand over the rare Egg, and no one gets hurt."))
+    closemessage
+
+    msgbox(format("No! I won't let you take my precious little Eggy!"))
+    closemessage
+
+    msgbox(StemfordTown_PokemonFanClub_Text_UpsilonIntro_Chairman1)
+
+    speakername("???")
+    msgbox(StemfordTown_PokemonFanClub_Text_UpsilonGrunt1)
+    //trainerbattle_no_intro(TRAINER_GRUNT_PKMN_FAN_CLUB, StemfordTown_PokemonFanClub_Text_UpsilonGruntDefeated)
+    speakername("???")
+    msgbox(StemfordTown_PokemonFanClub_Text_UpsilonGrunt2)
+    closemessage
+
+    msgbox(StemfordTown_PokemonFanClub_Text_NurseryMan1)
+    setvar(VAR_STEMFORD_TOWN_STATE, 1)
+
+    goto(StemfordTown_PokemonFanClub_NurseryMan)
+}
+
+script StemfordTown_PokemonFanClub_NurseryMan {
+    lockall
+    faceplayer
+
+    showmonpic(SPECIES_EGG, 10, 3)
+    msgbox(format("Oh, I know! Why don't you take the egg with you? I think it would be safer with you."), MSGBOX_YESNO)
+    //loops until you say yes
+    if(var(VAR_RESULT) == NO)
+    {
+        do {
+        msgbox(format("But... I'm scared I won't be able to protect it from Team Upsilon..."), MSGBOX_YESNO)
+        } 
+        while (var(VAR_RESULT) != YES)
+    }
+    
+    hidemonpic
+    getpartysize
+
+    if(var(VAR_RESULT) == PARTY_SIZE)
+    {
+        msgbox(format("Looks like you don't have any room in your party for the Egg."))
+    }
+    else
+    {
+        msgbox(format("Thank you, {PLAYER}.\nI feel much better knowing it's with a capable Trainer like you."))
+
+        setflag(FLAG_SYS_FORCE_SHINY)
+        giveegg(SPECIES_TOGEPI)
+        setmonmove(PARTY_SIZE, 2, MOVE_MOONBLAST)
+        setmonmove(PARTY_SIZE, 3, MOVE_METRONOME)
+
+        playfanfare(MUS_EVOLVED)
+        msgbox(format("You received the Egg!"))
+        waitfanfare
+
+        clearflag(FLAG_SYS_FORCE_SHINY)
+
+        msgbox(StemfordTown_PokemonFanClub_Text_NurseryMan2)
+        closemessage
+
+        fadescreen(FADE_TO_BLACK)
+        playse(SE_DOOR)
+        removeobject(OBJ_NURSERY_MAN)
+        waitse
+        fadescreen(FADE_FROM_BLACK)
+    }
+
+    releaseall
+}
+
+text StemfordTown_PokemonFanClub_Text_UpsilonIntro_Chairman1 {
+    format( "Oh, thank goodness you're here! There's trouble!\p"
+            "Some thug has come to steal a precious Pokémon Egg from one of our members!!\p"
+            "Please, you have to help us!"
+    )
+}
+
+text StemfordTown_PokemonFanClub_Text_UpsilonGrunt1 {
+    format( "Stay out of this, kid!\nThis Egg is coming with me.\p"
+            "It's got some real value, and I ain't leaving without it!\p"
+            "Surely you're smart enough not to mess with Team Upsilon, right?\p"
+            "I get it, sometimes you need someone to rough you up a bit to get the message across.\p"
+            "I'll teach ya a lesson you'll remember for a long time!"
+
+
+    )
+}
+
+text StemfordTown_PokemonFanClub_Text_UpsilonGruntDefeated {
+    format( "You got lucky this time!")
+}
+
+
+text StemfordTown_PokemonFanClub_Text_UpsilonGrunt2 {
+    format( "But don't think you've seen the last of Team Upsilon!\p"
+            "You can count on that!"
+    )
+}
+
+text StemfordTown_PokemonFanClub_Text_NurseryMan1 {
+    format( "You saved this Egg!\nI don't know what I would have done if they had taken it.\p"
+            "Please, what's your name? I want to thank you properly.\p"
+            "... ... ...\n{PLAYER}?\p"
+            "Thank you, {PLAYER}.\nI'm the man that runs the Pokémon Nursery back on Route 503.\p"
+            "This Egg belongs to a very rare Pokémon, and I was going to keep it safe here at the Fan Club.\p"
+            "But now I'm worried that Team Upsilon will come back for it..."
+    )
+}
+
+text StemfordTown_PokemonFanClub_Text_NurseryMan2 { //After giving the egg he goes back to the nursery
+    format( "I hope you can raise my little Eggy to be strong and healthy.\p"
+            "I'm going to go back to the Nursery now.\nThe interns I left in charge are probably getting into trouble without me.\p"
+            "Thank you again, {PLAYER}. Please stop by the Nursery sometime!"
+    )
+
+}
+
+script StemfordTown_PokemonFanClub_EventScript_MoveReminder {
+    
+}
+
+script  StemfordTown_PokemonFanClub_EventScript_Glimmora {
+    
+}
+
+script  StemfordTown_PokemonFanClub_EventScript_Oranguru {
+    
+}
+
+script  StemfordTown_PokemonFanClub_EventScript_Chairman {
+    
+}

@@ -382,10 +382,10 @@ F_TRAINER_FEMALE |
         },
     },
 #line 225
-    [TRAINER_GRUNT_PETALBURG_WOODS] =
+    [TRAINER_GRUNT_PKMN_FAN_CLUB] =
     {
 #line 226
-        .trainerName = _("GRUNT"),
+        .trainerName = _("Grunt"),
 #line 227
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 228
@@ -402,12 +402,12 @@ F_TRAINER_FEMALE |
         {
             {
 #line 234
-            .species = SPECIES_POOCHYENA,
+            .species = SPECIES_THIEVUL,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 236
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 235
-            .lvl = 9,
+            .lvl = 19,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -8189,7 +8189,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 3323
-            .species = SPECIES_TYROGUE,
+            .species = SPECIES_MACHOP,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 3325
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),

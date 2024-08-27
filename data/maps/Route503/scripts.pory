@@ -270,7 +270,55 @@ script Route503_Sudowoodo {
     }
 }
 
+script Route503_EventScript_NurseryLady {
+    lock
+    faceplayer
+    msgbox(Route503_Text_NurseryLady)
+    release
+}
 
+text Route503_Text_NurseryLady { //they're having trouble with the nursery since the nursery man has gone to the pokemon fan club in stemford town
+    format( "I'm sorry for blocking the path, Toxel and Pichu are having a playdate, and I don't want to interrupt them!\p"
+            "The Nursery Man is supposed to be here to help me, but he's gone to the Pokémon Fan Club in Stemford Town and hasn't come back yet.\p"
+            "I'm worried he might have lost track of time. He's always so busy talking about Pokémon that he forgets everything else!\p"
+            "If you see him, could you please tell him to come back here right away?"
+            )
+    
+}
+
+script Route503_EventScript_Toxel {
+    lock
+    faceplayer
+    playmoncry(SPECIES_TOXEL, CRY_MODE_NORMAL)
+    msgbox(format("Ssson!"))
+    waitmoncry
+    release
+}
+
+script Route503_EventScript_Pichu {
+    lock
+    faceplayer
+    playmoncry(SPECIES_PICHU, CRY_MODE_NORMAL)
+    msgbox(format("Pichuuu!"))
+    waitmoncry
+    release
+}
+
+script Route503_EventScript_FatGuy {
+    lock
+    faceplayer
+    msgbox(Route503_Text_FatGuy)
+    release   
+}
+
+text Route503_Text_FatGuy {
+    format( "Every Route has one or two rare Pokémon that are hard to find!\p"
+            "If you're patient and keep looking, you might just find one!\p"
+    )
+    
+}
+
+// Route 503 Trainers
 script Route503_EventScript_CamperAndrew {
     trainerbattle_single(TRAINER_ANDREW, Route503_Text_CamperAndrewIntro, Route503_Text_CamperAndrewDefeated)
     msgbox(Route503_Text_CamperAndrewPostBattle, MSGBOX_AUTOCLOSE)

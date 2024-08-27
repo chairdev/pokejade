@@ -68,7 +68,7 @@ text BaycrestCity_PokemonCenter_1F_Text_RegisterToLeague3 { //after giving poked
 
 script BaycrestCity_PokemonCenter_1F_EventScript_Boy {
     lock
-
+    faceplayer
     msgbox(BaycrestCity_PokemonCenter_1F_Text_Boy)
     closemessage
     release
@@ -76,6 +76,6 @@ script BaycrestCity_PokemonCenter_1F_EventScript_Boy {
 
 text BaycrestCity_PokemonCenter_1F_Text_Boy {
     format("Pokémon Centers are great!\nNo matter where you go, they're always super recognizable!\p"
-            "Ours are... not as cool as the ones with Poké Marts in them like in Paldea and other regions, but they're still cool!"
+            "Ours are... not as cool as the ones with Poké Marts in them like in Galar and other regions, but they're still cool!"
     )
 }

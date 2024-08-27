@@ -314,7 +314,7 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     TRAINER_CLASS(PKMN_TRAINER_1, "Pokémon Trainer"),
     TRAINER_CLASS(PKMN_TRAINER_2, "Pokémon Trainer"),
     TRAINER_CLASS(HIKER, "Hiker", 10),
-    TRAINER_CLASS(TEAM_AQUA, "Team Aqua"),
+    TRAINER_CLASS(TEAM_AQUA, "Team Upsilon"),
     TRAINER_CLASS(PKMN_BREEDER, "Pokémon Breeder", 10, B_TRAINER_CLASS_POKE_BALLS >= GEN_8 ? ITEM_HEAL_BALL : ITEM_FRIEND_BALL),
     TRAINER_CLASS(COOLTRAINER, "Cooltrainer", 12, ITEM_ULTRA_BALL),
     TRAINER_CLASS(BIRD_KEEPER, "Bird Keeper", 8),

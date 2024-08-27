@@ -1112,3 +1112,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/StemfordTown_PokemonCenter_1F/scripts.inc"
 
 	.include "data/maps/StemfordTown_Mart/scripts.inc"
+
+	.include "data/maps/StemfordTown_PokemonFanClub/scripts.inc"

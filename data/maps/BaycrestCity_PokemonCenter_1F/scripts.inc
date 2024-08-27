@@ -68,6 +68,8 @@ BaycrestCity_PokemonCenter_1F_EventScript_RegisterLeague::
 BaycrestCity_PokemonCenter_1F_EventScript_Boy::
 # 70 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
 	lock
+# 71 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
+	faceplayer
 # 72 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
 	msgbox BaycrestCity_PokemonCenter_1F_Text_Boy
 # 73 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
@@ -114,5 +116,5 @@ BaycrestCity_PokemonCenter_1F_Text_Boy::
 	.string "No matter where you go, they're always\l"
 	.string "super recognizable!\p"
 	.string "Ours are... not as cool as the ones with\n"
-	.string "Poké Marts in them like in Paldea and\l"
+	.string "Poké Marts in them like in Galar and\l"
 	.string "other regions, but they're still cool!$"
