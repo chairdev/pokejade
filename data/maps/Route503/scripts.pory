@@ -1,13 +1,27 @@
 const OBJ_RIVAL = 9
 const OBJ_DIO = 8
+const OBJ_DELCATTY = 16
+const OBJ_MOM = 15
 
 //VAR_ROUTE503_STATE
-//0: Not met Dio
-//1: Met Dio
+//0: Dio Fight
+//1: Receive PokeNav
+//2: Done
 
 mapscripts Route503_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
         call(Common_EventScript_SetupRivalGfxId)
+
+        setflag(FLAG_HIDE_ROUTE_503_MOM_DELCATTY)
+
+        if(!flag(FLAG_SAVED_NURSERY_MAN))
+        {
+            setflag(FLAG_HIDE_ROUTE_503_NURSERY_MAN)
+        }
+        else
+        {
+            clearflag(FLAG_HIDE_ROUTE_503_NURSERY_MAN)
+        }
     }
 }
 
@@ -231,44 +245,152 @@ text Route503_Text_MeetDio_Rival5 {
     )
 }
 
-script Route503_EventScript_Sudowoodo1 {
-    goto(Route503_Sudowoodo)
-}
+script Route503_Trigger_GetPokeNav1 {
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, Route503_Movement_PlayerFaceDown)
+    clearflag(FLAG_HIDE_ROUTE_503_MOM_DELCATTY)
 
-script Route503_Sudowoodo {
-    lock
-   
-    msgbox(format("There's a weird tree blocking the path!"))
+    playmoncry(SPECIES_DELCATTY, CRY_MODE_NORMAL)
+    msgbox("Mrow!")
+    waitmoncry
+    closemessage
     
-    checkitem(ITEM_WAILMER_PAIL)
-    if(var(VAR_RESULT) == TRUE) {
-        msgbox(format("Use the Wailmer Pail?"), MSGBOX_YESNO)
+    addobject(OBJ_MOM, MAP_ROUTE503) 
+    addobject(OBJ_DELCATTY, MAP_ROUTE503)
+    applymovement(OBJ_DELCATTY, Route503_Movement_DelcattyApproachPlayer1)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Route503_Movement_FaceLeft)
 
-        if(var(VAR_RESULT) == YES) { //Sudowoodo attacks
-            msgbox(format("You used the Wailmer Pail!"))
-            closemessage
+    speakername("???")
+    msgbox("{PLAYER}! Wait... up!")
+    closemessage
 
-           
+    playbgm(MUS_FOLLOW_ME, FALSE)
+    
+    applymovement(OBJ_EVENT_ID_PLAYER, Route503_Movement_PlayerFaceDown)
+    applymovement(OBJ_MOM, Route503_Movement_MomApproachPlayer1)
+    waitmovement(0)
 
-            speakername("Sudowoodo")
-            msgbox(format("Sudowoodo is enraged by the water!"))
-            closemessage
-
-
-            waitmovement(0)
-
-            speakername("Sudowoodo")
-            msgbox(format("Sudowoodo attacked!"))
-            closemessage
-
-
-        }
-
-    } 
-    else {
-        msgbox(format("It looks like it could be watered with something..."))
-    }
+    goto(Route503_GetPokeNav)
 }
+
+script Route503_Trigger_GetPokeNav2 {
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, Route503_Movement_PlayerFaceDown)
+
+    playmoncry(SPECIES_DELCATTY, CRY_MODE_NORMAL)
+    msgbox("Mrow!")
+    waitmoncry
+    closemessage
+
+    addobject(OBJ_MOM, MAP_ROUTE503) 
+    addobject(OBJ_DELCATTY, MAP_ROUTE503)
+    applymovement(OBJ_DELCATTY, Route503_Movement_DelcattyApproachPlayer2)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Route503_Movement_FaceLeft)
+
+    speakername("???")
+    msgbox("{PLAYER}! Wait... up!")
+    closemessage
+
+    playbgm(MUS_FOLLOW_ME, FALSE)
+    
+    applymovement(OBJ_EVENT_ID_PLAYER, Route503_Movement_PlayerFaceDown)
+    applymovement(OBJ_MOM, Route503_Movement_MomApproachPlayer2)
+    waitmovement(0)
+
+    goto(Route503_GetPokeNav)
+}
+
+script Route503_GetPokeNav {
+    speakername("Mom")
+    msgbox(Route503_Text_GetPokeNav_Mom1)
+    closemessage
+
+    playfanfare(MUS_OBTAIN_ITEM)
+	msgbox("You received the PokéNav!")
+    waitfanfare
+    setflag(FLAG_SYS_POKENAV_GET)
+    setflag(FLAG_ADDED_MATCH_CALL_TO_POKENAV)
+    setflag(FLAG_HAS_MATCH_CALL)
+
+    speakername("Mom")
+    msgbox(Route503_Text_GetPokeNav_Mom2)
+    closemessage
+
+	delay(30)
+	playfanfare(MUS_REGISTER_MATCH_CALL)
+	msgbox(format("Registered Mom in the PokéNav!"))
+	waitfanfare
+	closemessage
+	delay(30)
+	setflag(FLAG_ENABLE_MOM_MATCH_CALL)
+
+    speakername("Mom")
+    msgbox(Route503_Text_GetPokeNav_Mom3)
+
+    setvar(VAR_ROUTE503_STATE, 2)
+
+    fadedefaultbgm
+    fadescreen(FADE_TO_BLACK)
+    removeobject(OBJ_MOM)
+    removeobject(OBJ_DELCATTY)
+    setflag(FLAG_HIDE_ROUTE_503_MOM_DELCATTY)
+    fadescreen(FADE_FROM_BLACK)
+
+    releaseall
+}
+
+movement Route503_Movement_FaceLeft {
+    walk_in_place_faster_left
+}
+
+movement Route503_Movement_DelcattyApproachPlayer1 {
+    walk_fast_right * 7
+    walk_fast_up * 5
+    walk_in_place_faster_down
+}
+
+movement Route503_Movement_DelcattyApproachPlayer2 {
+    walk_fast_right * 8
+    walk_fast_up * 5
+    walk_in_place_faster_down
+}
+
+movement Route503_Movement_MomApproachPlayer1 {
+    walk_right * 8
+    walk_fast_up * 4
+}
+
+movement Route503_Movement_MomApproachPlayer2 {
+    walk_right * 9
+    walk_up * 4
+}
+
+text Route503_Text_GetPokeNav_Mom1 {
+    format( "{PLAYER}!\nThank goodness I caught you in time!\p"
+            "I knew you'd be heading into Kismet Forest soon, and I wanted to make sure you had something important before you went any further.\p"
+            "Here, I got this for you--a Pokémon Navigator, or PokéNav for short!"
+    )
+}
+
+text Route503_Text_GetPokeNav_Mom2 { //register herself to the pokenav
+    format( "I ordered it straight from the Devon Corporation in Hoenn!\p"
+            "It's a handy device that has a map, a phone, and even the ability to check the condition of your Pokémon!\p"
+            "I thought it would be perfect for you, especially since you're just starting out on your journey!\p"
+            "Here, I'll register myself in your PokéNav.\nAnd don't hesitate to call me if you need anything!"
+
+    )
+}
+
+text Route503_Text_GetPokeNav_Mom3 {
+    format("{PLAYER}...\p"
+            "Be careful out there, okay? I know you'll do great!\p"
+            "And remember, no matter how far you go, you're never alone. We're all rooting for you back home!"
+
+    )
+}
+
 
 script Route503_EventScript_NurseryLady {
     lock

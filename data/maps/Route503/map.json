@@ -153,7 +153,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_HIDE_ROUTE_503_NURSERY_MAN"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
@@ -206,6 +206,32 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route503_EventScript_NurseryLady",
       "flag": "FLAG_SAVED_NURSERY_MAN"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MOM",
+      "x": 28,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EverwoodTown_PlayersHouse_1F_EventScript_Mom",
+      "flag": "FLAG_HIDE_ROUTE_503_MOM_DELCATTY"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(DELCATTY)",
+      "x": 28,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 2,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EverwoodTown_PlayersHouse_1F_EventScript_Delcatty",
+      "flag": "FLAG_HIDE_ROUTE_503_MOM_DELCATTY"
     }
   ],
   "warp_events": [
@@ -249,6 +275,24 @@
       "var": "VAR_ROUTE503_STATE",
       "var_value": "0",
       "script": "Route503_Trigger_MeetDio2"
+    },
+    {
+      "type": "trigger",
+      "x": 36,
+      "y": 6,
+      "elevation": 0,
+      "var": "VAR_ROUTE503_STATE",
+      "var_value": "1",
+      "script": "Route503_Trigger_GetPokeNav1"
+    },
+    {
+      "type": "trigger",
+      "x": 37,
+      "y": 6,
+      "elevation": 0,
+      "var": "VAR_ROUTE503_STATE",
+      "var_value": "1",
+      "script": "Route503_Trigger_GetPokeNav2"
     }
   ],
   "bg_events": [
