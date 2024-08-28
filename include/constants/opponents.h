@@ -110,7 +110,7 @@
 #define TRAINER_BROOKE_5                    104
 #define TRAINER_PATRICIA                    105
 #define TRAINER_KINDRA                      106
-#define TRAINER_TAMMY                       107
+#define TRAINER_LISA                       107
 #define TRAINER_VALERIE_1                   108
 #define TRAINER_TASHA                       109
 #define TRAINER_VALERIE_2                   110
@@ -608,7 +608,7 @@
 #define TRAINER_MAXIE_MT_CHIMNEY            602
 #define TRAINER_BARBARA                       603
 #define TRAINER_HALEY_1                     604
-#define TRAINER_JANICE                      605
+#define TRAINER_DOROTHY                      605
 #define TRAINER_VIVI                        606
 #define TRAINER_HALEY_2                     607
 #define TRAINER_HALEY_3                     608
@@ -619,12 +619,12 @@
 #define TRAINER_ANDREA                      613
 #define TRAINER_CRISSY                      614
 #define TRAINER_RICK                        615
-#define TRAINER_LYLE                        616
+#define TRAINER_RAYMOND                        616
 #define TRAINER_JOSE                        617
 #define TRAINER_DOUG                        618
 #define TRAINER_GREG                        619
 #define TRAINER_KENT                        620
-#define TRAINER_JAMES_1                     621
+#define TRAINER_GREGORY                     621
 #define TRAINER_JAMES_2                     622
 #define TRAINER_JAMES_3                     623
 #define TRAINER_JAMES_4                     624

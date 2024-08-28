@@ -1,1 +1,121 @@
 mapscripts KismetForest_MapScripts {}
+//Story Events
+
+//NPCs
+script KismetForest_EventScript_Boy {
+    lock
+    faceplayer
+    msgbox(KismetForest_Text_Boy)
+    release
+}
+
+text KismetForest_Text_Boy {
+    format( "This place is crawling with trainers doing double battles.\p"
+            "On top of that, there are strong wild Pokémon here too.\p"
+            "If you're not careful, you could get overwhelmed.\p"
+            "Make sure to buy lots of items from the Poké Mart before you go any further."
+    )
+}
+//Trainers
+
+script KismetForest_EventScript_BugCatcherRaymond {
+    trainerbattle_single(TRAINER_RAYMOND, KismetForest_Text_RaymondIntro, KismetForest_Text_RaymondDefeat)
+    msgbox(KismetForest_Text_RaymondPostBattle, MSGBOX_AUTOCLOSE)
+}
+
+text KismetForest_Text_RaymondIntro {
+    format("PLACEHOLDER")
+}
+
+text KismetForest_Text_RaymondDefeat {
+    format("PLACEHOLDER")
+}
+
+text KismetForest_Text_RaymondPostBattle {
+    format("PLACEHOLDER")
+}
+
+script KismetForest_EventScript_BugCatcherGregory {
+    trainerbattle_single(TRAINER_GREGORY, KismetForest_Text_GregoryIntro, KismetForest_Text_GregoryDefeat)
+    msgbox(KismetForest_Text_GregoryPostBattle, MSGBOX_AUTOCLOSE)
+}
+
+text KismetForest_Text_GregoryIntro {
+    format("PLACEHOLDER")
+}
+
+text KismetForest_Text_GregoryDefeat {
+    format("PLACEHOLDER")
+}
+
+text KismetForest_Text_GregoryPostBattle {
+    format("PLACEHOLDER")
+}
+
+script KismetForest_EventScript_LassDorothy {
+    trainerbattle_single(TRAINER_DOROTHY, KismetForest_Text_DorothyIntro, KismetForest_Text_DorothyDefeat)
+    msgbox(KismetForest_Text_DorothyPostBattle, MSGBOX_AUTOCLOSE)
+}
+
+text KismetForest_Text_DorothyIntro {
+    format("PLACEHOLDER")
+}
+
+text KismetForest_Text_DorothyDefeat {
+    format("PLACEHOLDER")
+}
+
+text KismetForest_Text_DorothyPostBattle {
+    format("PLACEHOLDER")
+}
+
+script KismetForest_EventScript_PsychicJoshua {
+    trainerbattle_single(TRAINER_JOSHUA, KismetForest_Text_JoshuaIntro, KismetForest_Text_JoshuaDefeat)
+    msgbox(KismetForest_Text_JoshuaPostBattle, MSGBOX_AUTOCLOSE)
+}
+
+text KismetForest_Text_JoshuaIntro {
+    format("PLACEHOLDER")
+}
+
+text KismetForest_Text_JoshuaDefeat {
+    format("PLACEHOLDER")
+}
+
+text KismetForest_Text_JoshuaPostBattle {
+    format("PLACEHOLDER")
+}
+
+script KismetForest_EventScript_HexManiacLisa {
+    trainerbattle_single(TRAINER_LISA, KismetForest_Text_LisaIntro, KismetForest_Text_LisaDefeat)
+    msgbox(KismetForest_Text_LisaPostBattle, MSGBOX_AUTOCLOSE)
+}
+
+text KismetForest_Text_LisaIntro {
+    format("PLACEHOLDER")
+}
+
+text KismetForest_Text_LisaDefeat {
+    format("PLACEHOLDER")
+}
+
+text KismetForest_Text_LisaPostBattle {
+    format("PLACEHOLDER")
+}
+
+script KismetForest_EventScript_BugCatcherJerry {
+    trainerbattle_single(TRAINER_JERRY_1, KismetForest_Text_JerryIntro, KismetForest_Text_JerryDefeat)
+    msgbox(KismetForest_Text_JerryPostBattle, MSGBOX_AUTOCLOSE)
+}
+
+text KismetForest_Text_JerryIntro {
+    format("PLACEHOLDER")
+}
+
+text KismetForest_Text_JerryDefeat {
+    format("PLACEHOLDER")
+}
+
+text KismetForest_Text_JerryPostBattle {
+    format("PLACEHOLDER")
+}
