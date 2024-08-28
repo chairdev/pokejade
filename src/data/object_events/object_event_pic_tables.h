@@ -1,3 +1,7 @@
+const struct SpriteFrameImage sPicTable_Jasmine[] = {
+    overworld_ascending_frames(gObjectEventPic_Jasmine, 2, 4),
+};
+
 static const struct SpriteFrameImage sPicTable_BrendanNormal[] = {
     overworld_ascending_frames(gObjectEventPic_BrendanNormalRunning, 2, 4),
 };

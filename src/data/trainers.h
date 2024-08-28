@@ -10319,7 +10319,7 @@ F_TRAINER_FEMALE |
     [TRAINER_JOSHUA] =
     {
 #line 4168
-        .trainerName = _("JOSHUA"),
+        .trainerName = _("Joshua"),
 #line 4169
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4170
@@ -10341,7 +10341,7 @@ F_TRAINER_FEMALE |
 #line 4178
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 4177
-            .lvl = 19,
+            .lvl = 17,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -12645,23 +12645,23 @@ F_TRAINER_FEMALE |
         {
             {
 #line 5131
-            .species = SPECIES_PINECO,
+            .species = SPECIES_DOTTLER,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5133
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
 #line 5132
-            .lvl = 20,
+            .lvl = 21,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
 #line 5135
-            .species = SPECIES_DOTTLER,
+            .species = SPECIES_PINECO,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5137
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
 #line 5136
-            .lvl = 21,
+            .lvl = 20,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
