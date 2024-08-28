@@ -19,17 +19,43 @@ script StemfordTown_PokemonFanClub_TeamUpsilonIntro {
     msgbox(format("No! I won't let you take my precious little Eggy!"))
     closemessage
 
-    msgbox(StemfordTown_PokemonFanClub_Text_UpsilonIntro_Chairman1)
+    applymovement(OBJ_NURSERY_MAN, StemfordTown_PokemonFanClub_Movement_LookDown)
+    waitmovement(0)
+    msgbox(StemfordTown_PokemonFanClub_Text_UpsilonIntro_NurseryManHelp)
+    closemessage
+
+    if(var(VAR_TEMP_0) == 7)
+    {
+        applymovement(OBJ_EVENT_ID_PLAYER, StemfordTown_PokemonFanClub_Movement_ApproachGrunt1)
+    }
+    else
+    {
+        applymovement(OBJ_EVENT_ID_PLAYER, StemfordTown_PokemonFanClub_Movement_ApproachGrunt2)
+    }
+    waitmovement(0)
+    applymovement(OBJ_NURSERY_MAN, StemfordTown_PokemonFanClub_Movement_LookRight)
+    applymovement(OBJ_GRUNT, StemfordTown_PokemonFanClub_Movement_LookDown)
 
     speakername("???")
     msgbox(StemfordTown_PokemonFanClub_Text_UpsilonGrunt1)
-    //trainerbattle_no_intro(TRAINER_GRUNT_PKMN_FAN_CLUB, StemfordTown_PokemonFanClub_Text_UpsilonGruntDefeated)
-    speakername("???")
+    trainerbattle_no_intro(TRAINER_GRUNT_PKMN_FAN_CLUB, StemfordTown_PokemonFanClub_Text_UpsilonGruntDefeated)
+    speakername("Grunt")
     msgbox(StemfordTown_PokemonFanClub_Text_UpsilonGrunt2)
     closemessage
 
+    applymovement(OBJ_EVENT_ID_PLAYER, StemfordTown_PokemonFanClub_Movement_MoveOutOfWay)
+    applymovement(OBJ_GRUNT, StemfordTown_PokemonFanClub_Movement_RunAway)
+    waitmovement(0)
+    playse(SE_DOOR)
+    removeobject(OBJ_GRUNT)
+
+    applymovement(OBJ_EVENT_ID_PLAYER, StemfordTown_PokemonFanClub_Movement_LookUp)
+    applymovement(OBJ_NURSERY_MAN, StemfordTown_PokemonFanClub_Movement_LookDown)
+    waitmovement(0)
+
     msgbox(StemfordTown_PokemonFanClub_Text_NurseryMan1)
     setvar(VAR_STEMFORD_TOWN_STATE, 1)
+    setflag(FLAG_SAVED_NURSERY_MAN)
 
     goto(StemfordTown_PokemonFanClub_NurseryMan)
 }
@@ -60,7 +86,6 @@ script StemfordTown_PokemonFanClub_NurseryMan {
     {
         msgbox(format("Thank you, {PLAYER}.\nI feel much better knowing it's with a capable Trainer like you."))
 
-        setflag(FLAG_SYS_FORCE_SHINY)
         giveegg(SPECIES_TOGEPI)
         setmonmove(PARTY_SIZE, 2, MOVE_MOONBLAST)
         setmonmove(PARTY_SIZE, 3, MOVE_METRONOME)
@@ -69,14 +94,13 @@ script StemfordTown_PokemonFanClub_NurseryMan {
         msgbox(format("You received the Egg!"))
         waitfanfare
 
-        clearflag(FLAG_SYS_FORCE_SHINY)
-
         msgbox(StemfordTown_PokemonFanClub_Text_NurseryMan2)
         closemessage
 
         fadescreen(FADE_TO_BLACK)
         playse(SE_DOOR)
         removeobject(OBJ_NURSERY_MAN)
+        setflag(FLAG_RECEIVED_TOGEPI_EGG)
         waitse
         fadescreen(FADE_FROM_BLACK)
     }
@@ -84,10 +108,44 @@ script StemfordTown_PokemonFanClub_NurseryMan {
     releaseall
 }
 
-text StemfordTown_PokemonFanClub_Text_UpsilonIntro_Chairman1 {
-    format( "Oh, thank goodness you're here! There's trouble!\p"
-            "Some thug has come to steal a precious Pokémon Egg from one of our members!!\p"
-            "Please, you have to help us!"
+movement StemfordTown_PokemonFanClub_Movement_LookDown {
+    walk_in_place_faster_down
+}
+
+movement StemfordTown_PokemonFanClub_Movement_LookRight {
+    walk_in_place_faster_right
+}
+
+movement StemfordTown_PokemonFanClub_Movement_LookUp {
+    walk_in_place_faster_up
+}
+
+
+movement StemfordTown_PokemonFanClub_Movement_ApproachGrunt1 {
+    walk_up
+}
+
+movement StemfordTown_PokemonFanClub_Movement_ApproachGrunt2 {
+    walk_up
+    walk_right
+    walk_in_place_faster_up
+}
+
+movement StemfordTown_PokemonFanClub_Movement_MoveOutOfWay {
+    face_right
+    lock_facing_direction
+    walk_left
+    unlock_facing_direction
+}
+
+movement StemfordTown_PokemonFanClub_Movement_RunAway {
+    walk_down * 2
+}
+
+text StemfordTown_PokemonFanClub_Text_UpsilonIntro_NurseryManHelp {
+    format( "Oh, thank goodness there's a trainer here! There's trouble!\p"
+            "Some thug has come to steal my precious Pokémon Egg!\p"
+            "Please, you have to help me!"
     )
 }
 
