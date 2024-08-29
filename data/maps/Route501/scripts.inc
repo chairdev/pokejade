@@ -628,6 +628,6 @@ Route102_Text_MichaelPostBattle::
 
 Route501_Text_Sign::
 # 417 "data/maps/Route501/scripts.pory"
-	.string "Route 501\n"
+	.string "Route 301\n"
 	.string "{RIGHT_ARROW} Baycrest City\p"
 	.string "{DOWN_ARROW} Everwood Town$"

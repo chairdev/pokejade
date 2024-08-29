@@ -317,7 +317,7 @@ StemfordTown_PokemonFanClub_Text_NurseryMan1::
 	.string "{PLAYER}?\p"
 	.string "Thank you, {PLAYER}.\n"
 	.string "I'm the man that runs the Pokémon\l"
-	.string "Nursery back on Route 503.\p"
+	.string "Nursery back on Route 303.\p"
 	.string "This Egg belongs to a very rare\n"
 	.string "Pokémon, and I was going to keep it\l"
 	.string "safe here at the Fan Club.\p"

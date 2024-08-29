@@ -50,7 +50,7 @@ script EverwoodTown_Trigger_DontGoIntoRouteRight {
 
 text DontGoIntoRouteText {
     format("You can't go that way!\p"
-           "It's not safe to head out onto Route 501 without a Pokémon by your side.\p"
+           "It's not safe to head out onto Route 301 without a Pokémon by your side.\p"
            "Wild Pokémon might jump out at you, you know!\p"
             "You'll need a partner to help keep you safe."
               )

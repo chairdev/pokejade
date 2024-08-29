@@ -175,7 +175,7 @@ text StemfordTown_PokemonFanClub_Text_NurseryMan1 {
     format( "You saved this Egg!\nI don't know what I would have done if they had taken it.\p"
             "Please, what's your name? I want to thank you properly.\p"
             "... ... ...\n{PLAYER}?\p"
-            "Thank you, {PLAYER}.\nI'm the man that runs the Pokémon Nursery back on Route 503.\p"
+            "Thank you, {PLAYER}.\nI'm the man that runs the Pokémon Nursery back on Route 303.\p"
             "This Egg belongs to a very rare Pokémon, and I was going to keep it safe here at the Fan Club.\p"
             "But now I'm worried that Team Upsilon will come back for it..."
     )

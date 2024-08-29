@@ -440,7 +440,7 @@ text Route503_Text_FatGuy {
     
 }
 
-// Route 503 Trainers
+// Route 303 Trainers
 script Route503_EventScript_CamperAndrew {
     trainerbattle_single(TRAINER_ANDREW, Route503_Text_CamperAndrewIntro, Route503_Text_CamperAndrewDefeated)
     msgbox(Route503_Text_CamperAndrewPostBattle, MSGBOX_AUTOCLOSE)

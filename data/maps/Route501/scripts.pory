@@ -415,5 +415,5 @@ script Route501_Sign_Route {
 }
 
 text Route501_Text_Sign {
-    format("Route 501\n{RIGHT_ARROW} Baycrest City\p{DOWN_ARROW} Everwood Town")
+    format("Route 301\n{RIGHT_ARROW} Baycrest City\p{DOWN_ARROW} Everwood Town")
 }

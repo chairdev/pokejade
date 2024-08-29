@@ -321,7 +321,7 @@ ReceiveStarter_HawthorneText6::
 	.string "You two must first register for the\n"
 	.string "Toshou League at the Pokémon Center.\p"
 	.string "The nearest one is in Baycrest City,\n"
-	.string "past Route 501.$"
+	.string "past Route 301.$"
 
 ReceiveStarter_RivalText3::
 # 154 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
