@@ -136,7 +136,24 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 29,
+      "y": 6,
+      "elevation": 0,
+      "var": "VAR_KISMET_FOREST_STATE",
+      "var_value": "0",
+      "script": "KismetForest_Trigger_Jasmine1"
+    },
+    {
+      "type": "trigger",
+      "x": 29,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_KISMET_FOREST_STATE",
+      "var_value": "0",
+      "script": "KismetForest_Trigger_Jasmine2"
+    }
   ],
   "bg_events": [
 

@@ -1,5 +1,15 @@
 mapscripts KismetForest_MapScripts {}
+
 //Story Events
+script KismetForest_Trigger_Jasmine1 {
+    lockall
+}
+
+script KismetForest_Trigger_Jasmine2 {
+    lockall
+}
+
+
 
 //NPCs
 script KismetForest_EventScript_Boy {
