@@ -221,7 +221,7 @@ BaycrestCity_Gym_EventScript_GymGuide::
 	msgbox BaycrestCity_Gym_Text_GymGuide1
 BaycrestCity_Gym_EventScript_GymGuide_5:
 # 140 "data/maps/BaycrestCity_Gym/scripts.pory"
-	goto_if_unset FLAG_RECEIVED_FRESH_WATER_BAYCREST_GYM, BaycrestCity_Gym_EventScript_GymGuide_10
+	goto_if_unset FLAG_RECEIVED_SODA_POP_BAYCREST_GYM, BaycrestCity_Gym_EventScript_GymGuide_10
 BaycrestCity_Gym_EventScript_GymGuide_9:
 # 147 "data/maps/BaycrestCity_Gym/scripts.pory"
 	setflag FLAG_TEMP_1
@@ -246,7 +246,7 @@ BaycrestCity_Gym_EventScript_GymGuide_10:
 # 143 "data/maps/BaycrestCity_Gym/scripts.pory"
 	giveitem ITEM_FRESH_WATER
 # 144 "data/maps/BaycrestCity_Gym/scripts.pory"
-	setflag FLAG_RECEIVED_FRESH_WATER_BAYCREST_GYM
+	setflag FLAG_RECEIVED_SODA_POP_BAYCREST_GYM
 	goto BaycrestCity_Gym_EventScript_GymGuide_9
 
 

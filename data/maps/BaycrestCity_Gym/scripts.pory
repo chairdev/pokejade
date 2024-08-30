@@ -137,11 +137,11 @@ script BaycrestCity_Gym_EventScript_GymGuide {
             msgbox(BaycrestCity_Gym_Text_GymGuide1)
         }
 
-        if(!flag(FLAG_RECEIVED_FRESH_WATER_BAYCREST_GYM))
+        if(!flag(FLAG_RECEIVED_SODA_POP_BAYCREST_GYM))
         {
             msgbox(BaycrestCity_Gym_Text_GymGuide2)
-            giveitem(ITEM_FRESH_WATER)
-            setflag(FLAG_RECEIVED_FRESH_WATER_BAYCREST_GYM)
+            giveitem(ITEM_SODA_POP)
+            setflag(FLAG_RECEIVED_SODA_POP_BAYCREST_GYM)
         }
 
         setflag(FLAG_TEMP_1)
@@ -153,7 +153,7 @@ text BaycrestCity_Gym_Text_GymGuide1 { //ground gym, gym leader is a kid, but he
     format("Yo!\nChamp in the making!\p"
             "This is your first gym, right?\nHow could I tell?\p"
             "Well, you look like a total newbie!\p"
-            "But don't worry, I'm here to help!\p"
+            "But don't worry, My name is Gyde, and I'm here to help!\p"
             "The trainers in this gym all use Ground-type Pokémon.\p"
             "That means Water, Grass, and Ice-type moves are super effective against them!\p"
             "But be careful!\nGround-types are immune to Electric-type moves!\p"
