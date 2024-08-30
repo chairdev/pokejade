@@ -1,14 +1,121 @@
+const OBJ_JASMINE = 8
+const OBJ_AMPHY = 9
+
+//Kismet Forest State
+//0 - Jasmine not met
+//1 - Jasmine met
+
 mapscripts KismetForest_MapScripts {}
 
 //Story Events
 script KismetForest_Trigger_Jasmine1 {
     lockall
+
+    applymovement(OBJ_AMPHY, KismetForest_Movement_AmphyApproachPlayer1)
+    applymovement(OBJ_JASMINE, KismetForest_Movement_AmphyApproachPlayer1)
+    waitmovement(0)
+    waitmovement(1)
+    
+    call(KismetForest_Jasmine)
 }
 
 script KismetForest_Trigger_Jasmine2 {
     lockall
+
+    applymovement(OBJ_AMPHY, KismetForest_Movement_AmphyApproachPlayer2)
+    applymovement(OBJ_JASMINE, KismetForest_Movement_AmphyApproachPlayer2)
+    waitmovement(0)
+    waitmovement(1)
+
+    call(KismetForest_Jasmine)
 }
 
+script KismetForest_Jasmine {
+
+    speakername("???")
+    msgbox("Oh... hello.\nI'm... I'm Jasmine.")
+    speakername("Jasmine")
+    msgbox(KismetForest_Text_Jasmine1)
+    closemessage
+
+    //amphy walks up to you
+    playmoncry(SPECIES_AMPHAROS, CRY_MODE_NORMAL)
+    msgbox("Pharos!")
+    waitmoncry
+    closemessage
+
+    //jasmine turns to amphy
+    speakername("Jasmine")
+    msgbox("This trainer reminds you of him, doesn't he, Amphy?")
+    msgbox(KismetForest_Text_Jasmine2)
+    closemessage
+
+    giveitem(ITEM_TM_HIDDEN_POWER)
+
+    speakername("Jasmine")
+    msgbox(KismetForest_Text_Jasmine3)
+    closemessage
+
+    fadescreen(FADE_TO_BLACK)
+    removeobject(OBJ_JASMINE)
+    removeobject(OBJ_AMPHY)
+    setflag(FLAG_RECEIVED_TM_HIDDEN_POWER)
+    setvar(VAR_KISMET_FOREST_STATE, 1)
+    fadescreen(FADE_FROM_BLACK)
+
+    releaseall
+}
+
+movement KismetForest_Movement_JasmineApproachPlayer1 {
+    delay_16
+    walk_up * 4
+    walk_in_place_faster_left
+}
+
+movement KismetForest_Movement_JasmineApproachPlayer2 {
+    delay_16
+    walk_up * 3
+    walk_in_place_faster_left
+}
+
+movement KismetForest_Movement_AmphyApproachPlayer1 {
+    walk_up * 3
+    walk_left * 2
+    walk_in_place_faster_up
+}
+
+movement KismetForest_Movement_AmphyApproachPlayer2 {
+    walk_up * 4
+    walk_left * 2
+    walk_in_place_faster_down
+}
+
+text KismetForest_Text_Jasmine1 {
+    format( "I'm visiting from the Johto region.\p"
+            "I, um... I'm on vacation in Starridge Town.\nIt's... nice to get away and spend time in a place like this.\p"
+            "Right now, I'm just... exploring the Kismet Forest.\nIt's... it's so beautiful here."
+    )
+}
+
+text KismetForest_Text_Jasmine2 {
+    format( "I'm sorry, I... I don't mean to be rude.\p"
+            "You... you remind me of someone.\nA boy I met 2 years ago in Johto..\p"
+            "He... became the Champion.\nHe was very kind... and had a strong bond with his Pokémon.\p"
+            "You... have that same look of determination in your eyes.\nI... I'm sorry, I... I'm just rambling.\p"
+            "Can I... ask your name?"
+            "... ... ...\p"
+            "I see... {PLAYER}.\nIt's... nice to meet you.\p"
+            "{PLAYER},  I want to give you this.\n It's, um... it's the TM for Hidden Power."
+    )
+}
+
+text KismetForest_Text_Jasmine3 {
+    format( "Johto is known for this move. It's.. special.\p"
+            "It's a move that changes type depending on the Pokémon that uses it.\nIt's... it's a move that reflects the user's inner strength.\p"
+            "I... I hope you find it useful.\nI I think you'll go far... just like that boy.\p"
+            "I should get going now.\nI... hope we meet again, {PLAYER}.\nGoodbye."
+    )
+}
 
 
 //NPCs
