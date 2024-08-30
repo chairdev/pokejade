@@ -244,7 +244,7 @@ BaycrestCity_Gym_EventScript_GymGuide_10:
 # 142 "data/maps/BaycrestCity_Gym/scripts.pory"
 	msgbox BaycrestCity_Gym_Text_GymGuide2
 # 143 "data/maps/BaycrestCity_Gym/scripts.pory"
-	giveitem ITEM_FRESH_WATER
+	giveitem ITEM_SODA_POP
 # 144 "data/maps/BaycrestCity_Gym/scripts.pory"
 	setflag FLAG_RECEIVED_SODA_POP_BAYCREST_GYM
 	goto BaycrestCity_Gym_EventScript_GymGuide_9
@@ -374,7 +374,8 @@ BaycrestCity_Gym_Text_GymGuide1::
 	.string "This is your first gym, right?\n"
 	.string "How could I tell?\p"
 	.string "Well, you look like a total newbie!\p"
-	.string "But don't worry, I'm here to help!\p"
+	.string "But don't worry!\n"
+	.string "My name is Gyde, and I'm here to help!\p"
 	.string "The trainers in this gym all use\n"
 	.string "Ground-type Pokémon.\p"
 	.string "That means Water, Grass, and Ice-type\n"
