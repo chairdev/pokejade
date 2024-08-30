@@ -299,7 +299,7 @@ text BaycrestCity_Gym_Text_GeoDefeat {
 }
 
 text BaycrestCity_Gym_Text_GeoDefeated {
-    format( "Ahem!\nCongratulations, {PLAYER}-san!\p"
+    format( "Ahem!\nCongratulations, {PLAYER}!\p"
             "According to the official rules of the Pokémon League, once you defeat a Gym Leader, you will receive a badge as proof of your victory!\p"
             "That's right!\nThe Pokémon League's official Foundation Badge is yours!")
 }
