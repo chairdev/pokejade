@@ -11996,63 +11996,63 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "min_level": 18,
-                "max_level": 21,
+                "min_level": 16,
+                "max_level": 19,
                 "species": "SPECIES_VIVILLON_ELEGANT"
               },
               {
-                "min_level": 18,
-                "max_level": 21,
+                "min_level": 16,
+                "max_level": 19,
                 "species": "SPECIES_DOTTLER"
               },
               {
-                "min_level": 18,
-                "max_level": 21,
+                "min_level": 16,
+                "max_level": 19,
                 "species": "SPECIES_GASTLY"
               },
               {
-                "min_level": 20,
-                "max_level": 21,
-                "species": "SPECIES_NOCTOWL"
+                "min_level": 16,
+                "max_level": 19,
+                "species": "SPECIES_HOOTHOOT"
               },
               {
-                "min_level": 20,
-                "max_level": 21,
-                "species": "SPECIES_NOCTOWL"
+                "min_level": 16,
+                "max_level": 19,
+                "species": "SPECIES_HOOTHOOT"
               },
               {
-                "min_level": 18,
-                "max_level": 21,
+                "min_level": 16,
+                "max_level": 19,
                 "species": "SPECIES_TOEDSCOOL"
               },
               {
-                "min_level": 18,
-                "max_level": 21,
+                "min_level": 16,
+                "max_level": 19,
                 "species": "SPECIES_TOEDSCOOL"
               },
               {
-                "min_level": 18,
-                "max_level": 21,
+                "min_level": 16,
+                "max_level": 19,
                 "species": "SPECIES_PINECO"
               },
               {
-                "min_level": 18,
-                "max_level": 21,
+                "min_level": 16,
+                "max_level": 19,
                 "species": "SPECIES_PINECO"
               },
               {
-                "min_level": 18,
-                "max_level": 21,
+                "min_level": 16,
+                "max_level": 19,
                 "species": "SPECIES_ZORUA"
               },
               {
-                "min_level": 18,
-                "max_level": 21,
+                "min_level": 16,
+                "max_level": 19,
                 "species": "SPECIES_ZORUA"
               },
               {
-                "min_level": 18,
-                "max_level": 21,
+                "min_level": 16,
+                "max_level": 19,
                 "species": "SPECIES_ZORUA"
               }
             ]

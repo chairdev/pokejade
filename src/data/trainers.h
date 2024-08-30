@@ -12650,7 +12650,7 @@ F_TRAINER_FEMALE |
 #line 5133
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
 #line 5132
-            .lvl = 21,
+            .lvl = 20,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -12661,7 +12661,7 @@ F_TRAINER_FEMALE |
 #line 5137
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
 #line 5136
-            .lvl = 20,
+            .lvl = 19,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -27908,7 +27908,7 @@ F_TRAINER_FEMALE |
 #line 11128
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 11127
-            .lvl = 19,
+            .lvl = 18,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -28399,7 +28399,7 @@ F_TRAINER_FEMALE |
 #line 11315
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 11314
-            .lvl = 20,
+            .lvl = 18,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -28410,7 +28410,7 @@ F_TRAINER_FEMALE |
 #line 11319
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 11318
-            .lvl = 20,
+            .lvl = 18,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -28421,7 +28421,7 @@ F_TRAINER_FEMALE |
 #line 11323
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 11322
-            .lvl = 18,
+            .lvl = 16,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -28614,7 +28614,7 @@ F_TRAINER_FEMALE |
 #line 11400
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 11399
-            .lvl = 18,
+            .lvl = 16,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -28625,7 +28625,7 @@ F_TRAINER_FEMALE |
 #line 11404
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 11403
-            .lvl = 17,
+            .lvl = 15,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },

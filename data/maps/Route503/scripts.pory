@@ -144,6 +144,7 @@ script Route503_MeetDio { //the rival and dio just faught, and the rival lost
 
     speakername("{RIVAL}")
     msgbox(Route503_Text_MeetDio_Rival5)
+    closemessage
     
     applymovement(OBJ_RIVAL, Route503_RivalLeave)
     waitmovement(0)
@@ -328,6 +329,7 @@ script Route503_GetPokeNav {
 
     speakername("Mom")
     msgbox(Route503_Text_GetPokeNav_Mom3)
+    closemessage
 
     setvar(VAR_ROUTE503_STATE, 2)
 

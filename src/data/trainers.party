@@ -5129,11 +5129,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Dottler
-Level: 21
+Level: 20
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 Pineco
-Level: 20
+Level: 19
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_TED ===
@@ -11124,7 +11124,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Azumarill
-Level: 19
+Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_VIVI ===
@@ -11311,15 +11311,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Scatterbug
-Level: 20
+Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Spewpa
-Level: 20
+Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 VIVILLON_ELEGANT
-Level: 18
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JOSE ===
@@ -11396,11 +11396,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Dewpider
-Level: 18
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Dwebble
-Level: 17
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JAMES_2 ===

@@ -481,7 +481,7 @@ BaycrestCity_Gym_Text_GeoDefeat::
 BaycrestCity_Gym_Text_GeoDefeated::
 # 301 "data/maps/BaycrestCity_Gym/scripts.pory"
 	.string "Ahem!\n"
-	.string "Congratulations, {PLAYER}-san!\p"
+	.string "Congratulations, {PLAYER}!\p"
 	.string "According to the official rules of the\n"
 	.string "Pokémon League, once you defeat a Gym\l"
 	.string "Leader, you will receive a badge as\l"
