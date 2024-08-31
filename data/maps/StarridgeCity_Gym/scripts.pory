@@ -1,0 +1,177 @@
+mapscripts StarridgeCity_Gym_MapScripts {}
+
+//Gym Leader
+
+script StarridgeCity_Gym_EventScript_Melody { //leader
+    trainerbattle_single(TRAINER_MELODY_1, StarridgeCity_Gym_Text_MelodyIntro, StarridgeCity_Gym_Text_MelodyDefeat, StarridgeCity_Gym_EventScript_MelodyDefeated, NO_MUSIC)
+    if(flag(FLAG_RECEIVED_TM_DRAINING_KISS) == FALSE)
+    {
+        goto(StarridgeCity_Gym_EventScript_GiveDrainingKiss)
+    }
+
+    speakername("Melody")
+    msgbox(StarridgeCity_Gym_Text_MelodyPostBattle, MSGBOX_AUTOCLOSE)
+    release
+}
+
+text StarridgeCity_Gym_Text_MelodyIntro {
+    format("Hi! I'm Melody!\p"
+            "I only recently became the Gym Leader here in Starridge City.\p"
+            "Truth is, I'm still learning the ropes, but I'm excited to be here!\p"
+            "Ms. Jasmine told me that I should take a deep breath and just be myself.\p"
+            "So, here I am! Ready to battle!\p"
+            "Let's have a totally magical battle!")
+}
+
+text StarridgeCity_Gym_Text_MelodyDefeat { //she starts crying
+    format( "Wahhh! Melody lost!\p"
+            "I knew I wasn't ready to be a Gym Leader!\p"
+            "This is so embarrassing!\nI want to go back home and hide in my bed!\p"
+            "I-I..."
+            )
+}
+
+text StarridgeCity_Gym_Text_MelodyPostBattle {
+    format( "Thank you so much for battling me, {PLAYER}!\p"
+            "I had a lot of fun, and I learned a lot too!\p"
+            "Ms. Jasmine would be so proud of me for trying my best."
+            )
+}
+
+script StarridgeCity_Gym_EventScript_MelodyDefeated {
+    speakername("Melody")
+    msgbox(StarridgeCity_Gym_Text_MelodyDefeated)
+    playfanfare(MUS_OBTAIN_BADGE)
+    closemessage
+    msgbox(StarridgeCity_Gym_Text_ReceivedGlintBadge)
+    waitfanfare
+    speakername("Melody")
+    msgbox(StarridgeCity_Gym_Text_GlintBadgeInfo)
+
+   	setflag(FLAG_DEFEATED_STARRIDGE_GYM)
+    setflag(FLAG_BADGE02_GET)
+
+    goto(StarridgeCity_Gym_EventScript_GiveDrainingKiss)
+
+    call(Common_EventScript_SetGymTrainers)
+    release
+}
+
+text StarridgeCity_Gym_Text_MelodyDefeated {
+    format( "Sniff... I'm sorry for crying.\p"
+            "I'm just so... disappointed in myself.\p"
+            "I thought I was ready to be a Gym Leader, but I guess I still have a lot to learn.\p"
+            "You're the one who taught me that, {PLAYER}.\p"
+            "Thanks to you and your Pokémon for showing me that I still have a long way to go.\p"
+            "You totally deserve this badge.\nI hope you'll accept it."
+            )
+}
+
+text StarridgeCity_Gym_Text_ReceivedGlintBadge {
+    format("You received the Glint Badge!")
+}
+
+text StarridgeCity_Gym_Text_GlintBadgeInfo {
+    format("With this badge, Pokémon up to Level 30 will obey you.\p"
+            "You can also use the HM move Cut outside of battle.\p"
+            "And, um... I want to give you this TM.\nYou know, as a thanks!"
+            )
+}
+
+script StarridgeCity_Gym_EventScript_GiveDrainingKiss {
+    giveitem(ITEM_TM_DRAINING_KISS)
+
+    if(var(VAR_RESULT) == FALSE)
+    {
+        goto(Common_EventScript_ShowBagIsFull)
+    }
+
+    setflag(FLAG_RECEIVED_TM_DRAINING_KISS)
+    speakername("Melody")
+    msgbox(StarridgeCity_Gym_Text_ExplainDrainingKiss)
+    release
+}
+
+text StarridgeCity_Gym_Text_ExplainDrainingKiss {
+    format("This is the TM for Draining Kiss.\p"
+            "It's a Fairy-type move that heals the user by over half the damage dealt.\p"
+            "It's totally adorable, right? I hope you like it!"
+            )
+}
+
+//Hints
+script StarridgeCity_Gym_Sign_Hint1 {
+    lock
+    msgbox(format("Fairies love the morning light.\nGo where it's bright."))
+    release
+}
+
+script StarridgeCity_Gym_Sign_Hint2 {
+    lock
+    msgbox(format("At dusk, fairies dance in the twilight.\nChoose the soft light."))
+    release
+}
+
+script StarridgeCity_Gym_Sign_Hint3 {
+    lock
+    msgbox(format("Fairies follow the golden rays.\nPick the sunny way."))
+    release
+}
+
+script StarridgeCity_Gym_Sign_Hint4 {
+    lock
+    msgbox(format("Fairies love the moonlight.\nGo where it's dark."))
+    release
+}
+
+//Gym Trainers
+script StarridgeCity_Gym_EventScript_LassBetty {
+    trainerbattle_single(TRAINER_BETTY, StarridgeCity_Gym_Text_BettyIntro, StarridgeCity_Gym_Text_BettyDefeat)
+    msgbox(StarridgeCity_Gym_Text_BettyPostBattle, MSGBOX_AUTOCLOSE)
+}
+
+text StarridgeCity_Gym_Text_BettyIntro {
+    format("PLACEHOLDER")
+}
+
+text StarridgeCity_Gym_Text_BettyDefeat {
+    format("PLACEHOLDER")
+}
+
+text StarridgeCity_Gym_Text_BettyPostBattle {
+    format("PLACEHOLDER")
+}
+
+script StarridgeCity_Gym_EventScript_BeautyHelen {
+    trainerbattle_single(TRAINER_HELEN, StarridgeCity_Gym_Text_HelenIntro, StarridgeCity_Gym_Text_HelenDefeat)
+    msgbox(StarridgeCity_Gym_Text_HelenPostBattle, MSGBOX_AUTOCLOSE)
+}
+
+text StarridgeCity_Gym_Text_HelenIntro {
+    format("PLACEHOLDER")
+}
+
+text StarridgeCity_Gym_Text_HelenDefeat {
+    format("PLACEHOLDER")
+}
+
+text StarridgeCity_Gym_Text_HelenPostBattle {
+    format("PLACEHOLDER")
+}
+
+script StarridgeCity_Gym_EventScript_AceTrainerFiona {
+    trainerbattle_single(TRAINER_FIONA, StarridgeCity_Gym_Text_FionaIntro, StarridgeCity_Gym_Text_FionaDefeat)
+    msgbox(StarridgeCity_Gym_Text_FionaPostBattle, MSGBOX_AUTOCLOSE)
+}
+
+text StarridgeCity_Gym_Text_FionaIntro {
+    format("PLACEHOLDER")
+}
+
+text StarridgeCity_Gym_Text_FionaDefeat {
+    format("PLACEHOLDER")
+}
+
+text StarridgeCity_Gym_Text_FionaPostBattle {
+    format("PLACEHOLDER")
+}

@@ -4660,6 +4660,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/StarridgeCity_MelodysHouse/border.bin",
       "blockdata_filepath": "data/layouts/StarridgeCity_MelodysHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_STARRIDGE_CITY_GYM",
+      "name": "StarridgeCity_Gym_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_MossdeepGym",
+      "border_filepath": "data/layouts/StarridgeCity_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/StarridgeCity_Gym/map.bin"
     }
   ]
 }

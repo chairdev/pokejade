@@ -2274,8 +2274,8 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Odor Sleuth
 - Sand Attack
 
-=== TRAINER_MELISSA ===
-Name: MELISSA
+=== TRAINER_HELEN ===
+Name: Helen
 Class: Beauty
 Pic: Beauty
 Gender: Female
@@ -2283,9 +2283,11 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Marill
+Azumarill
 Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
 
 === TRAINER_SHEILA ===
 Name: SHEILA
@@ -4788,7 +4790,7 @@ Gender: Male
 Music: Female
 Items: Potion / Potion
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Setup First Turn / Ace Pokemon
+AI: Check Bad Move / Check Viability / Try To Faint / Setup First Turn / Ace Pokemon
 
 Wooper @ Rindo Berry  
 Level: 12
@@ -4817,39 +4819,46 @@ IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 - Mud-Slap  
 - Sand Tomb
 
-=== TRAINER_BRAWLY_1 ===
-Name: BRAWLY
+=== TRAINER_MELODY_1 ===
+Name: Melody
 Class: Leader
-Pic: Leader Brawly
-Gender: Male
-Music: Male
+Pic: Leader Flannery
+Gender: Female
+Music: Female
 Items: Super Potion / Super Potion
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Setup First Turn / Ace Pokemon
 
-Machop
-Level: 16
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Karate Chop
-- Low Kick
-- Seismic Toss
-- Bulk Up
+Granbull @ Red Card  
+Ability: Intimidate  
+Level: 23   
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe   
+Brave Nature  
+- Draining Kiss  
+- Headbutt  
+- Lick  
+- Fire Fang  
 
-Meditite
-Level: 16
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Focus Punch
-- Light Screen
-- Reflect
-- Bulk Up
+Togetic @ Pixie Plate  
+Ability: Super Luck
+Level: 24  
+IVs: 20 HP / 20 Atk / 20 Def / 19 SpA / 20 SpD / 20 Spe  
+Modest Nature  
+- Draining Kiss  
+- Metronome  
+- Sweet Kiss  
+- Hidden Power
 
-Makuhita @ Sitrus Berry
-Level: 19
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Arm Thrust
-- Vital Throw
-- Reversal
-- Bulk Up
+Sylveon @ Kebia Berry  
+Ability: Cute Charm  
+Level: 25 
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
+EVs: 252 HP
+Quiet Nature  
+- Draining Kiss  
+- Baby-Doll Eyes  
+- Quick Attack  
+- Swift
 
 === TRAINER_WATTSON_1 ===
 Name: WATTSON
@@ -6732,7 +6741,7 @@ Gender: Female
 Music: Female
 Items: Potion / Potion / Hyper Potion
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Setup First Turn / Ace Pokemon
+AI: Check Bad Move / Check Viability / Try To Faint / Setup First Turn / Ace Pokemon
 
 Magnemite @ Air Balloon  
 Ability: Analytic  
@@ -11230,8 +11239,8 @@ Breloom
 Level: 34
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_SALLY ===
-Name: Jasmine
+=== TRAINER_BETTY ===
+Name: Betty
 Class: Lass
 Pic: Lass
 Gender: Female
@@ -11239,8 +11248,8 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Oddish
-Level: 16
+Jigglypuff
+Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROBIN ===
@@ -13711,8 +13720,8 @@ Tentacool
 Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_AIKOINA ===
-Name: CAROLINA
+=== TRAINER_FIONA ===
+Name: Fiona
 Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Female
@@ -13721,17 +13730,9 @@ Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Manectric
-Level: 24
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
-Swellow
-Level: 24
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
-Manectric
-Level: 24
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Granbull
+Level: 23
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_ELIJAH ===
 Name: ELIJAH
