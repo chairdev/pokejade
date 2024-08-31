@@ -4784,7 +4784,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Name: Geo
 Class: Leader
 Pic: Leader Brawly
-Gender: Female
+Gender: Male
 Music: Female
 Items: Potion / Potion
 Double Battle: No
@@ -6725,25 +6725,35 @@ Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JASMINE ===
-Name: JASMINE
-Class: Triathlete
-Pic: Cycling Triathlete F
+Name: Jasmine
+Class: Rival
+Pic: Jasmine
 Gender: Female
 Music: Female
+Items: Potion / Potion / Hyper Potion
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Setup First Turn / Ace Pokemon
 
-Magnemite
-Level: 14
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+Magnemite @ Air Balloon  
+Ability: Analytic  
+Level: 20
+Relaxed Nature
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe  
+- Charge Beam  
+- Gyro Ball  
+- Sonic Boom  
+- Thunder Wave
 
-Magnemite
-Level: 14
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
-
-Voltorb
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Steelix @ Steel Gem  
+Ability: Sturdy  
+Level: 22
+EVs: 252 HP
+Brave Nature  
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe  
+- Gyro Ball  
+- Bulldoze  
+- Iron Tail  
+- Ice Fang
 
 === TRAINER_ABIGAIL_2 ===
 Name: ABIGAIL
@@ -11221,7 +11231,7 @@ Level: 34
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_SALLY ===
-Name: SALLY
+Name: Jasmine
 Class: Lass
 Pic: Lass
 Gender: Female

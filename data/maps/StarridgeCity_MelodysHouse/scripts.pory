@@ -5,17 +5,27 @@ script StarridgeCity_MelodysHouse_Jasmine {
     faceplayer
 
     speakername("Jasmine")
-    msgbox(StarridgeCity_MelodysHouse_Text_Jasmine1, MSGBOX_YESNO)
+    if(!flag(VAR_TEMP_0))
+    {
+        msgbox(StarridgeCity_MelodysHouse_Text_Jasmine1)
+        setflag(VAR_TEMP_0)
+    }
+    msgbox(StarridgeCity_MelodysHouse_Text_JasmineAskForBattle, MSGBOX_YESNO)
 
     if(var(VAR_RESULT) == YES)
     {
         msgbox(StarridgeCity_MelodysHouse_Text_JasmineAcceptToBattle)
+        closemessage
+        trainerbattle_no_intro(TRAINER_JASMINE, StarridgeCity_MelodysHouse_Text_JasmineDefeat)
+        speakername("Jasmine")
+        msgbox(StarridgeCity_MelodysHouse_Text_JasminePostBattle)
     }
     else
     {
         msgbox(StarridgeCity_MelodysHouse_Text_JasmineDeclineToBattle)
     }
 
+    closemessage
     release
 }
 
@@ -28,9 +38,13 @@ text StarridgeCity_MelodysHouse_Text_Jasmine1 { //she asks for a battle
             "Melody is a very talented trainer, but... taking on the role of a Gym Leader is a big responsibility and she's... a bit of a crybaby.\p"
             "I've been helping her get settled in and giving her some advice.\p"
             "It's... been nice, spending time here with her and her grandmother.\p"
-            "I... I'm sorry, I... I'm just rambling.\p"
-            "I... I wanted to ask you something, {PLAYER}.\nWould you... battle me?"
+            "I... I'm sorry, I... I'm just rambling."
+            )
+}
 
+text StarridgeCity_MelodysHouse_Text_JasmineAskForBattle {
+    format( "I... I wanted to ask you something, {PLAYER}.\p"
+            "Would you... battle me?"
             )
 }
 
@@ -48,7 +62,12 @@ text StarridgeCity_MelodysHouse_Text_JasmineDeclineToBattle {
 
 text StarridgeCity_MelodysHouse_Text_JasmineDefeat {
     format(  "You're... very strong.\nI... I'm impressed.\p"
-            "I... I'm glad I got to battle you.\nThank you, {PLAYER}.\p"
+            "I... I'm glad I got to battle you.\nThank you, {PLAYER}."
+            )
+}
+
+text StarridgeCity_MelodysHouse_Text_JasminePostBattle {
+    format( "Your bond with your Pokémon is strong... and it shows in the way you battle.\p" 
             "I... I hope we can battle again sometime."
             )
 }
