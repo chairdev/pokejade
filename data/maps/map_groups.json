@@ -37,7 +37,8 @@
     "gMapGroup_IndoorEverwood",
     "gMapGroup_IndoorBaycrest",
     "gMapGroup_IndoorRoute503",
-    "gMapGroup_IndoorStemford"
+    "gMapGroup_IndoorStemford",
+    "gMapGroup_IndoorStarridge"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -102,7 +103,10 @@
     "BaycrestCity",
     "Route502",
     "Route503",
-    "StemfordTown"
+    "StemfordTown",
+    "StarridgeCity",
+    "Route305",
+    "Route306"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -652,5 +656,9 @@
     "StemfordTown_PokemonCenter_1F",
     "StemfordTown_Mart",
     "StemfordTown_PokemonFanClub"
+  ],
+  "gMapGroup_IndoorStarridge": [
+    "StarridgeCity_PokemonCenter_1F",
+    "StarridgeCity_MelodysHouse"
   ]
 }

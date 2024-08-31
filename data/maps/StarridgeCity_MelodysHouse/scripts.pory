@@ -1,0 +1,54 @@
+mapscripts StarridgeCity_MelodysHouse_MapScripts {}
+
+script StarridgeCity_MelodysHouse_Jasmine {
+    lock
+    faceplayer
+
+    speakername("Jasmine")
+    msgbox(StarridgeCity_MelodysHouse_Text_Jasmine1, MSGBOX_YESNO)
+
+    if(var(VAR_RESULT) == YES)
+    {
+        msgbox(StarridgeCity_MelodysHouse_Text_JasmineAcceptToBattle)
+    }
+    else
+    {
+        msgbox(StarridgeCity_MelodysHouse_Text_JasmineDeclineToBattle)
+    }
+
+    release
+}
+
+text StarridgeCity_MelodysHouse_Text_Jasmine1 { //she asks for a battle
+    format( "Oh... {PLAYER}, it's you.\nI'm... glad to see you again\p"
+            "I...didn't mention it before, but I'm actually the Gym Leader of Olivine City in the Johto region.\p"
+            "People call me... the “Steel-Clad Defense Girl.”\p"
+            "I come to Starridge Town often since Cianwood is so close by.\p"
+            "I've been spending some time here in Starridge Town because Melody... recently moved here from Johto to become the new Fairy-type Gym Leader.\p"
+            "Melody is a very talented trainer, but... taking on the role of a Gym Leader is a big responsibility and she's... a bit of a crybaby.\p"
+            "I've been helping her get settled in and giving her some advice.\p"
+            "It's... been nice, spending time here with her and her grandmother.\p"
+            "I... I'm sorry, I... I'm just rambling.\p"
+            "I... I wanted to ask you something, {PLAYER}.\nWould you... battle me?"
+
+            )
+}
+
+text StarridgeCity_MelodysHouse_Text_JasmineAcceptToBattle {
+    format( "Thank you, {PLAYER}.\nI... I appreciate it.\p"
+            "Let's... let's have a good battle."
+            )
+}
+
+text StarridgeCity_MelodysHouse_Text_JasmineDeclineToBattle {
+    format( "Oh... I see.\nI... I understand.\p"
+            "I... I hope we can battle another time."
+            )
+}
+
+text StarridgeCity_MelodysHouse_Text_JasmineDefeat {
+    format(  "You're... very strong.\nI... I'm impressed.\p"
+            "I... I'm glad I got to battle you.\nThank you, {PLAYER}.\p"
+            "I... I hope we can battle again sometime."
+            )
+}

@@ -1114,3 +1114,13 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/StemfordTown_Mart/scripts.inc"
 
 	.include "data/maps/StemfordTown_PokemonFanClub/scripts.inc"
+
+	.include "data/maps/StarridgeCity/scripts.inc"
+
+	.include "data/maps/Route305/scripts.inc"
+
+	.include "data/maps/Route306/scripts.inc"
+
+	.include "data/maps/StarridgeCity_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/StarridgeCity_MelodysHouse/scripts.inc"

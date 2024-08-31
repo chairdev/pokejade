@@ -146,6 +146,20 @@
       "elevation": 0,
       "dest_map": "MAP_ROUTE503",
       "dest_warp_id": "2"
+    },
+    {
+      "x": 30,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE305",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 31,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE305",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

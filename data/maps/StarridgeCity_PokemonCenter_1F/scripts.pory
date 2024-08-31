@@ -1,0 +1,16 @@
+mapscripts StarridgeCity_PokemonCenter_1F_MapScripts {    
+    MAP_SCRIPT_ON_TRANSITION : StarridgeCity_PokemonCenter_1F_OnTransition
+    MAP_SCRIPT_ON_RESUME : CableClub_OnResume
+}
+
+script StarridgeCity_PokemonCenter_1F_OnTransition {
+    setrespawn(HEAL_LOCATION_STARRIDGE_CITY)
+}
+
+script StarridgeCity_PokemonCenter_1F_EventScript_Nurse {
+    setvar(VAR_0x800B, LOCALID_NURSE)
+    call(Common_EventScript_PkmnCenterNurse)
+    waitmessage
+    waitbuttonpress
+    release
+}

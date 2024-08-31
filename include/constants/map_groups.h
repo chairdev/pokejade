@@ -69,6 +69,9 @@
 #define MAP_ROUTE502            (60 | (0 << 8))
 #define MAP_ROUTE503            (61 | (0 << 8))
 #define MAP_STEMFORD_TOWN       (62 | (0 << 8))
+#define MAP_STARRIDGE_CITY      (63 | (0 << 8))
+#define MAP_ROUTE305            (64 | (0 << 8))
+#define MAP_ROUTE306            (65 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -619,6 +622,10 @@
 #define MAP_STEMFORD_TOWN_MART              (1 | (37 << 8))
 #define MAP_STEMFORD_TOWN_POKEMON_FAN_CLUB  (2 | (37 << 8))
 
-#define MAP_GROUPS_COUNT 38
+// gMapGroup_IndoorStarridge
+#define MAP_STARRIDGE_CITY_POKEMON_CENTER_1F (0 | (38 << 8))
+#define MAP_STARRIDGE_CITY_MELODYS_HOUSE     (1 | (38 << 8))
+
+#define MAP_GROUPS_COUNT 39
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H
