@@ -143,8 +143,8 @@ text StarridgeCity_Gym_Text_GymGuide {
 }
 
 text StarridgeCity_Gym_Text_GymGuideYouLookNervous {
-    format("You look nervous!\nDon't worry, I got your back!"
-            "Drink this Soda Pop to calm your nerves!"
+    format("You look nervous!\nDon't worry, I got your back!\p"
+            "Take this Soda Pop to calm your nerves!"
             )
 }
 
