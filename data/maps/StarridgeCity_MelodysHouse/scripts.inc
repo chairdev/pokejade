@@ -112,8 +112,8 @@ StarridgeCity_MelodysHouse_Text_MelodysGrandmaGiveCut::
 # 36 "data/maps/StarridgeCity_MelodysHouse/scripts.pory"
 	.string "Oh, you've defeated Melody in battle?\n"
 	.string "That's wonderful!\p"
-	.string "...I'm sure she's crying her eyes out\n"
-	.string "right now.\p"
+	.string "I'm sure she's crying her eyes out right\n"
+	.string "now.\p"
 	.string "...What? She's not? You say she's\n"
 	.string "actually motivated to get stronger?\p"
 	.string "Oh, that's a relief.\n"
@@ -126,12 +126,11 @@ StarridgeCity_MelodysHouse_Text_MelodysGrandmaGiveCut::
 
 StarridgeCity_MelodysHouse_Text_MelodysGrandmaExplainCut::
 # 46 "data/maps/StarridgeCity_MelodysHouse/scripts.pory"
-	.string "This is the HM for Cut.\p"
+	.string "What I gave you is the HM for Cut.\p"
 	.string "You can use it to cut down small trees\n"
 	.string "blocking your path.\p"
 	.string "It's a very useful field move to have\n"
-	.string "when you're out exploring.\p"
-	.string "$"
+	.string "when you're out exploring.$"
 
 StarridgeCity_MelodysHouse_Text_Jasmine1::
 # 92 "data/maps/StarridgeCity_MelodysHouse/scripts.pory"

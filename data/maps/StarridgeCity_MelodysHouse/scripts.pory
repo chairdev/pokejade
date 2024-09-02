@@ -35,7 +35,7 @@ text StarridgeCity_MelodysHouse_Text_MelodysGrandma {
 
 text StarridgeCity_MelodysHouse_Text_MelodysGrandmaGiveCut {
     format( "Oh, you've defeated Melody in battle?\nThat's wonderful!\p"
-            "...I'm sure she's crying her eyes out right now.\p"
+            "I'm sure she's crying her eyes out right now.\p"
             "...What? She's not? You say she's actually motivated to get stronger?\p"
             "Oh, that's a relief.\nI was worried she'd give up after losing to multiple trainers.\p"
             "Thank you for giving her the confidence to keep going.\p"
@@ -44,9 +44,9 @@ text StarridgeCity_MelodysHouse_Text_MelodysGrandmaGiveCut {
 }
 
 text StarridgeCity_MelodysHouse_Text_MelodysGrandmaExplainCut {
-    format( "This is the HM for Cut.\p"
+    format( "What I gave you is the HM for Cut.\p"
             "You can use it to cut down small trees blocking your path.\p"
-            "It's a very useful field move to have when you're out exploring.\p"
+            "It's a very useful field move to have when you're out exploring."
             )
 }
 
