@@ -174,15 +174,15 @@ script KismetForest_EventScript_BugCatcherRaymond {
 }
 
 text KismetForest_Text_RaymondIntro {
-    format("PLACEHOLDER")
+    format("I can't find a partner for a double battle.\nI'll just have to battle you by myself!")
 }
 
 text KismetForest_Text_RaymondDefeat {
-    format("PLACEHOLDER")
+    format("Not to sound like a sore loser, but... This definitely wouldn't have happened if I had a battle partner.")
 }
 
 text KismetForest_Text_RaymondPostBattle {
-    format("PLACEHOLDER")
+    format("Seriously though, I would've won if I had a partner.")
 }
 
 script KismetForest_EventScript_BugCatcherGregory {
@@ -208,15 +208,14 @@ script KismetForest_EventScript_LassDorothy {
 }
 
 text KismetForest_Text_DorothyIntro {
-    format("PLACEHOLDER")
+    format("Bugs are so icky and gross!\nI just want to get out of here!")
 }
-
 text KismetForest_Text_DorothyDefeat {
-    format("PLACEHOLDER")
+    format("Aiyee! Something just crawled on me!")
 }
 
 text KismetForest_Text_DorothyPostBattle {
-    format("PLACEHOLDER")
+    format("I'm never coming back to this forest again!")
 }
 
 script KismetForest_EventScript_PsychicJoshua {
@@ -225,15 +224,15 @@ script KismetForest_EventScript_PsychicJoshua {
 }
 
 text KismetForest_Text_JoshuaIntro {
-    format("PLACEHOLDER")
+    format("I can sense loss in the near future.")
 }
 
 text KismetForest_Text_JoshuaDefeat {
-    format("PLACEHOLDER")
+    format("I never said it was your loss.")
 }
 
 text KismetForest_Text_JoshuaPostBattle {
-    format("PLACEHOLDER")
+    format("Your win was inevitable.")
 }
 
 script KismetForest_EventScript_HexManiacLisa {
@@ -242,15 +241,15 @@ script KismetForest_EventScript_HexManiacLisa {
 }
 
 text KismetForest_Text_LisaIntro {
-    format("PLACEHOLDER")
+    format("I can see the spirits of the forest.")
 }
 
 text KismetForest_Text_LisaDefeat {
-    format("PLACEHOLDER")
+    format("They whisper to me that my resistance was futile.")
 }
 
 text KismetForest_Text_LisaPostBattle {
-    format("PLACEHOLDER")
+    format("The spirits have spoken.")
 }
 
 script KismetForest_EventScript_BugCatcherJerry {
@@ -259,13 +258,17 @@ script KismetForest_EventScript_BugCatcherJerry {
 }
 
 text KismetForest_Text_JerryIntro {
-    format("PLACEHOLDER")
+    format("Hi! I'm here to let you know that you're at the end of Kismet Forest!\p"
+            "And well, I'm here to battle you!")
 }
 
 text KismetForest_Text_JerryDefeat {
-    format("PLACEHOLDER")
+    format("I give you permission to pass!\n...Not that you needed it.")
 }
 
 text KismetForest_Text_JerryPostBattle {
-    format("PLACEHOLDER")
+    format("Is it morally wrong to gatekeep the exit of a forest?\p"
+            "Probably not!\nIs it fun?\p"
+            "Absolutely!"
+    )
 }
