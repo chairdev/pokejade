@@ -1,5 +1,55 @@
 mapscripts StarridgeCity_MelodysHouse_MapScripts {}
 
+script StarridgeCity_MelodysHouse_MelodysGrandma { //gives you the hm for cut if you beat melody
+    lock
+    faceplayer
+    if(flag(FLAG_BADGE02_GET))
+    {
+        if(!flag(FLAG_RECEIVED_HM_CUT))
+        {
+            msgbox(StarridgeCity_MelodysHouse_Text_MelodysGrandmaGiveCut)
+            giveitem(ITEM_HM_CUT)
+            setflag(FLAG_RECEIVED_HM_CUT)
+            msgbox(StarridgeCity_MelodysHouse_Text_MelodysGrandmaExplainCut)
+        }
+        else
+        {
+            msgbox(StarridgeCity_MelodysHouse_Text_MelodysGrandmaExplainCut)
+        }
+    }
+    else
+    {
+        msgbox(StarridgeCity_MelodysHouse_Text_MelodysGrandma)
+    }
+    release
+}
+
+text StarridgeCity_MelodysHouse_Text_MelodysGrandma {
+    format( "Oh, hello there.\nI'm Gym Leader Melody's grandmother.\p"
+            "I'm so proud of my granddaughter for becoming a Gym Leader here in Toshou.\p"
+            "She's... a bit of unsure of herself, but she's a very kind and caring person.\p"
+            "Not to mention, she's a very talented trainer.\p"
+            "I'm sure she'll do great things here in Starridge City."
+            )
+}
+
+text StarridgeCity_MelodysHouse_Text_MelodysGrandmaGiveCut {
+    format( "Oh, you've defeated Melody in battle?\nThat's wonderful!\p"
+            "...I'm sure she's crying her eyes out right now.\p"
+            "...What? She's not? You say she's actually motivated to get stronger?\p"
+            "Oh, that's a relief.\nI was worried she'd give up after losing to multiple trainers.\p"
+            "Thank you for giving her the confidence to keep going.\p"
+            "I want to give you this as a token of my gratitude."
+            )
+}
+
+text StarridgeCity_MelodysHouse_Text_MelodysGrandmaExplainCut {
+    format( "This is the HM for Cut.\p"
+            "You can use it to cut down small trees blocking your path.\p"
+            "It's a very useful field move to have when you're out exploring.\p"
+            )
+}
+
 script StarridgeCity_MelodysHouse_Jasmine {
     lock
     faceplayer

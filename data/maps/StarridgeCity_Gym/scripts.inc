@@ -295,8 +295,8 @@ StarridgeCity_Gym_Text_GymGuide::
 StarridgeCity_Gym_Text_GymGuideYouLookNervous::
 # 145 "data/maps/StarridgeCity_Gym/scripts.pory"
 	.string "You look nervous!\n"
-	.string "Don't worry, I got your back! Drink this\l"
-	.string "Soda Pop to calm your nerves!$"
+	.string "Don't worry, I got your back!\p"
+	.string "Take this Soda Pop to calm your nerves!$"
 
 StarridgeCity_Gym_Text_BettyIntro::
 # 184 "data/maps/StarridgeCity_Gym/scripts.pory"
