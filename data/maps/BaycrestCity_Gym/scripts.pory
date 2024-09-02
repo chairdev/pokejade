@@ -150,7 +150,7 @@ script BaycrestCity_Gym_EventScript_GymGuide {
 }
 
 text BaycrestCity_Gym_Text_GymGuide1 { //ground gym, gym leader is a kid, but hes good.
-    format("Yo!\nChamp in the making!\p"
+    format("Yo!\nChampion-to-be!\p"
             "This is your first gym, right?\nHow could I tell?\p"
             "Well, you look like a total newbie!\p"
             "But don't worry!\nMy name is Gyde, and I'm here to help!\p"

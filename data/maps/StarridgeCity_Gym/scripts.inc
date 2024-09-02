@@ -75,66 +75,97 @@ StarridgeCity_Gym_EventScript_GiveDrainingKiss_2:
 	goto StarridgeCity_Gym_EventScript_GiveDrainingKiss_1
 
 
-StarridgeCity_Gym_Sign_Hint1::
+StarridgeCity_Gym_EventScript_GymGuide::
 # 104 "data/maps/StarridgeCity_Gym/scripts.pory"
 	lock
 # 105 "data/maps/StarridgeCity_Gym/scripts.pory"
-	msgbox StarridgeCity_Gym_Sign_Hint1_Text_0
+	faceplayer
 # 106 "data/maps/StarridgeCity_Gym/scripts.pory"
+	goto_if_set FLAG_DEFEATED_STARRIDGE_GYM, StarridgeCity_Gym_EventScript_GymGuide_2
+# 112 "data/maps/StarridgeCity_Gym/scripts.pory"
+	msgbox StarridgeCity_Gym_Text_GymGuide
+# 113 "data/maps/StarridgeCity_Gym/scripts.pory"
+	goto_if_unset FLAG_RECEIVED_SODA_POP_STARRIDGE_GYM, StarridgeCity_Gym_EventScript_GymGuide_5
+StarridgeCity_Gym_EventScript_GymGuide_1:
+# 121 "data/maps/StarridgeCity_Gym/scripts.pory"
+	release
+	return
+
+StarridgeCity_Gym_EventScript_GymGuide_2:
+# 108 "data/maps/StarridgeCity_Gym/scripts.pory"
+	msgbox StarridgeCity_Gym_Text_GymGuideYouWon
+	goto StarridgeCity_Gym_EventScript_GymGuide_1
+
+StarridgeCity_Gym_EventScript_GymGuide_5:
+# 115 "data/maps/StarridgeCity_Gym/scripts.pory"
+	msgbox StarridgeCity_Gym_Text_GymGuideYouLookNervous
+# 116 "data/maps/StarridgeCity_Gym/scripts.pory"
+	giveitem ITEM_SODA_POP
+# 117 "data/maps/StarridgeCity_Gym/scripts.pory"
+	setflag FLAG_RECEIVED_SODA_POP_STARRIDGE_GYM
+	goto StarridgeCity_Gym_EventScript_GymGuide_1
+
+
+StarridgeCity_Gym_Sign_Hint1::
+# 155 "data/maps/StarridgeCity_Gym/scripts.pory"
+	lock
+# 156 "data/maps/StarridgeCity_Gym/scripts.pory"
+	msgbox StarridgeCity_Gym_Sign_Hint1_Text_0
+# 157 "data/maps/StarridgeCity_Gym/scripts.pory"
 	release
 	return
 
 
 StarridgeCity_Gym_Sign_Hint2::
-# 110 "data/maps/StarridgeCity_Gym/scripts.pory"
+# 161 "data/maps/StarridgeCity_Gym/scripts.pory"
 	lock
-# 111 "data/maps/StarridgeCity_Gym/scripts.pory"
+# 162 "data/maps/StarridgeCity_Gym/scripts.pory"
 	msgbox StarridgeCity_Gym_Sign_Hint2_Text_0
-# 112 "data/maps/StarridgeCity_Gym/scripts.pory"
+# 163 "data/maps/StarridgeCity_Gym/scripts.pory"
 	release
 	return
 
 
 StarridgeCity_Gym_Sign_Hint3::
-# 116 "data/maps/StarridgeCity_Gym/scripts.pory"
+# 167 "data/maps/StarridgeCity_Gym/scripts.pory"
 	lock
-# 117 "data/maps/StarridgeCity_Gym/scripts.pory"
+# 168 "data/maps/StarridgeCity_Gym/scripts.pory"
 	msgbox StarridgeCity_Gym_Sign_Hint3_Text_0
-# 118 "data/maps/StarridgeCity_Gym/scripts.pory"
+# 169 "data/maps/StarridgeCity_Gym/scripts.pory"
 	release
 	return
 
 
 StarridgeCity_Gym_Sign_Hint4::
-# 122 "data/maps/StarridgeCity_Gym/scripts.pory"
+# 173 "data/maps/StarridgeCity_Gym/scripts.pory"
 	lock
-# 123 "data/maps/StarridgeCity_Gym/scripts.pory"
+# 174 "data/maps/StarridgeCity_Gym/scripts.pory"
 	msgbox StarridgeCity_Gym_Sign_Hint4_Text_0
-# 124 "data/maps/StarridgeCity_Gym/scripts.pory"
+# 175 "data/maps/StarridgeCity_Gym/scripts.pory"
 	release
 	return
 
 
 StarridgeCity_Gym_EventScript_LassBetty::
-# 129 "data/maps/StarridgeCity_Gym/scripts.pory"
+# 180 "data/maps/StarridgeCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_BETTY, StarridgeCity_Gym_Text_BettyIntro, StarridgeCity_Gym_Text_BettyDefeat
-# 130 "data/maps/StarridgeCity_Gym/scripts.pory"
+# 181 "data/maps/StarridgeCity_Gym/scripts.pory"
 	msgbox StarridgeCity_Gym_Text_BettyPostBattle, MSGBOX_AUTOCLOSE
 	return
 
 
 StarridgeCity_Gym_EventScript_BeautyHelen::
-# 146 "data/maps/StarridgeCity_Gym/scripts.pory"
+# 199 "data/maps/StarridgeCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_HELEN, StarridgeCity_Gym_Text_HelenIntro, StarridgeCity_Gym_Text_HelenDefeat
-# 147 "data/maps/StarridgeCity_Gym/scripts.pory"
+# 200 "data/maps/StarridgeCity_Gym/scripts.pory"
 	msgbox StarridgeCity_Gym_Text_HelenPostBattle, MSGBOX_AUTOCLOSE
 	return
 
 
 StarridgeCity_Gym_EventScript_AceTrainerFiona::
-# 163 "data/maps/StarridgeCity_Gym/scripts.pory"
+# 218 "data/maps/StarridgeCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_FIONA, StarridgeCity_Gym_Text_FionaIntro, StarridgeCity_Gym_Text_FionaDefeat
-# 164 "data/maps/StarridgeCity_Gym/scripts.pory"
+# 219 "data/maps/StarridgeCity_Gym/scripts.pory"
 	msgbox StarridgeCity_Gym_Text_FionaPostBattle, MSGBOX_AUTOCLOSE
 	return
 
@@ -144,22 +175,22 @@ StarridgeCity_Gym_EventScript_Melody_Text_0:
 	.string "Melody$"
 
 StarridgeCity_Gym_Sign_Hint1_Text_0:
-# 105 "data/maps/StarridgeCity_Gym/scripts.pory"
+# 156 "data/maps/StarridgeCity_Gym/scripts.pory"
 	.string "Fairies love the morning light.\n"
 	.string "Go where it's bright.$"
 
 StarridgeCity_Gym_Sign_Hint2_Text_0:
-# 111 "data/maps/StarridgeCity_Gym/scripts.pory"
+# 162 "data/maps/StarridgeCity_Gym/scripts.pory"
 	.string "At dusk, fairies dance in the twilight.\n"
 	.string "Choose the soft light.$"
 
 StarridgeCity_Gym_Sign_Hint3_Text_0:
-# 117 "data/maps/StarridgeCity_Gym/scripts.pory"
+# 168 "data/maps/StarridgeCity_Gym/scripts.pory"
 	.string "Fairies follow the golden rays.\n"
 	.string "Pick the sunny way.$"
 
 StarridgeCity_Gym_Sign_Hint4_Text_0:
-# 123 "data/maps/StarridgeCity_Gym/scripts.pory"
+# 174 "data/maps/StarridgeCity_Gym/scripts.pory"
 	.string "Fairies love the moonlight.\n"
 	.string "Go where it's dark.$"
 
@@ -215,7 +246,7 @@ StarridgeCity_Gym_Text_ReceivedGlintBadge::
 
 StarridgeCity_Gym_Text_GlintBadgeInfo::
 # 74 "data/maps/StarridgeCity_Gym/scripts.pory"
-	.string "With this badge, Pokémon up to Level 30\n"
+	.string "With this badge, Pokémon up to Level 40\n"
 	.string "will obey you.\p"
 	.string "You can also use the HM move Cut\n"
 	.string "outside of battle.\p"
@@ -230,38 +261,85 @@ StarridgeCity_Gym_Text_ExplainDrainingKiss::
 	.string "It's totally adorable, right? I hope you\n"
 	.string "like it!$"
 
+StarridgeCity_Gym_Text_GymGuideYouWon::
+# 124 "data/maps/StarridgeCity_Gym/scripts.pory"
+	.string "You won?\n"
+	.string "I knew you could do it, champ!\p"
+	.string "You sent Melody and her Pokémon crying!\n"
+	.string "Literally!\p"
+	.string "You're on your way to becoming a real\n"
+	.string "champ!\p"
+	.string "Keep it up, kid!$"
+
+StarridgeCity_Gym_Text_GymGuide::
+# 132 "data/maps/StarridgeCity_Gym/scripts.pory"
+	.string "Yo! Champion-to-be!\n"
+	.string "It's me, Gyde!\p"
+	.string "I'm here to guide you through the\n"
+	.string "Starridge City Gym!\p"
+	.string "This Gym specializes in Fairy-type\n"
+	.string "Pokémon!\p"
+	.string "Fairy-types are weak to Poison and\n"
+	.string "Steel-type moves, so keep that in mind!\p"
+	.string "Bringing along a Fire-type Pokémon\n"
+	.string "wouldn't hurt either since they resist\l"
+	.string "Fairy-type moves!\p"
+	.string "The Gym is a bit of a maze, but don't\n"
+	.string "worry!\p"
+	.string "Each room has a sign that gives you a\n"
+	.string "hint on which path to take!\p"
+	.string "Just follow the signs, and you'll reach\n"
+	.string "the Gym Leader in no time!\p"
+	.string "Break a leg, champ!$"
+
+StarridgeCity_Gym_Text_GymGuideYouLookNervous::
+# 145 "data/maps/StarridgeCity_Gym/scripts.pory"
+	.string "You look nervous!\n"
+	.string "Don't worry, I got your back! Drink this\l"
+	.string "Soda Pop to calm your nerves!$"
+
 StarridgeCity_Gym_Text_BettyIntro::
-# 133 "data/maps/StarridgeCity_Gym/scripts.pory"
-	.string "PLACEHOLDER$"
+# 184 "data/maps/StarridgeCity_Gym/scripts.pory"
+	.string "Oops! Looks like you took a wrong turn!\n"
+	.string "Ready for a dazzling battle?$"
 
 StarridgeCity_Gym_Text_BettyDefeat::
-# 137 "data/maps/StarridgeCity_Gym/scripts.pory"
-	.string "PLACEHOLDER$"
+# 190 "data/maps/StarridgeCity_Gym/scripts.pory"
+	.string "Wow, you've got some dazzling moves!$"
 
 StarridgeCity_Gym_Text_BettyPostBattle::
-# 141 "data/maps/StarridgeCity_Gym/scripts.pory"
-	.string "PLACEHOLDER$"
+# 194 "data/maps/StarridgeCity_Gym/scripts.pory"
+	.string "You didn't take the right path, but hey,\n"
+	.string "battling me was totally worth it, right?$"
 
 StarridgeCity_Gym_Text_HelenIntro::
-# 150 "data/maps/StarridgeCity_Gym/scripts.pory"
-	.string "PLACEHOLDER$"
+# 203 "data/maps/StarridgeCity_Gym/scripts.pory"
+	.string "Did you lose your way, kid?\n"
+	.string "Don't worry, I'll guide you to the right\l"
+	.string "path!$"
 
 StarridgeCity_Gym_Text_HelenDefeat::
-# 154 "data/maps/StarridgeCity_Gym/scripts.pory"
-	.string "PLACEHOLDER$"
+# 207 "data/maps/StarridgeCity_Gym/scripts.pory"
+	.string "You sure have a knack for this!\p"
+	.string "Oh, I meant battling, not your sense of\n"
+	.string "direction!$"
 
 StarridgeCity_Gym_Text_HelenPostBattle::
-# 158 "data/maps/StarridgeCity_Gym/scripts.pory"
-	.string "PLACEHOLDER$"
+# 213 "data/maps/StarridgeCity_Gym/scripts.pory"
+	.string "You're wrong, but you're getting closer\n"
+	.string "to the end!$"
 
 StarridgeCity_Gym_Text_FionaIntro::
-# 167 "data/maps/StarridgeCity_Gym/scripts.pory"
-	.string "PLACEHOLDER$"
+# 222 "data/maps/StarridgeCity_Gym/scripts.pory"
+	.string "Small hallways like these make me panic!\p"
+	.string "But I'm not afraid of a battle$"
 
 StarridgeCity_Gym_Text_FionaDefeat::
-# 171 "data/maps/StarridgeCity_Gym/scripts.pory"
-	.string "PLACEHOLDER$"
+# 227 "data/maps/StarridgeCity_Gym/scripts.pory"
+	.string "If it makes you feel better, I'm lost\n"
+	.string "too!$"
 
 StarridgeCity_Gym_Text_FionaPostBattle::
-# 175 "data/maps/StarridgeCity_Gym/scripts.pory"
-	.string "PLACEHOLDER$"
+# 231 "data/maps/StarridgeCity_Gym/scripts.pory"
+	.string "The Gym Leader is so close, I can feel\n"
+	.string "it!$"

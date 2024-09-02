@@ -370,7 +370,7 @@ BaycrestCity_Gym_Text_NotAChallenger::
 BaycrestCity_Gym_Text_GymGuide1::
 # 152 "data/maps/BaycrestCity_Gym/scripts.pory"
 	.string "Yo!\n"
-	.string "Champ in the making!\p"
+	.string "Champion-to-be!\p"
 	.string "This is your first gym, right?\n"
 	.string "How could I tell?\p"
 	.string "Well, you look like a total newbie!\p"
@@ -497,7 +497,7 @@ BaycrestCity_Gym_Text_ReceivedFoundationBadge::
 BaycrestCity_Gym_Text_FoundationBadgeInfo::
 # 311 "data/maps/BaycrestCity_Gym/scripts.pory"
 	.string "With this badge, Pokémon of up to level\n"
-	.string "20 will be easier to catch and will\l"
+	.string "30 will be easier to catch and will\l"
 	.string "listen to your commands!\p"
 	.string "Plus, you can use the HM move Rock\n"
 	.string "Smash outside of battle!\p"

@@ -99,6 +99,57 @@ text StarridgeCity_Gym_Text_ExplainDrainingKiss {
             )
 }
 
+//Gym Guide
+script StarridgeCity_Gym_EventScript_GymGuide {
+    lock
+    faceplayer
+    if(flag(FLAG_DEFEATED_STARRIDGE_GYM))
+    {
+        msgbox(StarridgeCity_Gym_Text_GymGuideYouWon)
+    }
+    else
+    {
+        msgbox(StarridgeCity_Gym_Text_GymGuide)
+        if(!flag(FLAG_RECEIVED_SODA_POP_STARRIDGE_GYM))
+        {
+            msgbox(StarridgeCity_Gym_Text_GymGuideYouLookNervous)
+            giveitem(ITEM_SODA_POP)
+            setflag(FLAG_RECEIVED_SODA_POP_STARRIDGE_GYM)
+            
+        }
+    }
+    release
+}
+
+text StarridgeCity_Gym_Text_GymGuideYouWon {
+    format( "You won?\nI knew you could do it, champ!\p"
+            "You sent Melody and her Pokémon crying! Literally!\p"
+            "You're on your way to becoming a real champ!\p"
+            "Keep it up, kid!"
+            )
+}
+
+text StarridgeCity_Gym_Text_GymGuide {
+    format( "Yo! Champion-to-be!\nIt's me, Gyde!\p"
+            "I'm here to guide you through the Starridge City Gym!\p"
+            "This Gym specializes in Fairy-type Pokémon!\p"
+            "Fairy-types are weak to Poison and Steel-type moves, so keep that in mind!\p"
+            "Bringing along a Fire-type Pokémon wouldn't hurt either since they resist Fairy-type moves!\p"
+            "The Gym is a bit of a maze, but don't worry!\p"
+            "Each room has a sign that gives you a hint on which path to take!\p"
+            "Just follow the signs, and you'll reach the Gym Leader in no time!\p"
+            "Break a leg, champ!"
+            )
+}
+
+text StarridgeCity_Gym_Text_GymGuideYouLookNervous {
+    format("You look nervous!\nDon't worry, I got your back!"
+            "Drink this Soda Pop to calm your nerves!"
+            )
+}
+
+
+
 //Hints
 script StarridgeCity_Gym_Sign_Hint1 {
     lock
@@ -131,15 +182,17 @@ script StarridgeCity_Gym_EventScript_LassBetty {
 }
 
 text StarridgeCity_Gym_Text_BettyIntro {
-    format("PLACEHOLDER")
+    format( "Oops! Looks like you took a wrong turn!"
+            "Ready for a dazzling battle?"
+            )
 }
 
 text StarridgeCity_Gym_Text_BettyDefeat {
-    format("PLACEHOLDER")
+    format("Wow, you've got some dazzling moves!")
 }
 
 text StarridgeCity_Gym_Text_BettyPostBattle {
-    format("PLACEHOLDER")
+    format("You didn't take the right path, but hey, battling me was totally worth it, right?")
 }
 
 script StarridgeCity_Gym_EventScript_BeautyHelen {
@@ -148,15 +201,17 @@ script StarridgeCity_Gym_EventScript_BeautyHelen {
 }
 
 text StarridgeCity_Gym_Text_HelenIntro {
-    format("PLACEHOLDER")
+    format("Did you lose your way, kid?\nDon't worry, I'll guide you to the right path!")
 }
 
 text StarridgeCity_Gym_Text_HelenDefeat {
-    format("PLACEHOLDER")
+    format( "You sure have a knack for this!\p"
+            "Oh, I meant battling, not your sense of direction!"
+            )
 }
 
 text StarridgeCity_Gym_Text_HelenPostBattle {
-    format("PLACEHOLDER")
+    format("You're wrong, but you're getting closer to the end!")
 }
 
 script StarridgeCity_Gym_EventScript_AceTrainerFiona {
@@ -165,13 +220,14 @@ script StarridgeCity_Gym_EventScript_AceTrainerFiona {
 }
 
 text StarridgeCity_Gym_Text_FionaIntro {
-    format("PLACEHOLDER")
+    format("Small hallways like these make me panic!\p"
+            "But I'm not afraid of a battle")
 }
 
 text StarridgeCity_Gym_Text_FionaDefeat {
-    format("PLACEHOLDER")
+    format("If it makes you feel better, I'm lost too!")
 }
 
 text StarridgeCity_Gym_Text_FionaPostBattle {
-    format("PLACEHOLDER")
+    format("The Gym Leader is so close, I can feel it!")
 }
