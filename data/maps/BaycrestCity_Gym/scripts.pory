@@ -309,7 +309,7 @@ text BaycrestCity_Gym_Text_ReceivedFoundationBadge {
 }
 
 text BaycrestCity_Gym_Text_FoundationBadgeInfo {
-    format( "With this badge, Pokémon of up to level 20 will be easier to catch and will listen to your commands!\p"
+    format( "With this badge, Pokémon of up to level 30 will be easier to catch and will listen to your commands!\p"
             "Plus, you can use the HM move Rock Smash outside of battle!\p"
             "One more thing!\nTake this TM as a reward for your victory!"
     )

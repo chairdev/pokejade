@@ -72,7 +72,7 @@ text StarridgeCity_Gym_Text_ReceivedGlintBadge {
 }
 
 text StarridgeCity_Gym_Text_GlintBadgeInfo {
-    format("With this badge, Pokémon up to Level 30 will obey you.\p"
+    format("With this badge, Pokémon up to Level 40 will obey you.\p"
             "You can also use the HM move Cut outside of battle.\p"
             "And, um... I want to give you this TM.\nYou know, as a thanks!"
             )
