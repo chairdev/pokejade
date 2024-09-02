@@ -5,24 +5,34 @@ script StarridgeCity_MelodysHouse_Jasmine {
     faceplayer
 
     speakername("Jasmine")
-    if(!flag(VAR_TEMP_0))
+    if(!flag(FLAG_DEFEATED_JASMINE_STARRIDGE))
     {
-        msgbox(StarridgeCity_MelodysHouse_Text_Jasmine1)
-        setflag(VAR_TEMP_0)
-    }
-    msgbox(StarridgeCity_MelodysHouse_Text_JasmineAskForBattle, MSGBOX_YESNO)
+        if(!flag(VAR_TEMP_0))
+        {
+            msgbox(StarridgeCity_MelodysHouse_Text_Jasmine1)
+            setflag(VAR_TEMP_0)
+        }
+        msgbox(StarridgeCity_MelodysHouse_Text_JasmineAskForBattle, MSGBOX_YESNO)
 
-    if(var(VAR_RESULT) == YES)
-    {
-        msgbox(StarridgeCity_MelodysHouse_Text_JasmineAcceptToBattle)
-        closemessage
-        trainerbattle_no_intro(TRAINER_JASMINE, StarridgeCity_MelodysHouse_Text_JasmineDefeat)
-        speakername("Jasmine")
-        msgbox(StarridgeCity_MelodysHouse_Text_JasminePostBattle)
+        if(var(VAR_RESULT) == YES)
+        {
+            msgbox(StarridgeCity_MelodysHouse_Text_JasmineAcceptToBattle)
+            closemessage
+            trainerbattle_no_intro(TRAINER_JASMINE, StarridgeCity_MelodysHouse_Text_JasmineDefeat)
+            speakername("Jasmine")
+            msgbox(StarridgeCity_MelodysHouse_Text_JasminePostBattle)
+            setflag(FLAG_DEFEATED_JASMINE_STARRIDGE)
+        }
+        else
+        {
+            msgbox(StarridgeCity_MelodysHouse_Text_JasmineDeclineToBattle)
+        }
+
     }
     else
     {
-        msgbox(StarridgeCity_MelodysHouse_Text_JasmineDeclineToBattle)
+        speakername("Jasmine")
+        msgbox(StarridgeCity_MelodysHouse_Text_JasminePostBattle)
     }
 
     closemessage

@@ -467,7 +467,7 @@ RustboroCity_Movement_EmployeeApproachPlayerFar:
 RustboroCity_EventScript_DevonEmployee1::
 	lock
 	faceplayer
-	goto_if_set FLAG_RECOVERED_DEVON_GOODS, RustboroCity_EventScript_ReturnGoodsSpokeToEmployee
+	goto_if_set FLAG_DEFEATED_JASMINE_STARRIDGE, RustboroCity_EventScript_ReturnGoodsSpokeToEmployee
 	msgbox RustboroCity_Text_ShadyCharacterTookOffTowardsTunnel, MSGBOX_DEFAULT
 	release
 	end
