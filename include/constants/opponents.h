@@ -630,7 +630,7 @@
 #define TRAINER_JAMES_4                     624
 #define TRAINER_JAMES_5                     625
 #define TRAINER_GARY                       626
-#define TRAINER_TRENT_1                     627
+#define TRAINER_DENNIS_1                     627
 #define TRAINER_LENNY                       628
 #define TRAINER_LUCAS_1                     629
 #define TRAINER_ALAN                        630
@@ -657,7 +657,7 @@
 #define TRAINER_HIDEO                       651
 #define TRAINER_KEIGO                       652
 #define TRAINER_RILEY                       653
-#define TRAINER_FLINT                       654
+#define TRAINER_PATRICK                       654
 #define TRAINER_ASHLEY                      655
 #define TRAINER_DIO_ROUTE_503              656
 #define TRAINER_WALLY_VR_2                  657

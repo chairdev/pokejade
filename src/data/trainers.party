@@ -11515,8 +11515,8 @@ Nacli
 Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_TRENT_1 ===
-Name: TRENT
+=== TRAINER_DENNIS_1 ===
+Name: Dennis
 Class: Hiker
 Pic: Hiker
 Gender: Male
@@ -11525,15 +11525,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Geodude
-Level: 16
+Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Geodude
-Level: 17
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Geodude
-Level: 16
+Naclstack
+Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LENNY ===
@@ -12045,8 +12041,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Sludge
 - Smokescreen
 
-=== TRAINER_FLINT ===
-Name: FLINT
+=== TRAINER_PATRICK ===
+Name: Patrick
 Class: Camper
 Pic: Camper
 Gender: Male
@@ -12054,13 +12050,13 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Swellow
-Level: 29
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Tranquill
+Level: 23
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Xatu
-Level: 29
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Litleo
+Level: 22
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ASHLEY ===
 Name: ASHLEY
