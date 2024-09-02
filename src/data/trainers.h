@@ -16733,7 +16733,7 @@ F_TRAINER_FEMALE |
 #line 6747
             .ability = ABILITY_ANALYTIC,
 #line 6748
-            .lvl = 20,
+            .lvl = 22,
 #line 6749
             .nature = NATURE_RELAXED,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -16758,7 +16758,7 @@ F_TRAINER_FEMALE |
 #line 6757
             .ability = ABILITY_STURDY,
 #line 6758
-            .lvl = 22,
+            .lvl = 24,
 #line 6760
             .nature = NATURE_BRAVE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
