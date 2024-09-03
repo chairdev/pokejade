@@ -1694,9 +1694,9 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_TRANQUILL] =
     {
         .baseHP        = 62,
-        .baseAttack    = 77,
+        .baseAttack    = 77+10,
         .baseDefense   = 62,
-        .baseSpeed     = 65,
+        .baseSpeed     = 65+10,
         .baseSpAttack  = 50,
         .baseSpDefense = 42,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
@@ -1757,7 +1757,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseHP        = 80,
         .baseAttack    = P_UPDATED_STATS >= GEN_6 ? 115 : 105,
         .baseDefense   = 80,
-        .baseSpeed     = 93,
+        .baseSpeed     = 93+10,
         .baseSpAttack  = 65,
         .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
