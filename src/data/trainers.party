@@ -2274,8 +2274,8 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Odor Sleuth
 - Sand Attack
 
-=== TRAINER_MELISSA ===
-Name: MELISSA
+=== TRAINER_HELEN ===
+Name: Helen
 Class: Beauty
 Pic: Beauty
 Gender: Female
@@ -2283,9 +2283,11 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Marill
+Azumarill
 Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
 
 === TRAINER_SHEILA ===
 Name: SHEILA
@@ -4784,11 +4786,11 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Name: Geo
 Class: Leader
 Pic: Leader Brawly
-Gender: Female
+Gender: Male
 Music: Female
 Items: Potion / Potion
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Setup First Turn / Ace Pokemon
+AI: Check Bad Move / Check Viability / Try To Faint / Setup First Turn / Ace Pokemon
 
 Wooper @ Rindo Berry  
 Level: 12
@@ -4817,39 +4819,46 @@ IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 - Mud-Slap  
 - Sand Tomb
 
-=== TRAINER_BRAWLY_1 ===
-Name: BRAWLY
+=== TRAINER_MELODY_1 ===
+Name: Melody
 Class: Leader
-Pic: Leader Brawly
-Gender: Male
-Music: Male
+Pic: Leader Flannery
+Gender: Female
+Music: Female
 Items: Super Potion / Super Potion
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Setup First Turn / Ace Pokemon
 
-Machop
-Level: 16
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Karate Chop
-- Low Kick
-- Seismic Toss
-- Bulk Up
+Granbull @ Red Card  
+Ability: Intimidate  
+Level: 23   
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe   
+Brave Nature  
+- Draining Kiss  
+- Headbutt  
+- Lick  
+- Fire Fang  
 
-Meditite
-Level: 16
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Focus Punch
-- Light Screen
-- Reflect
-- Bulk Up
+Togetic @ Pixie Plate  
+Ability: Super Luck
+Level: 24  
+IVs: 20 HP / 20 Atk / 20 Def / 19 SpA / 20 SpD / 20 Spe  
+Modest Nature  
+- Draining Kiss  
+- Metronome  
+- Sweet Kiss  
+- Hidden Power
 
-Makuhita @ Sitrus Berry
-Level: 19
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Arm Thrust
-- Vital Throw
-- Reversal
-- Bulk Up
+Sylveon @ Kebia Berry  
+Ability: Cute Charm  
+Level: 25 
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
+EVs: 252 HP
+Quiet Nature  
+- Draining Kiss  
+- Baby-Doll Eyes  
+- Quick Attack  
+- Swift
 
 === TRAINER_WATTSON_1 ===
 Name: WATTSON
@@ -5129,11 +5138,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Dottler
-Level: 21
+Level: 20
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 Pineco
-Level: 20
+Level: 19
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_TED ===
@@ -6725,25 +6734,35 @@ Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JASMINE ===
-Name: JASMINE
-Class: Triathlete
-Pic: Cycling Triathlete F
+Name: Jasmine
+Class: Rival
+Pic: Jasmine
 Gender: Female
 Music: Female
+Items: Potion / Potion / Hyper Potion
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Check Viability / Try To Faint / Setup First Turn / Ace Pokemon
 
-Magnemite
-Level: 14
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+Magnemite @ Air Balloon  
+Ability: Analytic  
+Level: 22
+Relaxed Nature
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe  
+- Charge Beam  
+- Gyro Ball  
+- Sonic Boom  
+- Thunder Wave
 
-Magnemite
-Level: 14
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
-
-Voltorb
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Steelix @ Steel Gem  
+Ability: Sturdy  
+Level: 24
+EVs: 252 HP
+Brave Nature  
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe  
+- Gyro Ball  
+- Bulldoze  
+- Iron Tail  
+- Ice Fang
 
 === TRAINER_ABIGAIL_2 ===
 Name: ABIGAIL
@@ -11124,7 +11143,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Azumarill
-Level: 19
+Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_VIVI ===
@@ -11220,8 +11239,8 @@ Breloom
 Level: 34
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_SALLY ===
-Name: SALLY
+=== TRAINER_BETTY ===
+Name: Betty
 Class: Lass
 Pic: Lass
 Gender: Female
@@ -11229,8 +11248,8 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Oddish
-Level: 16
+Jigglypuff
+Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROBIN ===
@@ -11311,15 +11330,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Scatterbug
-Level: 20
+Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Spewpa
-Level: 20
+Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 VIVILLON_ELEGANT
-Level: 18
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JOSE ===
@@ -11396,11 +11415,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Dewpider
-Level: 18
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Dwebble
-Level: 17
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JAMES_2 ===
@@ -11496,8 +11515,8 @@ Nacli
 Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_TRENT_1 ===
-Name: TRENT
+=== TRAINER_DENNIS_1 ===
+Name: Dennis
 Class: Hiker
 Pic: Hiker
 Gender: Male
@@ -11506,15 +11525,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Geodude
-Level: 16
+Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Geodude
-Level: 17
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Geodude
-Level: 16
+Naclstack
+Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LENNY ===
@@ -12026,8 +12041,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Sludge
 - Smokescreen
 
-=== TRAINER_FLINT ===
-Name: FLINT
+=== TRAINER_PATRICK ===
+Name: Patrick
 Class: Camper
 Pic: Camper
 Gender: Male
@@ -12035,13 +12050,13 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Swellow
-Level: 29
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Tranquill
+Level: 23
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Xatu
-Level: 29
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Litleo
+Level: 22
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ASHLEY ===
 Name: ASHLEY
@@ -13701,8 +13716,8 @@ Tentacool
 Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_AIKOINA ===
-Name: CAROLINA
+=== TRAINER_FIONA ===
+Name: Fiona
 Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Female
@@ -13711,17 +13726,9 @@ Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Manectric
-Level: 24
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
-Swellow
-Level: 24
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
-Manectric
-Level: 24
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Granbull
+Level: 23
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_ELIJAH ===
 Name: ELIJAH

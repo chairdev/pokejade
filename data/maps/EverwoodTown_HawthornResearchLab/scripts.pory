@@ -147,7 +147,7 @@ text ReceiveStarter_RivalText2 {
 
 text ReceiveStarter_HawthorneText6 {
     format("You two must first register for the Toshou League at the Pokémon Center.\p"
-            "The nearest one is in Baycrest City, past Route 501."
+            "The nearest one is in Baycrest City, past Route 301."
            )
 }
 

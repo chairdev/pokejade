@@ -176,17 +176,19 @@ Route503_MeetDio_4:
 	speakername Route503_Trigger_MeetDio1_Text_2
 # 146 "data/maps/Route503/scripts.pory"
 	msgbox Route503_Text_MeetDio_Rival5
-# 148 "data/maps/Route503/scripts.pory"
-	applymovement 9, Route503_RivalLeave
+# 147 "data/maps/Route503/scripts.pory"
+	closemessage
 # 149 "data/maps/Route503/scripts.pory"
-	waitmovement 0
+	applymovement 9, Route503_RivalLeave
 # 150 "data/maps/Route503/scripts.pory"
+	waitmovement 0
+# 151 "data/maps/Route503/scripts.pory"
 	removeobject 9
-# 152 "data/maps/Route503/scripts.pory"
-	setvar VAR_ROUTE503_STATE, 1
 # 153 "data/maps/Route503/scripts.pory"
+	setvar VAR_ROUTE503_STATE, 1
+# 154 "data/maps/Route503/scripts.pory"
 	setflag FLAG_ROUTE_503_METDIO
-# 155 "data/maps/Route503/scripts.pory"
+# 156 "data/maps/Route503/scripts.pory"
 	releaseall
 	return
 
@@ -218,444 +220,446 @@ Route503_MeetDio_11:
 	goto Route503_MeetDio_1
 
 
-# 158 "data/maps/Route503/scripts.pory"
-Route503_Movement_PlayerFaceDown:
 # 159 "data/maps/Route503/scripts.pory"
+Route503_Movement_PlayerFaceDown:
+# 160 "data/maps/Route503/scripts.pory"
 	walk_in_place_faster_down
 	step_end
 
-# 162 "data/maps/Route503/scripts.pory"
-Route503_RivalFaceUp:
 # 163 "data/maps/Route503/scripts.pory"
+Route503_RivalFaceUp:
+# 164 "data/maps/Route503/scripts.pory"
 	walk_in_place_faster_up
 	step_end
 
-# 166 "data/maps/Route503/scripts.pory"
-Route503_RivalFaceRight:
 # 167 "data/maps/Route503/scripts.pory"
+Route503_RivalFaceRight:
+# 168 "data/maps/Route503/scripts.pory"
 	walk_in_place_faster_right
 	step_end
 
-# 170 "data/maps/Route503/scripts.pory"
-Route503_DioStepBack:
 # 171 "data/maps/Route503/scripts.pory"
-	lock_facing_direction
+Route503_DioStepBack:
 # 172 "data/maps/Route503/scripts.pory"
-	walk_right
+	lock_facing_direction
 # 173 "data/maps/Route503/scripts.pory"
+	walk_right
+# 174 "data/maps/Route503/scripts.pory"
 	unlock_facing_direction
 	step_end
 
-# 176 "data/maps/Route503/scripts.pory"
-Route503_DioLeave:
 # 177 "data/maps/Route503/scripts.pory"
+Route503_DioLeave:
+# 178 "data/maps/Route503/scripts.pory"
 	walk_left
-# 178 "data/maps/Route503/scripts.pory"
+# 179 "data/maps/Route503/scripts.pory"
 	walk_up
-# 178 "data/maps/Route503/scripts.pory"
+# 179 "data/maps/Route503/scripts.pory"
 	walk_up
-# 178 "data/maps/Route503/scripts.pory"
+# 179 "data/maps/Route503/scripts.pory"
 	walk_up
-# 178 "data/maps/Route503/scripts.pory"
+# 179 "data/maps/Route503/scripts.pory"
 	walk_up
-# 178 "data/maps/Route503/scripts.pory"
+# 179 "data/maps/Route503/scripts.pory"
 	walk_up
-# 178 "data/maps/Route503/scripts.pory"
+# 179 "data/maps/Route503/scripts.pory"
 	walk_up
 	step_end
 
-# 181 "data/maps/Route503/scripts.pory"
+# 182 "data/maps/Route503/scripts.pory"
 Route503_RivalLeave:
-# 182 "data/maps/Route503/scripts.pory"
-	walk_right
-# 182 "data/maps/Route503/scripts.pory"
-	walk_right
-# 182 "data/maps/Route503/scripts.pory"
-	walk_right
-# 182 "data/maps/Route503/scripts.pory"
-	walk_right
-# 182 "data/maps/Route503/scripts.pory"
-	walk_right
-# 182 "data/maps/Route503/scripts.pory"
-	walk_right
-# 182 "data/maps/Route503/scripts.pory"
+# 183 "data/maps/Route503/scripts.pory"
 	walk_right
 # 183 "data/maps/Route503/scripts.pory"
+	walk_right
+# 183 "data/maps/Route503/scripts.pory"
+	walk_right
+# 183 "data/maps/Route503/scripts.pory"
+	walk_right
+# 183 "data/maps/Route503/scripts.pory"
+	walk_right
+# 183 "data/maps/Route503/scripts.pory"
+	walk_right
+# 183 "data/maps/Route503/scripts.pory"
+	walk_right
+# 184 "data/maps/Route503/scripts.pory"
 	walk_down
-# 183 "data/maps/Route503/scripts.pory"
+# 184 "data/maps/Route503/scripts.pory"
 	walk_down
-# 183 "data/maps/Route503/scripts.pory"
+# 184 "data/maps/Route503/scripts.pory"
 	walk_down
-# 183 "data/maps/Route503/scripts.pory"
+# 184 "data/maps/Route503/scripts.pory"
 	walk_down
 	step_end
 
 Route503_Trigger_GetPokeNav1::
-# 249 "data/maps/Route503/scripts.pory"
-	lockall
 # 250 "data/maps/Route503/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Route503_Movement_PlayerFaceDown
+	lockall
 # 251 "data/maps/Route503/scripts.pory"
-	clearflag FLAG_HIDE_ROUTE_503_MOM_DELCATTY
-# 253 "data/maps/Route503/scripts.pory"
-	playmoncry SPECIES_DELCATTY, CRY_MODE_NORMAL
-# 254 "data/maps/Route503/scripts.pory"
-	msgbox Route503_Trigger_GetPokeNav1_Text_0
-# 255 "data/maps/Route503/scripts.pory"
-	waitmoncry
-# 256 "data/maps/Route503/scripts.pory"
-	closemessage
-# 258 "data/maps/Route503/scripts.pory"
-	addobject 15, MAP_ROUTE503
-# 259 "data/maps/Route503/scripts.pory"
-	addobject 16, MAP_ROUTE503
-# 260 "data/maps/Route503/scripts.pory"
-	applymovement 16, Route503_Movement_DelcattyApproachPlayer1
-# 261 "data/maps/Route503/scripts.pory"
-	waitmovement 0
-# 262 "data/maps/Route503/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Route503_Movement_FaceLeft
-# 264 "data/maps/Route503/scripts.pory"
-	speakername Route503_Trigger_MeetDio1_Text_0
-# 265 "data/maps/Route503/scripts.pory"
-	msgbox Route503_Trigger_GetPokeNav1_Text_1
-# 266 "data/maps/Route503/scripts.pory"
-	closemessage
-# 268 "data/maps/Route503/scripts.pory"
-	playbgm MUS_FOLLOW_ME, FALSE
-# 270 "data/maps/Route503/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Route503_Movement_PlayerFaceDown
-# 271 "data/maps/Route503/scripts.pory"
-	applymovement 15, Route503_Movement_MomApproachPlayer1
-# 272 "data/maps/Route503/scripts.pory"
+# 252 "data/maps/Route503/scripts.pory"
+	clearflag FLAG_HIDE_ROUTE_503_MOM_DELCATTY
+# 254 "data/maps/Route503/scripts.pory"
+	playmoncry SPECIES_DELCATTY, CRY_MODE_NORMAL
+# 255 "data/maps/Route503/scripts.pory"
+	msgbox Route503_Trigger_GetPokeNav1_Text_0
+# 256 "data/maps/Route503/scripts.pory"
+	waitmoncry
+# 257 "data/maps/Route503/scripts.pory"
+	closemessage
+# 259 "data/maps/Route503/scripts.pory"
+	addobject 15, MAP_ROUTE503
+# 260 "data/maps/Route503/scripts.pory"
+	addobject 16, MAP_ROUTE503
+# 261 "data/maps/Route503/scripts.pory"
+	applymovement 16, Route503_Movement_DelcattyApproachPlayer1
+# 262 "data/maps/Route503/scripts.pory"
 	waitmovement 0
-# 274 "data/maps/Route503/scripts.pory"
+# 263 "data/maps/Route503/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route503_Movement_FaceLeft
+# 265 "data/maps/Route503/scripts.pory"
+	speakername Route503_Trigger_MeetDio1_Text_0
+# 266 "data/maps/Route503/scripts.pory"
+	msgbox Route503_Trigger_GetPokeNav1_Text_1
+# 267 "data/maps/Route503/scripts.pory"
+	closemessage
+# 269 "data/maps/Route503/scripts.pory"
+	playbgm MUS_FOLLOW_ME, FALSE
+# 271 "data/maps/Route503/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route503_Movement_PlayerFaceDown
+# 272 "data/maps/Route503/scripts.pory"
+	applymovement 15, Route503_Movement_MomApproachPlayer1
+# 273 "data/maps/Route503/scripts.pory"
+	waitmovement 0
+# 275 "data/maps/Route503/scripts.pory"
 	goto Route503_GetPokeNav
 	return
 
 
 Route503_Trigger_GetPokeNav2::
-# 278 "data/maps/Route503/scripts.pory"
-	lockall
 # 279 "data/maps/Route503/scripts.pory"
+	lockall
+# 280 "data/maps/Route503/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Route503_Movement_PlayerFaceDown
-# 281 "data/maps/Route503/scripts.pory"
-	playmoncry SPECIES_DELCATTY, CRY_MODE_NORMAL
 # 282 "data/maps/Route503/scripts.pory"
-	msgbox Route503_Trigger_GetPokeNav1_Text_0
+	playmoncry SPECIES_DELCATTY, CRY_MODE_NORMAL
 # 283 "data/maps/Route503/scripts.pory"
-	waitmoncry
+	msgbox Route503_Trigger_GetPokeNav1_Text_0
 # 284 "data/maps/Route503/scripts.pory"
+	waitmoncry
+# 285 "data/maps/Route503/scripts.pory"
 	closemessage
-# 286 "data/maps/Route503/scripts.pory"
-	addobject 15, MAP_ROUTE503
 # 287 "data/maps/Route503/scripts.pory"
-	addobject 16, MAP_ROUTE503
+	addobject 15, MAP_ROUTE503
 # 288 "data/maps/Route503/scripts.pory"
-	applymovement 16, Route503_Movement_DelcattyApproachPlayer2
+	addobject 16, MAP_ROUTE503
 # 289 "data/maps/Route503/scripts.pory"
-	waitmovement 0
+	applymovement 16, Route503_Movement_DelcattyApproachPlayer2
 # 290 "data/maps/Route503/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Route503_Movement_FaceLeft
-# 292 "data/maps/Route503/scripts.pory"
-	speakername Route503_Trigger_MeetDio1_Text_0
-# 293 "data/maps/Route503/scripts.pory"
-	msgbox Route503_Trigger_GetPokeNav1_Text_1
-# 294 "data/maps/Route503/scripts.pory"
-	closemessage
-# 296 "data/maps/Route503/scripts.pory"
-	playbgm MUS_FOLLOW_ME, FALSE
-# 298 "data/maps/Route503/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Route503_Movement_PlayerFaceDown
-# 299 "data/maps/Route503/scripts.pory"
-	applymovement 15, Route503_Movement_MomApproachPlayer2
-# 300 "data/maps/Route503/scripts.pory"
 	waitmovement 0
-# 302 "data/maps/Route503/scripts.pory"
+# 291 "data/maps/Route503/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route503_Movement_FaceLeft
+# 293 "data/maps/Route503/scripts.pory"
+	speakername Route503_Trigger_MeetDio1_Text_0
+# 294 "data/maps/Route503/scripts.pory"
+	msgbox Route503_Trigger_GetPokeNav1_Text_1
+# 295 "data/maps/Route503/scripts.pory"
+	closemessage
+# 297 "data/maps/Route503/scripts.pory"
+	playbgm MUS_FOLLOW_ME, FALSE
+# 299 "data/maps/Route503/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route503_Movement_PlayerFaceDown
+# 300 "data/maps/Route503/scripts.pory"
+	applymovement 15, Route503_Movement_MomApproachPlayer2
+# 301 "data/maps/Route503/scripts.pory"
+	waitmovement 0
+# 303 "data/maps/Route503/scripts.pory"
 	goto Route503_GetPokeNav
 	return
 
 
 Route503_GetPokeNav::
-# 306 "data/maps/Route503/scripts.pory"
-	speakername Route503_GetPokeNav_Text_0
 # 307 "data/maps/Route503/scripts.pory"
-	msgbox Route503_Text_GetPokeNav_Mom1
+	speakername Route503_GetPokeNav_Text_0
 # 308 "data/maps/Route503/scripts.pory"
+	msgbox Route503_Text_GetPokeNav_Mom1
+# 309 "data/maps/Route503/scripts.pory"
 	closemessage
-# 310 "data/maps/Route503/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
 # 311 "data/maps/Route503/scripts.pory"
-	msgbox Route503_GetPokeNav_Text_1
+	playfanfare MUS_OBTAIN_ITEM
 # 312 "data/maps/Route503/scripts.pory"
-	waitfanfare
+	msgbox Route503_GetPokeNav_Text_1
 # 313 "data/maps/Route503/scripts.pory"
-	setflag FLAG_SYS_POKENAV_GET
-# 314 "data/maps/Route503/scripts.pory"
-	setflag FLAG_ADDED_MATCH_CALL_TO_POKENAV
-# 315 "data/maps/Route503/scripts.pory"
-	setflag FLAG_HAS_MATCH_CALL
-# 317 "data/maps/Route503/scripts.pory"
-	speakername Route503_GetPokeNav_Text_0
-# 318 "data/maps/Route503/scripts.pory"
-	msgbox Route503_Text_GetPokeNav_Mom2
-# 319 "data/maps/Route503/scripts.pory"
-	closemessage
-# 321 "data/maps/Route503/scripts.pory"
-	delay 30
-# 322 "data/maps/Route503/scripts.pory"
-	playfanfare MUS_REGISTER_MATCH_CALL
-# 323 "data/maps/Route503/scripts.pory"
-	msgbox Route503_GetPokeNav_Text_2
-# 324 "data/maps/Route503/scripts.pory"
 	waitfanfare
-# 325 "data/maps/Route503/scripts.pory"
-	closemessage
-# 326 "data/maps/Route503/scripts.pory"
-	delay 30
-# 327 "data/maps/Route503/scripts.pory"
-	setflag FLAG_ENABLE_MOM_MATCH_CALL
-# 329 "data/maps/Route503/scripts.pory"
+# 314 "data/maps/Route503/scripts.pory"
+	setflag FLAG_SYS_POKENAV_GET
+# 315 "data/maps/Route503/scripts.pory"
+	setflag FLAG_ADDED_MATCH_CALL_TO_POKENAV
+# 316 "data/maps/Route503/scripts.pory"
+	setflag FLAG_HAS_MATCH_CALL
+# 318 "data/maps/Route503/scripts.pory"
 	speakername Route503_GetPokeNav_Text_0
+# 319 "data/maps/Route503/scripts.pory"
+	msgbox Route503_Text_GetPokeNav_Mom2
+# 320 "data/maps/Route503/scripts.pory"
+	closemessage
+# 322 "data/maps/Route503/scripts.pory"
+	delay 30
+# 323 "data/maps/Route503/scripts.pory"
+	playfanfare MUS_REGISTER_MATCH_CALL
+# 324 "data/maps/Route503/scripts.pory"
+	msgbox Route503_GetPokeNav_Text_2
+# 325 "data/maps/Route503/scripts.pory"
+	waitfanfare
+# 326 "data/maps/Route503/scripts.pory"
+	closemessage
+# 327 "data/maps/Route503/scripts.pory"
+	delay 30
+# 328 "data/maps/Route503/scripts.pory"
+	setflag FLAG_ENABLE_MOM_MATCH_CALL
 # 330 "data/maps/Route503/scripts.pory"
+	speakername Route503_GetPokeNav_Text_0
+# 331 "data/maps/Route503/scripts.pory"
 	msgbox Route503_Text_GetPokeNav_Mom3
 # 332 "data/maps/Route503/scripts.pory"
-	setvar VAR_ROUTE503_STATE, 2
+	closemessage
 # 334 "data/maps/Route503/scripts.pory"
-	fadedefaultbgm
-# 335 "data/maps/Route503/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	setvar VAR_ROUTE503_STATE, 2
 # 336 "data/maps/Route503/scripts.pory"
-	removeobject 15
+	fadedefaultbgm
 # 337 "data/maps/Route503/scripts.pory"
-	removeobject 16
+	fadescreen FADE_TO_BLACK
 # 338 "data/maps/Route503/scripts.pory"
-	setflag FLAG_HIDE_ROUTE_503_MOM_DELCATTY
+	removeobject 15
 # 339 "data/maps/Route503/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	removeobject 16
+# 340 "data/maps/Route503/scripts.pory"
+	setflag FLAG_HIDE_ROUTE_503_MOM_DELCATTY
 # 341 "data/maps/Route503/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 343 "data/maps/Route503/scripts.pory"
 	releaseall
 	return
 
 
-# 344 "data/maps/Route503/scripts.pory"
+# 346 "data/maps/Route503/scripts.pory"
 Route503_Movement_FaceLeft:
-# 345 "data/maps/Route503/scripts.pory"
+# 347 "data/maps/Route503/scripts.pory"
 	walk_in_place_faster_left
 	step_end
 
-# 348 "data/maps/Route503/scripts.pory"
+# 350 "data/maps/Route503/scripts.pory"
 Route503_Movement_DelcattyApproachPlayer1:
-# 349 "data/maps/Route503/scripts.pory"
-	walk_fast_right
-# 349 "data/maps/Route503/scripts.pory"
-	walk_fast_right
-# 349 "data/maps/Route503/scripts.pory"
-	walk_fast_right
-# 349 "data/maps/Route503/scripts.pory"
-	walk_fast_right
-# 349 "data/maps/Route503/scripts.pory"
-	walk_fast_right
-# 349 "data/maps/Route503/scripts.pory"
-	walk_fast_right
-# 349 "data/maps/Route503/scripts.pory"
-	walk_fast_right
-# 350 "data/maps/Route503/scripts.pory"
-	walk_fast_up
-# 350 "data/maps/Route503/scripts.pory"
-	walk_fast_up
-# 350 "data/maps/Route503/scripts.pory"
-	walk_fast_up
-# 350 "data/maps/Route503/scripts.pory"
-	walk_fast_up
-# 350 "data/maps/Route503/scripts.pory"
-	walk_fast_up
 # 351 "data/maps/Route503/scripts.pory"
+	walk_fast_right
+# 351 "data/maps/Route503/scripts.pory"
+	walk_fast_right
+# 351 "data/maps/Route503/scripts.pory"
+	walk_fast_right
+# 351 "data/maps/Route503/scripts.pory"
+	walk_fast_right
+# 351 "data/maps/Route503/scripts.pory"
+	walk_fast_right
+# 351 "data/maps/Route503/scripts.pory"
+	walk_fast_right
+# 351 "data/maps/Route503/scripts.pory"
+	walk_fast_right
+# 352 "data/maps/Route503/scripts.pory"
+	walk_fast_up
+# 352 "data/maps/Route503/scripts.pory"
+	walk_fast_up
+# 352 "data/maps/Route503/scripts.pory"
+	walk_fast_up
+# 352 "data/maps/Route503/scripts.pory"
+	walk_fast_up
+# 352 "data/maps/Route503/scripts.pory"
+	walk_fast_up
+# 353 "data/maps/Route503/scripts.pory"
 	walk_in_place_faster_down
 	step_end
 
-# 354 "data/maps/Route503/scripts.pory"
+# 356 "data/maps/Route503/scripts.pory"
 Route503_Movement_DelcattyApproachPlayer2:
-# 355 "data/maps/Route503/scripts.pory"
-	walk_fast_right
-# 355 "data/maps/Route503/scripts.pory"
-	walk_fast_right
-# 355 "data/maps/Route503/scripts.pory"
-	walk_fast_right
-# 355 "data/maps/Route503/scripts.pory"
-	walk_fast_right
-# 355 "data/maps/Route503/scripts.pory"
-	walk_fast_right
-# 355 "data/maps/Route503/scripts.pory"
-	walk_fast_right
-# 355 "data/maps/Route503/scripts.pory"
-	walk_fast_right
-# 355 "data/maps/Route503/scripts.pory"
-	walk_fast_right
-# 356 "data/maps/Route503/scripts.pory"
-	walk_fast_up
-# 356 "data/maps/Route503/scripts.pory"
-	walk_fast_up
-# 356 "data/maps/Route503/scripts.pory"
-	walk_fast_up
-# 356 "data/maps/Route503/scripts.pory"
-	walk_fast_up
-# 356 "data/maps/Route503/scripts.pory"
-	walk_fast_up
 # 357 "data/maps/Route503/scripts.pory"
+	walk_fast_right
+# 357 "data/maps/Route503/scripts.pory"
+	walk_fast_right
+# 357 "data/maps/Route503/scripts.pory"
+	walk_fast_right
+# 357 "data/maps/Route503/scripts.pory"
+	walk_fast_right
+# 357 "data/maps/Route503/scripts.pory"
+	walk_fast_right
+# 357 "data/maps/Route503/scripts.pory"
+	walk_fast_right
+# 357 "data/maps/Route503/scripts.pory"
+	walk_fast_right
+# 357 "data/maps/Route503/scripts.pory"
+	walk_fast_right
+# 358 "data/maps/Route503/scripts.pory"
+	walk_fast_up
+# 358 "data/maps/Route503/scripts.pory"
+	walk_fast_up
+# 358 "data/maps/Route503/scripts.pory"
+	walk_fast_up
+# 358 "data/maps/Route503/scripts.pory"
+	walk_fast_up
+# 358 "data/maps/Route503/scripts.pory"
+	walk_fast_up
+# 359 "data/maps/Route503/scripts.pory"
 	walk_in_place_faster_down
 	step_end
 
-# 360 "data/maps/Route503/scripts.pory"
+# 362 "data/maps/Route503/scripts.pory"
 Route503_Movement_MomApproachPlayer1:
-# 361 "data/maps/Route503/scripts.pory"
+# 363 "data/maps/Route503/scripts.pory"
 	walk_right
-# 361 "data/maps/Route503/scripts.pory"
+# 363 "data/maps/Route503/scripts.pory"
 	walk_right
-# 361 "data/maps/Route503/scripts.pory"
+# 363 "data/maps/Route503/scripts.pory"
 	walk_right
-# 361 "data/maps/Route503/scripts.pory"
+# 363 "data/maps/Route503/scripts.pory"
 	walk_right
-# 361 "data/maps/Route503/scripts.pory"
+# 363 "data/maps/Route503/scripts.pory"
 	walk_right
-# 361 "data/maps/Route503/scripts.pory"
+# 363 "data/maps/Route503/scripts.pory"
 	walk_right
-# 361 "data/maps/Route503/scripts.pory"
+# 363 "data/maps/Route503/scripts.pory"
 	walk_right
-# 361 "data/maps/Route503/scripts.pory"
+# 363 "data/maps/Route503/scripts.pory"
 	walk_right
-# 362 "data/maps/Route503/scripts.pory"
+# 364 "data/maps/Route503/scripts.pory"
 	walk_fast_up
-# 362 "data/maps/Route503/scripts.pory"
+# 364 "data/maps/Route503/scripts.pory"
 	walk_fast_up
-# 362 "data/maps/Route503/scripts.pory"
+# 364 "data/maps/Route503/scripts.pory"
 	walk_fast_up
-# 362 "data/maps/Route503/scripts.pory"
+# 364 "data/maps/Route503/scripts.pory"
 	walk_fast_up
 	step_end
 
-# 365 "data/maps/Route503/scripts.pory"
+# 367 "data/maps/Route503/scripts.pory"
 Route503_Movement_MomApproachPlayer2:
-# 366 "data/maps/Route503/scripts.pory"
+# 368 "data/maps/Route503/scripts.pory"
 	walk_right
-# 366 "data/maps/Route503/scripts.pory"
+# 368 "data/maps/Route503/scripts.pory"
 	walk_right
-# 366 "data/maps/Route503/scripts.pory"
+# 368 "data/maps/Route503/scripts.pory"
 	walk_right
-# 366 "data/maps/Route503/scripts.pory"
+# 368 "data/maps/Route503/scripts.pory"
 	walk_right
-# 366 "data/maps/Route503/scripts.pory"
+# 368 "data/maps/Route503/scripts.pory"
 	walk_right
-# 366 "data/maps/Route503/scripts.pory"
+# 368 "data/maps/Route503/scripts.pory"
 	walk_right
-# 366 "data/maps/Route503/scripts.pory"
+# 368 "data/maps/Route503/scripts.pory"
 	walk_right
-# 366 "data/maps/Route503/scripts.pory"
+# 368 "data/maps/Route503/scripts.pory"
 	walk_right
-# 366 "data/maps/Route503/scripts.pory"
+# 368 "data/maps/Route503/scripts.pory"
 	walk_right
-# 367 "data/maps/Route503/scripts.pory"
+# 369 "data/maps/Route503/scripts.pory"
 	walk_up
-# 367 "data/maps/Route503/scripts.pory"
+# 369 "data/maps/Route503/scripts.pory"
 	walk_up
-# 367 "data/maps/Route503/scripts.pory"
+# 369 "data/maps/Route503/scripts.pory"
 	walk_up
-# 367 "data/maps/Route503/scripts.pory"
+# 369 "data/maps/Route503/scripts.pory"
 	walk_up
 	step_end
 
 Route503_EventScript_NurseryLady::
-# 396 "data/maps/Route503/scripts.pory"
-	lock
-# 397 "data/maps/Route503/scripts.pory"
-	faceplayer
 # 398 "data/maps/Route503/scripts.pory"
-	msgbox Route503_Text_NurseryLady
+	lock
 # 399 "data/maps/Route503/scripts.pory"
+	faceplayer
+# 400 "data/maps/Route503/scripts.pory"
+	msgbox Route503_Text_NurseryLady
+# 401 "data/maps/Route503/scripts.pory"
 	release
 	return
 
 
 Route503_EventScript_Toxel::
-# 412 "data/maps/Route503/scripts.pory"
-	lock
-# 413 "data/maps/Route503/scripts.pory"
-	faceplayer
 # 414 "data/maps/Route503/scripts.pory"
-	playmoncry SPECIES_TOXEL, CRY_MODE_NORMAL
+	lock
 # 415 "data/maps/Route503/scripts.pory"
-	msgbox Route503_EventScript_Toxel_Text_0
+	faceplayer
 # 416 "data/maps/Route503/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_TOXEL, CRY_MODE_NORMAL
 # 417 "data/maps/Route503/scripts.pory"
+	msgbox Route503_EventScript_Toxel_Text_0
+# 418 "data/maps/Route503/scripts.pory"
+	waitmoncry
+# 419 "data/maps/Route503/scripts.pory"
 	release
 	return
 
 
 Route503_EventScript_Pichu::
-# 421 "data/maps/Route503/scripts.pory"
-	lock
-# 422 "data/maps/Route503/scripts.pory"
-	faceplayer
 # 423 "data/maps/Route503/scripts.pory"
-	playmoncry SPECIES_PICHU, CRY_MODE_NORMAL
+	lock
 # 424 "data/maps/Route503/scripts.pory"
-	msgbox Route503_EventScript_Pichu_Text_0
+	faceplayer
 # 425 "data/maps/Route503/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_PICHU, CRY_MODE_NORMAL
 # 426 "data/maps/Route503/scripts.pory"
+	msgbox Route503_EventScript_Pichu_Text_0
+# 427 "data/maps/Route503/scripts.pory"
+	waitmoncry
+# 428 "data/maps/Route503/scripts.pory"
 	release
 	return
 
 
 Route503_EventScript_FatGuy::
-# 430 "data/maps/Route503/scripts.pory"
-	lock
-# 431 "data/maps/Route503/scripts.pory"
-	faceplayer
 # 432 "data/maps/Route503/scripts.pory"
-	msgbox Route503_Text_FatGuy
+	lock
 # 433 "data/maps/Route503/scripts.pory"
+	faceplayer
+# 434 "data/maps/Route503/scripts.pory"
+	msgbox Route503_Text_FatGuy
+# 435 "data/maps/Route503/scripts.pory"
 	release
 	return
 
 
 Route503_EventScript_CamperAndrew::
-# 445 "data/maps/Route503/scripts.pory"
-	trainerbattle_single TRAINER_ANDREW, Route503_Text_CamperAndrewIntro, Route503_Text_CamperAndrewDefeated
-# 446 "data/maps/Route503/scripts.pory"
-	msgbox Route503_Text_CamperAndrewPostBattle, MSGBOX_AUTOCLOSE
 # 447 "data/maps/Route503/scripts.pory"
+	trainerbattle_single TRAINER_ANDREW, Route503_Text_CamperAndrewIntro, Route503_Text_CamperAndrewDefeated
+# 448 "data/maps/Route503/scripts.pory"
+	msgbox Route503_Text_CamperAndrewPostBattle, MSGBOX_AUTOCLOSE
+# 449 "data/maps/Route503/scripts.pory"
 	waitmessage
 	end
 
 
 Route503_EventScript_YoungsterEric::
-# 464 "data/maps/Route503/scripts.pory"
-	trainerbattle_single TRAINER_ERIC, Route503_Text_YoungsterEricIntro, Route503_Text_YoungsterEricDefeated
-# 465 "data/maps/Route503/scripts.pory"
-	msgbox Route503_Text_YoungsterEricPostBattle, MSGBOX_AUTOCLOSE
 # 466 "data/maps/Route503/scripts.pory"
+	trainerbattle_single TRAINER_ERIC, Route503_Text_YoungsterEricIntro, Route503_Text_YoungsterEricDefeated
+# 467 "data/maps/Route503/scripts.pory"
+	msgbox Route503_Text_YoungsterEricPostBattle, MSGBOX_AUTOCLOSE
+# 468 "data/maps/Route503/scripts.pory"
 	waitmessage
 	end
 
 
 Route503_EventScript_PicnickerMargaret::
-# 483 "data/maps/Route503/scripts.pory"
-	trainerbattle_single TRAINER_MARGARET, Route503_Text_PicnickerMargaretIntro, Route503_Text_PicnickerMargaretDefeated
-# 484 "data/maps/Route503/scripts.pory"
-	msgbox Route503_Text_PicnickerMargaretPostBattle, MSGBOX_AUTOCLOSE
 # 485 "data/maps/Route503/scripts.pory"
+	trainerbattle_single TRAINER_MARGARET, Route503_Text_PicnickerMargaretIntro, Route503_Text_PicnickerMargaretDefeated
+# 486 "data/maps/Route503/scripts.pory"
+	msgbox Route503_Text_PicnickerMargaretPostBattle, MSGBOX_AUTOCLOSE
+# 487 "data/maps/Route503/scripts.pory"
 	waitmessage
 	end
 
 
 Route503_EventScript_RichboyCarl::
-# 502 "data/maps/Route503/scripts.pory"
-	trainerbattle_single TRAINER_CARL_1, Route503_Text_RichboyCarlIntro, Route503_Text_RichboyCarlDefeated
-# 503 "data/maps/Route503/scripts.pory"
-	msgbox Route503_Text_RichboyCarlPostBattle, MSGBOX_AUTOCLOSE
 # 504 "data/maps/Route503/scripts.pory"
+	trainerbattle_single TRAINER_CARL_1, Route503_Text_RichboyCarlIntro, Route503_Text_RichboyCarlDefeated
+# 505 "data/maps/Route503/scripts.pory"
+	msgbox Route503_Text_RichboyCarlPostBattle, MSGBOX_AUTOCLOSE
+# 506 "data/maps/Route503/scripts.pory"
 	waitmessage
 	end
 
@@ -690,35 +694,35 @@ Route503_MeetDio_Text_2:
 	.string "Out of my way, stupid Sudowoodo!$"
 
 Route503_Trigger_GetPokeNav1_Text_0:
-# 254 "data/maps/Route503/scripts.pory"
+# 255 "data/maps/Route503/scripts.pory"
 	.string "Mrow!$"
 
 Route503_Trigger_GetPokeNav1_Text_1:
-# 265 "data/maps/Route503/scripts.pory"
+# 266 "data/maps/Route503/scripts.pory"
 	.string "{PLAYER}! Wait... up!$"
 
 Route503_GetPokeNav_Text_0:
-# 306 "data/maps/Route503/scripts.pory"
+# 307 "data/maps/Route503/scripts.pory"
 	.string "Mom$"
 
 Route503_GetPokeNav_Text_1:
-# 311 "data/maps/Route503/scripts.pory"
+# 312 "data/maps/Route503/scripts.pory"
 	.string "You received the PokéNav!$"
 
 Route503_GetPokeNav_Text_2:
-# 323 "data/maps/Route503/scripts.pory"
+# 324 "data/maps/Route503/scripts.pory"
 	.string "Registered Mom in the PokéNav!$"
 
 Route503_EventScript_Toxel_Text_0:
-# 415 "data/maps/Route503/scripts.pory"
+# 417 "data/maps/Route503/scripts.pory"
 	.string "Ssson!$"
 
 Route503_EventScript_Pichu_Text_0:
-# 424 "data/maps/Route503/scripts.pory"
+# 426 "data/maps/Route503/scripts.pory"
 	.string "Pichuuu!$"
 
 Route503_Text_MeetDio_Rival1::
-# 186 "data/maps/Route503/scripts.pory"
+# 187 "data/maps/Route503/scripts.pory"
 	.string "Oh, it's you, {PLAYER}!\n"
 	.string "I'm glad you're here!\p"
 	.string "Listen, I was busy working on my\n"
@@ -730,7 +734,7 @@ Route503_Text_MeetDio_Rival1::
 	.string "beat him!$"
 
 Route503_Text_MeetDio_Dio1::
-# 196 "data/maps/Route503/scripts.pory"
+# 197 "data/maps/Route503/scripts.pory"
 	.string "That's because you're weak!\n"
 	.string "Weak trainers like you need to just give\l"
 	.string "up and go home!\p"
@@ -739,7 +743,7 @@ Route503_Text_MeetDio_Dio1::
 	.string "beautiful, powerful trainer!$"
 
 Route503_Text_MeetDio_Rival2::
-# 203 "data/maps/Route503/scripts.pory"
+# 204 "data/maps/Route503/scripts.pory"
 	.string "Gah! You're so annoying!\n"
 	.string "You know what? I'm going to make you\l"
 	.string "pay for this!\p"
@@ -748,13 +752,13 @@ Route503_Text_MeetDio_Rival2::
 	.string "$"
 
 Route503_Text_MeetDio_Rival3::
-# 209 "data/maps/Route503/scripts.pory"
+# 210 "data/maps/Route503/scripts.pory"
 	.string "What's that, {PLAYER}?\n"
 	.string "I can't hear you!\p"
 	.string "You're going to battle him, right?$"
 
 Route503_Text_MeetDio_Dio2::
-# 214 "data/maps/Route503/scripts.pory"
+# 215 "data/maps/Route503/scripts.pory"
 	.string "Hmph! You think you can beat me?\p"
 	.string "You don't look AS weak as your friend,\n"
 	.string "but you're still no match for me!\p"
@@ -762,12 +766,12 @@ Route503_Text_MeetDio_Dio2::
 	.string "capable of!$"
 
 Route503_Text_DioDefeated::
-# 221 "data/maps/Route503/scripts.pory"
+# 222 "data/maps/Route503/scripts.pory"
 	.string "What? How could I lose to a weakling\n"
 	.string "like you?$"
 
 Route503_Text_MeetDio_Dio3::
-# 225 "data/maps/Route503/scripts.pory"
+# 226 "data/maps/Route503/scripts.pory"
 	.string "These Pokémon are all useless!\n"
 	.string "Useless, I tell you!\p"
 	.string "I need to find more powerful Pokémon to\n"
@@ -777,7 +781,7 @@ Route503_Text_MeetDio_Dio3::
 	.string "can be!$"
 
 Route503_Text_MeetDio_Rival4::
-# 232 "data/maps/Route503/scripts.pory"
+# 233 "data/maps/Route503/scripts.pory"
 	.string "...What a jerk!\n"
 	.string "I can't believe I lost to him!\p"
 	.string "Did you see how he treated his Pokémon?\n"
@@ -793,14 +797,14 @@ Route503_Text_MeetDio_Rival4::
 	.string "it! I'm sure you'll put it to good use!$"
 
 Route503_Text_MeetDio_Rival5::
-# 242 "data/maps/Route503/scripts.pory"
+# 243 "data/maps/Route503/scripts.pory"
 	.string "OK! That's enough chit-chat!\n"
 	.string "Let's get back to training!\p"
 	.string "I'll see you later, {PLAYER}! Let's\n"
 	.string "battle again soon!$"
 
 Route503_Text_GetPokeNav_Mom1::
-# 370 "data/maps/Route503/scripts.pory"
+# 372 "data/maps/Route503/scripts.pory"
 	.string "{PLAYER}!\n"
 	.string "Thank goodness I caught you in time!\p"
 	.string "I knew you'd be heading into Kismet\n"
@@ -811,7 +815,7 @@ Route503_Text_GetPokeNav_Mom1::
 	.string "Navigator, or PokéNav for short!$"
 
 Route503_Text_GetPokeNav_Mom2::
-# 377 "data/maps/Route503/scripts.pory"
+# 379 "data/maps/Route503/scripts.pory"
 	.string "I ordered it straight from the Devon\n"
 	.string "Corporation in Hoenn!\p"
 	.string "It's a handy device that has a map, a\n"
@@ -826,7 +830,7 @@ Route503_Text_GetPokeNav_Mom2::
 	.string "need anything!$"
 
 Route503_Text_GetPokeNav_Mom3::
-# 386 "data/maps/Route503/scripts.pory"
+# 388 "data/maps/Route503/scripts.pory"
 	.string "{PLAYER}...\p"
 	.string "Be careful out there, okay? I know\n"
 	.string "you'll do great!\p"
@@ -835,7 +839,7 @@ Route503_Text_GetPokeNav_Mom3::
 	.string "you back home!$"
 
 Route503_Text_NurseryLady::
-# 402 "data/maps/Route503/scripts.pory"
+# 404 "data/maps/Route503/scripts.pory"
 	.string "I'm sorry for blocking the path, Toxel\n"
 	.string "and Pichu are having a playdate, and I\l"
 	.string "don't want to interrupt them!\p"
@@ -851,7 +855,7 @@ Route503_Text_NurseryLady::
 	.string "to come back here right away?$"
 
 Route503_Text_FatGuy::
-# 436 "data/maps/Route503/scripts.pory"
+# 438 "data/maps/Route503/scripts.pory"
 	.string "Every Route has one or two rare\n"
 	.string "Pokémon that are hard to find!\p"
 	.string "If you're patient and keep looking, you\n"
@@ -859,60 +863,60 @@ Route503_Text_FatGuy::
 	.string "$"
 
 Route503_Text_CamperAndrewIntro::
-# 451 "data/maps/Route503/scripts.pory"
+# 453 "data/maps/Route503/scripts.pory"
 	.string "I love camping out in the wild and\n"
 	.string "battling with my Pokémon!$"
 
 Route503_Text_CamperAndrewDefeated::
-# 455 "data/maps/Route503/scripts.pory"
+# 457 "data/maps/Route503/scripts.pory"
 	.string "Camping out in the wild is fun, but\n"
 	.string "battling with my Pokémon is even\l"
 	.string "better!$"
 
 Route503_Text_CamperAndrewPostBattle::
-# 459 "data/maps/Route503/scripts.pory"
+# 461 "data/maps/Route503/scripts.pory"
 	.string "Now to set up camp and relax for a bit!$"
 
 Route503_Text_YoungsterEricIntro::
-# 470 "data/maps/Route503/scripts.pory"
+# 472 "data/maps/Route503/scripts.pory"
 	.string "1, 2, 3! 1, 2, 3!\n"
 	.string "I can beat you in 1, 2, 3 moves!$"
 
 Route503_Text_YoungsterEricDefeated::
-# 474 "data/maps/Route503/scripts.pory"
+# 476 "data/maps/Route503/scripts.pory"
 	.string "1, 2, 3!\n"
 	.string "I lost in 1, 2, 3 moves!$"
 
 Route503_Text_YoungsterEricPostBattle::
-# 478 "data/maps/Route503/scripts.pory"
+# 480 "data/maps/Route503/scripts.pory"
 	.string "1, 2, 3! 1, 2, 3!\n"
 	.string "Need to focus!$"
 
 Route503_Text_PicnickerMargaretIntro::
-# 489 "data/maps/Route503/scripts.pory"
+# 491 "data/maps/Route503/scripts.pory"
 	.string "Argh! You're getting in the way of my\n"
 	.string "picnic!$"
 
 Route503_Text_PicnickerMargaretDefeated::
-# 493 "data/maps/Route503/scripts.pory"
+# 495 "data/maps/Route503/scripts.pory"
 	.string "Now my picnic is ruined...$"
 
 Route503_Text_PicnickerMargaretPostBattle::
-# 497 "data/maps/Route503/scripts.pory"
+# 499 "data/maps/Route503/scripts.pory"
 	.string "I'll just have to find a new spot for my\n"
 	.string "picnic!$"
 
 Route503_Text_RichboyCarlIntro::
-# 508 "data/maps/Route503/scripts.pory"
+# 510 "data/maps/Route503/scripts.pory"
 	.string "I love to come here and watch all the\n"
 	.string "poor people struggle to train their\l"
 	.string "Pokémon!$"
 
 Route503_Text_RichboyCarlDefeated::
-# 512 "data/maps/Route503/scripts.pory"
+# 514 "data/maps/Route503/scripts.pory"
 	.string "...Can I pay you to forget that ever\n"
 	.string "happened?$"
 
 Route503_Text_RichboyCarlPostBattle::
-# 516 "data/maps/Route503/scripts.pory"
+# 518 "data/maps/Route503/scripts.pory"
 	.string "I may have lost, but I'm still rich!$"

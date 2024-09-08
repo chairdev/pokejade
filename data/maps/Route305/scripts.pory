@@ -1,0 +1,14 @@
+mapscripts Route305_MapScripts {}
+
+script Route305_EventScript_MotivatingTrainer {
+    lock
+    faceplayer
+    msgbox(Route305_Text_MotivatingTrainer)
+    release
+}
+
+text Route305_Text_MotivatingTrainer {
+    format( "Everyone always looks so tired when they get here.\p"
+            "But they always perk up when they realize that Starridge City is just up ahead."
+    )
+}

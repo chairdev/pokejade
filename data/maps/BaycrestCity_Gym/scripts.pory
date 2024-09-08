@@ -137,11 +137,11 @@ script BaycrestCity_Gym_EventScript_GymGuide {
             msgbox(BaycrestCity_Gym_Text_GymGuide1)
         }
 
-        if(!flag(FLAG_RECEIVED_FRESH_WATER_BAYCREST_GYM))
+        if(!flag(FLAG_RECEIVED_SODA_POP_BAYCREST_GYM))
         {
             msgbox(BaycrestCity_Gym_Text_GymGuide2)
-            giveitem(ITEM_FRESH_WATER)
-            setflag(FLAG_RECEIVED_FRESH_WATER_BAYCREST_GYM)
+            giveitem(ITEM_SODA_POP)
+            setflag(FLAG_RECEIVED_SODA_POP_BAYCREST_GYM)
         }
 
         setflag(FLAG_TEMP_1)
@@ -150,10 +150,10 @@ script BaycrestCity_Gym_EventScript_GymGuide {
 }
 
 text BaycrestCity_Gym_Text_GymGuide1 { //ground gym, gym leader is a kid, but hes good.
-    format("Yo!\nChamp in the making!\p"
+    format("Yo!\nChampion-to-be!\p"
             "This is your first gym, right?\nHow could I tell?\p"
             "Well, you look like a total newbie!\p"
-            "But don't worry, I'm here to help!\p"
+            "But don't worry!\nMy name is Gyde, and I'm here to help!\p"
             "The trainers in this gym all use Ground-type Pokémon.\p"
             "That means Water, Grass, and Ice-type moves are super effective against them!\p"
             "But be careful!\nGround-types are immune to Electric-type moves!\p"
@@ -299,7 +299,7 @@ text BaycrestCity_Gym_Text_GeoDefeat {
 }
 
 text BaycrestCity_Gym_Text_GeoDefeated {
-    format( "Ahem!\nCongratulations, {PLAYER}-san!\p"
+    format( "Ahem!\nCongratulations, {PLAYER}!\p"
             "According to the official rules of the Pokémon League, once you defeat a Gym Leader, you will receive a badge as proof of your victory!\p"
             "That's right!\nThe Pokémon League's official Foundation Badge is yours!")
 }
@@ -309,7 +309,7 @@ text BaycrestCity_Gym_Text_ReceivedFoundationBadge {
 }
 
 text BaycrestCity_Gym_Text_FoundationBadgeInfo {
-    format( "With this badge, Pokémon of up to level 20 will be easier to catch and will listen to your commands!\p"
+    format( "With this badge, Pokémon of up to level 30 will be easier to catch and will listen to your commands!\p"
             "Plus, you can use the HM move Rock Smash outside of battle!\p"
             "One more thing!\nTake this TM as a reward for your victory!"
     )

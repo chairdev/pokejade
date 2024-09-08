@@ -1,5 +1,155 @@
+const OBJ_JASMINE = 8
+const OBJ_AMPHY = 9
+
+//Kismet Forest State
+//0 - Jasmine not met
+//1 - Jasmine met
+
 mapscripts KismetForest_MapScripts {}
+
 //Story Events
+script KismetForest_Trigger_Jasmine1 {
+    lockall
+
+    applymovement(OBJ_AMPHY, KismetForest_Movement_AmphyApproachPlayer1)
+    applymovement(OBJ_JASMINE, KismetForest_Movement_JasmineApproachPlayer1)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, KismetForest_Movement_FaceDownRight)
+    waitmovement(0)
+    
+    call(KismetForest_Jasmine)
+}
+
+script KismetForest_Trigger_Jasmine2 {
+    lockall
+
+    applymovement(OBJ_AMPHY, KismetForest_Movement_AmphyApproachPlayer2)
+    applymovement(OBJ_JASMINE, KismetForest_Movement_JasmineApproachPlayer2)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, KismetForest_Movement_FaceDownRight)
+    waitmovement(0)
+
+    call(KismetForest_Jasmine)
+}
+
+script KismetForest_Jasmine {
+
+    speakername("???")
+    msgbox("Oh... hello.\nI'm... I'm Jasmine.")
+    speakername("Jasmine")
+    msgbox(KismetForest_Text_Jasmine1)
+    closemessage
+
+    applymovement(OBJ_EVENT_ID_PLAYER, KismetForest_Movement_FaceDown)
+
+    playmoncry(SPECIES_AMPHAROS, CRY_MODE_NORMAL)
+    msgbox("Pharos!")
+    waitmoncry
+    closemessage
+
+    applymovement(OBJ_EVENT_ID_PLAYER, KismetForest_Movement_FaceRight)
+
+    speakername("Jasmine")
+    msgbox(KismetForest_Text_Jasmine2)
+    closemessage
+
+    giveitem(ITEM_TM_HIDDEN_POWER)
+
+    speakername("Jasmine")
+    msgbox(KismetForest_Text_Jasmine3)
+    closemessage
+
+    applymovement(OBJ_EVENT_ID_PLAYER, KismetForest_Movement_FaceDown)
+    applymovement(OBJ_AMPHY, KismetForest_Movement_FaceRight)
+
+    playmoncry(SPECIES_AMPHAROS, CRY_MODE_NORMAL)
+    msgbox("Amphaaa!")
+    waitmoncry
+    closemessage
+
+    fadescreen(FADE_TO_BLACK)
+    removeobject(OBJ_JASMINE)
+    removeobject(OBJ_AMPHY)
+    setflag(FLAG_RECEIVED_TM_HIDDEN_POWER)
+    setvar(VAR_KISMET_FOREST_STATE, 1)
+    playse(SE_EXIT)
+    waitse
+    applymovement(OBJ_EVENT_ID_PLAYER, KismetForest_Movement_FaceRight)
+    fadescreen(FADE_FROM_BLACK)
+
+    releaseall
+}
+
+movement KismetForest_Movement_JasmineApproachPlayer1 {
+    delay_16 * 4
+    walk_up * 4
+    walk_in_place_faster_left
+}
+
+movement KismetForest_Movement_JasmineApproachPlayer2 {
+    delay_16 * 4
+    walk_up * 3
+    walk_in_place_faster_left
+}
+
+movement KismetForest_Movement_AmphyApproachPlayer1 {
+    walk_up * 3
+    walk_left * 2
+    walk_in_place_faster_up
+    face_up
+}
+
+movement KismetForest_Movement_AmphyApproachPlayer2 {
+    walk_up * 4
+    walk_left * 2
+    walk_in_place_faster_up
+    face_up
+}
+
+movement KismetForest_Movement_FaceDownRight {
+    walk_in_place_faster_down
+    delay_16 * 2
+    walk_in_place_faster_right
+}
+
+movement KismetForest_Movement_FaceDown {
+    walk_in_place_faster_down
+}
+
+movement KismetForest_Movement_FaceRight {
+    walk_in_place_faster_right
+}
+
+text KismetForest_Text_Jasmine1 {
+    format( "I'm visiting from the Johto region.\p"
+            "I, um... I'm on vacation in Starridge Town.\p"
+            "It's... nice to get away and spend time in a place like this.\p"
+            "Right now, I'm just... exploring the Kismet Forest.\nIt's... it's so beautiful here."
+    )
+}
+
+text KismetForest_Text_Jasmine2 {
+    format( "This trainer reminds you of him, doesn't he, Amphy?\p"
+            "I'm sorry, I... I don't mean to be rude.\p"
+            "You... you remind me of someone.\nA boy I met 2 years ago in Johto...\p"
+            "He... became the Champion.\nHe was very kind... and had a strong bond with his Pokémon.\p"
+            "You... have that same look of determination in your eyes.\p"
+            "I... I'm sorry, I... I'm just rambling.\p"
+            "Can I... ask your name?\p"
+            "... ... ...\p"
+            "I see... {PLAYER}.\nIt's... nice to meet you.\p"
+            "{PLAYER},  I want to give you this.\nIt's, um... it's the TM for Hidden Power.\p"
+            "Johto is known for this move.\nIt's.. special."
+    )
+}
+
+text KismetForest_Text_Jasmine3 {
+    format( "It's a move that changes type depending on the Pokémon that uses it, so it truly reflects the user's inner strength.\p"
+            "I... I hope you find it useful.\nI think you'll go far... just like that boy.\p"
+            "I should get going now.\nI... hope we meet again, {PLAYER}.\nGoodbye."
+    )
+}
+
 
 //NPCs
 script KismetForest_EventScript_Boy {
@@ -24,15 +174,15 @@ script KismetForest_EventScript_BugCatcherRaymond {
 }
 
 text KismetForest_Text_RaymondIntro {
-    format("PLACEHOLDER")
+    format("I can't find a partner for a double battle.\nI'll just have to battle you by myself!")
 }
 
 text KismetForest_Text_RaymondDefeat {
-    format("PLACEHOLDER")
+    format("Not to sound like a sore loser, but... This definitely wouldn't have happened if I had a battle partner.")
 }
 
 text KismetForest_Text_RaymondPostBattle {
-    format("PLACEHOLDER")
+    format("Seriously though, I would've won if I had a partner.")
 }
 
 script KismetForest_EventScript_BugCatcherGregory {
@@ -58,15 +208,14 @@ script KismetForest_EventScript_LassDorothy {
 }
 
 text KismetForest_Text_DorothyIntro {
-    format("PLACEHOLDER")
+    format("Bugs are so icky and gross!\nI just want to get out of here!")
 }
-
 text KismetForest_Text_DorothyDefeat {
-    format("PLACEHOLDER")
+    format("Aiyee! Something just crawled on me!")
 }
 
 text KismetForest_Text_DorothyPostBattle {
-    format("PLACEHOLDER")
+    format("I'm never coming back to this forest again!")
 }
 
 script KismetForest_EventScript_PsychicJoshua {
@@ -75,15 +224,15 @@ script KismetForest_EventScript_PsychicJoshua {
 }
 
 text KismetForest_Text_JoshuaIntro {
-    format("PLACEHOLDER")
+    format("I can sense loss in the near future.")
 }
 
 text KismetForest_Text_JoshuaDefeat {
-    format("PLACEHOLDER")
+    format("I never said it was your loss.")
 }
 
 text KismetForest_Text_JoshuaPostBattle {
-    format("PLACEHOLDER")
+    format("Your win was inevitable.")
 }
 
 script KismetForest_EventScript_HexManiacLisa {
@@ -92,15 +241,15 @@ script KismetForest_EventScript_HexManiacLisa {
 }
 
 text KismetForest_Text_LisaIntro {
-    format("PLACEHOLDER")
+    format("I can see the spirits of the forest.")
 }
 
 text KismetForest_Text_LisaDefeat {
-    format("PLACEHOLDER")
+    format("They whisper to me that my resistance was futile.")
 }
 
 text KismetForest_Text_LisaPostBattle {
-    format("PLACEHOLDER")
+    format("The spirits have spoken.")
 }
 
 script KismetForest_EventScript_BugCatcherJerry {
@@ -109,13 +258,17 @@ script KismetForest_EventScript_BugCatcherJerry {
 }
 
 text KismetForest_Text_JerryIntro {
-    format("PLACEHOLDER")
+    format("Hi! I'm here to let you know that you're at the end of Kismet Forest!\p"
+            "And well, I'm here to battle you!")
 }
 
 text KismetForest_Text_JerryDefeat {
-    format("PLACEHOLDER")
+    format("I give you permission to pass!\n...Not that you needed it.")
 }
 
 text KismetForest_Text_JerryPostBattle {
-    format("PLACEHOLDER")
+    format("Is it morally wrong to gatekeep the exit of a forest?\p"
+            "Probably not!\nIs it fun?\p"
+            "Absolutely!"
+    )
 }

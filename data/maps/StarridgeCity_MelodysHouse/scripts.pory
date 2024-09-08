@@ -1,0 +1,133 @@
+mapscripts StarridgeCity_MelodysHouse_MapScripts {}
+
+script StarridgeCity_MelodysHouse_MelodysGrandma { //gives you the hm for cut if you beat melody
+    lock
+    faceplayer
+    if(flag(FLAG_BADGE02_GET))
+    {
+        if(!flag(FLAG_RECEIVED_HM_CUT))
+        {
+            msgbox(StarridgeCity_MelodysHouse_Text_MelodysGrandmaGiveCut)
+            giveitem(ITEM_HM_CUT)
+            setflag(FLAG_RECEIVED_HM_CUT)
+            msgbox(StarridgeCity_MelodysHouse_Text_MelodysGrandmaExplainCut)
+        }
+        else
+        {
+            msgbox(StarridgeCity_MelodysHouse_Text_MelodysGrandmaExplainCut)
+        }
+    }
+    else
+    {
+        msgbox(StarridgeCity_MelodysHouse_Text_MelodysGrandma)
+    }
+    release
+}
+
+text StarridgeCity_MelodysHouse_Text_MelodysGrandma {
+    format( "Oh, hello there.\nI'm Gym Leader Melody's grandmother.\p"
+            "I'm so proud of my granddaughter for becoming a Gym Leader here in Toshou.\p"
+            "She's... a bit of unsure of herself, but she's a very kind and caring person.\p"
+            "Not to mention, she's a very talented trainer.\p"
+            "I'm sure she'll do great things here in Starridge City."
+            )
+}
+
+text StarridgeCity_MelodysHouse_Text_MelodysGrandmaGiveCut {
+    format( "Oh, you've defeated Melody in battle?\nThat's wonderful!\p"
+            "I'm sure she's crying her eyes out right now.\p"
+            "...What? She's not? You say she's actually motivated to get stronger?\p"
+            "Oh, that's a relief.\nI was worried she'd give up after losing to multiple trainers.\p"
+            "Thank you for giving her the confidence to keep going.\p"
+            "I want to give you this as a token of my gratitude."
+            )
+}
+
+text StarridgeCity_MelodysHouse_Text_MelodysGrandmaExplainCut {
+    format( "What I gave you is the HM for Cut.\p"
+            "You can use it to cut down small trees blocking your path.\p"
+            "It's a very useful field move to have when you're out exploring."
+            )
+}
+
+script StarridgeCity_MelodysHouse_Jasmine {
+    lock
+    faceplayer
+
+    speakername("Jasmine")
+    if(!flag(FLAG_DEFEATED_JASMINE_STARRIDGE))
+    {
+        if(!flag(VAR_TEMP_0))
+        {
+            msgbox(StarridgeCity_MelodysHouse_Text_Jasmine1)
+            setflag(VAR_TEMP_0)
+        }
+        msgbox(StarridgeCity_MelodysHouse_Text_JasmineAskForBattle, MSGBOX_YESNO)
+
+        if(var(VAR_RESULT) == YES)
+        {
+            msgbox(StarridgeCity_MelodysHouse_Text_JasmineAcceptToBattle)
+            closemessage
+            trainerbattle_no_intro(TRAINER_JASMINE, StarridgeCity_MelodysHouse_Text_JasmineDefeat)
+            speakername("Jasmine")
+            msgbox(StarridgeCity_MelodysHouse_Text_JasminePostBattle)
+            setflag(FLAG_DEFEATED_JASMINE_STARRIDGE)
+        }
+        else
+        {
+            msgbox(StarridgeCity_MelodysHouse_Text_JasmineDeclineToBattle)
+        }
+
+    }
+    else
+    {
+        speakername("Jasmine")
+        msgbox(StarridgeCity_MelodysHouse_Text_JasminePostBattle)
+    }
+
+    closemessage
+    release
+}
+
+text StarridgeCity_MelodysHouse_Text_Jasmine1 { //she asks for a battle
+    format( "Oh... {PLAYER}, it's you.\nI'm... glad to see you again\p"
+            "I...didn't mention it before, but I'm actually the Gym Leader of Olivine City in the Johto region.\p"
+            "People call me... the “Steel-Clad Defense Girl.”\p"
+            "I come to Starridge Town often since Cianwood is so close by.\p"
+            "I've been spending some time here in Starridge Town because Melody... recently moved here from Johto to become the new Fairy-type Gym Leader.\p"
+            "Melody is a very talented trainer, but... taking on the role of a Gym Leader is a big responsibility and she's... a bit of a crybaby.\p"
+            "I've been helping her get settled in and giving her some advice.\p"
+            "It's... been nice, spending time here with her and her grandmother.\p"
+            "I... I'm sorry, I... I'm just rambling."
+            )
+}
+
+text StarridgeCity_MelodysHouse_Text_JasmineAskForBattle {
+    format( "I... I wanted to ask you something, {PLAYER}.\p"
+            "Would you... battle me?"
+            )
+}
+
+text StarridgeCity_MelodysHouse_Text_JasmineAcceptToBattle {
+    format( "Thank you, {PLAYER}.\nI... I appreciate it.\p"
+            "Let's... let's have a good battle."
+            )
+}
+
+text StarridgeCity_MelodysHouse_Text_JasmineDeclineToBattle {
+    format( "Oh... I see.\nI... I understand.\p"
+            "I... I hope we can battle another time."
+            )
+}
+
+text StarridgeCity_MelodysHouse_Text_JasmineDefeat {
+    format(  "You're... very strong.\nI... I'm impressed.\p"
+            "I... I'm glad I got to battle you.\nThank you, {PLAYER}."
+            )
+}
+
+text StarridgeCity_MelodysHouse_Text_JasminePostBattle {
+    format( "Your bond with your Pokémon is strong... and it shows in the way you battle.\p" 
+            "I... I hope we can battle again sometime."
+            )
+}

@@ -1,0 +1,36 @@
+mapscripts Route306_MapScripts {}
+
+//Trainers
+script Route306_EventScript_HikerDennis {
+    trainerbattle_single(TRAINER_DENNIS_1, Route306_Text_DennisIntro, Route306_Text_DennisDefeat)
+    msgbox(Route306_Text_DennisPostBattle, MSGBOX_AUTOCLOSE)
+}
+
+text Route306_Text_DennisIntro {
+    format("PLACEHOLDER")
+}
+
+text Route306_Text_DennisDefeat {
+    format("PLACEHOLDER")
+}
+
+text Route306_Text_DennisPostBattle {
+    format("PLACEHOLDER")
+}
+
+script Route306_EventScript_CamperPatrick {
+    trainerbattle_single(TRAINER_PATRICK, Route306_Text_PatrickIntro, Route306_Text_PatrickDefeat)
+    msgbox(Route306_Text_PatrickPostBattle, MSGBOX_AUTOCLOSE)
+}
+
+text Route306_Text_PatrickIntro {
+    format("PLACEHOLDER")
+}
+
+text Route306_Text_PatrickDefeat {
+    format("PLACEHOLDER")
+}
+
+text Route306_Text_PatrickPostBattle {
+    format("PLACEHOLDER")
+}

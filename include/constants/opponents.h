@@ -127,7 +127,7 @@
 #define TRAINER_CINDY_4                     121
 #define TRAINER_CINDY_5                     122
 #define TRAINER_CINDY_6                     123
-#define TRAINER_MELISSA                     124
+#define TRAINER_HELEN                     124
 #define TRAINER_SHEILA                      125
 #define TRAINER_SHIRLEY                     126
 #define TRAINER_JESSICA_1                   127
@@ -269,7 +269,7 @@
 #define TRAINER_GLACIA                      263
 #define TRAINER_DRAKE                       264
 #define TRAINER_GEO_1                   265
-#define TRAINER_BRAWLY_1                    266
+#define TRAINER_MELODY_1                    266
 #define TRAINER_WATTSON_1                   267
 #define TRAINER_FLANNERY_1                  268
 #define TRAINER_NORMAN_1                    269
@@ -614,7 +614,7 @@
 #define TRAINER_HALEY_3                     608
 #define TRAINER_HALEY_4                     609
 #define TRAINER_HALEY_5                     610
-#define TRAINER_SALLY                       611
+#define TRAINER_BETTY                       611
 #define TRAINER_ROBIN                       612
 #define TRAINER_ANDREA                      613
 #define TRAINER_CRISSY                      614
@@ -630,7 +630,7 @@
 #define TRAINER_JAMES_4                     624
 #define TRAINER_JAMES_5                     625
 #define TRAINER_GARY                       626
-#define TRAINER_TRENT_1                     627
+#define TRAINER_DENNIS_1                     627
 #define TRAINER_LENNY                       628
 #define TRAINER_LUCAS_1                     629
 #define TRAINER_ALAN                        630
@@ -657,7 +657,7 @@
 #define TRAINER_HIDEO                       651
 #define TRAINER_KEIGO                       652
 #define TRAINER_RILEY                       653
-#define TRAINER_FLINT                       654
+#define TRAINER_PATRICK                       654
 #define TRAINER_ASHLEY                      655
 #define TRAINER_DIO_ROUTE_503              656
 #define TRAINER_WALLY_VR_2                  657
@@ -744,7 +744,7 @@
 #define TRAINER_JOSUE                       738
 #define TRAINER_CAMRON                      739
 #define TRAINER_CORY_1                      740
-#define TRAINER_AIKOINA                    741
+#define TRAINER_FIONA                    741
 #define TRAINER_ELIJAH                      742
 #define TRAINER_CELIA                       743
 #define TRAINER_BRYAN                       744

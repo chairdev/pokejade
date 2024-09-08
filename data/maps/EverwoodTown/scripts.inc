@@ -437,7 +437,7 @@ DontGoIntoRouteText::
 # 51 "data/maps/EverwoodTown/scripts.pory"
 	.string "You can't go that way!\p"
 	.string "It's not safe to head out onto Route\n"
-	.string "501 without a Pokémon by your side.\p"
+	.string "301 without a Pokémon by your side.\p"
 	.string "Wild Pokémon might jump out at you, you\n"
 	.string "know!\p"
 	.string "You'll need a partner to help keep you\n"

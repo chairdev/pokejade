@@ -116,7 +116,20 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_RECEIVED_TM_HIDDEN_POWER"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(AMPHAROS)",
+      "x": 31,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "NULL",
+      "flag": "FLAG_RECEIVED_TM_HIDDEN_POWER"
     }
   ],
   "warp_events": [
@@ -133,10 +146,41 @@
       "elevation": 0,
       "dest_map": "MAP_ROUTE503",
       "dest_warp_id": "2"
+    },
+    {
+      "x": 30,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE305",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 31,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE305",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 29,
+      "y": 6,
+      "elevation": 0,
+      "var": "VAR_KISMET_FOREST_STATE",
+      "var_value": "0",
+      "script": "KismetForest_Trigger_Jasmine1"
+    },
+    {
+      "type": "trigger",
+      "x": 29,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_KISMET_FOREST_STATE",
+      "var_value": "0",
+      "script": "KismetForest_Trigger_Jasmine2"
+    }
   ],
   "bg_events": [
 

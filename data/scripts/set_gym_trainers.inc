@@ -56,7 +56,7 @@ PetalburgCity_Gym_SetGymTrainers::
 
 FortreeCity_Gym_SetGymTrainers::
 	settrainerflag TRAINER_JARED
-	settrainerflag TRAINER_FLINT
+	settrainerflag TRAINER_PATRICK
 	settrainerflag TRAINER_ASHLEY
 	settrainerflag TRAINER_EDWARDO
 	settrainerflag TRAINER_HUMBERTO

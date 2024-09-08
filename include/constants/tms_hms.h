@@ -9,7 +9,7 @@
     F(ROAR) \
     F(TOXIC) \
     F(HAIL) \
-    F(BULK_UP) \
+    F(DRAINING_KISS) \
     F(SWIFT) \
     F(HIDDEN_POWER) \
     F(SUNNY_DAY) \

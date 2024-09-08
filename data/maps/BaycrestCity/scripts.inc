@@ -471,7 +471,7 @@ BaycrestCity_Text_HelpfulGentleman::
 # 278 "data/maps/BaycrestCity/scripts.pory"
 	.string "If you're planning to challenge the\n"
 	.string "Baycrest City Gym, you should train on\l"
-	.string "Route 502 first!\p"
+	.string "Route 302 first!\p"
 	.string "There are a lot of Pokémon there that\n"
 	.string "can help you prepare for the Gym\l"
 	.string "Leader's team!$"

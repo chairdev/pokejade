@@ -4610,6 +4610,76 @@
       "secondary_tileset": "gTileset_PokemonFanClub",
       "border_filepath": "data/layouts/StemfordTown_PokemonFanClub/border.bin",
       "blockdata_filepath": "data/layouts/StemfordTown_PokemonFanClub/map.bin"
+    },
+    {
+      "id": "LAYOUT_STARRIDGE_CITY",
+      "name": "StarridgeCity_Layout",
+      "width": 40,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/StarridgeCity/border.bin",
+      "blockdata_filepath": "data/layouts/StarridgeCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE305",
+      "name": "Route305_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/Route305/border.bin",
+      "blockdata_filepath": "data/layouts/Route305/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE306",
+      "name": "Route306_Layout",
+      "width": 40,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/Route306/border.bin",
+      "blockdata_filepath": "data/layouts/Route306/map.bin"
+    },
+    {
+      "id": "LAYOUT_STARRIDGE_CITY_POKEMON_CENTER_1F",
+      "name": "StarridgeCity_PokemonCenter_1F_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/StarridgeCity_PokemonCenter_1F/border.bin",
+      "blockdata_filepath": "data/layouts/StarridgeCity_PokemonCenter_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_STARRIDGE_CITY_MELODYS_HOUSE",
+      "name": "StarridgeCity_MelodysHouse_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/StarridgeCity_MelodysHouse/border.bin",
+      "blockdata_filepath": "data/layouts/StarridgeCity_MelodysHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_STARRIDGE_CITY_GYM",
+      "name": "StarridgeCity_Gym_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_MossdeepGym",
+      "border_filepath": "data/layouts/StarridgeCity_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/StarridgeCity_Gym/map.bin"
+    },
+    {
+      "id": "LAYOUT_STARRIDGE_CITY_MART",
+      "name": "StarridgeCity_Mart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/StarridgeCity_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/StarridgeCity_Mart/map.bin"
     }
   ]
 }

@@ -10498,19 +10498,19 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_HAIL,
     },
 
-    [ITEM_TM_BULK_UP] =
+    [ITEM_TM_DRAINING_KISS] =
     {
         .name = _("TM08"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "Bulks up the body\n"
-            "to boost both\n"
-            "Attack & Defense."),
+            "Steals foe's with\n"
+            "an energy-draining\n"
+            "kiss."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_BULK_UP,
+        .secondaryId = MOVE_DRAINING_KISS,
     },
 
     [ITEM_TM_SWIFT] =

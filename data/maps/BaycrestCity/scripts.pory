@@ -268,7 +268,7 @@ script BaycrestCity_EventScript_Lillipup {
     release
 }
 
-script BaycrestCity_EventScript_HelpfulGentleman { //Recommends you check out Route 502 for training before challenging the gym
+script BaycrestCity_EventScript_HelpfulGentleman { //Recommends you check out Route 302 for training before challenging the gym
     lock
     faceplayer
     msgbox(BaycrestCity_Text_HelpfulGentleman)
@@ -276,7 +276,7 @@ script BaycrestCity_EventScript_HelpfulGentleman { //Recommends you check out Ro
 }
 
 text BaycrestCity_Text_HelpfulGentleman {
-    format( "If you're planning to challenge the Baycrest City Gym, you should train on Route 502 first!\p"
+    format( "If you're planning to challenge the Baycrest City Gym, you should train on Route 302 first!\p"
             "There are a lot of Pokémon there that can help you prepare for the Gym Leader's team!"
     )
 }

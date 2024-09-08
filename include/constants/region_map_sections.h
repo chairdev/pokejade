@@ -223,7 +223,10 @@
 #define MAPSEC_KISMET_FOREST                0xDB
 #define MAPSEC_STEMFORD_TOWN                0xDC
 #define MAPSEC_ROUTE_504                    0xDD
-#define MAPSEC_NONE                         0xDE
+#define MAPSEC_STARRIDGE_CITY               0xDE
+#define MAPSEC_ROUTE_305                    0xDF
+#define MAPSEC_ROUTE_306                    0xE0
+#define MAPSEC_NONE                         0xE1
 
 
 #define METLOC_SPECIAL_EGG                  0xFD
