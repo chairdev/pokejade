@@ -221,7 +221,7 @@ script StarridgeCity_Gym_EventScript_AceTrainerFiona {
 
 text StarridgeCity_Gym_Text_FionaIntro {
     format("Small hallways like these make me panic!\p"
-            "But I'm not afraid of a battle")
+            "But I'm determined to win this battle!")
 }
 
 text StarridgeCity_Gym_Text_FionaDefeat {

@@ -31211,7 +31211,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 12453
-    [TRAINER_JONAH] =
+    [TRAINER_PETER] =
     {
 #line 12454
         .trainerName = _("JONAH"),
@@ -32939,7 +32939,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 13148
-    [TRAINER_RHETT] =
+    [TRAINER_HAROLD] =
     {
 #line 13149
         .trainerName = _("RHETT"),

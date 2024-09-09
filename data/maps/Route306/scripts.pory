@@ -34,3 +34,71 @@ text Route306_Text_PatrickDefeat {
 text Route306_Text_PatrickPostBattle {
     format("PLACEHOLDER")
 }
+
+script Route306_EventScript_BlackBeltHarold {
+    trainerbattle_single(TRAINER_HAROLD, Route306_Text_HaroldIntro, Route306_Text_HaroldDefeat)
+    msgbox(Route306_Text_HaroldPostBattle, MSGBOX_AUTOCLOSE)
+}
+
+text Route306_Text_HaroldIntro {
+    format("PLACEHOLDER")
+}
+
+text Route306_Text_HaroldDefeat {
+    format("PLACEHOLDER")
+}
+
+text Route306_Text_HaroldPostBattle {
+    format("PLACEHOLDER")
+}
+
+script Route306_EventScript_BattleGirlNancy {
+    trainerbattle_single(TRAINER_NANCY, Route306_Text_NancyIntro, Route306_Text_NancyDefeat)
+    msgbox(Route306_Text_NancyPostBattle, MSGBOX_AUTOCLOSE)
+}
+
+text Route306_Text_NancyIntro {
+    format("PLACEHOLDER")
+}
+
+text Route306_Text_NancyDefeat {
+    format("PLACEHOLDER")
+}
+
+text Route306_Text_NancyPostBattle {
+    format("PLACEHOLDER")
+}
+
+script Route306_EventScript_HikerPeter {
+    trainerbattle_single(TRAINER_PETER, Route306_Text_PeterIntro, Route306_Text_PeterDefeat)
+    msgbox(Route306_Text_PeterPostBattle, MSGBOX_AUTOCLOSE)
+}
+
+text Route306_Text_PeterIntro {
+    format("PLACEHOLDER")
+}
+
+text Route306_Text_PeterDefeat {
+    format("PLACEHOLDER")
+}
+
+text Route306_Text_PeterPostBattle {
+    format("PLACEHOLDER")
+}
+
+script Route306_EventScript_RichboyDouglas {
+    trainerbattle_single(TRAINER_DOUGLAS, Route306_Text_DouglasIntro, Route306_Text_DouglasDefeat)
+    msgbox(Route306_Text_DouglasPostBattle, MSGBOX_AUTOCLOSE)
+}
+
+text Route306_Text_DouglasIntro {
+    format("I buy my Pokémon from the best breeders in the world!")
+}
+
+text Route306_Text_DouglasDefeat {
+    format("They're the best for everything except battling, apparently.")
+}
+
+text Route306_Text_DouglasPostBattle {
+    format("I'm going to have to have a word with my breeder.")
+}

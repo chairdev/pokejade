@@ -670,7 +670,7 @@
 #define TRAINER_MAY_LILYCOVE_MUDKIP         664
 #define TRAINER_MAY_LILYCOVE_TREECKO        665
 #define TRAINER_MAY_LILYCOVE_TORCHIC        666
-#define TRAINER_JONAH                       667
+#define TRAINER_PETER                       667
 #define TRAINER_HENRY                       668
 #define TRAINER_ROGER                       669
 #define TRAINER_ALEXA                       670
@@ -706,7 +706,7 @@
 #define TRAINER_JOSEPH                      700
 #define TRAINER_ALYSSA                      701
 #define TRAINER_MARCOS                      702
-#define TRAINER_RHETT                       703
+#define TRAINER_HAROLD                       703
 #define TRAINER_TYRON                       704
 #define TRAINER_CELINA                      705
 #define TRAINER_BIANCA                      706
