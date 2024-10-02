@@ -1,1 +1,22 @@
+//VAR_STARRIDGE_CITY_STATE
+// 0: Melody has not been defeated
+// 1: Amphy has been kidnapped
+
 mapscripts StarridgeCity_MapScripts {}
+
+script StarridgeCity_EventScript_AmphyKidnapped {
+    lockall
+
+}
+
+text StarridgeCity_Text_AmphyKidnapped_Jasmine1 {
+    format("{PLAYER}!"
+            "T-Team Upsilon... they... they took Amphy...\p"
+            "It happened so fast! I was about to head out when a couple of those Team Upsilon grunts stormed in.\p"
+            "They grabbed Amphy and ran off! I tried to stop them, but they were too fast!\p"
+            "Something about... a lighthouse near Stemford Town... I think that's where they're headed.\p"
+            "Amphy's special light... they're using it for something… something dangerous, I just know it.\p"
+            "I'd go myself, but I have to stay here in case they come back for something else.\p"
+            "{PLAYER}...I know you're strong—can you go after them?\p"
+    )
+}

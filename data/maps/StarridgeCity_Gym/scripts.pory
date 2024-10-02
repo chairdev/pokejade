@@ -9,6 +9,11 @@ script StarridgeCity_Gym_EventScript_Melody { //leader
         goto(StarridgeCity_Gym_EventScript_GiveDrainingKiss)
     }
 
+    if(var(VAR_STARRIDGE_CITY_STATE) == 0)
+    {
+        setvar(VAR_STARRIDGE_CITY_STATE, 1)
+    }
+
     speakername("Melody")
     msgbox(StarridgeCity_Gym_Text_MelodyPostBattle, MSGBOX_AUTOCLOSE)
     release

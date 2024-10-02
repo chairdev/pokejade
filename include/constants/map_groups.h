@@ -72,6 +72,7 @@
 #define MAP_STARRIDGE_CITY      (63 | (0 << 8))
 #define MAP_ROUTE305            (64 | (0 << 8))
 #define MAP_ROUTE306            (65 | (0 << 8))
+#define MAP_ROUTE304            (66 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))

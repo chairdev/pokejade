@@ -4680,6 +4680,16 @@
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/StarridgeCity_Mart/border.bin",
       "blockdata_filepath": "data/layouts/StarridgeCity_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE304",
+      "name": "Route304_Layout",
+      "width": 40,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/Route304/border.bin",
+      "blockdata_filepath": "data/layouts/Route304/map.bin"
     }
   ]
 }

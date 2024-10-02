@@ -12425,6 +12425,190 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_ROUTE304",
+          "base_label": "gRoute304",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 22,
+                "max_level": 25,
+                "species": "SPECIES_CRAMORANT"
+              },
+              {
+                "min_level": 22,
+                "max_level": 25,
+                "species": "SPECIES_FLAMIGO"
+              },
+              {
+                "min_level": 22,
+                "max_level": 25,
+                "species": "SPECIES_CRAMORANT"
+              },
+              {
+                "min_level": 22,
+                "max_level": 25,
+                "species": "SPECIES_CRAMORANT"
+              },
+              {
+                "min_level": 22,
+                "max_level": 25,
+                "species": "SPECIES_FLAMIGO"
+              },
+              {
+                "min_level": 22,
+                "max_level": 25,
+                "species": "SPECIES_SHELLOS_EAST_SEA"
+              },
+              {
+                "min_level": 22,
+                "max_level": 25,
+                "species": "SPECIES_INKAY"
+              },
+              {
+                "min_level": 22,
+                "max_level": 25,
+                "species": "SPECIES_INKAY"
+              },
+              {
+                "min_level": 22,
+                "max_level": 25,
+                "species": "SPECIES_SHELLOS_EAST_SEA"
+              },
+              {
+                "min_level": 22,
+                "max_level": 25,
+                "species": "SPECIES_SCYTHER"
+              },
+              {
+                "min_level": 22,
+                "max_level": 25,
+                "species": "SPECIES_SCYTHER"
+              },
+              {
+                "min_level": 22,
+                "max_level": 25,
+                "species": "SPECIES_SCYTHER"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": 4,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              }
+            ]
+          },
+          "rock_smash_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_BINACLE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NACLI"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_BINACLE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NACLI"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NACLI"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "encounter_rate": 30,
+            "mons": [
+              {
+                "min_level": 23,
+                "max_level": 25,
+                "species": "SPECIES_ARROKUDA"
+              },
+              {
+                "min_level": 23,
+                "max_level": 25,
+                "species": "SPECIES_ARROKUDA"
+              },
+              {
+                "min_level": 23,
+                "max_level": 25,
+                "species": "SPECIES_ARROKUDA"
+              },
+              {
+                "min_level": 23,
+                "max_level": 25,
+                "species": "SPECIES_ARROKUDA"
+              },
+              {
+                "min_level": 23,
+                "max_level": 25,
+                "species": "SPECIES_ARROKUDA"
+              },
+              {
+                "min_level": 23,
+                "max_level": 25,
+                "species": "SPECIES_ARROKUDA"
+              },
+              {
+                "min_level": 23,
+                "max_level": 25,
+                "species": "SPECIES_ARROKUDA"
+              },
+              {
+                "min_level": 23,
+                "max_level": 25,
+                "species": "SPECIES_ARROKUDA"
+              },
+              {
+                "min_level": 23,
+                "max_level": 25,
+                "species": "SPECIES_ARROKUDA"
+              },
+              {
+                "min_level": 23,
+                "max_level": 25,
+                "species": "SPECIES_ARROKUDA"
+              }
+            ]
+          }
         }
       ]
     },

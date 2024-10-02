@@ -58,7 +58,33 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 31,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_STARRIDGE_CITY_STATE",
+      "var_value": "1",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 30,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "1",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 29,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "1",
+      "script": "NULL"
+    }
   ],
   "bg_events": [
 

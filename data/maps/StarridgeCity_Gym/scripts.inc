@@ -332,7 +332,7 @@ StarridgeCity_Gym_Text_HelenPostBattle::
 StarridgeCity_Gym_Text_FionaIntro::
 # 222 "data/maps/StarridgeCity_Gym/scripts.pory"
 	.string "Small hallways like these make me panic!\p"
-	.string "But I'm not afraid of a battle$"
+	.string "But I'm determined to win this battle!$"
 
 StarridgeCity_Gym_Text_FionaDefeat::
 # 227 "data/maps/StarridgeCity_Gym/scripts.pory"

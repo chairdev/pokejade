@@ -1128,3 +1128,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/StarridgeCity_Gym/scripts.inc"
 
 	.include "data/maps/StarridgeCity_Mart/scripts.inc"
+
+	.include "data/maps/Route304/scripts.inc"
