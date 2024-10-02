@@ -4811,6 +4811,7 @@ IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 Toedscool  @Berry Juice
 Level: 13
+Tera Type: Ground
 EVs: 252 HP  
 Hasty Nature  
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe  
@@ -4851,7 +4852,8 @@ Modest Nature
 
 Sylveon @ Kebia Berry  
 Ability: Cute Charm  
-Level: 25 
+Level: 25
+Tera Type: Fairy   
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
 EVs: 252 HP
 Quiet Nature  
@@ -9529,6 +9531,7 @@ AI: Check Bad Move / Try To Faint / Setup First Turn / Ace Pokemon
 
 Pidove
 Level: 5
+Tera Type: Flying
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 Turtwig
@@ -9591,6 +9594,7 @@ AI: Check Bad Move / Try To Faint / Setup First Turn / Ace Pokemon
 
 Pidove
 Level: 5
+Tera Type: Flying
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 Fennekin
@@ -9652,6 +9656,7 @@ AI: Check Bad Move / Try To Faint / Setup First Turn / Ace Pokemon
 
 Pidove
 Level: 5
+Tera Type: Flying
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 Quaxly
@@ -9713,6 +9718,7 @@ AI: Check Bad Move / Try To Faint / Setup First Turn / Ace Pokemon
 
 Pidove
 Level: 5
+Tera Type: Flying
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 Turtwig
@@ -9774,6 +9780,7 @@ AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidove
 Level: 5
+Tera Type: Flying
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 Fennekin
@@ -9836,6 +9843,7 @@ AI: Check Bad Move / Try To Faint / Setup First Turn / Ace Pokemon
 
 Pidove
 Level: 5
+Tera Type: Flying
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 Quaxly

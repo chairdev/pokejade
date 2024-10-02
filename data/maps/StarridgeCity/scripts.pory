@@ -17,6 +17,6 @@ text StarridgeCity_Text_AmphyKidnapped_Jasmine1 {
             "Something about... a lighthouse near Stemford Town... I think that's where they're headed.\p"
             "Amphy's special light... they're using it for something… something dangerous, I just know it.\p"
             "I'd go myself, but I have to stay here in case they come back for something else.\p"
-            "{PLAYER}...I know you're strong—can you go after them?\p"
+            "{PLAYER}...I know you're strong--can you go after them?\p"
     )
 }

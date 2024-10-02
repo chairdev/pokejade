@@ -42,7 +42,7 @@ script EverwoodTown_HawthornResearchLab_MapScript_ReceiveStarter {
         call(Common_EventScript_NameReceivedPartyMon)
     } else {
         speakername("Hawthorne")
-        msgbox("That's alright. Please take care of it well.")
+        msgbox(format("That's alright. Please take care of it well."))
     }
 
     closemessage
@@ -57,14 +57,32 @@ script EverwoodTown_HawthornResearchLab_MapScript_ReceiveStarter {
     msgbox(ReceiveStarter_HawthorneText4)
     waitmessage
 
+    // Now continue with Rival dialogue
     speakername("{RIVAL}")
     msgbox(ReceiveStarter_RivalText1)
-    
+
     speakername("Hawthorne")
     msgbox(ReceiveStarter_HawthorneText5)
-    
+
     speakername("{RIVAL}")
     msgbox(ReceiveStarter_RivalText2)
+
+    // Giving Tera Orb here, before the Rival leaves
+    speakername("Hawthorne")
+    msgbox(ReceiveStarter_HawthorneText7) // Tera Orb Dialogue
+    closemessage
+    giveitem(ITEM_TERA_ORB, 1)
+    msgbox("You've received the Tera Orb!")
+    waitfanfare
+
+    speakername("Hawthorne")
+    msgbox(ReceiveStarter_HawthorneText8) // Tera Orb explanation
+    closemessage
+
+    // Rival comments on the Tera Orb
+    speakername("{RIVAL}")
+    msgbox(ReceiveStarter_RivalText_TeraOrb)
+    closemessage
 
     speakername("Hawthorne")
     msgbox(ReceiveStarter_HawthorneText6)
@@ -85,17 +103,8 @@ script EverwoodTown_HawthornResearchLab_MapScript_ReceiveStarter {
     applymovement(OBJ_EVENT_ID_PLAYER, ReceiveStarter_FaceUp)
 
     speakername("Hawthorne")
-    msgbox(ReceiveStarter_HawthorneText7)
+    msgbox(ReceiveStarter_HawthorneText9) // Exp. Share Dialogue
     closemessage
-    giveitem(ITEM_TERA_ORB, 1)
-
-    msgbox("You've received the Tera Orb!")
-    waitfanfare
-
-    speakername("Hawthorne")
-    msgbox(ReceiveStarter_HawthorneText8)
-    closemessage
-
     giveitem(ITEM_EXP_SHARE, 1)
     msgbox("You've received the Exp. Share!")
     waitfanfare
@@ -114,18 +123,27 @@ script EverwoodTown_HawthornResearchLab_MapScript_ReceiveStarter {
 }
 
 
+// New Text for Rival's Comment on the Tera Orb
+text ReceiveStarter_RivalText_TeraOrb {
+    format("Wow, a Tera Orb, huh?\p"
+           "I heard those things let your Pokémon change its type or something.\p"
+           "If the original type is the same as its Tera type, moves of that type get an even bigger boost in power.\p"
+           "That's what I heard, anyway."
+              )
+}
+
 text ReceiveStarter_HawthorneText1 {
     format("...I see. So, that's what happened.\p"
            "I'm relieved that both you and {RIVAL} are safe.\p"
-           "By the way, {PLAYER}{KUN}, may I take a look at the Pokémon you've chosen?\p"
+           "By the way, {PLAYER}, may I take a look at the Pokémon you've chosen?\p"
            "It seems {STR_VAR_1} has already taken a liking to you!\p"
            "Take good care of it, alright?"
            )
 }
 
 text ReceiveStarter_HawthorneText2 {
-    "These are Poké Balls, used for catching wild Pokémon.\p"
-    "Here, take these as well. They'll be useful on your journey."
+    format("These are Poké Balls, used for catching wild Pokémon.\p"
+    "Here, take these as well. They'll be useful on your journey.")
 }
 
 text ReceiveStarter_HawthorneText3 {
@@ -138,7 +156,7 @@ text ReceiveStarter_HawthorneText4 {
     format("This is a Pokédex.\p"
            "It's a high-tech encyclopedia that records information on every Pokémon you encounter.\p"
            "As you travel through Toshou, I'd like you to help me with my research by filling it with details on the various Pokémon species you'll meet.\p"
-           "I believe you're more than capable. Good luck on your journey!"
+           "I believe you're both more than capable of doing so.\p"
            )
 }
 
@@ -148,22 +166,24 @@ text ReceiveStarter_RivalText1 {
 }
 
 text ReceiveStarter_HawthorneText5 {
-    "Hm? Did you say something, {RIVAL}?"
+    format("Hm? Did you say something, {RIVAL}?")
 }
 
 text ReceiveStarter_RivalText2 {
-    "No, nothing! Let's just do our best, {PLAYER}{KUN}!\p"
-    "Ahaha..."
+    format("No, nothing! Let's just do our best, {PLAYER}!\p"
+    "Ahaha...")
 }
 
 text ReceiveStarter_HawthorneText6 {
-    format("Before you two set off, don't forget to register for the Toshou League at the nearest Pokémon Center.\p"
-           "The closest one is in Baycrest City, just past Route 301."
+    format( "That's right! It lasts until the end of battle or until your Pokémon faints.\p"
+            "Oh, and one more thing!\p"
+            "Before you two set off, don't forget to register for the Toshou League at the nearest Pokémon Center.\p"
+            "The closest one is in Baycrest City, just past Route 301."
            )
 }
 
 text ReceiveStarter_RivalText3 {
-    format("I'll be waiting for you at the Pokémon Center, {PLAYER}{KUN}!\p"
+    format("I'll be waiting for you at the Pokémon Center, {PLAYER}!\p"
            "See you there!"
            )
 }
@@ -176,16 +196,16 @@ text ReceiveStarter_HawthorneText7 {
 }
 
 text ReceiveStarter_HawthorneText8 {
-    format("Though Terastal energy was originally discovered in Paldea, recent research has revealed that it exists in other regions as well.\p"
+    format("Though Terastal energy was originally discovered in Paldea, recent research has revealed that it exists in other regions as well, like Kitakami.\p"
            "Here in Toshou, the energy flows through certain areas, much like the ley lines of nature.\p"
-           "With this Tera Orb, your Pokémon will be able to harness this energy.\p"
-           "Use it wisely, as it can only be used once before needing to be recharged at a Poké Center."
+           "With this Tera Orb, your Pokémon can harness this energy by pressing the START Button while choosing a move in battle.\p"
+           "Use it wisely, as it can only be used once before needing to be recharged at a Pokémon Center."
            )
 }
 
 text ReceiveStarter_HawthorneText9 {
-    "And lastly, here's an Exp. Share.\p"
-    "It will help your team grow stronger together, even if they don't fight."
+    format("And lastly, here's an Exp. Share.\p"
+    "It will help your team grow stronger together, even if they don't fight.")
 }
 
 movement ReceiveStarter_FaceUp {
@@ -242,7 +262,7 @@ script EverwoodTown_HawthornResearchLab_EventScript_Hawthorne {
 }
 
 text MeetHawthorneText1 {
-    format("Ah, there you are!\nYou must be {PLAYER}{KUN}.\l"
+    format("Ah, there you are!\nYou must be {PLAYER}.\l"
            "I've been waiting for you!\p"
            "Where's {RIVAL}?\p"
            "... What do you mean you don't know who that is?\p"
@@ -252,20 +272,20 @@ text MeetHawthorneText1 {
 
 text MeetHawthorneText2A {
     format("She said she couldn't sit still and wait for you to arrive and took off.\p"
-           "{PLAYER}{KUN}, I'm sorry to ask this of you, but could you go find her for me?\p"
+           "{PLAYER}, I'm sorry to ask this of you, but could you go find her for me?\p"
             "I'm sure she's just around the corner."
            )
 }
 
 text MeetHawthorneText2B {
     format("He said he couldn't sit still and wait for you to arrive and took off.\p"
-           "{PLAYER}{KUN}, I'm sorry to ask this of you, but could you go find him for me?\p"
+           "{PLAYER}, I'm sorry to ask this of you, but could you go find him for me?\p"
             "I'm sure he's just around the corner."
            )          
 }
 
 text GoLookForRivalText1 {
-   format("Please, {PLAYER}{KUN}, go look for {RIVAL}!\p"
+   format("Please, {PLAYER}, go look for {RIVAL}!\p"
            "The bag with the Poké Balls is very important!"
            )
 }
