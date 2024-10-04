@@ -58,7 +58,7 @@ Route104_EventScript_RivalTrigger::
 	waitmovement 0
 	delay 10
 	addobject LOCALID_RIVAL
-	clearflag FLAG_HIDE_ROUTE_104_RIVAL
+	clearflag FLAG_HIDE_STARRIDGE_CITY_RIVAL
 	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_PlayerBackUp
 	waitmovement 0
 	applymovement LOCALID_RIVAL, Route104_Movement_RivalExitBrineysCottage
@@ -163,19 +163,19 @@ Route104_EventScript_RestoreMusic::
 	return
 
 Route104_EventScript_BattleMayTreecko::
-	trainerbattle_no_intro TRAINER_MAY_RUSTBORO_TREECKO, Route104_Text_MayDefeat
+	trainerbattle_no_intro TRAINER_HOLLY_STARRIDGE_TURTWIG, Route104_Text_MayDefeat
 	setflag FLAG_DEFEATED_RIVAL_ROUTE_104
 	goto Route104_EventScript_MayDefeated
 	end
 
 Route104_EventScript_BattleMayTorchic::
-	trainerbattle_no_intro TRAINER_MAY_RUSTBORO_TORCHIC, Route104_Text_MayDefeat
+	trainerbattle_no_intro TRAINER_HOLLY_STARRIDGE_FENNEKIN, Route104_Text_MayDefeat
 	setflag FLAG_DEFEATED_RIVAL_ROUTE_104
 	goto Route104_EventScript_MayDefeated
 	end
 
 Route104_EventScript_BattleMayMudkip::
-	trainerbattle_no_intro TRAINER_MAY_RUSTBORO_MUDKIP, Route104_Text_MayDefeat
+	trainerbattle_no_intro TRAINER_HOLLY_STARRIDGE_QUAXLY, Route104_Text_MayDefeat
 	setflag FLAG_DEFEATED_RIVAL_ROUTE_104
 	goto Route104_EventScript_MayDefeated
 	end
@@ -230,19 +230,19 @@ Route104_EventScript_BrendanDefeated::
 	end
 
 Route104_EventScript_BattleBrendanTreecko::
-	trainerbattle_no_intro TRAINER_CADEN_RUSTBORO_TREECKO, Route104_Text_BrendanDefeat
+	trainerbattle_no_intro TRAINER_CADEN_STARRIDGE_TURTWIG, Route104_Text_BrendanDefeat
 	setflag FLAG_DEFEATED_RIVAL_ROUTE_104
 	goto Route104_EventScript_BrendanDefeated
 	end
 
 Route104_EventScript_BattleBrendanTorchic::
-	trainerbattle_no_intro TRAINER_CADEN_RUSTBORO_TORCHIC, Route104_Text_BrendanDefeat
+	trainerbattle_no_intro TRAINER_CADEN_STARRIDGE_FENNEKIN, Route104_Text_BrendanDefeat
 	setflag FLAG_DEFEATED_RIVAL_ROUTE_104
 	goto Route104_EventScript_BrendanDefeated
 	end
 
 Route104_EventScript_BattleBrendanMudkip::
-	trainerbattle_no_intro TRAINER_CADEN_RUSTBORO_MUDKIP, Route104_Text_BrendanDefeat
+	trainerbattle_no_intro TRAINER_CADEN_STARRIDGE_QUAXLY, Route104_Text_BrendanDefeat
 	setflag FLAG_DEFEATED_RIVAL_ROUTE_104
 	goto Route104_EventScript_BrendanDefeated
 	end

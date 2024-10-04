@@ -2,7 +2,96 @@
 // 0: Melody has not been defeated
 // 1: Amphy has been kidnapped
 
-mapscripts StarridgeCity_MapScripts {}
+mapscripts StarridgeCity_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        call(Common_EventScript_SetupRivalGfxId)
+    }
+}
+
+script StarridgeCity_EventScript_Rival {
+    lockall
+    faceplayer
+
+    speakername("{RIVAL}")
+
+    checkplayergender
+    if(var(VAR_RESULT) == MALE)
+    {
+        playbgm(MUS_ENCOUNTER_MAY, 0)
+        msgbox(StarridgeCity_Text_Rival1F, MSGBOX_YESNO)
+
+        if(var(VAR_RESULT) == YES)
+        {
+            msgbox(StarridgeCity_Text_RivalF_Accept)
+           switch(var(VAR_STARTER_MON)) {
+            case 0:
+                trainerbattle_no_intro(TRAINER_HOLLY_STARRIDGE_TURTWIG, StarridgeCity_Text_HollyDefeated)
+                break
+            case 1:
+                trainerbattle_no_intro(TRAINER_HOLLY_STARRIDGE_FENNEKIN, StarridgeCity_Text_HollyDefeated)
+                break
+            case 2:
+                trainerbattle_no_intro(TRAINER_HOLLY_STARRIDGE_QUAXLY, StarridgeCity_Text_HollyDefeated)
+                break
+            }
+
+            setflag(FLAG_HIDE_STARRIDGE_CITY_RIVAL)
+        }
+        else
+        {
+            msgbox(StarridgeCity_Text_RivalF_Refuse)
+        }
+
+    }
+    else
+    {
+        playbgm(MUS_ENCOUNTER_BRENDAN, 0)
+        msgbox(StarridgeCity_Text_Rival1M, MSGBOX_YESNO)
+    }
+
+
+    fadedefaultbgm
+    releaseall
+}
+
+text StarridgeCity_Text_Rival1F {
+    format("Hey, {PLAYER}!\p"
+            "Have you been fighting lots of Trainers?\p"
+            "I'm sure you have! I think that's why you and your Pokémon are so strong-looking!\p"
+            "I wish I could say the same about myself, though...\p"
+            "I'm still not sure if I'm training my Pokémon the right way.\p"
+            "But I'm getting better every day!\p"
+            "Hey, I know! Let's have a battle!"
+    )
+}
+
+text StarridgeCity_Text_RivalF_Accept {
+    format("{PLAYER}! I'm gonna give you a run for your money!")
+}
+
+text StarridgeCity_Text_RivalF_Refuse {
+    format("Oh, okay... I guess I'll see you later, then!")
+}
+
+text StarridgeCity_Text_HollyDefeated {
+   format("Urgh!\nI'm never gonna get better at battling!")
+}
+
+text StarridgeCity_Text_Rival1M {
+    format("Hey, {PLAYER}!\p"
+            "I see you've been training hard! I've been doing the same!\p"
+            "But... I'm still not sure if I'm training my Pokémon the right way.\p"
+            "I'm getting better every day, though!\p"
+            "Show me what you've learned... in a battle!")
+}
+
+text StarridgeCity_Text_RivalM_Accept {
+    format("All right!\nLet's do this, {PLAYER}!")
+}
+
+text StarridgeCity_Text_RivalM_Refuse {
+    format("...That's okay. I'll see you around, then.")
+}
 
 script StarridgeCity_EventScript_AmphyKidnapped {
     lockall

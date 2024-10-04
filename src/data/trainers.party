@@ -10905,39 +10905,51 @@ Natu
 Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CADEN_RUSTBORO_TREECKO ===
-Name: BRENDAN
+=== TRAINER_CADEN_STARRIDGE_TURTWIG ===
+Name: Caden
 Class: Rival
 Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Setup First Turn / Ace Pokemon
 
-Lotad
-Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Swablu
+Level: 22
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Torchic
-Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Drednaw
+Level: 21
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-=== TRAINER_CADEN_RUSTBORO_MUDKIP ===
-Name: BRENDAN
+Braixen
+Level: 23
+Tera Type: Fire   
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
+EVs: 252 HP
+
+=== TRAINER_CADEN_STARRIDGE_QUAXLY ===
+Name: Caden
 Class: Rival
 Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Check Viability / Try To Faint / Setup First Turn / Ace Pokemon
 
-Wingull
-Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Swablu
+Level: 22
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Treecko
-Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Magby
+Level: 21
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Grotle
+Level: 23
+Tera Type: Grass   
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
+EVs: 252 HP
 
 === TRAINER_PAXTON ===
 Name: PAXTON
@@ -11029,25 +11041,31 @@ Loudred
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CADEN_RUSTBORO_TORCHIC ===
-Name: BRENDAN
+=== TRAINER_CADEN_STARRIDGE_FENNEKIN ===
+Name: Caden
 Class: Rival
 Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Check Viability / Try To Faint / Setup First Turn / Ace Pokemon
 
-Slugma
-Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Swablu
+Level: 22
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Mudkip
-Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Dolliv
+Level: 21
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-=== TRAINER_MAY_RUSTBORO_MUDKIP ===
-Name: MAY
+Quaxwell
+Level: 23
+Tera Type: Water   
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
+EVs: 252 HP
+
+=== TRAINER_HOLLY_STARRIDGE_QUAXLY ===
+Name: Holly
 Class: Rival
 Pic: May
 Gender: Female
@@ -11055,13 +11073,19 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Setup First Turn
 
-Wingull
-Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Swablu
+Level: 22
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Treecko
-Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Drednaw
+Level: 21
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Grotle
+Level: 23
+Tera Type: Grass   
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
+EVs: 252 HP
 
 === TRAINER_MAXIE_MAGMA_HIDEOUT ===
 Name: MAXIE
@@ -14194,8 +14218,8 @@ Vigoroth
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_MAY_RUSTBORO_TREECKO ===
-Name: MAY
+=== TRAINER_HOLLY_STARRIDGE_TURTWIG ===
+Name: Holly
 Class: Rival
 Pic: May
 Gender: Female
@@ -14203,30 +14227,42 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Lotad
-Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Swablu
+Level: 22
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Torchic
-Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Drednaw
+Level: 21
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-=== TRAINER_MAY_RUSTBORO_TORCHIC ===
-Name: MAY
+Braixen
+Level: 23
+Tera Type: Fire   
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
+EVs: 252 HP
+
+=== TRAINER_HOLLY_STARRIDGE_FENNEKIN ===
+Name: Holly
 Class: Rival
 Pic: May
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Check Viability / Try To Faint / Setup First Turn / Ace Pokemon
 
-Torkoal
-Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Swablu
+Level: 22
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Mudkip
-Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Dolliv
+Level: 21
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Quaxwell
+Level: 23
+Tera Type: Water   
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
+EVs: 252 HP
 
 === TRAINER_ROXANNE_2 ===
 Name: ROXANNE

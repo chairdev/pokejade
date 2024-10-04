@@ -761,7 +761,7 @@
 #define FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_6               0x2CC
 #define FLAG_HIDE_SAFARI_ZONE_SOUTH_CONSTRUCTION_WORKERS            0x2CD
 #define FLAG_HIDE_MEW                                               0x2CE
-#define FLAG_HIDE_ROUTE_104_RIVAL                                   0x2CF
+#define FLAG_HIDE_STARRIDGE_CITY_RIVAL                              0x2CF
 #define FLAG_ROUTE_503_METDIO                                       0x2D0
 #define FLAG_HIDE_EVERWOOD_TOWN_RESEARCH_LAB_RIVAL                  0x2D1
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_BEDROOM          0x2D2
