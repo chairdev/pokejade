@@ -10912,7 +10912,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Setup First Turn / Ace Pokemon
+AI: Check Bad Move / Check Viability / Try To Faint / Setup First Turn / Ace Pokemon
 
 Swablu
 Level: 22
@@ -11071,7 +11071,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Setup First Turn
+AI: Check Bad Move / Check Viability / Try To Faint / Setup First Turn / Ace Pokemon
 
 Swablu
 Level: 22
@@ -14225,7 +14225,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Check Viability / Try To Faint / Setup First Turn / Ace Pokemon
 
 Swablu
 Level: 22

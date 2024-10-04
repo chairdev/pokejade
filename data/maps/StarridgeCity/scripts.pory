@@ -2,6 +2,8 @@
 // 0: Melody has not been defeated
 // 1: Amphy has been kidnapped
 
+const OBJ_RIVAL = 1
+
 mapscripts StarridgeCity_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
         call(Common_EventScript_SetupRivalGfxId)
@@ -35,18 +37,48 @@ script StarridgeCity_EventScript_Rival {
                 break
             }
 
+            speakername("{RIVAL}")
+            msgbox(StarridgeCity_Text_Rival2F)
+
+            fadescreen(FADE_TO_BLACK)
+            removeobject(OBJ_RIVAL)
             setflag(FLAG_HIDE_STARRIDGE_CITY_RIVAL)
+            fadescreen(FADE_FROM_BLACK)
+            
         }
         else
         {
             msgbox(StarridgeCity_Text_RivalF_Refuse)
         }
-
     }
     else
     {
         playbgm(MUS_ENCOUNTER_BRENDAN, 0)
         msgbox(StarridgeCity_Text_Rival1M, MSGBOX_YESNO)
+
+        if(var(VAR_RESULT) == YES)
+        {
+            msgbox(StarridgeCity_Text_RivalM_Accept)
+           switch(var(VAR_STARTER_MON)) {
+            case 0:
+                trainerbattle_no_intro(TRAINER_CADEN_STARRIDGE_TURTWIG, StarridgeCity_Text_CadenDefeated)
+                break
+            case 1:
+                trainerbattle_no_intro(TRAINER_CADEN_STARRIDGE_FENNEKIN, StarridgeCity_Text_CadenDefeated)
+                break
+            case 2:
+                trainerbattle_no_intro(TRAINER_CADEN_STARRIDGE_QUAXLY, StarridgeCity_Text_CadenDefeated)
+                break
+            }
+
+            speakername("{RIVAL}")
+            msgbox(StarridgeCity_Text_Rival2F)
+
+            fadescreen(FADE_TO_BLACK)
+            removeobject(OBJ_RIVAL)
+            setflag(FLAG_HIDE_STARRIDGE_CITY_RIVAL)
+            fadescreen(FADE_FROM_BLACK)
+        }
     }
 
 
@@ -61,7 +93,7 @@ text StarridgeCity_Text_Rival1F {
             "I wish I could say the same about myself, though...\p"
             "I'm still not sure if I'm training my Pokémon the right way.\p"
             "But I'm getting better every day!\p"
-            "Hey, I know! Let's have a battle!"
+            "Hey, I know!\nLet's have a battle!"
     )
 }
 
@@ -75,6 +107,17 @@ text StarridgeCity_Text_RivalF_Refuse {
 
 text StarridgeCity_Text_HollyDefeated {
    format("Urgh!\nI'm never gonna get better at battling!")
+}
+
+
+text StarridgeCity_Text_Rival2F {
+    format("Man, I even Terastalized and everything...\p"
+            "...Oh, right.\nThe Fairy-type Gym is just behind me.\p"
+            "The Gym Leader is pretty young and was recently appointed to that position.\p"
+            "I was gonna fight her, but after losing to you, I don't feel very ready.\p"
+            "I'm gonna go train so my Pokémon and I can give it our all!\p"
+            "See you later, {PLAYER}!"
+    )
 }
 
 text StarridgeCity_Text_Rival1M {
@@ -91,6 +134,19 @@ text StarridgeCity_Text_RivalM_Accept {
 
 text StarridgeCity_Text_RivalM_Refuse {
     format("...That's okay. I'll see you around, then.")
+}
+
+text StarridgeCity_Text_CadenDefeated {
+   format("Yeah, you're good.\nI guess.")
+}
+
+text StarridgeCity_Text_Rival2M {
+    format("Our battle was a great opportunity to mess around with Terastalization a bit."
+            "So don't think it counts, OK?"
+            "Anyway, you're curious about the Gym behind me, right?\p"
+            "Well, it's the Fairy-type Gym!\nAnd guess what? The Gym Leader is cute! Young too!\p"
+            "Haha! {PLAYER}, you head in first.\nI'm off to get even stronger!"
+            )
 }
 
 script StarridgeCity_EventScript_AmphyKidnapped {
