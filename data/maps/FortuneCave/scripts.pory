@@ -1,4 +1,44 @@
-mapscripts FortuneCave_MapScripts {}
+const OBJ_ONIX = 9
+mapscripts FortuneCave_MapScripts {
+    MAP_SCRIPT_ON_LOAD : FortuneCave_OnLoad
+}
+
+script FortuneCave_OnLoad {
+    gettime
+    if(var(VAR_0x8003) != DAY_SATURDAY)
+    {
+        removeobject(OBJ_ONIX)
+        setflag(FLAG_DAILY_DEFEATED_ONIX)
+    }
+}
+
+script FortuneCave_EventScript_Static_Onix {
+    lock
+    faceplayer
+
+    playmoncry(SPECIES_ONIX, CRY_MODE_NORMAL)
+    msgbox("Raoorgh!")
+    waitmoncry
+
+    setwildbattle(SPECIES_ONIX, 15)
+    dowildbattle
+
+    fadescreen(FADE_TO_BLACK)
+
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_WON || var(VAR_RESULT) == B_OUTCOME_RAN)
+    {
+        msgbox(format("Onix ran into the depths of the cave."))
+        closemessage
+    }
+    
+    removeobject(OBJ_ONIX)
+    setflag(FLAG_DAILY_DEFEATED_ONIX)
+
+    fadescreen(FADE_FROM_BLACK)
+
+    release
+}
 
 script FortuneCave_EventScript_StrandedCamper {
     lock
