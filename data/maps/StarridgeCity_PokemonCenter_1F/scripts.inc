@@ -25,3 +25,19 @@ StarridgeCity_PokemonCenter_1F_EventScript_Nurse::
 	release
 	return
 
+
+DOWTest::
+# 19 "data/maps/StarridgeCity_PokemonCenter_1F/scripts.pory"
+	lock
+# 20 "data/maps/StarridgeCity_PokemonCenter_1F/scripts.pory"
+	bufferdayofweekstring STR_VAR_1, DAY_CURRENT
+# 21 "data/maps/StarridgeCity_PokemonCenter_1F/scripts.pory"
+	msgbox DOWTest_Text_0
+# 22 "data/maps/StarridgeCity_PokemonCenter_1F/scripts.pory"
+	release
+	return
+
+
+DOWTest_Text_0:
+# 21 "data/maps/StarridgeCity_PokemonCenter_1F/scripts.pory"
+	.string "today is {STR_VAR_1}$"

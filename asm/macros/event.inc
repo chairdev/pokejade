@@ -1874,6 +1874,14 @@
 .Ldynmultichoice_\@_2:
 	.endm
 
+	@ Writes the choosen day of the week string to the specified buffer (index 0 = Sunday).
+	@ Otherwise, if dayOfWeek eq 7 or is not specified, writes the current day of week string.
+	.macro bufferdayofweekstring stringVarId:req, dayOfWeek=DAY_CURRENT
+	.byte 0xe6
+	stringvar \stringVarId
+	.byte \dayOfWeek
+	.endm
+
 	@ Displays a multichoice box from which the user can choose a selection, and blocks script execution until a selection is made.
 	@ Lists of options are provided in argv.
 	@ If ignoreBPress is set to a non-zero value, then the user will not be allowed to back out of the multichoice with the B button.

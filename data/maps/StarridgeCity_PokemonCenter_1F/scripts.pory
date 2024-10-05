@@ -14,3 +14,10 @@ script StarridgeCity_PokemonCenter_1F_EventScript_Nurse {
     waitbuttonpress
     release
 }
+
+script DOWTest {
+    lock
+    bufferdayofweekstring(STR_VAR_1, DAY_CURRENT)
+    msgbox("today is {STR_VAR_1}")
+    release
+}

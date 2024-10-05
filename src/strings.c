@@ -1797,3 +1797,22 @@ const u8 gText_Fertilize[] = _("FERTILIZE");
 const u8 gText_PlantBerry[] = _("PLANT BERRY");
 const u8 gText_AM[] = _("AM");
 const u8 gText_PM[] = _("PM");
+
+// Day Strings
+const u8 gText_Sunday[]    = _("Sunday");
+const u8 gText_Monday[]    = _("Monday");
+const u8 gText_Tuesday[]   = _("Tuesday");
+const u8 gText_Wednesday[] = _("Wednesday");
+const u8 gText_Thursday[]  = _("Thursday");
+const u8 gText_Friday[]    = _("Friday");
+const u8 gText_Saturday[]  = _("Saturday");
+const u8 *const gDayNameStringsTable[] =
+{
+    [DAY_SUNDAY] = gText_Sunday,
+    [DAY_MONDAY] = gText_Monday,
+    [DAY_TUESDAY] = gText_Tuesday,
+    [DAY_WEDNESDAY] = gText_Wednesday,
+    [DAY_THURSDAY] = gText_Thursday,
+    [DAY_FRIDAY] = gText_Friday,
+    [DAY_SATURDAY] = gText_Saturday,
+};
