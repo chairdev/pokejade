@@ -1,11 +1,53 @@
 const OBJ_JASMINE = 8
 const OBJ_AMPHY = 9
 
+const OBJ_SCOLIPEDE = 10
+
 //Kismet Forest State
 //0 - Jasmine not met
 //1 - Jasmine met
 
-mapscripts KismetForest_MapScripts {}
+mapscripts KismetForest_MapScripts {
+    MAP_SCRIPT_ON_LOAD : KismetForest_OnLoad
+}
+
+script KismetForest_OnLoad {
+    gettime
+    if(var(VAR_0x8003) != DAY_WEDNESDAY)
+    {
+        removeobject(OBJ_SCOLIPEDE)
+        setflag(FLAG_DAILY_DEFEATED_SCOLIPEDE)
+    }
+}
+
+script KismetForest_EventScript_Static_Scolipede {
+    lock
+    faceplayer
+
+    playmoncry(SPECIES_SCOLIPEDE, CRY_MODE_NORMAL)
+    msgbox("Raaaooorgh!")
+    waitmoncry
+
+    setwildbattle(SPECIES_SCOLIPEDE, 25)
+    dowildbattle
+
+    fadescreen(FADE_TO_BLACK)
+
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_WON || var(VAR_RESULT) == B_OUTCOME_RAN)
+    {
+        msgbox(format("Scolipede ran deeper into the forest."))
+        closemessage
+    }
+    
+    removeobject(OBJ_SCOLIPEDE)
+    setflag(FLAG_DAILY_DEFEATED_SCOLIPEDE)
+
+    fadescreen(FADE_FROM_BLACK)
+
+    release
+}
+
 
 //Story Events
 script KismetForest_Trigger_Jasmine1 {
