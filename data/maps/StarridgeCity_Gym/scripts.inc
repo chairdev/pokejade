@@ -255,7 +255,7 @@ StarridgeCity_Gym_Text_ReceivedGlintBadge::
 
 StarridgeCity_Gym_Text_GlintBadgeInfo::
 # 79 "data/maps/StarridgeCity_Gym/scripts.pory"
-	.string "With this badge, Pokémon up to Level 40\n"
+	.string "With this badge, Pokémon up to Level 35\n"
 	.string "will obey you.\p"
 	.string "You can also use the HM move Cut\n"
 	.string "outside of battle.\p"

@@ -497,7 +497,7 @@ BaycrestCity_Gym_Text_ReceivedFoundationBadge::
 BaycrestCity_Gym_Text_FoundationBadgeInfo::
 # 311 "data/maps/BaycrestCity_Gym/scripts.pory"
 	.string "With this badge, Pokémon of up to level\n"
-	.string "30 will be easier to catch and will\l"
+	.string "25 will be easier to catch and will\l"
 	.string "listen to your commands!\p"
 	.string "Plus, you can use the HM move Rock\n"
 	.string "Smash outside of battle!\p"
