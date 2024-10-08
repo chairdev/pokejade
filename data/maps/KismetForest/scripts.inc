@@ -8,7 +8,7 @@ KismetForest_OnLoad::
 # 15 "data/maps/KismetForest/scripts.pory"
 	gettime
 # 16 "data/maps/KismetForest/scripts.pory"
-	compare VAR_0x8003, DAY_SATURDAY
+	compare VAR_0x8003, DAY_WEDNESDAY
 	goto_if_ne KismetForest_OnLoad_1
 	return
 
@@ -344,7 +344,7 @@ KismetForest_EventScript_Static_Scolipede_Text_0:
 
 KismetForest_EventScript_Static_Scolipede_Text_1:
 # 39 "data/maps/KismetForest/scripts.pory"
-	.string "Scolipede ran deeper into the forest.$"
+	.string "Scolipede ran deep into the forest.$"
 
 KismetForest_Jasmine_Text_0:
 # 80 "data/maps/KismetForest/scripts.pory"

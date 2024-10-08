@@ -36,7 +36,7 @@ script KismetForest_EventScript_Static_Scolipede {
     specialvar(VAR_RESULT, GetBattleOutcome)
     if(var(VAR_RESULT) == B_OUTCOME_WON || var(VAR_RESULT) == B_OUTCOME_RAN)
     {
-        msgbox(format("Scolipede ran deeper into the forest."))
+        msgbox(format("Scolipede ran deep into the forest."))
         closemessage
     }
     

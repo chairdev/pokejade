@@ -1,0 +1,36 @@
+mapscripts StarridgeCity_EldonsHouse_MapScripts {}
+
+script StarridgeCity_EventScript_Trade_Honedge {
+    lock
+    faceplayer
+    release
+}
+
+text StarridgeCity_Text_Trade_Honedge_AskToTrade {
+    format( "Hey, kid. Do you ever trade Pokémon with people?\p"
+            "It's always fun to see what kind of bonds form with a new partner.\p"
+            "Why do I ask?\nYou see, I've got this Honedge and he's a trusty blade, but...\p"
+            "I think he's looking for a new adventure.\p"
+            "Maybe you could be the one to guide him to his next challenge.\p"
+            "If you could trade me a rare Pokemon like Dunsparce I'd trade you him.\p"
+            "What do you say?"
+    )
+}
+
+text StarridgeCity_Text_Trade_Honedge_AfterTrade {
+    format( "Sh'ding is in good hands, I can tell.\p"
+            "He's been with me for a while, but I think he'll grow even stronger with you.\p"
+            "Treat him well, yeah?\p"
+            "And don't worry about Dunsparce--it'll fit in perfectly here."
+    )
+} 
+
+text StarridgeCity_Text_Trade_Honedge_After {
+    format("I've finally got a Dunsparce! I can't wait to see what it can do!")
+}
+
+text StarridgeCity_Text_Trade_Honedge_Refuse {
+    format( "What? you changed your mind\p"
+            "Ah, no worries!\nMaybe you'll change your mind later."
+            )
+}

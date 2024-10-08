@@ -628,6 +628,7 @@
 #define MAP_STARRIDGE_CITY_MELODYS_HOUSE     (1 | (38 << 8))
 #define MAP_STARRIDGE_CITY_GYM               (2 | (38 << 8))
 #define MAP_STARRIDGE_CITY_MART              (3 | (38 << 8))
+#define MAP_STARRIDGE_CITY_ELDONS_HOUSE      (4 | (38 << 8))
 
 #define MAP_GROUPS_COUNT 39
 
