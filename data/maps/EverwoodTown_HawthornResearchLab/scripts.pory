@@ -29,11 +29,6 @@ script EverwoodTown_HawthornResearchLab_MapScript_ReceiveStarter {
     playfanfare(MUS_EVOLVED)
     msgbox(format("You've received the {STR_VAR_1}!"))
     waitfanfare
-
-    speakername("Hawthorne")
-    msgbox(ReceiveStarter_HawthorneText2)
-    closemessage    
-
     msgbox("Would you like to give it a nickname?", MSGBOX_YESNO)
     closemessage    
 
@@ -45,6 +40,9 @@ script EverwoodTown_HawthornResearchLab_MapScript_ReceiveStarter {
         msgbox(format("That's alright. Please take care of it well."))
     }
 
+    speakername("Hawthorne")
+    msgbox(ReceiveStarter_HawthorneText2)
+    closemessage    
     closemessage
     giveitem(ITEM_POKE_BALL, 5)
     msgbox(ReceiveStarter_HawthorneText3)
@@ -72,7 +70,6 @@ script EverwoodTown_HawthornResearchLab_MapScript_ReceiveStarter {
     msgbox(ReceiveStarter_HawthorneText7) // Tera Orb Dialogue
     closemessage
     giveitem(ITEM_TERA_ORB, 1)
-    msgbox("You've received the Tera Orb!")
     waitfanfare
 
     speakername("Hawthorne")
@@ -106,7 +103,6 @@ script EverwoodTown_HawthornResearchLab_MapScript_ReceiveStarter {
     msgbox(ReceiveStarter_HawthorneText9) // Exp. Share Dialogue
     closemessage
     giveitem(ITEM_EXP_SHARE, 1)
-    msgbox("You've received the Exp. Share!")
     waitfanfare
 
     setflag(FLAG_EXP_SHARE)
@@ -156,7 +152,7 @@ text ReceiveStarter_HawthorneText4 {
     format("This is a Pokédex.\p"
            "It's a high-tech encyclopedia that records information on every Pokémon you encounter.\p"
            "As you travel through Toshou, I'd like you to help me with my research by filling it with details on the various Pokémon species you'll meet.\p"
-           "I believe you're both more than capable of doing so.\p"
+           "I believe you're both more than capable of doing so."
            )
 }
 
