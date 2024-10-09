@@ -14806,7 +14806,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 5979
-            .species = SPECIES_SKIDDO,
+            .species = SPECIES_NICKIT,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5981
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -21671,7 +21671,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 8693
-            .species = SPECIES_HOPPIP,
+            .species = SPECIES_SMOLIV,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8695
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -27921,7 +27921,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 11143
-            .species = SPECIES_CHEWTLE,
+            .species = SPECIES_JIGGLYPUFF,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11145
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -27932,7 +27932,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 11147
-            .species = SPECIES_PIKACHU,
+            .species = SPECIES_PICHU,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11149
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
