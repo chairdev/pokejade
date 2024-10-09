@@ -6249,64 +6249,83 @@ Electrike
 Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_WALLACE ===
-Name: WALLACE
+=== TRAINER_ROSEN ===
+Name: Rosen
 Class: Champion
 Pic: Champion Wallace
 Gender: Male
 Music: Male
 Items: Full Restore / Full Restore / Full Restore / Full Restore
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Check Viability / Try To Faint / Setup First Turn / HP Aware / Smart Switching / Ace Pokemon
 Mugshot: Yellow
 
-Wailord
-Level: 57
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Rain Dance
-- Water Spout
-- Double Edge
-- Blizzard
+Glimmora @ Red Card  
+Ability: Toxic Debris  
+Level: 68  
+EVs: 8 Atk / 248 SpA / 248 Spe  
+Naive Nature  
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe    
+- Stealth Rock  
+- Mortal Spin  
+- Power Gem  
+- Earth Power  
 
-Tentacruel
-Level: 55
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Toxic
-- Hydro Pump
-- Sludge Bomb
-- Ice Beam
+Palafin @ Leftovers  
+Ability: Zero to Hero  
+Level: 69  
+EVs: 252 Atk / 8 SpD / 248 Spe  
+Jolly Nature  
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe    
+- Jet Punch  
+- Flip Turn  
+- Zen Headbutt  
+- Bulk Up  
 
-Ludicolo
-Level: 56
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Giga Drain
-- Surf
-- Leech Seed
-- Double Team
+Alakazam @ Focus Sash  
+Ability: Magic Guard  
+Level: 69  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe    
+- Psychic  
+- Shadow Ball  
+- Thunderbolt  
+- Focus Blast  
 
-Whiscash
-Level: 56
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Earthquake
-- Surf
-- Amnesia
-- Hyper Beam
+Volcarona @ Heavy-Duty Boots  
+Ability: Flame Body  
+Level: 68  
+EVs: 4 HP / 252 SpA / 4 SpD / 248 Spe  
+Modest Nature  
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe     
+- Bug Buzz  
+- Heat Wave  
+- Giga Drain  
+- Quiver Dance  
 
-Gyarados
-Level: 56
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Dragon Dance
-- Earthquake
-- Hyper Beam
-- Surf
+Gholdengo @ Air Balloon  
+Ability: Good as Gold  
+Level: 68  
+EVs: 252 HP / 248 SpA / 8 SpD  
+Modest Nature  
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe       
+- Make It Rain  
+- Shadow Ball  
+- Nasty Plot  
+- Recover  
 
-Milotic @ Sitrus Berry
-Level: 58
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Recover
-- Surf
-- Ice Beam
-- Toxic
+Baxcalibur @ Lum Berry  
+Ability: Thermal Exchange  
+Level: 70  
+Tera Type: Fairy  
+EVs: 248 Atk / 8 SpA / 252 Spe  
+Naughty Nature  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe    
+- Dragon Dance  
+- Glaive Rush  
+- Earthquake  
+- Tera Blast  
 
 === TRAINER_ANDREW ===
 Name: Andrew
