@@ -14,3 +14,13 @@ script StemfordTown_PokemonCenter_1F_EventScript_Nurse {
     waitbuttonpress
     release
 }
+
+script StemfordTown_PokemonCenter_1F_EventScript_TiredLady {
+    lock
+    faceplayer
+    msgbox(format(
+        "Ever notice how nobody in this world sleeps?"
+        "Not the trainers, not the Pokémon, certainly not me."
+    ))
+    release
+}
