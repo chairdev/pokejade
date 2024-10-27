@@ -20674,6 +20674,32 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .battleAnimScript = Move_MALIGNANT_CHAIN,
     },
 
+    // Custom Moves
+    [MOVE_MUD_SNARE] =
+    {
+        .name = COMPOUND_STRING("Mud Snare"),
+        .description = COMPOUND_STRING(
+            "Traps the target in mud for\n"
+            BINDING_TURNS " turns, dealing damage."),
+        .effect = EFFECT_HIT,
+        .power = 35, 
+        .type = TYPE_GROUND,
+        .accuracy = 85,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_WRAP,
+        }),
+         .contestEffect = CONTEST_EFFECT_STARTLE_PREV_MONS,
+        .contestCategory = CONTEST_CATEGORY_TOUGH,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_MUD_SPORT},
+        .battleAnimScript = Move_MUD_SNARE,
+    },
+
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =
     {

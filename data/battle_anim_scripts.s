@@ -98,6 +98,35 @@ gBattleAnims_Special::
 	.4byte Special_MonToSubstitute          @ B_ANIM_MON_TO_SUBSTITUTE
 	.4byte Special_CriticalCaptureBallThrow @ B_ANIM_CRITICAL_CAPTURE_THROW
 
+Move_MUD_SNARE::
+    loadspritegfx ANIM_TAG_MUD_SAND
+    playsewithpan SE_M_SAND_ATTACK, SOUND_PAN_ATTACKER
+
+    @ Initial attack animation similar to Mud Slap
+    createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, 0, -10, 0, 0, 3
+    waitforvisualfinish
+
+    @ Create the mud trap effect (similar to Mud Sport splash effect)
+    createsprite gMudsportMudSpriteTemplate, ANIM_TARGET, 2, 0, -4, -16
+    createsprite gMudsportMudSpriteTemplate, ANIM_TARGET, 2, 0, 4, -12
+    playsewithpan SE_M_DIG, SOUND_PAN_ATTACKER
+    delay 32
+
+    @ Continue to create mud splashes
+    createsprite gMudsportMudSpriteTemplate, ANIM_TARGET, 2, 0, -3, -12
+    createsprite gMudsportMudSpriteTemplate, ANIM_TARGET, 2, 0, 5, -14
+    playsewithpan SE_M_DIG, SOUND_PAN_ATTACKER
+    delay 32
+
+    createsprite gMudsportMudSpriteTemplate, ANIM_TARGET, 2, 0, -5, -18
+    createsprite gMudsportMudSpriteTemplate, ANIM_TARGET, 2, 0, 3, -14
+    playsewithpan SE_M_DIG, SOUND_PAN_ATTACKER
+    delay 16
+
+    @ Start trapping effect, similar to Wrap
+    createvisualtask AnimTask_TranslateMonEllipticalRespectSide, 2, ANIM_ATTACKER, 6, 4, 2, 4
+    goto BindWrap
+
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 4 @@@@@@@@@@@@@@@@@@@@@@@
 Move_ROOST::
 	loadspritegfx ANIM_TAG_WHITE_FEATHER

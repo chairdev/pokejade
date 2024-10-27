@@ -25,3 +25,21 @@ StemfordTown_PokemonCenter_1F_EventScript_Nurse::
 	release
 	return
 
+
+StemfordTown_PokemonCenter_1F_EventScript_TiredLady::
+# 19 "data/maps/StemfordTown_PokemonCenter_1F/scripts.pory"
+	lock
+# 20 "data/maps/StemfordTown_PokemonCenter_1F/scripts.pory"
+	faceplayer
+# 21 "data/maps/StemfordTown_PokemonCenter_1F/scripts.pory"
+	msgbox StemfordTown_PokemonCenter_1F_EventScript_TiredLady_Text_0
+# 25 "data/maps/StemfordTown_PokemonCenter_1F/scripts.pory"
+	release
+	return
+
+
+StemfordTown_PokemonCenter_1F_EventScript_TiredLady_Text_0:
+# 22 "data/maps/StemfordTown_PokemonCenter_1F/scripts.pory"
+	.string "Ever notice how nobody in this world\n"
+	.string "sleeps? Not the trainers, not the\l"
+	.string "Pokémon, certainly not me.$"

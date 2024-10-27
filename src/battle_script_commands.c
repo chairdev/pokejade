@@ -295,7 +295,8 @@ static const u16 sTrappingMoves[NUM_TRAPPING_MOVES] =
     MOVE_MAGMA_STORM,
     MOVE_INFESTATION,
     MOVE_SNAP_TRAP,
-    MOVE_THUNDER_CAGE
+    MOVE_THUNDER_CAGE,
+    MOVE_MUD_SNARE,
 };
 
 static const u16 sBadgeFlags[8] = {
