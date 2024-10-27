@@ -127,6 +127,32 @@ Move_MUD_SNARE::
     createvisualtask AnimTask_TranslateMonEllipticalRespectSide, 2, ANIM_ATTACKER, 6, 4, 2, 4
     goto BindWrap
 
+Move_FORLORN_ECHO::
+    // Load and display the sweat drop effect for a sense of desperation
+    loadspritegfx ANIM_TAG_SWEAT_DROP
+    createvisualtask AnimTask_SquishAndSweatDroplets, 2, ANIM_ATTACKER, 3
+    createvisualtask AnimTask_FacadeColorBlend, 2, ANIM_ATTACKER, 72
+
+    // Add sound effects and shaking to convey a powerful echo
+    loadspritegfx ANIM_TAG_METAL_SOUND_WAVES
+    monbg ANIM_DEF_PARTNER
+    splitbgprio_foes ANIM_TARGET
+    createvisualtask AnimTask_ShakeMon2, 2, ANIM_ATTACKER, 2, 0, 8, 1
+
+    // Loop through "notes" to create echo sound waves, repeated for impact
+    call MetalSoundPlayNote
+    call MetalSoundPlayNote
+	call MetalSoundPlayNote
+    call MetalSoundPlayNote
+
+    waitforvisualfinish
+
+    // Clear and reset background effects, end animation
+    clearmonbg ANIM_DEF_PARTNER
+    delay 0x0
+    waitforvisualfinish
+    end
+
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 4 @@@@@@@@@@@@@@@@@@@@@@@
 Move_ROOST::
 	loadspritegfx ANIM_TAG_WHITE_FEATHER

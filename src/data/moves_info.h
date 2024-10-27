@@ -20699,6 +20699,28 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .contestComboMoves = {COMBO_STARTER_MUD_SPORT},
         .battleAnimScript = Move_MUD_SNARE,
     },
+    [MOVE_FORLORN_ECHO] =
+    {
+        .name = COMPOUND_STRING("Forlorn Echo"),
+        .description = COMPOUND_STRING(
+            "Move's power doubled if\n"
+            "the user is burned, paralyzed, or poisoned."),
+        .effect = EFFECT_FACADE,
+        .power = 40,
+        .type = TYPE_FAIRY,
+        .accuracy = 100,
+        .pp = 35,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .ignoresSubstitute = B_UPDATED_MOVE_FLAGS >= GEN_6,
+        .soundMove = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_CUTE,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_TAUNT},
+        .battleAnimScript = Move_FORLORN_ECHO,
+    },
 
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =

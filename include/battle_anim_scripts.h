@@ -2,6 +2,7 @@
 #define GUARD_BATTLE_ANIM_SCRIPTS_H
 
 extern const u8 Move_MUD_SNARE[];
+extern const u8 Move_FORLORN_ECHO[];
 
 extern const u8 Move_NONE[];
 extern const u8 Move_POUND[];
