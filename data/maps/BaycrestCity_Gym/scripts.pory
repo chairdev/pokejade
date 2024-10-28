@@ -270,6 +270,7 @@ script BaycrestCity_Gym_EventScript_GeoDefeated {
 }
 
 script BaycrestCity_Gym_EventScript_GiveSandTomb {
+    closemessage
     giveitem(ITEM_TM_SAND_TOMB)
 
     if(var(VAR_RESULT) == FALSE)
@@ -285,23 +286,23 @@ script BaycrestCity_Gym_EventScript_GiveSandTomb {
 
 text BaycrestCity_Gym_Text_GeoIntro {
     format("Are you my next challenger?\nI'm Geo, the Baycrest City Gym Leader!\p"
-            "I may be a kid, but I graduated from the Trainer School with top marks a few years ago!\p"
-            "I think that Ground-type is one of the best offensive types in the world!\p"
-            "You could say it's the foundation of a good team!\p"
-            "But don't think I'm going to go easy on you!\p"
-            "I'll show you and the world that Ground-types aren't pushovers!"
+            "My name's Geo, and I'm the Gym Leader here in Baycrest City!\p"
+            "Some people think I'm just a kid, but I study really hard.\p"
+            "I graduated from the Trainer School really fast because I love learning about Pokémon and battles!\p"
+            "Ground-types are my favorite!\nThey're really strong and solid, like the earth itself.\p"
+            "I hope you're ready!\nI'm going to show you just how strong Ground-types can be!"
     )
 }
 
 text BaycrestCity_Gym_Text_GeoDefeat {
-    format( "My solid foundation crumbled...\p"
-            "Even though I'm a Gym Leader, I still have a lot to learn...")
+    format( "Whoa... I guess my plans weren't as strong as I thought.\p"
+            "Thank you, Challenger--you've given me a lot to think about!")
 }
 
 text BaycrestCity_Gym_Text_GeoDefeated {
-    format( "Ahem!\nCongratulations, {PLAYER}!\p"
-            "According to the official rules of the Pokémon League, once you defeat a Gym Leader, you will receive a badge as proof of your victory!\p"
-            "That's right!\nThe Pokémon League's official Foundation Badge is yours!")
+    format( "Oh! You really did it--great job, Challenger!\p"
+            "As the Gym Leader, I officially give you this Gym Badge to show you've beaten me fair and square.\p"
+            "This is the Foundation Badge!\nYou've earned it with your hard work!")
 }
 
 text BaycrestCity_Gym_Text_ReceivedFoundationBadge {
@@ -309,20 +310,24 @@ text BaycrestCity_Gym_Text_ReceivedFoundationBadge {
 }
 
 text BaycrestCity_Gym_Text_FoundationBadgeInfo {
-    format( "With this badge, Pokémon of up to level 25 will be easier to catch and will listen to your commands!\p"
-            "Plus, you can use the HM move Rock Smash outside of battle!\p"
-            "One more thing!\nTake this TM as a reward for your victory!"
+    format( "With one badge, Pokémon of up to level 25 will be easier to catch and will listen to your commands!\p"
+            "And hey, you can use the HM Rock Smash outside of battles now too!\p"
+            "Oh, and here's something else for you--this TM!"
     )
 }
 
 text BaycrestCity_Gym_Text_ExplainSandTomb {
-    format( "This is the TM--Technical Machine--for Sand Tomb!\p"
+    format( "This TM teaches Sand Tomb, a Ground-type move."
             "It's a Ground-type move that traps the opponent in a vortex of sand for 4-5 turns!\p"
-            "It's a great move to keep your opponent grounded!\nGet it? Grounded? Ahaha!"
+            "It's a great move if you want to keep your opponent from switching out.\p"
+            "And, well, it's pretty cool, don't you think?"
     )
 }
 
 text BaycrestCity_Gym_Text_GeoPostBattle {
-    format("You were a great challenger!\nI hope you'll come back to challenge me again!")
+    format( "You were really awesome, Challenger!"
+            "I hope you'll come back and battle me again sometime! And good luck with your next Gym!"
+    )
+
     
 }

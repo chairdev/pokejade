@@ -20,27 +20,31 @@ script StarridgeCity_Gym_EventScript_Melody { //leader
 }
 
 text StarridgeCity_Gym_Text_MelodyIntro {
-    format("Hi! I'm Melody!\p"
-            "I only recently became the Gym Leader here in Starridge City.\p"
-            "Truth is, I'm still learning the ropes, but I'm excited to be here!\p"
-            "Ms. Jasmine told me that I should take a deep breath and just be myself.\p"
-            "So, here I am! Ready to battle!\p"
-            "Let's have a totally magical battle!")
+    format("Hi there! Melody's the new Gym Leader in Starridge City!\p"
+           "Melody only just moved here from Johto, so everything feels so... new and sparkly!\p"
+           "Ms. Jasmine, Melody's role model, says to just 'be herself'...\nSo, here Melody is!\p"
+           "Let's have a battle filled with sparkles and magic!\nFairy-style!")
 }
 
-text StarridgeCity_Gym_Text_MelodyDefeat { //she starts crying
-    format( "Wahhh! Melody lost!\p"
-            "I knew I wasn't ready to be a Gym Leader!\p"
-            "This is so embarrassing!\nI want to go back home and hide in my bed!\p"
-            "I-I..."
-            )
+text StarridgeCity_Gym_Text_MelodyDefeat {
+    format("Wahhh! Melody... lost?\p"
+           "Melody was so sure she was ready to be a Gym Leader!\p"
+           "This is... so embarrassing!\p"
+           "Melody feels like hiding under her covers for a week!\nSniff...")
+}
+
+text StarridgeCity_Gym_Text_MelodyDefeated {
+    format("Sniff... Melody's sorry for crying.\p"
+           "Melody wanted to be strong, but maybe she still has more to learn.\p"
+           "You and your Pokémon taught Melody a lot today...\nThank you, {PLAYER}.\p"
+           "You deserve this badge, and Melody hopes you'll accept it with a sprinkle of magic!")
 }
 
 text StarridgeCity_Gym_Text_MelodyPostBattle {
-    format( "Thank you so much for battling me, {PLAYER}!\p"
-            "I had a lot of fun, and I learned a lot too!\p"
-            "Ms. Jasmine would be so proud of me for trying my best."
-            )
+    format("Thank you so, so much for battling with Melody, {PLAYER}!\p"
+           "Melody learned so much from you and your Pokémon!\p"
+           "Ms. Jasmine would say Melody tried her best, and Melody hopes she made her proud, too!\p"
+           "Sparkles and cheers for you, {PLAYER}!")
 }
 
 script StarridgeCity_Gym_EventScript_MelodyDefeated {
@@ -62,25 +66,20 @@ script StarridgeCity_Gym_EventScript_MelodyDefeated {
     release
 }
 
-text StarridgeCity_Gym_Text_MelodyDefeated {
-    format( "Sniff... I'm sorry for crying.\p"
-            "I'm just so... disappointed in myself.\p"
-            "I thought I was ready to be a Gym Leader, but I guess I still have a lot to learn.\p"
-            "You're the one who taught me that, {PLAYER}.\p"
-            "Thanks to you and your Pokémon for showing me that I still have a long way to go.\p"
-            "You totally deserve this badge.\nI hope you'll accept it."
-            )
-}
-
 text StarridgeCity_Gym_Text_ReceivedGlintBadge {
     format("You received the Glint Badge!")
 }
 
 text StarridgeCity_Gym_Text_GlintBadgeInfo {
-    format("With this badge, Pokémon up to Level 35 will obey you.\p"
-            "You can also use the HM move Cut outside of battle.\p"
-            "And, um... I want to give you this TM.\nYou know, as a thanks!"
-            )
+    format("With two badges, Pokémon up to Level 35 will listen to you!\p"
+           "Oh, and you can use the HM move Cut outside of battle, too!\p"
+           "Oh, oh! Melody has a special gift as a thank-you! This TM!")
+}
+
+text StarridgeCity_Gym_Text_ExplainDrainingKiss {
+    format("This is the TM for Draining Kiss!\p"
+           "It's a Fairy move that's super cute and heals you!\p"
+           "Melody thinks it's perfect, and she hopes you like it too!")
 }
 
 script StarridgeCity_Gym_EventScript_GiveDrainingKiss {
@@ -95,13 +94,6 @@ script StarridgeCity_Gym_EventScript_GiveDrainingKiss {
     speakername("Melody")
     msgbox(StarridgeCity_Gym_Text_ExplainDrainingKiss)
     release
-}
-
-text StarridgeCity_Gym_Text_ExplainDrainingKiss {
-    format("This is the TM for Draining Kiss.\p"
-            "It's a Fairy-type move that heals the user by over half the damage dealt.\p"
-            "It's totally adorable, right? I hope you like it!"
-            )
 }
 
 //Gym Guide

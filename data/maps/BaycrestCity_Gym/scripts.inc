@@ -332,23 +332,25 @@ BaycrestCity_Gym_EventScript_GeoDefeated::
 
 BaycrestCity_Gym_EventScript_GiveSandTomb::
 # 273 "data/maps/BaycrestCity_Gym/scripts.pory"
+	closemessage
+# 274 "data/maps/BaycrestCity_Gym/scripts.pory"
 	giveitem ITEM_TM_SAND_TOMB
-# 275 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 276 "data/maps/BaycrestCity_Gym/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq BaycrestCity_Gym_EventScript_GiveSandTomb_2
 BaycrestCity_Gym_EventScript_GiveSandTomb_1:
-# 280 "data/maps/BaycrestCity_Gym/scripts.pory"
-	setflag FLAG_RECEIVED_TM_SAND_TOMB
 # 281 "data/maps/BaycrestCity_Gym/scripts.pory"
-	speakername BaycrestCity_Gym_EventScript_Geo_Text_0
+	setflag FLAG_RECEIVED_TM_SAND_TOMB
 # 282 "data/maps/BaycrestCity_Gym/scripts.pory"
-	msgbox BaycrestCity_Gym_Text_ExplainSandTomb
+	speakername BaycrestCity_Gym_EventScript_Geo_Text_0
 # 283 "data/maps/BaycrestCity_Gym/scripts.pory"
+	msgbox BaycrestCity_Gym_Text_ExplainSandTomb
+# 284 "data/maps/BaycrestCity_Gym/scripts.pory"
 	release
 	return
 
 BaycrestCity_Gym_EventScript_GiveSandTomb_2:
-# 277 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 278 "data/maps/BaycrestCity_Gym/scripts.pory"
 	goto Common_EventScript_ShowBagIsFull
 	goto BaycrestCity_Gym_EventScript_GiveSandTomb_1
 
@@ -457,67 +459,68 @@ BaycrestCity_Gym_Text_JunpeiPostBattle::
 	.string "after all...$"
 
 BaycrestCity_Gym_Text_GeoIntro::
-# 286 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 287 "data/maps/BaycrestCity_Gym/scripts.pory"
 	.string "Are you my next challenger?\n"
 	.string "I'm Geo, the Baycrest City Gym Leader!\p"
-	.string "I may be a kid, but I graduated from the\n"
-	.string "Trainer School with top marks a few\l"
-	.string "years ago!\p"
-	.string "I think that Ground-type is one of the\n"
-	.string "best offensive types in the world!\p"
-	.string "You could say it's the foundation of a\n"
-	.string "good team!\p"
-	.string "But don't think I'm going to go easy on\n"
-	.string "you!\p"
-	.string "I'll show you and the world that\n"
-	.string "Ground-types aren't pushovers!$"
+	.string "My name's Geo, and I'm the Gym Leader\n"
+	.string "here in Baycrest City!\p"
+	.string "Some people think I'm just a kid, but I\n"
+	.string "study really hard.\p"
+	.string "I graduated from the Trainer School\n"
+	.string "really fast because I love learning\l"
+	.string "about Pokémon and battles!\p"
+	.string "Ground-types are my favorite!\n"
+	.string "They're really strong and solid, like the\l"
+	.string "earth itself.\p"
+	.string "I hope you're ready!\n"
+	.string "I'm going to show you just how strong\l"
+	.string "Ground-types can be!$"
 
 BaycrestCity_Gym_Text_GeoDefeat::
-# 296 "data/maps/BaycrestCity_Gym/scripts.pory"
-	.string "My solid foundation crumbled...\p"
-	.string "Even though I'm a Gym Leader, I still\n"
-	.string "have a lot to learn...$"
+# 297 "data/maps/BaycrestCity_Gym/scripts.pory"
+	.string "Whoa... I guess my plans weren't as\n"
+	.string "strong as I thought.\p"
+	.string "Thank you, Challenger--you've given me\n"
+	.string "a lot to think about!$"
 
 BaycrestCity_Gym_Text_GeoDefeated::
-# 301 "data/maps/BaycrestCity_Gym/scripts.pory"
-	.string "Ahem!\n"
-	.string "Congratulations, {PLAYER}!\p"
-	.string "According to the official rules of the\n"
-	.string "Pokémon League, once you defeat a Gym\l"
-	.string "Leader, you will receive a badge as\l"
-	.string "proof of your victory!\p"
-	.string "That's right!\n"
-	.string "The Pokémon League's official\l"
-	.string "Foundation Badge is yours!$"
+# 302 "data/maps/BaycrestCity_Gym/scripts.pory"
+	.string "Oh! You really did it--great job,\n"
+	.string "Challenger!\p"
+	.string "As the Gym Leader, I officially give you\n"
+	.string "this Gym Badge to show you've beaten me\l"
+	.string "fair and square.\p"
+	.string "This is the Foundation Badge!\n"
+	.string "You've earned it with your hard work!$"
 
 BaycrestCity_Gym_Text_ReceivedFoundationBadge::
-# 307 "data/maps/BaycrestCity_Gym/scripts.pory"
+# 308 "data/maps/BaycrestCity_Gym/scripts.pory"
 	.string "You received the Foundation Badge!$"
 
 BaycrestCity_Gym_Text_FoundationBadgeInfo::
-# 311 "data/maps/BaycrestCity_Gym/scripts.pory"
-	.string "With this badge, Pokémon of up to level\n"
+# 312 "data/maps/BaycrestCity_Gym/scripts.pory"
+	.string "With one badge, Pokémon of up to level\n"
 	.string "25 will be easier to catch and will\l"
 	.string "listen to your commands!\p"
-	.string "Plus, you can use the HM move Rock\n"
-	.string "Smash outside of battle!\p"
-	.string "One more thing!\n"
-	.string "Take this TM as a reward for your\l"
-	.string "victory!$"
+	.string "And hey, you can use the HM Rock Smash\n"
+	.string "outside of battles now too!\p"
+	.string "Oh, and here's something else for\n"
+	.string "you--this TM!$"
 
 BaycrestCity_Gym_Text_ExplainSandTomb::
-# 318 "data/maps/BaycrestCity_Gym/scripts.pory"
-	.string "This is the TM--Technical Machine--for\n"
-	.string "Sand Tomb!\p"
-	.string "It's a Ground-type move that traps the\n"
-	.string "opponent in a vortex of sand for 4-5\l"
-	.string "turns!\p"
-	.string "It's a great move to keep your opponent\n"
-	.string "grounded!\n"
-	.string "Get it? Grounded? Ahaha!$"
+# 319 "data/maps/BaycrestCity_Gym/scripts.pory"
+	.string "This TM teaches Sand Tomb, a\n"
+	.string "Ground-type move. It's a Ground-type\l"
+	.string "move that traps the opponent in a\l"
+	.string "vortex of sand for 4-5 turns!\p"
+	.string "It's a great move if you want to keep\n"
+	.string "your opponent from switching out.\p"
+	.string "And, well, it's pretty cool, don't you\n"
+	.string "think?$"
 
 BaycrestCity_Gym_Text_GeoPostBattle::
-# 325 "data/maps/BaycrestCity_Gym/scripts.pory"
-	.string "You were a great challenger!\n"
-	.string "I hope you'll come back to challenge me\l"
-	.string "again!$"
+# 327 "data/maps/BaycrestCity_Gym/scripts.pory"
+	.string "You were really awesome, Challenger! I\n"
+	.string "hope you'll come back and battle me\l"
+	.string "again sometime! And good luck with your\l"
+	.string "next Gym!$"
