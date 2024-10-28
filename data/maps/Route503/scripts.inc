@@ -734,7 +734,7 @@ Route503_Text_MeetDio_Rival1::
 	.string "beat him!$"
 
 Route503_Text_MeetDio_Dio1::
-# 197 "data/maps/Route503/scripts.pory"
+# 195 "data/maps/Route503/scripts.pory"
 	.string "That's because you're weak!\n"
 	.string "Weak trainers like you need to just give\l"
 	.string "up and go home!\p"
@@ -743,7 +743,7 @@ Route503_Text_MeetDio_Dio1::
 	.string "beautiful, powerful trainer!$"
 
 Route503_Text_MeetDio_Rival2::
-# 204 "data/maps/Route503/scripts.pory"
+# 202 "data/maps/Route503/scripts.pory"
 	.string "Gah! You're so annoying!\n"
 	.string "You know what? I'm going to make you\l"
 	.string "pay for this!\p"
@@ -752,13 +752,14 @@ Route503_Text_MeetDio_Rival2::
 	.string "$"
 
 Route503_Text_MeetDio_Rival3::
-# 210 "data/maps/Route503/scripts.pory"
+# 208 "data/maps/Route503/scripts.pory"
 	.string "What's that, {PLAYER}?\n"
 	.string "I can't hear you!\p"
-	.string "You're going to battle him, right?$"
+	.string "You're going to battle him.\n"
+	.string "...Right?$"
 
 Route503_Text_MeetDio_Dio2::
-# 215 "data/maps/Route503/scripts.pory"
+# 214 "data/maps/Route503/scripts.pory"
 	.string "Hmph! You think you can beat me?\p"
 	.string "You don't look AS weak as your friend,\n"
 	.string "but you're still no match for me!\p"
@@ -766,12 +767,12 @@ Route503_Text_MeetDio_Dio2::
 	.string "capable of!$"
 
 Route503_Text_DioDefeated::
-# 222 "data/maps/Route503/scripts.pory"
+# 221 "data/maps/Route503/scripts.pory"
 	.string "What? How could I lose to a weakling\n"
 	.string "like you?$"
 
 Route503_Text_MeetDio_Dio3::
-# 226 "data/maps/Route503/scripts.pory"
+# 225 "data/maps/Route503/scripts.pory"
 	.string "These Pokémon are all useless!\n"
 	.string "Useless, I tell you!\p"
 	.string "I need to find more powerful Pokémon to\n"
@@ -781,7 +782,7 @@ Route503_Text_MeetDio_Dio3::
 	.string "can be!$"
 
 Route503_Text_MeetDio_Rival4::
-# 233 "data/maps/Route503/scripts.pory"
+# 232 "data/maps/Route503/scripts.pory"
 	.string "...What a jerk!\n"
 	.string "I can't believe I lost to him!\p"
 	.string "Did you see how he treated his Pokémon?\n"
@@ -797,7 +798,7 @@ Route503_Text_MeetDio_Rival4::
 	.string "it! I'm sure you'll put it to good use!$"
 
 Route503_Text_MeetDio_Rival5::
-# 243 "data/maps/Route503/scripts.pory"
+# 242 "data/maps/Route503/scripts.pory"
 	.string "OK! That's enough chit-chat!\n"
 	.string "Let's get back to training!\p"
 	.string "I'll see you later, {PLAYER}! Let's\n"

@@ -155,7 +155,7 @@ text BaycrestCity_Text_Rival1F {
 text BaycrestCity_Text_Rival2F { //After battle, GIVE TM
     format("Wow, you're really good at this!\p"
             "I guess I'll have to train harder if I want to beat you!\p"
-            "Here, take this TM as a thank you for the battle!\p"
+            "Here, take this TM as a thank you for the battle!"
     )
 }
 
@@ -190,7 +190,7 @@ text BaycrestCity_Text_Rival1M {
 text BaycrestCity_Text_Rival2M {
     format("You're pretty good at this, {PLAYER}{KUN}!\p"
             "I'm gonna train hard so I can beat you next time!\p"
-            "I'll give you this since you helped me practice!\p"
+            "I'll give you this since you helped me practice!"
     )
 }
 

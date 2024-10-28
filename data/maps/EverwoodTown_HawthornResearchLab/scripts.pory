@@ -121,12 +121,13 @@ script EverwoodTown_HawthornResearchLab_MapScript_ReceiveStarter {
 
 // New Text for Rival's Comment on the Tera Orb
 text ReceiveStarter_RivalText_TeraOrb {
-    format("Wow, a Tera Orb, huh?\p"
-           "I heard those things let your Pokémon change its type or something.\p"
-           "If the original type is the same as its Tera type, moves of that type get an even bigger boost in power.\p"
-           "That's what I heard, anyway."
+    format("Whoa, a Tera Orb?\nDidn't expect to see one up close this soon.\p"
+           "I heard they let your Pokémon transform, change up its type.\p"
+           "And if it matches its own Tera type, it gets a pretty serious power boost.\p"
+           "...Well, that's what people say, anyway."
               )
 }
+
 
 text ReceiveStarter_HawthorneText1 {
     format("...I see. So, that's what happened.\p"
@@ -166,9 +167,12 @@ text ReceiveStarter_HawthorneText5 {
 }
 
 text ReceiveStarter_RivalText2 {
-    format("No, nothing! Let's just do our best, {PLAYER}!\p"
-    "Ahaha...")
+    format( "Oh, no! Nothing at all.\p"
+            "Just... let's do our best, {PLAYER}!\p"
+           "Haha..."
+           )
 }
+
 
 text ReceiveStarter_HawthorneText6 {
     format( "That's right! It lasts until the end of battle or until your Pokémon faints.\p"
@@ -258,30 +262,30 @@ script EverwoodTown_HawthornResearchLab_EventScript_Hawthorne {
 }
 
 text MeetHawthorneText1 {
-    format("Ah, there you are!\nYou must be {PLAYER}.\l"
-           "I've been waiting for you!\p"
-           "Where's {RIVAL}?\p"
-           "... What do you mean you don't know who that is?\p"
-           "But {RIVAL} was supposed to bring you the bag with the Poké Balls!"
+    format("Ah, there you are!\nSo you're {PLAYER}, yes?\l"
+           "I've been looking forward to meeting you.\p"
+           "By the way... where's {RIVAL}?\p"
+           "...What's that? You don't know who that is?\p"
+           "But {RIVAL} was supposed to deliver the bag with your Poké Balls!"
            )
 }
 
 text MeetHawthorneText2A {
-    format("She said she couldn't sit still and wait for you to arrive and took off.\p"
-           "{PLAYER}, I'm sorry to ask this of you, but could you go find her for me?\p"
-            "I'm sure she's just around the corner."
+    format("She was too restless to wait and went off ahead.\p"
+           "{PLAYER}, would you mind finding her for me?\p"
+           "I imagine she hasn't gone too far."
            )
 }
 
 text MeetHawthorneText2B {
-    format("He said he couldn't sit still and wait for you to arrive and took off.\p"
-           "{PLAYER}, I'm sorry to ask this of you, but could you go find him for me?\p"
-            "I'm sure he's just around the corner."
+    format("He couldn't seem to sit still and left ahead of you.\p"
+           "{PLAYER}, could I ask you to look for him?\p"
+           "I doubt he's wandered off very far."
            )          
 }
 
 text GoLookForRivalText1 {
-   format("Please, {PLAYER}, go look for {RIVAL}!\p"
-           "The bag with the Poké Balls is very important!"
+   format("Please, {PLAYER}, see if you can find {RIVAL}.\p"
+           "That bag with the Poké Balls is essential!"
            )
 }

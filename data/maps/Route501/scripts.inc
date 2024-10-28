@@ -288,171 +288,171 @@ RivalLookAround:
 # 197 "data/maps/Route501/scripts.pory"
 RivalApproachBag:
 # 198 "data/maps/Route501/scripts.pory"
-	walk_up
+	walk_fast_right
 # 199 "data/maps/Route501/scripts.pory"
-	walk_right
-# 199 "data/maps/Route501/scripts.pory"
-	walk_right
-# 199 "data/maps/Route501/scripts.pory"
-	walk_right
-# 199 "data/maps/Route501/scripts.pory"
-	walk_right
+	walk_fast_up
 # 200 "data/maps/Route501/scripts.pory"
+	walk_fast_right
+# 200 "data/maps/Route501/scripts.pory"
+	walk_fast_right
+# 200 "data/maps/Route501/scripts.pory"
+	walk_fast_right
+# 201 "data/maps/Route501/scripts.pory"
 	walk_in_place_faster_down
 	step_end
 
-# 203 "data/maps/Route501/scripts.pory"
+# 204 "data/maps/Route501/scripts.pory"
 PlayerApproachBag:
-# 204 "data/maps/Route501/scripts.pory"
-	walk_right
-# 204 "data/maps/Route501/scripts.pory"
-	walk_right
-# 204 "data/maps/Route501/scripts.pory"
-	walk_right
-# 204 "data/maps/Route501/scripts.pory"
+# 205 "data/maps/Route501/scripts.pory"
 	walk_right
 # 205 "data/maps/Route501/scripts.pory"
+	walk_right
+# 205 "data/maps/Route501/scripts.pory"
+	walk_right
+# 205 "data/maps/Route501/scripts.pory"
+	walk_right
+# 206 "data/maps/Route501/scripts.pory"
 	walk_in_place_faster_right
 	step_end
 
-# 208 "data/maps/Route501/scripts.pory"
+# 209 "data/maps/Route501/scripts.pory"
 PidoveApproachPlayer:
-# 209 "data/maps/Route501/scripts.pory"
-	walk_faster_down
-# 209 "data/maps/Route501/scripts.pory"
-	walk_faster_down
-# 209 "data/maps/Route501/scripts.pory"
-	walk_faster_down
-# 209 "data/maps/Route501/scripts.pory"
-	walk_faster_down
-# 209 "data/maps/Route501/scripts.pory"
-	walk_faster_down
-# 209 "data/maps/Route501/scripts.pory"
+# 210 "data/maps/Route501/scripts.pory"
 	walk_faster_down
 # 210 "data/maps/Route501/scripts.pory"
+	walk_faster_down
+# 210 "data/maps/Route501/scripts.pory"
+	walk_faster_down
+# 210 "data/maps/Route501/scripts.pory"
+	walk_faster_down
+# 210 "data/maps/Route501/scripts.pory"
+	walk_faster_down
+# 210 "data/maps/Route501/scripts.pory"
+	walk_faster_down
+# 211 "data/maps/Route501/scripts.pory"
 	face_right
 	step_end
 
-# 213 "data/maps/Route501/scripts.pory"
+# 214 "data/maps/Route501/scripts.pory"
 PidoveApprachRival:
-# 214 "data/maps/Route501/scripts.pory"
+# 215 "data/maps/Route501/scripts.pory"
 	walk_faster_down
-# 214 "data/maps/Route501/scripts.pory"
+# 215 "data/maps/Route501/scripts.pory"
 	walk_faster_down
-# 214 "data/maps/Route501/scripts.pory"
+# 215 "data/maps/Route501/scripts.pory"
 	walk_faster_down
-# 214 "data/maps/Route501/scripts.pory"
+# 215 "data/maps/Route501/scripts.pory"
 	walk_faster_down
 	step_end
 
-# 217 "data/maps/Route501/scripts.pory"
-ExclemationMark:
 # 218 "data/maps/Route501/scripts.pory"
+ExclemationMark:
+# 219 "data/maps/Route501/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 221 "data/maps/Route501/scripts.pory"
-FaceUp:
 # 222 "data/maps/Route501/scripts.pory"
+FaceUp:
+# 223 "data/maps/Route501/scripts.pory"
 	walk_in_place_faster_up
 	step_end
 
-# 225 "data/maps/Route501/scripts.pory"
-FaceDown:
 # 226 "data/maps/Route501/scripts.pory"
+FaceDown:
+# 227 "data/maps/Route501/scripts.pory"
 	walk_in_place_faster_down
 	step_end
 
-# 229 "data/maps/Route501/scripts.pory"
-FaceLeft:
 # 230 "data/maps/Route501/scripts.pory"
+FaceLeft:
+# 231 "data/maps/Route501/scripts.pory"
 	walk_in_place_faster_left
 	step_end
 
-# 233 "data/maps/Route501/scripts.pory"
-FaceRight:
 # 234 "data/maps/Route501/scripts.pory"
+FaceRight:
+# 235 "data/maps/Route501/scripts.pory"
 	walk_in_place_faster_right
 	step_end
 
 Route501_EventScript_SkwovetGirl::
-# 314 "data/maps/Route501/scripts.pory"
-	lock
-# 315 "data/maps/Route501/scripts.pory"
-	faceplayer
 # 317 "data/maps/Route501/scripts.pory"
+	lock
+# 318 "data/maps/Route501/scripts.pory"
+	faceplayer
+# 320 "data/maps/Route501/scripts.pory"
 	goto_if_set FLAG_RECEIVED_POTION_ROUTE_501, Route501_EventScript_SkwovetGirl_2
-# 323 "data/maps/Route501/scripts.pory"
+# 326 "data/maps/Route501/scripts.pory"
 	msgbox Route501_Text_SkwovetGirl1
-# 324 "data/maps/Route501/scripts.pory"
-	giveitem ITEM_ORAN_BERRY, 1
-# 325 "data/maps/Route501/scripts.pory"
-	msgbox Route501_Text_SkwovetGirl2
 # 327 "data/maps/Route501/scripts.pory"
+	giveitem ITEM_ORAN_BERRY, 1
+# 328 "data/maps/Route501/scripts.pory"
+	msgbox Route501_Text_SkwovetGirl2
+# 330 "data/maps/Route501/scripts.pory"
 	setflag FLAG_RECEIVED_POTION_ROUTE_501
 Route501_EventScript_SkwovetGirl_1:
-# 330 "data/maps/Route501/scripts.pory"
+# 333 "data/maps/Route501/scripts.pory"
 	release
 	return
 
 Route501_EventScript_SkwovetGirl_2:
-# 319 "data/maps/Route501/scripts.pory"
+# 322 "data/maps/Route501/scripts.pory"
 	msgbox Route501_Text_SkwovetGirl3
 	goto Route501_EventScript_SkwovetGirl_1
 
 
 Route501_EventScript_MartEmployee::
-# 352 "data/maps/Route501/scripts.pory"
-	lock
-# 353 "data/maps/Route501/scripts.pory"
-	faceplayer
 # 355 "data/maps/Route501/scripts.pory"
+	lock
+# 356 "data/maps/Route501/scripts.pory"
+	faceplayer
+# 358 "data/maps/Route501/scripts.pory"
 	goto_if_unset FLAG_RECEIVED_POTION_ROUTE501, Route501_EventScript_MartEmployee_2
 Route501_EventScript_MartEmployee_1:
-# 363 "data/maps/Route501/scripts.pory"
+# 366 "data/maps/Route501/scripts.pory"
 	msgbox Route501_Text_MartEmployee2
-# 364 "data/maps/Route501/scripts.pory"
+# 367 "data/maps/Route501/scripts.pory"
 	release
 	return
 
 Route501_EventScript_MartEmployee_2:
-# 357 "data/maps/Route501/scripts.pory"
-	msgbox Route501_Text_MartEmployee1
-# 358 "data/maps/Route501/scripts.pory"
-	giveitem ITEM_POTION, 5
 # 360 "data/maps/Route501/scripts.pory"
+	msgbox Route501_Text_MartEmployee1
+# 361 "data/maps/Route501/scripts.pory"
+	giveitem ITEM_POTION, 5
+# 363 "data/maps/Route501/scripts.pory"
 	setflag FLAG_RECEIVED_POTION_ROUTE501
 	goto Route501_EventScript_MartEmployee_1
 
 
 Route501_EventScript_Boy::
-# 380 "data/maps/Route501/scripts.pory"
-	lock
-# 381 "data/maps/Route501/scripts.pory"
-	faceplayer
-# 382 "data/maps/Route501/scripts.pory"
-	msgbox Route501_Text_Boy
 # 383 "data/maps/Route501/scripts.pory"
+	lock
+# 384 "data/maps/Route501/scripts.pory"
+	faceplayer
+# 385 "data/maps/Route501/scripts.pory"
+	msgbox Route501_Text_Boy
+# 386 "data/maps/Route501/scripts.pory"
 	release
 	return
 
 
 Route501_EventScript_Michael::
-# 392 "data/maps/Route501/scripts.pory"
+# 395 "data/maps/Route501/scripts.pory"
 	trainerbattle_single TRAINER_MICHAEL, Route501_Text_MichaelIntro, Route501_Text_MichaelDefeated
-# 393 "data/maps/Route501/scripts.pory"
+# 396 "data/maps/Route501/scripts.pory"
 	msgbox Route102_Text_MichaelPostBattle, MSGBOX_AUTOCLOSE
-# 394 "data/maps/Route501/scripts.pory"
+# 397 "data/maps/Route501/scripts.pory"
 	waitmessage
 	end
 
 
 Route501_Sign_Route::
-# 412 "data/maps/Route501/scripts.pory"
-	lock
-# 413 "data/maps/Route501/scripts.pory"
-	msgbox Route501_Text_Sign
 # 414 "data/maps/Route501/scripts.pory"
+	lock
+# 415 "data/maps/Route501/scripts.pory"
+	msgbox Route501_Text_Sign
+# 416 "data/maps/Route501/scripts.pory"
 	release
 	return
 
@@ -466,103 +466,97 @@ Route501_RivalHolly_Text_1:
 	.string "Oh, there it is!$"
 
 Route501_Text_MeetRivalText1F::
-# 237 "data/maps/Route501/scripts.pory"
-	.string "Huh? What the...?\p"
-	.string "Oh! Are you the {PLAYER}{KUN} that just\n"
-	.string "moved in next door?\p"
-	.string "I'm your neighbor, {RIVAL}! Nice to\n"
-	.string "meet you!\p"
-	.string "Oh, right! I have something for you from\n"
-	.string "Professor Hawthorne!\p"
-	.string "I went to your house to deliver it, but\n"
+# 238 "data/maps/Route501/scripts.pory"
+	.string "Huh? Oh!\p"
+	.string "You must be {PLAYER}{KUN}, right?\p"
+	.string "I'm {RIVAL}, your neighbor!\p"
+	.string "Professor Hawthorne asked me to bring\n"
+	.string "you something, but when I stopped by,\l"
 	.string "your mom said you were asleep.\p"
-	.string "I didn't want to wake you up, so I\n"
-	.string "decided to wander around a bit.\p"
-	.string "I guess I got a little carried away...\n"
-	.string "Sorry about that!\p"
-	.string "Uh.. where did I put it...?\p"
-	.string "Don't tell me I dropped it somewhere...$"
+	.string "So I went for a walk; Everwood's so small\n"
+	.string "that I just had to do something.\p"
+	.string "But now that I think of it... I might\n"
+	.string "have dropped it somewhere...\p"
+	.string "Oh no, this isn't good.$"
 
 Route501_Text_MeetRivalText2F::
-# 250 "data/maps/Route501/scripts.pory"
-	.string "I really don't know what I would've done\n"
-	.string "if I lost it...\p"
-	.string "The professor would've been so mad at\n"
-	.string "me!$"
+# 249 "data/maps/Route501/scripts.pory"
+	.string "Honestly, I'd be so lost if I can't find\n"
+	.string "it.\p"
+	.string "The professor would be pretty\n"
+	.string "disappointed in me.$"
 
 Route501_Text_MeetRivalText3F::
 # 257 "data/maps/Route501/scripts.pory"
-	.string "Uwaaah! Wha... What's going on?!\p"
-	.string "A wild Pokémon?! This is bad! This is\n"
-	.string "really bad!\p"
-	.string "{PLAYER}{KUN}, we have to use the Poké\n"
-	.string "Balls in that bag to protect ourselves!\p"
-	.string "Grab one and let's battle them!$"
+	.string "Eek! A wild Pokémon! This is bad, really\n"
+	.string "bad!\p"
+	.string "We need to use the Poké Balls in the bag\n"
+	.string "to defend ourselves!\p"
+	.string "Let's do this, {PLAYER}!$"
 
 Route501_Text_MeetRivalText4F::
 # 265 "data/maps/Route501/scripts.pory"
-	.string "Whew... That was a close one!\p"
-	.string "I can't believe we were attacked by wild\n"
-	.string "Pokémon!\p"
+	.string "Phew... that was close!\p"
+	.string "I didn't think wild Pokémon would just\n"
+	.string "attack us like that!\p"
 	.string "Good thing you had {STR_VAR_1} to\n"
-	.string "protect you!\p"
-	.string "You see, I don't really like Pokémon...\p"
-	.string "I just wanted a reason to go out and\n"
-	.string "explore the reason.\p"
-	.string "But I guess I'll have to get used to\n"
-	.string "them if I want to be a Trainer.\p"
-	.string "...We should probably head back to\n"
-	.string "Professor Hawthorne's lab now.\p"
-	.string "I'm sure he must be worried about us.$"
+	.string "protect you.\p"
+	.string "To be honest, I was never really into\n"
+	.string "Pokémon...\p"
+	.string "But I think I'll have to get used to\n"
+	.string "them if I want to see what's beyond\l"
+	.string "Everwood.\p"
+	.string "Come on, let's go back to Professor\n"
+	.string "Hawthorne's lab.\p"
+	.string "He's probably wondering if we got lost\n"
+	.string "or something.$"
 
 Route501_Text_MeetRivalText1M::
 # 277 "data/maps/Route501/scripts.pory"
 	.string "Whoa!\p"
-	.string "You're the new kid, {PLAYER}{KUN}, right?\p"
+	.string "Hey, you're {PLAYER}, right?\p"
 	.string "I'm {RIVAL}, your neighbor.\p"
-	.string "I was supposed to deliver something\n"
-	.string "from Professor Hawthorne to you but\l"
-	.string "you were asleep.\p"
-	.string "I got bored waiting, so I decided to\n"
-	.string "explore a bit.\p"
-	.string "But since you're here, that means you\n"
-	.string "went to the lab, right?\p"
-	.string "My bad! I should've just waited for you\n"
-	.string "to wake up.\p"
-	.string "One sec, let me take a look in the bag...\p"
-	.string "Funny, I could've sworn I had it with\n"
-	.string "me...$"
+	.string "Professor Hawthorne sent me to deliver\n"
+	.string "something to you, but you were still\l"
+	.string "asleep.\p"
+	.string "Couldn't sit around waiting, so I\n"
+	.string "thought I'd explore a bit. Everwood's\l"
+	.string "not exactly exciting, you know?\p"
+	.string "But anyway, now that you're here, let's\n"
+	.string "check that bag...\p"
+	.string "Huh... weird. Thought I had it right here.$"
 
 Route501_Text_MeetRivalText2M::
-# 291 "data/maps/Route501/scripts.pory"
-	.string "Geez, I can't believe I lost it...\p"
-	.string "The professor would've flipped if he\n"
-	.string "found out!\p"
-	.string "$"
+# 290 "data/maps/Route501/scripts.pory"
+	.string "Unreal. I can't believe I lost it...\p"
+	.string "Professor Hawthorne's gonna let me\n"
+	.string "have it when he finds out.$"
 
 Route501_Text_MeetRivalText3M::
 # 297 "data/maps/Route501/scripts.pory"
-	.string "What the heck?! A wild Pokémon?! This is\n"
-	.string "bad!\p"
-	.string "Grab a Poké Ball from that bag so we can\n"
-	.string "protect ourselves!$"
+	.string "What the--?! Wild Pokémon?!\p"
+	.string "This isn't good. Alright, grab a Poké Ball\n"
+	.string "from the bag!\p"
+	.string "Let's teach these things a lesson.$"
 
 Route501_Text_MeetRivalText4M::
-# 303 "data/maps/Route501/scripts.pory"
-	.string "Phew... That was a close one!\p"
-	.string "I can't believe we were attacked by wild\n"
-	.string "Pokémon!\p"
-	.string "Good thing you had {STR_VAR_1} to\n"
-	.string "protect you!\p"
-	.string "I'm not really a fan of Pokémon, but I\n"
-	.string "guess I'll have to get used to them if I\l"
-	.string "want to be a Trainer.\p"
-	.string "...We should probably head back to\n"
-	.string "Professor Hawthorne's lab now.\p"
-	.string "I'm sure he must be worried about us.$"
+# 305 "data/maps/Route501/scripts.pory"
+	.string "Whew... that was intense!\p"
+	.string "I wasn't expecting wild Pokémon to go\n"
+	.string "after us like that!\p"
+	.string "Guess it's good you had {STR_VAR_1}\n"
+	.string "backing you up.\p"
+	.string "Not gonna lie, I don't exactly see\n"
+	.string "myself as a Pokémon fanatic.\p"
+	.string "But hey, maybe they'll help me get out\n"
+	.string "of here and find some excitement.\p"
+	.string "Anyway, we should probably head back to\n"
+	.string "Professor Hawthorne's lab.\p"
+	.string "He's probably wondering what's taking\n"
+	.string "so long.$"
 
 Route501_Text_SkwovetGirl1::
-# 333 "data/maps/Route501/scripts.pory"
+# 336 "data/maps/Route501/scripts.pory"
 	.string "Oh! I'm not a Trainer, don't worry!\p"
 	.string "I'm just here on to watch the Skwovet!\p"
 	.string "It's so funny how they stuff their\n"
@@ -577,18 +571,18 @@ Route501_Text_SkwovetGirl1::
 	.string "you one to try out!$"
 
 Route501_Text_SkwovetGirl2::
-# 343 "data/maps/Route501/scripts.pory"
+# 346 "data/maps/Route501/scripts.pory"
 	.string "I hope you and your Pokémon enjoy the\n"
 	.string "Berries!$"
 
 Route501_Text_SkwovetGirl3::
-# 347 "data/maps/Route501/scripts.pory"
+# 350 "data/maps/Route501/scripts.pory"
 	.string "Skwovet are just too cute when they're\n"
 	.string "eating!\n"
 	.string "I could watch them all day!$"
 
 Route501_Text_MartEmployee1::
-# 367 "data/maps/Route501/scripts.pory"
+# 370 "data/maps/Route501/scripts.pory"
 	.string "Hello! Are you a Pokémon Trainer?\p"
 	.string "We're giving away free Potions to all\n"
 	.string "Trainers who pass through here as a\l"
@@ -597,37 +591,35 @@ Route501_Text_MartEmployee1::
 	.string "Baycrest City Poké Mart!$"
 
 Route501_Text_MartEmployee2::
-# 374 "data/maps/Route501/scripts.pory"
+# 377 "data/maps/Route501/scripts.pory"
 	.string "We hope you'll continue to shop with us\n"
 	.string "in the future!\p"
 	.string "We have a wide selection of items that\n"
 	.string "will help you on your journey!$"
 
 Route501_Text_Boy::
-# 386 "data/maps/Route501/scripts.pory"
+# 389 "data/maps/Route501/scripts.pory"
 	.string "Did you know that Pokémon can be found\n"
 	.string "in the tall grass?\p"
 	.string "I know, it's a shocker!\n"
 	.string "Like, who doesn't know that?$"
 
 Route501_Text_MichaelIntro::
-# 398 "data/maps/Route501/scripts.pory"
+# 401 "data/maps/Route501/scripts.pory"
 	.string "We've locked eyes! That means it's time\n"
-	.string "for a battle!\p"
-	.string "I'll show you the power of my favorite\n"
-	.string "Pokémon!$"
+	.string "for a battle!$"
 
 Route501_Text_MichaelDefeated::
-# 403 "data/maps/Route501/scripts.pory"
+# 405 "data/maps/Route501/scripts.pory"
 	.string "You're so strong!$"
 
 Route102_Text_MichaelPostBattle::
-# 407 "data/maps/Route501/scripts.pory"
+# 409 "data/maps/Route501/scripts.pory"
 	.string "You're really good at this! I hope we\n"
 	.string "can battle again sometime!$"
 
 Route501_Text_Sign::
-# 417 "data/maps/Route501/scripts.pory"
+# 419 "data/maps/Route501/scripts.pory"
 	.string "Route 301\n"
 	.string "{RIGHT_ARROW} Baycrest City\p"
 	.string "{DOWN_ARROW} Everwood Town$"

@@ -190,8 +190,6 @@ text Route503_Text_MeetDio_Rival1 {
             "I didn't want to, but he wouldn't take no for an answer!\p"
             "I tried my best, but I just couldn't beat him!"
     )
-
-
 }
 
 text Route503_Text_MeetDio_Dio1 {
@@ -208,12 +206,13 @@ text Route503_Text_MeetDio_Rival2 {
 }
 
 text Route503_Text_MeetDio_Rival3 {
-    format( "What's that, {PLAYER}?\nI can't hear you!\p"
-            "You're going to battle him, right?")
+    format("What's that, {PLAYER}?\nI can't hear you!\p"
+            "You're going to battle him.\n...Right?"
+    )
 }
 
 text Route503_Text_MeetDio_Dio2 {
-    format( "Hmph! You think you can beat me?\p"
+    format("Hmph! You think you can beat me?\p"
             "You don't look AS weak as your friend, but you're still no match for me!\p"
             "I'll show you what a real trainer is capable of!"
     )
@@ -231,7 +230,7 @@ text Route503_Text_MeetDio_Dio3 {
 }
 
 text Route503_Text_MeetDio_Rival4 {
-    format( "...What a jerk!\nI can't believe I lost to him!\p"
+    format("...What a jerk!\nI can't believe I lost to him!\p"
             "Did you see how he treated his Pokémon?\nHe's nothing but a bully!\p"
             "But, wow! You're amazing, {PLAYER}!\nYou really showed him!\p"
             "I'm still not sure about this whole battling thing, but I'm glad I have you to help me out!\p"
@@ -241,10 +240,11 @@ text Route503_Text_MeetDio_Rival4 {
 }
 
 text Route503_Text_MeetDio_Rival5 {
-    format( "OK! That's enough chit-chat!\nLet's get back to training!\p"
+    format("OK! That's enough chit-chat!\nLet's get back to training!\p"
             "I'll see you later, {PLAYER}! Let's battle again soon!"
     )
 }
+
 
 script Route503_Trigger_GetPokeNav1 {
     lockall

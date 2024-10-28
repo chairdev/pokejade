@@ -109,45 +109,40 @@ text StarridgeCity_Text_HollyDefeated {
    format("Urgh!\nI'm never gonna get better at battling!")
 }
 
-
 text StarridgeCity_Text_Rival2F {
     format("Man, I even Terastalized and everything...\p"
-            "...Oh, right.\nThe Fairy-type Gym is just behind me.\p"
-            "The Gym Leader is pretty young and was recently appointed to that position.\p"
-            "I was gonna fight her, but after losing to you, I don't feel very ready.\p"
-            "I'm gonna go train so my Pokémon and I can give it our all!\p"
-            "See you later, {PLAYER}!"
+            "I've got to figure out what went wrong!\p"
+            "Thanks for the battle, though, {PLAYER}!\nYou're an inspiration."
     )
 }
 
 text StarridgeCity_Text_Rival1M {
-    format("Hey, {PLAYER}!\p"
-            "I see you've been training hard! I've been doing the same!\p"
-            "But... I'm still not sure if I'm training my Pokémon the right way.\p"
-            "I'm getting better every day, though!\p"
-            "Show me what you've learned... in a battle!")
+    format("Hey, {PLAYER}! \p"
+           "How's it going with all the battling? Hope you're keeping up!\p"
+           "I've been pushing hard too--think I've got some new moves that might surprise you.\p"
+           "Want to see how you stack up against me now? Let's have a quick battle!\p"
+           "Bet it'll be close!"
+    )
 }
 
 text StarridgeCity_Text_RivalM_Accept {
-    format("All right!\nLet's do this, {PLAYER}!")
+    format("Alright, {PLAYER}! Let's see which of us really has the edge!")
 }
 
 text StarridgeCity_Text_RivalM_Refuse {
-    format("...That's okay. I'll see you around, then.")
+    format("Really? Not feeling up to it? Guess I'll have to save these moves for next time.")
 }
 
 text StarridgeCity_Text_CadenDefeated {
-   format("Yeah, you're good.\nI guess.")
+   format("Whoa! You pulled that one off... nice job, {PLAYER}!")
 }
 
 text StarridgeCity_Text_Rival2M {
-    format("Our battle was a great opportunity to mess around with Terastalization a bit."
-            "So don't think it counts, OK?"
-            "Anyway, you're curious about the Gym behind me, right?\p"
-            "Well, it's the Fairy-type Gym!\nAnd guess what? The Gym Leader is cute! Young too!\p"
-            "Haha! {PLAYER}, you head in first.\nI'm off to get even stronger!"
-            )
+    format("Even with Terastalizing, huh… Guess you really came through!\p"
+           "But hey, this isn't the end of it. Next time, it'll be a different story!\p"
+           "Just you wait!")
 }
+
 
 script StarridgeCity_EventScript_AmphyKidnapped {
     lockall

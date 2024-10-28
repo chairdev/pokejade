@@ -131,7 +131,7 @@ StarridgeCity_EventScript_Rival_19:
 
 
 StarridgeCity_EventScript_AmphyKidnapped::
-# 153 "data/maps/StarridgeCity/scripts.pory"
+# 148 "data/maps/StarridgeCity/scripts.pory"
 	lockall
 	return
 
@@ -172,59 +172,51 @@ StarridgeCity_Text_HollyDefeated::
 	.string "I'm never gonna get better at battling!$"
 
 StarridgeCity_Text_Rival2F::
-# 113 "data/maps/StarridgeCity/scripts.pory"
+# 112 "data/maps/StarridgeCity/scripts.pory"
 	.string "Man, I even Terastalized and\n"
 	.string "everything...\p"
-	.string "...Oh, right.\n"
-	.string "The Fairy-type Gym is just behind me.\p"
-	.string "The Gym Leader is pretty young and was\n"
-	.string "recently appointed to that position.\p"
-	.string "I was gonna fight her, but after losing\n"
-	.string "to you, I don't feel very ready.\p"
-	.string "I'm gonna go train so my Pokémon and I\n"
-	.string "can give it our all!\p"
-	.string "See you later, {PLAYER}!$"
+	.string "I've got to figure out what went wrong!\p"
+	.string "Thanks for the battle, though,\n"
+	.string "{PLAYER}!\n"
+	.string "You're an inspiration.$"
 
 StarridgeCity_Text_Rival1M::
-# 123 "data/maps/StarridgeCity/scripts.pory"
+# 119 "data/maps/StarridgeCity/scripts.pory"
 	.string "Hey, {PLAYER}!\p"
-	.string "I see you've been training hard! I've\n"
-	.string "been doing the same!\p"
-	.string "But... I'm still not sure if I'm training\n"
-	.string "my Pokémon the right way.\p"
-	.string "I'm getting better every day, though!\p"
-	.string "Show me what you've learned... in a\n"
-	.string "battle!$"
+	.string "How's it going with all the battling?\n"
+	.string "Hope you're keeping up!\p"
+	.string "I've been pushing hard too--think I've\n"
+	.string "got some new moves that might surprise\l"
+	.string "you.\p"
+	.string "Want to see how you stack up against me\n"
+	.string "now? Let's have a quick battle!\p"
+	.string "Bet it'll be close!$"
 
 StarridgeCity_Text_RivalM_Accept::
-# 131 "data/maps/StarridgeCity/scripts.pory"
-	.string "All right!\n"
-	.string "Let's do this, {PLAYER}!$"
+# 128 "data/maps/StarridgeCity/scripts.pory"
+	.string "Alright, {PLAYER}! Let's see which of\n"
+	.string "us really has the edge!$"
 
 StarridgeCity_Text_RivalM_Refuse::
-# 135 "data/maps/StarridgeCity/scripts.pory"
-	.string "...That's okay. I'll see you around, then.$"
+# 132 "data/maps/StarridgeCity/scripts.pory"
+	.string "Really? Not feeling up to it? Guess I'll\n"
+	.string "have to save these moves for next time.$"
 
 StarridgeCity_Text_CadenDefeated::
-# 139 "data/maps/StarridgeCity/scripts.pory"
-	.string "Yeah, you're good.\n"
-	.string "I guess.$"
+# 136 "data/maps/StarridgeCity/scripts.pory"
+	.string "Whoa! You pulled that one off... nice\n"
+	.string "job, {PLAYER}!$"
 
 StarridgeCity_Text_Rival2M::
-# 143 "data/maps/StarridgeCity/scripts.pory"
-	.string "Our battle was a great opportunity to\n"
-	.string "mess around with Terastalization a bit.\l"
-	.string "So don't think it counts, OK? Anyway,\l"
-	.string "you're curious about the Gym behind me,\l"
-	.string "right?\p"
-	.string "Well, it's the Fairy-type Gym!\n"
-	.string "And guess what? The Gym Leader is cute!\l"
-	.string "Young too!\p"
-	.string "Haha! {PLAYER}, you head in first.\n"
-	.string "I'm off to get even stronger!$"
+# 140 "data/maps/StarridgeCity/scripts.pory"
+	.string "Even with Terastalizing, huh… Guess you\n"
+	.string "really came through!\p"
+	.string "But hey, this isn't the end of it. Next\n"
+	.string "time, it'll be a different story!\p"
+	.string "Just you wait!$"
 
 StarridgeCity_Text_AmphyKidnapped_Jasmine1::
-# 157 "data/maps/StarridgeCity/scripts.pory"
+# 152 "data/maps/StarridgeCity/scripts.pory"
 	.string "{PLAYER}! T-Team Upsilon... they...\n"
 	.string "they took Amphy...\p"
 	.string "It happened so fast! I was about to\n"

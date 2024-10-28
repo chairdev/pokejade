@@ -195,8 +195,9 @@ movement RivalLookAround {
 }
 
 movement RivalApproachBag {
-    walk_up
-    walk_right * 4
+    walk_fast_right
+    walk_fast_up
+    walk_fast_right * 3
     walk_in_place_faster_down
 }
 
@@ -235,78 +236,80 @@ movement FaceRight {
 }
 
 text Route501_Text_MeetRivalText1F { //female rival
-    format("Huh? What the...?\p"
-           "Oh! Are you the {PLAYER}{KUN} that just moved in next door?\p"
-           "I'm your neighbor, {RIVAL}! Nice to meet you!\p"
-            "Oh, right! I have something for you from Professor Hawthorne!\p"
-            "I went to your house to deliver it, but your mom said you were asleep.\p"
-            "I didn't want to wake you up, so I decided to wander around a bit.\p"
-            "I guess I got a little carried away... Sorry about that!\p"
-            "Uh.. where did I put it...?\p"
-            "Don't tell me I dropped it somewhere..."
+    format("Huh? Oh!\p"
+            "You must be {PLAYER}{KUN}, right?\p"
+            "I'm {RIVAL}, your neighbor!\p"
+            "Professor Hawthorne asked me to bring you something, but when I stopped by, your mom said you were asleep.\p"
+            "So I went for a walk; Everwood's so small that I just had to do something.\p"
+            "But now that I think of it... I might have dropped it somewhere...\p"
+            "Oh no, this isn't good."
             )
 }
 
 text Route501_Text_MeetRivalText2F {
-    format("I really don't know what I would've done if I lost it...\p"
-    "The professor would've been so mad at me!"
+    format( "Honestly, I'd be so lost if I can't find it.\p"
+            "The professor would be pretty disappointed in me."
+
     )
 
 }
 
 text Route501_Text_MeetRivalText3F {
-    format("Uwaaah! Wha... What's going on?!\p"
-           "A wild Pokémon?! This is bad! This is really bad!\p"
-           "{PLAYER}{KUN}, we have to use the Poké Balls in that bag to protect ourselves!\p"
-           "Grab one and let's battle them!"
+    format( "Eek! A wild Pokémon! This is bad, really bad!\p"
+            "We need to use the Poké Balls in the bag to defend ourselves!\p"
+            "Let's do this, {PLAYER}!"
+
            )
 }
 
 text Route501_Text_MeetRivalText4F {
-    format("Whew... That was a close one!\p"
-           "I can't believe we were attacked by wild Pokémon!\p"
-           "Good thing you had {STR_VAR_1} to protect you!\p"
-           "You see, I don't really like Pokémon...\p"
-           "I just wanted a reason to go out and explore the reason.\p"
-           "But I guess I'll have to get used to them if I want to be a Trainer.\p"
-           "...We should probably head back to Professor Hawthorne's lab now.\p"
-           "I'm sure he must be worried about us."
+    format( "Phew... that was close!\p"
+            "I didn't think wild Pokémon would just attack us like that!\p"
+            "Good thing you had {STR_VAR_1} to protect you.\p"
+            "To be honest, I was never really into Pokémon...\p"
+            "But I think I'll have to get used to them if I want to see what's beyond Everwood.\p"
+            "Come on, let's go back to Professor Hawthorne's lab.\p"
+            "He's probably wondering if we got lost or something."
+
            )
 }
 
 text Route501_Text_MeetRivalText1M { //He's a bit less chatty and more to the point than Holly.
     format("Whoa!\p"
-            "You're the new kid, {PLAYER}{KUN}, right?\p"
+            "Hey, you're {PLAYER}, right?\p"
             "I'm {RIVAL}, your neighbor.\p"
-            "I was supposed to deliver something from Professor Hawthorne to you but you were asleep.\p"
-            "I got bored waiting, so I decided to explore a bit.\p"
-            "But since you're here, that means you went to the lab, right?\p"
-            "My bad! I should've just waited for you to wake up.\p"
-            "One sec, let me take a look in the bag...\p"
-            "Funny, I could've sworn I had it with me..."
+            "Professor Hawthorne sent me to deliver something to you, but you were still asleep.\p"
+            "Couldn't sit around waiting, so I thought I'd explore a bit. Everwood's not exactly exciting, you know?\p"
+            "But anyway, now that you're here, let's check that bag...\p"
+            "Huh... weird. Thought I had it right here."
+
             )
            
 }
 
 text Route501_Text_MeetRivalText2M {
-    format( "Geez, I can't believe I lost it...\p"
-            "The professor would've flipped if he found out!\p"  
+    format( "Unreal. I can't believe I lost it...\p"
+            "Professor Hawthorne's gonna let me have it when he finds out."
+
             )
 }
 
 text Route501_Text_MeetRivalText3M {
-    format("What the heck?! A wild Pokémon?! This is bad!\p"
-           "Grab a Poké Ball from that bag so we can protect ourselves!"
+    format( "What the--?! Wild Pokémon?!\p"
+            "This isn't good. Alright, grab a Poké Ball from the bag!\p"
+            "Let's teach these things a lesson."
+
            )
 }
 
 text Route501_Text_MeetRivalText4M {
-    format("Phew... That was a close one!\p"
-           "I can't believe we were attacked by wild Pokémon!\p"
-           "Good thing you had {STR_VAR_1} to protect you!\p"
-           "I'm not really a fan of Pokémon, but I guess I'll have to get used to them if I want to be a Trainer.\p"
-           "...We should probably head back to Professor Hawthorne's lab now.\p"
-           "I'm sure he must be worried about us."
+    format( "Whew... that was intense!\p"
+            "I wasn't expecting wild Pokémon to go after us like that!\p"
+            "Guess it's good you had {STR_VAR_1} backing you up.\p"
+            "Not gonna lie, I don't exactly see myself as a Pokémon fanatic.\p"
+            "But hey, maybe they'll help me get out of here and find some excitement.\p"
+            "Anyway, we should probably head back to Professor Hawthorne's lab.\p"
+            "He's probably wondering what's taking so long."
            )
 }
 
@@ -396,8 +399,7 @@ script Route501_EventScript_Michael {
 }
 
 text Route501_Text_MichaelIntro {
-    format("We've locked eyes! That means it's time for a battle!\p"
-           "I'll show you the power of my favorite Pokémon!")
+    format("We've locked eyes! That means it's time for a battle!")
 }
 
 text Route501_Text_MichaelDefeated {

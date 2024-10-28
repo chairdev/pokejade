@@ -375,8 +375,7 @@ BaycrestCity_Text_Rival2F::
 	.string "I guess I'll have to train harder if I\n"
 	.string "want to beat you!\p"
 	.string "Here, take this TM as a thank you for\n"
-	.string "the battle!\p"
-	.string "$"
+	.string "the battle!$"
 
 BaycrestCity_Text_Rival3F::
 # 162 "data/maps/BaycrestCity/scripts.pory"
@@ -413,8 +412,7 @@ BaycrestCity_Text_Rival2M::
 	.string "I'm gonna train hard so I can beat you\n"
 	.string "next time!\p"
 	.string "I'll give you this since you helped me\n"
-	.string "practice!\p"
-	.string "$"
+	.string "practice!$"
 
 BaycrestCity_Text_Rival3M::
 # 197 "data/maps/BaycrestCity/scripts.pory"
