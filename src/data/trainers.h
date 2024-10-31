@@ -30427,10 +30427,10 @@ F_TRAINER_FEMALE |
         },
     },
 #line 12133
-    [TRAINER_DIO_ROUTE_503] =
+    [TRAINER_ASTER_ROUTE_503] =
     {
 #line 12134
-        .trainerName = _("Dio"),
+        .trainerName = _("Aster"),
 #line 12135
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 12136

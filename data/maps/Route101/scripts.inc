@@ -234,7 +234,7 @@ Route101_EventScript_BirchsBag::
 	waitmovement 0
 	msgbox Route101_Text_YouSavedMe, MSGBOX_DEFAULT
 	special HealPlayerParty
-	setflag FLAG_ROUTE_503_METDIO
+	setflag FLAG_ROUTE_503_METASTER
 	clearflag FLAG_HIDE_EVERWOOD_TOWN_RESEARCH_LAB_RIVAL
 	setflag FLAG_ROUTE_501_SAVED_RIVAL
 	setvar VAR_HAWTHORNE_LAB_STATE, 2

@@ -40,8 +40,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
-      "x": 11,
-      "y": 25,
+      "x": 12,
+      "y": 30,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 2,
@@ -100,8 +100,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "Route503_EventScript_Sudowoodo",
+      "flag": "FLAG_SAVED_NURSERY_MAN"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(SUDOWOODO)",
@@ -113,8 +113,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "Route503_EventScript_Sudowoodo",
+      "flag": "FLAG_SAVED_NURSERY_MAN"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WALLY",
@@ -127,7 +127,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_ROUTE_503_METDIO"
+      "flag": "FLAG_ROUTE_503_METASTER"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_VAR_0",
@@ -140,7 +140,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
-      "flag": "FLAG_ROUTE_503_METDIO"
+      "flag": "FLAG_ROUTE_503_METASTER"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN",
@@ -265,7 +265,7 @@
       "elevation": 0,
       "var": "VAR_ROUTE503_STATE",
       "var_value": "0",
-      "script": "Route503_Trigger_MeetDio1"
+      "script": "Route503_Trigger_MeetAster1"
     },
     {
       "type": "trigger",
@@ -274,7 +274,7 @@
       "elevation": 0,
       "var": "VAR_ROUTE503_STATE",
       "var_value": "0",
-      "script": "Route503_Trigger_MeetDio2"
+      "script": "Route503_Trigger_MeetAster2"
     },
     {
       "type": "trigger",

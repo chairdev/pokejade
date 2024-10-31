@@ -1,10 +1,10 @@
 const OBJ_RIVAL = 9
-const OBJ_DIO = 8
+const OBJ_ASTER = 8
 const OBJ_DELCATTY = 16
 const OBJ_MOM = 15
 
 //VAR_ROUTE503_STATE
-//0: Dio Fight
+//0: Aster Fight
 //1: Receive PokeNav
 //2: Done
 
@@ -25,7 +25,7 @@ mapscripts Route503_MapScripts {
     }
 }
 
-script Route503_Trigger_MeetDio1 {
+script Route503_Trigger_MeetAster1 {
     lockall
 
     speakername("???")
@@ -39,10 +39,10 @@ script Route503_Trigger_MeetDio1 {
     applymovement(OBJ_EVENT_ID_PLAYER, Route503_Movement_PlayerApproachRival1)
     waitmovement(0)
 
-    goto(Route503_MeetDio)
+    goto(Route503_MeetAster)
 }
 
-script Route503_Trigger_MeetDio2 {
+script Route503_Trigger_MeetAster2 {
     lockall
 
     speakername("???")
@@ -56,7 +56,7 @@ script Route503_Trigger_MeetDio2 {
     applymovement(OBJ_EVENT_ID_PLAYER, Route503_Movement_PlayerApproachRival2)
     waitmovement(0)
 
-    goto(Route503_MeetDio)
+    goto(Route503_MeetAster)
 }
 
 movement Route503_Movement_PlayerApproachRival1 {
@@ -69,26 +69,26 @@ movement Route503_Movement_PlayerApproachRival2 {
     walk_right * 2
 }
 
-script Route503_MeetDio { //the rival and dio just faught, and the rival lost
+script Route503_MeetAster { //the rival and aster just faught, and the rival lost
     applymovement(OBJ_RIVAL, Route503_RivalFaceUp)
     waitmovement(0)
 
     speakername("{RIVAL}")
-    msgbox(Route503_Text_MeetDio_Rival1)
+    msgbox(Route503_Text_MeetAster_Rival1)
 
     applymovement(OBJ_RIVAL, Route503_RivalFaceRight)
 
     speakername("???")
-    msgbox(Route503_Text_MeetDio_Dio1)
+    msgbox(Route503_Text_MeetAster_Aster1)
 
     speakername("{RIVAL}")
-    msgbox(Route503_Text_MeetDio_Rival2, MSGBOX_YESNO)
+    msgbox(Route503_Text_MeetAster_Rival2, MSGBOX_YESNO)
 
     applymovement(OBJ_RIVAL, Route503_RivalFaceUp)
 
     if (var(VAR_RESULT) == NO) {
         while {
-            msgbox(Route503_Text_MeetDio_Rival3, MSGBOX_YESNO)
+            msgbox(Route503_Text_MeetAster_Rival3, MSGBOX_YESNO)
             if (var(VAR_RESULT)  == YES) {
                 break
             }
@@ -99,36 +99,51 @@ script Route503_MeetDio { //the rival and dio just faught, and the rival lost
 
     applymovement(OBJ_RIVAL, Route503_RivalFaceRight)
 
-    speakername("Dio")
-    msgbox(Route503_Text_MeetDio_Dio2)
+    speakername("Aster")
+    msgbox(Route503_Text_MeetAster_Aster2)
 
-    trainerbattle_no_intro(TRAINER_DIO_ROUTE_503, Route503_Text_DioDefeated)
+    trainerbattle_no_intro(TRAINER_ASTER_ROUTE_503, Route503_Text_AsterDefeated)
 
-    applymovement(OBJ_DIO, Route503_DioStepBack)
+    applymovement(OBJ_ASTER, Route503_AsterStepBack)
     waitmovement(0)
 
-    speakername("Dio")
-    msgbox(Route503_Text_MeetDio_Dio3)
+    speakername("Aster")
+    msgbox(Route503_Text_MeetAster_Aster3)
     closemessage
 
-    applymovement(OBJ_DIO, Route503_DioLeave)
+    applymovement(OBJ_ASTER, Route503_AsterLeave)
     waitmovement(0)
     applymovement(OBJ_EVENT_ID_PLAYER, Route503_RivalFaceUp)
     applymovement(OBJ_RIVAL, Route503_RivalFaceUp)
     waitmovement(0)
     
     waitmovement(0)
-    removeobject(OBJ_DIO)
+    removeobject(OBJ_ASTER)
 
-    speakername("Dio")
+    speakername("Aster")
     msgbox(format("Out of my way, stupid Sudowoodo!"))
     closemessage
+
+    playmoncry(SPECIES_SUDOWOODO, CRY_MODE_NORMAL)
+    msgbox("Sudo!\nWoo...")
+    waitmoncry
 
     applymovement(OBJ_EVENT_ID_PLAYER, Route503_Movement_PlayerFaceDown)
 
     speakername("{RIVAL}")
-    msgbox(Route503_Text_MeetDio_Rival4)
+    msgbox(Route503_Text_MeetAster_Rival4)
     closemessage
+
+    fadescreen(FADE_TO_BLACK)
+    special(HealPlayerParty)
+    playse(SE_USE_ITEM)
+    msgbox(format("{RIVAL} healed your Pokémon!"))
+    closemessage
+    waitse
+    fadescreen(FADE_FROM_BLACK)
+
+    speakername("{RIVAL}")
+    msgbox(Route503_Text_MeetAster_Rival5)
 
     switch(var(VAR_STARTER_MON)) {
         case 0:
@@ -143,7 +158,7 @@ script Route503_MeetDio { //the rival and dio just faught, and the rival lost
     }
 
     speakername("{RIVAL}")
-    msgbox(Route503_Text_MeetDio_Rival5)
+    msgbox(Route503_Text_MeetAster_Rival6)
     closemessage
     
     applymovement(OBJ_RIVAL, Route503_RivalLeave)
@@ -151,7 +166,7 @@ script Route503_MeetDio { //the rival and dio just faught, and the rival lost
     removeobject(OBJ_RIVAL)
 
     setvar(VAR_ROUTE503_STATE, 1)
-    setflag(FLAG_ROUTE_503_METDIO)
+    setflag(FLAG_ROUTE_503_METASTER)
 
     releaseall
 }
@@ -168,13 +183,13 @@ movement Route503_RivalFaceRight {
     walk_in_place_faster_right
 }
 
-movement Route503_DioStepBack {
+movement Route503_AsterStepBack {
     lock_facing_direction
     walk_right
     unlock_facing_direction
 }
 
-movement Route503_DioLeave {
+movement Route503_AsterLeave {
     walk_left
     walk_up * 6
 }
@@ -184,7 +199,7 @@ movement Route503_RivalLeave {
     walk_down * 4
 }
 
-text Route503_Text_MeetDio_Rival1 {
+text Route503_Text_MeetAster_Rival1 {
     format("Oh, it's you, {PLAYER}!\nI'm glad you're here!\p"
             "Listen, I was busy working on my Pokédex when this guy suddenly challenged me to a battle!\p"
             "I didn't want to, but he wouldn't take no for an answer!\p"
@@ -192,54 +207,61 @@ text Route503_Text_MeetDio_Rival1 {
     )
 }
 
-text Route503_Text_MeetDio_Dio1 {
-    format("That's because you're weak!\nWeak trainers like you need to just give up and go home!\p"
-            "You're not cut out for this!\p"
-            "I, Dio, on the other hand, am a beautiful, powerful trainer!"
+text Route503_Text_MeetAster_Aster1 {
+    format( "Hah! You really think you've got what it takes?\p"
+            "Weak trainers like you are better off cheering from the sidelines.\p"
+            "A real trainer has strength and skill, and that's why I'm the best around.\p"
+            "I'm Aster.\nTry to keep up, if you can!"
     )
 }
 
-text Route503_Text_MeetDio_Rival2 {
+text Route503_Text_MeetAster_Rival2 {
     format("Gah! You're so annoying!\nYou know what? I'm going to make you pay for this!\p"
             "{PLAYER}, go and show him what you're made of!\n"
     )
 }
 
-text Route503_Text_MeetDio_Rival3 {
+text Route503_Text_MeetAster_Rival3 {
     format("What's that, {PLAYER}?\nI can't hear you!\p"
             "You're going to battle him.\n...Right?"
     )
 }
 
-text Route503_Text_MeetDio_Dio2 {
-    format("Hmph! You think you can beat me?\p"
-            "You don't look AS weak as your friend, but you're still no match for me!\p"
-            "I'll show you what a real trainer is capable of!"
+text Route503_Text_MeetAster_Aster2 {
+    format("Oh, so you think you're tough?\p"
+            "You might be better than your friend here, but that's not saying much!\p"
+            "Let me show you what a real battle looks like."
     )
 }
 
-text Route503_Text_DioDefeated {
-    format("What? How could I lose to a weakling like you?")
+text Route503_Text_AsterDefeated {
+    format("What? No way!\nLosing to you? That shouldn't happen!")
 }
 
-text Route503_Text_MeetDio_Dio3 {
-    format("These Pokémon are all useless!\nUseless, I tell you!\p"
-            "I need to find more powerful Pokémon to add to my team!\p"
-            "I'll be back, and when I am, you'll see just how beautiful a powerful trainer can be!"
+text Route503_Text_MeetAster_Aster3 {
+    format("These Pokémon just didn't cut it!\nI need stronger ones, that's all.\p"
+            "Next time, you'll see what I can really do."
     )
 }
 
-text Route503_Text_MeetDio_Rival4 {
+text Route503_Text_MeetAster_Rival4 {
     format("...What a jerk!\nI can't believe I lost to him!\p"
             "Did you see how he treated his Pokémon?\nHe's nothing but a bully!\p"
             "But, wow! You're amazing, {PLAYER}!\nYou really showed him!\p"
-            "I'm still not sure about this whole battling thing, but I'm glad I have you to help me out!\p"
+            "Oh, I almost forgot!\nYour Pokémon must be tired after that battle!\p"
+            "I'll heal them up for you!"
+    )
+}
+
+text Route503_Text_MeetAster_Rival5 {
+    format( "There we go! All healed up!\p"
+            "...I'm still not sure about this whole battling thing, but I'm glad I have you to help me out!\p"
             "Oh, and I almost forgot! I found this while I was out looking for Pokémon!\p"
             "I think it's a held item! You should take it! I'm sure you'll put it to good use!"
     )
 }
 
-text Route503_Text_MeetDio_Rival5 {
+text Route503_Text_MeetAster_Rival6 {
     format("OK! That's enough chit-chat!\nLet's get back to training!\p"
             "I'll see you later, {PLAYER}! Let's battle again soon!"
     )
@@ -415,6 +437,15 @@ script Route503_EventScript_Toxel {
     faceplayer
     playmoncry(SPECIES_TOXEL, CRY_MODE_NORMAL)
     msgbox(format("Ssson!"))
+    waitmoncry
+    release
+}
+
+script Route503_EventScript_Sudowoodo {
+    lock
+    faceplayer
+    playmoncry(SPECIES_SUDOWOODO, CRY_MODE_NORMAL)
+    msgbox(format("Sudooo!"))
     waitmoncry
     release
 }

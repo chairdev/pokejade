@@ -1746,7 +1746,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
         .speechLose = {EC_WORD_I, EC_WORD_PROMISE, EC_WORD_TO, EC_MOVE(FLY), EC_WORD_SOMETIME, EC_WORD_SOON},
         .monSet = gVerdanturfBattleTentTrainerMons_Josiah
     },
-    [VERDANTURF_TENT_TRAINER_DION] = {
+    [VERDANTURF_TENT_TRAINER_ASTERN] = {
         .facilityClass = FACILITY_CLASS_NINJA_BOY,
         .trainerName = _("DION"),
         .speechBefore = {EC_WORD_IT_S, EC_WORD_TRENDY, EC_WORD_UM, EC_WORD_BATTLE, EC_WORD_SOMETHING, -1},
