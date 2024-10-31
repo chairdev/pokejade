@@ -9548,17 +9548,10 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Setup First Turn / Ace Pokemon
 
-Pidove
-Level: 5
-Tera Type: Flying
-IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
-
-Turtwig
+Fennekin
 Level: 7
+Tera Type: Fire
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
-- Tackle
-- Withdraw
-
 
 === TRAINER_CADEN_ROUTE_110_MUDKIP ===
 Name: BRENDAN
@@ -9611,16 +9604,10 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Setup First Turn / Ace Pokemon
 
-Pidove
-Level: 5
-Tera Type: Flying
-IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
-
-Fennekin
+Quaxly
 Level: 7
+Tera Type: Water
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
-- Scratch
-- Tail Whip
 
 === TRAINER_CADEN_ROUTE_110_TREECKO ===
 Name: BRENDAN
@@ -9673,16 +9660,10 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Setup First Turn / Ace Pokemon
 
-Pidove
-Level: 5
-Tera Type: Flying
-IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
-
-Quaxly
+Turtwig
 Level: 7
+Tera Type: Grass
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
-- Pound
-- Growl
 
 === TRAINER_CADEN_ROUTE_110_TORCHIC ===
 Name: BRENDAN
@@ -9735,16 +9716,10 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Setup First Turn / Ace Pokemon
 
-Pidove
-Level: 5
-Tera Type: Flying
-IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
-
-Turtwig
+Fennekin
 Level: 7
+Tera Type: Fire
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
-- Tackle
-- Withdraw
 
 === TRAINER_MAY_ROUTE_110_MUDKIP ===
 Name: MAY
@@ -9797,17 +9772,10 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Pidove
-Level: 5
-Tera Type: Flying
-IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
-
-Fennekin
+Quaxly
 Level: 7
+Tera Type: Water
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
-- Scratch
-- Tail Whip
-
 
 === TRAINER_MAY_ROUTE_110_TREECKO ===
 Name: MAY
@@ -9860,16 +9828,10 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Setup First Turn / Ace Pokemon
 
-Pidove
-Level: 5
-Tera Type: Flying
-IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
-
-Quaxly
+Turtwig
 Level: 7
+Tera Type: Grass
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
-- Pound
-- Growl
 
 === TRAINER_MAY_ROUTE_110_TORCHIC ===
 Name: MAY
@@ -10937,13 +10899,13 @@ Swablu
 Level: 22
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Drednaw
+Dolliv
 Level: 21
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Braixen
+Quaxwell
 Level: 23
-Tera Type: Fire   
+Tera Type: Water   
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
 EVs: 252 HP
 
@@ -10960,13 +10922,13 @@ Swablu
 Level: 22
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Magby
+Drednaw
 Level: 21
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Grotle
+Braixen
 Level: 23
-Tera Type: Grass   
+Tera Type: Fire   
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
 EVs: 252 HP
 
@@ -11073,13 +11035,13 @@ Swablu
 Level: 22
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Dolliv
+Drednaw
 Level: 21
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Quaxwell
+Grotle
 Level: 23
-Tera Type: Water   
+Tera Type: Grass   
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
 EVs: 252 HP
 
@@ -11100,9 +11062,9 @@ Drednaw
 Level: 21
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Grotle
+Braixen
 Level: 23
-Tera Type: Grass   
+Tera Type: Fire   
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
 EVs: 252 HP
 
@@ -14250,13 +14212,13 @@ Swablu
 Level: 22
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Drednaw
+Dolliv
 Level: 21
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Braixen
+Quaxwell
 Level: 23
-Tera Type: Fire   
+Tera Type: Water   
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
 EVs: 252 HP
 
@@ -14273,13 +14235,13 @@ Swablu
 Level: 22
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Dolliv
+Drednaw
 Level: 21
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Quaxwell
+Grotle
 Level: 23
-Tera Type: Water   
+Tera Type: Grass   
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
 EVs: 252 HP
 
