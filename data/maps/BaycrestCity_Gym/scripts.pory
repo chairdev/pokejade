@@ -318,7 +318,7 @@ text BaycrestCity_Gym_Text_FoundationBadgeInfo {
 
 text BaycrestCity_Gym_Text_ExplainSandTomb {
     format( "This TM teaches Sand Tomb, a Ground-type move."
-            "It's a Ground-type move that traps the opponent in a vortex of sand for 4-5 turns!\p"
+            "It traps the opponent in a vortex of sand for 4-5 turns!\p"
             "It's a great move if you want to keep your opponent from switching out.\p"
             "And, well, it's pretty cool, don't you think?"
     )

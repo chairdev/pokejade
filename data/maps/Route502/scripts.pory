@@ -16,6 +16,37 @@ script Route502_EventScript_RodMan {
     release
 }
 
+script Route502_Sign_Route1 {
+    lock
+    msgbox(Route502_Text_Sign1)
+    release
+}
+
+script Route502_Sign_Route2 {
+    lock
+    msgbox(Route502_Text_Sign2)
+    release
+}
+
+script Route502_Sign_FortuneCave {
+    lock
+    msgbox(Route502_Sign_FortuneCave)
+    release
+}
+
+text Route502_Text_Sign1 {
+    format("Route 302\n{UP_ARROW} Route 303")
+}
+
+text Route502_Text_Sign2 {
+    format("Route 302\n{UP_ARROW} Baycrest City")
+}
+
+text Route502_Sign_FortuneCave {
+    format("Fortune Cave")
+    
+}
+
 text Route502_Text_RodMan1 { //gives a fishing rod
     format( "Hey, kid.\nCould you stop stomping around so much?\p"
             "You're scaring away all the fish!\p"
@@ -47,7 +78,7 @@ script Route502_EventScript_AnnoyedHiker {
 text Route502_Text_AnnoyedHiker {
     format( "What? Did you think I was a Pokémon Trainer?\p"
             "Not everyone who stands around is looking for a battle, you know!\p"
-            "I'm just a hiker who likes to walk around and enjoy the scenery.\p"
+            "I'm just a hiker who likes to walk around and enjoy the scenery."
     )
 }
 
@@ -93,7 +124,7 @@ script Route502_EventScript_Frank {
 }
 
 text Route502_Text_FrankIntro {
-    format("Wow! I just caught a big one!\p")
+    format("Wow! I just caught a big one!")
 }
 
 text Route502_Text_FrankDefeat {
