@@ -52,7 +52,7 @@ Route502_Sign_FortuneCave::
 # 32 "data/maps/Route502/scripts.pory"
 	lock
 # 33 "data/maps/Route502/scripts.pory"
-	msgbox Route502_Sign_FortuneCave
+	msgbox Route502_Text_FortuneCave
 # 34 "data/maps/Route502/scripts.pory"
 	release
 	return
@@ -132,7 +132,7 @@ Route502_Text_Sign2::
 	.string "Route 302\n"
 	.string "{UP_ARROW} Baycrest City$"
 
-Route502_Sign_FortuneCave::
+Route502_Text_FortuneCave::
 # 45 "data/maps/Route502/scripts.pory"
 	.string "Fortune Cave$"
 
