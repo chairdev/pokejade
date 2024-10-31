@@ -30,7 +30,7 @@ script Route502_Sign_Route2 {
 
 script Route502_Sign_FortuneCave {
     lock
-    msgbox(Route502_Sign_FortuneCave)
+    msgbox(Route502_Text_FortuneCave)
     release
 }
 
@@ -42,7 +42,7 @@ text Route502_Text_Sign2 {
     format("Route 302\n{UP_ARROW} Baycrest City")
 }
 
-text Route502_Sign_FortuneCave {
+text Route502_Text_FortuneCave {
     format("Fortune Cave")
     
 }

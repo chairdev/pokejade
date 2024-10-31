@@ -510,9 +510,9 @@ BaycrestCity_Gym_Text_FoundationBadgeInfo::
 BaycrestCity_Gym_Text_ExplainSandTomb::
 # 319 "data/maps/BaycrestCity_Gym/scripts.pory"
 	.string "This TM teaches Sand Tomb, a\n"
-	.string "Ground-type move. It's a Ground-type\l"
-	.string "move that traps the opponent in a\l"
-	.string "vortex of sand for 4-5 turns!\p"
+	.string "Ground-type move. It traps the\l"
+	.string "opponent in a vortex of sand for 4-5\l"
+	.string "turns!\p"
 	.string "It's a great move if you want to keep\n"
 	.string "your opponent from switching out.\p"
 	.string "And, well, it's pretty cool, don't you\n"
