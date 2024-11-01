@@ -27,8 +27,6 @@ StarridgeCity_PokemonCenter_1F_EventScript_Nurse::
 
 
 DOWTest::
-# 20 "data/maps/StarridgeCity_PokemonCenter_1F/scripts.pory"
-	LOCALID_NURSE
 # 21 "data/maps/StarridgeCity_PokemonCenter_1F/scripts.pory"
 	lock
 # 22 "data/maps/StarridgeCity_PokemonCenter_1F/scripts.pory"
