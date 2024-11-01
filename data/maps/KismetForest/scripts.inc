@@ -432,8 +432,8 @@ KismetForest_Text_RaymondIntro::
 KismetForest_Text_RaymondDefeat::
 # 223 "data/maps/KismetForest/scripts.pory"
 	.string "Not to sound like a sore loser, but...\n"
-	.string "This definitely wouldn't have happened\l"
-	.string "if I had a battle partner.$"
+	.string "This definitely wouldn't have\n"
+	.string "happened if I had a battle partner.$"
 
 KismetForest_Text_RaymondPostBattle::
 # 227 "data/maps/KismetForest/scripts.pory"

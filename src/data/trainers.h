@@ -22066,7 +22066,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 8847
-            .species = SPECIES_SHELLOS_EAST_SEA,
+            .species = SPECIES_IGGLYBUFF,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8849
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -22077,7 +22077,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 8851
-            .species = SPECIES_SHELLOS_WEST_SEA,
+            .species = SPECIES_PICHU,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8853
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -27878,7 +27878,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 11128
-            .species = SPECIES_PICHU,
+            .species = SPECIES_CHEWTLE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11130
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),

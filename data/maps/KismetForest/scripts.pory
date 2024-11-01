@@ -221,7 +221,7 @@ text KismetForest_Text_RaymondIntro {
 }
 
 text KismetForest_Text_RaymondDefeat {
-    format("Not to sound like a sore loser, but... This definitely wouldn't have happened if I had a battle partner.")
+    format("Not to sound like a sore loser, but... This definitely wouldn't have\nhappened if I had a battle partner.")
 }
 
 text KismetForest_Text_RaymondPostBattle {

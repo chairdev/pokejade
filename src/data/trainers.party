@@ -8844,11 +8844,11 @@ Music: Twins
 Double Battle: Yes
 AI: Check Bad Move
 
-SPECIES_SHELLOS_EAST_SEA
+Igglybuff
 Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-SPECIES_SHELLOS_WEST_SEA
+Pichu
 Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -11125,7 +11125,7 @@ Jigglypuff
 Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Pichu
+Chewtle
 Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
