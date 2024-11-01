@@ -1,45 +1,45 @@
 StemfordTown_PokemonCenter_1F_MapScripts::
-# 2 "data/maps/StemfordTown_PokemonCenter_1F/scripts.pory"
+# 4 "data/maps/StemfordTown_PokemonCenter_1F/scripts.pory"
 	map_script MAP_SCRIPT_ON_TRANSITION, StemfordTown_PokemonCenter_1F_OnTransition
-# 3 "data/maps/StemfordTown_PokemonCenter_1F/scripts.pory"
+# 5 "data/maps/StemfordTown_PokemonCenter_1F/scripts.pory"
 	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
 	.byte 0
 
 
 StemfordTown_PokemonCenter_1F_OnTransition::
-# 7 "data/maps/StemfordTown_PokemonCenter_1F/scripts.pory"
+# 9 "data/maps/StemfordTown_PokemonCenter_1F/scripts.pory"
 	setrespawn HEAL_LOCATION_STEMFORD_TOWN
 	return
 
 
 StemfordTown_PokemonCenter_1F_EventScript_Nurse::
-# 11 "data/maps/StemfordTown_PokemonCenter_1F/scripts.pory"
-	setvar VAR_0x800B, LOCALID_NURSE
-# 12 "data/maps/StemfordTown_PokemonCenter_1F/scripts.pory"
-	call Common_EventScript_PkmnCenterNurse
 # 13 "data/maps/StemfordTown_PokemonCenter_1F/scripts.pory"
-	waitmessage
+	setvar VAR_0x800B, 1
 # 14 "data/maps/StemfordTown_PokemonCenter_1F/scripts.pory"
-	waitbuttonpress
+	call Common_EventScript_PkmnCenterNurse
 # 15 "data/maps/StemfordTown_PokemonCenter_1F/scripts.pory"
+	waitmessage
+# 16 "data/maps/StemfordTown_PokemonCenter_1F/scripts.pory"
+	waitbuttonpress
+# 17 "data/maps/StemfordTown_PokemonCenter_1F/scripts.pory"
 	release
 	return
 
 
 StemfordTown_PokemonCenter_1F_EventScript_TiredLady::
-# 19 "data/maps/StemfordTown_PokemonCenter_1F/scripts.pory"
-	lock
-# 20 "data/maps/StemfordTown_PokemonCenter_1F/scripts.pory"
-	faceplayer
 # 21 "data/maps/StemfordTown_PokemonCenter_1F/scripts.pory"
+	lock
+# 22 "data/maps/StemfordTown_PokemonCenter_1F/scripts.pory"
+	faceplayer
+# 23 "data/maps/StemfordTown_PokemonCenter_1F/scripts.pory"
 	msgbox StemfordTown_PokemonCenter_1F_EventScript_TiredLady_Text_0
-# 25 "data/maps/StemfordTown_PokemonCenter_1F/scripts.pory"
+# 27 "data/maps/StemfordTown_PokemonCenter_1F/scripts.pory"
 	release
 	return
 
 
 StemfordTown_PokemonCenter_1F_EventScript_TiredLady_Text_0:
-# 22 "data/maps/StemfordTown_PokemonCenter_1F/scripts.pory"
+# 24 "data/maps/StemfordTown_PokemonCenter_1F/scripts.pory"
 	.string "Ever notice how nobody in this world\n"
 	.string "sleeps? Not the trainers, not the\l"
 	.string "Pokémon, certainly not me.$"
