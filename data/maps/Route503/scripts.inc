@@ -664,42 +664,54 @@ Route503_EventScript_FatGuy::
 	return
 
 
-Route503_EventScript_CamperAndrew::
+Route503_EventScript_Woman::
+# 477 "data/maps/Route503/scripts.pory"
+	lock
 # 478 "data/maps/Route503/scripts.pory"
-	trainerbattle_single TRAINER_ANDREW, Route503_Text_CamperAndrewIntro, Route503_Text_CamperAndrewDefeated
+	faceplayer
 # 479 "data/maps/Route503/scripts.pory"
-	msgbox Route503_Text_CamperAndrewPostBattle, MSGBOX_AUTOCLOSE
+	msgbox Route503_Text_Woman
 # 480 "data/maps/Route503/scripts.pory"
+	release
+	return
+
+
+Route503_EventScript_CamperAndrew::
+# 491 "data/maps/Route503/scripts.pory"
+	trainerbattle_single TRAINER_ANDREW, Route503_Text_CamperAndrewIntro, Route503_Text_CamperAndrewDefeated
+# 492 "data/maps/Route503/scripts.pory"
+	msgbox Route503_Text_CamperAndrewPostBattle, MSGBOX_AUTOCLOSE
+# 493 "data/maps/Route503/scripts.pory"
 	waitmessage
 	end
 
 
 Route503_EventScript_YoungsterEric::
-# 497 "data/maps/Route503/scripts.pory"
+# 510 "data/maps/Route503/scripts.pory"
 	trainerbattle_single TRAINER_ERIC, Route503_Text_YoungsterEricIntro, Route503_Text_YoungsterEricDefeated
-# 498 "data/maps/Route503/scripts.pory"
+# 511 "data/maps/Route503/scripts.pory"
 	msgbox Route503_Text_YoungsterEricPostBattle, MSGBOX_AUTOCLOSE
-# 499 "data/maps/Route503/scripts.pory"
+# 512 "data/maps/Route503/scripts.pory"
 	waitmessage
 	end
 
 
 Route503_EventScript_PicnickerMargaret::
-# 516 "data/maps/Route503/scripts.pory"
+# 529 "data/maps/Route503/scripts.pory"
 	trainerbattle_single TRAINER_MARGARET, Route503_Text_PicnickerMargaretIntro, Route503_Text_PicnickerMargaretDefeated
-# 517 "data/maps/Route503/scripts.pory"
+# 530 "data/maps/Route503/scripts.pory"
 	msgbox Route503_Text_PicnickerMargaretPostBattle, MSGBOX_AUTOCLOSE
-# 518 "data/maps/Route503/scripts.pory"
+# 531 "data/maps/Route503/scripts.pory"
 	waitmessage
 	end
 
 
 Route503_EventScript_RichboyCarl::
-# 535 "data/maps/Route503/scripts.pory"
+# 548 "data/maps/Route503/scripts.pory"
 	trainerbattle_single TRAINER_CARL_1, Route503_Text_RichboyCarlIntro, Route503_Text_RichboyCarlDefeated
-# 536 "data/maps/Route503/scripts.pory"
+# 549 "data/maps/Route503/scripts.pory"
 	msgbox Route503_Text_RichboyCarlPostBattle, MSGBOX_AUTOCLOSE
-# 537 "data/maps/Route503/scripts.pory"
+# 550 "data/maps/Route503/scripts.pory"
 	waitmessage
 	end
 
@@ -922,61 +934,69 @@ Route503_Text_FatGuy::
 	.string "might just find one!\p"
 	.string "$"
 
+Route503_Text_Woman::
+# 483 "data/maps/Route503/scripts.pory"
+	.string "When you're in a wild battle, you can\n"
+	.string "quickly move the cursor to the Run\l"
+	.string "button by pressing the B button!\p"
+	.string "It's a handy trick if you're in a hurry\n"
+	.string "to get away from a Pokémon!$"
+
 Route503_Text_CamperAndrewIntro::
-# 484 "data/maps/Route503/scripts.pory"
+# 497 "data/maps/Route503/scripts.pory"
 	.string "I love camping out in the wild and\n"
 	.string "battling with my Pokémon!$"
 
 Route503_Text_CamperAndrewDefeated::
-# 488 "data/maps/Route503/scripts.pory"
+# 501 "data/maps/Route503/scripts.pory"
 	.string "Camping out in the wild is fun, but\n"
 	.string "battling with my Pokémon is even\l"
 	.string "better!$"
 
 Route503_Text_CamperAndrewPostBattle::
-# 492 "data/maps/Route503/scripts.pory"
+# 505 "data/maps/Route503/scripts.pory"
 	.string "Now to set up camp and relax for a bit!$"
 
 Route503_Text_YoungsterEricIntro::
-# 503 "data/maps/Route503/scripts.pory"
+# 516 "data/maps/Route503/scripts.pory"
 	.string "1, 2, 3! 1, 2, 3!\n"
 	.string "I can beat you in 1, 2, 3 moves!$"
 
 Route503_Text_YoungsterEricDefeated::
-# 507 "data/maps/Route503/scripts.pory"
+# 520 "data/maps/Route503/scripts.pory"
 	.string "1, 2, 3!\n"
 	.string "I lost in 1, 2, 3 moves!$"
 
 Route503_Text_YoungsterEricPostBattle::
-# 511 "data/maps/Route503/scripts.pory"
+# 524 "data/maps/Route503/scripts.pory"
 	.string "1, 2, 3! 1, 2, 3!\n"
 	.string "Need to focus!$"
 
 Route503_Text_PicnickerMargaretIntro::
-# 522 "data/maps/Route503/scripts.pory"
+# 535 "data/maps/Route503/scripts.pory"
 	.string "Argh! You're getting in the way of my\n"
 	.string "picnic!$"
 
 Route503_Text_PicnickerMargaretDefeated::
-# 526 "data/maps/Route503/scripts.pory"
+# 539 "data/maps/Route503/scripts.pory"
 	.string "Now my picnic is ruined...$"
 
 Route503_Text_PicnickerMargaretPostBattle::
-# 530 "data/maps/Route503/scripts.pory"
+# 543 "data/maps/Route503/scripts.pory"
 	.string "I'll just have to find a new spot for my\n"
 	.string "picnic!$"
 
 Route503_Text_RichboyCarlIntro::
-# 541 "data/maps/Route503/scripts.pory"
+# 554 "data/maps/Route503/scripts.pory"
 	.string "I love to come here and watch all the\n"
 	.string "poor people struggle to train their\l"
 	.string "Pokémon!$"
 
 Route503_Text_RichboyCarlDefeated::
-# 545 "data/maps/Route503/scripts.pory"
+# 558 "data/maps/Route503/scripts.pory"
 	.string "...Can I pay you to forget that ever\n"
 	.string "happened?$"
 
 Route503_Text_RichboyCarlPostBattle::
-# 549 "data/maps/Route503/scripts.pory"
+# 562 "data/maps/Route503/scripts.pory"
 	.string "I may have lost, but I'm still rich!$"

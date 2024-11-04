@@ -3,10 +3,16 @@
 // 1: Amphy has been kidnapped
 
 const OBJ_RIVAL = 1
+const OBJ_JASMINE = 2
 
 mapscripts StarridgeCity_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
         call(Common_EventScript_SetupRivalGfxId)
+
+        if(var(VAR_STARRIDGE_CITY_STATE) == 0)
+        {
+            setflag(FLAG_HIDE_LIGHTHOUSE_TEAM_UPSILON_GRUNTS)
+        }
     }
 }
 
@@ -112,7 +118,8 @@ text StarridgeCity_Text_HollyDefeated {
 text StarridgeCity_Text_Rival2F {
     format("Man, I even Terastalized and everything...\p"
             "I've got to figure out what went wrong!\p"
-            "Thanks for the battle, though, {PLAYER}!\nYou're an inspiration."
+            "Thanks for the battle, though, {PLAYER}!\nYou're an inspiration.\p"
+            "See you around!"
     )
 }
 
@@ -143,10 +150,64 @@ text StarridgeCity_Text_Rival2M {
            "Just you wait!")
 }
 
+script StarridgeCity_Trigger_AmphyKidnapped1 {
+    call(StarridgeCity_EventScript_AmphyKidnapped)
+    applymovement(OBJ_JASMINE, StarridgeCity_Movement_JasmineWait1)
+    waitmovement(0)
+}
+
+script StarridgeCity_Trigger_AmphyKidnapped2 {
+    call(StarridgeCity_EventScript_AmphyKidnapped)
+    applymovement(OBJ_JASMINE, StarridgeCity_Movement_JasmineWait2)
+    waitmovement(0)
+}
+
+script StarridgeCity_Trigger_AmphyKidnapped3 {
+    call(StarridgeCity_EventScript_AmphyKidnapped)
+    applymovement(OBJ_JASMINE, StarridgeCity_Movement_JasmineWait3)
+    waitmovement(0)
+}
+
 
 script StarridgeCity_EventScript_AmphyKidnapped {
     lockall
 
+    clearflag(FLAG_HIDE_LIGHTHOUSE_TEAM_UPSILON_GRUNTS)
+
+    applymovement(OBJ_JASMINE, StarridgeCity_Movement_JasmineApproachPlayer)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, StarridgeCity_Movement_PlayerFaceDown)
+
+    speakername("Jasmine")
+    msgbox(StarridgeCity_Text_AmphyKidnapped_Jasmine1, MSGBOX_YESNO)
+    while (var(VAR_RESULT) != YES)
+    {
+        msgbox(StarridgeCity_Text_AmphyKidnapped_ButWhy, MSGBOX_YESNO)
+    }
+    msgbox(StarridgeCity_Text_AmphyKidnapped_Jasmine2)
+    closemessage
+}
+
+movement StarridgeCity_Movement_PlayerFaceDown {
+    walk_in_place_down
+}
+
+movement StarridgeCity_Movement_JasmineApproachPlayer {
+    walk_fast_up * 6
+}
+
+movement StarridgeCity_Movement_JasmineWait1 {
+    walk_right * 2
+    walk_down 
+}
+
+movement StarridgeCity_Movement_JasmineWait2 {
+    walk_right * 1
+    walk_down 
+}
+
+movement StarridgeCity_Movement_JasmineWait3 {
+    walk_down 
 }
 
 text StarridgeCity_Text_AmphyKidnapped_Jasmine1 {
@@ -154,9 +215,22 @@ text StarridgeCity_Text_AmphyKidnapped_Jasmine1 {
             "T-Team Upsilon... they... they took Amphy...\p"
             "It happened so fast! I was about to head out when a couple of those Team Upsilon grunts stormed in.\p"
             "They grabbed Amphy and ran off! I tried to stop them, but they were too fast!\p"
-            "Something about... a lighthouse near Stemford Town... I think that's where they're headed.\p"
-            "Amphy's special light... they're using it for something… something dangerous, I just know it.\p"
-            "I'd go myself, but I have to stay here in case they come back for something else.\p"
-            "{PLAYER}...I know you're strong--can you go after them?\p"
+            "I'd go after them myself, but I have to stay here in case they come back for something else.\p"
+            "{PLAYER}...I know you're strong--can you go after them?"
     )
+}
+
+text StarridgeCity_Text_AmphyKidnapped_Jasmine2 {
+    format("Something about... a lighthouse near Stemford Town... I think that's where they're headed.\p"
+            "Amphy's special light... they're using it for something... something dangerous, I just know it."
+    )
+}
+
+text StarridgeCity_Text_AmphyKidnapped_ButWhy {
+    format("I understand... but... please, {PLAYER}! I'm begging you! You're the only one here that's strong enough to help!")
+}
+
+text StarridgeCity_Text_AmphyKidnapped_Yes {
+    format("They took Amphy to the lighthouse near Stemford Town!\p"
+            "I'll be waiting here in case they come back. Please, hurry!")
 }
