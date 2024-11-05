@@ -4788,11 +4788,10 @@ Class: Leader
 Pic: Leader Brawly
 Gender: Male
 Music: Female
-Items: Potion / Potion
 Double Battle: No
 AI: Check Bad Move / Check Viability / Try To Faint / Setup First Turn / Ace Pokemon
 
-Wooper @ Rindo Berry  
+Wooper 
 Level: 12
 Ability: Water Absorb  
 Quiet Nature  
@@ -4801,7 +4800,7 @@ IVs: 20 HP / 20 Def / 20 SpA / 20 SpD / 20 Spe
 - Water Gun  
 - Sand Tomb
 
-Mudbray @ Soft Sand
+Mudbray
 Level: 12
 Brave Nature  
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe  
@@ -4811,7 +4810,6 @@ IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 Toedscool  @Berry Juice
 Level: 13
-Tera Type: Ground
 EVs: 252 HP  
 Hasty Nature  
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe  
@@ -4826,11 +4824,10 @@ Class: Leader
 Pic: Leader Flannery
 Gender: Female
 Music: Female
-Items: Super Potion / Super Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Setup First Turn / Ace Pokemon
 
-Granbull @ Red Card  
+Granbull
 Ability: Intimidate  
 Level: 23   
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe   
@@ -4840,7 +4837,7 @@ Brave Nature
 - Lick  
 - Fire Fang  
 
-Togetic @ Pixie Plate  
+Togetic
 Ability: Super Luck
 Level: 24  
 IVs: 20 HP / 20 Atk / 20 Def / 19 SpA / 20 SpD / 20 Spe  
@@ -4852,8 +4849,7 @@ Modest Nature
 
 Sylveon @ Kebia Berry  
 Ability: Cute Charm  
-Level: 25
-Tera Type: Fairy   
+Level: 25  
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
 EVs: 252 HP
 Quiet Nature  
@@ -6760,7 +6756,6 @@ Class: Rival
 Pic: Jasmine
 Gender: Female
 Music: Female
-Items: Potion / Potion / Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Check Viability / Try To Faint / Setup First Turn / Ace Pokemon
 
