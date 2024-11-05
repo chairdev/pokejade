@@ -984,7 +984,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
         .speechLose = {EC_WORD_I_AM, EC_WORD_ANGRY, EC_WORD_LIKE, EC_WORD_A, EC_POKEMON_NATIONAL(MANKEY), EC_WORD_EXCL},
         .monSet = gBattleFrontierTrainerMons_Zach
     },
-    [FRONTIER_TRAINER_KAITLYN] = {
+    [FRONTIER_TRAINER_BUCKTLYN] = {
         .facilityClass = FACILITY_CLASS_PSYCHIC_F,
         .trainerName = _("KAITLYN"),
         .speechBefore = {EC_WORD_I, EC_WORD_CRUSH, EC_WORD_THINGS, EC_WORD_WITH, EC_WORD_PSYCHIC, EC_WORD_POWER},
@@ -1304,7 +1304,7 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
         .speechLose = {EC_WORD_WHAT, EC_WORD_IS, EC_WORD_BEAUTY, EC_WORD_TO, EC_WORD_YOU, EC_WORD_QUES},
         .monSet = gBattleFrontierTrainerMons_Shea
     },
-    [FRONTIER_TRAINER_KAILA] = {
+    [FRONTIER_TRAINER_BUCKLA] = {
         .facilityClass = FACILITY_CLASS_LASS,
         .trainerName = _("KAILA"),
         .speechBefore = {EC_WORD_I_AM, EC_WORD_FEELING, EC_WORD_THIRSTY, EC_WORD_RIGHT, EC_WORD_NOW, EC_WORD_ELLIPSIS},

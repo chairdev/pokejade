@@ -615,7 +615,7 @@
 #define TRAINER_HALEY_4                     609
 #define TRAINER_HALEY_5                     610
 #define TRAINER_BETTY                       611
-#define TRAINER_ROBIN                       612
+#define TRAINER_CAROL                       612
 #define TRAINER_ANDREA                      613
 #define TRAINER_CRISSY                      614
 #define TRAINER_RICK                        615
@@ -698,9 +698,9 @@
 #define TRAINER_LISA_AND_RAY                692
 #define TRAINER_CHRIS                       693
 #define TRAINER_DAWSON                      694
-#define TRAINER_SARAH                       695
+#define TRAINER_DONNA                       695
 #define TRAINER_FRANK                       696
-#define TRAINER_HAILEY                      697
+#define TRAINER_SANDRA                      697
 #define TRAINER_CHANDLER                    698
 #define TRAINER_KALEB                       699
 #define TRAINER_JOSEPH                      700
@@ -716,7 +716,7 @@
 #define TRAINER_LAWRENCE                    710
 #define TRAINER_WYATT                       711
 #define TRAINER_ANGELINA                    712
-#define TRAINER_KAI                         713
+#define TRAINER_BUCK                         713
 #define TRAINER_CHARLOTTE                   714
 #define TRAINER_DEANDRE                     715
 #define TRAINER_GRUNT_MAGMA_HIDEOUT_1       716

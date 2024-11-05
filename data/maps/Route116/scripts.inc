@@ -331,9 +331,9 @@ Route116_EventScript_RematchKaren::
 	msgbox Route116_Text_KarenPostRematch, MSGBOX_AUTOCLOSE
 	end
 
-Route116_EventScript_Sarah::
-	trainerbattle_single TRAINER_SARAH, Route116_Text_SarahIntro, Route116_Text_SarahDefeat
-	msgbox Route116_Text_SarahPostBattle, MSGBOX_AUTOCLOSE
+Route116_EventScript_Donna::
+	trainerbattle_single TRAINER_DONNA, Route116_Text_DonnaIntro, Route116_Text_DonnaDefeat
+	msgbox Route116_Text_DonnaPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route116_EventScript_Dawson::

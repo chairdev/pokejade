@@ -466,9 +466,9 @@ Route109_EventScript_Chandler::
 	msgbox Route109_Text_ChandlerPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route109_EventScript_Hailey::
-	trainerbattle_single TRAINER_HAILEY, Route109_Text_HaileyIntro, Route109_Text_HaileyDefeated
-	msgbox Route109_Text_HaileyPostBattle, MSGBOX_AUTOCLOSE
+Route109_EventScript_Sandra::
+	trainerbattle_single TRAINER_SANDRA, Route109_Text_SandraIntro, Route109_Text_SandraDefeated
+	msgbox Route109_Text_SandraPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route109_EventScript_Elijah::

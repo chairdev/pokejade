@@ -32,7 +32,7 @@ Route110_TrickHousePuzzle1_EventScript_Eddie::
 	end
 
 Route110_TrickHousePuzzle1_EventScript_Robin::
-	trainerbattle_single TRAINER_ROBIN, Route110_TrickHousePuzzle1_Text_RobinIntro, Route110_TrickHousePuzzle1_Text_RobinDefeat
+	trainerbattle_single TRAINER_CAROL, Route110_TrickHousePuzzle1_Text_RobinIntro, Route110_TrickHousePuzzle1_Text_RobinDefeat
 	msgbox Route110_TrickHousePuzzle1_Text_RobinPostBattle, MSGBOX_AUTOCLOSE
 	end
 

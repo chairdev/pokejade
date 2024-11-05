@@ -40,16 +40,16 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_JASMINE",
-      "x": 31,
-      "y": 9,
+      "x": 32,
+      "y": 5,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "FLAG_HIDE_LIGHTHOUSE_TEAM_UPSILON_GRUNTS",
-      "flag": "0"
+      "script": "NULL",
+      "flag": "FLAG_HIDE_LIGHTHOUSE_UPSILON_GRUNTS"
     }
   ],
   "warp_events": [
@@ -116,6 +116,33 @@
       "var": "VAR_STARRIDGE_CITY_STATE",
       "var_value": "1",
       "script": "StarridgeCity_Trigger_AmphyKidnapped1"
+    },
+    {
+      "type": "trigger",
+      "x": 29,
+      "y": 5,
+      "elevation": 0,
+      "var": "VAR_STARRIDGE_CITY_STATE",
+      "var_value": "2",
+      "script": "StarridgeCity_Trigger_GoSaveAmphy1"
+    },
+    {
+      "type": "trigger",
+      "x": 30,
+      "y": 5,
+      "elevation": 0,
+      "var": "VAR_STARRIDGE_CITY_STATE",
+      "var_value": "2",
+      "script": "StarridgeCity_Trigger_GoSaveAmphy2"
+    },
+    {
+      "type": "trigger",
+      "x": 31,
+      "y": 5,
+      "elevation": 0,
+      "var": "VAR_STARRIDGE_CITY_STATE",
+      "var_value": "2",
+      "script": "StarridgeCity_Trigger_GoSaveAmphy3"
     }
   ],
   "bg_events": [

@@ -979,15 +979,15 @@ Route109_Text_ChandlerPostBattle:
 	.string "After I showed you my round inner\n"
 	.string "tube, too…$"
 
-Route109_Text_HaileyIntro:
+Route109_Text_SandraIntro:
 	.string "I can't swim, so I'm pretending\n"
 	.string "to swim.$"
 
-Route109_Text_HaileyDefeated:
+Route109_Text_SandraDefeated:
 	.string "I thought so!\n"
 	.string "I didn't think we could win.$"
 
-Route109_Text_HaileyPostBattle:
+Route109_Text_SandraPostBattle:
 	.string "When I learn how to swim, I think\n"
 	.string "my POKéMON will become tougher.$"
 
@@ -2288,15 +2288,15 @@ Route116_Text_KarenPostRematch:
 	.string "You've beaten ROXANNE?\n"
 	.string "I can't beat you, then. Not yet.$"
 
-Route116_Text_SarahIntro:
+Route116_Text_DonnaIntro:
 	.string "Just so you know, I've never once been\n"
 	.string "bested by anyone at anything.$"
 
-Route116_Text_SarahDefeat:
+Route116_Text_DonnaDefeat:
 	.string "Oh, my goodness.\n"
 	.string "This is a new experience for me.$"
 
-Route116_Text_SarahPostBattle:
+Route116_Text_DonnaPostBattle:
 	.string "My life of luxury affords me all that\n"
 	.string "I could possibly desire.\p"
 	.string "However, when it comes to POKéMON,\n"

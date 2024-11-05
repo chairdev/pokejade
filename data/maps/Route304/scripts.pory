@@ -1,1 +1,79 @@
 mapscripts Route304_MapScripts {}
+
+// Trainers //
+
+script Route304_EventScript_LassCarol {
+    trainerbattle_single(TRAINER_CAROL, Route304_Text_LassCarolIntro, Route304_Text_LassCarolDefeated)
+    msgbox(Route304_Text_LassCarolPostBattle, MSGBOX_AUTOCLOSE)
+    waitmessage
+    end
+}
+
+text Route304_Text_LassCarolIntro {
+    format("PLACEHOLDER")
+}
+
+text Route304_Text_LassCarolDefeated {
+    format("PLACEHOLDER")
+}
+
+text Route304_Text_LassCarolPostBattle {
+    format("PLACEHOLDER")
+}
+
+script Route304_EventScript_LadyDonna {
+    trainerbattle_single(TRAINER_DONNA, Route304_Text_LadyDonnaIntro, Route304_Text_LadyDonnaDefeated)
+    msgbox(Route304_Text_LadyDonnaPostBattle, MSGBOX_AUTOCLOSE)
+    waitmessage
+    end
+}
+
+text Route304_Text_LadyDonnaIntro {
+    format("PLACEHOLDER")
+}
+
+text Route304_Text_LadyDonnaDefeated {
+    format("PLACEHOLDER")
+}
+
+text Route304_Text_LadyDonnaPostBattle {
+    format("PLACEHOLDER")
+}
+
+script Route304_EventScript_TuberSandra {
+    trainerbattle_single(TRAINER_SANDRA, Route304_Text_TuberSandraIntro, Route304_Text_TuberSandraDefeated)
+    msgbox(Route304_Text_TuberSandraPostBattle, MSGBOX_AUTOCLOSE)
+    waitmessage
+    end
+}
+
+text Route304_Text_TuberSandraIntro {
+    format("PLACEHOLDER")
+}
+
+text Route304_Text_TuberSandraDefeated {
+    format("PLACEHOLDER")
+}
+
+text Route304_Text_TuberSandraPostBattle {
+    format("PLACEHOLDER")
+}
+
+script Route304_EventScript_FishermanBuck {
+    trainerbattle_single(TRAINER_BUCK, Route304_Text_FishermanBuckIntro, Route304_Text_FishermanBuckDefeated)
+    msgbox(Route304_Text_FishermanBuckPostBattle, MSGBOX_AUTOCLOSE)
+    waitmessage
+    end
+}
+
+text Route304_Text_FishermanBuckIntro {
+    format("PLACEHOLDER")
+}
+
+text Route304_Text_FishermanBuckDefeated {
+    format("PLACEHOLDER")
+}
+
+text Route304_Text_FishermanBuckPostBattle {
+    format("PLACEHOLDER")
+}

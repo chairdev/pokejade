@@ -321,7 +321,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "Route116_EventScript_Sarah",
+      "script": "Route116_EventScript_Donna",
       "flag": "0"
     },
     {
