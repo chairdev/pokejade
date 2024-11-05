@@ -12430,67 +12430,67 @@
           "map": "MAP_ROUTE304",
           "base_label": "gRoute304",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 20,
             "mons": [
               {
-                "min_level": 22,
-                "max_level": 25,
-                "species": "SPECIES_CRAMORANT"
+                "min_level": 16,
+                "max_level": 19,
+                "species": "SPECIES_NIDORINO"
               },
               {
-                "min_level": 22,
-                "max_level": 25,
-                "species": "SPECIES_FLAMIGO"
+                "min_level": 16,
+                "max_level": 19,
+                "species": "SPECIES_SLOWPOKE"
               },
               {
-                "min_level": 22,
-                "max_level": 25,
-                "species": "SPECIES_CRAMORANT"
+                "min_level": 16,
+                "max_level": 19,
+                "species": "SPECIES_NIDORINO"
               },
               {
-                "min_level": 22,
-                "max_level": 25,
-                "species": "SPECIES_CRAMORANT"
+                "min_level": 16,
+                "max_level": 19,
+                "species": "SPECIES_SLOWPOKE"
               },
               {
-                "min_level": 22,
-                "max_level": 25,
-                "species": "SPECIES_FLAMIGO"
-              },
-              {
-                "min_level": 22,
-                "max_level": 25,
+                "min_level": 16,
+                "max_level": 19,
                 "species": "SPECIES_SHELLOS_EAST_SEA"
               },
               {
-                "min_level": 22,
-                "max_level": 25,
-                "species": "SPECIES_INKAY"
-              },
-              {
-                "min_level": 22,
-                "max_level": 25,
-                "species": "SPECIES_INKAY"
-              },
-              {
-                "min_level": 22,
-                "max_level": 25,
+                "min_level": 16,
+                "max_level": 19,
                 "species": "SPECIES_SHELLOS_EAST_SEA"
               },
               {
-                "min_level": 22,
-                "max_level": 25,
-                "species": "SPECIES_SCYTHER"
+                "min_level": 16,
+                "max_level": 19,
+                "species": "SPECIES_BINACLE"
               },
               {
-                "min_level": 22,
-                "max_level": 25,
-                "species": "SPECIES_SCYTHER"
+                "min_level": 16,
+                "max_level": 19,
+                "species": "SPECIES_BINACLE"
               },
               {
-                "min_level": 22,
-                "max_level": 25,
-                "species": "SPECIES_SCYTHER"
+                "min_level": 16,
+                "max_level": 19,
+                "species": "SPECIES_BINACLE"
+              },
+              {
+                "min_level": 16,
+                "max_level": 19,
+                "species": "SPECIES_INKAY"
+              },
+              {
+                "min_level": 16,
+                "max_level": 19,
+                "species": "SPECIES_INKAY"
+              },
+              {
+                "min_level": 16,
+                "max_level": 19,
+                "species": "SPECIES_INKAY"
               }
             ]
           },
