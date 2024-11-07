@@ -1132,3 +1132,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route304/scripts.inc"
 
 	.include "data/maps/StarridgeCity_EldonsHouse/scripts.inc"
+
+	.include "data/maps/StarridgeRuins_1F/scripts.inc"

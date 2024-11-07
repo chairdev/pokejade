@@ -126,7 +126,13 @@
     }
   ],
   "warp_events": [
-
+    {
+      "x": 3,
+      "y": 53,
+      "elevation": 0,
+      "dest_map": "MAP_STARRIDGE_RUINS_1F",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
 

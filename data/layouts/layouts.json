@@ -4700,6 +4700,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/StarridgeCity_EldonsHouse/border.bin",
       "blockdata_filepath": "data/layouts/StarridgeCity_EldonsHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_STARRIDGE_RUINS_1F",
+      "name": "StarridgeRuins_1F_Layout",
+      "width": 13,
+      "height": 15,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/StarridgeRuins_1F/border.bin",
+      "blockdata_filepath": "data/layouts/StarridgeRuins_1F/map.bin"
     }
   ]
 }

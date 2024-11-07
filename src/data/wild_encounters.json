@@ -12008,7 +12008,7 @@
               {
                 "min_level": 16,
                 "max_level": 19,
-                "species": "SPECIES_GASTLY"
+                "species": "SPECIES_PIKACHU"
               },
               {
                 "min_level": 16,
@@ -12606,6 +12606,75 @@
                 "min_level": 16,
                 "max_level": 19,
                 "species": "SPECIES_MAGIKARP"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_STARRIDGE_RUINS_1F",
+          "base_label": "gStarridgeRuins_1F0",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 21,
+                "max_level": 24,
+                "species": "SPECIES_BRONZOR"
+              },
+              {
+                "min_level": 21,
+                "max_level": 24,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 21,
+                "max_level": 24,
+                "species": "SPECIES_BRONZOR"
+              },
+              {
+                "min_level": 21,
+                "max_level": 24,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 21,
+                "max_level": 24,
+                "species": "SPECIES_BRONZOR"
+              },
+              {
+                "min_level": 21,
+                "max_level": 24,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 21,
+                "max_level": 24,
+                "species": "SPECIES_BRONZOR"
+              },
+              {
+                "min_level": 21,
+                "max_level": 24,
+                "species": "SPECIES_GASTLY"
+              },
+              {
+                "min_level": 21,
+                "max_level": 24,
+                "species": "SPECIES_BRONZOR"
+              },
+              {
+                "min_level": 21,
+                "max_level": 24,
+                "species": "SPECIES_CHARCADET"
+              },
+              {
+                "min_level": 21,
+                "max_level": 24,
+                "species": "SPECIES_CHARCADET"
+              },
+              {
+                "min_level": 21,
+                "max_level": 24,
+                "species": "SPECIES_CHARCADET"
               }
             ]
           }

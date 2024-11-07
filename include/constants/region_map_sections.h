@@ -226,7 +226,8 @@
 #define MAPSEC_STARRIDGE_CITY               0xDE
 #define MAPSEC_ROUTE_305                    0xDF
 #define MAPSEC_ROUTE_306                    0xE0
-#define MAPSEC_NONE                         0xE1
+#define MAPSEC_STARRIDGE_RUINS              0xE1
+#define MAPSEC_NONE                         0xE2
 
 
 #define METLOC_SPECIAL_EGG                  0xFD
