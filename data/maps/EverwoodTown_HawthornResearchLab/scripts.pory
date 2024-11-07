@@ -55,7 +55,6 @@ script EverwoodTown_HawthornResearchLab_MapScript_ReceiveStarter {
     msgbox(ReceiveStarter_HawthorneText4)
     waitmessage
 
-    // Now continue with Rival dialogue
     speakername("{RIVAL}")
     msgbox(ReceiveStarter_RivalText1)
 
@@ -64,22 +63,6 @@ script EverwoodTown_HawthornResearchLab_MapScript_ReceiveStarter {
 
     speakername("{RIVAL}")
     msgbox(ReceiveStarter_RivalText2)
-
-    // Giving Tera Orb here, before the Rival leaves
-    speakername("Hawthorne")
-    msgbox(ReceiveStarter_HawthorneText7) // Tera Orb Dialogue
-    closemessage
-    giveitem(ITEM_TERA_ORB, 1)
-    waitfanfare
-
-    speakername("Hawthorne")
-    msgbox(ReceiveStarter_HawthorneText8) // Tera Orb explanation
-    closemessage
-
-    // Rival comments on the Tera Orb
-    speakername("{RIVAL}")
-    msgbox(ReceiveStarter_RivalText_TeraOrb)
-    closemessage
 
     speakername("Hawthorne")
     msgbox(ReceiveStarter_HawthorneText6)
@@ -106,7 +89,6 @@ script EverwoodTown_HawthornResearchLab_MapScript_ReceiveStarter {
     waitfanfare
 
     setflag(FLAG_EXP_SHARE)
-    setflag(B_FLAG_TERA_ORB_CHARGED)
     setflag(FLAG_SYS_POKEDEX_GET)
     special(SetUnlockedPokedexFlags)
 
@@ -175,8 +157,7 @@ text ReceiveStarter_RivalText2 {
 
 
 text ReceiveStarter_HawthorneText6 {
-    format( "That's right! It lasts until the end of battle or until your Pokémon faints.\p"
-            "Oh, and one more thing!\p"
+    format( "Oh, and one more thing!\p"
             "Before you two set off, don't forget to register for the Toshou League at the nearest Pokémon Center.\p"
             "The closest one is in Baycrest City, just past Route 301."
            )

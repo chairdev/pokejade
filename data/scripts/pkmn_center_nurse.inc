@@ -22,7 +22,6 @@ EventScript_PkmnCenterNurse_HealPkmn::
 	call EventScript_PkmnCenterNurse_TakeAndHealPkmn
 	goto_if_unset FLAG_POKERUS_EXPLAINED, EventScript_PkmnCenterNurse_CheckPokerus
 	goto EventScript_PkmnCenterNurse_CheckTrainerHillAndUnionRoom
-	call Nurse_RechargeOrb
 	end
 
 EventScript_PkmnCenterNurse_IllTakeYourPkmn::
@@ -117,16 +116,6 @@ EventScript_PkmnCenterNurse_GoldCardHealPkmn::
 	setvar VAR_0x8004, 1
 	goto EventScript_PkmnCenterNurse_HealPkmn
 	end
-
-Nurse_RechargeOrb::
-	setflag B_FLAG_TERA_ORB_CHARGED
-	msgbox Nurse_RechargeOrb_Text_0
-	return
-
-
-Nurse_RechargeOrb_Text_0:
-	.string "I've also fully recharged your Tera Orb.$"
-
 
 Movement_PkmnCenterNurse_Bow:
 	nurse_joy_bow
