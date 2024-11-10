@@ -158,7 +158,7 @@ script EverwoodTown_GoodbyeMom {
     playfanfare(MUS_OBTAIN_ITEM)
     closemessage
     msgbox(format("You put on the Running Shoes!"))
-	waitfanfare
+    waitfanfare
     speakername("Mom")
     msgbox(GoodbyeMomText2)
     closemessage
@@ -166,18 +166,19 @@ script EverwoodTown_GoodbyeMom {
     applymovement(OBJ_MOM, MomGoToDoor)
     waitmovement(0)
     opendoor(14, 8)
-	waitdooranim
+    waitdooranim
     fadedefaultbgm
     applymovement(OBJ_MOM, MomGoInside)
     waitmovement(0)
     removeobject(OBJ_MOM)
     closedoor(14, 8)
-	waitdooranim
+    waitdooranim
 
     setflag(FLAG_RECEIVED_RUNNING_SHOES)
     setflag(FLAG_SYS_B_DASH)
     setflag(FLAG_HIDE_EVERWOOD_TOWN_MOM_OUTSIDE)
     setvar(VAR_EVERWOOD_TOWN_STATE, 4)
+    addmoney(10000)
 }
 
 movement PlayerApproachMom1 {
@@ -223,6 +224,8 @@ text GoodbyeMomText1 { //gives running shoes
 text GoodbyeMomText2 {
     format( "They're perfect for running around and exploring new places!\p"
             "Just hold the B Button while you move to put a little pep in your step!\p"
+            "Oh, and here's some money to help you on your journey!\p"
+            "Make sure you don't spend it all in one place!\p"
             "...Look at you! All ready to go on an adventure!\p"
             "Ahh... I'm so proud of you, {PLAYER}!\p"
             "I wish I were young again so I experience my adventure again!\p"
