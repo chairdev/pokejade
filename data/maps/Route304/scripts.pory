@@ -1,5 +1,15 @@
 mapscripts Route304_MapScripts {}
 
+script Route304_EventScript_UpsilonGrunt {
+    lock
+    faceplayer
+
+    if(!flag(FLAG_HIDE_LIGHTHOUSE_UPSILON_GRUNTS))
+    {
+        
+    }
+}
+
 // Trainers //
 
 script Route304_EventScript_LassCarol {
