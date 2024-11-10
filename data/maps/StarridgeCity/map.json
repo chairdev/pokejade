@@ -116,33 +116,6 @@
       "var": "VAR_STARRIDGE_CITY_STATE",
       "var_value": "1",
       "script": "StarridgeCity_Trigger_AmphyKidnapped1"
-    },
-    {
-      "type": "trigger",
-      "x": 29,
-      "y": 5,
-      "elevation": 0,
-      "var": "VAR_STARRIDGE_CITY_STATE",
-      "var_value": "2",
-      "script": "StarridgeCity_Trigger_GoSaveAmphy1"
-    },
-    {
-      "type": "trigger",
-      "x": 30,
-      "y": 5,
-      "elevation": 0,
-      "var": "VAR_STARRIDGE_CITY_STATE",
-      "var_value": "2",
-      "script": "StarridgeCity_Trigger_GoSaveAmphy2"
-    },
-    {
-      "type": "trigger",
-      "x": 31,
-      "y": 5,
-      "elevation": 0,
-      "var": "VAR_STARRIDGE_CITY_STATE",
-      "var_value": "2",
-      "script": "StarridgeCity_Trigger_GoSaveAmphy3"
     }
   ],
   "bg_events": [

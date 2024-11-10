@@ -251,7 +251,7 @@
 #define FLAG_REGI_DOORS_OPENED               0xE4
 #define FLAG_RECEIVED_TM_RETURN              0xE5
 #define FLAG_RECEIVED_TM_SLUDGE_BOMB         0xE6
-#define FLAG_RECEIVED_TM_ICY_WIND                0xE7
+#define FLAG_RECEIVED_TM_UNUSED              0xE7
 #define FLAG_RECEIVED_TM_GIGA_DRAIN          0xE8
 
 #define FLAG_UNUSED_0x0E9                    0xE9 // Unused Flag
@@ -1046,9 +1046,9 @@
 #define FLAG_HIDE_RUSTBORO_CITY_POKEMON_SCHOOL_SCOTT                0x3E7
 
 // Item Ball Flags
-#define FLAG_ITEM_ROUTE_102_POTION                                  0x3E8
-#define FLAG_ITEM_ROUTE_116_X_SPECIAL                               0x3E9
-#define FLAG_ITEM_ROUTE_104_PP_UP                                   0x3EA
+#define FLAG_ITEM_ROUTE_302_TM_ICY_WIND                             0x3E8
+#define FLAG_ITEM_KISMET_FOREST_TM_GRASS_KNOT                       0x3E9
+#define FLAG_ITEM_STARRIDGE_RUINS_1F_TM_ROCK_BLAST                  0x3EA
 #define FLAG_ITEM_ROUTE_105_IRON                                    0x3EB
 #define FLAG_ITEM_ROUTE_106_PROTEIN                                 0x3EC
 #define FLAG_ITEM_ROUTE_109_PP_UP                                   0x3ED

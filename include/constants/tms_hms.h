@@ -33,7 +33,7 @@
     F(PSYCHIC) \
     F(SHADOW_BALL) \
     F(BRICK_BREAK) \
-    F(DOUBLE_TEAM) \
+    F(GRASS_KNOT) \
     F(REFLECT) \
     F(SHOCK_WAVE) \
     F(FLAMETHROWER) \
@@ -46,7 +46,7 @@
     F(FACADE) \
     F(SECRET_POWER) \
     F(REST) \
-    F(ATTRACT) \
+    F(ROCK_BLAST) \
     F(THIEF) \
     F(STEEL_WING) \
     F(SKILL_SWAP) \
