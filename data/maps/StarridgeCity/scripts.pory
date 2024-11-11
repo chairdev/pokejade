@@ -352,3 +352,25 @@ script StarridgeCity_EventScript_Scientist {
 
     release
 }
+
+script StarridgeCity_EventScript_ShadyMan { //gives player a dusk ball
+    lock
+    faceplayer
+
+    if(!flag(FLAG_RECEIVED_DUSK_BALL))
+    {
+        msgbox(format("...Hey, kid.\nYou look like you could use this.\p"
+                      "It's a Dusk Ball. It's good for catching Pokémon in dark places.\p"
+                      "You never know when you might need it.\p"
+                      "Take it. It's on the house."))
+
+        giveitem(ITEM_DUSK_BALL, 1)
+        setflag(FLAG_RECEIVED_DUSK_BALL)
+    }
+    else
+    {
+        msgbox(format("You already got a free Dusk Ball from me.\p"
+                      "Don't be greedy."))
+    }
+    release
+}

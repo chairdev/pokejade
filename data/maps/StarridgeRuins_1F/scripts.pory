@@ -1,1 +1,14 @@
 mapscripts StarridgeRuins_1F_MapScripts {}
+
+text StarridgeRuins_1F_Text_Grunts_GruntA_1 {
+    format("Can't you see we're busy here?\p"
+            "We're trying to find the treasure in this place!\p"
+            "Why don't you go mind the business that pays you, huh?")
+}
+
+text StarridgeRuins_1F_Text_Grunts_GruntB_1 {
+    format("Hey, wait a minute!\p"
+            "You're the kid that beat me in that stupid nerd club!\p"
+            "I'm not going to let you get in my way again!\p"
+            "I've got backup this time, so you're going down!")  
+}

@@ -1,1 +1,10 @@
 mapscripts StemfordTown_MapScripts {}
+
+script StemfordTown_EventScript_Man {
+    lock
+    faceplayer
+    msgbox(format("During battle you can press the L BUTTON to see all of a move's details!\p"
+                  "You should always check the details of a move before using it!"))
+    release
+}
+        

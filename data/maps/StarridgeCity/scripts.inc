@@ -446,6 +446,30 @@ StarridgeCity_EventScript_Scientist::
 	return
 
 
+StarridgeCity_EventScript_ShadyMan::
+# 357 "data/maps/StarridgeCity/scripts.pory"
+	lock
+# 358 "data/maps/StarridgeCity/scripts.pory"
+	faceplayer
+# 360 "data/maps/StarridgeCity/scripts.pory"
+	goto_if_unset FLAG_RECEIVED_DUSK_BALL, StarridgeCity_EventScript_ShadyMan_2
+# 373 "data/maps/StarridgeCity/scripts.pory"
+	msgbox StarridgeCity_EventScript_ShadyMan_Text_1
+StarridgeCity_EventScript_ShadyMan_1:
+# 376 "data/maps/StarridgeCity/scripts.pory"
+	release
+	return
+
+StarridgeCity_EventScript_ShadyMan_2:
+# 362 "data/maps/StarridgeCity/scripts.pory"
+	msgbox StarridgeCity_EventScript_ShadyMan_Text_0
+# 368 "data/maps/StarridgeCity/scripts.pory"
+	giveitem ITEM_DUSK_BALL, 1
+# 369 "data/maps/StarridgeCity/scripts.pory"
+	setflag FLAG_RECEIVED_DUSK_BALL
+	goto StarridgeCity_EventScript_ShadyMan_1
+
+
 StarridgeCity_EventScript_Rival_Text_0:
 # 30 "data/maps/StarridgeCity/scripts.pory"
 	.string "{RIVAL}$"
@@ -453,6 +477,21 @@ StarridgeCity_EventScript_Rival_Text_0:
 StarridgeCity_Trigger_GoSaveBoss1_Text_0:
 # 201 "data/maps/StarridgeCity/scripts.pory"
 	.string "Scientist$"
+
+StarridgeCity_EventScript_ShadyMan_Text_0:
+# 362 "data/maps/StarridgeCity/scripts.pory"
+	.string "...Hey, kid.\p"
+	.string "You look like you could use this.\p"
+	.string "It's a Dusk Ball. It's good for catching\n"
+	.string "Pokémon in dark places.\p"
+	.string "You never know when you might need it.\p"
+	.string "Take it. It's on the house.$"
+
+StarridgeCity_EventScript_ShadyMan_Text_1:
+# 373 "data/maps/StarridgeCity/scripts.pory"
+	.string "You already got a free Dusk Ball from\n"
+	.string "me.\p"
+	.string "Don't be greedy.$"
 
 StarridgeCity_Text_Rival1F::
 # 102 "data/maps/StarridgeCity/scripts.pory"
