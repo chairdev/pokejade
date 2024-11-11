@@ -447,7 +447,8 @@
     "MeteorFalls_StevensCave",
     "FortuneCave",
     "KismetForest",
-    "StarridgeRuins_1F"
+    "StarridgeRuins_1F",
+    "StarridgeRuins_B1F"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

@@ -151,7 +151,7 @@ StarridgeCity_EventScript_Rival_19:
 	goto StarridgeCity_EventScript_Rival_15
 
 
-StarridgeCity_Trigger_AmphyKidnapped1::
+StarridgeCity_Trigger_HostageSituation1::
 # 161 "data/maps/StarridgeCity/scripts.pory"
 	clearflag FLAG_HIDE_LIGHTHOUSE_UPSILON_GRUNTS
 # 162 "data/maps/StarridgeCity/scripts.pory"
@@ -159,9 +159,9 @@ StarridgeCity_Trigger_AmphyKidnapped1::
 # 163 "data/maps/StarridgeCity/scripts.pory"
 	setobjectxy 2, 29, 9
 # 164 "data/maps/StarridgeCity/scripts.pory"
-	call StarridgeCity_EventScript_AmphyKidnapped
+	call StarridgeCity_EventScript_HostageSituation
 # 165 "data/maps/StarridgeCity/scripts.pory"
-	applymovement 2, StarridgeCity_Movement_JasmineWait1
+	applymovement 2, StarridgeCity_Movement_ScientistWait1
 # 166 "data/maps/StarridgeCity/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, StarridgeCity_Movement_PlayerWalkDown
 # 167 "data/maps/StarridgeCity/scripts.pory"
@@ -171,7 +171,7 @@ StarridgeCity_Trigger_AmphyKidnapped1::
 	return
 
 
-StarridgeCity_Trigger_AmphyKidnapped2::
+StarridgeCity_Trigger_HostageSituation2::
 # 172 "data/maps/StarridgeCity/scripts.pory"
 	clearflag FLAG_HIDE_LIGHTHOUSE_UPSILON_GRUNTS
 # 173 "data/maps/StarridgeCity/scripts.pory"
@@ -179,9 +179,9 @@ StarridgeCity_Trigger_AmphyKidnapped2::
 # 174 "data/maps/StarridgeCity/scripts.pory"
 	setobjectxy 2, 30, 9
 # 175 "data/maps/StarridgeCity/scripts.pory"
-	call StarridgeCity_EventScript_AmphyKidnapped
+	call StarridgeCity_EventScript_HostageSituation
 # 176 "data/maps/StarridgeCity/scripts.pory"
-	applymovement 2, StarridgeCity_Movement_JasmineWait2
+	applymovement 2, StarridgeCity_Movement_ScientistWait2
 # 177 "data/maps/StarridgeCity/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, StarridgeCity_Movement_PlayerWalkDown
 # 178 "data/maps/StarridgeCity/scripts.pory"
@@ -191,7 +191,7 @@ StarridgeCity_Trigger_AmphyKidnapped2::
 	return
 
 
-StarridgeCity_Trigger_AmphyKidnapped3::
+StarridgeCity_Trigger_HostageSituation3::
 # 183 "data/maps/StarridgeCity/scripts.pory"
 	clearflag FLAG_HIDE_LIGHTHOUSE_UPSILON_GRUNTS
 # 184 "data/maps/StarridgeCity/scripts.pory"
@@ -199,9 +199,9 @@ StarridgeCity_Trigger_AmphyKidnapped3::
 # 185 "data/maps/StarridgeCity/scripts.pory"
 	setobjectxy 2, 31, 9
 # 186 "data/maps/StarridgeCity/scripts.pory"
-	call StarridgeCity_EventScript_AmphyKidnapped
+	call StarridgeCity_EventScript_HostageSituation
 # 187 "data/maps/StarridgeCity/scripts.pory"
-	applymovement 2, StarridgeCity_Movement_JasmineWait3
+	applymovement 2, StarridgeCity_Movement_ScientistWait3
 # 188 "data/maps/StarridgeCity/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, StarridgeCity_Movement_PlayerWalkDown
 # 189 "data/maps/StarridgeCity/scripts.pory"
@@ -211,11 +211,11 @@ StarridgeCity_Trigger_AmphyKidnapped3::
 	return
 
 
-StarridgeCity_Trigger_GoSaveAmphy1::
+StarridgeCity_Trigger_GoSaveBoss1::
 # 194 "data/maps/StarridgeCity/scripts.pory"
 	lockall
 # 196 "data/maps/StarridgeCity/scripts.pory"
-	applymovement 2, StarridgeCity_Movement_JasmineApproachPlayer1
+	applymovement 2, StarridgeCity_Movement_ScientistApproachPlayer1
 # 197 "data/maps/StarridgeCity/scripts.pory"
 	waitmovement 2
 # 198 "data/maps/StarridgeCity/scripts.pory"
@@ -223,13 +223,13 @@ StarridgeCity_Trigger_GoSaveAmphy1::
 # 199 "data/maps/StarridgeCity/scripts.pory"
 	waitmovement OBJ_EVENT_ID_PLAYER
 # 201 "data/maps/StarridgeCity/scripts.pory"
-	speakername StarridgeCity_Trigger_GoSaveAmphy1_Text_0
+	speakername StarridgeCity_Trigger_GoSaveBoss1_Text_0
 # 202 "data/maps/StarridgeCity/scripts.pory"
-	msgbox StarridgeCity_Text_AmphyKidnapped_Yes
+	msgbox StarridgeCity_Text_HostageSituation_Yes
 # 203 "data/maps/StarridgeCity/scripts.pory"
 	closemessage
 # 205 "data/maps/StarridgeCity/scripts.pory"
-	applymovement 2, StarridgeCity_Movement_JasmineWalkBack1
+	applymovement 2, StarridgeCity_Movement_ScientistWalkBack1
 # 206 "data/maps/StarridgeCity/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, StarridgeCity_Movement_PlayerWalkDown2
 # 207 "data/maps/StarridgeCity/scripts.pory"
@@ -239,11 +239,11 @@ StarridgeCity_Trigger_GoSaveAmphy1::
 	return
 
 
-StarridgeCity_Trigger_GoSaveAmphy2::
+StarridgeCity_Trigger_GoSaveBoss2::
 # 212 "data/maps/StarridgeCity/scripts.pory"
 	lockall
 # 214 "data/maps/StarridgeCity/scripts.pory"
-	applymovement 2, StarridgeCity_Movement_JasmineApproachPlayer2
+	applymovement 2, StarridgeCity_Movement_ScientistApproachPlayer2
 # 215 "data/maps/StarridgeCity/scripts.pory"
 	waitmovement 2
 # 216 "data/maps/StarridgeCity/scripts.pory"
@@ -251,13 +251,13 @@ StarridgeCity_Trigger_GoSaveAmphy2::
 # 217 "data/maps/StarridgeCity/scripts.pory"
 	waitmovement OBJ_EVENT_ID_PLAYER
 # 219 "data/maps/StarridgeCity/scripts.pory"
-	speakername StarridgeCity_Trigger_GoSaveAmphy1_Text_0
+	speakername StarridgeCity_Trigger_GoSaveBoss1_Text_0
 # 220 "data/maps/StarridgeCity/scripts.pory"
-	msgbox StarridgeCity_Text_AmphyKidnapped_Yes
+	msgbox StarridgeCity_Text_HostageSituation_Yes
 # 221 "data/maps/StarridgeCity/scripts.pory"
 	closemessage
 # 223 "data/maps/StarridgeCity/scripts.pory"
-	applymovement 2, StarridgeCity_Movement_JasmineWalkBack2
+	applymovement 2, StarridgeCity_Movement_ScientistWalkBack2
 # 224 "data/maps/StarridgeCity/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, StarridgeCity_Movement_PlayerWalkDown2
 # 225 "data/maps/StarridgeCity/scripts.pory"
@@ -267,11 +267,11 @@ StarridgeCity_Trigger_GoSaveAmphy2::
 	return
 
 
-StarridgeCity_Trigger_GoSaveAmphy3::
+StarridgeCity_Trigger_GoSaveBoss3::
 # 230 "data/maps/StarridgeCity/scripts.pory"
 	lockall
 # 232 "data/maps/StarridgeCity/scripts.pory"
-	applymovement 2, StarridgeCity_Movement_JasmineFaceLeft
+	applymovement 2, StarridgeCity_Movement_ScientistFaceLeft
 # 233 "data/maps/StarridgeCity/scripts.pory"
 	waitmovement 2
 # 234 "data/maps/StarridgeCity/scripts.pory"
@@ -279,9 +279,9 @@ StarridgeCity_Trigger_GoSaveAmphy3::
 # 235 "data/maps/StarridgeCity/scripts.pory"
 	waitmovement OBJ_EVENT_ID_PLAYER
 # 237 "data/maps/StarridgeCity/scripts.pory"
-	speakername StarridgeCity_Trigger_GoSaveAmphy1_Text_0
+	speakername StarridgeCity_Trigger_GoSaveBoss1_Text_0
 # 238 "data/maps/StarridgeCity/scripts.pory"
-	msgbox StarridgeCity_Text_AmphyKidnapped_Yes
+	msgbox StarridgeCity_Text_HostageSituation_Yes
 # 239 "data/maps/StarridgeCity/scripts.pory"
 	closemessage
 # 241 "data/maps/StarridgeCity/scripts.pory"
@@ -293,37 +293,37 @@ StarridgeCity_Trigger_GoSaveAmphy3::
 	return
 
 
-StarridgeCity_EventScript_AmphyKidnapped::
+StarridgeCity_EventScript_HostageSituation::
 # 247 "data/maps/StarridgeCity/scripts.pory"
 	lockall
 # 248 "data/maps/StarridgeCity/scripts.pory"
 	clearflag FLAG_HIDE_ROUTE_304_UPSILON_GRUNT
 # 250 "data/maps/StarridgeCity/scripts.pory"
-	applymovement 2, StarridgeCity_Movement_JasmineApproachPlayer
+	applymovement 2, StarridgeCity_Movement_ScientistApproachPlayer
 # 251 "data/maps/StarridgeCity/scripts.pory"
 	waitmovement 0
 # 252 "data/maps/StarridgeCity/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, StarridgeCity_Movement_PlayerFaceDown
 # 254 "data/maps/StarridgeCity/scripts.pory"
-	speakername StarridgeCity_Trigger_GoSaveAmphy1_Text_0
+	speakername StarridgeCity_Trigger_GoSaveBoss1_Text_0
 # 255 "data/maps/StarridgeCity/scripts.pory"
-	msgbox StarridgeCity_Text_AmphyKidnapped_Jasmine1, MSGBOX_YESNO
-StarridgeCity_EventScript_AmphyKidnapped_2:
+	msgbox StarridgeCity_Text_HostageSituation_Scientist1, MSGBOX_YESNO
+StarridgeCity_EventScript_HostageSituation_2:
 # 256 "data/maps/StarridgeCity/scripts.pory"
 	compare VAR_RESULT, YES
-	goto_if_ne StarridgeCity_EventScript_AmphyKidnapped_3
+	goto_if_ne StarridgeCity_EventScript_HostageSituation_3
 # 260 "data/maps/StarridgeCity/scripts.pory"
-	msgbox StarridgeCity_Text_AmphyKidnapped_Jasmine2
+	msgbox StarridgeCity_Text_HostageSituation_Scientist2
 # 261 "data/maps/StarridgeCity/scripts.pory"
 	setvar VAR_STARRIDGE_CITY_STATE, 2
 # 262 "data/maps/StarridgeCity/scripts.pory"
 	closemessage
 	return
 
-StarridgeCity_EventScript_AmphyKidnapped_3:
+StarridgeCity_EventScript_HostageSituation_3:
 # 258 "data/maps/StarridgeCity/scripts.pory"
-	msgbox StarridgeCity_Text_AmphyKidnapped_ButWhy, MSGBOX_YESNO
-	goto StarridgeCity_EventScript_AmphyKidnapped_2
+	msgbox StarridgeCity_Text_HostageSituation_ButWhy, MSGBOX_YESNO
+	goto StarridgeCity_EventScript_HostageSituation_2
 
 
 # 265 "data/maps/StarridgeCity/scripts.pory"
@@ -355,7 +355,7 @@ StarridgeCity_Movement_PlayerWalkDown2:
 	step_end
 
 # 281 "data/maps/StarridgeCity/scripts.pory"
-StarridgeCity_Movement_JasmineApproachPlayer:
+StarridgeCity_Movement_ScientistApproachPlayer:
 # 282 "data/maps/StarridgeCity/scripts.pory"
 	walk_fast_up
 # 282 "data/maps/StarridgeCity/scripts.pory"
@@ -369,7 +369,7 @@ StarridgeCity_Movement_JasmineApproachPlayer:
 	step_end
 
 # 285 "data/maps/StarridgeCity/scripts.pory"
-StarridgeCity_Movement_JasmineApproachPlayer1:
+StarridgeCity_Movement_ScientistApproachPlayer1:
 # 286 "data/maps/StarridgeCity/scripts.pory"
 	walk_fast_left
 # 286 "data/maps/StarridgeCity/scripts.pory"
@@ -377,13 +377,13 @@ StarridgeCity_Movement_JasmineApproachPlayer1:
 	step_end
 
 # 289 "data/maps/StarridgeCity/scripts.pory"
-StarridgeCity_Movement_JasmineApproachPlayer2:
+StarridgeCity_Movement_ScientistApproachPlayer2:
 # 290 "data/maps/StarridgeCity/scripts.pory"
 	walk_fast_left
 	step_end
 
 # 293 "data/maps/StarridgeCity/scripts.pory"
-StarridgeCity_Movement_JasmineWalkBack1:
+StarridgeCity_Movement_ScientistWalkBack1:
 # 294 "data/maps/StarridgeCity/scripts.pory"
 	walk_fast_right
 # 294 "data/maps/StarridgeCity/scripts.pory"
@@ -391,19 +391,19 @@ StarridgeCity_Movement_JasmineWalkBack1:
 	step_end
 
 # 297 "data/maps/StarridgeCity/scripts.pory"
-StarridgeCity_Movement_JasmineWalkBack2:
+StarridgeCity_Movement_ScientistWalkBack2:
 # 298 "data/maps/StarridgeCity/scripts.pory"
 	walk_fast_right
 	step_end
 
 # 301 "data/maps/StarridgeCity/scripts.pory"
-StarridgeCity_Movement_JasmineFaceLeft:
+StarridgeCity_Movement_ScientistFaceLeft:
 # 302 "data/maps/StarridgeCity/scripts.pory"
 	walk_in_place_fast_left
 	step_end
 
 # 305 "data/maps/StarridgeCity/scripts.pory"
-StarridgeCity_Movement_JasmineWait1:
+StarridgeCity_Movement_ScientistWait1:
 # 306 "data/maps/StarridgeCity/scripts.pory"
 	walk_down
 # 307 "data/maps/StarridgeCity/scripts.pory"
@@ -415,7 +415,7 @@ StarridgeCity_Movement_JasmineWait1:
 	step_end
 
 # 310 "data/maps/StarridgeCity/scripts.pory"
-StarridgeCity_Movement_JasmineWait2:
+StarridgeCity_Movement_ScientistWait2:
 # 311 "data/maps/StarridgeCity/scripts.pory"
 	walk_down
 # 312 "data/maps/StarridgeCity/scripts.pory"
@@ -425,22 +425,22 @@ StarridgeCity_Movement_JasmineWait2:
 	step_end
 
 # 315 "data/maps/StarridgeCity/scripts.pory"
-StarridgeCity_Movement_JasmineWait3:
+StarridgeCity_Movement_ScientistWait3:
 # 316 "data/maps/StarridgeCity/scripts.pory"
 	walk_down
 # 317 "data/maps/StarridgeCity/scripts.pory"
 	walk_right
 	step_end
 
-StarridgeCity_EventScript_Jasmine::
+StarridgeCity_EventScript_Scientist::
 # 347 "data/maps/StarridgeCity/scripts.pory"
 	lock
 # 348 "data/maps/StarridgeCity/scripts.pory"
 	faceplayer
 # 350 "data/maps/StarridgeCity/scripts.pory"
-	speakername StarridgeCity_Trigger_GoSaveAmphy1_Text_0
+	speakername StarridgeCity_Trigger_GoSaveBoss1_Text_0
 # 351 "data/maps/StarridgeCity/scripts.pory"
-	msgbox StarridgeCity_Text_AmphyKidnapped_Yes
+	msgbox StarridgeCity_Text_HostageSituation_Yes
 # 353 "data/maps/StarridgeCity/scripts.pory"
 	release
 	return
@@ -450,9 +450,9 @@ StarridgeCity_EventScript_Rival_Text_0:
 # 30 "data/maps/StarridgeCity/scripts.pory"
 	.string "{RIVAL}$"
 
-StarridgeCity_Trigger_GoSaveAmphy1_Text_0:
+StarridgeCity_Trigger_GoSaveBoss1_Text_0:
 # 201 "data/maps/StarridgeCity/scripts.pory"
-	.string "Jasmine$"
+	.string "Scientist$"
 
 StarridgeCity_Text_Rival1F::
 # 102 "data/maps/StarridgeCity/scripts.pory"
@@ -530,41 +530,42 @@ StarridgeCity_Text_Rival2M::
 	.string "time, it'll be a different story!\p"
 	.string "Just you wait!$"
 
-StarridgeCity_Text_AmphyKidnapped_Jasmine1::
+StarridgeCity_Text_HostageSituation_Scientist1::
 # 320 "data/maps/StarridgeCity/scripts.pory"
-	.string "{PLAYER}! T-Team Upsilon... they...\n"
-	.string "they took Amphy...\p"
+	.string "You there! Please, I need your help!\p"
+	.string "T-Team Upsilon... they... they barged\n"
+	.string "into the ruins on Route 306 and are\l"
+	.string "holding our boss hostage...\p"
 	.string "It happened so fast! I was about to\n"
 	.string "head out when a couple of those Team\l"
 	.string "Upsilon grunts stormed in.\p"
-	.string "They grabbed Amphy and ran off! I tried\n"
-	.string "to stop them, but they were too fast!\p"
-	.string "I'd go after them myself, but I have to\n"
-	.string "stay here in case they come back for\l"
-	.string "something else.\p"
-	.string "{PLAYER}...I know you're strong--can\n"
-	.string "you go after them?$"
+	.string "They grabbed our boss and ran off! I\n"
+	.string "tried to stop them, but they were too\l"
+	.string "fast!\p"
+	.string "I've been running around trying to find\n"
+	.string "someone to help, but no one's been able\l"
+	.string "to do anything!\p"
+	.string "You look strong--can you go after\n"
+	.string "them?$"
 
-StarridgeCity_Text_AmphyKidnapped_Jasmine2::
+StarridgeCity_Text_HostageSituation_Scientist2::
 # 330 "data/maps/StarridgeCity/scripts.pory"
-	.string "Thank you, {PLAYER}!\n"
-	.string "Let me tell you what I know...\p"
-	.string "They said something about... a\n"
-	.string "lighthouse near Stemford Town... I think\l"
-	.string "that's where they're headed.\p"
-	.string "They're using Amphy for something...\n"
+	.string "Thank you! Let me tell you what I know...\p"
+	.string "They said something about... the ruins\n"
+	.string "on Route 306... I think that's where\l"
+	.string "they're headed.\p"
+	.string "They're using our boss for something...\n"
 	.string "something dangerous, I just know it.$"
 
-StarridgeCity_Text_AmphyKidnapped_ButWhy::
+StarridgeCity_Text_HostageSituation_ButWhy::
 # 337 "data/maps/StarridgeCity/scripts.pory"
-	.string "I understand... but... please,\n"
-	.string "{PLAYER}! I'm begging you! You're the\l"
-	.string "only one here that's strong enough to\l"
-	.string "help!$"
+	.string "I understand... but... please! I'm\n"
+	.string "begging you! You're the only one here\l"
+	.string "that's strong enough to help!$"
 
-StarridgeCity_Text_AmphyKidnapped_Yes::
+StarridgeCity_Text_HostageSituation_Yes::
 # 341 "data/maps/StarridgeCity/scripts.pory"
-	.string "They took Amphy to the lighthouse near\n"
-	.string "Stemford Town!\p"
+	.string "They took our boss to the Starridge\n"
+	.string "Ruins on Route 306!\p"
 	.string "I'll be waiting here in case they come\n"
 	.string "back. Please, hurry!$"

@@ -4710,6 +4710,16 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/StarridgeRuins_1F/border.bin",
       "blockdata_filepath": "data/layouts/StarridgeRuins_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_STARRIDGE_RUINS_B1F",
+      "name": "StarridgeRuins_B1F_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/StarridgeRuins_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/StarridgeRuins_B1F/map.bin"
     }
   ]
 }

@@ -1,11 +1,11 @@
 //VAR_STARRIDGE_CITY_STATE
 // 0: Melody has not been defeated
-// 1: Amphy has been kidnapped
-// 2: Need to rescue Amphy
-// 3: Amphy has been rescued
+// 1: Scientist has informed about the hostage situation
+// 2: Need to rescue the boss
+// 3: Boss has been rescued
 
 const OBJ_RIVAL = 1
-const OBJ_JASMINE = 2
+const OBJ_SCIENTIST = 2
 
 mapscripts StarridgeCity_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
@@ -17,7 +17,7 @@ mapscripts StarridgeCity_MapScripts {
                 setflag(FLAG_HIDE_LIGHTHOUSE_UPSILON_GRUNTS)
                 break
             case 2:
-                setobjectxy(OBJ_JASMINE, 32, 5)
+                setobjectxy(OBJ_SCIENTIST, 32, 5)
                 break
         }
     }
@@ -157,85 +157,85 @@ text StarridgeCity_Text_Rival2M {
            "Just you wait!")
 }
 
-script StarridgeCity_Trigger_AmphyKidnapped1 {
+script StarridgeCity_Trigger_HostageSituation1 {
     clearflag(FLAG_HIDE_LIGHTHOUSE_UPSILON_GRUNTS)
-    addobject(OBJ_JASMINE)
-    setobjectxy(OBJ_JASMINE, 29, 9)
-    call(StarridgeCity_EventScript_AmphyKidnapped)
-    applymovement(OBJ_JASMINE, StarridgeCity_Movement_JasmineWait1)
+    addobject(OBJ_SCIENTIST)
+    setobjectxy(OBJ_SCIENTIST, 29, 9)
+    call(StarridgeCity_EventScript_HostageSituation)
+    applymovement(OBJ_SCIENTIST, StarridgeCity_Movement_ScientistWait1)
     applymovement(OBJ_EVENT_ID_PLAYER, StarridgeCity_Movement_PlayerWalkDown)
     waitmovement(OBJ_EVENT_ID_PLAYER)
     release
 }
 
-script StarridgeCity_Trigger_AmphyKidnapped2 {
+script StarridgeCity_Trigger_HostageSituation2 {
     clearflag(FLAG_HIDE_LIGHTHOUSE_UPSILON_GRUNTS)
-    addobject(OBJ_JASMINE)
-    setobjectxy(OBJ_JASMINE, 30, 9)
-    call(StarridgeCity_EventScript_AmphyKidnapped)
-    applymovement(OBJ_JASMINE, StarridgeCity_Movement_JasmineWait2)
+    addobject(OBJ_SCIENTIST)
+    setobjectxy(OBJ_SCIENTIST, 30, 9)
+    call(StarridgeCity_EventScript_HostageSituation)
+    applymovement(OBJ_SCIENTIST, StarridgeCity_Movement_ScientistWait2)
     applymovement(OBJ_EVENT_ID_PLAYER, StarridgeCity_Movement_PlayerWalkDown)
     waitmovement(OBJ_EVENT_ID_PLAYER)
     release
 }
 
-script StarridgeCity_Trigger_AmphyKidnapped3 {
+script StarridgeCity_Trigger_HostageSituation3 {
     clearflag(FLAG_HIDE_LIGHTHOUSE_UPSILON_GRUNTS)
-    addobject(OBJ_JASMINE)
-    setobjectxy(OBJ_JASMINE, 31, 9)
-    call(StarridgeCity_EventScript_AmphyKidnapped)
-    applymovement(OBJ_JASMINE, StarridgeCity_Movement_JasmineWait3)
+    addobject(OBJ_SCIENTIST)
+    setobjectxy(OBJ_SCIENTIST, 31, 9)
+    call(StarridgeCity_EventScript_HostageSituation)
+    applymovement(OBJ_SCIENTIST, StarridgeCity_Movement_ScientistWait3)
     applymovement(OBJ_EVENT_ID_PLAYER, StarridgeCity_Movement_PlayerWalkDown)
     waitmovement(OBJ_EVENT_ID_PLAYER)
     release
 }
 
-script StarridgeCity_Trigger_GoSaveAmphy1 {
+script StarridgeCity_Trigger_GoSaveBoss1 {
     lockall
 
-    applymovement(OBJ_JASMINE, StarridgeCity_Movement_JasmineApproachPlayer1)
-    waitmovement(OBJ_JASMINE)
+    applymovement(OBJ_SCIENTIST, StarridgeCity_Movement_ScientistApproachPlayer1)
+    waitmovement(OBJ_SCIENTIST)
     applymovement(OBJ_EVENT_ID_PLAYER, StarridgeCity_Movement_PlayerFaceRight)
     waitmovement(OBJ_EVENT_ID_PLAYER)
 
-    speakername("Jasmine")
-    msgbox(StarridgeCity_Text_AmphyKidnapped_Yes)
+    speakername("Scientist")
+    msgbox(StarridgeCity_Text_HostageSituation_Yes)
     closemessage
 
-    applymovement(OBJ_JASMINE, StarridgeCity_Movement_JasmineWalkBack1)
+    applymovement(OBJ_SCIENTIST, StarridgeCity_Movement_ScientistWalkBack1)
     applymovement(OBJ_EVENT_ID_PLAYER, StarridgeCity_Movement_PlayerWalkDown2)
     waitmovement(OBJ_EVENT_ID_PLAYER)
     release
 }
 
-script StarridgeCity_Trigger_GoSaveAmphy2 {
+script StarridgeCity_Trigger_GoSaveBoss2 {
     lockall
 
-    applymovement(OBJ_JASMINE, StarridgeCity_Movement_JasmineApproachPlayer2)
-    waitmovement(OBJ_JASMINE)
+    applymovement(OBJ_SCIENTIST, StarridgeCity_Movement_ScientistApproachPlayer2)
+    waitmovement(OBJ_SCIENTIST)
     applymovement(OBJ_EVENT_ID_PLAYER, StarridgeCity_Movement_PlayerFaceRight)
     waitmovement(OBJ_EVENT_ID_PLAYER)
 
-    speakername("Jasmine")
-    msgbox(StarridgeCity_Text_AmphyKidnapped_Yes)
+    speakername("Scientist")
+    msgbox(StarridgeCity_Text_HostageSituation_Yes)
     closemessage
 
-    applymovement(OBJ_JASMINE, StarridgeCity_Movement_JasmineWalkBack2)
+    applymovement(OBJ_SCIENTIST, StarridgeCity_Movement_ScientistWalkBack2)
     applymovement(OBJ_EVENT_ID_PLAYER, StarridgeCity_Movement_PlayerWalkDown2)
     waitmovement(OBJ_EVENT_ID_PLAYER)
     release
 }
 
-script StarridgeCity_Trigger_GoSaveAmphy3 {
+script StarridgeCity_Trigger_GoSaveBoss3 {
     lockall
 
-    applymovement(OBJ_JASMINE, StarridgeCity_Movement_JasmineFaceLeft)
-    waitmovement(OBJ_JASMINE)
+    applymovement(OBJ_SCIENTIST, StarridgeCity_Movement_ScientistFaceLeft)
+    waitmovement(OBJ_SCIENTIST)
     applymovement(OBJ_EVENT_ID_PLAYER, StarridgeCity_Movement_PlayerFaceRight)
     waitmovement(OBJ_EVENT_ID_PLAYER)
 
-    speakername("Jasmine")
-    msgbox(StarridgeCity_Text_AmphyKidnapped_Yes)
+    speakername("Scientist")
+    msgbox(StarridgeCity_Text_HostageSituation_Yes)
     closemessage
 
     applymovement(OBJ_EVENT_ID_PLAYER, StarridgeCity_Movement_PlayerWalkDown2)
@@ -243,21 +243,21 @@ script StarridgeCity_Trigger_GoSaveAmphy3 {
     release
 }
 
-script StarridgeCity_EventScript_AmphyKidnapped {
+script StarridgeCity_EventScript_HostageSituation {
     lockall
     clearflag(FLAG_HIDE_ROUTE_304_UPSILON_GRUNT)
 
-    applymovement(OBJ_JASMINE, StarridgeCity_Movement_JasmineApproachPlayer)
+    applymovement(OBJ_SCIENTIST, StarridgeCity_Movement_ScientistApproachPlayer)
     waitmovement(0)
     applymovement(OBJ_EVENT_ID_PLAYER, StarridgeCity_Movement_PlayerFaceDown)
 
-    speakername("Jasmine")
-    msgbox(StarridgeCity_Text_AmphyKidnapped_Jasmine1, MSGBOX_YESNO)
+    speakername("Scientist")
+    msgbox(StarridgeCity_Text_HostageSituation_Scientist1, MSGBOX_YESNO)
     while (var(VAR_RESULT) != YES)
     {
-        msgbox(StarridgeCity_Text_AmphyKidnapped_ButWhy, MSGBOX_YESNO)
+        msgbox(StarridgeCity_Text_HostageSituation_ButWhy, MSGBOX_YESNO)
     }
-    msgbox(StarridgeCity_Text_AmphyKidnapped_Jasmine2)
+    msgbox(StarridgeCity_Text_HostageSituation_Scientist2)
     setvar(VAR_STARRIDGE_CITY_STATE, 2)
     closemessage
 }
@@ -278,78 +278,77 @@ movement StarridgeCity_Movement_PlayerWalkDown2 {
     walk_down
 }
 
-movement StarridgeCity_Movement_JasmineApproachPlayer {
+movement StarridgeCity_Movement_ScientistApproachPlayer {
     walk_fast_up * 5
 }
 
-movement StarridgeCity_Movement_JasmineApproachPlayer1 {
+movement StarridgeCity_Movement_ScientistApproachPlayer1 {
     walk_fast_left * 2
 }
 
-movement StarridgeCity_Movement_JasmineApproachPlayer2 {
+movement StarridgeCity_Movement_ScientistApproachPlayer2 {
     walk_fast_left
 }
 
-movement StarridgeCity_Movement_JasmineWalkBack1 {
+movement StarridgeCity_Movement_ScientistWalkBack1 {
     walk_fast_right * 2
 }
 
-movement StarridgeCity_Movement_JasmineWalkBack2 {
+movement StarridgeCity_Movement_ScientistWalkBack2 {
     walk_fast_right
 }
 
-movement StarridgeCity_Movement_JasmineFaceLeft {
+movement StarridgeCity_Movement_ScientistFaceLeft {
     walk_in_place_fast_left
 }
 
-movement StarridgeCity_Movement_JasmineWait1 {
+movement StarridgeCity_Movement_ScientistWait1 {
     walk_down
     walk_right * 3
 }
 
-movement StarridgeCity_Movement_JasmineWait2 {
+movement StarridgeCity_Movement_ScientistWait2 {
     walk_down
     walk_right * 2
 }
 
-movement StarridgeCity_Movement_JasmineWait3 {
+movement StarridgeCity_Movement_ScientistWait3 {
     walk_down
     walk_right
 }
 
-text StarridgeCity_Text_AmphyKidnapped_Jasmine1 {
-    format("{PLAYER}!"
-            "T-Team Upsilon... they... they took Amphy...\p"
+text StarridgeCity_Text_HostageSituation_Scientist1 {
+    format("You there! Please, I need your help!\p"
+            "T-Team Upsilon... they... they barged into the ruins on Route 306 and are holding our boss hostage...\p"
             "It happened so fast! I was about to head out when a couple of those Team Upsilon grunts stormed in.\p"
-            "They grabbed Amphy and ran off! I tried to stop them, but they were too fast!\p"
-            "I'd go after them myself, but I have to stay here in case they come back for something else.\p"
-            "{PLAYER}...I know you're strong--can you go after them?"
+            "They grabbed our boss and ran off! I tried to stop them, but they were too fast!\p"
+            "I've been running around trying to find someone to help, but no one's been able to do anything!\p"
+            "You look strong--can you go after them?"
     )
 }
 
-text StarridgeCity_Text_AmphyKidnapped_Jasmine2 {
-    format( "Thank you, {PLAYER}!\nLet me tell you what I know...\p"
-            "They said something about... a lighthouse near Stemford Town... I think that's where they're headed.\p"
-            "They're using Amphy for something... something dangerous, I just know it."
+text StarridgeCity_Text_HostageSituation_Scientist2 {
+    format("Thank you! Let me tell you what I know...\p"
+            "They said something about... the ruins on Route 306... I think that's where they're headed.\p"
+            "They're using our boss for something... something dangerous, I just know it."
     )
 }
 
-text StarridgeCity_Text_AmphyKidnapped_ButWhy {
-    format("I understand... but... please, {PLAYER}! I'm begging you! You're the only one here that's strong enough to help!")
+text StarridgeCity_Text_HostageSituation_ButWhy {
+    format("I understand... but... please! I'm begging you! You're the only one here that's strong enough to help!")
 }
 
-text StarridgeCity_Text_AmphyKidnapped_Yes {
-    format("They took Amphy to the lighthouse near Stemford Town!\p"
+text StarridgeCity_Text_HostageSituation_Yes {
+    format("They took our boss to the Starridge Ruins on Route 306!\p"
             "I'll be waiting here in case they come back. Please, hurry!")
 }
 
-script StarridgeCity_EventScript_Jasmine {
+script StarridgeCity_EventScript_Scientist {
     lock
     faceplayer
 
-    speakername("Jasmine")
-    msgbox(StarridgeCity_Text_AmphyKidnapped_Yes)
+    speakername("Scientist")
+    msgbox(StarridgeCity_Text_HostageSituation_Yes)
 
     release
 }
-
