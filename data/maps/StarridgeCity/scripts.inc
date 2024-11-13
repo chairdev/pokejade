@@ -1,457 +1,457 @@
 StarridgeCity_MapScripts::
-# 11 "data/maps/StarridgeCity/scripts.pory"
+# 12 "data/maps/StarridgeCity/scripts.pory"
 	map_script MAP_SCRIPT_ON_TRANSITION, StarridgeCity_MapScripts_MAP_SCRIPT_ON_TRANSITION
-# 14 "data/maps/StarridgeCity/scripts.pory"
+# 15 "data/maps/StarridgeCity/scripts.pory"
 	map_script MAP_SCRIPT_ON_LOAD, StarridgeCity_MapScripts_MAP_SCRIPT_ON_LOAD
 	.byte 0
 
 StarridgeCity_MapScripts_MAP_SCRIPT_ON_TRANSITION:
-# 12 "data/maps/StarridgeCity/scripts.pory"
+# 13 "data/maps/StarridgeCity/scripts.pory"
 	call Common_EventScript_SetupRivalGfxId
 	return
 
 StarridgeCity_MapScripts_MAP_SCRIPT_ON_LOAD:
-# 15 "data/maps/StarridgeCity/scripts.pory"
-	switch VAR_STARRIDGE_CITY_STATE
 # 16 "data/maps/StarridgeCity/scripts.pory"
+	switch VAR_STARRIDGE_CITY_STATE
+# 17 "data/maps/StarridgeCity/scripts.pory"
 	case 1, StarridgeCity_MapScripts_MAP_SCRIPT_ON_LOAD_2
-# 19 "data/maps/StarridgeCity/scripts.pory"
+# 20 "data/maps/StarridgeCity/scripts.pory"
 	case 2, StarridgeCity_MapScripts_MAP_SCRIPT_ON_LOAD_3
 	return
 
 StarridgeCity_MapScripts_MAP_SCRIPT_ON_LOAD_2:
-# 17 "data/maps/StarridgeCity/scripts.pory"
+# 18 "data/maps/StarridgeCity/scripts.pory"
 	setflag FLAG_HIDE_LIGHTHOUSE_UPSILON_GRUNTS
 	return
 
 StarridgeCity_MapScripts_MAP_SCRIPT_ON_LOAD_3:
-# 20 "data/maps/StarridgeCity/scripts.pory"
+# 21 "data/maps/StarridgeCity/scripts.pory"
 	setobjectxy 2, 32, 5
 	return
 
 
 StarridgeCity_EventScript_Rival::
-# 27 "data/maps/StarridgeCity/scripts.pory"
-	lockall
 # 28 "data/maps/StarridgeCity/scripts.pory"
+	lockall
+# 29 "data/maps/StarridgeCity/scripts.pory"
 	faceplayer
-# 30 "data/maps/StarridgeCity/scripts.pory"
+# 31 "data/maps/StarridgeCity/scripts.pory"
 	speakername StarridgeCity_EventScript_Rival_Text_0
-# 32 "data/maps/StarridgeCity/scripts.pory"
-	checkplayergender
 # 33 "data/maps/StarridgeCity/scripts.pory"
+	checkplayergender
+# 34 "data/maps/StarridgeCity/scripts.pory"
 	compare VAR_RESULT, MALE
 	goto_if_eq StarridgeCity_EventScript_Rival_2
-# 69 "data/maps/StarridgeCity/scripts.pory"
-	playbgm MUS_ENCOUNTER_BRENDAN, 0
 # 70 "data/maps/StarridgeCity/scripts.pory"
+	playbgm MUS_ENCOUNTER_BRENDAN, 0
+# 71 "data/maps/StarridgeCity/scripts.pory"
 	msgbox StarridgeCity_Text_Rival1M, MSGBOX_YESNO
-# 72 "data/maps/StarridgeCity/scripts.pory"
+# 73 "data/maps/StarridgeCity/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq StarridgeCity_EventScript_Rival_8
 StarridgeCity_EventScript_Rival_1:
-# 98 "data/maps/StarridgeCity/scripts.pory"
-	fadedefaultbgm
 # 99 "data/maps/StarridgeCity/scripts.pory"
+	fadedefaultbgm
+# 100 "data/maps/StarridgeCity/scripts.pory"
 	releaseall
 	return
 
 StarridgeCity_EventScript_Rival_2:
-# 35 "data/maps/StarridgeCity/scripts.pory"
-	playbgm MUS_ENCOUNTER_MAY, 0
 # 36 "data/maps/StarridgeCity/scripts.pory"
+	playbgm MUS_ENCOUNTER_MAY, 0
+# 37 "data/maps/StarridgeCity/scripts.pory"
 	msgbox StarridgeCity_Text_Rival1F, MSGBOX_YESNO
-# 38 "data/maps/StarridgeCity/scripts.pory"
+# 39 "data/maps/StarridgeCity/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq StarridgeCity_EventScript_Rival_5
-# 64 "data/maps/StarridgeCity/scripts.pory"
+# 65 "data/maps/StarridgeCity/scripts.pory"
 	msgbox StarridgeCity_Text_RivalF_Refuse
 	goto StarridgeCity_EventScript_Rival_1
 
 StarridgeCity_EventScript_Rival_5:
-# 40 "data/maps/StarridgeCity/scripts.pory"
-	msgbox StarridgeCity_Text_RivalF_Accept
 # 41 "data/maps/StarridgeCity/scripts.pory"
-	switch VAR_STARTER_MON
+	msgbox StarridgeCity_Text_RivalF_Accept
 # 42 "data/maps/StarridgeCity/scripts.pory"
+	switch VAR_STARTER_MON
+# 43 "data/maps/StarridgeCity/scripts.pory"
 	case 0, StarridgeCity_EventScript_Rival_12
-# 45 "data/maps/StarridgeCity/scripts.pory"
+# 46 "data/maps/StarridgeCity/scripts.pory"
 	case 1, StarridgeCity_EventScript_Rival_13
-# 48 "data/maps/StarridgeCity/scripts.pory"
+# 49 "data/maps/StarridgeCity/scripts.pory"
 	case 2, StarridgeCity_EventScript_Rival_14
 StarridgeCity_EventScript_Rival_10:
-# 53 "data/maps/StarridgeCity/scripts.pory"
-	speakername StarridgeCity_EventScript_Rival_Text_0
 # 54 "data/maps/StarridgeCity/scripts.pory"
+	speakername StarridgeCity_EventScript_Rival_Text_0
+# 55 "data/maps/StarridgeCity/scripts.pory"
 	msgbox StarridgeCity_Text_Rival2F
-# 56 "data/maps/StarridgeCity/scripts.pory"
-	fadescreen FADE_TO_BLACK
 # 57 "data/maps/StarridgeCity/scripts.pory"
-	removeobject 1
+	fadescreen FADE_TO_BLACK
 # 58 "data/maps/StarridgeCity/scripts.pory"
-	setflag FLAG_HIDE_STARRIDGE_CITY_RIVAL
+	removeobject 1
 # 59 "data/maps/StarridgeCity/scripts.pory"
+	setflag FLAG_HIDE_STARRIDGE_CITY_RIVAL
+# 60 "data/maps/StarridgeCity/scripts.pory"
 	fadescreen FADE_FROM_BLACK
 	goto StarridgeCity_EventScript_Rival_1
 
 StarridgeCity_EventScript_Rival_8:
-# 74 "data/maps/StarridgeCity/scripts.pory"
-	msgbox StarridgeCity_Text_RivalM_Accept
 # 75 "data/maps/StarridgeCity/scripts.pory"
-	switch VAR_STARTER_MON
+	msgbox StarridgeCity_Text_RivalM_Accept
 # 76 "data/maps/StarridgeCity/scripts.pory"
+	switch VAR_STARTER_MON
+# 77 "data/maps/StarridgeCity/scripts.pory"
 	case 0, StarridgeCity_EventScript_Rival_17
-# 79 "data/maps/StarridgeCity/scripts.pory"
+# 80 "data/maps/StarridgeCity/scripts.pory"
 	case 1, StarridgeCity_EventScript_Rival_18
-# 82 "data/maps/StarridgeCity/scripts.pory"
+# 83 "data/maps/StarridgeCity/scripts.pory"
 	case 2, StarridgeCity_EventScript_Rival_19
 StarridgeCity_EventScript_Rival_15:
-# 87 "data/maps/StarridgeCity/scripts.pory"
-	speakername StarridgeCity_EventScript_Rival_Text_0
 # 88 "data/maps/StarridgeCity/scripts.pory"
+	speakername StarridgeCity_EventScript_Rival_Text_0
+# 89 "data/maps/StarridgeCity/scripts.pory"
 	msgbox StarridgeCity_Text_Rival2F
-# 90 "data/maps/StarridgeCity/scripts.pory"
-	fadescreen FADE_TO_BLACK
 # 91 "data/maps/StarridgeCity/scripts.pory"
-	removeobject 1
+	fadescreen FADE_TO_BLACK
 # 92 "data/maps/StarridgeCity/scripts.pory"
-	setflag FLAG_HIDE_STARRIDGE_CITY_RIVAL
+	removeobject 1
 # 93 "data/maps/StarridgeCity/scripts.pory"
+	setflag FLAG_HIDE_STARRIDGE_CITY_RIVAL
+# 94 "data/maps/StarridgeCity/scripts.pory"
 	fadescreen FADE_FROM_BLACK
 	goto StarridgeCity_EventScript_Rival_1
 
 StarridgeCity_EventScript_Rival_12:
-# 43 "data/maps/StarridgeCity/scripts.pory"
+# 44 "data/maps/StarridgeCity/scripts.pory"
 	trainerbattle_no_intro TRAINER_HOLLY_STARRIDGE_TURTWIG, StarridgeCity_Text_HollyDefeated
 	goto StarridgeCity_EventScript_Rival_10
 
 StarridgeCity_EventScript_Rival_13:
-# 46 "data/maps/StarridgeCity/scripts.pory"
+# 47 "data/maps/StarridgeCity/scripts.pory"
 	trainerbattle_no_intro TRAINER_HOLLY_STARRIDGE_FENNEKIN, StarridgeCity_Text_HollyDefeated
 	goto StarridgeCity_EventScript_Rival_10
 
 StarridgeCity_EventScript_Rival_14:
-# 49 "data/maps/StarridgeCity/scripts.pory"
+# 50 "data/maps/StarridgeCity/scripts.pory"
 	trainerbattle_no_intro TRAINER_HOLLY_STARRIDGE_QUAXLY, StarridgeCity_Text_HollyDefeated
 	goto StarridgeCity_EventScript_Rival_10
 
 StarridgeCity_EventScript_Rival_17:
-# 77 "data/maps/StarridgeCity/scripts.pory"
+# 78 "data/maps/StarridgeCity/scripts.pory"
 	trainerbattle_no_intro TRAINER_CADEN_STARRIDGE_TURTWIG, StarridgeCity_Text_CadenDefeated
 	goto StarridgeCity_EventScript_Rival_15
 
 StarridgeCity_EventScript_Rival_18:
-# 80 "data/maps/StarridgeCity/scripts.pory"
+# 81 "data/maps/StarridgeCity/scripts.pory"
 	trainerbattle_no_intro TRAINER_CADEN_STARRIDGE_FENNEKIN, StarridgeCity_Text_CadenDefeated
 	goto StarridgeCity_EventScript_Rival_15
 
 StarridgeCity_EventScript_Rival_19:
-# 83 "data/maps/StarridgeCity/scripts.pory"
+# 84 "data/maps/StarridgeCity/scripts.pory"
 	trainerbattle_no_intro TRAINER_CADEN_STARRIDGE_QUAXLY, StarridgeCity_Text_CadenDefeated
 	goto StarridgeCity_EventScript_Rival_15
 
 
 StarridgeCity_Trigger_HostageSituation1::
-# 161 "data/maps/StarridgeCity/scripts.pory"
-	clearflag FLAG_HIDE_LIGHTHOUSE_UPSILON_GRUNTS
 # 162 "data/maps/StarridgeCity/scripts.pory"
-	addobject 2
+	clearflag FLAG_HIDE_LIGHTHOUSE_UPSILON_GRUNTS
 # 163 "data/maps/StarridgeCity/scripts.pory"
-	setobjectxy 2, 29, 9
+	addobject 2
 # 164 "data/maps/StarridgeCity/scripts.pory"
-	call StarridgeCity_EventScript_HostageSituation
+	setobjectxy 2, 29, 9
 # 165 "data/maps/StarridgeCity/scripts.pory"
-	applymovement 2, StarridgeCity_Movement_ScientistWait1
+	call StarridgeCity_EventScript_HostageSituation
 # 166 "data/maps/StarridgeCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, StarridgeCity_Movement_PlayerWalkDown
+	applymovement 2, StarridgeCity_Movement_ScientistWait1
 # 167 "data/maps/StarridgeCity/scripts.pory"
-	waitmovement OBJ_EVENT_ID_PLAYER
+	applymovement OBJ_EVENT_ID_PLAYER, StarridgeCity_Movement_PlayerWalkDown
 # 168 "data/maps/StarridgeCity/scripts.pory"
+	waitmovement OBJ_EVENT_ID_PLAYER
+# 169 "data/maps/StarridgeCity/scripts.pory"
 	release
 	return
 
 
 StarridgeCity_Trigger_HostageSituation2::
-# 172 "data/maps/StarridgeCity/scripts.pory"
-	clearflag FLAG_HIDE_LIGHTHOUSE_UPSILON_GRUNTS
 # 173 "data/maps/StarridgeCity/scripts.pory"
-	addobject 2
+	clearflag FLAG_HIDE_LIGHTHOUSE_UPSILON_GRUNTS
 # 174 "data/maps/StarridgeCity/scripts.pory"
-	setobjectxy 2, 30, 9
+	addobject 2
 # 175 "data/maps/StarridgeCity/scripts.pory"
-	call StarridgeCity_EventScript_HostageSituation
+	setobjectxy 2, 30, 9
 # 176 "data/maps/StarridgeCity/scripts.pory"
-	applymovement 2, StarridgeCity_Movement_ScientistWait2
+	call StarridgeCity_EventScript_HostageSituation
 # 177 "data/maps/StarridgeCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, StarridgeCity_Movement_PlayerWalkDown
+	applymovement 2, StarridgeCity_Movement_ScientistWait2
 # 178 "data/maps/StarridgeCity/scripts.pory"
-	waitmovement OBJ_EVENT_ID_PLAYER
+	applymovement OBJ_EVENT_ID_PLAYER, StarridgeCity_Movement_PlayerWalkDown
 # 179 "data/maps/StarridgeCity/scripts.pory"
+	waitmovement OBJ_EVENT_ID_PLAYER
+# 180 "data/maps/StarridgeCity/scripts.pory"
 	release
 	return
 
 
 StarridgeCity_Trigger_HostageSituation3::
-# 183 "data/maps/StarridgeCity/scripts.pory"
-	clearflag FLAG_HIDE_LIGHTHOUSE_UPSILON_GRUNTS
 # 184 "data/maps/StarridgeCity/scripts.pory"
-	addobject 2
+	clearflag FLAG_HIDE_LIGHTHOUSE_UPSILON_GRUNTS
 # 185 "data/maps/StarridgeCity/scripts.pory"
-	setobjectxy 2, 31, 9
+	addobject 2
 # 186 "data/maps/StarridgeCity/scripts.pory"
-	call StarridgeCity_EventScript_HostageSituation
+	setobjectxy 2, 31, 9
 # 187 "data/maps/StarridgeCity/scripts.pory"
-	applymovement 2, StarridgeCity_Movement_ScientistWait3
+	call StarridgeCity_EventScript_HostageSituation
 # 188 "data/maps/StarridgeCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, StarridgeCity_Movement_PlayerWalkDown
+	applymovement 2, StarridgeCity_Movement_ScientistWait3
 # 189 "data/maps/StarridgeCity/scripts.pory"
-	waitmovement OBJ_EVENT_ID_PLAYER
+	applymovement OBJ_EVENT_ID_PLAYER, StarridgeCity_Movement_PlayerWalkDown
 # 190 "data/maps/StarridgeCity/scripts.pory"
+	waitmovement OBJ_EVENT_ID_PLAYER
+# 191 "data/maps/StarridgeCity/scripts.pory"
 	release
 	return
 
 
 StarridgeCity_Trigger_GoSaveBoss1::
-# 194 "data/maps/StarridgeCity/scripts.pory"
+# 195 "data/maps/StarridgeCity/scripts.pory"
 	lockall
-# 196 "data/maps/StarridgeCity/scripts.pory"
-	applymovement 2, StarridgeCity_Movement_ScientistApproachPlayer1
 # 197 "data/maps/StarridgeCity/scripts.pory"
-	waitmovement 2
+	applymovement 2, StarridgeCity_Movement_ScientistApproachPlayer1
 # 198 "data/maps/StarridgeCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, StarridgeCity_Movement_PlayerFaceRight
+	waitmovement 2
 # 199 "data/maps/StarridgeCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, StarridgeCity_Movement_PlayerFaceRight
+# 200 "data/maps/StarridgeCity/scripts.pory"
 	waitmovement OBJ_EVENT_ID_PLAYER
-# 201 "data/maps/StarridgeCity/scripts.pory"
-	speakername StarridgeCity_Trigger_GoSaveBoss1_Text_0
 # 202 "data/maps/StarridgeCity/scripts.pory"
-	msgbox StarridgeCity_Text_HostageSituation_Yes
+	speakername StarridgeCity_Trigger_GoSaveBoss1_Text_0
 # 203 "data/maps/StarridgeCity/scripts.pory"
+	msgbox StarridgeCity_Text_HostageSituation_Yes
+# 204 "data/maps/StarridgeCity/scripts.pory"
 	closemessage
-# 205 "data/maps/StarridgeCity/scripts.pory"
-	applymovement 2, StarridgeCity_Movement_ScientistWalkBack1
 # 206 "data/maps/StarridgeCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, StarridgeCity_Movement_PlayerWalkDown2
+	applymovement 2, StarridgeCity_Movement_ScientistWalkBack1
 # 207 "data/maps/StarridgeCity/scripts.pory"
-	waitmovement OBJ_EVENT_ID_PLAYER
+	applymovement OBJ_EVENT_ID_PLAYER, StarridgeCity_Movement_PlayerWalkDown2
 # 208 "data/maps/StarridgeCity/scripts.pory"
+	waitmovement OBJ_EVENT_ID_PLAYER
+# 209 "data/maps/StarridgeCity/scripts.pory"
 	release
 	return
 
 
 StarridgeCity_Trigger_GoSaveBoss2::
-# 212 "data/maps/StarridgeCity/scripts.pory"
+# 213 "data/maps/StarridgeCity/scripts.pory"
 	lockall
-# 214 "data/maps/StarridgeCity/scripts.pory"
-	applymovement 2, StarridgeCity_Movement_ScientistApproachPlayer2
 # 215 "data/maps/StarridgeCity/scripts.pory"
-	waitmovement 2
+	applymovement 2, StarridgeCity_Movement_ScientistApproachPlayer2
 # 216 "data/maps/StarridgeCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, StarridgeCity_Movement_PlayerFaceRight
+	waitmovement 2
 # 217 "data/maps/StarridgeCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, StarridgeCity_Movement_PlayerFaceRight
+# 218 "data/maps/StarridgeCity/scripts.pory"
 	waitmovement OBJ_EVENT_ID_PLAYER
-# 219 "data/maps/StarridgeCity/scripts.pory"
-	speakername StarridgeCity_Trigger_GoSaveBoss1_Text_0
 # 220 "data/maps/StarridgeCity/scripts.pory"
-	msgbox StarridgeCity_Text_HostageSituation_Yes
+	speakername StarridgeCity_Trigger_GoSaveBoss1_Text_0
 # 221 "data/maps/StarridgeCity/scripts.pory"
+	msgbox StarridgeCity_Text_HostageSituation_Yes
+# 222 "data/maps/StarridgeCity/scripts.pory"
 	closemessage
-# 223 "data/maps/StarridgeCity/scripts.pory"
-	applymovement 2, StarridgeCity_Movement_ScientistWalkBack2
 # 224 "data/maps/StarridgeCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, StarridgeCity_Movement_PlayerWalkDown2
+	applymovement 2, StarridgeCity_Movement_ScientistWalkBack2
 # 225 "data/maps/StarridgeCity/scripts.pory"
-	waitmovement OBJ_EVENT_ID_PLAYER
+	applymovement OBJ_EVENT_ID_PLAYER, StarridgeCity_Movement_PlayerWalkDown2
 # 226 "data/maps/StarridgeCity/scripts.pory"
+	waitmovement OBJ_EVENT_ID_PLAYER
+# 227 "data/maps/StarridgeCity/scripts.pory"
 	release
 	return
 
 
 StarridgeCity_Trigger_GoSaveBoss3::
-# 230 "data/maps/StarridgeCity/scripts.pory"
+# 231 "data/maps/StarridgeCity/scripts.pory"
 	lockall
-# 232 "data/maps/StarridgeCity/scripts.pory"
-	applymovement 2, StarridgeCity_Movement_ScientistFaceLeft
 # 233 "data/maps/StarridgeCity/scripts.pory"
-	waitmovement 2
+	applymovement 2, StarridgeCity_Movement_ScientistFaceLeft
 # 234 "data/maps/StarridgeCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, StarridgeCity_Movement_PlayerFaceRight
+	waitmovement 2
 # 235 "data/maps/StarridgeCity/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, StarridgeCity_Movement_PlayerFaceRight
+# 236 "data/maps/StarridgeCity/scripts.pory"
 	waitmovement OBJ_EVENT_ID_PLAYER
-# 237 "data/maps/StarridgeCity/scripts.pory"
-	speakername StarridgeCity_Trigger_GoSaveBoss1_Text_0
 # 238 "data/maps/StarridgeCity/scripts.pory"
-	msgbox StarridgeCity_Text_HostageSituation_Yes
+	speakername StarridgeCity_Trigger_GoSaveBoss1_Text_0
 # 239 "data/maps/StarridgeCity/scripts.pory"
+	msgbox StarridgeCity_Text_HostageSituation_Yes
+# 240 "data/maps/StarridgeCity/scripts.pory"
 	closemessage
-# 241 "data/maps/StarridgeCity/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, StarridgeCity_Movement_PlayerWalkDown2
 # 242 "data/maps/StarridgeCity/scripts.pory"
-	waitmovement OBJ_EVENT_ID_PLAYER
+	applymovement OBJ_EVENT_ID_PLAYER, StarridgeCity_Movement_PlayerWalkDown2
 # 243 "data/maps/StarridgeCity/scripts.pory"
+	waitmovement OBJ_EVENT_ID_PLAYER
+# 244 "data/maps/StarridgeCity/scripts.pory"
 	release
 	return
 
 
 StarridgeCity_EventScript_HostageSituation::
-# 247 "data/maps/StarridgeCity/scripts.pory"
-	lockall
 # 248 "data/maps/StarridgeCity/scripts.pory"
+	lockall
+# 249 "data/maps/StarridgeCity/scripts.pory"
 	clearflag FLAG_HIDE_ROUTE_304_UPSILON_GRUNT
-# 250 "data/maps/StarridgeCity/scripts.pory"
-	applymovement 2, StarridgeCity_Movement_ScientistApproachPlayer
 # 251 "data/maps/StarridgeCity/scripts.pory"
-	waitmovement 0
+	applymovement 2, StarridgeCity_Movement_ScientistApproachPlayer
 # 252 "data/maps/StarridgeCity/scripts.pory"
+	waitmovement 0
+# 253 "data/maps/StarridgeCity/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, StarridgeCity_Movement_PlayerFaceDown
-# 254 "data/maps/StarridgeCity/scripts.pory"
-	speakername StarridgeCity_Trigger_GoSaveBoss1_Text_0
 # 255 "data/maps/StarridgeCity/scripts.pory"
+	speakername StarridgeCity_Trigger_GoSaveBoss1_Text_0
+# 256 "data/maps/StarridgeCity/scripts.pory"
 	msgbox StarridgeCity_Text_HostageSituation_Scientist1, MSGBOX_YESNO
 StarridgeCity_EventScript_HostageSituation_2:
-# 256 "data/maps/StarridgeCity/scripts.pory"
+# 257 "data/maps/StarridgeCity/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_ne StarridgeCity_EventScript_HostageSituation_3
-# 260 "data/maps/StarridgeCity/scripts.pory"
-	msgbox StarridgeCity_Text_HostageSituation_Scientist2
 # 261 "data/maps/StarridgeCity/scripts.pory"
-	setvar VAR_STARRIDGE_CITY_STATE, 2
+	msgbox StarridgeCity_Text_HostageSituation_Scientist2
 # 262 "data/maps/StarridgeCity/scripts.pory"
+	setvar VAR_STARRIDGE_CITY_STATE, 2
+# 263 "data/maps/StarridgeCity/scripts.pory"
 	closemessage
 	return
 
 StarridgeCity_EventScript_HostageSituation_3:
-# 258 "data/maps/StarridgeCity/scripts.pory"
+# 259 "data/maps/StarridgeCity/scripts.pory"
 	msgbox StarridgeCity_Text_HostageSituation_ButWhy, MSGBOX_YESNO
 	goto StarridgeCity_EventScript_HostageSituation_2
 
 
-# 265 "data/maps/StarridgeCity/scripts.pory"
-StarridgeCity_Movement_PlayerFaceDown:
 # 266 "data/maps/StarridgeCity/scripts.pory"
+StarridgeCity_Movement_PlayerFaceDown:
+# 267 "data/maps/StarridgeCity/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 269 "data/maps/StarridgeCity/scripts.pory"
-StarridgeCity_Movement_PlayerFaceRight:
 # 270 "data/maps/StarridgeCity/scripts.pory"
+StarridgeCity_Movement_PlayerFaceRight:
+# 271 "data/maps/StarridgeCity/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 273 "data/maps/StarridgeCity/scripts.pory"
+# 274 "data/maps/StarridgeCity/scripts.pory"
 StarridgeCity_Movement_PlayerWalkDown:
-# 274 "data/maps/StarridgeCity/scripts.pory"
+# 275 "data/maps/StarridgeCity/scripts.pory"
 	walk_down
-# 274 "data/maps/StarridgeCity/scripts.pory"
+# 275 "data/maps/StarridgeCity/scripts.pory"
 	walk_down
-# 274 "data/maps/StarridgeCity/scripts.pory"
+# 275 "data/maps/StarridgeCity/scripts.pory"
 	walk_down
 	step_end
 
-# 277 "data/maps/StarridgeCity/scripts.pory"
-StarridgeCity_Movement_PlayerWalkDown2:
 # 278 "data/maps/StarridgeCity/scripts.pory"
+StarridgeCity_Movement_PlayerWalkDown2:
+# 279 "data/maps/StarridgeCity/scripts.pory"
 	walk_down
 	step_end
 
-# 281 "data/maps/StarridgeCity/scripts.pory"
+# 282 "data/maps/StarridgeCity/scripts.pory"
 StarridgeCity_Movement_ScientistApproachPlayer:
-# 282 "data/maps/StarridgeCity/scripts.pory"
+# 283 "data/maps/StarridgeCity/scripts.pory"
 	walk_fast_up
-# 282 "data/maps/StarridgeCity/scripts.pory"
+# 283 "data/maps/StarridgeCity/scripts.pory"
 	walk_fast_up
-# 282 "data/maps/StarridgeCity/scripts.pory"
+# 283 "data/maps/StarridgeCity/scripts.pory"
 	walk_fast_up
-# 282 "data/maps/StarridgeCity/scripts.pory"
+# 283 "data/maps/StarridgeCity/scripts.pory"
 	walk_fast_up
-# 282 "data/maps/StarridgeCity/scripts.pory"
+# 283 "data/maps/StarridgeCity/scripts.pory"
 	walk_fast_up
 	step_end
 
-# 285 "data/maps/StarridgeCity/scripts.pory"
+# 286 "data/maps/StarridgeCity/scripts.pory"
 StarridgeCity_Movement_ScientistApproachPlayer1:
-# 286 "data/maps/StarridgeCity/scripts.pory"
+# 287 "data/maps/StarridgeCity/scripts.pory"
 	walk_fast_left
-# 286 "data/maps/StarridgeCity/scripts.pory"
+# 287 "data/maps/StarridgeCity/scripts.pory"
 	walk_fast_left
 	step_end
 
-# 289 "data/maps/StarridgeCity/scripts.pory"
-StarridgeCity_Movement_ScientistApproachPlayer2:
 # 290 "data/maps/StarridgeCity/scripts.pory"
+StarridgeCity_Movement_ScientistApproachPlayer2:
+# 291 "data/maps/StarridgeCity/scripts.pory"
 	walk_fast_left
 	step_end
 
-# 293 "data/maps/StarridgeCity/scripts.pory"
+# 294 "data/maps/StarridgeCity/scripts.pory"
 StarridgeCity_Movement_ScientistWalkBack1:
-# 294 "data/maps/StarridgeCity/scripts.pory"
+# 295 "data/maps/StarridgeCity/scripts.pory"
 	walk_fast_right
-# 294 "data/maps/StarridgeCity/scripts.pory"
+# 295 "data/maps/StarridgeCity/scripts.pory"
 	walk_fast_right
 	step_end
 
-# 297 "data/maps/StarridgeCity/scripts.pory"
-StarridgeCity_Movement_ScientistWalkBack2:
 # 298 "data/maps/StarridgeCity/scripts.pory"
+StarridgeCity_Movement_ScientistWalkBack2:
+# 299 "data/maps/StarridgeCity/scripts.pory"
 	walk_fast_right
 	step_end
 
-# 301 "data/maps/StarridgeCity/scripts.pory"
-StarridgeCity_Movement_ScientistFaceLeft:
 # 302 "data/maps/StarridgeCity/scripts.pory"
+StarridgeCity_Movement_ScientistFaceLeft:
+# 303 "data/maps/StarridgeCity/scripts.pory"
 	walk_in_place_fast_left
 	step_end
 
-# 305 "data/maps/StarridgeCity/scripts.pory"
-StarridgeCity_Movement_ScientistWait1:
 # 306 "data/maps/StarridgeCity/scripts.pory"
+StarridgeCity_Movement_ScientistWait1:
+# 307 "data/maps/StarridgeCity/scripts.pory"
 	walk_down
-# 307 "data/maps/StarridgeCity/scripts.pory"
+# 308 "data/maps/StarridgeCity/scripts.pory"
 	walk_right
-# 307 "data/maps/StarridgeCity/scripts.pory"
+# 308 "data/maps/StarridgeCity/scripts.pory"
 	walk_right
-# 307 "data/maps/StarridgeCity/scripts.pory"
+# 308 "data/maps/StarridgeCity/scripts.pory"
 	walk_right
 	step_end
 
-# 310 "data/maps/StarridgeCity/scripts.pory"
-StarridgeCity_Movement_ScientistWait2:
 # 311 "data/maps/StarridgeCity/scripts.pory"
+StarridgeCity_Movement_ScientistWait2:
+# 312 "data/maps/StarridgeCity/scripts.pory"
 	walk_down
-# 312 "data/maps/StarridgeCity/scripts.pory"
+# 313 "data/maps/StarridgeCity/scripts.pory"
 	walk_right
-# 312 "data/maps/StarridgeCity/scripts.pory"
+# 313 "data/maps/StarridgeCity/scripts.pory"
 	walk_right
 	step_end
 
-# 315 "data/maps/StarridgeCity/scripts.pory"
-StarridgeCity_Movement_ScientistWait3:
 # 316 "data/maps/StarridgeCity/scripts.pory"
-	walk_down
+StarridgeCity_Movement_ScientistWait3:
 # 317 "data/maps/StarridgeCity/scripts.pory"
+	walk_down
+# 318 "data/maps/StarridgeCity/scripts.pory"
 	walk_right
 	step_end
 
 StarridgeCity_EventScript_Scientist::
-# 347 "data/maps/StarridgeCity/scripts.pory"
-	lock
 # 348 "data/maps/StarridgeCity/scripts.pory"
+	lock
+# 349 "data/maps/StarridgeCity/scripts.pory"
 	faceplayer
-# 350 "data/maps/StarridgeCity/scripts.pory"
-	speakername StarridgeCity_Trigger_GoSaveBoss1_Text_0
 # 351 "data/maps/StarridgeCity/scripts.pory"
+	speakername StarridgeCity_Trigger_GoSaveBoss1_Text_0
+# 352 "data/maps/StarridgeCity/scripts.pory"
 	msgbox StarridgeCity_Text_HostageSituation_Yes
-# 353 "data/maps/StarridgeCity/scripts.pory"
+# 354 "data/maps/StarridgeCity/scripts.pory"
 	release
 	return
 
 
 StarridgeCity_EventScript_ShadyMan::
-# 357 "data/maps/StarridgeCity/scripts.pory"
-	lock
 # 358 "data/maps/StarridgeCity/scripts.pory"
+	lock
+# 359 "data/maps/StarridgeCity/scripts.pory"
 	faceplayer
-# 360 "data/maps/StarridgeCity/scripts.pory"
+# 361 "data/maps/StarridgeCity/scripts.pory"
 	goto_if_unset FLAG_RECEIVED_DUSK_BALL, StarridgeCity_EventScript_ShadyMan_2
 # 373 "data/maps/StarridgeCity/scripts.pory"
 	msgbox StarridgeCity_EventScript_ShadyMan_Text_1
@@ -461,7 +461,7 @@ StarridgeCity_EventScript_ShadyMan_1:
 	return
 
 StarridgeCity_EventScript_ShadyMan_2:
-# 362 "data/maps/StarridgeCity/scripts.pory"
+# 363 "data/maps/StarridgeCity/scripts.pory"
 	msgbox StarridgeCity_EventScript_ShadyMan_Text_0
 # 368 "data/maps/StarridgeCity/scripts.pory"
 	giveitem ITEM_DUSK_BALL, 1
@@ -471,16 +471,16 @@ StarridgeCity_EventScript_ShadyMan_2:
 
 
 StarridgeCity_EventScript_Rival_Text_0:
-# 30 "data/maps/StarridgeCity/scripts.pory"
+# 31 "data/maps/StarridgeCity/scripts.pory"
 	.string "{RIVAL}$"
 
 StarridgeCity_Trigger_GoSaveBoss1_Text_0:
-# 201 "data/maps/StarridgeCity/scripts.pory"
+# 202 "data/maps/StarridgeCity/scripts.pory"
 	.string "Scientist$"
 
 StarridgeCity_EventScript_ShadyMan_Text_0:
-# 362 "data/maps/StarridgeCity/scripts.pory"
-	.string "...Hey, kid.\p"
+# 363 "data/maps/StarridgeCity/scripts.pory"
+	.string "...Hey, kid.\n"
 	.string "You look like you could use this.\p"
 	.string "It's a Dusk Ball. It's good for catching\n"
 	.string "Pokémon in dark places.\p"
@@ -494,7 +494,7 @@ StarridgeCity_EventScript_ShadyMan_Text_1:
 	.string "Don't be greedy.$"
 
 StarridgeCity_Text_Rival1F::
-# 102 "data/maps/StarridgeCity/scripts.pory"
+# 103 "data/maps/StarridgeCity/scripts.pory"
 	.string "Hey, {PLAYER}!\p"
 	.string "Have you been fighting lots of\n"
 	.string "Trainers?\p"
@@ -510,22 +510,22 @@ StarridgeCity_Text_Rival1F::
 	.string "Let's have a battle!$"
 
 StarridgeCity_Text_RivalF_Accept::
-# 113 "data/maps/StarridgeCity/scripts.pory"
+# 114 "data/maps/StarridgeCity/scripts.pory"
 	.string "{PLAYER}! I'm gonna give you a run for\n"
 	.string "your money!$"
 
 StarridgeCity_Text_RivalF_Refuse::
-# 117 "data/maps/StarridgeCity/scripts.pory"
+# 118 "data/maps/StarridgeCity/scripts.pory"
 	.string "Oh, okay... I guess I'll see you later,\n"
 	.string "then!$"
 
 StarridgeCity_Text_HollyDefeated::
-# 121 "data/maps/StarridgeCity/scripts.pory"
+# 122 "data/maps/StarridgeCity/scripts.pory"
 	.string "Urgh!\n"
 	.string "I'm never gonna get better at battling!$"
 
 StarridgeCity_Text_Rival2F::
-# 125 "data/maps/StarridgeCity/scripts.pory"
+# 126 "data/maps/StarridgeCity/scripts.pory"
 	.string "Man, I even Terastalized and\n"
 	.string "everything...\p"
 	.string "I've got to figure out what went wrong!\p"
@@ -535,7 +535,7 @@ StarridgeCity_Text_Rival2F::
 	.string "See you around!$"
 
 StarridgeCity_Text_Rival1M::
-# 133 "data/maps/StarridgeCity/scripts.pory"
+# 134 "data/maps/StarridgeCity/scripts.pory"
 	.string "Hey, {PLAYER}!\p"
 	.string "How's it going with all the battling?\n"
 	.string "Hope you're keeping up!\p"
@@ -547,22 +547,22 @@ StarridgeCity_Text_Rival1M::
 	.string "Bet it'll be close!$"
 
 StarridgeCity_Text_RivalM_Accept::
-# 142 "data/maps/StarridgeCity/scripts.pory"
+# 143 "data/maps/StarridgeCity/scripts.pory"
 	.string "Alright, {PLAYER}! Let's see which of\n"
 	.string "us really has the edge!$"
 
 StarridgeCity_Text_RivalM_Refuse::
-# 146 "data/maps/StarridgeCity/scripts.pory"
+# 147 "data/maps/StarridgeCity/scripts.pory"
 	.string "Really? Not feeling up to it? Guess I'll\n"
 	.string "have to save these moves for next time.$"
 
 StarridgeCity_Text_CadenDefeated::
-# 150 "data/maps/StarridgeCity/scripts.pory"
+# 151 "data/maps/StarridgeCity/scripts.pory"
 	.string "Whoa! You pulled that one off... nice\n"
 	.string "job, {PLAYER}!$"
 
 StarridgeCity_Text_Rival2M::
-# 154 "data/maps/StarridgeCity/scripts.pory"
+# 155 "data/maps/StarridgeCity/scripts.pory"
 	.string "Even with Terastalizing, huh… Guess you\n"
 	.string "really came through!\p"
 	.string "But hey, this isn't the end of it. Next\n"
@@ -570,7 +570,7 @@ StarridgeCity_Text_Rival2M::
 	.string "Just you wait!$"
 
 StarridgeCity_Text_HostageSituation_Scientist1::
-# 320 "data/maps/StarridgeCity/scripts.pory"
+# 321 "data/maps/StarridgeCity/scripts.pory"
 	.string "You there! Please, I need your help!\p"
 	.string "T-Team Upsilon... they... they barged\n"
 	.string "into the ruins on Route 306 and are\l"
@@ -588,7 +588,7 @@ StarridgeCity_Text_HostageSituation_Scientist1::
 	.string "them?$"
 
 StarridgeCity_Text_HostageSituation_Scientist2::
-# 330 "data/maps/StarridgeCity/scripts.pory"
+# 331 "data/maps/StarridgeCity/scripts.pory"
 	.string "Thank you! Let me tell you what I know...\p"
 	.string "They said something about... the ruins\n"
 	.string "on Route 306... I think that's where\l"
@@ -597,13 +597,13 @@ StarridgeCity_Text_HostageSituation_Scientist2::
 	.string "something dangerous, I just know it.$"
 
 StarridgeCity_Text_HostageSituation_ButWhy::
-# 337 "data/maps/StarridgeCity/scripts.pory"
+# 338 "data/maps/StarridgeCity/scripts.pory"
 	.string "I understand... but... please! I'm\n"
 	.string "begging you! You're the only one here\l"
 	.string "that's strong enough to help!$"
 
 StarridgeCity_Text_HostageSituation_Yes::
-# 341 "data/maps/StarridgeCity/scripts.pory"
+# 342 "data/maps/StarridgeCity/scripts.pory"
 	.string "They took our boss to the Starridge\n"
 	.string "Ruins on Route 306!\p"
 	.string "I'll be waiting here in case they come\n"

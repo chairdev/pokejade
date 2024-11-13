@@ -41,3 +41,123 @@ EVs: 252 Atk / 252 SpA / 6 SpD
 - Protect
 - Solar Beam
 - Dragon Claw
+
+=== PARTNER_HOLLY_STARRIDGE_RUINS_TURTWIG ===
+Name: Holly
+Class: Rival
+Pic: May
+Gender: Female
+Music: Female
+
+Swablu
+Level: 23
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Smoliv
+Level: 24
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Quaxwell
+Level: 26
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
+EVs: 252 HP
+
+=== PARTNER_HOLLY_STARRIDGE_RUINS_FENNEKIN ===
+Name: Holly
+Class: Rival
+Pic: May
+Gender: Female
+Music: Female
+
+Swablu
+Level: 23
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Drednaw
+Level: 24
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Grotle
+Level: 26
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
+EVs: 252 HP
+
+=== PARTNER_HOLLY_STARRIDGE_RUINS_QUAXLY ===
+Name: Holly
+Class: Rival
+Pic: May
+Gender: Female
+Music: Female
+
+Swablu
+Level: 23
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Drednaw
+Level: 24
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Braixen
+Level: 26
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
+EVs: 252 HP
+
+=== PARTNER_CADEN_STARRIDGE_RUINS_TURTWIG ===
+Name: Caden
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+
+Swablu
+Level: 23
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Smoliv
+Level: 24
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Quaxwell
+Level: 26
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
+EVs: 252 HP
+
+=== PARTNER_CADEN_STARRIDGE_RUINS_FENNEKIN ===
+Name: Caden
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+
+Swablu
+Level: 23
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Drednaw
+Level: 24
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Grotle
+Level: 26
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
+EVs: 252 HP
+
+=== PARTNER_CADEN_STARRIDGE_RUINS_QUAXLY ===
+Name: Caden
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+
+Swablu
+Level: 23
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Drednaw
+Level: 24
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Braixen
+Level: 26
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
+EVs: 252 HP

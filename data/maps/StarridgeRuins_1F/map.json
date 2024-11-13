@@ -3,7 +3,7 @@
   "name": "StarridgeRuins_1F",
   "layout": "LAYOUT_STARRIDGE_RUINS_1F",
   "music": "MUS_PETALBURG_WOODS",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_STARRIDGE_RUINS",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERGROUND",
@@ -37,8 +37,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "0x0",
+      "flag": "FLAG_HIDE_STARRIDGE_RUINS_UPSILON_GRUNTS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_F",
@@ -50,7 +50,20 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_STARRIDGE_RUINS_UPSILON_GRUNTS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_VAR_0",
+      "x": 15,
+      "y": 1,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "StarridgeRuins_1F_EventScript_Rival",
       "flag": "0"
     }
   ],
@@ -61,6 +74,13 @@
       "elevation": 0,
       "dest_map": "MAP_ROUTE306",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 10,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_STARRIDGE_RUINS_B1F",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
@@ -69,18 +89,18 @@
       "x": 7,
       "y": 7,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "NULL"
+      "var": "VAR_STARRIDGE_CITY_STATE",
+      "var_value": "2",
+      "script": "StarridgeRuins_1F_EventScript_Grunts"
     },
     {
       "type": "trigger",
       "x": 7,
       "y": 8,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "NULL"
+      "var": "VAR_STARRIDGE_CITY_STATE",
+      "var_value": "2",
+      "script": "StarridgeRuins_1F_EventScript_Grunts"
     }
   ],
   "bg_events": [

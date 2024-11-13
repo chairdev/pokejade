@@ -2,7 +2,8 @@
 // 0: Melody has not been defeated
 // 1: Scientist has informed about the hostage situation
 // 2: Need to rescue the boss
-// 3: Boss has been rescued
+// 3: Defeated the grunts guarding Starridge Ruins B1F
+// 4: Defeated the grunts guarding Starridge Ruins B2F
 
 const OBJ_RIVAL = 1
 const OBJ_SCIENTIST = 2

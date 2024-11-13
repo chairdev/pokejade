@@ -1,1 +1,42 @@
 mapscripts StarridgeRuins_B1F_MapScripts {}
+
+text StarridgeRuins_B1F_Text_AmelioDefeated {
+    format("Defeated by a kid that doesn't look older \p"
+           "Ugh, I'm going to hear about this for weeks.")
+}
+
+//Trainers
+
+script StarridgeRuins_B1F_EventScript_Grunt_1 {
+    trainerbattle_single(TRAINER_GRUNT_STARRIDGE_RUINS_3, StarridgeRuins_B1F_Text_Grunt1Intro, StarridgeRuins_B1F_Text_Grunt1Defeat)
+    msgbox(StarridgeRuins_B1F_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE)
+}
+
+text StarridgeRuins_B1F_Text_Grunt1Intro {
+    format("Hey! What are you doing down here?\nThis place is off-limits!")
+}
+
+text StarridgeRuins_B1F_Text_Grunt1Defeat {
+    format("...Kidding. I already know what you're doing down here.")
+}
+
+text StarridgeRuins_B1F_Text_Grunt1PostBattle {
+    format("At least I didn't get 1v2'd by a kid.")
+}
+
+script StarridgeRuins_B1F_EventScript_Grunt_2 {
+    trainerbattle_single(TRAINER_GRUNT_STARRIDGE_RUINS_4, StarridgeRuins_B1F_Text_Grunt2Intro, StarridgeRuins_B1F_Text_Grunt2Defeat)
+    msgbox(StarridgeRuins_B1F_Text_Grunt2PostBattle, MSGBOX_AUTOCLOSE)
+}
+
+text StarridgeRuins_B1F_Text_Grunt2Intro {
+    format("I'm not going to let you get in our way!")
+}
+
+text StarridgeRuins_B1F_Text_Grunt2Defeat {
+    format("...My bonus just went down the drain.")
+}
+
+text StarridgeRuins_B1F_Text_Grunt2PostBattle {
+    format("I'm going to have to work overtime to make up for this, you know.")
+}

@@ -225,7 +225,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_GRUNT_PKMN_FAN_CLUB ===
 Name: Grunt
 Class: Team Aqua
-Pic: Aqua Grunt M
+Pic: Magma Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
@@ -313,72 +313,68 @@ Gyarados
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_RUSTURF_TUNNEL ===
-Name: GRUNT
+=== TRAINER_GRUNT_STARRIDGE_RUINS_1 ===
+Name: Grunt
 Class: Team Aqua
-Pic: Aqua Grunt M
+Pic: Magma Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Poochyena
-Level: 11
+Thievul
+Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_WEATHER_INST_1 ===
-Name: GRUNT
+Aron
+Level: 22
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_GRUNT_STARRIDGE_RUINS_2 ===
+Name: Grunt
 Class: Team Aqua
-Pic: Aqua Grunt M
+Pic: Magma Grunt F
+Gender: Female
+Music: Aqua
+Double Battle: No
+AI: Check Bad Move
+
+Gastly
+Level: 24
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_GRUNT_STARRIDGE_RUINS_3 ===
+Name: Grunt
+Class: Team Aqua
+Pic: Magma Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Zubat
-Level: 27
+Onix
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Poochyena
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_GRUNT_WEATHER_INST_2 ===
-Name: GRUNT
+=== TRAINER_GRUNT_STARRIDGE_RUINS_4 ===
+Name: Grunt
 Class: Team Aqua
-Pic: Aqua Grunt M
+Pic: Magma Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Poochyena
+Venipede
 Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Carvanha
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_GRUNT_WEATHER_INST_3 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
-Gender: Male
-Music: Aqua
-Double Battle: No
-AI: Check Bad Move
-
-Poochyena
+Whirlipede
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Zubat
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Carvanha
-Level: 26
+Inkay
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MUSEUM_1 ===
@@ -6314,14 +6310,12 @@ IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 Baxcalibur @ Lum Berry  
 Ability: Thermal Exchange  
 Level: 70  
-Tera Type: Fairy  
 EVs: 248 Atk / 8 SpA / 252 Spe  
 Naughty Nature  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe    
 - Dragon Dance  
 - Glaive Rush  
-- Earthquake  
-- Tera Blast  
+- Earthquake   
 
 === TRAINER_ANDREW ===
 Name: Andrew
@@ -9545,7 +9539,6 @@ AI: Check Bad Move / Try To Faint / Setup First Turn / Ace Pokemon
 
 Fennekin
 Level: 7
-Tera Type: Fire
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_CADEN_ROUTE_110_MUDKIP ===
@@ -9601,7 +9594,6 @@ AI: Check Bad Move / Try To Faint / Setup First Turn / Ace Pokemon
 
 Quaxly
 Level: 7
-Tera Type: Water
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_CADEN_ROUTE_110_TREECKO ===
@@ -9657,7 +9649,6 @@ AI: Check Bad Move / Try To Faint / Setup First Turn / Ace Pokemon
 
 Turtwig
 Level: 7
-Tera Type: Grass
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_CADEN_ROUTE_110_TORCHIC ===
@@ -9713,7 +9704,6 @@ AI: Check Bad Move / Try To Faint / Setup First Turn / Ace Pokemon
 
 Fennekin
 Level: 7
-Tera Type: Fire
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_MAY_ROUTE_110_MUDKIP ===
@@ -9769,7 +9759,6 @@ AI: Check Bad Move / Try To Faint / Check Viability
 
 Quaxly
 Level: 7
-Tera Type: Water
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_MAY_ROUTE_110_TREECKO ===
@@ -9825,7 +9814,6 @@ AI: Check Bad Move / Try To Faint / Setup First Turn / Ace Pokemon
 
 Turtwig
 Level: 7
-Tera Type: Grass
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_MAY_ROUTE_110_TORCHIC ===
@@ -10894,13 +10882,12 @@ Swablu
 Level: 22
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Dolliv
+Smoliv
 Level: 21
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 Quaxwell
 Level: 23
-Tera Type: Water   
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
 EVs: 252 HP
 
@@ -10923,7 +10910,6 @@ IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 Braixen
 Level: 23
-Tera Type: Fire   
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
 EVs: 252 HP
 
@@ -11036,7 +11022,6 @@ IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 Grotle
 Level: 23
-Tera Type: Grass   
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
 EVs: 252 HP
 
@@ -11059,7 +11044,6 @@ IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 Braixen
 Level: 23
-Tera Type: Fire   
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
 EVs: 252 HP
 
@@ -14219,13 +14203,12 @@ Swablu
 Level: 22
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Dolliv
+Smoliv
 Level: 21
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 Quaxwell
 Level: 23
-Tera Type: Water   
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
 EVs: 252 HP
 
@@ -14248,7 +14231,6 @@ IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 Grotle
 Level: 23
-Tera Type: Grass   
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
 EVs: 252 HP
 
