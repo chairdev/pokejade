@@ -14,9 +14,6 @@ mapscripts StarridgeCity_MapScripts {
     }
     MAP_SCRIPT_ON_LOAD {
          switch(var(VAR_STARRIDGE_CITY_STATE)) {
-            case 1:
-                setflag(FLAG_HIDE_LIGHTHOUSE_UPSILON_GRUNTS)
-                break
             case 2:
                 setobjectxy(OBJ_SCIENTIST, 32, 5)
                 break
@@ -159,7 +156,7 @@ text StarridgeCity_Text_Rival2M {
 }
 
 script StarridgeCity_Trigger_HostageSituation1 {
-    clearflag(FLAG_HIDE_LIGHTHOUSE_UPSILON_GRUNTS)
+    clearflag(FLAG_HIDE_STARRIDGE_RUINS_B1F_UPSILON_GRUNTS)
     addobject(OBJ_SCIENTIST)
     setobjectxy(OBJ_SCIENTIST, 29, 9)
     call(StarridgeCity_EventScript_HostageSituation)
@@ -170,7 +167,7 @@ script StarridgeCity_Trigger_HostageSituation1 {
 }
 
 script StarridgeCity_Trigger_HostageSituation2 {
-    clearflag(FLAG_HIDE_LIGHTHOUSE_UPSILON_GRUNTS)
+    clearflag(FLAG_HIDE_STARRIDGE_RUINS_B1F_UPSILON_GRUNTS)
     addobject(OBJ_SCIENTIST)
     setobjectxy(OBJ_SCIENTIST, 30, 9)
     call(StarridgeCity_EventScript_HostageSituation)
@@ -181,7 +178,7 @@ script StarridgeCity_Trigger_HostageSituation2 {
 }
 
 script StarridgeCity_Trigger_HostageSituation3 {
-    clearflag(FLAG_HIDE_LIGHTHOUSE_UPSILON_GRUNTS)
+    clearflag(FLAG_HIDE_STARRIDGE_RUINS_B1F_UPSILON_GRUNTS)
     addobject(OBJ_SCIENTIST)
     setobjectxy(OBJ_SCIENTIST, 31, 9)
     call(StarridgeCity_EventScript_HostageSituation)

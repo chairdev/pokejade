@@ -324,7 +324,7 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     TRAINER_CLASS(SWIMMER_M, "Swimmer♂", 2, ITEM_DIVE_BALL),
     TRAINER_CLASS(TEAM_MAGMA, "Team Magma"),
     TRAINER_CLASS(EXPERT, "Expert", 10),
-    TRAINER_CLASS(AQUA_ADMIN, "Aqua Admin", 10),
+    TRAINER_CLASS(AQUA_ADMIN, "Team Upsilon Admin", 10),
     TRAINER_CLASS(BLACK_BELT, "Black Belt", 8, ITEM_ULTRA_BALL),
     TRAINER_CLASS(AQUA_LEADER, "Aqua Leader", 20, ITEM_MASTER_BALL),
     TRAINER_CLASS(HEX_MANIAC, "Hex Maniac", 6),

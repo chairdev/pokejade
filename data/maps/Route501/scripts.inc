@@ -111,348 +111,352 @@ Route501_RivalHolly::
 # 81 "data/maps/Route501/scripts.pory"
 	playmoncry SPECIES_PIDOVE, CRY_MODE_NORMAL
 # 83 "data/maps/Route501/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, ExclemationMark
+	playse SE_PIN
 # 84 "data/maps/Route501/scripts.pory"
-	applymovement 1, ExclemationMark
+	applymovement OBJ_EVENT_ID_PLAYER, ExclemationMark
 # 85 "data/maps/Route501/scripts.pory"
-	waitmovement 1
+	applymovement 1, ExclemationMark
 # 86 "data/maps/Route501/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, FaceLeft
+	waitmovement 1
 # 87 "data/maps/Route501/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, FaceLeft
+# 88 "data/maps/Route501/scripts.pory"
 	applymovement 1, FaceUp
-# 89 "data/maps/Route501/scripts.pory"
-	speakername Route501_RivalHolly_Text_0
 # 90 "data/maps/Route501/scripts.pory"
-	msgbox Route501_Text_MeetRivalText3F
-# 91 "data/maps/Route501/scripts.pory"
-	closemessage
-# 93 "data/maps/Route501/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, FaceRight
-# 94 "data/maps/Route501/scripts.pory"
-	applymovement 1, FaceDown
-# 97 "data/maps/Route501/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
-# 98 "data/maps/Route501/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 99 "data/maps/Route501/scripts.pory"
-	removeobject 3
-# 100 "data/maps/Route501/scripts.pory"
-	removeobject 4
-# 101 "data/maps/Route501/scripts.pory"
-	special ChooseStarter
-# 102 "data/maps/Route501/scripts.pory"
-	waitstate
-# 104 "data/maps/Route501/scripts.pory"
-	bufferleadmonspeciesname STR_VAR_1
-# 105 "data/maps/Route501/scripts.pory"
 	speakername Route501_RivalHolly_Text_0
+# 91 "data/maps/Route501/scripts.pory"
+	msgbox Route501_Text_MeetRivalText3F
+# 92 "data/maps/Route501/scripts.pory"
+	closemessage
+# 94 "data/maps/Route501/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, FaceRight
+# 95 "data/maps/Route501/scripts.pory"
+	applymovement 1, FaceDown
+# 98 "data/maps/Route501/scripts.pory"
+	setflag FLAG_SYS_POKEMON_GET
+# 99 "data/maps/Route501/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 100 "data/maps/Route501/scripts.pory"
+	removeobject 3
+# 101 "data/maps/Route501/scripts.pory"
+	removeobject 4
+# 102 "data/maps/Route501/scripts.pory"
+	special ChooseStarter
+# 103 "data/maps/Route501/scripts.pory"
+	waitstate
+# 105 "data/maps/Route501/scripts.pory"
+	bufferleadmonspeciesname STR_VAR_1
 # 106 "data/maps/Route501/scripts.pory"
+	speakername Route501_RivalHolly_Text_0
+# 107 "data/maps/Route501/scripts.pory"
 	msgbox Route501_Text_MeetRivalText4F
-# 108 "data/maps/Route501/scripts.pory"
-	special HealPlayerParty
 # 109 "data/maps/Route501/scripts.pory"
-	setflag FLAG_ROUTE_501_SAVED_RIVAL
+	special HealPlayerParty
 # 110 "data/maps/Route501/scripts.pory"
-	clearflag FLAG_HIDE_EVERWOOD_TOWN_RESEARCH_LAB_RIVAL
+	setflag FLAG_ROUTE_501_SAVED_RIVAL
 # 111 "data/maps/Route501/scripts.pory"
-	setvar VAR_ROUTE501_STATE, 1
+	clearflag FLAG_HIDE_EVERWOOD_TOWN_RESEARCH_LAB_RIVAL
 # 112 "data/maps/Route501/scripts.pory"
+	setvar VAR_ROUTE501_STATE, 1
+# 113 "data/maps/Route501/scripts.pory"
 	setvar VAR_HAWTHORNE_LAB_STATE, 2
-# 114 "data/maps/Route501/scripts.pory"
+# 115 "data/maps/Route501/scripts.pory"
 	warp MAP_EVERWOOD_TOWN_HAWTHORN_RESEARCH_LAB, 6, 5
 	return
 
 
 Route501_RivalCaden::
-# 118 "data/maps/Route501/scripts.pory"
-	applymovement 1, RivalNoticePlayer
 # 119 "data/maps/Route501/scripts.pory"
+	applymovement 1, RivalNoticePlayer
+# 120 "data/maps/Route501/scripts.pory"
 	waitmovement 0
-# 121 "data/maps/Route501/scripts.pory"
+# 122 "data/maps/Route501/scripts.pory"
 	playbgm MUS_ENCOUNTER_BRENDAN, 0
-# 123 "data/maps/Route501/scripts.pory"
-	speakername Route501_RivalHolly_Text_0
 # 124 "data/maps/Route501/scripts.pory"
-	msgbox Route501_Text_MeetRivalText1M
+	speakername Route501_RivalHolly_Text_0
 # 125 "data/maps/Route501/scripts.pory"
+	msgbox Route501_Text_MeetRivalText1M
+# 126 "data/maps/Route501/scripts.pory"
 	closemessage
-# 127 "data/maps/Route501/scripts.pory"
-	applymovement 1, RivalLookAround
 # 128 "data/maps/Route501/scripts.pory"
+	applymovement 1, RivalLookAround
+# 129 "data/maps/Route501/scripts.pory"
 	waitmovement 0
-# 130 "data/maps/Route501/scripts.pory"
-	speakername Route501_RivalHolly_Text_0
 # 131 "data/maps/Route501/scripts.pory"
-	msgbox Route501_RivalHolly_Text_1
+	speakername Route501_RivalHolly_Text_0
 # 132 "data/maps/Route501/scripts.pory"
+	msgbox Route501_RivalHolly_Text_1
+# 133 "data/maps/Route501/scripts.pory"
 	closemessage
-# 134 "data/maps/Route501/scripts.pory"
-	applymovement 1, RivalApproachBag
 # 135 "data/maps/Route501/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, PlayerApproachBag
+	applymovement 1, RivalApproachBag
 # 136 "data/maps/Route501/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, PlayerApproachBag
+# 137 "data/maps/Route501/scripts.pory"
 	waitmovement 1
-# 138 "data/maps/Route501/scripts.pory"
-	speakername Route501_RivalHolly_Text_0
 # 139 "data/maps/Route501/scripts.pory"
-	msgbox Route501_Text_MeetRivalText2M
+	speakername Route501_RivalHolly_Text_0
 # 140 "data/maps/Route501/scripts.pory"
+	msgbox Route501_Text_MeetRivalText2M
+# 141 "data/maps/Route501/scripts.pory"
 	closemessage
-# 142 "data/maps/Route501/scripts.pory"
+# 143 "data/maps/Route501/scripts.pory"
 	playbgm MUS_HELP, 0
-# 144 "data/maps/Route501/scripts.pory"
-	applymovement 3, PidoveApproachPlayer
 # 145 "data/maps/Route501/scripts.pory"
-	applymovement 4, PidoveApprachRival
+	applymovement 3, PidoveApproachPlayer
 # 146 "data/maps/Route501/scripts.pory"
-	waitmovement 0
+	applymovement 4, PidoveApprachRival
 # 147 "data/maps/Route501/scripts.pory"
+	waitmovement 0
+# 148 "data/maps/Route501/scripts.pory"
 	waitmovement 1
-# 149 "data/maps/Route501/scripts.pory"
+# 150 "data/maps/Route501/scripts.pory"
 	playmoncry SPECIES_PIDOVE, CRY_MODE_NORMAL
-# 151 "data/maps/Route501/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, ExclemationMark
 # 152 "data/maps/Route501/scripts.pory"
-	applymovement 1, ExclemationMark
+	playse SE_PIN
 # 153 "data/maps/Route501/scripts.pory"
-	waitmovement 1
+	applymovement OBJ_EVENT_ID_PLAYER, ExclemationMark
 # 154 "data/maps/Route501/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, FaceLeft
+	applymovement 1, ExclemationMark
 # 155 "data/maps/Route501/scripts.pory"
-	applymovement 1, FaceUp
+	waitmovement 1
+# 156 "data/maps/Route501/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, FaceLeft
 # 157 "data/maps/Route501/scripts.pory"
-	speakername Route501_RivalHolly_Text_0
-# 158 "data/maps/Route501/scripts.pory"
-	msgbox Route501_Text_MeetRivalText3M
+	applymovement 1, FaceUp
 # 159 "data/maps/Route501/scripts.pory"
-	closemessage
-# 161 "data/maps/Route501/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, FaceRight
-# 162 "data/maps/Route501/scripts.pory"
-	applymovement 1, FaceDown
-# 164 "data/maps/Route501/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
-# 165 "data/maps/Route501/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 166 "data/maps/Route501/scripts.pory"
-	removeobject 3
-# 167 "data/maps/Route501/scripts.pory"
-	removeobject 4
-# 168 "data/maps/Route501/scripts.pory"
-	special ChooseStarter
-# 169 "data/maps/Route501/scripts.pory"
-	waitstate
-# 171 "data/maps/Route501/scripts.pory"
-	bufferleadmonspeciesname STR_VAR_1
-# 172 "data/maps/Route501/scripts.pory"
 	speakername Route501_RivalHolly_Text_0
+# 160 "data/maps/Route501/scripts.pory"
+	msgbox Route501_Text_MeetRivalText3M
+# 161 "data/maps/Route501/scripts.pory"
+	closemessage
+# 163 "data/maps/Route501/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, FaceRight
+# 164 "data/maps/Route501/scripts.pory"
+	applymovement 1, FaceDown
+# 166 "data/maps/Route501/scripts.pory"
+	setflag FLAG_SYS_POKEMON_GET
+# 167 "data/maps/Route501/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 168 "data/maps/Route501/scripts.pory"
+	removeobject 3
+# 169 "data/maps/Route501/scripts.pory"
+	removeobject 4
+# 170 "data/maps/Route501/scripts.pory"
+	special ChooseStarter
+# 171 "data/maps/Route501/scripts.pory"
+	waitstate
 # 173 "data/maps/Route501/scripts.pory"
-	msgbox Route501_Text_MeetRivalText4M
+	bufferleadmonspeciesname STR_VAR_1
+# 174 "data/maps/Route501/scripts.pory"
+	speakername Route501_RivalHolly_Text_0
 # 175 "data/maps/Route501/scripts.pory"
-	special HealPlayerParty
-# 176 "data/maps/Route501/scripts.pory"
-	setflag FLAG_ROUTE_501_SAVED_RIVAL
+	msgbox Route501_Text_MeetRivalText4M
 # 177 "data/maps/Route501/scripts.pory"
-	clearflag FLAG_HIDE_EVERWOOD_TOWN_RESEARCH_LAB_RIVAL
+	special HealPlayerParty
 # 178 "data/maps/Route501/scripts.pory"
-	setvar VAR_ROUTE501_STATE, 1
+	setflag FLAG_ROUTE_501_SAVED_RIVAL
 # 179 "data/maps/Route501/scripts.pory"
-	setvar VAR_HAWTHORNE_LAB_STATE, 2
+	clearflag FLAG_HIDE_EVERWOOD_TOWN_RESEARCH_LAB_RIVAL
+# 180 "data/maps/Route501/scripts.pory"
+	setvar VAR_ROUTE501_STATE, 1
 # 181 "data/maps/Route501/scripts.pory"
+	setvar VAR_HAWTHORNE_LAB_STATE, 2
+# 183 "data/maps/Route501/scripts.pory"
 	warp MAP_EVERWOOD_TOWN_HAWTHORN_RESEARCH_LAB, 6, 5
 	return
 
 
-# 184 "data/maps/Route501/scripts.pory"
-RivalNoticePlayer:
-# 185 "data/maps/Route501/scripts.pory"
-	emote_exclamation_mark
 # 186 "data/maps/Route501/scripts.pory"
+RivalNoticePlayer:
+# 187 "data/maps/Route501/scripts.pory"
+	emote_exclamation_mark
+# 188 "data/maps/Route501/scripts.pory"
 	walk_in_place_faster_left
 	step_end
 
-# 189 "data/maps/Route501/scripts.pory"
-RivalLookAround:
-# 190 "data/maps/Route501/scripts.pory"
-	walk_in_place_up
 # 191 "data/maps/Route501/scripts.pory"
-	walk_in_place_down
+RivalLookAround:
 # 192 "data/maps/Route501/scripts.pory"
-	walk_in_place_right
+	walk_in_place_up
 # 193 "data/maps/Route501/scripts.pory"
-	walk_in_place_faster_right
+	walk_in_place_down
 # 194 "data/maps/Route501/scripts.pory"
+	walk_in_place_right
+# 195 "data/maps/Route501/scripts.pory"
+	walk_in_place_faster_right
+# 196 "data/maps/Route501/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 197 "data/maps/Route501/scripts.pory"
-RivalApproachBag:
-# 198 "data/maps/Route501/scripts.pory"
-	walk_fast_right
 # 199 "data/maps/Route501/scripts.pory"
-	walk_fast_up
-# 200 "data/maps/Route501/scripts.pory"
-	walk_fast_right
-# 200 "data/maps/Route501/scripts.pory"
-	walk_fast_right
+RivalApproachBag:
 # 200 "data/maps/Route501/scripts.pory"
 	walk_fast_right
 # 201 "data/maps/Route501/scripts.pory"
+	walk_fast_up
+# 202 "data/maps/Route501/scripts.pory"
+	walk_fast_right
+# 202 "data/maps/Route501/scripts.pory"
+	walk_fast_right
+# 202 "data/maps/Route501/scripts.pory"
+	walk_fast_right
+# 203 "data/maps/Route501/scripts.pory"
 	walk_in_place_faster_down
 	step_end
 
-# 204 "data/maps/Route501/scripts.pory"
-PlayerApproachBag:
-# 205 "data/maps/Route501/scripts.pory"
-	walk_right
-# 205 "data/maps/Route501/scripts.pory"
-	walk_right
-# 205 "data/maps/Route501/scripts.pory"
-	walk_right
-# 205 "data/maps/Route501/scripts.pory"
-	walk_right
 # 206 "data/maps/Route501/scripts.pory"
+PlayerApproachBag:
+# 207 "data/maps/Route501/scripts.pory"
+	walk_right
+# 207 "data/maps/Route501/scripts.pory"
+	walk_right
+# 207 "data/maps/Route501/scripts.pory"
+	walk_right
+# 207 "data/maps/Route501/scripts.pory"
+	walk_right
+# 208 "data/maps/Route501/scripts.pory"
 	walk_in_place_faster_right
 	step_end
 
-# 209 "data/maps/Route501/scripts.pory"
-PidoveApproachPlayer:
-# 210 "data/maps/Route501/scripts.pory"
-	walk_faster_down
-# 210 "data/maps/Route501/scripts.pory"
-	walk_faster_down
-# 210 "data/maps/Route501/scripts.pory"
-	walk_faster_down
-# 210 "data/maps/Route501/scripts.pory"
-	walk_faster_down
-# 210 "data/maps/Route501/scripts.pory"
-	walk_faster_down
-# 210 "data/maps/Route501/scripts.pory"
-	walk_faster_down
 # 211 "data/maps/Route501/scripts.pory"
+PidoveApproachPlayer:
+# 212 "data/maps/Route501/scripts.pory"
+	walk_faster_down
+# 212 "data/maps/Route501/scripts.pory"
+	walk_faster_down
+# 212 "data/maps/Route501/scripts.pory"
+	walk_faster_down
+# 212 "data/maps/Route501/scripts.pory"
+	walk_faster_down
+# 212 "data/maps/Route501/scripts.pory"
+	walk_faster_down
+# 212 "data/maps/Route501/scripts.pory"
+	walk_faster_down
+# 213 "data/maps/Route501/scripts.pory"
 	face_right
 	step_end
 
-# 214 "data/maps/Route501/scripts.pory"
+# 216 "data/maps/Route501/scripts.pory"
 PidoveApprachRival:
-# 215 "data/maps/Route501/scripts.pory"
+# 217 "data/maps/Route501/scripts.pory"
 	walk_faster_down
-# 215 "data/maps/Route501/scripts.pory"
+# 217 "data/maps/Route501/scripts.pory"
 	walk_faster_down
-# 215 "data/maps/Route501/scripts.pory"
+# 217 "data/maps/Route501/scripts.pory"
 	walk_faster_down
-# 215 "data/maps/Route501/scripts.pory"
+# 217 "data/maps/Route501/scripts.pory"
 	walk_faster_down
 	step_end
 
-# 218 "data/maps/Route501/scripts.pory"
+# 220 "data/maps/Route501/scripts.pory"
 ExclemationMark:
-# 219 "data/maps/Route501/scripts.pory"
+# 221 "data/maps/Route501/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 222 "data/maps/Route501/scripts.pory"
+# 224 "data/maps/Route501/scripts.pory"
 FaceUp:
-# 223 "data/maps/Route501/scripts.pory"
+# 225 "data/maps/Route501/scripts.pory"
 	walk_in_place_faster_up
 	step_end
 
-# 226 "data/maps/Route501/scripts.pory"
+# 228 "data/maps/Route501/scripts.pory"
 FaceDown:
-# 227 "data/maps/Route501/scripts.pory"
+# 229 "data/maps/Route501/scripts.pory"
 	walk_in_place_faster_down
 	step_end
 
-# 230 "data/maps/Route501/scripts.pory"
+# 232 "data/maps/Route501/scripts.pory"
 FaceLeft:
-# 231 "data/maps/Route501/scripts.pory"
+# 233 "data/maps/Route501/scripts.pory"
 	walk_in_place_faster_left
 	step_end
 
-# 234 "data/maps/Route501/scripts.pory"
+# 236 "data/maps/Route501/scripts.pory"
 FaceRight:
-# 235 "data/maps/Route501/scripts.pory"
+# 237 "data/maps/Route501/scripts.pory"
 	walk_in_place_faster_right
 	step_end
 
 Route501_EventScript_SkwovetGirl::
-# 317 "data/maps/Route501/scripts.pory"
+# 319 "data/maps/Route501/scripts.pory"
 	lock
-# 318 "data/maps/Route501/scripts.pory"
-	faceplayer
 # 320 "data/maps/Route501/scripts.pory"
+	faceplayer
+# 322 "data/maps/Route501/scripts.pory"
 	goto_if_set FLAG_RECEIVED_POTION_ROUTE_501, Route501_EventScript_SkwovetGirl_2
-# 326 "data/maps/Route501/scripts.pory"
-	msgbox Route501_Text_SkwovetGirl1
-# 327 "data/maps/Route501/scripts.pory"
-	giveitem ITEM_ORAN_BERRY, 1
 # 328 "data/maps/Route501/scripts.pory"
-	msgbox Route501_Text_SkwovetGirl2
+	msgbox Route501_Text_SkwovetGirl1
+# 329 "data/maps/Route501/scripts.pory"
+	giveitem ITEM_ORAN_BERRY, 1
 # 330 "data/maps/Route501/scripts.pory"
+	msgbox Route501_Text_SkwovetGirl2
+# 332 "data/maps/Route501/scripts.pory"
 	setflag FLAG_RECEIVED_POTION_ROUTE_501
 Route501_EventScript_SkwovetGirl_1:
-# 333 "data/maps/Route501/scripts.pory"
+# 335 "data/maps/Route501/scripts.pory"
 	release
 	return
 
 Route501_EventScript_SkwovetGirl_2:
-# 322 "data/maps/Route501/scripts.pory"
+# 324 "data/maps/Route501/scripts.pory"
 	msgbox Route501_Text_SkwovetGirl3
 	goto Route501_EventScript_SkwovetGirl_1
 
 
 Route501_EventScript_MartEmployee::
-# 355 "data/maps/Route501/scripts.pory"
+# 357 "data/maps/Route501/scripts.pory"
 	lock
-# 356 "data/maps/Route501/scripts.pory"
-	faceplayer
 # 358 "data/maps/Route501/scripts.pory"
+	faceplayer
+# 360 "data/maps/Route501/scripts.pory"
 	goto_if_unset FLAG_RECEIVED_POTION_ROUTE501, Route501_EventScript_MartEmployee_2
 Route501_EventScript_MartEmployee_1:
-# 366 "data/maps/Route501/scripts.pory"
+# 368 "data/maps/Route501/scripts.pory"
 	msgbox Route501_Text_MartEmployee2
-# 367 "data/maps/Route501/scripts.pory"
+# 369 "data/maps/Route501/scripts.pory"
 	release
 	return
 
 Route501_EventScript_MartEmployee_2:
-# 360 "data/maps/Route501/scripts.pory"
+# 362 "data/maps/Route501/scripts.pory"
 	msgbox Route501_Text_MartEmployee1
-# 361 "data/maps/Route501/scripts.pory"
-	giveitem ITEM_POTION, 5
 # 363 "data/maps/Route501/scripts.pory"
+	giveitem ITEM_POTION, 5
+# 365 "data/maps/Route501/scripts.pory"
 	setflag FLAG_RECEIVED_POTION_ROUTE501
 	goto Route501_EventScript_MartEmployee_1
 
 
 Route501_EventScript_Boy::
-# 383 "data/maps/Route501/scripts.pory"
-	lock
-# 384 "data/maps/Route501/scripts.pory"
-	faceplayer
 # 385 "data/maps/Route501/scripts.pory"
-	msgbox Route501_Text_Boy
+	lock
 # 386 "data/maps/Route501/scripts.pory"
+	faceplayer
+# 387 "data/maps/Route501/scripts.pory"
+	msgbox Route501_Text_Boy
+# 388 "data/maps/Route501/scripts.pory"
 	release
 	return
 
 
 Route501_EventScript_Michael::
-# 395 "data/maps/Route501/scripts.pory"
-	trainerbattle_single TRAINER_MICHAEL, Route501_Text_MichaelIntro, Route501_Text_MichaelDefeated
-# 396 "data/maps/Route501/scripts.pory"
-	msgbox Route102_Text_MichaelPostBattle, MSGBOX_AUTOCLOSE
 # 397 "data/maps/Route501/scripts.pory"
+	trainerbattle_single TRAINER_MICHAEL, Route501_Text_MichaelIntro, Route501_Text_MichaelDefeated
+# 398 "data/maps/Route501/scripts.pory"
+	msgbox Route102_Text_MichaelPostBattle, MSGBOX_AUTOCLOSE
+# 399 "data/maps/Route501/scripts.pory"
 	waitmessage
 	end
 
 
 Route501_Sign_Route::
-# 414 "data/maps/Route501/scripts.pory"
-	lock
-# 415 "data/maps/Route501/scripts.pory"
-	msgbox Route501_Text_Sign
 # 416 "data/maps/Route501/scripts.pory"
+	lock
+# 417 "data/maps/Route501/scripts.pory"
+	msgbox Route501_Text_Sign
+# 418 "data/maps/Route501/scripts.pory"
 	release
 	return
 
@@ -466,7 +470,7 @@ Route501_RivalHolly_Text_1:
 	.string "Oh, there it is!$"
 
 Route501_Text_MeetRivalText1F::
-# 238 "data/maps/Route501/scripts.pory"
+# 240 "data/maps/Route501/scripts.pory"
 	.string "Huh? Oh!\p"
 	.string "You must be {PLAYER}{KUN}, right?\p"
 	.string "I'm {RIVAL}, your neighbor!\p"
@@ -480,14 +484,14 @@ Route501_Text_MeetRivalText1F::
 	.string "Oh no, this isn't good.$"
 
 Route501_Text_MeetRivalText2F::
-# 249 "data/maps/Route501/scripts.pory"
+# 251 "data/maps/Route501/scripts.pory"
 	.string "Honestly, I'd be so lost if I can't find\n"
 	.string "it.\p"
 	.string "The professor would be pretty\n"
 	.string "disappointed in me.$"
 
 Route501_Text_MeetRivalText3F::
-# 257 "data/maps/Route501/scripts.pory"
+# 259 "data/maps/Route501/scripts.pory"
 	.string "Eek! A wild Pokémon! This is bad, really\n"
 	.string "bad!\p"
 	.string "We need to use the Poké Balls in the bag\n"
@@ -495,7 +499,7 @@ Route501_Text_MeetRivalText3F::
 	.string "Let's do this, {PLAYER}!$"
 
 Route501_Text_MeetRivalText4F::
-# 265 "data/maps/Route501/scripts.pory"
+# 267 "data/maps/Route501/scripts.pory"
 	.string "Phew... that was close!\p"
 	.string "I didn't think wild Pokémon would just\n"
 	.string "attack us like that!\p"
@@ -512,7 +516,7 @@ Route501_Text_MeetRivalText4F::
 	.string "or something.$"
 
 Route501_Text_MeetRivalText1M::
-# 277 "data/maps/Route501/scripts.pory"
+# 279 "data/maps/Route501/scripts.pory"
 	.string "Whoa!\p"
 	.string "Hey, you're {PLAYER}, right?\p"
 	.string "I'm {RIVAL}, your neighbor.\p"
@@ -527,20 +531,20 @@ Route501_Text_MeetRivalText1M::
 	.string "Huh... weird. Thought I had it right here.$"
 
 Route501_Text_MeetRivalText2M::
-# 290 "data/maps/Route501/scripts.pory"
+# 292 "data/maps/Route501/scripts.pory"
 	.string "Unreal. I can't believe I lost it...\p"
 	.string "Professor Hawthorne's gonna let me\n"
 	.string "have it when he finds out.$"
 
 Route501_Text_MeetRivalText3M::
-# 297 "data/maps/Route501/scripts.pory"
+# 299 "data/maps/Route501/scripts.pory"
 	.string "What the--?! Wild Pokémon?!\p"
 	.string "This isn't good. Alright, grab a Poké Ball\n"
 	.string "from the bag!\p"
 	.string "Let's teach these things a lesson.$"
 
 Route501_Text_MeetRivalText4M::
-# 305 "data/maps/Route501/scripts.pory"
+# 307 "data/maps/Route501/scripts.pory"
 	.string "Whew... that was intense!\p"
 	.string "I wasn't expecting wild Pokémon to go\n"
 	.string "after us like that!\p"
@@ -556,7 +560,7 @@ Route501_Text_MeetRivalText4M::
 	.string "so long.$"
 
 Route501_Text_SkwovetGirl1::
-# 336 "data/maps/Route501/scripts.pory"
+# 338 "data/maps/Route501/scripts.pory"
 	.string "Oh! I'm not a Trainer, don't worry!\p"
 	.string "I'm just here on to watch the Skwovet!\p"
 	.string "It's so funny how they stuff their\n"
@@ -571,18 +575,18 @@ Route501_Text_SkwovetGirl1::
 	.string "you one to try out!$"
 
 Route501_Text_SkwovetGirl2::
-# 346 "data/maps/Route501/scripts.pory"
+# 348 "data/maps/Route501/scripts.pory"
 	.string "I hope you and your Pokémon enjoy the\n"
 	.string "Berries!$"
 
 Route501_Text_SkwovetGirl3::
-# 350 "data/maps/Route501/scripts.pory"
+# 352 "data/maps/Route501/scripts.pory"
 	.string "Skwovet are just too cute when they're\n"
 	.string "eating!\n"
 	.string "I could watch them all day!$"
 
 Route501_Text_MartEmployee1::
-# 370 "data/maps/Route501/scripts.pory"
+# 372 "data/maps/Route501/scripts.pory"
 	.string "Hello! Are you a Pokémon Trainer?\p"
 	.string "We're giving away free Potions to all\n"
 	.string "Trainers who pass through here as a\l"
@@ -591,35 +595,35 @@ Route501_Text_MartEmployee1::
 	.string "Baycrest City Poké Mart!$"
 
 Route501_Text_MartEmployee2::
-# 377 "data/maps/Route501/scripts.pory"
+# 379 "data/maps/Route501/scripts.pory"
 	.string "We hope you'll continue to shop with us\n"
 	.string "in the future!\p"
 	.string "We have a wide selection of items that\n"
 	.string "will help you on your journey!$"
 
 Route501_Text_Boy::
-# 389 "data/maps/Route501/scripts.pory"
+# 391 "data/maps/Route501/scripts.pory"
 	.string "Did you know that Pokémon can be found\n"
 	.string "in the tall grass?\p"
 	.string "I know, it's a shocker!\n"
 	.string "Like, who doesn't know that?$"
 
 Route501_Text_MichaelIntro::
-# 401 "data/maps/Route501/scripts.pory"
+# 403 "data/maps/Route501/scripts.pory"
 	.string "We've locked eyes! That means it's time\n"
 	.string "for a battle!$"
 
 Route501_Text_MichaelDefeated::
-# 405 "data/maps/Route501/scripts.pory"
+# 407 "data/maps/Route501/scripts.pory"
 	.string "You're so strong!$"
 
 Route102_Text_MichaelPostBattle::
-# 409 "data/maps/Route501/scripts.pory"
+# 411 "data/maps/Route501/scripts.pory"
 	.string "You're really good at this! I hope we\n"
 	.string "can battle again sometime!$"
 
 Route501_Text_Sign::
-# 419 "data/maps/Route501/scripts.pory"
+# 421 "data/maps/Route501/scripts.pory"
 	.string "Route 301\n"
 	.string "{RIGHT_ARROW} Baycrest City\p"
 	.string "{DOWN_ARROW} Everwood Town$"

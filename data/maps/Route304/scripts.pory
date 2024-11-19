@@ -4,7 +4,7 @@ script Route304_EventScript_UpsilonGrunt {
     lock
     faceplayer
 
-    if(!flag(FLAG_HIDE_LIGHTHOUSE_UPSILON_GRUNTS))
+    if(!flag(FLAG_HIDE_STARRIDGE_RUINS_B1F_UPSILON_GRUNTS))
     {
         
     }

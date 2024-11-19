@@ -38,7 +38,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "StarridgeRuins_B1F_EventScript_Grunt_2",
-      "flag": "0"
+      "flag": "FLAG_HIDE_STARRIDGE_RUINS_B1F_UPSILON_GRUNTS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
@@ -51,7 +51,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_HIDE_STARRIDGE_RUINS_B1F_UPSILON_GRUNTS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
@@ -77,7 +77,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "StarridgeRuins_B1F_EventScript_Grunt_1",
-      "flag": "0"
+      "flag": "FLAG_HIDE_STARRIDGE_RUINS_B1F_UPSILON_GRUNTS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
@@ -90,7 +90,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_HIDE_STARRIDGE_RUINS_B1F_UPSILON_GRUNTS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_F",
@@ -103,12 +103,51 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
+      "flag": "FLAG_HIDE_STARRIDGE_RUINS_B1F_UPSILON_GRUNTS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_1",
+      "x": 24,
+      "y": 1,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_VAR_0",
+      "x": 25,
+      "y": 0,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "StarridgeRuins_1F_EventScript_Rival",
+      "flag": "FLAG_HIDE_STARRIDGE_RUINS_B1F_UPSILON_GRUNTS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_1",
+      "x": 25,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
       "flag": "0"
     }
   ],
   "warp_events": [
     {
-      "x": 16,
+      "x": 17,
       "y": 23,
       "elevation": 0,
       "dest_map": "MAP_STARRIDGE_RUINS_1F",
@@ -116,7 +155,15 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 5,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StarridgeRuins_B1F_Trigger_MeetAmelio1"
+    }
   ],
   "bg_events": [
     {

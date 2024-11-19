@@ -41,7 +41,7 @@ script StarridgeRuins_1F_EventScript_Grunts {
         waitmovement(OBJ_GRUNT_B)
 
         setobjectxy(OBJ_RIVAL, 4, 12)
-        applymovement(OBJ_RIVAL, StarridgeRuins_1F_Movement_Rival_WalkIn2)
+        applymovement(OBJ_RIVAL, StarridgeRuins_1F_Movement_Rival_WalkIn2)  
         waitmovement(OBJ_RIVAL)
 
         checkplayergender
@@ -110,7 +110,7 @@ script StarridgeRuins_1F_EventScript_Grunts {
         msgbox(StarridgeRuins_1F_Text_GruntA_Retreat)
         closemessage
         fadescreen(FADE_TO_BLACK)
-        setflag(FLAG_HIDE_LIGHTHOUSE_UPSILON_GRUNTS)
+        setflag(FLAG_HIDE_STARRIDGE_RUINS_B1F_UPSILON_GRUNTS)
         removeobject(OBJ_GRUNT_A)
         removeobject(OBJ_GRUNT_B)
         setvar(VAR_STARRIDGE_CITY_STATE, 3)

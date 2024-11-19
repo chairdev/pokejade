@@ -16,6 +16,7 @@ script BaycrestCity_Trigger_Rival1 {
 
     applymovement(OBJ_EVENT_ID_PLAYER, ApproachRival1)
     waitmovement(0)
+    playse(SE_PIN)
     applymovement(OBJ_RIVAL, LookDown)
     waitmovement(0)
 
@@ -38,6 +39,7 @@ script BaycrestCity_Trigger_Rival2 {
 
     applymovement(OBJ_EVENT_ID_PLAYER, ApproachRival2)
     waitmovement(0)
+    playse(SE_PIN)
     applymovement(OBJ_RIVAL, LookDown)
     waitmovement(0)
 

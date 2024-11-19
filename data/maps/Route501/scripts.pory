@@ -80,6 +80,7 @@ script Route501_RivalHolly {
 
     playmoncry(SPECIES_PIDOVE, CRY_MODE_NORMAL)
 
+    playse(SE_PIN)
     applymovement(OBJ_EVENT_ID_PLAYER, ExclemationMark)
     applymovement(OBJ_RIVAL, ExclemationMark)
     waitmovement(1)
@@ -148,6 +149,7 @@ script Route501_RivalCaden {
 
     playmoncry(SPECIES_PIDOVE, CRY_MODE_NORMAL)
 
+    playse(SE_PIN)
     applymovement(OBJ_EVENT_ID_PLAYER, ExclemationMark)
     applymovement(OBJ_RIVAL, ExclemationMark)
     waitmovement(1)

@@ -1,9 +1,229 @@
-mapscripts StarridgeRuins_B1F_MapScripts {}
+const OBJ_AMELIO = 6
+const OBJ_GRUNT_A = 3
+const OBJ_GRUNT_B = 7
+const OBJ_RIVAL = 9
+
+mapscripts StarridgeRuins_B1F_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        call(Common_EventScript_SetupRivalGfxId)       
+    }
+}
+
+script StarridgeRuins_B1F_Trigger_MeetAmelio1 {
+    lockall
+
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, StarridgeRuins_B1F_Movement_CameraPan1)
+    waitmovement(OBJ_EVENT_ID_CAMERA)
+
+    playbgm(MUS_ENCOUNTER_AQUA, FALSE)
+    applymovement(OBJ_GRUNT_A, StarridgeRuins_B1F_Movement_WalkInPlace)
+    msgbox(StarridgeRuins_B1F_Text_MeetAmelio_GruntA_1)
+
+    speakername("???")
+    msgbox(StarridgeRuins_B1F_Text_MeetAmelio_Amelio_1)
+    closemessage
+
+    applymovement(OBJ_GRUNT_A, StarridgeRuins_B1F_Movement_WalkInPlace)
+    msgbox(StarridgeRuins_B1F_Text_MeetAmelio_GruntA_2)
+    closemessage
+
+    applymovement(OBJ_EVENT_ID_PLAYER, StarridgeRuins_B1F_Movement_PlayerApproachAmelio1)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+
+    call(StarridgeRuins_B1F_EventScript_MeetAmelio)
+}
+
+script StarridgeRuins_B1F_EventScript_MeetAmelio {
+    playse(SE_PIN)
+    applymovement(OBJ_AMELIO, Common_Movement_ExclamationMark)
+    waitmovement(OBJ_AMELIO)
+
+    speakername("???")
+    msgbox(StarridgeRuins_B1F_Text_MeetAmelio_Amelio_Intro)
+
+    dynmultichoice(20, 8, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE,
+    "Yeah, that's me.", "No clue.")
+
+    if (var(VAR_RESULT) == 0) {
+        msgbox(StarridgeRuins_B1F_Text_MeetAmelio_Yes)
+    } else {
+        msgbox(StarridgeRuins_B1F_Text_MeetAmelio_No)
+    }
+    closemessage
+
+    applymovement(OBJ_GRUNT_B, StarridgeRuins_B1F_Movement_WalkInPlace)
+    msgbox(StarridgeRuins_B1F_Text_MeetAmelio_GruntB)
+
+    speakername("Amelio")
+    msgbox(StarridgeRuins_B1F_Text_MeetAmelio_Amelio_2)
+    closemessage
+
+    speakername("Amelio")
+    msgbox(StarridgeRuins_B1F_Text_MeetAmelio_Amelio_3)
+
+    trainerbattle_no_intro(TRAINER_AMELIO_1, StarridgeRuins_B1F_Text_AmelioDefeated)
+
+    speakername("Amelio")
+    msgbox(StarridgeRuins_B1F_Text_Amelio_PostBattle)
+    closemessage
+
+    fadescreen(FADE_TO_BLACK)
+    msgbox(format("B-Boss! Wait for us!"))
+    closemessage
+
+    fadedefaultbgm
+
+    setflag(FLAG_HIDE_STARRIDGE_RUINS_1F_UPSILON_GRUNTS)
+    removeobject(OBJ_GRUNT_A)
+    removeobject(OBJ_GRUNT_B)
+    removeobject(OBJ_AMELIO)
+    setobjectxy(OBJ_RIVAL, 15, 6)
+    fadescreen(FADE_FROM_BLACK)
+
+    call(StarridgeRuins_B1F_EventScript_ReceiveFossil)
+}
+
+script StarridgeRuins_B1F_EventScript_ReceiveFossil {
+    applymovement(OBJ_RIVAL, StarridgeRuins_B1F_Movement_RivalApproachPlayer)
+    applymovement(OBJ_EVENT_ID_PLAYER, StarridgeRuins_B1F_Movement_PlayerTurnLeft)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+
+    speakername("{RIVAL}")
+    msgbox(StarridgeRuins_B1F_Text_ReceieveFossil_Rival_1)
+    waitmovement(OBJ_RIVAL)
+    msgbox(StarridgeRuins_B1F_Text_ReceieveFossil_Rival_2)
+
+
+    dynmultichoice(20, 8, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE,
+    "Skull Fossil", "Armor Fossil")
+
+    if (var(VAR_RESULT) == 0) {
+
+    }
+}
+
+text StarridgeRuins_B1F_Text_MeetAmelio_GruntA_1 {
+    format("B-Boss! We've got a problem!\p"
+           "There are some kids down here poking around in the ruins!")
+}
+
+text StarridgeRuins_B1F_Text_MeetAmelio_Amelio_1 {
+    format("Kids? Uh, okay...?\nWhat do you want me to do about that?")
+}
+
+text StarridgeRuins_B1F_Text_MeetAmelio_GruntA_2 {
+    format("They're not just any kids, Boss!\p"
+           "They're the ones that've been causing trouble for us!\p"
+           "What if they mess everything up?")
+}
+
+text StarridgeRuins_B1F_Text_MeetAmelio_Amelio_Intro {
+    format("...Huh? Wait a second. You're not with us, are you?\p"
+           "You don't happen to be the one that's been causing trouble for us, do you?")
+}
+
+text StarridgeRuins_B1F_Text_MeetAmelio_Yes {
+    format("Ah, cool. Thanks for making this my problem.\p"
+           "...NOT!")
+}
+
+text StarridgeRuins_B1F_Text_MeetAmelio_No {
+    format("Oh, really? Could've fooled me.")
+}
+
+text StarridgeRuins_B1F_Text_MeetAmelio_Amelio_2 {
+   format("Name's Amelio. I'm an Admin for Team Upsilon.\p"
+           "You know, just in case you were wondering.\p"
+           "...Which you probably weren't.")
+}
+
+text StarridgeRuins_B1F_Text_MeetAmelio_GruntB {
+    format("Y-Yeah, Boss, that's them! They're the ones causing trouble!")
+}
+
+text StarridgeRuins_B1F_Text_MeetAmelio_Amelio_3 {
+   format(  "What a pain... I only took this job because I thought it'd be easy.\p"
+            "Alright, kid.\nlet's get this over with.")
+}
 
 text StarridgeRuins_B1F_Text_AmelioDefeated {
-    format("Defeated by a kid that doesn't look older \p"
-           "Ugh, I'm going to hear about this for weeks.")
+    format("Ugh... Beaten by a kid.\nThat's embarrassing.\p"
+           "It's gonna be a total pain to explain this to the boss.")
 }
+
+text StarridgeRuins_B1F_Text_Amelio_PostBattle {
+    format("Alright, fine, you win.\nHere's the deal:\p"
+           "The artifact we're after is supposed to be hidden deeper in these ruins.\p"
+           "They say it's got some crazy power, but that's all I know.\p"
+           "If you want it, go for it. We've already got some fossils, so we're just barely breaking even here.\p"
+           "Now, if you'll excuse me, I've got to go report this mess.")
+}
+
+text StarridgeRuins_B1F_Text_ReceieveFossil_Rival_1 {
+    format("Hey, {PLAYER}!\nAre you okay?")
+}
+
+text StarridgeRuins_B1F_Text_ReceieveFossil_Rival_2 {
+    format("I saw a bunch of those Team Upsilon people running away.\p"
+           "What happened?")
+}
+
+text StarridgeRuins_B1F_Text_ReceieveFossil_Rival_3 {
+    format("...Oh, I see. They were trying to steal some kind of artifact, huh?\p"
+           "Well, I'm glad you're okay.\nI was worried about you.")
+}
+
+text StarridgeRuins_B1F_Text_ReceieveFossil_Scientist_1 {
+    format("...My fossils... They're gone!\p"
+           "My life's work, all gone in an instant!")
+}
+
+text StarridgeRuins_B1F_Text_ReceieveFossil_Rival_4 {
+    format("Yikes. That's a whole different can of worms, isn't it?\p"
+           "At least you're safe, though. Right?")
+}
+
+text StarridgeRuins_B1F_Text_ReceieveFossil_Scientist_2 {
+    format("I might as well just give up on my research now.\p"
+           "I'll never be able to recover from this...\p"
+           "Here, I've only got these two fossils left.\p"
+           "Just take one. I won't look at them again.")
+}
+
+
+movement StarridgeRuins_B1F_Movement_CameraPan1 {
+    walk_slow_down
+    walk_slow_right * 5
+}
+
+movement StarridgeRuins_B1F_Movement_CameraPan2 {
+    walk_slow_down
+    walk_slow_right * 4
+}
+
+movement StarridgeRuins_B1F_Movement_WalkInPlace {
+    walk_in_place_slow_right
+}
+
+movement StarridgeRuins_B1F_Movement_PlayerApproachAmelio1 {
+    walk_down
+    walk_right * 5
+}
+
+movement StarridgeRuins_B1F_Movement_PlayerApproachAmelio2 {
+    walk_slow_down
+    walk_slow_right * 4
+}
+
+movement StarridgeRuins_B1F_Movement_PlayerTurnLeft {
+    walk_in_place_left
+}
+
+movement StarridgeRuins_B1F_Movement_RivalApproachPlayer {
+    walk_fast_right * 6
+}
+
 
 //Trainers
 
@@ -21,7 +241,8 @@ text StarridgeRuins_B1F_Text_Grunt1Defeat {
 }
 
 text StarridgeRuins_B1F_Text_Grunt1PostBattle {
-    format("At least I didn't get 1v2'd by a kid.")
+    format("At least I didn't get 1v2'd by a kid.\p"
+           "..Oh. It was a 2v2? Nevermind.")
 }
 
 script StarridgeRuins_B1F_EventScript_Grunt_2 {

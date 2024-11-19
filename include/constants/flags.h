@@ -767,7 +767,7 @@
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_BEDROOM          0x2D2
 #define FLAG_HIDE_ROUTE_501_RIVAL                                   0x2D3
 #define FLAG_SAVED_NURSERY_MAN                                      0x2D4
-#define FLAG_HIDE_STARRIDGE_RUINS_UPSILON_GRUNTS                    0x2D5
+#define FLAG_HIDE_STARRIDGE_RUINS_1F_UPSILON_GRUNTS                 0x2D5
 #define FLAG_HIDE_PETALBURG_CITY_WALLY                              0x2D6
 #define FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_INVISIBLE_NINJA_BOY   0x2D7
 #define FLAG_HIDE_PETALBURG_CITY_WALLYS_MOM                         0x2D8
@@ -923,7 +923,7 @@
 #define FLAG_HIDE_ROUTE_111_DESERT_FOSSIL                           0x36C
 #define FLAG_HIDE_MT_CHIMNEY_TRAINERS                               0x36D
 #define FLAG_HIDE_ROUTE_304_UPSILON_GRUNT                           0x36E
-#define FLAG_HIDE_LIGHTHOUSE_UPSILON_GRUNTS                         0x36F
+#define FLAG_HIDE_STARRIDGE_RUINS_B1F_UPSILON_GRUNTS                0x36F
 #define FLAG_HIDE_RUSTURF_TUNNEL_PEEKO                              0x370
 #define FLAG_HIDE_BRINEYS_HOUSE_PEEKO                               0x371
 #define FLAG_HIDE_SLATEPORT_CITY_TEAM_AQUA                          0x372

@@ -126,7 +126,7 @@ StarridgeRuins_1F_EventScript_Grunts_5:
 # 112 "data/maps/StarridgeRuins_1F/scripts.pory"
 	fadescreen FADE_TO_BLACK
 # 113 "data/maps/StarridgeRuins_1F/scripts.pory"
-	setflag FLAG_HIDE_LIGHTHOUSE_UPSILON_GRUNTS
+	setflag FLAG_HIDE_STARRIDGE_RUINS_B1F_UPSILON_GRUNTS
 # 114 "data/maps/StarridgeRuins_1F/scripts.pory"
 	removeobject 3
 # 115 "data/maps/StarridgeRuins_1F/scripts.pory"

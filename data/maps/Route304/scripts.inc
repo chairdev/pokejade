@@ -8,7 +8,7 @@ Route304_EventScript_UpsilonGrunt::
 # 5 "data/maps/Route304/scripts.pory"
 	faceplayer
 # 7 "data/maps/Route304/scripts.pory"
-	goto_if_unset FLAG_HIDE_LIGHTHOUSE_UPSILON_GRUNTS, Route304_EventScript_UpsilonGrunt_1
+	goto_if_unset FLAG_HIDE_STARRIDGE_RUINS_B1F_UPSILON_GRUNTS, Route304_EventScript_UpsilonGrunt_1
 	return
 
 Route304_EventScript_UpsilonGrunt_1:
