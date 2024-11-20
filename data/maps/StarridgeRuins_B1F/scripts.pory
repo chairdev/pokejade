@@ -144,7 +144,7 @@ text StarridgeRuins_B1F_Text_MeetAmelio_GruntB {
 
 text StarridgeRuins_B1F_Text_MeetAmelio_Amelio_3 {
    format(  "What a pain... I only took this job because I thought it'd be easy.\p"
-            "Alright, kid.\nlet's get this over with.")
+            "Alright, kid.\nLet's just get this over with.")
 }
 
 text StarridgeRuins_B1F_Text_AmelioDefeated {

@@ -80,6 +80,8 @@ StarridgeRuins_B1F_EventScript_MeetAmelio_1:
 	speakername StarridgeRuins_B1F_EventScript_MeetAmelio_Text_2
 # 63 "data/maps/StarridgeRuins_B1F/scripts.pory"
 	msgbox StarridgeRuins_B1F_Text_MeetAmelio_Amelio_3
+# 65 "data/maps/StarridgeRuins_B1F/scripts.pory"
+	trainerbattle_no_intro TRAINER_AMELIO_1, StarridgeRuins_B1F_Text_AmelioDefeated
 # 67 "data/maps/StarridgeRuins_B1F/scripts.pory"
 	speakername StarridgeRuins_B1F_EventScript_MeetAmelio_Text_2
 # 68 "data/maps/StarridgeRuins_B1F/scripts.pory"
@@ -331,7 +333,7 @@ StarridgeRuins_B1F_Text_MeetAmelio_Amelio_3::
 	.string "What a pain... I only took this job\n"
 	.string "because I thought it'd be easy.\p"
 	.string "Alright, kid.\n"
-	.string "let's get this over with.$"
+	.string "Let's just get this over with.$"
 
 StarridgeRuins_B1F_Text_AmelioDefeated::
 # 150 "data/maps/StarridgeRuins_B1F/scripts.pory"
