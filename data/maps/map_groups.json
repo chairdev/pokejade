@@ -38,7 +38,9 @@
     "gMapGroup_IndoorBaycrest",
     "gMapGroup_IndoorRoute503",
     "gMapGroup_IndoorStemford",
-    "gMapGroup_IndoorStarridge"
+    "gMapGroup_IndoorStarridge",
+    "gMapGroup_AvaroRegion",
+    "gMapGroup_IndoorArgil"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -666,5 +668,15 @@
     "StarridgeCity_Gym",
     "StarridgeCity_Mart",
     "StarridgeCity_EldonsHouse"
+  ],
+  "gMapGroup_AvaroRegion": [
+    "ArgilTown",
+    "Route301"
+  ],
+  "gMapGroup_IndoorArgil": [
+    "ArgilTown_PlayersHouse_1F",
+    "ArgilTown_PlayersHouse_2F",
+    "ArgilTown_RivalsHouse_1F",
+    "NewMap1"
   ]
 }

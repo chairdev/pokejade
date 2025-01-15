@@ -131,7 +131,7 @@ EverwoodTown_HawthornResearchLab_MapScript_ReceiveStarter_1:
 # 96 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	setvar VAR_CABLE_CLUB_TUTORIAL_STATE, 1
 # 97 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
-	setvar VAR_EVERWOOD_TOWN_STATE, 3
+	setvar VAR_ARGIL_TOWN_STATE, 3
 # 98 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	setvar VAR_HAWTHORNE_LAB_STATE, 3
 # 100 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
@@ -218,7 +218,7 @@ EverwoodTown_HawthornResearchLab_EventScript_Hawthorne_5:
 # 235 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	setvar VAR_HAWTHORNE_LAB_STATE, 1
 # 236 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
-	setvar VAR_EVERWOOD_TOWN_STATE, 2
+	setvar VAR_ARGIL_TOWN_STATE, 2
 	goto EverwoodTown_HawthornResearchLab_EventScript_Hawthorne_1
 
 EverwoodTown_HawthornResearchLab_EventScript_Hawthorne_4:

@@ -1,0 +1,122 @@
+const OBJ_MOM = 1
+
+mapscripts ArgilTown_PlayersHouse_1F_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_ARGIL_TOWN_STATE, 0: ArgilTown_PlayersHouse_1F_MapScript_MeetMom
+    ]
+}
+
+
+
+script ArgilTown_PlayersHouse_1F_MapScript_MeetMom {
+    lockall
+    setrespawn(HEAL_LOCATION_ARGIL_TOWN)
+    playbgm(MUS_FOLLOW_ME, 0)
+    applymovement(OBJ_MOM, ArgilTown_PlayersHouse_1F_Movement_MomApproachPlayer1)
+    waitmovement(0)
+    
+    speakername("Mom")
+    msgbox(ArgilTown_PlayersHouse_1F_Text_MeetMom)
+    closemessage
+    
+    fadedefaultbgm
+    applymovement(OBJ_MOM, MomMoveBack)
+    waitmovement(0)
+
+    setvar(VAR_ARGIL_TOWN_STATE, 1)
+    
+    
+    releaseall
+}
+
+text ArgilTown_PlayersHouse_1F_Text_MeetMom {
+    format("Oh, good morning, sweetie!\nUp already?\p"
+           "You must be full of energy today--I thought you'd be sleeping in after all the unpacking yesterday.\p"
+           "It's strange, isn't it?\nEverything feels so new here... different from Hoenn.\p"
+           "Oh! Before I forget, the neighbors across the street stopped by yesterday.\p"
+           "They said they have a child about your age.\p"
+           "Why don't you go over and introduce yourself?\lIt might be nice to make a new friend!\p"
+           "Take your time exploring, too.\nIt's a beautiful day, and you never know what you might find."
+           )
+              
+}
+
+movement ArgilTown_PlayersHouse_1F_Movement_MomApproachPlayer1 {
+    walk_up
+    walk_right * 2
+    walk_in_place_faster_up
+}
+
+movement MomMoveBack {
+    walk_left * 2
+    walk_down
+    walk_in_place_faster_right
+}
+
+script ArgilTown_PlayersHouse_1F_EventScript_Mom {
+    lockall
+    faceplayer
+
+    if(var(VAR_ARGIL_TOWN_STATE) < 4)
+    {
+        checkplayergender()
+        if(var(VAR_RESULT) ==  MALE)
+        {
+            msgbox(RivalCameByText1A)
+        }
+        else
+        {
+            msgbox(RivalCameByText1B)
+        }
+    }
+    else
+    {
+        msgbox(ArgilTown_PlayersHouse_1F_Text_MomHealsParty)
+        closemessage
+        call(Common_EventScript_OutOfCenterPartyHeal)
+        incrementgamestat(GAME_STAT_RESTED_AT_HOME)
+        msgbox(ArgilTown_PlayersHouse_1F_Text_GoGetEm)
+        release
+    }
+        
+    
+
+    releaseall
+}
+
+text ArgilTown_PlayersHouse_1F_Text_MomHealsParty {
+    format("Welcome home, {PLAYER}!\p"
+           "You look tired.\nWhy don't you rest a bit?")
+}
+
+text ArgilTown_PlayersHouse_1F_Text_GoGetEm { //right after healing
+    format("There! You look like you're ready to take on the world!\p"
+           "Go get 'em, {PLAYER}!"
+           )
+}
+
+
+
+text RivalCameByText1A {
+    format("Our neighbor {RIVAL} came looking for you earlier.\p"
+           "I told her you were still asleep.\p"
+           "...I wonder what she wanted?"
+           )
+}
+
+text RivalCameByText1B {
+    format("Our neighbor {RIVAL} came looking for you earlier.\p"
+           "I told him you were still asleep.\p"
+           "...I wonder what he wanted?"
+           )
+}
+
+script ArgilTown_PlayersHouse_1F_EventScript_Delcatty {
+    lock
+    faceplayer
+    playmoncry(SPECIES_DELCATTY, CRY_MODE_NORMAL)
+    msgbox(format("Mreeeow!"))
+    waitmoncry
+    release
+}
+

@@ -526,7 +526,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_GivePokedex::
 	setflag FLAG_ADVENTURE_STARTED
 	setvar VAR_BAYCREST_CITY_STATE, 1
 	setvar VAR_LITTLEROOT_RIVAL_STATE, 4
-	setvar VAR_EVERWOOD_TOWN_STATE, 3
+	setvar VAR_ARGIL_TOWN_STATE, 3
 	releaseall
 	end
 

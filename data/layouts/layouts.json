@@ -4720,6 +4720,66 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/StarridgeRuins_B1F/border.bin",
       "blockdata_filepath": "data/layouts/StarridgeRuins_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARGIL_TOWN",
+      "name": "ArgilTown_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/ArgilTown/border.bin",
+      "blockdata_filepath": "data/layouts/ArgilTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE301",
+      "name": "Route301_Layout",
+      "width": 20,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route301/border.bin",
+      "blockdata_filepath": "data/layouts/Route301/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARGIL_TOWN_PLAYERS_HOUSE_1F",
+      "name": "ArgilTown_PlayersHouse_1F_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/ArgilTown_PlayersHouse_1F/border.bin",
+      "blockdata_filepath": "data/layouts/ArgilTown_PlayersHouse_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARGIL_TOWN_PLAYERS_HOUSE_2F",
+      "name": "ArgilTown_PlayersHouse_2F_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/ArgilTown_PlayersHouse_2F/border.bin",
+      "blockdata_filepath": "data/layouts/ArgilTown_PlayersHouse_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARGIL_TOWN_RIVALS_HOUSE_1F",
+      "name": "ArgilTown_RivalsHouse_1F_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/ArgilTown_RivalsHouse_1F/border.bin",
+      "blockdata_filepath": "data/layouts/ArgilTown_RivalsHouse_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MAP1",
+      "name": "NewMap1_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/NewMap1/border.bin",
+      "blockdata_filepath": "data/layouts/NewMap1/map.bin"
     }
   ]
 }

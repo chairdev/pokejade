@@ -238,7 +238,7 @@ EverwoodTown_GoodbyeMom::
 # 179 "data/maps/EverwoodTown/scripts.pory"
 	setflag FLAG_HIDE_EVERWOOD_TOWN_MOM_OUTSIDE
 # 180 "data/maps/EverwoodTown/scripts.pory"
-	setvar VAR_EVERWOOD_TOWN_STATE, 4
+	setvar VAR_ARGIL_TOWN_STATE, 4
 # 181 "data/maps/EverwoodTown/scripts.pory"
 	addmoney 10000
 	return

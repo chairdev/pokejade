@@ -632,6 +632,16 @@
 #define MAP_STARRIDGE_CITY_MART              (3 | (38 << 8))
 #define MAP_STARRIDGE_CITY_ELDONS_HOUSE      (4 | (38 << 8))
 
-#define MAP_GROUPS_COUNT 39
+// gMapGroup_AvaroRegion
+#define MAP_ARGIL_TOWN (0 | (39 << 8))
+#define MAP_ROUTE301   (1 | (39 << 8))
+
+// gMapGroup_IndoorArgil
+#define MAP_ARGIL_TOWN_PLAYERS_HOUSE_1F (0 | (40 << 8))
+#define MAP_ARGIL_TOWN_PLAYERS_HOUSE_2F (1 | (40 << 8))
+#define MAP_ARGIL_TOWN_RIVALS_HOUSE_1F  (2 | (40 << 8))
+#define MAP_NEW_MAP1                    (3 | (40 << 8))
+
+#define MAP_GROUPS_COUNT 41
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

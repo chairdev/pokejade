@@ -88,13 +88,6 @@
   ],
   "warp_events": [
     {
-      "x": 14,
-      "y": 8,
-      "elevation": 0,
-      "dest_map": "MAP_EVERWOOD_TOWN_PLAYERS_HOUSE_1F",
-      "dest_warp_id": "2"
-    },
-    {
       "x": 5,
       "y": 16,
       "elevation": 0,
@@ -108,7 +101,7 @@
       "x": 17,
       "y": 2,
       "elevation": 0,
-      "var": "VAR_EVERWOOD_TOWN_STATE",
+      "var": "VAR_ARGIL_TOWN_STATE",
       "var_value": "1",
       "script": "EverwoodTown_Trigger_DontGoIntoRouteLeft"
     },
@@ -117,7 +110,7 @@
       "x": 18,
       "y": 2,
       "elevation": 0,
-      "var": "VAR_EVERWOOD_TOWN_STATE",
+      "var": "VAR_ARGIL_TOWN_STATE",
       "var_value": "1",
       "script": "EverwoodTown_Trigger_DontGoIntoRouteRight"
     },
@@ -126,7 +119,7 @@
       "x": 8,
       "y": 12,
       "elevation": 0,
-      "var": "VAR_EVERWOOD_TOWN_STATE",
+      "var": "VAR_ARGIL_TOWN_STATE",
       "var_value": "3",
       "script": "EverwoodTown_Trigger_GoodbyeMom1"
     },
@@ -135,7 +128,7 @@
       "x": 9,
       "y": 12,
       "elevation": 0,
-      "var": "VAR_EVERWOOD_TOWN_STATE",
+      "var": "VAR_ARGIL_TOWN_STATE",
       "var_value": "3",
       "script": "EverwoodTown_Trigger_GoodbyeMom2"
     },
@@ -144,7 +137,7 @@
       "x": 10,
       "y": 12,
       "elevation": 0,
-      "var": "VAR_EVERWOOD_TOWN_STATE",
+      "var": "VAR_ARGIL_TOWN_STATE",
       "var_value": "3",
       "script": "EverwoodTown_Trigger_GoodbyeMom3"
     },
@@ -153,7 +146,7 @@
       "x": 11,
       "y": 12,
       "elevation": 0,
-      "var": "VAR_EVERWOOD_TOWN_STATE",
+      "var": "VAR_ARGIL_TOWN_STATE",
       "var_value": "3",
       "script": "EverwoodTown_Trigger_GoodbyeMom4"
     }

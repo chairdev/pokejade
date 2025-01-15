@@ -1213,3 +1213,13 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/StarridgeRuins_1F/scripts.inc"
 
 	.include "data/maps/StarridgeRuins_B1F/scripts.inc"
+
+	.include "data/maps/ArgilTown/scripts.inc"
+
+	.include "data/maps/Route301/scripts.inc"
+
+	.include "data/maps/ArgilTown_PlayersHouse_1F/scripts.inc"
+
+	.include "data/maps/ArgilTown_PlayersHouse_2F/scripts.inc"
+
+	.include "data/maps/ArgilTown_RivalsHouse_1F/scripts.inc"

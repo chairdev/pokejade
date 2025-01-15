@@ -217,7 +217,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "EverwoodTown_PlayersHouse_1F_EventScript_Mom",
+      "script": "ArgilTown_PlayersHouse_1F_EventScript_Mom",
       "flag": "FLAG_HIDE_ROUTE_503_MOM_DELCATTY"
     },
     {
@@ -230,7 +230,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "EverwoodTown_PlayersHouse_1F_EventScript_Delcatty",
+      "script": "ArgilTown_PlayersHouse_1F_EventScript_Delcatty",
       "flag": "FLAG_HIDE_ROUTE_503_MOM_DELCATTY"
     }
   ],

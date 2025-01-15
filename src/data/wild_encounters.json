@@ -12832,6 +12832,160 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_ROUTE301",
+          "base_label": "gRoute301",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_ROOKIDEE"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_SENTRET"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_ROOKIDEE"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_ROOKIDEE"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_SENTRET"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_BUDEW"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_BUDEW"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_BUDEW"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_GRUBBIN"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_GRUBBIN"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_GRUBBIN"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_GRUBBIN"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": 4,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "encounter_rate": 30,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              }
+            ]
+          }
         }
       ]
     },

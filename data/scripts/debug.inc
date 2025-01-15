@@ -58,7 +58,7 @@ Debug_CheatStart::
 # 32 "data/scripts/debug.pory"
 	setflag FLAG_SYS_B_DASH
 # 33 "data/scripts/debug.pory"
-	setvar VAR_EVERWOOD_TOWN_STATE, 4 @ 4: Received Running Shoes
+	setvar VAR_ARGIL_TOWN_STATE, 4 @ 4: Received Running Shoes
 # 34 "data/scripts/debug.pory"
 	setvar VAR_LITTLEROOT_INTRO_STATE, 7 @ 7: Told to go meet rival
 # 35 "data/scripts/debug.pory"
