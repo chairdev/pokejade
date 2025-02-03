@@ -1,0 +1,159 @@
+const OBJ_RIVAL_MOM = 1
+const OBJ_RIVAL = 2
+
+mapscripts ArgilTown_RivalsHouse_1F_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        call(Common_EventScript_SetupRivalGfxId)
+    }
+
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_ARGIL_TOWN_STATE, 1: ArgilTown_RivalsHouse_1F_MapScript_MeetRival
+    ]
+}
+
+script ArgilTown_RivalsHouse_1F_MapScript_MeetRival {
+    playse(SE_PIN)
+    applymovement(OBJ_RIVAL_MOM, Common_Movement_ExclamationMark)
+    waitse
+    waitmovement(0)
+    applymovement(OBJ_RIVAL_MOM, ArgilTown_RivalsHouse_1F_Movement_RivalMom_ApproachPlayer)
+    waitmovement(0)
+
+    msgbox(ArgilTown_RivalsHouse_1F_Text_MeetRival_Mom1)
+    applymovement(OBJ_RIVAL_MOM, ArgilTown_RivalsHouse_1F_Movement_RivalMom_TurnUp)
+    msgbox(format("{RIVAL}!\nCome downstairs, we've got a visitor!"))
+    closemessage
+
+    fadescreen(FADE_TO_BLACK)
+    speakername("???")
+    msgbox(format("Coming, Mom!"))
+    closemessage
+    playse(SE_EXIT)
+	delay(10)
+
+	addobject(OBJ_RIVAL)
+    setobjectxy(OBJ_RIVAL_MOM, 7, 6)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
+    turnobject(OBJ_RIVAL_MOM, DIR_EAST)
+    fadescreen(FADE_FROM_BLACK)
+
+    applymovement (OBJ_RIVAL, Common_Movement_WalkInPlaceFasterDown)
+
+    speakername("{RIVAL}")
+    checkplayergender
+    if(var(VAR_RESULT) == FEMALE)
+    {
+        playbgm(MUS_ENCOUNTER_BRENDAN, TRUE)
+        msgbox(ArgilTown_RivalsHouse_1F_Text_MeetRival_Caden1)
+    }
+    else
+    {
+        playbgm(MUS_ENCOUNTER_MAY, TRUE)
+        msgbox(ArgilTown_RivalsHouse_1F_Text_MeetRival_Holly1)
+    }
+    closemessage
+
+    playse(SE_PIN)
+    applymovement(OBJ_RIVAL_MOM, Common_Movement_ExclamationMark)
+    waitse
+    waitmovement(0)
+    msgbox(ArgilTown_RivalsHouse_1F_Text_MeetRival_Mom2)
+
+
+    speakername("{RIVAL}")
+    if(var(VAR_RESULT) == FEMALE)
+    {
+        msgbox(ArgilTown_RivalsHouse_1F_Text_MeetRival_Caden2)
+    }
+    else
+    {
+        msgbox(ArgilTown_RivalsHouse_1F_Text_MeetRival_Holly2)
+    }
+    closemessage
+
+    turnobject(OBJ_RIVAL_MOM, DIR_SOUTH)
+    turnobject(OBJ_EVENT_ID_PLAYER, DIR_EAST)
+    
+    applymovement(OBJ_RIVAL, ArgilTown_RivalsHouse_1F_Movement_RivalLeave)
+    waitmovement(0)
+    turnobject(OBJ_EVENT_ID_PLAYER, DIR_SOUTH)
+    fadedefaultbgm
+    playse(SE_EXIT)
+    removeobject(OBJ_RIVAL)
+    waitse
+
+    turnobject(OBJ_EVENT_ID_PLAYER, DIR_WEST)
+
+    msgbox(ArgilTown_RivalsHouse_1F_Text_RivalMom)
+    closemessage
+
+    applymovement(OBJ_RIVAL_MOM, ArgilTown_RivalsHouse_1F_Movement_RivalMomMoveBack)
+    waitmovement(0)
+
+    setvar(VAR_ARGIL_TOWN_STATE, 2)
+    releaseall
+}
+
+text ArgilTown_RivalsHouse_1F_Text_MeetRival_Mom1 {
+    format( "Oh, hello! You must be the new neighbor, {PLAYER}!\p"
+            "We've been meaning to say hello--welcome to Argil Town.")
+}
+
+text ArgilTown_RivalsHouse_1F_Text_MeetRival_Caden1 {
+    format( "So you're the one who just moved here?\nNot bad.\p"
+            "I'm Caden, by the way.\nWhat's your name?\p"
+            "Oh, {PLAYER}?\nNice to meet you.\p"
+            "Argil Town's kind of boring, but maybe it'll be less dull now that you're here.")
+}
+
+text ArgilTown_RivalsHouse_1F_Text_MeetRival_Holly1 {
+    format( "Hi! You're the new kid, right?\nI'm Holly, what's your name?\p"
+            "{PLAYER}?\nThat's so cool--welcome to Argil Town!\p"
+            "It's not the most exciting place, but it's got its charm.")
+}
+
+text ArgilTown_RivalsHouse_1F_Text_MeetRival_Mom2 {
+    format( "Oh! Before I forget, Professor Hawthorn called earlier.\p"
+            "He said something about needing help with a delivery.\p"
+            "{RIVAL}, could you go help him out?")
+}
+
+text ArgilTown_RivalsHouse_1F_Text_MeetRival_Caden2 {
+    format( "The professor? Sweet!\nHe's always got something cool going on.\p"
+            "Let's head over--I'll even let you tag along, {PLAYER}.")
+}
+
+text ArgilTown_RivalsHouse_1F_Text_MeetRival_Holly2 {
+    format( "Oh, the professor?\n{PLAYER}, he's really nice--you'll like him!\p"
+            "Come on, I'll show you the way.")
+}
+
+
+movement ArgilTown_RivalsHouse_1F_Movement_RivalMom_ApproachPlayer {
+    delay_16
+    walk_right * 3
+    walk_down
+}
+
+movement ArgilTown_RivalsHouse_1F_Movement_RivalMom_TurnUp {
+    walk_in_place_up
+}
+
+movement ArgilTown_RivalsHouse_1F_Movement_RivalMomMoveBack {
+    walk_left * 2
+}
+
+movement ArgilTown_RivalsHouse_1F_Movement_RivalLeave {
+    walk_fast_right
+    walk_fast_down * 3
+}
+
+script ArgilTown_RivalsHouse_1F_EventScript_RivalMom
+{
+    msgbox(ArgilTown_RivalsHouse_1F_Text_RivalMom)
+    closemessage
+}
+
+text ArgilTown_RivalsHouse_1F_Text_RivalMom {
+    format( "Oh that {RIVAL}--always eager to run off.\pI hope you two have fun!")
+}

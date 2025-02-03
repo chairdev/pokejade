@@ -11,12 +11,12 @@ Route101_OnTransition:
 	end
 
 Route101_OnFrame:
-	map_script_2 VAR_ROUTE501_STATE, 0, Route101_EventScript_HideMapNamePopup
+	map_script_2 VAR_ROUTE301_STATE, 0, Route101_EventScript_HideMapNamePopup
 	.2byte 0
 
 Route101_EventScript_HideMapNamePopup::
 	setflag FLAG_HIDE_MAP_NAME_POPUP
-	setvar VAR_ROUTE501_STATE, 1
+	setvar VAR_ROUTE301_STATE, 1
 	end
 
 Route101_EventScript_StartBirchRescue::
@@ -40,7 +40,7 @@ Route101_EventScript_StartBirchRescue::
 	waitmovement 0
 	msgbox Route101_Text_PleaseHelp, MSGBOX_DEFAULT
 	closemessage
-	setvar VAR_ROUTE501_STATE, 2
+	setvar VAR_ROUTE301_STATE, 2
 	releaseall
 	end
 
@@ -238,7 +238,7 @@ Route101_EventScript_BirchsBag::
 	clearflag FLAG_HIDE_EVERWOOD_TOWN_RESEARCH_LAB_RIVAL
 	setflag FLAG_ROUTE_501_SAVED_RIVAL
 	setvar VAR_HAWTHORNE_LAB_STATE, 2
-	setvar VAR_ROUTE501_STATE, 3
+	setvar VAR_ROUTE301_STATE, 3
 	clearflag FLAG_HIDE_MAP_NAME_POPUP
 	checkplayergender
 	call_if_eq VAR_RESULT, MALE, Route101_EventScript_HideMayInBedroom

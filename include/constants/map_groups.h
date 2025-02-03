@@ -640,8 +640,11 @@
 #define MAP_ARGIL_TOWN_PLAYERS_HOUSE_1F (0 | (40 << 8))
 #define MAP_ARGIL_TOWN_PLAYERS_HOUSE_2F (1 | (40 << 8))
 #define MAP_ARGIL_TOWN_RIVALS_HOUSE_1F  (2 | (40 << 8))
-#define MAP_NEW_MAP1                    (3 | (40 << 8))
+#define MAP_ARGIL_TOWN_RIVALS_HOUSE_2F  (3 | (40 << 8))
 
-#define MAP_GROUPS_COUNT 41
+// gMapGroup_IndoorRoute301
+#define MAP_ROUTE301_HAWTHORNE_RESEARCH_LAB (0 | (41 << 8))
+
+#define MAP_GROUPS_COUNT 42
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

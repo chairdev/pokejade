@@ -1705,7 +1705,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ROUTE_501",
+      "map_section": "MAPSEC_ROUTE_301",
       "name": "Route 301",
       "x": 0,
       "y": 0,
@@ -1769,8 +1769,8 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_EVERWOOD_TOWN",
-      "name": "Everwood Town",
+      "map_section": "MAPSEC_ARGIL_TOWN",
+      "name": "Argil Town",
       "x": 0,
       "y": 0,
       "width": 1,

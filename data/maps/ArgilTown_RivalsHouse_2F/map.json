@@ -1,12 +1,12 @@
 {
-  "id": "MAP_EVERWOOD_TOWN_PLAYERS_HOUSE_2F",
-  "name": "EverwoodTown_PlayersHouse_2F",
-  "layout": "LAYOUT_EVERWOOD_TOWN_PLAYERS_HOUSE_2F",
+  "id": "MAP_ARGIL_TOWN_RIVALS_HOUSE_2F",
+  "name": "ArgilTown_RivalsHouse_2F",
+  "layout": "LAYOUT_ARGIL_TOWN_RIVALS_HOUSE_2F",
   "music": "MUS_LITTLEROOT",
   "region_map_section": "MAPSEC_ARGIL_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_INDOOR",
+  "map_type": "MAP_TYPE_NONE",
   "allow_cycling": false,
   "allow_escaping": false,
   "allow_running": true,
@@ -17,7 +17,13 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 1,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_ARGIL_TOWN_RIVALS_HOUSE_1F",
+      "dest_warp_id": "2"
+    }
   ],
   "coord_events": [
 

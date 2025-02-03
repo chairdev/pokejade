@@ -1223,3 +1223,6 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/ArgilTown_PlayersHouse_2F/scripts.inc"
 
 	.include "data/maps/ArgilTown_RivalsHouse_1F/scripts.inc"
+	.include "data/maps/ArgilTown_RivalsHouse_2F/scripts.inc"
+
+	.include "data/maps/Route301_HawthorneResearchLab/scripts.inc"

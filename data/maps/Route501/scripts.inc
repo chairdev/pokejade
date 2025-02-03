@@ -157,7 +157,7 @@ Route501_RivalHolly::
 # 111 "data/maps/Route501/scripts.pory"
 	clearflag FLAG_HIDE_EVERWOOD_TOWN_RESEARCH_LAB_RIVAL
 # 112 "data/maps/Route501/scripts.pory"
-	setvar VAR_ROUTE501_STATE, 1
+	setvar VAR_ROUTE301_STATE, 1
 # 113 "data/maps/Route501/scripts.pory"
 	setvar VAR_HAWTHORNE_LAB_STATE, 2
 # 115 "data/maps/Route501/scripts.pory"
@@ -259,7 +259,7 @@ Route501_RivalCaden::
 # 179 "data/maps/Route501/scripts.pory"
 	clearflag FLAG_HIDE_EVERWOOD_TOWN_RESEARCH_LAB_RIVAL
 # 180 "data/maps/Route501/scripts.pory"
-	setvar VAR_ROUTE501_STATE, 1
+	setvar VAR_ROUTE301_STATE, 1
 # 181 "data/maps/Route501/scripts.pory"
 	setvar VAR_HAWTHORNE_LAB_STATE, 2
 # 183 "data/maps/Route501/scripts.pory"

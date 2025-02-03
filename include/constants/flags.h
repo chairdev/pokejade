@@ -769,7 +769,7 @@
 #define FLAG_ROUTE_503_METASTER                                     0x2D0
 #define FLAG_HIDE_EVERWOOD_TOWN_RESEARCH_LAB_RIVAL                  0x2D1
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_BEDROOM          0x2D2
-#define FLAG_HIDE_ROUTE_501_RIVAL                                   0x2D3
+#define FLAG_HIDE_ROUTE_301_RIVAL                                   0x2D3
 #define FLAG_SAVED_NURSERY_MAN                                      0x2D4
 #define FLAG_HIDE_STARRIDGE_RUINS_1F_UPSILON_GRUNTS                 0x2D5
 #define FLAG_HIDE_PETALBURG_CITY_WALLY                              0x2D6
@@ -794,7 +794,7 @@
 #define FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN                       0x2E7
 #define FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT                          0x2E8
 #define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_BRENDAN            0x2E9
-#define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_MAY                    0x2EA
+#define FLAG_HIDE_ARGIL_TOWN_RIVALS_HOUSE_RIVAL                    0x2EA
 #define FLAG_HIDE_SAFARI_ZONE_SOUTH_EAST_EXPANSION                  0x2EB
 #define FLAG_HIDE_LILYCOVE_HARBOR_EVENT_TICKET_TAKER                0x2EC
 #define FLAG_HIDE_SLATEPORT_CITY_SCOTT                              0x2ED

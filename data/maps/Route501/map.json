@@ -3,7 +3,7 @@
   "name": "Route501",
   "layout": "LAYOUT_ROUTE501",
   "music": "MUS_ROUTE101",
-  "region_map_section": "MAPSEC_ROUTE_501",
+  "region_map_section": "MAPSEC_ROUTE_301",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_ROUTE",
@@ -139,7 +139,7 @@
       "x": 7,
       "y": 19,
       "elevation": 0,
-      "var": "VAR_ROUTE501_STATE",
+      "var": "VAR_ROUTE301_STATE",
       "var_value": "0",
       "script": "Route501_Trigger_WalkToRivalLeft"
     },
@@ -148,7 +148,7 @@
       "x": 8,
       "y": 19,
       "elevation": 0,
-      "var": "VAR_ROUTE501_STATE",
+      "var": "VAR_ROUTE301_STATE",
       "var_value": "0",
       "script": "Route501_Trigger_WalkToRivalRight"
     }

@@ -40,7 +40,8 @@
     "gMapGroup_IndoorStemford",
     "gMapGroup_IndoorStarridge",
     "gMapGroup_AvaroRegion",
-    "gMapGroup_IndoorArgil"
+    "gMapGroup_IndoorArgil",
+    "gMapGroup_IndoorRoute301"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -677,6 +678,9 @@
     "ArgilTown_PlayersHouse_1F",
     "ArgilTown_PlayersHouse_2F",
     "ArgilTown_RivalsHouse_1F",
-    "NewMap1"
+    "ArgilTown_RivalsHouse_2F"
+  ],
+  "gMapGroup_IndoorRoute301": [
+    "Route301_HawthorneResearchLab"
   ]
 }

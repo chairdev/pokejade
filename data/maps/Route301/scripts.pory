@@ -1,0 +1,171 @@
+const OBJ_RIVAL = 1
+
+//VAR_ROUTE301_STATE
+//0: Meet up with Rival
+//1: First battle with Rival
+//2: Need to say goodbye to mom
+//3: Rival leaves
+
+mapscripts Route301_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        call(Common_EventScript_SetupRivalGfxId)
+    }
+}
+
+script Route301_Trigger_MeetRival1 {
+    lockall
+    call(Route301_Trigger_CalledByRival)
+
+    applymovement(OBJ_EVENT_ID_PLAYER, Route301_Movement_CalledByRival_Player_MoveToRival1)
+    call(Route301_Trigger_GoToLabWithRival)
+}
+
+script Route301_Trigger_MeetRival2 {
+    lockall
+    call(Route301_Trigger_CalledByRival)
+
+    applymovement(OBJ_EVENT_ID_PLAYER, Route301_Movement_CalledByRival_Player_MoveToRival2)
+    call(Route301_Trigger_GoToLabWithRival)
+}
+
+script Route301_Trigger_CalledByRival {
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, Route301_Movement_CalledByRival_CameraPan1)
+    waitmovement(OBJ_EVENT_ID_CAMERA)
+
+    playse(SE_PIN)
+    applymovement(OBJ_RIVAL, Common_Movement_ExclamationMark)
+    waitse
+    waitmovement(0)
+    delay(40)
+    applymovement(OBJ_RIVAL, Common_Movement_WalkInPlaceFasterUp)
+    waitmovement(0)
+
+    if(var(VAR_RESULT) == FEMALE)
+    {
+        playbgm(MUS_ENCOUNTER_BRENDAN, TRUE)
+    }
+    else
+    {
+        playbgm(MUS_ENCOUNTER_MAY, TRUE)
+    }
+
+    speakername("{RIVAL}")
+    msgbox(Route301_Text_GoToLabWithRival_Rival1)
+    closemessage
+
+}
+
+script Route301_Trigger_GoToLabWithRival {
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    applymovement(OBJ_EVENT_ID_CAMERA, Route301_Movement_CalledByRival_CameraPan2)
+    waitmovement(OBJ_EVENT_ID_CAMERA)
+    special(RemoveCameraObject)
+
+    speakername("{RIVAL}")
+    if(var(VAR_RESULT) == FEMALE)
+    {
+        msgbox(Route301_Text_GoToLabWithRival_Caden1)
+        closemessage
+
+        applymovement(OBJ_RIVAL, Common_Movement_WalkInPlaceFasterDown)
+        speakername("{RIVAL}")
+        msgbox(Route301_Text_GoToLabWithRival_Caden2)
+    }
+    else
+    {
+        msgbox(Route301_Text_GoToLabWithRival_Holly1)
+        closemessage
+
+        applymovement(OBJ_RIVAL, Common_Movement_WalkInPlaceFasterDown)
+        speakername("{RIVAL}")
+        msgbox(Route301_Text_GoToLabWithRival_Holly2)
+    }
+    closemessage
+
+    applymovement(OBJ_RIVAL, Route301_Movement_GoToLabWithRival_RivalPath)
+    applymovement(OBJ_EVENT_ID_PLAYER, Route301_Movement_GoToLabWithRival_PlayerPath)
+    waitmovement(0)
+
+    speakername("{RIVAL}")
+    if(var(VAR_RESULT) == FEMALE)
+    {
+        msgbox(Route301_Text_GoToLabWithRival_Caden3)
+    }
+    else
+    {
+        msgbox(Route301_Text_GoToLabWithRival_Holly3)
+    }
+    closemessage
+
+    opendoor(17, 21)
+    waitdooranim
+    applymovement(OBJ_RIVAL, Common_Movement_WalkUp)
+    waitmovement(0)
+    removeobject(OBJ_RIVAL)
+    waitse
+
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2)
+    waitmovement(0)
+    warp(MAP_ROUTE301_HAWTHORNE_RESEARCH_LAB, 6, 12)
+}
+
+movement Route301_Movement_CalledByRival_CameraPan1 {
+    walk_fast_down * 4
+}
+
+movement Route301_Movement_CalledByRival_CameraPan2 {
+    walk_up
+}
+
+movement Route301_Movement_CalledByRival_Player_MoveToRival1 {
+    walk_right
+    walk_down * 3
+}
+
+movement Route301_Movement_CalledByRival_Player_MoveToRival2 {
+    walk_down * 3
+}
+
+movement Route301_Movement_GoToLabWithRival_RivalPath {
+    walk_down
+    walk_right * 14
+    walk_up
+    walk_in_place_faster_down
+}
+
+movement Route301_Movement_GoToLabWithRival_PlayerPath {
+    walk_down *2
+    walk_right * 14
+    walk_in_place_faster_up
+}
+
+
+text Route301_Text_GoToLabWithRival_Rival1 {
+    format("Hey, {PLAYER}!\nOver here!")
+}
+
+text Route301_Text_GoToLabWithRival_Caden1 {
+    format("Man, this route is kinda small, huh?\nGuess I should've expected that from a place so close to Argil Town...")
+}
+
+text Route301_Text_GoToLabWithRival_Caden2 {
+    format("Anyway, we should hurry.\nThe professor said he needed something delivered, right?\p"
+            "Hope it's not just some boring package...")
+}
+
+text Route301_Text_GoToLabWithRival_Caden3 {
+    format("Guess we'll find out soon enough.\nLet's go")
+}
+
+text Route301_Text_GoToLabWithRival_Holly1 {
+    format("It's so quiet out here!\nNot exactly the thrilling adventure I was hoping for, but hey, it's a start!")
+}
+
+text Route301_Text_GoToLabWithRival_Holly2 {
+    format("I wonder what the professor needs help with...\nI hope it's something exciting!")
+}
+
+text Route301_Text_GoToLabWithRival_Holly3 {
+    format("Come on, {PLAYER}!\nThe professor's waiting, and I wanna get moving!")
+}

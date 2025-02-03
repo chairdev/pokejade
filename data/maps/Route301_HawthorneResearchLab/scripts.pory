@@ -1,0 +1,13 @@
+movement Rival_WalkIntoLab {
+    walk_up * 4
+    walk_left
+    walk_in_place_up
+}
+
+movement Player_WalkIntoLab {
+    walk_up * 5
+}
+
+text Hawthorne1 {
+    format("Ah, {RIVAL}! Right on time, as usual.\nI was just about to--oh? Who's this with you?")
+}
