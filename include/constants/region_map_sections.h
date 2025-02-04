@@ -214,9 +214,9 @@
 #define MAPSEC_ALTERING_CAVE                0xD2
 #define MAPSEC_NAVEL_ROCK                   0xD3
 #define MAPSEC_TRAINER_HILL                 0xD4
-#define MAPSEC_ARGIL_TOWN                0xD5
+#define MAPSEC_ARGIL_TOWN                   0xD5
 #define MAPSEC_ROUTE_301                    0xD6
-#define MAPSEC_BAYCREST_CITY                0xD7
+#define MAPSEC_HAWTHORNELABS                0xD7
 #define MAPSEC_ROUTE_502                    0xD8
 #define MAPSEC_FORTUNE_CAVE                 0xD9
 #define MAPSEC_ROUTE_503                    0xDA

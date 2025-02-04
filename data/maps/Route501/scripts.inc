@@ -153,7 +153,7 @@ Route501_RivalHolly::
 # 109 "data/maps/Route501/scripts.pory"
 	special HealPlayerParty
 # 110 "data/maps/Route501/scripts.pory"
-	setflag FLAG_ROUTE_501_SAVED_RIVAL
+	setflag FLAG_CHOSE_STARTER
 # 111 "data/maps/Route501/scripts.pory"
 	clearflag FLAG_HIDE_EVERWOOD_TOWN_RESEARCH_LAB_RIVAL
 # 112 "data/maps/Route501/scripts.pory"
@@ -255,7 +255,7 @@ Route501_RivalCaden::
 # 177 "data/maps/Route501/scripts.pory"
 	special HealPlayerParty
 # 178 "data/maps/Route501/scripts.pory"
-	setflag FLAG_ROUTE_501_SAVED_RIVAL
+	setflag FLAG_CHOSE_STARTER
 # 179 "data/maps/Route501/scripts.pory"
 	clearflag FLAG_HIDE_EVERWOOD_TOWN_RESEARCH_LAB_RIVAL
 # 180 "data/maps/Route501/scripts.pory"

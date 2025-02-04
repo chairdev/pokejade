@@ -35,7 +35,7 @@ Debug_CheatStart::
 # 18 "data/scripts/debug.pory"
 	clearflag FLAG_HIDE_EVERWOOD_TOWN_RESEARCH_LAB_RIVAL
 # 19 "data/scripts/debug.pory"
-	setflag FLAG_ROUTE_501_SAVED_RIVAL
+	setflag FLAG_CHOSE_STARTER
 # 20 "data/scripts/debug.pory"
 	setvar VAR_HAWTHORNE_LAB_STATE, 2
 # 21 "data/scripts/debug.pory"

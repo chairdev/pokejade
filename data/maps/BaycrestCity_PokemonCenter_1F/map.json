@@ -3,7 +3,7 @@
   "name": "BaycrestCity_PokemonCenter_1F",
   "layout": "LAYOUT_BAYCREST_CITY_POKEMON_CENTER_1F",
   "music": "MUS_POKE_CENTER",
-  "region_map_section": "MAPSEC_BAYCREST_CITY",
+  "region_map_section": "MAPSEC_HAWTHORNELABS",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",

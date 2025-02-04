@@ -1,13 +1,520 @@
-movement Rival_WalkIntoLab {
-    walk_up * 4
+const OBJ_PROF_HAWTHORNE = 1
+const OBJ_RIVAL = 2
+const OBJ_CHIKORITA = 3
+const OBJ_CYNDAQUIL = 4
+const OBJ_TOTODILE = 5
+
+//VAR_HAWTHORNE_LAB_STATE
+//0: Walk in
+//1: Choose starter
+//2: Starter chosen
+
+mapscripts Route301_HawthorneResearchLab_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        call(Common_EventScript_SetupRivalGfxId)
+    }
+    
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_HAWTHORNE_LAB_STATE, 0: Route301_HawthorneResearchLab_MapScript_MeetProf
+    ]
+}
+
+script Route301_HawthorneResearchLab_MapScript_MeetProf {
+    lockall
+
+    addobject(OBJ_RIVAL)
+    addobject(OBJ_CHIKORITA)
+    addobject(OBJ_CYNDAQUIL)
+    addobject(OBJ_TOTODILE)
+
+    applymovement(OBJ_RIVAL, Route301_HawthorneResearchLab_Movement_Rival_WalkIntoLab)
+    applymovement(OBJ_EVENT_ID_PLAYER, Route301_HawthorneResearchLab_Movement_Player_WalkIntoLab)
+    waitmovement(0)
+
+    speakername("???")
+    msgbox(Route301_HawthorneResearchLab_Text_MeetProf_ProfHawthorne1)
+    
+    speakername("{RIVAL}")
+    checkplayergender
+    if(var(VAR_RESULT) == FEMALE)
+    {
+        msgbox(Route301_HawthorneResearchLab_Text_MeetProf_Caden1)
+    }
+    else
+    {
+        msgbox(Route301_HawthorneResearchLab_Text_MeetProf_Holly1)
+    }
+
+    dynmultichoice(20, 8, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE,
+    "Nice to meet you!", "Sorry for intruding!")
+    
+    speakername("???")
+    if (var(VAR_RESULT) == 0) {
+        msgbox(format("Well, it's nice to meet you too!"))
+    } else {
+        msgbox(format("Oh, don't worry about it!\nI'm always happy to meet new people."))
+    }
+    speakername("Hawthorne")
+    msgbox(Route301_HawthorneResearchLab_Text_MeetProf_ProfHawthorne2)
+
+    applymovement(OBJ_PROF_HAWTHORNE, Common_Movement_WalkInPlaceFasterUp)
+    speakername("Hawthorne")
+    msgbox(Route301_HawthorneResearchLab_Text_MeetProf_ProfHawthorne3)
+    closemessage
+
+    call(Route301_HawthorneResearchLab_MapScript_StarterIntro)
+
+    applymovement(OBJ_PROF_HAWTHORNE, Common_Movement_WalkInPlaceFasterDown)
+
+    speakername("Hawthorne")
+    msgbox(Route301_HawthorneResearchLab_Text_MeetProf_ProfHawthorne4)
+
+    setvar(VAR_HAWTHORNE_LAB_STATE, 1)
+    setobjectmovementtype(OBJ_CHIKORITA, MOVEMENT_TYPE_FACE_DOWN)
+    setobjectmovementtype(OBJ_CYNDAQUIL, MOVEMENT_TYPE_FACE_DOWN)
+    setobjectmovementtype(OBJ_TOTODILE, MOVEMENT_TYPE_FACE_DOWN)
+
+    releaseall
+}
+
+script Route301_HawthorneResearchLab_MapScript_StarterIntro {
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, Route301_HawthorneResearchLab_Movement_CameraPan1)
+    waitmovement(OBJ_EVENT_ID_CAMERA)
+
+    playmoncry(SPECIES_CHIKORITA, CRY_MODE_NORMAL)
+    applymovement(OBJ_CHIKORITA, Route301_HawthorneResearchLab_Movement_StarterHop)
+    waitmoncry
+    waitmovement(0)
+
+    speakername("Hawthorne")
+    msgbox(format("Chikorita, the Leaf Pokémon."))
+    closemessage
+
+    applymovement(OBJ_EVENT_ID_CAMERA, Route301_HawthorneResearchLab_Movement_CameraPan2)
+
+    playmoncry(SPECIES_CYNDAQUIL,CRY_MODE_NORMAL)
+    applymovement(OBJ_CYNDAQUIL, Route301_HawthorneResearchLab_Movement_StarterHop)
+    waitmoncry
+    waitmovement(0)
+
+    speakername("Hawthorne")
+    msgbox(format("Cyndaquil, the Fire Mouse Pokémon."))
+    closemessage
+
+    applymovement(OBJ_EVENT_ID_CAMERA, Route301_HawthorneResearchLab_Movement_CameraPan2)
+
+    playmoncry(SPECIES_TOTODILE, CRY_MODE_NORMAL)
+    applymovement(OBJ_TOTODILE, Route301_HawthorneResearchLab_Movement_StarterHop)
+    waitmoncry
+    waitmovement(0)
+
+    speakername("Hawthorne")
+    msgbox(format("And last but not least,\nTotodile, the Big Jaw Pokémon."))
+    closemessage
+
+    applymovement(OBJ_EVENT_ID_CAMERA, Route301_HawthorneResearchLab_Movement_CameraPan3)
+    waitmovement(OBJ_EVENT_ID_CAMERA)
+    special(RemoveCameraObject)
+}
+
+script Route301_HawthorneResearchLab_Trigger_WhereAreYouGoing {
+    lock
+    applymovement(OBJ_PROF_HAWTHORNE, Common_Movement_FacePlayer)
+    waitmovement(0)
+
+    speakername("Hawthorne")
+    msgbox(format("Where are you going?\nDon't you want to choose a Pokémon?"))
+    closemessage
+
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
+    waitmovement(0)
+    release
+}
+
+script Route301_HawthorneResearchLab_EventScript_ReceiveStarter {
+    bufferleadmonspeciesname(STR_VAR_1)
+    playfanfare(MUS_EVOLVED)
+    msgbox(format("You chose {STR_VAR_1}!"))
+    waitfanfare
+    msgbox(format("Would you like to give {STR_VAR_1} a nickname?"), MSGBOX_YESNO)
+    closemessage    
+
+    if (var(VAR_RESULT) == 1) {
+        setvar(VAR_0x8004, 0)
+        call(Common_EventScript_NameReceivedPartyMon)
+    }
+
+    switch(var(VAR_STARTER_MON)) {
+        case 0:
+           bufferspeciesname(STR_VAR_2, SPECIES_TOTODILE)
+        case 1:
+            bufferspeciesname(STR_VAR_2, SPECIES_CHIKORITA)
+        case 2:
+            bufferspeciesname(STR_VAR_2, SPECIES_CYNDAQUIL)
+    }
+
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown)
+    waitmovement(0)
+
+    speakername("{RIVAL}")
+    checkplayergender
+    if(var(VAR_RESULT) == FEMALE)
+    {
+        msgbox(Route301_HawthorneResearchLab_Text_ReceiveStarter_Caden1)
+    }
+    else
+    {
+        msgbox(Route301_HawthorneResearchLab_Text_ReceiveStarter_Holly1)
+    }
+    closemessage
+
+    switch(var(VAR_STARTER_MON)) {
+        case 0:
+            applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight)
+            applymovement(OBJ_RIVAL, Route301_HawthorneResearchLab_Movement_ReceiveStarter_RivalWalkToTotodile)
+        case 1:
+            applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft)
+            applymovement(OBJ_RIVAL, Route301_HawthorneResearchLab_Movement_ReceiveStarter_RivalWalkToChikorita)
+        case 2:
+            applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft)
+            applymovement(OBJ_RIVAL, Route301_HawthorneResearchLab_Movement_ReceiveStarter_RivalWalkToCyndaquil)
+    }
+    waitmovement(0)
+
+    if(var(VAR_RESULT) == FEMALE)
+    {
+        msgbox(Route301_HawthorneResearchLab_Text_ReceiveStarter_Caden2)
+    }
+    else
+    {
+        msgbox(Route301_HawthorneResearchLab_Text_ReceiveStarter_Holly2)
+    }
+
+    switch(var(VAR_STARTER_MON)) {
+        case 0:
+            playmoncry(SPECIES_TOTODILE, CRY_MODE_NORMAL)
+            applymovement(OBJ_TOTODILE, Route301_HawthorneResearchLab_Movement_StarterHop)
+
+            speakername("Totodile")
+            msgbox("Ararara!")
+            closemessage
+            waitmovement(0)
+            removeobject(OBJ_TOTODILE)
+            break
+
+        case 1:
+            playmoncry(SPECIES_CHIKORITA, CRY_MODE_NORMAL)
+            applymovement(OBJ_CHIKORITA, Route301_HawthorneResearchLab_Movement_StarterHop)
+
+            speakername("Chikorita")
+            msgbox("Ritarara!")
+            closemessage
+            waitmovement(0)
+            removeobject(OBJ_CHIKORITA)
+            break
+
+        case 2:
+            playmoncry(SPECIES_CYNDAQUIL, CRY_MODE_NORMAL)
+            applymovement(OBJ_CYNDAQUIL, Route301_HawthorneResearchLab_Movement_StarterHop)
+
+            speakername("Cyndaquil")
+            msgbox("Quililil!")
+            closemessage
+            waitmovement(0)
+            removeobject(OBJ_CYNDAQUIL)
+            break
+    }
+
+    applymovement(OBJ_PROF_HAWTHORNE, Common_Movement_WalkInPlaceFasterUp)
+    applymovement(OBJ_RIVAL, Common_Movement_WalkInPlaceFasterDown)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown)
+    waitmovement(0)
+
+    speakername("Hawthorne")
+    msgbox(Route301_HawthorneResearchLab_Text_ReceiveStarter_Hawthorne1)
+
+    setflag(FLAG_SYS_POKEMON_GET)
+    call(Route301_HawthorneResearchLab_EventScript_ExplainErrand)
+}
+
+text Route301_HawthorneResearchLab_Text_ReceiveStarter_Caden1 {
+    format("Oh, {STR_VAR_1}, huh? Yeah, I can see it.\p"
+           "You two look like a good match.")
+}
+
+text Route301_HawthorneResearchLab_Text_ReceiveStarter_Caden2 {
+    format( "You know what? A challenge is good! Makes things more exciting, right?"
+            "Alright, then... I'll pick {STR_VAR_2}\p"
+           "I can't wait to see how we both grow together!")
+}
+
+text Route301_HawthorneResearchLab_Text_ReceiveStarter_Holly1 {
+    format("Wow, {PLAYER}! Nice choice!\p"
+           "I think {STR_VAR_1} suits you perfectly.")
+}
+
+text Route301_HawthorneResearchLab_Text_ReceiveStarter_Holly2 {
+    format("Hmm, I think I'll go with {STR_VAR_2}!\nIt looks so strong--and cute, too!\p"
+           "I can't wait to see how we both grow together!")
+}
+
+text Route301_HawthorneResearchLab_Text_ReceiveStarter_Hawthorne1 {
+    format("Excellent choices!\nThese Pokémon will be your partners through thick and thin.\p"
+           "Treat them well, and they'll be sure to grow alongside you.")
+}
+
+movement Route301_HawthorneResearchLab_Movement_ReceiveStarter_RivalWalkToChikorita {
+    walk_up * 3
+    walk_in_place_faster_up
+}
+
+movement Route301_HawthorneResearchLab_Movement_ReceiveStarter_RivalWalkToCyndaquil {
+    walk_up * 3
+    walk_right
+    walk_in_place_faster_up
+}
+
+movement Route301_HawthorneResearchLab_Movement_ReceiveStarter_RivalWalkToTotodile {
+    walk_right * 2
+    walk_up * 3
+    walk_in_place_faster_up
+}
+
+script Route301_HawthorneResearchLab_EventScript_ExplainErrand {
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown)
+    applymovement(OBJ_RIVAL, Common_Movement_WalkInPlaceFasterDown)
+    applymovement(OBJ_PROF_HAWTHORNE, Common_Movement_WalkInPlaceFasterUp)
+    speakername("Hawthorne")
+    msgbox(Route301_HawthorneResearchLab_Text_ExplainErrand_Hawthorne1)
+    closemessage
+    
+    // playfanfare(MUS_OBTAIN_ITEM)
+    // msgbox(format("You obtained the Pokédex!"))
+    // waitfanfare
+
+    applymovement(OBJ_RIVAL, Common_Movement_WalkInPlaceFasterDown)
+    speakername("{RIVAL}")
+    checkplayergender
+    if(var(VAR_RESULT) == FEMALE)
+    {
+        msgbox(Route301_HawthorneResearchLab_Text_ExplainErrand_Caden1)
+    }
+    else
+    {
+        msgbox(Route301_HawthorneResearchLab_Text_ExplainErrand_Holly1)
+    }
+
+    speakername("Hawthorne")
+    msgbox(Route301_HawthorneResearchLab_Text_ExplainErrand_Hawthorne2)
+
+    // setflag(FLAG_SYS_POKEDEX_GET)
+    // special(SetUnlockedPokedexFlags)
+    fadescreen(FADE_TO_BLACK)
+    setvar(VAR_HAWTHORNE_LAB_STATE, 2)
+    setvar(VAR_ROUTE301_STATE, 1)
+    setflag(FLAG_CHOSE_STARTER)
+    removeobject(OBJ_CHIKORITA)
+    removeobject(OBJ_CYNDAQUIL)
+    removeobject(OBJ_TOTODILE)
+    fadescreen(FADE_FROM_BLACK)
+}
+
+text Route301_HawthorneResearchLab_Text_ExplainErrand_Hawthorne1 {
+    format("Now that you've both chosen your Pokémon, I have a favor to ask of you two.\p"
+           "{RIVAL}, I need this package delivered to the Pokémon Trainer School in Dolomite City.\p"
+           "It contains some very important materials, and I trust you to handle it carefully.\p"
+           "As for you, {PLAYER}, I could use some help cataloging Pokémon habitats on Route 301.\p"
+           "Think of it as a chance to get to know your new partner better!")
+}
+
+// text Route301_HawthorneResearchLab_Text_ExplainErrand_Hawthorne2 {
+//     format("Oh, before I forget--this is a Pokédex!\p"
+//            "It's a high-tech device that records data on any Pokémon you encounter or catch.\p"
+//            "By using it, you'll be helping to expand our knowledge of the Pokémon in the Avaro Region.\p"
+//            "Try to catch as many different Pokémon as you can to fill it out!")
+// }
+
+// text Route301_HawthorneResearchLab_Text_ExplainErrand_Hawthorne3 {
+//     format("These are Poké Balls, used for catching wild Pokémon.\p"
+//            "You'll need them to catch Pokémon in the wild.\p"
+//            "Take a few to get started!")
+// }
+
+text Route301_HawthorneResearchLab_Text_ExplainErrand_Caden1 {
+    format( "Wait, hang on--why don't I do the fieldwork and let {PLAYER} deliver the package?\p"
+            "You're the one who always says I need more experience in the field!")
+}
+
+text Route301_HawthorneResearchLab_Text_ExplainErrand_Holly1 {
+    format( "Oh, Professor, wouldn't it make more sense if I stayed to help with the fieldwork?\p"
+            "You always say it's important to study Pokémon up close!")
+}
+
+text Route301_HawthorneResearchLab_Text_ExplainErrand_Hawthorne2 {
+    format( "Hahaha! Fair enough.\nLet's switch things around.\p"
+            "{RIVAL}, you'll stay here for fieldwork. And you, {PLAYER}, can deliver the package to Dolomite City's Trainer School.\p"
+            "Once you're both done, come back here and we'll get started on your second research assignment.\p"
+            "Oh, but before you go, don't forget to tell your parents where you're headed!\p"
+            "I don't want to be the one to get a call from them asking where you've run off to... again!")
+}
+
+script Route301_HawthorneResearchLab_EventScript_Chikorita {
+    lock
+
+    showmonpic(SPECIES_CHIKORITA, 10, 3)
+    playmoncry(SPECIES_CHIKORITA, CRY_MODE_NORMAL)
+
+    speakername("Chikorita")
+    msgbox("Pakaan?")
+    
+    speakername("Hawthorne")
+    msgbox(format("Chikorita is a Grass-type Pokémon.\p"
+                  "It uses the leaf on its head to determine the air's temperature and humidity. It loves to sunbathe.\p"
+                  "Would you like to choose the Grass-type Pokémon, Chikorita?"), MSGBOX_YESNO)
+
+    hidemonpic
+
+    if(var(VAR_RESULT) == YES) {
+        playmoncry(SPECIES_CHIKORITA, CRY_MODE_NORMAL)
+        applymovement(OBJ_CHIKORITA, Route301_HawthorneResearchLab_Movement_StarterHop)
+
+        speakername("Chikorita")
+        msgbox("Ritarara!")
+        closemessage
+        waitmovement(0)
+
+        givemon(SPECIES_CHIKORITA, 5)
+        setvar(VAR_STARTER_MON, 0)
+
+        removeobject(OBJ_CHIKORITA)
+        call(Route301_HawthorneResearchLab_EventScript_ReceiveStarter)
+    }
+    releaseall
+}
+
+script Route301_HawthorneResearchLab_EventScript_Cyndaquil {
+    lock
+
+    showmonpic(SPECIES_CYNDAQUIL, 10, 3)
+    playmoncry(SPECIES_CYNDAQUIL, CRY_MODE_NORMAL)
+
+    speakername("Cyndaquil")
+    msgbox("...Quil?")
+
+    speakername("Hawthorne")
+    msgbox(format("Cyndaquil is a Fire-type Pokémon.\p"
+                  "It has a timid nature. If it is startled, the flames on its back burn more vigorously.\p"
+                  "Would you like to choose the Fire-type Pokémon, Cyndaquil?"), MSGBOX_YESNO)
+
+    hidemonpic
+
+    if(var(VAR_RESULT) == YES) {
+        playmoncry(SPECIES_CYNDAQUIL, CRY_MODE_NORMAL)
+        applymovement(OBJ_CYNDAQUIL, Route301_HawthorneResearchLab_Movement_StarterHop)
+
+        speakername("Cyndaquil")
+        msgbox("Quililil!")
+        closemessage
+        waitmovement(0)
+
+        givemon(SPECIES_CYNDAQUIL, 5)
+        setvar(VAR_STARTER_MON, 1)
+
+        removeobject(OBJ_CYNDAQUIL)
+        call(Route301_HawthorneResearchLab_EventScript_ReceiveStarter)
+    }
+    releaseall
+}
+
+script Route301_HawthorneResearchLab_EventScript_Totodile {
+    lock
+
+    showmonpic(SPECIES_TOTODILE, 10, 3)
+    playmoncry(SPECIES_TOTODILE, CRY_MODE_NORMAL)
+
+    speakername("Totodile")
+    msgbox("Aradun!")
+
+    speakername("Hawthorne")
+    msgbox(format("Totodile is a Water-type Pokémon.\p"
+                  "It has a habit of biting everything with its well-developed jaws. Even its Trainer needs to be careful.\p"
+                  "Would you like to choose the Water-type Pokémon, Totodile?"), MSGBOX_YESNO)
+
+    hidemonpic
+
+    if(var(VAR_RESULT) == YES) {
+        playmoncry(SPECIES_TOTODILE, CRY_MODE_NORMAL)
+        applymovement(OBJ_TOTODILE, Route301_HawthorneResearchLab_Movement_StarterHop)
+
+        speakername("Totodile")
+        msgbox("Ararara!")
+        closemessage
+        waitmovement(0)
+
+        givemon(SPECIES_TOTODILE, 5)
+        setvar(VAR_STARTER_MON, 2)
+
+        removeobject(OBJ_TOTODILE)
+        call(Route301_HawthorneResearchLab_EventScript_ReceiveStarter)
+    }
+    releaseall
+}
+
+movement Route301_HawthorneResearchLab_Movement_Rival_WalkIntoLab {
+    walk_up * 5
     walk_left
     walk_in_place_up
 }
 
-movement Player_WalkIntoLab {
-    walk_up * 5
+movement Route301_HawthorneResearchLab_Movement_Player_WalkIntoLab {
+    walk_up * 6
 }
 
-text Hawthorne1 {
-    format("Ah, {RIVAL}! Right on time, as usual.\nI was just about to--oh? Who's this with you?")
+text Route301_HawthorneResearchLab_Text_MeetProf_ProfHawthorne1 {
+    format("Ah, {RIVAL}! Right on time, as usual.\nI was just about to--oh?\lWho's this with you?")
+}
+
+text Route301_HawthorneResearchLab_Text_MeetProf_ProfHawthorne2 {
+    format("Welcome to my Research Lab, {PLAYER}!\nI'm Professor Hawthorne, and I study Pokémon habitats and how they interact with human communities here in Avaro.")
+}
+
+text Route301_HawthorneResearchLab_Text_MeetProf_ProfHawthorne3 {
+    format("You've come at the perfect time.\nI was just about to let {RIVAL} choose their first Pokémon.\p"
+           "{PLAYER}, since you're here, why don't you take one too?\p"
+           "A Trainer's journey is always better with a partner by your side.")
+}
+
+text Route301_HawthorneResearchLab_Text_MeetProf_ProfHawthorne4 {
+    format("Each one is a unique species with its own strengths and weaknesses.\p"
+           "Take your time and choose the one that speaks to you the most.")
+}
+
+text Route301_HawthorneResearchLab_Text_MeetProf_Caden1 {
+   format("This is my new neighbor, {PLAYER}--the one I told you moved in yesterday.\p"
+          "Thought I'd bring her along to see the lab.")
+}
+
+text Route301_HawthorneResearchLab_Text_MeetProf_Holly1 {
+   format("Oh, this is my new neighbor, {PLAYER}! He just moved here from Hoenn.\p"
+          "I thought you wouldn't mind if they tagged along.")
+}
+
+movement Route301_HawthorneResearchLab_Movement_CameraPan1 {
+    walk_fast_left
+    walk_fast_up * 4
+}
+
+movement Route301_HawthorneResearchLab_Movement_CameraPan2 {
+    walk_slow_right
+}
+
+movement Route301_HawthorneResearchLab_Movement_CameraPan3 {
+    walk_fast_down * 4
+    walk_fast_left
+}
+
+movement Route301_HawthorneResearchLab_Movement_StarterHop {
+    jump_in_place_up_down
+    delay_16 * 2
 }

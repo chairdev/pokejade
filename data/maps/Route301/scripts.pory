@@ -41,6 +41,11 @@ script Route301_Trigger_CalledByRival {
     applymovement(OBJ_RIVAL, Common_Movement_WalkInPlaceFasterUp)
     waitmovement(0)
 
+    speakername("{RIVAL}")
+    msgbox(Route301_Text_GoToLabWithRival_Rival1)
+    closemessage
+
+    checkplayergender
     if(var(VAR_RESULT) == FEMALE)
     {
         playbgm(MUS_ENCOUNTER_BRENDAN, TRUE)
@@ -49,10 +54,6 @@ script Route301_Trigger_CalledByRival {
     {
         playbgm(MUS_ENCOUNTER_MAY, TRUE)
     }
-
-    speakername("{RIVAL}")
-    msgbox(Route301_Text_GoToLabWithRival_Rival1)
-    closemessage
 
 }
 
@@ -98,6 +99,8 @@ script Route301_Trigger_GoToLabWithRival {
     }
     closemessage
 
+    applymovement(OBJ_RIVAL, Common_Movement_WalkInPlaceFasterUp)
+    waitmovement(0)
     opendoor(17, 21)
     waitdooranim
     applymovement(OBJ_RIVAL, Common_Movement_WalkUp)
