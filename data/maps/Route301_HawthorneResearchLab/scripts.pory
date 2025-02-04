@@ -307,7 +307,8 @@ script Route301_HawthorneResearchLab_EventScript_ExplainErrand {
 
     speakername("Hawthorne")
     msgbox(Route301_HawthorneResearchLab_Text_ExplainErrand_Hawthorne2)
-
+    closemessage
+    
     // setflag(FLAG_SYS_POKEDEX_GET)
     // special(SetUnlockedPokedexFlags)
     fadescreen(FADE_TO_BLACK)

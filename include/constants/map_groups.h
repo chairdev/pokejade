@@ -607,8 +607,7 @@
 
 // gMapGroup_IndoorEverwood
 #define MAP_EVERWOOD_TOWN_HAWTHORN_RESEARCH_LAB (0 | (34 << 8))
-#define MAP_EVERWOOD_TOWN_PLAYERS_HOUSE_1F      (1 | (34 << 8))
-#define MAP_EVERWOOD_TOWN_PLAYERS_HOUSE_2F      (2 | (34 << 8))
+#define MAP_EVERWOOD_TOWN_PLAYERS_HOUSE_2F      (1 | (34 << 8))
 
 // gMapGroup_IndoorBaycrest
 #define MAP_BAYCREST_CITY_POKEMON_CENTER_1F     (0 | (35 << 8))

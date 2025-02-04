@@ -23806,7 +23806,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9546
-    [TRAINER_CADEN_BAYCREST_QUAXLY] =
+    [TRAINER_CADEN_ROUTE_301_TOTODILE] =
     {
 #line 9547
         .trainerName = _("Caden"),
@@ -23826,12 +23826,12 @@ F_TRAINER_FEMALE |
         {
             {
 #line 9555
-            .species = SPECIES_FENNEKIN,
+            .species = SPECIES_CYNDAQUIL,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9557
             .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
 #line 9556
-            .lvl = 7,
+            .lvl = 5,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -23946,7 +23946,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9601
-    [TRAINER_CADEN_BAYCREST_TURTWIG] =
+    [TRAINER_CADEN_ROUTE_301_CHIKORITA] =
     {
 #line 9602
         .trainerName = _("Caden"),
@@ -23966,12 +23966,12 @@ F_TRAINER_FEMALE |
         {
             {
 #line 9610
-            .species = SPECIES_QUAXLY,
+            .species = SPECIES_TOTODILE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9612
             .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
 #line 9611
-            .lvl = 7,
+            .lvl = 5,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -24086,7 +24086,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9656
-    [TRAINER_CADEN_BAYCREST_FENNEKIN] =
+    [TRAINER_CADEN_ROUTE_301_CYNDAQUIL] =
     {
 #line 9657
         .trainerName = _("Caden"),
@@ -24106,12 +24106,12 @@ F_TRAINER_FEMALE |
         {
             {
 #line 9665
-            .species = SPECIES_TURTWIG,
+            .species = SPECIES_CHIKORITA,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9667
             .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
 #line 9666
-            .lvl = 7,
+            .lvl = 5,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -24226,7 +24226,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9711
-    [TRAINER_HOLLY_BAYCREST_QUAXLY] =
+    [TRAINER_HOLLY_ROUTE_301_TOTODILE] =
     {
 #line 9712
         .trainerName = _("Holly"),
@@ -24248,12 +24248,12 @@ F_TRAINER_FEMALE |
         {
             {
 #line 9720
-            .species = SPECIES_FENNEKIN,
+            .species = SPECIES_CYNDAQUIL,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9722
             .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
 #line 9721
-            .lvl = 7,
+            .lvl = 5,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -24372,7 +24372,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9766
-    [TRAINER_HOLLY_BAYCREST_TURTWIG] =
+    [TRAINER_HOLLY_ROUTE_301_CHIKORITA] =
     {
 #line 9767
         .trainerName = _("Holly"),
@@ -24394,12 +24394,12 @@ F_TRAINER_FEMALE |
         {
             {
 #line 9775
-            .species = SPECIES_QUAXLY,
+            .species = SPECIES_TOTODILE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9777
             .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
 #line 9776
-            .lvl = 7,
+            .lvl = 5,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -24518,7 +24518,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9821
-    [TRAINER_HOLLY_BAYCREST_FENNEKIN] =
+    [TRAINER_HOLLY_ROUTE_301_CYNDAQUIL] =
     {
 #line 9822
         .trainerName = _("Holly"),
@@ -24540,12 +24540,12 @@ F_TRAINER_FEMALE |
         {
             {
 #line 9830
-            .species = SPECIES_TURTWIG,
+            .species = SPECIES_CHIKORITA,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9832
             .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
 #line 9831
-            .lvl = 7,
+            .lvl = 5,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },

@@ -9543,7 +9543,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Psychic
 - Future Sight
 
-=== TRAINER_CADEN_BAYCREST_QUAXLY ===
+=== TRAINER_CADEN_ROUTE_301_TOTODILE ===
 Name: Caden
 Class: Rival
 Pic: Brendan
@@ -9552,8 +9552,8 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Force Setup First Turn / Ace Pokemon
 
-Fennekin
-Level: 7
+Cyndaquil
+Level: 5
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_CADEN_ROUTE_110_MUDKIP ===
@@ -9598,7 +9598,7 @@ Grovyle
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_CADEN_BAYCREST_TURTWIG ===
+=== TRAINER_CADEN_ROUTE_301_CHIKORITA ===
 Name: Caden
 Class: Rival
 Pic: Brendan
@@ -9607,8 +9607,8 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Force Setup First Turn / Ace Pokemon
 
-Quaxly
-Level: 7
+Totodile
+Level: 5
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_CADEN_ROUTE_110_TREECKO ===
@@ -9653,7 +9653,7 @@ Combusken
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_CADEN_BAYCREST_FENNEKIN ===
+=== TRAINER_CADEN_ROUTE_301_CYNDAQUIL ===
 Name: Caden
 Class: Rival
 Pic: Brendan
@@ -9662,8 +9662,8 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Force Setup First Turn / Ace Pokemon
 
-Turtwig
-Level: 7
+Chikorita
+Level: 5
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_CADEN_ROUTE_110_TORCHIC ===
@@ -9708,7 +9708,7 @@ Marshtomp
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_HOLLY_BAYCREST_QUAXLY ===
+=== TRAINER_HOLLY_ROUTE_301_TOTODILE ===
 Name: Holly
 Class: Rival
 Pic: May
@@ -9717,8 +9717,8 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Force Setup First Turn / Ace Pokemon
 
-Fennekin
-Level: 7
+Cyndaquil
+Level: 5
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_MAY_ROUTE_110_MUDKIP ===
@@ -9763,7 +9763,7 @@ Grovyle
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_HOLLY_BAYCREST_TURTWIG ===
+=== TRAINER_HOLLY_ROUTE_301_CHIKORITA ===
 Name: Holly
 Class: Rival
 Pic: May
@@ -9772,8 +9772,8 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Quaxly
-Level: 7
+Totodile
+Level: 5
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_MAY_ROUTE_110_TREECKO ===
@@ -9818,7 +9818,7 @@ Combusken
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_HOLLY_BAYCREST_FENNEKIN ===
+=== TRAINER_HOLLY_ROUTE_301_CYNDAQUIL ===
 Name: Holly
 Class: Rival
 Pic: May
@@ -9827,8 +9827,8 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Force Setup First Turn / Ace Pokemon
 
-Turtwig
-Level: 7
+Chikorita
+Level: 5
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_MAY_ROUTE_110_TORCHIC ===

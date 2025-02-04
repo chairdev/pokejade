@@ -1158,7 +1158,7 @@ EventScript_VsSeekerChargingDone::
 
 	.include "data/maps/EverwoodTown_HawthornResearchLab/scripts.inc"
 
-	.include "data/maps/EverwoodTown_PlayersHouse_1F/scripts.inc"
+	
 
 	.include "data/maps/EverwoodTown_PlayersHouse_2F/scripts.inc"
 

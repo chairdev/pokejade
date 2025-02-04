@@ -10,6 +10,113 @@ mapscripts Route301_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
         call(Common_EventScript_SetupRivalGfxId)
     }
+
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_ROUTE301_STATE, 1: Route301_MapScript_FirstRivalBattle
+    ]
+}
+
+script Route301_MapScript_FirstRivalBattle {
+    speakername("{RIVAL}")
+    msgbox("{PLAYER}!\nHey, wait up!")
+
+    opendoor(17, 21)
+    waitdooranim
+    //showobject(OBJ_RIVAL)
+    setobjectxy(OBJ_RIVAL, 17, 21)
+    applymovement(OBJ_EVENT_ID_PLAYER, Route301_Movement_FirstRivalBattle_WalkDown)
+    applymovement(OBJ_RIVAL, Route301_Movement_FirstRivalBattle_WalkDown)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp)
+    waitmovement(0)
+    applymovement(OBJ_RIVAL, Common_Movement_WalkInPlaceFasterDown)
+
+    speakername("{RIVAL}")
+    checkplayergender
+    if(var(VAR_RESULT) == FEMALE)
+    {
+        msgbox(Route301_Text_FirstRivalBattle_Caden1)
+        dynmultichoice(20, 8, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE,
+        "Sure!", "No way!")
+
+        if(var(VAR_RESULT) == NO)
+        {
+            msgbox(Route301_Text_FirstRivalBattle_CadenNo)
+        }
+
+        msgbox(Route301_Text_FirstRivalBattle_Caden2)
+        closemessage
+
+        switch(var(VAR_STARTER_MON)) {
+        case 0:
+            trainerbattle_no_intro(TRAINER_CADEN_ROUTE_301_CHIKORITA, BaycrestCity_Text_CadenDefeated)
+            break
+        case 1:
+            trainerbattle_no_intro(TRAINER_CADEN_ROUTE_301_CYNDAQUIL, BaycrestCity_Text_CadenDefeated)
+            break   
+        case 2:
+            trainerbattle_no_intro(TRAINER_CADEN_ROUTE_301_TOTODILE, BaycrestCity_Text_CadenDefeated)
+            break
+        }
+    }
+    else
+    {
+        msgbox(Route301_Text_FirstRivalBattle_Holly1)
+        dynmultichoice(20, 8, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE,
+        "Sure!", "No way!")
+
+        if(var(VAR_RESULT) == NO)
+        {
+            msgbox(Route301_Text_FirstRivalBattle_HollyNo)
+        }
+
+        msgbox(Route301_Text_FirstRivalBattle_Holly2)
+        closemessage
+
+        switch(var(VAR_STARTER_MON)) {
+        case 0:
+            trainerbattle_no_intro(TRAINER_HOLLY_ROUTE_301_CHIKORITA, BaycrestCity_Text_HollyDefeated)
+            break
+        case 1:
+            trainerbattle_no_intro(TRAINER_HOLLY_ROUTE_301_CYNDAQUIL, BaycrestCity_Text_HollyDefeated)
+            break
+        case 2:
+            trainerbattle_no_intro(TRAINER_HOLLY_ROUTE_301_TOTODILE, BaycrestCity_Text_HollyDefeated)
+            break
+        }
+    }
+}
+
+movement Route301_Movement_FirstRivalBattle_WalkDown {
+    walk_down
+}
+
+text Route301_Text_FirstRivalBattle_Caden1 {
+    format("Hey, before you go running off to Dolomite, let's see what you've got.\p"
+           "We can't call ourselves rivals until we've battled, right?")
+}
+
+text Route301_Text_FirstRivalBattle_Holly1 {
+    format("Wait! Before you leave, let's have a quick battle.\p"
+           "It's the best way to get to know each other--and our new Pokémon--right?")
+}
+
+text Route301_Text_FirstRivalBattle_CadenNo {
+    format("Oh, come on! Don't be like that!\p"
+           "We're both new trainers, so we should battle to see who's better!")
+}
+
+text Route301_Text_FirstRivalBattle_HollyNo {
+    format("But... why not?\p"
+           "It's just a friendly battle, right?")
+}
+
+text Route301_Text_FirstRivalBattle_Caden2 {
+    format("Ready or not, here I come!")
+}
+
+text Route301_Text_FirstRivalBattle_Holly2 {
+    format("I've made up my mind!\nI'm going to win!")
 }
 
 script Route301_Trigger_MeetRival1 {

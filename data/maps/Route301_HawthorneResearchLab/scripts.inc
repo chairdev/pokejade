@@ -446,21 +446,23 @@ Route301_HawthorneResearchLab_EventScript_ExplainErrand_1:
 	speakername Route301_HawthorneResearchLab_MapScript_MeetProf_Text_6
 # 309 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	msgbox Route301_HawthorneResearchLab_Text_ExplainErrand_Hawthorne2
-# 313 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	fadescreen FADE_TO_BLACK
+# 310 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+	closemessage
 # 314 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	setvar VAR_HAWTHORNE_LAB_STATE, 2
+	fadescreen FADE_TO_BLACK
 # 315 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	setvar VAR_ROUTE301_STATE, 1
+	setvar VAR_HAWTHORNE_LAB_STATE, 2
 # 316 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	setflag FLAG_CHOSE_STARTER
+	setvar VAR_ROUTE301_STATE, 1
 # 317 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	removeobject 3
+	setflag FLAG_CHOSE_STARTER
 # 318 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	removeobject 4
+	removeobject 3
 # 319 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	removeobject 5
+	removeobject 4
 # 320 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+	removeobject 5
+# 321 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	fadescreen FADE_FROM_BLACK
 	return
 
@@ -471,227 +473,227 @@ Route301_HawthorneResearchLab_EventScript_ExplainErrand_2:
 
 
 Route301_HawthorneResearchLab_EventScript_Chikorita::
-# 363 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 364 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	lock
-# 365 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	showmonpic SPECIES_CHIKORITA, 10, 3
 # 366 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+	showmonpic SPECIES_CHIKORITA, 10, 3
+# 367 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	playmoncry SPECIES_CHIKORITA, CRY_MODE_NORMAL
-# 368 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	speakername Route301_HawthorneResearchLab_EventScript_ReceiveStarter_Text_4
 # 369 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+	speakername Route301_HawthorneResearchLab_EventScript_ReceiveStarter_Text_4
+# 370 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	msgbox Route301_HawthorneResearchLab_EventScript_Chikorita_Text_0
-# 371 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	speakername Route301_HawthorneResearchLab_MapScript_MeetProf_Text_6
 # 372 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+	speakername Route301_HawthorneResearchLab_MapScript_MeetProf_Text_6
+# 373 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	msgbox Route301_HawthorneResearchLab_EventScript_Chikorita_Text_1, MSGBOX_YESNO
-# 376 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 377 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	hidemonpic
-# 378 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 379 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Route301_HawthorneResearchLab_EventScript_Chikorita_2
 Route301_HawthorneResearchLab_EventScript_Chikorita_1:
-# 393 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 394 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	releaseall
 	return
 
 Route301_HawthorneResearchLab_EventScript_Chikorita_2:
-# 379 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	playmoncry SPECIES_CHIKORITA, CRY_MODE_NORMAL
 # 380 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+	playmoncry SPECIES_CHIKORITA, CRY_MODE_NORMAL
+# 381 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	applymovement 3, Route301_HawthorneResearchLab_Movement_StarterHop
-# 382 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	speakername Route301_HawthorneResearchLab_EventScript_ReceiveStarter_Text_4
 # 383 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	msgbox Route301_HawthorneResearchLab_EventScript_ReceiveStarter_Text_5
+	speakername Route301_HawthorneResearchLab_EventScript_ReceiveStarter_Text_4
 # 384 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	closemessage
+	msgbox Route301_HawthorneResearchLab_EventScript_ReceiveStarter_Text_5
 # 385 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+	closemessage
+# 386 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	waitmovement 0
-# 387 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	givemon SPECIES_CHIKORITA, 5
 # 388 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+	givemon SPECIES_CHIKORITA, 5
+# 389 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	setvar VAR_STARTER_MON, 0
-# 390 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	removeobject 3
 # 391 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+	removeobject 3
+# 392 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	call Route301_HawthorneResearchLab_EventScript_ReceiveStarter
 	goto Route301_HawthorneResearchLab_EventScript_Chikorita_1
 
 
 Route301_HawthorneResearchLab_EventScript_Cyndaquil::
-# 397 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 398 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	lock
-# 399 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	showmonpic SPECIES_CYNDAQUIL, 10, 3
 # 400 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+	showmonpic SPECIES_CYNDAQUIL, 10, 3
+# 401 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	playmoncry SPECIES_CYNDAQUIL, CRY_MODE_NORMAL
-# 402 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	speakername Route301_HawthorneResearchLab_EventScript_ReceiveStarter_Text_6
 # 403 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+	speakername Route301_HawthorneResearchLab_EventScript_ReceiveStarter_Text_6
+# 404 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	msgbox Route301_HawthorneResearchLab_EventScript_Cyndaquil_Text_0
-# 405 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	speakername Route301_HawthorneResearchLab_MapScript_MeetProf_Text_6
 # 406 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+	speakername Route301_HawthorneResearchLab_MapScript_MeetProf_Text_6
+# 407 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	msgbox Route301_HawthorneResearchLab_EventScript_Cyndaquil_Text_1, MSGBOX_YESNO
-# 410 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 411 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	hidemonpic
-# 412 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 413 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Route301_HawthorneResearchLab_EventScript_Cyndaquil_2
 Route301_HawthorneResearchLab_EventScript_Cyndaquil_1:
-# 427 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 428 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	releaseall
 	return
 
 Route301_HawthorneResearchLab_EventScript_Cyndaquil_2:
-# 413 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	playmoncry SPECIES_CYNDAQUIL, CRY_MODE_NORMAL
 # 414 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+	playmoncry SPECIES_CYNDAQUIL, CRY_MODE_NORMAL
+# 415 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	applymovement 4, Route301_HawthorneResearchLab_Movement_StarterHop
-# 416 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	speakername Route301_HawthorneResearchLab_EventScript_ReceiveStarter_Text_6
 # 417 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	msgbox Route301_HawthorneResearchLab_EventScript_ReceiveStarter_Text_7
+	speakername Route301_HawthorneResearchLab_EventScript_ReceiveStarter_Text_6
 # 418 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	closemessage
+	msgbox Route301_HawthorneResearchLab_EventScript_ReceiveStarter_Text_7
 # 419 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+	closemessage
+# 420 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	waitmovement 0
-# 421 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	givemon SPECIES_CYNDAQUIL, 5
 # 422 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+	givemon SPECIES_CYNDAQUIL, 5
+# 423 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	setvar VAR_STARTER_MON, 1
-# 424 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	removeobject 4
 # 425 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+	removeobject 4
+# 426 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	call Route301_HawthorneResearchLab_EventScript_ReceiveStarter
 	goto Route301_HawthorneResearchLab_EventScript_Cyndaquil_1
 
 
 Route301_HawthorneResearchLab_EventScript_Totodile::
-# 431 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 432 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	lock
-# 433 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	showmonpic SPECIES_TOTODILE, 10, 3
 # 434 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+	showmonpic SPECIES_TOTODILE, 10, 3
+# 435 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	playmoncry SPECIES_TOTODILE, CRY_MODE_NORMAL
-# 436 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	speakername Route301_HawthorneResearchLab_EventScript_ReceiveStarter_Text_2
 # 437 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+	speakername Route301_HawthorneResearchLab_EventScript_ReceiveStarter_Text_2
+# 438 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	msgbox Route301_HawthorneResearchLab_EventScript_Totodile_Text_0
-# 439 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	speakername Route301_HawthorneResearchLab_MapScript_MeetProf_Text_6
 # 440 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+	speakername Route301_HawthorneResearchLab_MapScript_MeetProf_Text_6
+# 441 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	msgbox Route301_HawthorneResearchLab_EventScript_Totodile_Text_1, MSGBOX_YESNO
-# 444 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 445 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	hidemonpic
-# 446 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 447 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Route301_HawthorneResearchLab_EventScript_Totodile_2
 Route301_HawthorneResearchLab_EventScript_Totodile_1:
-# 461 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 462 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	releaseall
 	return
 
 Route301_HawthorneResearchLab_EventScript_Totodile_2:
-# 447 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	playmoncry SPECIES_TOTODILE, CRY_MODE_NORMAL
 # 448 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+	playmoncry SPECIES_TOTODILE, CRY_MODE_NORMAL
+# 449 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	applymovement 5, Route301_HawthorneResearchLab_Movement_StarterHop
-# 450 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	speakername Route301_HawthorneResearchLab_EventScript_ReceiveStarter_Text_2
 # 451 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	msgbox Route301_HawthorneResearchLab_EventScript_ReceiveStarter_Text_3
+	speakername Route301_HawthorneResearchLab_EventScript_ReceiveStarter_Text_2
 # 452 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	closemessage
+	msgbox Route301_HawthorneResearchLab_EventScript_ReceiveStarter_Text_3
 # 453 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+	closemessage
+# 454 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	waitmovement 0
-# 455 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	givemon SPECIES_TOTODILE, 5
 # 456 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+	givemon SPECIES_TOTODILE, 5
+# 457 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	setvar VAR_STARTER_MON, 2
-# 458 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	removeobject 5
 # 459 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+	removeobject 5
+# 460 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	call Route301_HawthorneResearchLab_EventScript_ReceiveStarter
 	goto Route301_HawthorneResearchLab_EventScript_Totodile_1
 
 
-# 464 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 465 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 Route301_HawthorneResearchLab_Movement_Rival_WalkIntoLab:
-# 465 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	walk_up
-# 465 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	walk_up
-# 465 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	walk_up
-# 465 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	walk_up
-# 465 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 466 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	walk_up
 # 466 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	walk_left
+	walk_up
+# 466 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+	walk_up
+# 466 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+	walk_up
+# 466 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+	walk_up
 # 467 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+	walk_left
+# 468 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 470 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 471 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 Route301_HawthorneResearchLab_Movement_Player_WalkIntoLab:
-# 471 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 472 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	walk_up
-# 471 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 472 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	walk_up
-# 471 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 472 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	walk_up
-# 471 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 472 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	walk_up
-# 471 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 472 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	walk_up
-# 471 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 472 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	walk_up
 	step_end
 
-# 503 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-Route301_HawthorneResearchLab_Movement_CameraPan1:
 # 504 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+Route301_HawthorneResearchLab_Movement_CameraPan1:
+# 505 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	walk_fast_left
-# 505 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 506 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	walk_fast_up
-# 505 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 506 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	walk_fast_up
-# 505 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 506 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	walk_fast_up
-# 505 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 506 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	walk_fast_up
 	step_end
 
-# 508 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-Route301_HawthorneResearchLab_Movement_CameraPan2:
 # 509 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+Route301_HawthorneResearchLab_Movement_CameraPan2:
+# 510 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	walk_slow_right
 	step_end
 
-# 512 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 513 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 Route301_HawthorneResearchLab_Movement_CameraPan3:
-# 513 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	walk_fast_down
-# 513 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	walk_fast_down
-# 513 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-	walk_fast_down
-# 513 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 514 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	walk_fast_down
 # 514 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+	walk_fast_down
+# 514 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+	walk_fast_down
+# 514 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+	walk_fast_down
+# 515 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	walk_fast_left
 	step_end
 
-# 517 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
-Route301_HawthorneResearchLab_Movement_StarterHop:
 # 518 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+Route301_HawthorneResearchLab_Movement_StarterHop:
+# 519 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	jump_in_place_up_down
-# 519 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 520 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	delay_16
-# 519 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 520 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	delay_16
 	step_end
 
@@ -776,11 +778,11 @@ Route301_HawthorneResearchLab_EventScript_ReceiveStarter_Text_7:
 	.string "Quililil!$"
 
 Route301_HawthorneResearchLab_EventScript_Chikorita_Text_0:
-# 369 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 370 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	.string "Pakaan?$"
 
 Route301_HawthorneResearchLab_EventScript_Chikorita_Text_1:
-# 372 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 373 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	.string "Chikorita is a Grass-type Pokémon.\p"
 	.string "It uses the leaf on its head to\n"
 	.string "determine the air's temperature and\l"
@@ -789,11 +791,11 @@ Route301_HawthorneResearchLab_EventScript_Chikorita_Text_1:
 	.string "Grass-type Pokémon, Chikorita?$"
 
 Route301_HawthorneResearchLab_EventScript_Cyndaquil_Text_0:
-# 403 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 404 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	.string "...Quil?$"
 
 Route301_HawthorneResearchLab_EventScript_Cyndaquil_Text_1:
-# 406 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 407 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	.string "Cyndaquil is a Fire-type Pokémon.\p"
 	.string "It has a timid nature. If it is startled,\n"
 	.string "the flames on its back burn more\l"
@@ -802,11 +804,11 @@ Route301_HawthorneResearchLab_EventScript_Cyndaquil_Text_1:
 	.string "Pokémon, Cyndaquil?$"
 
 Route301_HawthorneResearchLab_EventScript_Totodile_Text_0:
-# 437 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 438 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	.string "Aradun!$"
 
 Route301_HawthorneResearchLab_EventScript_Totodile_Text_1:
-# 440 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 441 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	.string "Totodile is a Water-type Pokémon.\p"
 	.string "It has a habit of biting everything with\n"
 	.string "its well-developed jaws. Even its\l"
@@ -850,7 +852,7 @@ Route301_HawthorneResearchLab_Text_ReceiveStarter_Hawthorne1::
 	.string "grow alongside you.$"
 
 Route301_HawthorneResearchLab_Text_ExplainErrand_Hawthorne1::
-# 323 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 324 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	.string "Now that you've both chosen your\n"
 	.string "Pokémon, I have a favor to ask of you\l"
 	.string "two.\p"
@@ -867,7 +869,7 @@ Route301_HawthorneResearchLab_Text_ExplainErrand_Hawthorne1::
 	.string "your new partner better!$"
 
 Route301_HawthorneResearchLab_Text_ExplainErrand_Caden1::
-# 344 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 345 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	.string "Wait, hang on--why don't I do the\n"
 	.string "fieldwork and let {PLAYER} deliver\l"
 	.string "the package?\p"
@@ -875,7 +877,7 @@ Route301_HawthorneResearchLab_Text_ExplainErrand_Caden1::
 	.string "more experience in the field!$"
 
 Route301_HawthorneResearchLab_Text_ExplainErrand_Holly1::
-# 349 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 350 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	.string "Oh, Professor, wouldn't it make more\n"
 	.string "sense if I stayed to help with the\l"
 	.string "fieldwork?\p"
@@ -883,7 +885,7 @@ Route301_HawthorneResearchLab_Text_ExplainErrand_Holly1::
 	.string "Pokémon up close!$"
 
 Route301_HawthorneResearchLab_Text_ExplainErrand_Hawthorne2::
-# 354 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 355 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	.string "Hahaha! Fair enough.\n"
 	.string "Let's switch things around.\p"
 	.string "{RIVAL}, you'll stay here for\n"
@@ -900,20 +902,20 @@ Route301_HawthorneResearchLab_Text_ExplainErrand_Hawthorne2::
 	.string "to... again!$"
 
 Route301_HawthorneResearchLab_Text_MeetProf_ProfHawthorne1::
-# 474 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 475 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	.string "Ah, {RIVAL}! Right on time, as usual.\n"
 	.string "I was just about to--oh?\l"
 	.string "Who's this with you?$"
 
 Route301_HawthorneResearchLab_Text_MeetProf_ProfHawthorne2::
-# 478 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 479 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	.string "Welcome to my Research Lab, {PLAYER}!\n"
 	.string "I'm Professor Hawthorne, and I study\l"
 	.string "Pokémon habitats and how they interact\l"
 	.string "with human communities here in Avaro.$"
 
 Route301_HawthorneResearchLab_Text_MeetProf_ProfHawthorne3::
-# 482 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 483 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	.string "You've come at the perfect time.\n"
 	.string "I was just about to let {RIVAL}\l"
 	.string "choose their first Pokémon.\p"
@@ -923,14 +925,14 @@ Route301_HawthorneResearchLab_Text_MeetProf_ProfHawthorne3::
 	.string "with a partner by your side.$"
 
 Route301_HawthorneResearchLab_Text_MeetProf_ProfHawthorne4::
-# 488 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 489 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	.string "Each one is a unique species with its\n"
 	.string "own strengths and weaknesses.\p"
 	.string "Take your time and choose the one that\n"
 	.string "speaks to you the most.$"
 
 Route301_HawthorneResearchLab_Text_MeetProf_Caden1::
-# 493 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 494 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	.string "This is my new neighbor,\n"
 	.string "{PLAYER}--the one I told you moved in\l"
 	.string "yesterday.\p"
@@ -938,7 +940,7 @@ Route301_HawthorneResearchLab_Text_MeetProf_Caden1::
 	.string "lab.$"
 
 Route301_HawthorneResearchLab_Text_MeetProf_Holly1::
-# 498 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
+# 499 "data/maps/Route301_HawthorneResearchLab/scripts.pory"
 	.string "Oh, this is my new neighbor, {PLAYER}!\n"
 	.string "He just moved here from Hoenn.\p"
 	.string "I thought you wouldn't mind if they\n"
