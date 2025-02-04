@@ -35,6 +35,7 @@ script ArgilTown_RivalsHouse_1F_MapScript_MeetRival {
     setobjectxy(OBJ_RIVAL_MOM, 7, 6)
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
     turnobject(OBJ_RIVAL_MOM, DIR_EAST)
+    waitmovement(0)
     fadescreen(FADE_FROM_BLACK)
 
     applymovement (OBJ_RIVAL, Common_Movement_WalkInPlaceFasterDown)

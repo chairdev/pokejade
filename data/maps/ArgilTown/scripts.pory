@@ -1,0 +1,132 @@
+const OBJ_TECHNOLOGY_GUY = 3
+//VAR_ARGIL_TOWN_STATE
+//0: Meet Mom
+//1: Meet Rival
+//2: Help out professor
+//3: Get Running Shoes
+
+mapscripts ArgilTown_MapScripts {
+    
+}
+
+script ArgilTown_Trigger_DontLeave1 {
+    lockall
+
+    call(ArgilTown_Trigger_DontLeaveExclamation)
+    applymovement(OBJ_TECHNOLOGY_GUY, Common_Movement_WalkInPlaceFasterRight)
+    waitmovement(0)
+    call(ArgilTown_Trigger_DontLeave)
+    applymovement(OBJ_EVENT_ID_PLAYER, ArgilTown_Movement_DontLeave_WalkBackIntoTown1)
+    waitmovement(0)
+    releaseall
+}
+
+script ArgilTown_Trigger_DontLeave2 {
+    lockall
+
+    call(ArgilTown_Trigger_DontLeaveExclamation)
+    applymovement(OBJ_TECHNOLOGY_GUY, ArgilTown_Movement_DontLeave_ApproachPlayer1)
+    waitmovement(0)
+    applymovement(OBJ_TECHNOLOGY_GUY, Common_Movement_WalkInPlaceFasterRight)
+    waitmovement(0)
+    call(ArgilTown_Trigger_DontLeave)
+    applymovement(OBJ_TECHNOLOGY_GUY, ArgilTown_Movement_DontLeave_GoBack1)
+
+    applymovement(OBJ_EVENT_ID_PLAYER, ArgilTown_Movement_DontLeave_WalkBackIntoTown2)
+    waitmovement(0)
+    releaseall
+}
+
+script ArgilTown_Trigger_DontLeave3 {
+    lockall
+
+    call(ArgilTown_Trigger_DontLeaveExclamation)
+    applymovement(OBJ_TECHNOLOGY_GUY, ArgilTown_Movement_DontLeave_ApproachPlayer2)
+    waitmovement(0)
+    applymovement(OBJ_TECHNOLOGY_GUY, Common_Movement_WalkInPlaceFasterRight)
+    waitmovement(0)
+    call(ArgilTown_Trigger_DontLeave)
+    applymovement(OBJ_TECHNOLOGY_GUY, ArgilTown_Movement_DontLeave_GoBack2)
+
+    applymovement(OBJ_EVENT_ID_PLAYER, ArgilTown_Movement_DontLeave_WalkBackIntoTown2)
+    waitmovement(0)
+    releaseall
+}
+
+script ArgilTown_Trigger_DontLeave4 {
+    lockall
+
+    call(ArgilTown_Trigger_DontLeaveExclamation)
+    applymovement(OBJ_TECHNOLOGY_GUY, ArgilTown_Movement_DontLeave_ApproachPlayer3)
+    waitmovement(0)
+    applymovement(OBJ_TECHNOLOGY_GUY, Common_Movement_WalkInPlaceFasterRight)
+    waitmovement(0)
+    call(ArgilTown_Trigger_DontLeave)
+    applymovement(OBJ_TECHNOLOGY_GUY, ArgilTown_Movement_DontLeave_GoBack3)
+
+    applymovement(OBJ_EVENT_ID_PLAYER, ArgilTown_Movement_DontLeave_WalkBackIntoTown2)
+    waitmovement(0)
+    releaseall
+}
+
+script ArgilTown_Trigger_DontLeaveExclamation {
+    playse(SE_PIN)
+    applymovement(OBJ_TECHNOLOGY_GUY, Common_Movement_ExclamationMark)
+    waitse
+    waitmovement(0)
+}
+
+script ArgilTown_Trigger_DontLeave {
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft)
+    waitmovement(0)
+
+    msgbox(format("You can't go that way!\p"
+           "It's not safe to head out onto Route 301 without a Pokémon by your side.\p"
+           "Wild Pokémon might jump out at you, you know!"
+              ))
+    closemessage
+}
+
+movement ArgilTown_Movement_DontLeave_ApproachPlayer1 {
+    walk_down
+}
+
+movement ArgilTown_Movement_DontLeave_ApproachPlayer2 {
+    walk_down * 2
+}
+
+movement ArgilTown_Movement_DontLeave_ApproachPlayer3 {
+    walk_down * 3
+}
+
+movement ArgilTown_Movement_DontLeave_WalkBackIntoTown1 {
+    walk_down
+    walk_left
+}
+
+movement ArgilTown_Movement_DontLeave_WalkBackIntoTown2 {
+    walk_left
+}
+
+movement ArgilTown_Movement_DontLeave_GoBack1 {
+    walk_up
+    walk_in_place_down
+}
+
+movement ArgilTown_Movement_DontLeave_GoBack2 {
+    walk_up * 2
+    walk_in_place_down
+}
+
+movement ArgilTown_Movement_DontLeave_GoBack3 {
+    walk_up * 3
+    walk_in_place_down
+}
+
+script ArgilTown_EventScript_TechnologyGuy {
+    lock
+    faceplayer
+    msgbox(format("Technology these days is amazing!\pYou can access your Pokémon Boxes right from the START Menu.\pGone are the days of having to visit a Pokémon Center to switch out your team!"))
+    closemessage
+    release
+}

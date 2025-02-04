@@ -9,6 +9,13 @@ const OBJ_RIVAL = 1
 mapscripts Route301_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
         call(Common_EventScript_SetupRivalGfxId)
+
+        if(var(VAR_ROUTE301_STATE) == 2)
+        {
+            removeobject(OBJ_RIVAL)
+            addobject(OBJ_RIVAL)
+            setobjectxyperm(OBJ_RIVAL, 10, 19)
+        }
     }
 
     MAP_SCRIPT_ON_FRAME_TABLE [
@@ -19,14 +26,27 @@ mapscripts Route301_MapScripts {
 script Route301_MapScript_FirstRivalBattle {
     speakername("{RIVAL}")
     msgbox("{PLAYER}!\nHey, wait up!")
+    closemessage
+
+    checkplayergender
+    if(var(VAR_RESULT) == FEMALE)
+    {
+        playbgm(MUS_ENCOUNTER_BRENDAN, TRUE)
+    }
+    else
+    {
+        playbgm(MUS_ENCOUNTER_MAY, TRUE)
+    }
 
     opendoor(17, 21)
     waitdooranim
-    //showobject(OBJ_RIVAL)
+    addobject(OBJ_RIVAL)
     setobjectxy(OBJ_RIVAL, 17, 21)
     applymovement(OBJ_EVENT_ID_PLAYER, Route301_Movement_FirstRivalBattle_WalkDown)
     applymovement(OBJ_RIVAL, Route301_Movement_FirstRivalBattle_WalkDown)
     waitmovement(0)
+    closedoor(17, 21)
+    waitdooranim
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp)
     waitmovement(0)
     applymovement(OBJ_RIVAL, Common_Movement_WalkInPlaceFasterDown)
@@ -39,7 +59,7 @@ script Route301_MapScript_FirstRivalBattle {
         dynmultichoice(20, 8, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE,
         "Sure!", "No way!")
 
-        if(var(VAR_RESULT) == NO)
+        if(var(VAR_RESULT) == 1)
         {
             msgbox(Route301_Text_FirstRivalBattle_CadenNo)
         }
@@ -49,15 +69,22 @@ script Route301_MapScript_FirstRivalBattle {
 
         switch(var(VAR_STARTER_MON)) {
         case 0:
-            trainerbattle_no_intro(TRAINER_CADEN_ROUTE_301_CHIKORITA, BaycrestCity_Text_CadenDefeated)
+            trainerbattle_no_intro(TRAINER_CADEN_ROUTE_301_CHIKORITA, Route301_Text_FirstRivalBattle_CadenDefeated)
             break
         case 1:
-            trainerbattle_no_intro(TRAINER_CADEN_ROUTE_301_CYNDAQUIL, BaycrestCity_Text_CadenDefeated)
+            trainerbattle_no_intro(TRAINER_CADEN_ROUTE_301_CYNDAQUIL, Route301_Text_FirstRivalBattle_CadenDefeated)
             break   
         case 2:
-            trainerbattle_no_intro(TRAINER_CADEN_ROUTE_301_TOTODILE, BaycrestCity_Text_CadenDefeated)
+            trainerbattle_no_intro(TRAINER_CADEN_ROUTE_301_TOTODILE, Route301_Text_FirstRivalBattle_CadenDefeated)
             break
         }
+
+        applymovement(OBJ_RIVAL, Common_Movement_WalkInPlaceFasterDown)
+        waitmovement(0)
+
+        speakername("{RIVAL}")
+        msgbox(Route301_Text_FirstRivalBattle_Caden3)
+
     }
     else
     {
@@ -65,7 +92,7 @@ script Route301_MapScript_FirstRivalBattle {
         dynmultichoice(20, 8, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE,
         "Sure!", "No way!")
 
-        if(var(VAR_RESULT) == NO)
+        if(var(VAR_RESULT) == 1)
         {
             msgbox(Route301_Text_FirstRivalBattle_HollyNo)
         }
@@ -75,20 +102,66 @@ script Route301_MapScript_FirstRivalBattle {
 
         switch(var(VAR_STARTER_MON)) {
         case 0:
-            trainerbattle_no_intro(TRAINER_HOLLY_ROUTE_301_CHIKORITA, BaycrestCity_Text_HollyDefeated)
+            trainerbattle_no_intro(TRAINER_HOLLY_ROUTE_301_CHIKORITA, Route301_Text_FirstRivalBattle_HollyDefeated)
             break
         case 1:
-            trainerbattle_no_intro(TRAINER_HOLLY_ROUTE_301_CYNDAQUIL, BaycrestCity_Text_HollyDefeated)
+            trainerbattle_no_intro(TRAINER_HOLLY_ROUTE_301_CYNDAQUIL, Route301_Text_FirstRivalBattle_HollyDefeated)
             break
         case 2:
-            trainerbattle_no_intro(TRAINER_HOLLY_ROUTE_301_TOTODILE, BaycrestCity_Text_HollyDefeated)
+            trainerbattle_no_intro(TRAINER_HOLLY_ROUTE_301_TOTODILE, Route301_Text_FirstRivalBattle_HollyDefeated)
             break
         }
+
+        applymovement(OBJ_RIVAL, Route301_HawthorneResearchLab_Movement_StarterHop)
+        waitmovement(0)
+
+        speakername("{RIVAL}")
+        msgbox(Route301_Text_FirstRivalBattle_Holly3)
     }
+    closemessage
+
+    applymovement(OBJ_EVENT_ID_PLAYER, Route301_Movement_FirstRivalBattle_WatchRivalWalkAway)
+    applymovement(OBJ_RIVAL, Route301_Movement_FirstRivalBattle_RivalWalkAway1)
+    waitmovement(0)
+
+    speakername("{RIVAL}")
+    checkplayergender
+    if(var(VAR_RESULT) == FEMALE)
+    {
+        msgbox(Route301_Text_FirstRivalBattle_Caden4)
+    }
+    else
+    {
+        msgbox(Route301_Text_FirstRivalBattle_Holly4)
+    }
+    closemessage
+
+    fadescreen(FADE_TO_BLACK)
+    removeobject(OBJ_RIVAL)
+    addobject(OBJ_RIVAL)
+    setobjectxy(OBJ_RIVAL, 10, 19)
+    clearflag(FLAG_HIDE_ROUTE_301_RIVAL)
+    setvar(VAR_ROUTE301_STATE, 2)
+    delay(60)
+    fadedefaultbgm
+    fadescreen(FADE_FROM_BLACK)
 }
 
 movement Route301_Movement_FirstRivalBattle_WalkDown {
     walk_down
+}
+
+movement Route301_Movement_FirstRivalBattle_WatchRivalWalkAway {
+    walk_down
+    delay_16
+    walk_up
+    walk_in_place_faster_left
+}
+
+movement Route301_Movement_FirstRivalBattle_RivalWalkAway1 {
+    walk_down
+    walk_left * 3
+    walk_in_place_faster_right
 }
 
 text Route301_Text_FirstRivalBattle_Caden1 {
@@ -116,7 +189,35 @@ text Route301_Text_FirstRivalBattle_Caden2 {
 }
 
 text Route301_Text_FirstRivalBattle_Holly2 {
-    format("I've made up my mind!\nI'm going to win!")
+    format("Besides, I've made up my mind!\nI'm going to win this battle!")
+}
+
+text Route301_Text_FirstRivalBattle_Caden3 {
+    format("Looks like I need to train harder if I want to keep up.\p"
+           "Guess this whole 'fieldwork' thing might be good for me after all.")
+}
+
+text Route301_Text_FirstRivalBattle_Holly3 {
+    format("I can already tell we're going to have so much fun battling together.\p"
+           "But next time, I'm totally winning!")
+}
+
+text Route301_Text_FirstRivalBattle_Caden4 {
+    format("I'll be hanging around Route 301 for now--Oh, right!\p"
+           "You should stop by home before heading out. Your mom might have something for you.")
+}
+
+text Route301_Text_FirstRivalBattle_Holly4 {
+    format("I'll be on Route 301 for a while--Oh!\p"
+           "Before you leave, you should stop by home. Your mom might have something for you!")
+}
+
+text Route301_Text_FirstRivalBattle_CadenDefeated {
+    format("Hah, not bad. But don't think I'm gonna let you win next time!")
+}
+
+text Route301_Text_FirstRivalBattle_HollyDefeated {
+    format("Wow, you're really good, {PLAYER}! That was amazing!")
 }
 
 script Route301_Trigger_MeetRival1 {

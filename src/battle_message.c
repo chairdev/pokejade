@@ -831,7 +831,7 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_PKMNITEMMELTED]                       = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} corroded {B_DEF_NAME_WITH_PREFIX2}'s {B_LAST_ITEM}!"),
     [STRINGID_ULTRABURSTREACTING]                   = COMPOUND_STRING("Bright light is about to burst out of {B_ATK_NAME_WITH_PREFIX2}!"),
     [STRINGID_ULTRABURSTCOMPLETED]                  = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} regained its true power through Ultra Burst!"),
-    [STRINGID_TEAMGAINEDEXP]                        = COMPOUND_STRING("The rest of your team gained Exp. Points thanks to the Exp. Share!\p"),
+    [STRINGID_TEAMGAINEDEXP]                        = COMPOUND_STRING("Your Pokémon gained Exp. Points!\p"),
     [STRINGID_CURRENTMOVECANTSELECT]                = COMPOUND_STRING("{B_BUFF1} cannot be used!\p"),
     [STRINGID_TARGETISBEINGSALTCURED]               = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX} is being salt cured!"),
     [STRINGID_TARGETISHURTBYSALTCURE]               = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX} is hurt by {B_BUFF1}!"),
@@ -3557,6 +3557,14 @@ struct TrainerSlide
     const u8 *msgDynamax;
 };
 
+const u8 sText_CadenFirstBattle_BeforeFirstTurn[] = COMPOUND_STRING("Alright, let's see what you've got! Don't hold back!");
+const u8 sText_CadenFirstBattle_FirstCriticalHit[] = COMPOUND_STRING("Seriously?! A critical hit already? Talk about lucky!");
+const u8 sText_CadenFirstBattle_FirstSuperEffectiveHit[] = COMPOUND_STRING("Whoa! That was a solid hit--guess I need to step up my game!");
+
+const u8 sText_HollyFirstBattle_BeforeFirstTurn[] = COMPOUND_STRING("This is my first real battle... but I won't go easy on you!");
+const u8 sText_HollyFirstBattle_FirstCriticalHit[] = COMPOUND_STRING("Ah--! That was way stronger than I expected!");
+const u8 sText_HollyFirstBattle_FirstSuperEffectiveHit[] = COMPOUND_STRING("Yikes! That really stung... but I'm not giving up yet!");
+
 static const struct TrainerSlide sTrainerSlides[] =
 {
     /* Put any trainer slide-in messages inside this array.
@@ -3578,6 +3586,49 @@ static const struct TrainerSlide sTrainerSlides[] =
         .msgDynamax = sText_TargetWokeUp,
     },
     */
+
+   {
+        .trainerId = TRAINER_HOLLY_ROUTE_301_CHIKORITA,
+        .isFrontierTrainer = FALSE,
+        .msgFirstCriticalHit = sText_HollyFirstBattle_FirstCriticalHit,
+        .msgFirstSuperEffectiveHit = sText_HollyFirstBattle_FirstSuperEffectiveHit,
+        .msgBeforeFirstTurn = sText_HollyFirstBattle_BeforeFirstTurn,
+    },
+    {
+        .trainerId = TRAINER_HOLLY_ROUTE_301_CYNDAQUIL,
+        .isFrontierTrainer = FALSE,
+        .msgFirstCriticalHit = sText_HollyFirstBattle_FirstCriticalHit,
+        .msgFirstSuperEffectiveHit = sText_HollyFirstBattle_FirstSuperEffectiveHit,
+        .msgBeforeFirstTurn = sText_HollyFirstBattle_BeforeFirstTurn,
+    },
+    {
+        .trainerId = TRAINER_HOLLY_ROUTE_301_TOTODILE,
+        .isFrontierTrainer = FALSE,
+        .msgFirstCriticalHit = sText_HollyFirstBattle_FirstCriticalHit,
+        .msgFirstSuperEffectiveHit = sText_HollyFirstBattle_FirstSuperEffectiveHit,
+        .msgBeforeFirstTurn = sText_HollyFirstBattle_BeforeFirstTurn,
+    },
+    {
+        .trainerId = TRAINER_CADEN_ROUTE_301_CHIKORITA,
+        .isFrontierTrainer = FALSE,
+        .msgFirstCriticalHit = sText_CadenFirstBattle_FirstCriticalHit,
+        .msgFirstSuperEffectiveHit = sText_CadenFirstBattle_FirstSuperEffectiveHit,
+        .msgBeforeFirstTurn = sText_CadenFirstBattle_BeforeFirstTurn,
+    },
+    {
+        .trainerId = TRAINER_CADEN_ROUTE_301_CYNDAQUIL,
+        .isFrontierTrainer = FALSE,
+        .msgFirstCriticalHit = sText_CadenFirstBattle_FirstCriticalHit,
+        .msgFirstSuperEffectiveHit = sText_CadenFirstBattle_FirstSuperEffectiveHit,
+        .msgBeforeFirstTurn = sText_CadenFirstBattle_BeforeFirstTurn,
+    },
+    {
+        .trainerId = TRAINER_CADEN_ROUTE_301_TOTODILE,
+        .isFrontierTrainer = FALSE,
+        .msgFirstCriticalHit = sText_CadenFirstBattle_FirstCriticalHit,
+        .msgFirstSuperEffectiveHit = sText_CadenFirstBattle_FirstSuperEffectiveHit,
+        .msgBeforeFirstTurn = sText_CadenFirstBattle_BeforeFirstTurn,
+    },
 };
 
 static u32 GetEnemyMonCount(u32 firstId, u32 lastId, bool32 onlyAlive)

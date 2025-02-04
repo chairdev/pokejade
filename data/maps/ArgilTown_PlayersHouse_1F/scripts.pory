@@ -3,8 +3,79 @@ const OBJ_MOM = 1
 mapscripts ArgilTown_PlayersHouse_1F_MapScripts {
     MAP_SCRIPT_ON_FRAME_TABLE [
         VAR_ARGIL_TOWN_STATE, 0: ArgilTown_PlayersHouse_1F_MapScript_MeetMom
+        VAR_ROUTE301_STATE, 2: ArgilTown_PlayersHouse_1F_MapScript_MomErrand
     ]
 }
+
+script ArgilTown_PlayersHouse_1F_MapScript_MomErrand {
+    lockall
+
+    playse(SE_PIN)
+    applymovement(OBJ_MOM, Common_Movement_ExclamationMark)
+    waitse
+    waitmovement(0)
+    applymovement(OBJ_MOM, Common_Movement_WalkInPlaceFasterDown)
+    waitmovement(0)
+
+    playbgm(MUS_FOLLOW_ME, 0)
+
+    speakername("Mom")
+    msgbox(ArgilTown_PlayersHouse_1F_Text_Errand_Mom1)
+    closemessage
+
+    applymovement(OBJ_MOM, Common_Movement_WalkInPlaceFasterLeft)
+    applymovement(OBJ_EVENT_ID_PLAYER, ArgilTown_PlayersHouse_1F_Movement_Errand_ApproachMom)
+    waitmovement(0)
+
+    speakername("Mom")
+    msgbox(ArgilTown_PlayersHouse_1F_Text_Errand_Mom2)
+    closemessage
+
+    playfanfare(MUS_OBTAIN_ITEM)
+    closemessage
+    msgbox(format("You put on the Running Shoes!"))
+    waitfanfare
+
+    setflag(FLAG_RECEIVED_RUNNING_SHOES)
+    setflag(FLAG_SYS_B_DASH)
+    setvar(VAR_ARGIL_TOWN_STATE, 3)
+    setvar(VAR_ROUTE301_STATE, 3)
+
+
+    msgbox(ArgilTown_PlayersHouse_1F_Text_Errand_Mom3)
+
+    fadedefaultbgm
+
+    releaseall
+}
+
+movement ArgilTown_PlayersHouse_1F_Movement_Errand_ApproachMom {
+    walk_up * 3
+    walk_right * 4
+    delay_16 * 2
+    walk_in_place_faster_right
+    delay_16
+}
+
+
+text ArgilTown_PlayersHouse_1F_Text_Errand_Mom1 {
+    format("Oh, back already?\nHow was your new neighbor?\p"
+           "I hope you two hit it off!\nIt's always nice to have a friend nearby.")
+}
+
+text ArgilTown_PlayersHouse_1F_Text_Errand_Mom2 {
+    format("What? You met Professor Hawthorne?\nThat's wonderful!\p"
+           "Is that why you have that cute little Pokémon with you?\p"
+           "...Ah, so you're already helping out! That's just like you.\p"
+           "You know, this reminds me of when I used to travel for Pokémon Contests... but that's a story for another time.\p"
+           "Before you go, I have something for you! I found it while I was unpacking yesterday.")
+}
+
+text ArgilTown_PlayersHouse_1F_Text_Errand_Mom3 {
+    format("These will help you get around faster--just hold the B Button while walking, and you'll be zooming around in no time!\p"
+           "I'll be here if you need me, sweetie.\nGood luck on your errand!")
+}
+
 
 
 
@@ -35,7 +106,7 @@ text ArgilTown_PlayersHouse_1F_Text_MeetMom {
            "It's strange, isn't it?\nEverything feels so new here... different from Hoenn.\p"
            "Oh! Before I forget, the neighbors across the street stopped by yesterday.\p"
            "They said they have a child about your age.\p"
-           "Why don't you go over and introduce yourself?\lIt might be nice to make a new friend!\p"
+           "Why don't you go over and introduce yourself?\lIt might be nice to make a new friend!"
            )
               
 }
@@ -56,7 +127,7 @@ script ArgilTown_PlayersHouse_1F_EventScript_Mom {
     lockall
     faceplayer
 
-    if(var(VAR_ARGIL_TOWN_STATE) < 4)
+    if(var(VAR_ARGIL_TOWN_STATE) < 2)
     {
         speakername("Mom")
         msgbox(format("Take your time exploring, too.\nIt's a beautiful day, and you never know what you might find."))
