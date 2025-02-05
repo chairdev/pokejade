@@ -3565,6 +3565,17 @@ const u8 sText_HollyFirstBattle_BeforeFirstTurn[] = COMPOUND_STRING("This is my 
 const u8 sText_HollyFirstBattle_FirstCriticalHit[] = COMPOUND_STRING("Ah--! That was way stronger than I expected!");
 const u8 sText_HollyFirstBattle_FirstSuperEffectiveHit[] = COMPOUND_STRING("Yikes! That really stung... but I'm not giving up yet!");
 
+const u8 sText_CadenSecondBattle_BeforeFirstTurn[] = COMPOUND_STRING("Round two! Let's see if you've kept up!");
+const u8 sText_CadenSecondBattle_FirstSuperEffectiveHit[] = COMPOUND_STRING("Super-effective?! You really know your type matchups!");
+const u8 sText_CadenSecondBattle_FirstCriticalHit[] = COMPOUND_STRING("A crit!? Tch... lucky break!");
+const u8 sText_CadenSecondBattle_LastSwitchIn[] = COMPOUND_STRING("Last one! I'm not going down easy!");
+
+const u8 sText_HollySecondBattle_BeforeFirstTurn[] = COMPOUND_STRING("Back at it again! Let's make this a good one!");
+const u8 sText_HollySecondBattle_FirstSuperEffectiveHit[] = COMPOUND_STRING("Whoa, nice super-effective hit! You've done your homework!");
+const u8 sText_HollySecondBattle_FirstCriticalHit[] = COMPOUND_STRING("Critical hit!? That was awesome!");
+const u8 sText_HollySecondBattle_LastSwitchIn[] = COMPOUND_STRING("Okay, time to get serious! Let's turn this around!");
+
+
 static const struct TrainerSlide sTrainerSlides[] =
 {
     /* Put any trainer slide-in messages inside this array.
@@ -3628,6 +3639,46 @@ static const struct TrainerSlide sTrainerSlides[] =
         .msgFirstCriticalHit = sText_CadenFirstBattle_FirstCriticalHit,
         .msgFirstSuperEffectiveHit = sText_CadenFirstBattle_FirstSuperEffectiveHit,
         .msgBeforeFirstTurn = sText_CadenFirstBattle_BeforeFirstTurn,
+    },
+    {
+        .trainerId = TRAINER_HOLLY_DOLOMITE_CHIKORITA,
+        .isFrontierTrainer = FALSE,
+        .msgFirstCriticalHit = sText_HollySecondBattle_FirstCriticalHit,
+        .msgFirstSuperEffectiveHit = sText_HollySecondBattle_FirstSuperEffectiveHit,
+        .msgBeforeFirstTurn = sText_HollySecondBattle_BeforeFirstTurn,
+        .msgLastSwitchIn = sText_HollySecondBattle_LastSwitchIn,
+    },
+    {
+        .trainerId = TRAINER_HOLLY_DOLOMITE_CYNDAQUIL,
+        .isFrontierTrainer = FALSE,
+        .msgFirstCriticalHit = sText_HollySecondBattle_FirstCriticalHit,
+        .msgFirstSuperEffectiveHit = sText_HollySecondBattle_FirstSuperEffectiveHit,
+        .msgBeforeFirstTurn = sText_HollySecondBattle_BeforeFirstTurn,
+        .msgLastSwitchIn = sText_HollySecondBattle_LastSwitchIn,
+    },
+    {
+        .trainerId = TRAINER_HOLLY_DOLOMITE_TOTODILE,
+        .isFrontierTrainer = FALSE,
+        .msgFirstCriticalHit = sText_HollySecondBattle_FirstCriticalHit,
+        .msgFirstSuperEffectiveHit = sText_HollySecondBattle_FirstSuperEffectiveHit,
+        .msgBeforeFirstTurn = sText_HollySecondBattle_BeforeFirstTurn,
+        .msgLastSwitchIn = sText_HollySecondBattle_LastSwitchIn,
+    },
+    {
+        .trainerId = TRAINER_CADEN_DOLOMITE_CHIKORITA,
+        .isFrontierTrainer = FALSE,
+        .msgFirstCriticalHit = sText_CadenSecondBattle_FirstCriticalHit,
+        .msgFirstSuperEffectiveHit = sText_CadenSecondBattle_FirstSuperEffectiveHit,
+        .msgBeforeFirstTurn = sText_CadenSecondBattle_BeforeFirstTurn,
+        .msgLastSwitchIn = sText_CadenSecondBattle_LastSwitchIn,
+    },
+    {
+        .trainerId = TRAINER_CADEN_DOLOMITE_CYNDAQUIL,
+        .isFrontierTrainer = FALSE,
+        .msgFirstCriticalHit = sText_CadenSecondBattle_FirstCriticalHit,
+        .msgFirstSuperEffectiveHit = sText_CadenSecondBattle_FirstSuperEffectiveHit,
+        .msgBeforeFirstTurn = sText_CadenSecondBattle_BeforeFirstTurn,
+        .msgLastSwitchIn = sText_CadenSecondBattle_LastSwitchIn,
     },
 };
 

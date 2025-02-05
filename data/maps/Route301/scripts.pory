@@ -75,6 +75,8 @@ script Route301_MapScript_MomGoodbye {
     fadescreen(FADE_TO_BLACK)
     delay(16)
     setflag(FLAG_HIDE_ROUTE_301_MOM_OUTSIDE)
+    setflag(FLAG_HIDE_ROUTE_301_RIVAL)
+    clearflag(FLAG_HIDE_TRAINER_SCHOOL_GEO_RIVAL)
     removeobject(OBJ_MOM)
     fadedefaultbgm
     fadescreen(FADE_FROM_BLACK)

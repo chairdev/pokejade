@@ -10884,7 +10884,7 @@ Natu
 Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CADEN_STARRIDGE_TURTWIG ===
+=== TRAINER_CADEN_DOLOMITE_CHIKORITA ===
 Name: Caden
 Class: Rival
 Pic: Brendan
@@ -10893,20 +10893,16 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Check Viability / Try To Faint / Force Setup First Turn / Ace Pokemon
 
-Swablu
-Level: 22
+Rookidee
+Level: 5
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Smoliv
-Level: 21
-IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
-
-Quaxwell
-Level: 23
+Totodile
+Level: 8
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
 EVs: 252 HP
 
-=== TRAINER_CADEN_STARRIDGE_QUAXLY ===
+=== TRAINER_CADEN_DOLOMITE_TOTODILE ===
 Name: Caden
 Class: Rival
 Pic: Brendan
@@ -10915,16 +10911,12 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Check Viability / Try To Faint / Force Setup First Turn / Ace Pokemon
 
-Swablu
-Level: 22
+Rookidee
+Level: 5
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Drednaw
-Level: 21
-IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
-
-Braixen
-Level: 23
+Cyndaquil
+Level: 9
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
 EVs: 252 HP
 
@@ -11018,7 +11010,7 @@ Loudred
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CADEN_STARRIDGE_FENNEKIN ===
+=== TRAINER_CADEN_DOLOMITE_CYNDAQUIL ===
 Name: Caden
 Class: Rival
 Pic: Brendan
@@ -11027,20 +11019,16 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Check Viability / Try To Faint / Force Setup First Turn / Ace Pokemon
 
-Swablu
-Level: 22
+Rookidee
+Level: 5
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Drednaw
-Level: 21
-IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
-
-Grotle
-Level: 23
+Chikorita
+Level: 8
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
 EVs: 252 HP
 
-=== TRAINER_HOLLY_STARRIDGE_QUAXLY ===
+=== TRAINER_HOLLY_DOLOMITE_TOTODILE ===
 Name: Holly
 Class: Rival
 Pic: May
@@ -11049,16 +11037,12 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Check Viability / Try To Faint / Force Setup First Turn / Ace Pokemon
 
-Swablu
-Level: 22
+Rookidee
+Level: 5
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Drednaw
-Level: 21
-IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
-
-Braixen
-Level: 23
+Cyndaquil
+Level: 8
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
 EVs: 252 HP
 
@@ -14205,7 +14189,7 @@ Vigoroth
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_HOLLY_STARRIDGE_TURTWIG ===
+=== TRAINER_HOLLY_DOLOMITE_CHIKORITA ===
 Name: Holly
 Class: Rival
 Pic: May
@@ -14214,20 +14198,16 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Check Viability / Try To Faint / Force Setup First Turn / Ace Pokemon
 
-Swablu
-Level: 22
+Rookidee
+Level: 5
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Smoliv
-Level: 21
-IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
-
-Quaxwell
-Level: 23
+Totodile
+Level: 8
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
 EVs: 252 HP
 
-=== TRAINER_HOLLY_STARRIDGE_FENNEKIN ===
+=== TRAINER_HOLLY_DOLOMITE_CYNDAQUIL ===
 Name: Holly
 Class: Rival
 Pic: May
@@ -14236,16 +14216,12 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Check Viability / Try To Faint / Force Setup First Turn / Ace Pokemon
 
-Swablu
-Level: 22
+Rookidee
+Level: 5
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Drednaw
-Level: 21
-IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
-
-Grotle
-Level: 23
+Chikorita
+Level: 8
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
 EVs: 252 HP
 

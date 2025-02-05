@@ -1,1 +1,18 @@
 mapscripts DolomiteCity_MapScripts {}
+
+script DolomiteCity_Gym_EventScript_GymGuide {
+    lock
+    faceplayer
+
+    if(!flag(FLAG_HIDE_ROUTE_301_MOM_OUTSIDE))
+    {
+        msgbox(format("Sorry, the gym is closed right now."))
+    }
+    else
+    {
+        msgbox(format("Welcome to the Dolomite City Gym!\nThe Gym Leader isn't in right now.\p"
+                      "He's out teaching at the Trainer's School."))
+    }
+
+    release
+}

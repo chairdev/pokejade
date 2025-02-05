@@ -1,7 +1,13 @@
 const OBJ_MEGA_EVO_GURU = 1
+const OBJ_GEO = 2
+const OBJ_RIVAL = 3
 
 mapscripts DolomiteCity_TrainerSchool_MapScripts {
-        MAP_SCRIPT_ON_FRAME_TABLE [
+    MAP_SCRIPT_ON_TRANSITION {
+        call(Common_EventScript_SetupRivalGfxId)
+    }
+
+    MAP_SCRIPT_ON_FRAME_TABLE [
         VAR_DOLOMITE_CITY_STATE, 0:  DolomiteCity_TrainerSchool_MapScript_DeliverParcel
     ]
 }
@@ -31,6 +37,7 @@ script DolomiteCity_TrainerSchool_MapScript_DeliverParcel {
 
     msgbox(DolomiteCity_TrainerSchool_Text_DeliverParcel_MegaEvoGuru4)
     giveitem(ITEM_EXP_SHARE)
+    setflag(FLAG_EXP_SHARE)
     closemessage
 
     msgbox(DolomiteCity_TrainerSchool_Text_DeliverParcel_MegaEvoGuru5)
@@ -99,4 +106,187 @@ text DolomiteCity_TrainerSchool_Text_MegaEvoGuru {
     format("Thank you again for delivering these.\pIf you ever wish to learn more about Mega Evolution, my door is always open.")
 }
 
+script DolomiteCity_TrainerSchool_EventScript_Geo {
+    lockall
+    faceplayer
 
+    speakername("???")
+    msgbox(DolomiteCity_TrainerSchool_Geo_Text1)
+    
+    applymovement(OBJ_GEO, Common_Movement_WalkInPlaceFasterDown)
+    waitmovement(0)
+
+    speakername("Geo")
+    msgbox(DolomiteCity_TrainerSchool_Geo_Text2)
+    
+    faceplayer
+
+    msgbox(DolomiteCity_TrainerSchool_Geo_Text3)
+
+    dynmultichoice(20, 8, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE,
+    "Absolutely!", "Not yet.")
+
+    if (var(VAR_RESULT) == 0) {
+        msgbox(DolomiteCity_TrainerSchool_Geo_Text_Accept)
+        closemessage
+
+        playse(SE_PIN)
+        applymovement(OBJ_RIVAL, Common_Movement_ExclamationMark)
+        waitse
+        waitmovement(0)
+        delay(16)
+        
+        msgbox(DolomiteCity_TrainerSchool_Geo_Text_RivalIntro)
+        closemessage
+
+        checkplayergender
+        if(var(VAR_RESULT) == FEMALE)
+        {
+            playbgm(MUS_ENCOUNTER_BRENDAN, FALSE)
+        }
+        else
+        {
+            playbgm(MUS_ENCOUNTER_MAY, FALSE)
+        }
+
+        applymovement(OBJ_RIVAL, DolomiteCity_TrainerSchool_Movement_RivalApproachPlayer)
+        waitmovement(0)
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown)
+
+        speakername("{RIVAL}")
+        if(var(VAR_RESULT) == FEMALE)
+        {
+            msgbox(DolomiteCity_TrainerSchool_Rival_Text1_Caden)
+            closemessage
+
+            switch(var(VAR_STARTER_MON)) {
+            case 0:
+                trainerbattle_no_intro(TRAINER_CADEN_DOLOMITE_CHIKORITA, DolomiteCity_TrainerSchool_CadenDefeated)
+                break
+            case 1:
+                trainerbattle_no_intro(TRAINER_CADEN_DOLOMITE_CYNDAQUIL, DolomiteCity_TrainerSchool_CadenDefeated)
+                break   
+            case 2:
+                trainerbattle_no_intro(TRAINER_CADEN_DOLOMITE_TOTODILE, DolomiteCity_TrainerSchool_CadenDefeated)
+                break
+            }
+        }
+        else
+        {
+            msgbox(DolomiteCity_TrainerSchool_Rival_Text1_Holly)
+            closemessage
+
+            switch(var(VAR_STARTER_MON)) {
+            case 0:
+                trainerbattle_no_intro(TRAINER_HOLLY_DOLOMITE_CHIKORITA, DolomiteCity_TrainerSchool_HollyDefeated)
+                break
+            case 1:
+                trainerbattle_no_intro(TRAINER_HOLLY_DOLOMITE_CYNDAQUIL, DolomiteCity_TrainerSchool_HollyDefeated)
+                break
+            case 2:
+                trainerbattle_no_intro(TRAINER_HOLLY_DOLOMITE_TOTODILE, DolomiteCity_TrainerSchool_HollyDefeated)
+                break
+            }
+        }
+
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp)
+
+        speakername("Geo")
+        msgbox(DolomiteCity_TrainerSchool_Geo_Text_AfterBattle)
+        closemessage
+
+        fadescreen(FADE_TO_BLACK)
+        delay(16)
+        playse(SE_EXIT)
+        removeobject(OBJ_GEO)
+        waitse
+        applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown)
+        waitmovement(0)
+        delay(16)
+        fadescreen(FADE_FROM_BLACK)
+
+        speakername("{RIVAL}")
+        msgbox(format("I'm going to train hard and challenge the Dolomite Gym!\p"
+                      "I'll see you later, {PLAYER}!"))
+        closemessage
+
+        applymovement(OBJ_RIVAL, DolomiteCity_TrainerSchool_Movement_RivalLeave)
+        waitmovement(0)
+
+        fadescreen(FADE_TO_BLACK)
+        delay(16)
+        playse(SE_EXIT)
+        removeobject(OBJ_RIVAL)
+        waitse
+        delay(16)
+        setflag(FLAG_HIDE_TRAINER_SCHOOL_GEO_RIVAL)
+        fadescreen(FADE_FROM_BLACK)
+
+        setflag(FLAG_HIDE_DOLOMITE_CITY_GYM_GUIDE)
+    } else {
+
+    }
+    
+    releaseall
+}
+
+movement DolomiteCity_TrainerSchool_Movement_RivalApproachPlayer {
+    walk_left
+    walk_up 
+}
+
+movement DolomiteCity_TrainerSchool_Movement_RivalLeave {
+    walk_left
+    walk_down * 5
+}
+
+
+text DolomiteCity_TrainerSchool_Geo_Text1 {  
+    format("Oh hello!\nWelcome to the Pokémon Trainer's School.")  
+}  
+
+text DolomiteCity_TrainerSchool_Geo_Text2 {  
+    format("I am Geo, this city's Gym Leader.\p"  
+           "Currently, I'm instructing these students on Pokémon battle strategies and the importance of type matchups.")  
+}  
+
+text DolomiteCity_TrainerSchool_Geo_Text3 {  
+    format("But just like Challenger {RIVAL} over there, I imagine you're not here for a lesson.\p"  
+           "Let me guess--you seek a Gym Challenge?")  
+}  
+
+text DolomiteCity_TrainerSchool_Geo_Text_Accept {  
+    format("Eager to prove yourself--good.\p"  
+           "But before you battle me, you must demonstrate your ability in battle.\p"  
+           "Challenger {RIVAL} here has been attending my lessons.\p"
+           "Why don't you two put your skills to the test?")  
+}  
+
+text DolomiteCity_TrainerSchool_Geo_Text_RivalIntro {  
+    format("{RIVAL}, step forward. Show me what you've learned.")  
+}  
+
+text DolomiteCity_TrainerSchool_Rival_Text1_Caden {  
+    format("Oh, you're in for it now, {PLAYER}.\p"  
+           "I've been paying attention, and I've got a few new tricks up my sleeve!")  
+}  
+
+text DolomiteCity_TrainerSchool_Rival_Text1_Holly {  
+    format("This is perfect, {PLAYER}!\p"  
+           "A real battle in front of a Gym Leader?\nLet's give it everything we've got!")  
+}  
+
+text DolomiteCity_TrainerSchool_CadenDefeated {  
+    format("What?! No way!\p"  
+           "Ugh, alright, alright. You got me this time.")  
+}  
+
+text DolomiteCity_TrainerSchool_HollyDefeated {  
+    format("Wow, {PLAYER}, you're a real natural!\p"
+           "I've got a lot to learn.")  
+}  
+
+text DolomiteCity_TrainerSchool_Geo_Text_AfterBattle {  
+    format("Impressive, Challenger {PLAYER}.\nYou handled that battle well.\p"  
+           "Now, meet me at the Dolomite Gym.\nShow me if you truly have what it takes to earn my badge.")  
+}  

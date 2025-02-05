@@ -102,542 +102,546 @@ Route301_MapScript_MomGoodbye::
 # 77 "data/maps/Route301/scripts.pory"
 	setflag FLAG_HIDE_ROUTE_301_MOM_OUTSIDE
 # 78 "data/maps/Route301/scripts.pory"
-	removeobject 3
+	setflag FLAG_HIDE_ROUTE_301_RIVAL
 # 79 "data/maps/Route301/scripts.pory"
-	fadedefaultbgm
+	clearflag FLAG_HIDE_TRAINER_SCHOOL_GEO_RIVAL
 # 80 "data/maps/Route301/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	removeobject 3
+# 81 "data/maps/Route301/scripts.pory"
+	fadedefaultbgm
 # 82 "data/maps/Route301/scripts.pory"
-	setvar VAR_ROUTE301_STATE, 5
+	fadescreen FADE_FROM_BLACK
 # 84 "data/maps/Route301/scripts.pory"
+	setvar VAR_ROUTE301_STATE, 5
+# 86 "data/maps/Route301/scripts.pory"
 	releaseall
 	return
 
 
-# 87 "data/maps/Route301/scripts.pory"
+# 89 "data/maps/Route301/scripts.pory"
 Route301_Movement_MomGoodbye_ApproachMom:
-# 88 "data/maps/Route301/scripts.pory"
+# 90 "data/maps/Route301/scripts.pory"
 	walk_down
-# 89 "data/maps/Route301/scripts.pory"
+# 91 "data/maps/Route301/scripts.pory"
 	walk_left
-# 89 "data/maps/Route301/scripts.pory"
+# 91 "data/maps/Route301/scripts.pory"
 	walk_left
-# 89 "data/maps/Route301/scripts.pory"
+# 91 "data/maps/Route301/scripts.pory"
 	walk_left
-# 89 "data/maps/Route301/scripts.pory"
+# 91 "data/maps/Route301/scripts.pory"
 	walk_left
-# 89 "data/maps/Route301/scripts.pory"
+# 91 "data/maps/Route301/scripts.pory"
 	walk_left
-# 89 "data/maps/Route301/scripts.pory"
+# 91 "data/maps/Route301/scripts.pory"
 	walk_left
 	step_end
 
-# 92 "data/maps/Route301/scripts.pory"
-Route301_Movement_MomGoodbye_MomStartToLeave:
-# 93 "data/maps/Route301/scripts.pory"
-	walk_left
-# 93 "data/maps/Route301/scripts.pory"
-	walk_left
 # 94 "data/maps/Route301/scripts.pory"
+Route301_Movement_MomGoodbye_MomStartToLeave:
+# 95 "data/maps/Route301/scripts.pory"
+	walk_left
+# 95 "data/maps/Route301/scripts.pory"
+	walk_left
+# 96 "data/maps/Route301/scripts.pory"
 	walk_in_place_right
 	step_end
 
 Route301_MapScript_FirstRivalBattle::
-# 127 "data/maps/Route301/scripts.pory"
-	speakername Route301_MapScript_FirstRivalBattle_Text_0
-# 128 "data/maps/Route301/scripts.pory"
-	msgbox Route301_MapScript_FirstRivalBattle_Text_1
 # 129 "data/maps/Route301/scripts.pory"
-	closemessage
+	speakername Route301_MapScript_FirstRivalBattle_Text_0
+# 130 "data/maps/Route301/scripts.pory"
+	msgbox Route301_MapScript_FirstRivalBattle_Text_1
 # 131 "data/maps/Route301/scripts.pory"
+	closemessage
+# 133 "data/maps/Route301/scripts.pory"
 	checkplayergender
-# 132 "data/maps/Route301/scripts.pory"
+# 134 "data/maps/Route301/scripts.pory"
 	compare VAR_RESULT, FEMALE
 	goto_if_eq Route301_MapScript_FirstRivalBattle_2
-# 138 "data/maps/Route301/scripts.pory"
+# 140 "data/maps/Route301/scripts.pory"
 	playbgm MUS_ENCOUNTER_MAY, TRUE
 Route301_MapScript_FirstRivalBattle_1:
-# 141 "data/maps/Route301/scripts.pory"
-	opendoor 17, 21
-# 142 "data/maps/Route301/scripts.pory"
-	waitdooranim
 # 143 "data/maps/Route301/scripts.pory"
-	addobject 1
+	opendoor 17, 21
 # 144 "data/maps/Route301/scripts.pory"
-	setobjectxy 1, 17, 21
-# 145 "data/maps/Route301/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Route301_Movement_FirstRivalBattle_WalkDown
-# 146 "data/maps/Route301/scripts.pory"
-	applymovement 1, Route301_Movement_FirstRivalBattle_WalkDown
-# 147 "data/maps/Route301/scripts.pory"
-	waitmovement 0
-# 148 "data/maps/Route301/scripts.pory"
-	closedoor 17, 21
-# 149 "data/maps/Route301/scripts.pory"
 	waitdooranim
-# 150 "data/maps/Route301/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
-# 151 "data/maps/Route301/scripts.pory"
+# 145 "data/maps/Route301/scripts.pory"
+	addobject 1
+# 146 "data/maps/Route301/scripts.pory"
+	setobjectxy 1, 17, 21
+# 147 "data/maps/Route301/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route301_Movement_FirstRivalBattle_WalkDown
+# 148 "data/maps/Route301/scripts.pory"
+	applymovement 1, Route301_Movement_FirstRivalBattle_WalkDown
+# 149 "data/maps/Route301/scripts.pory"
 	waitmovement 0
+# 150 "data/maps/Route301/scripts.pory"
+	closedoor 17, 21
+# 151 "data/maps/Route301/scripts.pory"
+	waitdooranim
 # 152 "data/maps/Route301/scripts.pory"
-	applymovement 1, Common_Movement_WalkInPlaceFasterDown
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+# 153 "data/maps/Route301/scripts.pory"
+	waitmovement 0
 # 154 "data/maps/Route301/scripts.pory"
-	speakername Route301_MapScript_FirstRivalBattle_Text_0
-# 155 "data/maps/Route301/scripts.pory"
-	checkplayergender
+	applymovement 1, Common_Movement_WalkInPlaceFasterDown
 # 156 "data/maps/Route301/scripts.pory"
+	speakername Route301_MapScript_FirstRivalBattle_Text_0
+# 157 "data/maps/Route301/scripts.pory"
+	checkplayergender
+# 158 "data/maps/Route301/scripts.pory"
 	compare VAR_RESULT, FEMALE
 	goto_if_eq Route301_MapScript_FirstRivalBattle_6
-# 191 "data/maps/Route301/scripts.pory"
+# 193 "data/maps/Route301/scripts.pory"
 	msgbox Route301_Text_FirstRivalBattle_Holly1
-# 192 "data/maps/Route301/scripts.pory"
+# 194 "data/maps/Route301/scripts.pory"
 	dynmultichoice 20, 8, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, Route301_MapScript_FirstRivalBattle_Text_2, Route301_MapScript_FirstRivalBattle_Text_3
-# 195 "data/maps/Route301/scripts.pory"
+# 197 "data/maps/Route301/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route301_MapScript_FirstRivalBattle_17
 Route301_MapScript_FirstRivalBattle_16:
-# 200 "data/maps/Route301/scripts.pory"
+# 202 "data/maps/Route301/scripts.pory"
 	msgbox Route301_Text_FirstRivalBattle_Holly2
-# 201 "data/maps/Route301/scripts.pory"
-	closemessage
 # 203 "data/maps/Route301/scripts.pory"
+	closemessage
+# 205 "data/maps/Route301/scripts.pory"
 	switch VAR_STARTER_MON
-# 204 "data/maps/Route301/scripts.pory"
+# 206 "data/maps/Route301/scripts.pory"
 	case 0, Route301_MapScript_FirstRivalBattle_26
-# 207 "data/maps/Route301/scripts.pory"
+# 209 "data/maps/Route301/scripts.pory"
 	case 1, Route301_MapScript_FirstRivalBattle_27
-# 210 "data/maps/Route301/scripts.pory"
+# 212 "data/maps/Route301/scripts.pory"
 	case 2, Route301_MapScript_FirstRivalBattle_28
 Route301_MapScript_FirstRivalBattle_24:
-# 215 "data/maps/Route301/scripts.pory"
+# 217 "data/maps/Route301/scripts.pory"
 	applymovement 1, Route301_HawthorneResearchLab_Movement_StarterHop
-# 216 "data/maps/Route301/scripts.pory"
-	waitmovement 0
 # 218 "data/maps/Route301/scripts.pory"
+	waitmovement 0
+# 220 "data/maps/Route301/scripts.pory"
 	speakername Route301_MapScript_FirstRivalBattle_Text_0
-# 219 "data/maps/Route301/scripts.pory"
+# 221 "data/maps/Route301/scripts.pory"
 	msgbox Route301_Text_FirstRivalBattle_Holly3
 Route301_MapScript_FirstRivalBattle_5:
-# 221 "data/maps/Route301/scripts.pory"
-	closemessage
 # 223 "data/maps/Route301/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Route301_Movement_FirstRivalBattle_WatchRivalWalkAway
-# 224 "data/maps/Route301/scripts.pory"
-	applymovement 1, Route301_Movement_FirstRivalBattle_RivalWalkAway1
+	closemessage
 # 225 "data/maps/Route301/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Route301_Movement_FirstRivalBattle_WatchRivalWalkAway
+# 226 "data/maps/Route301/scripts.pory"
+	applymovement 1, Route301_Movement_FirstRivalBattle_RivalWalkAway1
 # 227 "data/maps/Route301/scripts.pory"
-	speakername Route301_MapScript_FirstRivalBattle_Text_0
-# 228 "data/maps/Route301/scripts.pory"
-	checkplayergender
+	waitmovement 0
 # 229 "data/maps/Route301/scripts.pory"
+	speakername Route301_MapScript_FirstRivalBattle_Text_0
+# 230 "data/maps/Route301/scripts.pory"
+	checkplayergender
+# 231 "data/maps/Route301/scripts.pory"
 	compare VAR_RESULT, FEMALE
 	goto_if_eq Route301_MapScript_FirstRivalBattle_10
-# 235 "data/maps/Route301/scripts.pory"
+# 237 "data/maps/Route301/scripts.pory"
 	msgbox Route301_Text_FirstRivalBattle_Holly4
 Route301_MapScript_FirstRivalBattle_9:
-# 237 "data/maps/Route301/scripts.pory"
-	closemessage
 # 239 "data/maps/Route301/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 240 "data/maps/Route301/scripts.pory"
-	removeobject 1
+	closemessage
 # 241 "data/maps/Route301/scripts.pory"
-	addobject 1
+	fadescreen FADE_TO_BLACK
 # 242 "data/maps/Route301/scripts.pory"
-	setobjectxy 1, 10, 19
+	removeobject 1
 # 243 "data/maps/Route301/scripts.pory"
-	clearflag FLAG_HIDE_ROUTE_301_RIVAL
+	addobject 1
 # 244 "data/maps/Route301/scripts.pory"
-	setvar VAR_ROUTE301_STATE, 2
+	setobjectxy 1, 10, 19
 # 245 "data/maps/Route301/scripts.pory"
-	delay 60
+	clearflag FLAG_HIDE_ROUTE_301_RIVAL
 # 246 "data/maps/Route301/scripts.pory"
-	fadedefaultbgm
+	setvar VAR_ROUTE301_STATE, 2
 # 247 "data/maps/Route301/scripts.pory"
+	delay 60
+# 248 "data/maps/Route301/scripts.pory"
+	fadedefaultbgm
+# 249 "data/maps/Route301/scripts.pory"
 	fadescreen FADE_FROM_BLACK
 	return
 
 Route301_MapScript_FirstRivalBattle_2:
-# 134 "data/maps/Route301/scripts.pory"
+# 136 "data/maps/Route301/scripts.pory"
 	playbgm MUS_ENCOUNTER_BRENDAN, TRUE
 	goto Route301_MapScript_FirstRivalBattle_1
 
 Route301_MapScript_FirstRivalBattle_6:
-# 158 "data/maps/Route301/scripts.pory"
+# 160 "data/maps/Route301/scripts.pory"
 	msgbox Route301_Text_FirstRivalBattle_Caden1
-# 159 "data/maps/Route301/scripts.pory"
+# 161 "data/maps/Route301/scripts.pory"
 	dynmultichoice 20, 8, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, Route301_MapScript_FirstRivalBattle_Text_2, Route301_MapScript_FirstRivalBattle_Text_3
-# 162 "data/maps/Route301/scripts.pory"
+# 164 "data/maps/Route301/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route301_MapScript_FirstRivalBattle_14
 Route301_MapScript_FirstRivalBattle_13:
-# 167 "data/maps/Route301/scripts.pory"
+# 169 "data/maps/Route301/scripts.pory"
 	msgbox Route301_Text_FirstRivalBattle_Caden2
-# 168 "data/maps/Route301/scripts.pory"
-	closemessage
 # 170 "data/maps/Route301/scripts.pory"
+	closemessage
+# 172 "data/maps/Route301/scripts.pory"
 	switch VAR_STARTER_MON
-# 171 "data/maps/Route301/scripts.pory"
+# 173 "data/maps/Route301/scripts.pory"
 	case 0, Route301_MapScript_FirstRivalBattle_21
-# 174 "data/maps/Route301/scripts.pory"
+# 176 "data/maps/Route301/scripts.pory"
 	case 1, Route301_MapScript_FirstRivalBattle_22
-# 177 "data/maps/Route301/scripts.pory"
+# 179 "data/maps/Route301/scripts.pory"
 	case 2, Route301_MapScript_FirstRivalBattle_23
 Route301_MapScript_FirstRivalBattle_19:
-# 182 "data/maps/Route301/scripts.pory"
+# 184 "data/maps/Route301/scripts.pory"
 	applymovement 1, Common_Movement_WalkInPlaceFasterDown
-# 183 "data/maps/Route301/scripts.pory"
-	waitmovement 0
 # 185 "data/maps/Route301/scripts.pory"
+	waitmovement 0
+# 187 "data/maps/Route301/scripts.pory"
 	speakername Route301_MapScript_FirstRivalBattle_Text_0
-# 186 "data/maps/Route301/scripts.pory"
+# 188 "data/maps/Route301/scripts.pory"
 	msgbox Route301_Text_FirstRivalBattle_Caden3
 	goto Route301_MapScript_FirstRivalBattle_5
 
 Route301_MapScript_FirstRivalBattle_10:
-# 231 "data/maps/Route301/scripts.pory"
+# 233 "data/maps/Route301/scripts.pory"
 	msgbox Route301_Text_FirstRivalBattle_Caden4
 	goto Route301_MapScript_FirstRivalBattle_9
 
 Route301_MapScript_FirstRivalBattle_14:
-# 164 "data/maps/Route301/scripts.pory"
+# 166 "data/maps/Route301/scripts.pory"
 	msgbox Route301_Text_FirstRivalBattle_CadenNo
 	goto Route301_MapScript_FirstRivalBattle_13
 
 Route301_MapScript_FirstRivalBattle_17:
-# 197 "data/maps/Route301/scripts.pory"
+# 199 "data/maps/Route301/scripts.pory"
 	msgbox Route301_Text_FirstRivalBattle_HollyNo
 	goto Route301_MapScript_FirstRivalBattle_16
 
 Route301_MapScript_FirstRivalBattle_21:
-# 172 "data/maps/Route301/scripts.pory"
+# 174 "data/maps/Route301/scripts.pory"
 	trainerbattle_no_intro TRAINER_CADEN_ROUTE_301_CHIKORITA, Route301_Text_FirstRivalBattle_CadenDefeated
 	goto Route301_MapScript_FirstRivalBattle_19
 
 Route301_MapScript_FirstRivalBattle_22:
-# 175 "data/maps/Route301/scripts.pory"
+# 177 "data/maps/Route301/scripts.pory"
 	trainerbattle_no_intro TRAINER_CADEN_ROUTE_301_CYNDAQUIL, Route301_Text_FirstRivalBattle_CadenDefeated
 	goto Route301_MapScript_FirstRivalBattle_19
 
 Route301_MapScript_FirstRivalBattle_23:
-# 178 "data/maps/Route301/scripts.pory"
+# 180 "data/maps/Route301/scripts.pory"
 	trainerbattle_no_intro TRAINER_CADEN_ROUTE_301_TOTODILE, Route301_Text_FirstRivalBattle_CadenDefeated
 	goto Route301_MapScript_FirstRivalBattle_19
 
 Route301_MapScript_FirstRivalBattle_26:
-# 205 "data/maps/Route301/scripts.pory"
+# 207 "data/maps/Route301/scripts.pory"
 	trainerbattle_no_intro TRAINER_HOLLY_ROUTE_301_CHIKORITA, Route301_Text_FirstRivalBattle_HollyDefeated
 	goto Route301_MapScript_FirstRivalBattle_24
 
 Route301_MapScript_FirstRivalBattle_27:
-# 208 "data/maps/Route301/scripts.pory"
+# 210 "data/maps/Route301/scripts.pory"
 	trainerbattle_no_intro TRAINER_HOLLY_ROUTE_301_CYNDAQUIL, Route301_Text_FirstRivalBattle_HollyDefeated
 	goto Route301_MapScript_FirstRivalBattle_24
 
 Route301_MapScript_FirstRivalBattle_28:
-# 211 "data/maps/Route301/scripts.pory"
+# 213 "data/maps/Route301/scripts.pory"
 	trainerbattle_no_intro TRAINER_HOLLY_ROUTE_301_TOTODILE, Route301_Text_FirstRivalBattle_HollyDefeated
 	goto Route301_MapScript_FirstRivalBattle_24
 
 
-# 250 "data/maps/Route301/scripts.pory"
+# 252 "data/maps/Route301/scripts.pory"
 Route301_Movement_FirstRivalBattle_WalkDown:
-# 251 "data/maps/Route301/scripts.pory"
+# 253 "data/maps/Route301/scripts.pory"
 	walk_down
 	step_end
 
-# 254 "data/maps/Route301/scripts.pory"
-Route301_Movement_FirstRivalBattle_WatchRivalWalkAway:
-# 255 "data/maps/Route301/scripts.pory"
-	walk_down
 # 256 "data/maps/Route301/scripts.pory"
-	delay_16
+Route301_Movement_FirstRivalBattle_WatchRivalWalkAway:
 # 257 "data/maps/Route301/scripts.pory"
-	walk_up
+	walk_down
 # 258 "data/maps/Route301/scripts.pory"
+	delay_16
+# 259 "data/maps/Route301/scripts.pory"
+	walk_up
+# 260 "data/maps/Route301/scripts.pory"
 	walk_in_place_faster_left
 	step_end
 
-# 261 "data/maps/Route301/scripts.pory"
+# 263 "data/maps/Route301/scripts.pory"
 Route301_Movement_FirstRivalBattle_RivalWalkAway1:
-# 262 "data/maps/Route301/scripts.pory"
-	walk_down
-# 263 "data/maps/Route301/scripts.pory"
-	walk_left
-# 263 "data/maps/Route301/scripts.pory"
-	walk_left
-# 263 "data/maps/Route301/scripts.pory"
-	walk_left
 # 264 "data/maps/Route301/scripts.pory"
+	walk_down
+# 265 "data/maps/Route301/scripts.pory"
+	walk_left
+# 265 "data/maps/Route301/scripts.pory"
+	walk_left
+# 265 "data/maps/Route301/scripts.pory"
+	walk_left
+# 266 "data/maps/Route301/scripts.pory"
 	walk_in_place_faster_right
 	step_end
 
 Route301_Trigger_MeetRival1::
-# 324 "data/maps/Route301/scripts.pory"
+# 326 "data/maps/Route301/scripts.pory"
 	lockall
-# 325 "data/maps/Route301/scripts.pory"
-	call Route301_Trigger_CalledByRival
 # 327 "data/maps/Route301/scripts.pory"
+	call Route301_Trigger_CalledByRival
+# 329 "data/maps/Route301/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Route301_Movement_CalledByRival_Player_MoveToRival1
-# 328 "data/maps/Route301/scripts.pory"
+# 330 "data/maps/Route301/scripts.pory"
 	call Route301_Trigger_GoToLabWithRival
 	return
 
 
 Route301_Trigger_MeetRival2::
-# 332 "data/maps/Route301/scripts.pory"
+# 334 "data/maps/Route301/scripts.pory"
 	lockall
-# 333 "data/maps/Route301/scripts.pory"
-	call Route301_Trigger_CalledByRival
 # 335 "data/maps/Route301/scripts.pory"
+	call Route301_Trigger_CalledByRival
+# 337 "data/maps/Route301/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Route301_Movement_CalledByRival_Player_MoveToRival2
-# 336 "data/maps/Route301/scripts.pory"
+# 338 "data/maps/Route301/scripts.pory"
 	call Route301_Trigger_GoToLabWithRival
 	return
 
 
 Route301_Trigger_CalledByRival::
-# 340 "data/maps/Route301/scripts.pory"
-	special SpawnCameraObject
-# 341 "data/maps/Route301/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, Route301_Movement_CalledByRival_CameraPan1
 # 342 "data/maps/Route301/scripts.pory"
-	waitmovement OBJ_EVENT_ID_CAMERA
+	special SpawnCameraObject
+# 343 "data/maps/Route301/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, Route301_Movement_CalledByRival_CameraPan1
 # 344 "data/maps/Route301/scripts.pory"
-	playse SE_PIN
-# 345 "data/maps/Route301/scripts.pory"
-	applymovement 1, Common_Movement_ExclamationMark
+	waitmovement OBJ_EVENT_ID_CAMERA
 # 346 "data/maps/Route301/scripts.pory"
-	waitse
+	playse SE_PIN
 # 347 "data/maps/Route301/scripts.pory"
-	waitmovement 0
+	applymovement 1, Common_Movement_ExclamationMark
 # 348 "data/maps/Route301/scripts.pory"
-	delay 40
+	waitse
 # 349 "data/maps/Route301/scripts.pory"
-	applymovement 1, Common_Movement_WalkInPlaceFasterUp
-# 350 "data/maps/Route301/scripts.pory"
 	waitmovement 0
+# 350 "data/maps/Route301/scripts.pory"
+	delay 40
+# 351 "data/maps/Route301/scripts.pory"
+	applymovement 1, Common_Movement_WalkInPlaceFasterUp
 # 352 "data/maps/Route301/scripts.pory"
-	speakername Route301_MapScript_FirstRivalBattle_Text_0
-# 353 "data/maps/Route301/scripts.pory"
-	msgbox Route301_Text_GoToLabWithRival_Rival1
+	waitmovement 0
 # 354 "data/maps/Route301/scripts.pory"
-	closemessage
+	speakername Route301_MapScript_FirstRivalBattle_Text_0
+# 355 "data/maps/Route301/scripts.pory"
+	msgbox Route301_Text_GoToLabWithRival_Rival1
 # 356 "data/maps/Route301/scripts.pory"
+	closemessage
+# 358 "data/maps/Route301/scripts.pory"
 	checkplayergender
-# 357 "data/maps/Route301/scripts.pory"
+# 359 "data/maps/Route301/scripts.pory"
 	compare VAR_RESULT, FEMALE
 	goto_if_eq Route301_Trigger_CalledByRival_1
-# 363 "data/maps/Route301/scripts.pory"
+# 365 "data/maps/Route301/scripts.pory"
 	playbgm MUS_ENCOUNTER_MAY, TRUE
 	return
 
 Route301_Trigger_CalledByRival_1:
-# 359 "data/maps/Route301/scripts.pory"
+# 361 "data/maps/Route301/scripts.pory"
 	playbgm MUS_ENCOUNTER_BRENDAN, TRUE
 	return
 
 
 Route301_Trigger_GoToLabWithRival::
-# 369 "data/maps/Route301/scripts.pory"
-	waitmovement OBJ_EVENT_ID_PLAYER
-# 370 "data/maps/Route301/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, Route301_Movement_CalledByRival_CameraPan2
 # 371 "data/maps/Route301/scripts.pory"
-	waitmovement OBJ_EVENT_ID_CAMERA
+	waitmovement OBJ_EVENT_ID_PLAYER
 # 372 "data/maps/Route301/scripts.pory"
-	special RemoveCameraObject
+	applymovement OBJ_EVENT_ID_CAMERA, Route301_Movement_CalledByRival_CameraPan2
+# 373 "data/maps/Route301/scripts.pory"
+	waitmovement OBJ_EVENT_ID_CAMERA
 # 374 "data/maps/Route301/scripts.pory"
+	special RemoveCameraObject
+# 376 "data/maps/Route301/scripts.pory"
 	speakername Route301_MapScript_FirstRivalBattle_Text_0
-# 375 "data/maps/Route301/scripts.pory"
+# 377 "data/maps/Route301/scripts.pory"
 	compare VAR_RESULT, FEMALE
 	goto_if_eq Route301_Trigger_GoToLabWithRival_2
-# 386 "data/maps/Route301/scripts.pory"
+# 388 "data/maps/Route301/scripts.pory"
 	msgbox Route301_Text_GoToLabWithRival_Holly1
-# 387 "data/maps/Route301/scripts.pory"
-	closemessage
 # 389 "data/maps/Route301/scripts.pory"
-	applymovement 1, Common_Movement_WalkInPlaceFasterDown
-# 390 "data/maps/Route301/scripts.pory"
-	speakername Route301_MapScript_FirstRivalBattle_Text_0
+	closemessage
 # 391 "data/maps/Route301/scripts.pory"
+	applymovement 1, Common_Movement_WalkInPlaceFasterDown
+# 392 "data/maps/Route301/scripts.pory"
+	speakername Route301_MapScript_FirstRivalBattle_Text_0
+# 393 "data/maps/Route301/scripts.pory"
 	msgbox Route301_Text_GoToLabWithRival_Holly2
 Route301_Trigger_GoToLabWithRival_1:
-# 393 "data/maps/Route301/scripts.pory"
-	closemessage
 # 395 "data/maps/Route301/scripts.pory"
-	applymovement 1, Route301_Movement_GoToLabWithRival_RivalPath
-# 396 "data/maps/Route301/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Route301_Movement_GoToLabWithRival_PlayerPath
+	closemessage
 # 397 "data/maps/Route301/scripts.pory"
-	waitmovement 0
+	applymovement 1, Route301_Movement_GoToLabWithRival_RivalPath
+# 398 "data/maps/Route301/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route301_Movement_GoToLabWithRival_PlayerPath
 # 399 "data/maps/Route301/scripts.pory"
+	waitmovement 0
+# 401 "data/maps/Route301/scripts.pory"
 	speakername Route301_MapScript_FirstRivalBattle_Text_0
-# 400 "data/maps/Route301/scripts.pory"
+# 402 "data/maps/Route301/scripts.pory"
 	compare VAR_RESULT, FEMALE
 	goto_if_eq Route301_Trigger_GoToLabWithRival_6
-# 406 "data/maps/Route301/scripts.pory"
+# 408 "data/maps/Route301/scripts.pory"
 	msgbox Route301_Text_GoToLabWithRival_Holly3
 Route301_Trigger_GoToLabWithRival_5:
-# 408 "data/maps/Route301/scripts.pory"
-	closemessage
 # 410 "data/maps/Route301/scripts.pory"
-	applymovement 1, Common_Movement_WalkInPlaceFasterUp
-# 411 "data/maps/Route301/scripts.pory"
-	waitmovement 0
+	closemessage
 # 412 "data/maps/Route301/scripts.pory"
-	opendoor 17, 21
+	applymovement 1, Common_Movement_WalkInPlaceFasterUp
 # 413 "data/maps/Route301/scripts.pory"
-	waitdooranim
+	waitmovement 0
 # 414 "data/maps/Route301/scripts.pory"
-	applymovement 1, Common_Movement_WalkUp
+	opendoor 17, 21
 # 415 "data/maps/Route301/scripts.pory"
-	waitmovement 0
+	waitdooranim
 # 416 "data/maps/Route301/scripts.pory"
-	removeobject 1
+	applymovement 1, Common_Movement_WalkUp
 # 417 "data/maps/Route301/scripts.pory"
-	waitse
-# 419 "data/maps/Route301/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2
-# 420 "data/maps/Route301/scripts.pory"
 	waitmovement 0
+# 418 "data/maps/Route301/scripts.pory"
+	removeobject 1
+# 419 "data/maps/Route301/scripts.pory"
+	waitse
 # 421 "data/maps/Route301/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2
+# 422 "data/maps/Route301/scripts.pory"
+	waitmovement 0
+# 423 "data/maps/Route301/scripts.pory"
 	warp MAP_ROUTE301_HAWTHORNE_RESEARCH_LAB, 6, 12
 	return
 
 Route301_Trigger_GoToLabWithRival_2:
-# 377 "data/maps/Route301/scripts.pory"
+# 379 "data/maps/Route301/scripts.pory"
 	msgbox Route301_Text_GoToLabWithRival_Caden1
-# 378 "data/maps/Route301/scripts.pory"
-	closemessage
 # 380 "data/maps/Route301/scripts.pory"
-	applymovement 1, Common_Movement_WalkInPlaceFasterDown
-# 381 "data/maps/Route301/scripts.pory"
-	speakername Route301_MapScript_FirstRivalBattle_Text_0
+	closemessage
 # 382 "data/maps/Route301/scripts.pory"
+	applymovement 1, Common_Movement_WalkInPlaceFasterDown
+# 383 "data/maps/Route301/scripts.pory"
+	speakername Route301_MapScript_FirstRivalBattle_Text_0
+# 384 "data/maps/Route301/scripts.pory"
 	msgbox Route301_Text_GoToLabWithRival_Caden2
 	goto Route301_Trigger_GoToLabWithRival_1
 
 Route301_Trigger_GoToLabWithRival_6:
-# 402 "data/maps/Route301/scripts.pory"
+# 404 "data/maps/Route301/scripts.pory"
 	msgbox Route301_Text_GoToLabWithRival_Caden3
 	goto Route301_Trigger_GoToLabWithRival_5
 
 
-# 424 "data/maps/Route301/scripts.pory"
+# 426 "data/maps/Route301/scripts.pory"
 Route301_Movement_CalledByRival_CameraPan1:
-# 425 "data/maps/Route301/scripts.pory"
+# 427 "data/maps/Route301/scripts.pory"
 	walk_fast_down
-# 425 "data/maps/Route301/scripts.pory"
+# 427 "data/maps/Route301/scripts.pory"
 	walk_fast_down
-# 425 "data/maps/Route301/scripts.pory"
+# 427 "data/maps/Route301/scripts.pory"
 	walk_fast_down
-# 425 "data/maps/Route301/scripts.pory"
+# 427 "data/maps/Route301/scripts.pory"
 	walk_fast_down
 	step_end
 
-# 428 "data/maps/Route301/scripts.pory"
+# 430 "data/maps/Route301/scripts.pory"
 Route301_Movement_CalledByRival_CameraPan2:
-# 429 "data/maps/Route301/scripts.pory"
+# 431 "data/maps/Route301/scripts.pory"
 	walk_up
 	step_end
 
-# 432 "data/maps/Route301/scripts.pory"
+# 434 "data/maps/Route301/scripts.pory"
 Route301_Movement_CalledByRival_Player_MoveToRival1:
-# 433 "data/maps/Route301/scripts.pory"
+# 435 "data/maps/Route301/scripts.pory"
 	walk_right
-# 434 "data/maps/Route301/scripts.pory"
+# 436 "data/maps/Route301/scripts.pory"
 	walk_down
-# 434 "data/maps/Route301/scripts.pory"
+# 436 "data/maps/Route301/scripts.pory"
 	walk_down
-# 434 "data/maps/Route301/scripts.pory"
+# 436 "data/maps/Route301/scripts.pory"
 	walk_down
 	step_end
 
-# 437 "data/maps/Route301/scripts.pory"
+# 439 "data/maps/Route301/scripts.pory"
 Route301_Movement_CalledByRival_Player_MoveToRival2:
-# 438 "data/maps/Route301/scripts.pory"
+# 440 "data/maps/Route301/scripts.pory"
 	walk_down
-# 438 "data/maps/Route301/scripts.pory"
+# 440 "data/maps/Route301/scripts.pory"
 	walk_down
-# 438 "data/maps/Route301/scripts.pory"
+# 440 "data/maps/Route301/scripts.pory"
 	walk_down
 	step_end
 
-# 441 "data/maps/Route301/scripts.pory"
+# 443 "data/maps/Route301/scripts.pory"
 Route301_Movement_GoToLabWithRival_RivalPath:
-# 442 "data/maps/Route301/scripts.pory"
-	walk_down
-# 443 "data/maps/Route301/scripts.pory"
-	walk_right
-# 443 "data/maps/Route301/scripts.pory"
-	walk_right
-# 443 "data/maps/Route301/scripts.pory"
-	walk_right
-# 443 "data/maps/Route301/scripts.pory"
-	walk_right
-# 443 "data/maps/Route301/scripts.pory"
-	walk_right
-# 443 "data/maps/Route301/scripts.pory"
-	walk_right
-# 443 "data/maps/Route301/scripts.pory"
-	walk_right
-# 443 "data/maps/Route301/scripts.pory"
-	walk_right
-# 443 "data/maps/Route301/scripts.pory"
-	walk_right
-# 443 "data/maps/Route301/scripts.pory"
-	walk_right
-# 443 "data/maps/Route301/scripts.pory"
-	walk_right
-# 443 "data/maps/Route301/scripts.pory"
-	walk_right
-# 443 "data/maps/Route301/scripts.pory"
-	walk_right
-# 443 "data/maps/Route301/scripts.pory"
-	walk_right
 # 444 "data/maps/Route301/scripts.pory"
-	walk_up
+	walk_down
 # 445 "data/maps/Route301/scripts.pory"
+	walk_right
+# 445 "data/maps/Route301/scripts.pory"
+	walk_right
+# 445 "data/maps/Route301/scripts.pory"
+	walk_right
+# 445 "data/maps/Route301/scripts.pory"
+	walk_right
+# 445 "data/maps/Route301/scripts.pory"
+	walk_right
+# 445 "data/maps/Route301/scripts.pory"
+	walk_right
+# 445 "data/maps/Route301/scripts.pory"
+	walk_right
+# 445 "data/maps/Route301/scripts.pory"
+	walk_right
+# 445 "data/maps/Route301/scripts.pory"
+	walk_right
+# 445 "data/maps/Route301/scripts.pory"
+	walk_right
+# 445 "data/maps/Route301/scripts.pory"
+	walk_right
+# 445 "data/maps/Route301/scripts.pory"
+	walk_right
+# 445 "data/maps/Route301/scripts.pory"
+	walk_right
+# 445 "data/maps/Route301/scripts.pory"
+	walk_right
+# 446 "data/maps/Route301/scripts.pory"
+	walk_up
+# 447 "data/maps/Route301/scripts.pory"
 	walk_in_place_faster_down
 	step_end
 
-# 448 "data/maps/Route301/scripts.pory"
+# 450 "data/maps/Route301/scripts.pory"
 Route301_Movement_GoToLabWithRival_PlayerPath:
-# 449 "data/maps/Route301/scripts.pory"
-	walk_down
-# 449 "data/maps/Route301/scripts.pory"
-	walk_down
-# 450 "data/maps/Route301/scripts.pory"
-	walk_right
-# 450 "data/maps/Route301/scripts.pory"
-	walk_right
-# 450 "data/maps/Route301/scripts.pory"
-	walk_right
-# 450 "data/maps/Route301/scripts.pory"
-	walk_right
-# 450 "data/maps/Route301/scripts.pory"
-	walk_right
-# 450 "data/maps/Route301/scripts.pory"
-	walk_right
-# 450 "data/maps/Route301/scripts.pory"
-	walk_right
-# 450 "data/maps/Route301/scripts.pory"
-	walk_right
-# 450 "data/maps/Route301/scripts.pory"
-	walk_right
-# 450 "data/maps/Route301/scripts.pory"
-	walk_right
-# 450 "data/maps/Route301/scripts.pory"
-	walk_right
-# 450 "data/maps/Route301/scripts.pory"
-	walk_right
-# 450 "data/maps/Route301/scripts.pory"
-	walk_right
-# 450 "data/maps/Route301/scripts.pory"
-	walk_right
 # 451 "data/maps/Route301/scripts.pory"
+	walk_down
+# 451 "data/maps/Route301/scripts.pory"
+	walk_down
+# 452 "data/maps/Route301/scripts.pory"
+	walk_right
+# 452 "data/maps/Route301/scripts.pory"
+	walk_right
+# 452 "data/maps/Route301/scripts.pory"
+	walk_right
+# 452 "data/maps/Route301/scripts.pory"
+	walk_right
+# 452 "data/maps/Route301/scripts.pory"
+	walk_right
+# 452 "data/maps/Route301/scripts.pory"
+	walk_right
+# 452 "data/maps/Route301/scripts.pory"
+	walk_right
+# 452 "data/maps/Route301/scripts.pory"
+	walk_right
+# 452 "data/maps/Route301/scripts.pory"
+	walk_right
+# 452 "data/maps/Route301/scripts.pory"
+	walk_right
+# 452 "data/maps/Route301/scripts.pory"
+	walk_right
+# 452 "data/maps/Route301/scripts.pory"
+	walk_right
+# 452 "data/maps/Route301/scripts.pory"
+	walk_right
+# 452 "data/maps/Route301/scripts.pory"
+	walk_right
+# 453 "data/maps/Route301/scripts.pory"
 	walk_in_place_faster_up
 	step_end
 
@@ -654,28 +658,28 @@ Route301_MapScript_MomGoodbye_Text_2:
 	.string "You received ¥10,000!$"
 
 Route301_MapScript_FirstRivalBattle_Text_0:
-# 127 "data/maps/Route301/scripts.pory"
+# 129 "data/maps/Route301/scripts.pory"
 	.string "{RIVAL}$"
 
 Route301_MapScript_FirstRivalBattle_Text_1:
-# 128 "data/maps/Route301/scripts.pory"
+# 130 "data/maps/Route301/scripts.pory"
 	.string "{PLAYER}!\nHey, wait up!$"
 
 Route301_MapScript_FirstRivalBattle_Text_2:
-# 160 "data/maps/Route301/scripts.pory"
+# 162 "data/maps/Route301/scripts.pory"
 	.string "Sure!$"
 
 Route301_MapScript_FirstRivalBattle_Text_3:
-# 160 "data/maps/Route301/scripts.pory"
+# 162 "data/maps/Route301/scripts.pory"
 	.string "No way!$"
 
 Route301_Text_MomGoodbye1::
-# 97 "data/maps/Route301/scripts.pory"
+# 99 "data/maps/Route301/scripts.pory"
 	.string "{PLAYER}, there you are!\p"
 	.string "I had a feeling I'd find you here.$"
 
 Route301_Text_MomGoodbye2::
-# 102 "data/maps/Route301/scripts.pory"
+# 104 "data/maps/Route301/scripts.pory"
 	.string "I heard from Professor Hawthorne about\n"
 	.string "your big journey.\p"
 	.string "I can't believe my little {PLAYER} is\n"
@@ -685,7 +689,7 @@ Route301_Text_MomGoodbye2::
 	.string "before you go.$"
 
 Route301_Text_MomGoodbye3::
-# 108 "data/maps/Route301/scripts.pory"
+# 110 "data/maps/Route301/scripts.pory"
 	.string "The PokéNav will help you keep in touch\n"
 	.string "with me and other people you meet along\l"
 	.string "the way.\p"
@@ -696,13 +700,13 @@ Route301_Text_MomGoodbye3::
 	.string "so take this.$"
 
 Route301_Text_MomGoodbye4::
-# 115 "data/maps/Route301/scripts.pory"
+# 117 "data/maps/Route301/scripts.pory"
 	.string "Now, don't go blowing it all at once!\p"
 	.string "Poké Balls and Potions are important,\n"
 	.string "but so is managing your money wisely.$"
 
 Route301_Text_MomGoodbye5::
-# 120 "data/maps/Route301/scripts.pory"
+# 122 "data/maps/Route301/scripts.pory"
 	.string "I know you and {STR_VAR_1} are\n"
 	.string "going to do great, {PLAYER}.\p"
 	.string "Be safe, have fun, and don't forget to\n"
@@ -710,54 +714,54 @@ Route301_Text_MomGoodbye5::
 	.string "alright?$"
 
 Route301_Text_FirstRivalBattle_Caden1::
-# 267 "data/maps/Route301/scripts.pory"
+# 269 "data/maps/Route301/scripts.pory"
 	.string "Hey, before you go running off to\n"
 	.string "Dolomite, let's see what you've got.\p"
 	.string "We can't call ourselves rivals until\n"
 	.string "we've battled, right?$"
 
 Route301_Text_FirstRivalBattle_Holly1::
-# 272 "data/maps/Route301/scripts.pory"
+# 274 "data/maps/Route301/scripts.pory"
 	.string "Wait! Before you leave, let's have a\n"
 	.string "quick battle.\p"
 	.string "It's the best way to get to know each\n"
 	.string "other--and our new Pokémon--right?$"
 
 Route301_Text_FirstRivalBattle_CadenNo::
-# 277 "data/maps/Route301/scripts.pory"
+# 279 "data/maps/Route301/scripts.pory"
 	.string "Oh, come on! Don't be like that!\p"
 	.string "We're both new trainers, so we should\n"
 	.string "battle to see who's better!$"
 
 Route301_Text_FirstRivalBattle_HollyNo::
-# 282 "data/maps/Route301/scripts.pory"
+# 284 "data/maps/Route301/scripts.pory"
 	.string "But... why not?\p"
 	.string "It's just a friendly battle, right?$"
 
 Route301_Text_FirstRivalBattle_Caden2::
-# 287 "data/maps/Route301/scripts.pory"
+# 289 "data/maps/Route301/scripts.pory"
 	.string "Ready or not, here I come!$"
 
 Route301_Text_FirstRivalBattle_Holly2::
-# 291 "data/maps/Route301/scripts.pory"
+# 293 "data/maps/Route301/scripts.pory"
 	.string "Besides, I've made up my mind!\n"
 	.string "I'm going to win this battle!$"
 
 Route301_Text_FirstRivalBattle_Caden3::
-# 295 "data/maps/Route301/scripts.pory"
+# 297 "data/maps/Route301/scripts.pory"
 	.string "Looks like I need to train harder if I\n"
 	.string "want to keep up.\p"
 	.string "Guess this whole 'fieldwork' thing might\n"
 	.string "be good for me after all.$"
 
 Route301_Text_FirstRivalBattle_Holly3::
-# 300 "data/maps/Route301/scripts.pory"
+# 302 "data/maps/Route301/scripts.pory"
 	.string "I can already tell we're going to have\n"
 	.string "so much fun battling together.\p"
 	.string "But next time, I'm totally winning!$"
 
 Route301_Text_FirstRivalBattle_Caden4::
-# 305 "data/maps/Route301/scripts.pory"
+# 307 "data/maps/Route301/scripts.pory"
 	.string "I'll be hanging around Route 301 for\n"
 	.string "now--Oh, right!\p"
 	.string "You should stop by home before heading\n"
@@ -765,35 +769,35 @@ Route301_Text_FirstRivalBattle_Caden4::
 	.string "you.$"
 
 Route301_Text_FirstRivalBattle_Holly4::
-# 310 "data/maps/Route301/scripts.pory"
+# 312 "data/maps/Route301/scripts.pory"
 	.string "I'll be on Route 301 for a while--Oh!\p"
 	.string "Before you leave, you should stop by\n"
 	.string "home. Your mom might have something for\l"
 	.string "you!$"
 
 Route301_Text_FirstRivalBattle_CadenDefeated::
-# 315 "data/maps/Route301/scripts.pory"
+# 317 "data/maps/Route301/scripts.pory"
 	.string "Hah, not bad. But don't think I'm gonna\n"
 	.string "let you win next time!$"
 
 Route301_Text_FirstRivalBattle_HollyDefeated::
-# 319 "data/maps/Route301/scripts.pory"
+# 321 "data/maps/Route301/scripts.pory"
 	.string "Wow, you're really good, {PLAYER}!\n"
 	.string "That was amazing!$"
 
 Route301_Text_GoToLabWithRival_Rival1::
-# 455 "data/maps/Route301/scripts.pory"
+# 457 "data/maps/Route301/scripts.pory"
 	.string "Hey, {PLAYER}!\n"
 	.string "Over here!$"
 
 Route301_Text_GoToLabWithRival_Caden1::
-# 459 "data/maps/Route301/scripts.pory"
+# 461 "data/maps/Route301/scripts.pory"
 	.string "Man, this route is kinda small, huh?\n"
 	.string "Guess I should've expected that from a\l"
 	.string "place so close to Argil Town...$"
 
 Route301_Text_GoToLabWithRival_Caden2::
-# 463 "data/maps/Route301/scripts.pory"
+# 465 "data/maps/Route301/scripts.pory"
 	.string "Anyway, we should hurry.\n"
 	.string "The professor said he needed something\l"
 	.string "delivered, right?\p"
@@ -801,24 +805,24 @@ Route301_Text_GoToLabWithRival_Caden2::
 	.string "package...$"
 
 Route301_Text_GoToLabWithRival_Caden3::
-# 468 "data/maps/Route301/scripts.pory"
+# 470 "data/maps/Route301/scripts.pory"
 	.string "Guess we'll find out soon enough.\n"
 	.string "Let's go$"
 
 Route301_Text_GoToLabWithRival_Holly1::
-# 472 "data/maps/Route301/scripts.pory"
+# 474 "data/maps/Route301/scripts.pory"
 	.string "It's so quiet out here!\n"
 	.string "Not exactly the thrilling adventure I\l"
 	.string "was hoping for, but hey, it's a start!$"
 
 Route301_Text_GoToLabWithRival_Holly2::
-# 476 "data/maps/Route301/scripts.pory"
+# 478 "data/maps/Route301/scripts.pory"
 	.string "I wonder what the professor needs help\n"
 	.string "with...\n"
 	.string "I hope it's something exciting!$"
 
 Route301_Text_GoToLabWithRival_Holly3::
-# 480 "data/maps/Route301/scripts.pory"
+# 482 "data/maps/Route301/scripts.pory"
 	.string "Come on, {PLAYER}!\n"
 	.string "The professor's waiting, and I wanna\l"
 	.string "get moving!$"

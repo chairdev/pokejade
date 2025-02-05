@@ -883,19 +883,19 @@ RustboroCity_EventScript_RestoreBgm::
 	return
 
 RustboroCity_EventScript_BattleMayTreecko::
-	trainerbattle_no_intro TRAINER_HOLLY_STARRIDGE_TURTWIG, RustboroCity_Text_MayDefeat
+	trainerbattle_no_intro TRAINER_HOLLY_DOLOMITE_CHIKORITA, RustboroCity_Text_MayDefeat
 	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
 	goto RustboroCity_EventScript_MayBrineyHint
 	end
 
 RustboroCity_EventScript_BattleMayTorchic::
-	trainerbattle_no_intro TRAINER_HOLLY_STARRIDGE_FENNEKIN, RustboroCity_Text_MayDefeat
+	trainerbattle_no_intro TRAINER_HOLLY_DOLOMITE_CYNDAQUIL, RustboroCity_Text_MayDefeat
 	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
 	goto RustboroCity_EventScript_MayBrineyHint
 	end
 
 RustboroCity_EventScript_BattleMayMudkip::
-	trainerbattle_no_intro TRAINER_HOLLY_STARRIDGE_QUAXLY, RustboroCity_Text_MayDefeat
+	trainerbattle_no_intro TRAINER_HOLLY_DOLOMITE_TOTODILE, RustboroCity_Text_MayDefeat
 	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
 	goto RustboroCity_EventScript_MayBrineyHint
 	end
@@ -944,19 +944,19 @@ RustboroCity_EventScript_BrendanBrineyHint::
 	end
 
 RustboroCity_EventScript_BattleBrendanTreecko::
-	trainerbattle_no_intro TRAINER_CADEN_STARRIDGE_TURTWIG, RustboroCity_Text_BrendanDefeat
+	trainerbattle_no_intro TRAINER_CADEN_DOLOMITE_CHIKORITA, RustboroCity_Text_BrendanDefeat
 	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
 	goto RustboroCity_EventScript_BrendanBrineyHint
 	end
 
 RustboroCity_EventScript_BattleBrendanTorchic::
-	trainerbattle_no_intro TRAINER_CADEN_STARRIDGE_FENNEKIN, RustboroCity_Text_BrendanDefeat
+	trainerbattle_no_intro TRAINER_CADEN_DOLOMITE_CYNDAQUIL, RustboroCity_Text_BrendanDefeat
 	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
 	goto RustboroCity_EventScript_BrendanBrineyHint
 	end
 
 RustboroCity_EventScript_BattleBrendanMudkip::
-	trainerbattle_no_intro TRAINER_CADEN_STARRIDGE_QUAXLY, RustboroCity_Text_BrendanDefeat
+	trainerbattle_no_intro TRAINER_CADEN_DOLOMITE_TOTODILE, RustboroCity_Text_BrendanDefeat
 	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
 	goto RustboroCity_EventScript_BrendanBrineyHint
 	end

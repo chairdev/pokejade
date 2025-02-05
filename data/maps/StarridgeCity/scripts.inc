@@ -115,32 +115,32 @@ StarridgeCity_EventScript_Rival_15:
 
 StarridgeCity_EventScript_Rival_12:
 # 41 "data/maps/StarridgeCity/scripts.pory"
-	trainerbattle_no_intro TRAINER_HOLLY_STARRIDGE_TURTWIG, StarridgeCity_Text_HollyDefeated
+	trainerbattle_no_intro TRAINER_HOLLY_DOLOMITE_CHIKORITA, StarridgeCity_Text_HollyDefeated
 	goto StarridgeCity_EventScript_Rival_10
 
 StarridgeCity_EventScript_Rival_13:
 # 44 "data/maps/StarridgeCity/scripts.pory"
-	trainerbattle_no_intro TRAINER_HOLLY_STARRIDGE_FENNEKIN, StarridgeCity_Text_HollyDefeated
+	trainerbattle_no_intro TRAINER_HOLLY_DOLOMITE_CYNDAQUIL, StarridgeCity_Text_HollyDefeated
 	goto StarridgeCity_EventScript_Rival_10
 
 StarridgeCity_EventScript_Rival_14:
 # 47 "data/maps/StarridgeCity/scripts.pory"
-	trainerbattle_no_intro TRAINER_HOLLY_STARRIDGE_QUAXLY, StarridgeCity_Text_HollyDefeated
+	trainerbattle_no_intro TRAINER_HOLLY_DOLOMITE_TOTODILE, StarridgeCity_Text_HollyDefeated
 	goto StarridgeCity_EventScript_Rival_10
 
 StarridgeCity_EventScript_Rival_17:
 # 75 "data/maps/StarridgeCity/scripts.pory"
-	trainerbattle_no_intro TRAINER_CADEN_STARRIDGE_TURTWIG, StarridgeCity_Text_CadenDefeated
+	trainerbattle_no_intro TRAINER_CADEN_DOLOMITE_CHIKORITA, StarridgeCity_Text_CadenDefeated
 	goto StarridgeCity_EventScript_Rival_15
 
 StarridgeCity_EventScript_Rival_18:
 # 78 "data/maps/StarridgeCity/scripts.pory"
-	trainerbattle_no_intro TRAINER_CADEN_STARRIDGE_FENNEKIN, StarridgeCity_Text_CadenDefeated
+	trainerbattle_no_intro TRAINER_CADEN_DOLOMITE_CYNDAQUIL, StarridgeCity_Text_CadenDefeated
 	goto StarridgeCity_EventScript_Rival_15
 
 StarridgeCity_EventScript_Rival_19:
 # 81 "data/maps/StarridgeCity/scripts.pory"
-	trainerbattle_no_intro TRAINER_CADEN_STARRIDGE_QUAXLY, StarridgeCity_Text_CadenDefeated
+	trainerbattle_no_intro TRAINER_CADEN_DOLOMITE_TOTODILE, StarridgeCity_Text_CadenDefeated
 	goto StarridgeCity_EventScript_Rival_15
 
 

@@ -14,7 +14,7 @@ BaycrestCity_PokemonCenter_1F_OnTransition::
 
 BaycrestCity_PokemonCenter_1F_EventScript_Nurse::
 # 14 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
-	goto_if_unset FLAG_REGISTERED_TO_LEAGUE, BaycrestCity_PokemonCenter_1F_EventScript_Nurse_1
+	goto_if_unset FLAG_HIDE_DOLOMITE_CITY_GYM_GUIDE, BaycrestCity_PokemonCenter_1F_EventScript_Nurse_1
 # 20 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
 	setvar VAR_0x800B, 1
 # 21 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
@@ -57,7 +57,7 @@ BaycrestCity_PokemonCenter_1F_EventScript_RegisterLeague::
 # 40 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
 	msgbox BaycrestCity_PokemonCenter_1F_Text_RegisterToLeague3
 # 42 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
-	setflag FLAG_REGISTERED_TO_LEAGUE
+	setflag FLAG_HIDE_DOLOMITE_CITY_GYM_GUIDE
 # 43 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
 	setvar VAR_DOLOMITE_CITY_STATE, 2
 # 44 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
