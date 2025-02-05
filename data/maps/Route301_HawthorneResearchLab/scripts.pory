@@ -282,9 +282,6 @@ movement Route301_HawthorneResearchLab_Movement_ReceiveStarter_RivalWalkToTotodi
 }
 
 script Route301_HawthorneResearchLab_EventScript_ExplainErrand {
-    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown)
-    applymovement(OBJ_RIVAL, Common_Movement_WalkInPlaceFasterDown)
-    applymovement(OBJ_PROF_HAWTHORNE, Common_Movement_WalkInPlaceFasterUp)
     speakername("Hawthorne")
     msgbox(Route301_HawthorneResearchLab_Text_ExplainErrand_Hawthorne1)
     closemessage
@@ -308,7 +305,9 @@ script Route301_HawthorneResearchLab_EventScript_ExplainErrand {
     speakername("Hawthorne")
     msgbox(Route301_HawthorneResearchLab_Text_ExplainErrand_Hawthorne2)
     closemessage
-    
+
+    giveitem(ITEM_PARCEL)
+
     // setflag(FLAG_SYS_POKEDEX_GET)
     // special(SetUnlockedPokedexFlags)
     fadescreen(FADE_TO_BLACK)

@@ -40,8 +40,10 @@
     "gMapGroup_IndoorStemford",
     "gMapGroup_IndoorStarridge",
     "gMapGroup_AvaroRegion",
+    "gMapGroup_AvaroDungeons",
     "gMapGroup_IndoorArgil",
-    "gMapGroup_IndoorRoute301"
+    "gMapGroup_IndoorRoute301",
+    "gMapGroup_IndoorDolomite"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -674,6 +676,9 @@
     "Route301",
     "DolomiteCity"
   ],
+  "gMapGroup_AvaroDungeons": [
+
+  ],
   "gMapGroup_IndoorArgil": [
     "ArgilTown_PlayersHouse_1F",
     "ArgilTown_PlayersHouse_2F",
@@ -682,5 +687,8 @@
   ],
   "gMapGroup_IndoorRoute301": [
     "Route301_HawthorneResearchLab"
+  ],
+  "gMapGroup_IndoorDolomite": [
+    "DolomiteCity_TrainerSchool"
   ]
 }

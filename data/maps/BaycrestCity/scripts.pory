@@ -28,7 +28,7 @@ script BaycrestCity_Trigger_Rival1 {
     waitmovement(0)
     removeobject(OBJ_RIVAL)
 
-    setvar(VAR_BAYCREST_CITY_STATE, 1)
+    setvar(VAR_DOLOMITE_CITY_STATE, 1)
     setflag(FLAG_HIDE_BAYCREST_CITY_RIVAL)
 
     releaseall
@@ -78,7 +78,7 @@ script BaycrestCity_Holly {
     waitmovement(0)
     removeobject(OBJ_RIVAL)
 
-    setvar(VAR_BAYCREST_CITY_STATE, 1)
+    setvar(VAR_DOLOMITE_CITY_STATE, 1)
     setflag(FLAG_HIDE_BAYCREST_CITY_RIVAL)
 
     releaseall
@@ -114,7 +114,7 @@ script BaycrestCity_Caden {
     waitmovement(0)
     hideobjectat(OBJ_RIVAL, MAP_BAYCREST_CITY)
 
-    setvar(VAR_BAYCREST_CITY_STATE, 1)
+    setvar(VAR_DOLOMITE_CITY_STATE, 1)
     setflag(FLAG_HIDE_BAYCREST_CITY_RIVAL)
 
     releaseall

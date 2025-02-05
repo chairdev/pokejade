@@ -35,7 +35,7 @@ BaycrestCity_Trigger_Rival1::
 # 29 "data/maps/BaycrestCity/scripts.pory"
 	removeobject 1
 # 31 "data/maps/BaycrestCity/scripts.pory"
-	setvar VAR_BAYCREST_CITY_STATE, 1
+	setvar VAR_DOLOMITE_CITY_STATE, 1
 # 32 "data/maps/BaycrestCity/scripts.pory"
 	setflag FLAG_HIDE_BAYCREST_CITY_RIVAL
 # 34 "data/maps/BaycrestCity/scripts.pory"
@@ -102,7 +102,7 @@ BaycrestCity_Holly_1:
 # 79 "data/maps/BaycrestCity/scripts.pory"
 	removeobject 1
 # 81 "data/maps/BaycrestCity/scripts.pory"
-	setvar VAR_BAYCREST_CITY_STATE, 1
+	setvar VAR_DOLOMITE_CITY_STATE, 1
 # 82 "data/maps/BaycrestCity/scripts.pory"
 	setflag FLAG_HIDE_BAYCREST_CITY_RIVAL
 # 84 "data/maps/BaycrestCity/scripts.pory"
@@ -162,7 +162,7 @@ BaycrestCity_Caden_1:
 # 115 "data/maps/BaycrestCity/scripts.pory"
 	hideobjectat 1, MAP_BAYCREST_CITY
 # 117 "data/maps/BaycrestCity/scripts.pory"
-	setvar VAR_BAYCREST_CITY_STATE, 1
+	setvar VAR_DOLOMITE_CITY_STATE, 1
 # 118 "data/maps/BaycrestCity/scripts.pory"
 	setflag FLAG_HIDE_BAYCREST_CITY_RIVAL
 # 120 "data/maps/BaycrestCity/scripts.pory"

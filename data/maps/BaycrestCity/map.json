@@ -160,7 +160,7 @@
       "x": 10,
       "y": 37,
       "elevation": 0,
-      "var": "VAR_BAYCREST_CITY_STATE",
+      "var": "VAR_DOLOMITE_CITY_STATE",
       "var_value": "0",
       "script": "BaycrestCity_Trigger_Rival1"
     },
@@ -169,7 +169,7 @@
       "x": 11,
       "y": 37,
       "elevation": 0,
-      "var": "VAR_BAYCREST_CITY_STATE",
+      "var": "VAR_DOLOMITE_CITY_STATE",
       "var_value": "0",
       "script": "BaycrestCity_Trigger_Rival2"
     }

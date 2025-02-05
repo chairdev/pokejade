@@ -4790,6 +4790,16 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/DolomiteCity/border.bin",
       "blockdata_filepath": "data/layouts/DolomiteCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_DOLOMITE_CITY_TRAINER_SCHOOL",
+      "name": "DolomiteCity_TrainerSchool_Layout",
+      "width": 12,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonSchool",
+      "border_filepath": "data/layouts/DolomiteCity_TrainerSchool/border.bin",
+      "blockdata_filepath": "data/layouts/DolomiteCity_TrainerSchool/map.bin"
     }
   ]
 }

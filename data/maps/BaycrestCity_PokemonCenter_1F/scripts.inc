@@ -59,7 +59,7 @@ BaycrestCity_PokemonCenter_1F_EventScript_RegisterLeague::
 # 42 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
 	setflag FLAG_REGISTERED_TO_LEAGUE
 # 43 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
-	setvar VAR_BAYCREST_CITY_STATE, 2
+	setvar VAR_DOLOMITE_CITY_STATE, 2
 # 44 "data/maps/BaycrestCity_PokemonCenter_1F/scripts.pory"
 	release
 	return

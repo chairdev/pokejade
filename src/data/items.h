@@ -12807,9 +12807,9 @@ const struct Item gItemsInfo[] =
         .name = _("Parcel"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "A parcel for Prof.\n"
-            "Oak from a Pokémon\n"
-            "Mart's clerk."),
+            "A parcel given to.\n"
+            "you from Prof.\n"
+            "Hawhtorne to deliver."),
         .importance = 2,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,

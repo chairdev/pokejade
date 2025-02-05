@@ -1229,3 +1229,5 @@ EventScript_VsSeekerChargingDone::
 
 
 	.include "data/maps/DolomiteCity/scripts.inc"
+
+	.include "data/maps/DolomiteCity_TrainerSchool/scripts.inc"
