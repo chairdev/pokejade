@@ -1227,3 +1227,5 @@ EventScript_VsSeekerChargingDone::
 
 	.include "data/maps/Route301_HawthorneResearchLab/scripts.inc"
 
+
+	.include "data/maps/DolomiteCity/scripts.inc"

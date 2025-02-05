@@ -632,8 +632,9 @@
 #define MAP_STARRIDGE_CITY_ELDONS_HOUSE      (4 | (38 << 8))
 
 // gMapGroup_AvaroRegion
-#define MAP_ARGIL_TOWN (0 | (39 << 8))
-#define MAP_ROUTE301   (1 | (39 << 8))
+#define MAP_ARGIL_TOWN    (0 | (39 << 8))
+#define MAP_ROUTE301      (1 | (39 << 8))
+#define MAP_DOLOMITE_CITY (2 | (39 << 8))
 
 // gMapGroup_IndoorArgil
 #define MAP_ARGIL_TOWN_PLAYERS_HOUSE_1F (0 | (40 << 8))
