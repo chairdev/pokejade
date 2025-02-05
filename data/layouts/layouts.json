@@ -4800,6 +4800,16 @@
       "secondary_tileset": "gTileset_PokemonSchool",
       "border_filepath": "data/layouts/DolomiteCity_TrainerSchool/border.bin",
       "blockdata_filepath": "data/layouts/DolomiteCity_TrainerSchool/map.bin"
+    },
+    {
+      "id": "LAYOUT_DOLOMITE_CITY_POKEMON_CENTER_1F",
+      "name": "DolomiteCity_PokemonCenter_1F_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/DolomiteCity_PokemonCenter_1F/border.bin",
+      "blockdata_filepath": "data/layouts/DolomiteCity_PokemonCenter_1F/map.bin"
     }
   ]
 }

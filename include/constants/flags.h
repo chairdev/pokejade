@@ -800,7 +800,7 @@
 #define FLAG_HIDE_SLATEPORT_CITY_SCOTT                              0x2ED
 #define FLAG_HIDE_BAYCREST_CITY_RIVAL                               0x2EE
 #define FLAG_HIDE_VICTORY_ROAD_EXIT_WALLY                           0x2EF
-#define FLAG_HIDE_EVERWOOD_TOWN_MOM_OUTSIDE                         0x2F0
+#define FLAG_HIDE_ROUTE_301_MOM_OUTSIDE                         0x2F0
 #define FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_STEVEN              0x2F1
 #define FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_HOUSE_VIGOROTH_1          0x2F2
 #define FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_HOUSE_VIGOROTH_2          0x2F3

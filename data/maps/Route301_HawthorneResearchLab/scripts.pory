@@ -8,6 +8,8 @@ const OBJ_TOTODILE = 5
 //0: Walk in
 //1: Choose starter
 //2: Starter chosen
+//3: Delivered parcel
+//4: Adventure Started
 
 mapscripts Route301_HawthorneResearchLab_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
@@ -16,8 +18,193 @@ mapscripts Route301_HawthorneResearchLab_MapScripts {
     
     MAP_SCRIPT_ON_FRAME_TABLE [
         VAR_HAWTHORNE_LAB_STATE, 0: Route301_HawthorneResearchLab_MapScript_MeetProf
+        VAR_HAWTHORNE_LAB_STATE, 3: Route301_HawthorneResearchLab_MapScript_ReportBack
     ]
 }
+
+script Route301_HawthorneResearchLab_MapScript_ReportBack {
+    lockall
+
+    applymovement(OBJ_EVENT_ID_PLAYER, Route301_HawthorneResearchLab_Movement_Player_WalkIntoLab)
+    waitmovement(0)
+    applymovement(OBJ_PROF_HAWTHORNE, Common_Movement_WalkInPlaceFasterDown)
+
+    speakername("Hawthorne")
+    msgbox(Route301_HawthorneResearchLab_Text_ReportBack_Hawthorne1)
+    closemessage
+
+    fadescreen(FADE_TO_BLACK)
+    delay(16)
+    fadescreen(FADE_FROM_BLACK)
+
+    speakername("Hawthorne")
+    msgbox(Route301_HawthorneResearchLab_Text_ReportBack_Hawthorne2)
+    closemessage
+
+    fadescreen(FADE_TO_BLACK)
+    delay(16)
+    speakername("{RIVAL}")
+    msgbox(Route301_HawthorneResearchLab_Text_ReportBack_Rival1)
+    closemessage
+
+    addobject(OBJ_RIVAL)
+    setobjectxy(OBJ_RIVAL, 5, 6)
+    fadescreen(FADE_FROM_BLACK)
+
+    speakername("Hawthorne")
+    msgbox(Route301_HawthorneResearchLab_Text_ReportBack_Hawthorne3)
+    playbgm(MUS_ROUTE122, TRUE)
+    applymovement(OBJ_PROF_HAWTHORNE, Common_Movement_WalkInPlaceFasterDown)
+    msgbox(Route301_HawthorneResearchLab_Text_ReportBack_Hawthorne4)
+    closemessage
+    
+    playfanfare(MUS_OBTAIN_ITEM)
+    msgbox(format("You obtained the Pokédex!"))
+    waitfanfare
+
+    speakername("Hawthorne")
+    msgbox(Route301_HawthorneResearchLab_Text_ReportBack_Hawthorne5)
+    closemessage
+
+    giveitem(ITEM_POKE_BALL, 10)
+
+    speakername("Hawthorne")
+    msgbox(Route301_HawthorneResearchLab_Text_ReportBack_Hawthorne6)
+
+    speakername("{RIVAL}")
+    checkplayergender
+    if(var(VAR_RESULT) == FEMALE)
+    {
+        msgbox(Route301_HawthorneResearchLab_Text_ReportBack_Caden1)
+    }
+    else
+    {
+        msgbox(Route301_HawthorneResearchLab_Text_ReportBack_Holly1)
+    }
+
+    speakername("Hawthorne")
+    msgbox(Route301_HawthorneResearchLab_Text_ReportBack_Hawthorne7)
+
+    speakername("{RIVAL}")
+    if(var(VAR_RESULT) == FEMALE)
+    {
+        msgbox(Route301_HawthorneResearchLab_Text_ReportBack_Caden2)
+    }
+    else
+    {
+        msgbox(Route301_HawthorneResearchLab_Text_ReportBack_Holly2)
+    }
+
+    speakername("Hawthorne")
+    msgbox(Route301_HawthorneResearchLab_Text_ReportBack_Hawthorne8)
+    closemessage
+
+    fadedefaultbgm
+    
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown)
+    applymovement(OBJ_RIVAL, Route301_HawthorneResearchLab_Movement_Rival_RunOutOfLab)
+    waitmovement(0)
+    fadedefaultbgm
+    playse(SE_EXIT)
+    removeobject(OBJ_RIVAL)
+    waitse
+    
+    setvar(VAR_HAWTHORNE_LAB_STATE, 4)
+    setvar(VAR_ROUTE301_STATE, 4)
+    setflag(FLAG_HIDE_ROUTE_301_RIVAL)
+    setflag(FLAG_SYS_POKEDEX_GET)
+    clearflag(FLAG_HIDE_ROUTE_301_MOM_OUTSIDE)
+    special(SetUnlockedPokedexFlags)
+
+    releaseall
+
+}
+
+movement Route301_HawthorneResearchLab_Movement_Rival_RunOutOfLab {
+    walk_fast_down * 6
+}
+
+text Route301_HawthorneResearchLab_Text_ReportBack_Hawthorne1 {
+    format("Ah, {PLAYER}! Welcome back!\nHow did the delivery go?")
+}
+
+text Route301_HawthorneResearchLab_Text_ReportBack_Hawthorne2 {
+    format("Excellent work! I knew I could count on you.\p"
+            "The Mega Evolution Guru will be able to put those stones to good use.\p"
+            "It may seem like a simple errand, but every great journey starts with small steps!\p"
+            "Now then, let's wait for {RIVAL} to return and we can get started on your next assignment.")
+}
+
+text Route301_HawthorneResearchLab_Text_ReportBack_Rival1 {
+    format("Professor, I'm back!\nFieldwork is way more exhausting than I expected.")
+}
+
+text Route301_HawthorneResearchLab_Text_ReportBack_Hawthorne3 {
+    format("Ah, just in time, {RIVAL}! You and {PLAYER} have both done a fine job with your first tasks.\p"
+            "But I have one more important request for you both.")
+}
+
+text Route301_HawthorneResearchLab_Text_ReportBack_Hawthorne4 {
+    format("The world of Pokémon is vast, and there's still so much we don't know.\p"
+            "As you already know, my research focuses on understanding Pokémon habitats, behaviors, and how they grow alongside humans.\p"
+            "But no single researcher can explore every corner of the region alone.\p"
+            "This is where you two come in.\nI'd like you both to help me complete the Avaro Region's Pokédex.\p"
+            "By traveling, battling, and capturing Pokémon, you'll be contributing valuable data to Pokémon research!\p"
+            "And who knows? You might even discover something new about Pokémon in the process.\p"
+            "Here, you'll need this.")
+}
+
+text Route301_HawthorneResearchLab_Text_ReportBack_Hawthorne5 {
+    format("This fancy gadget is called a Pokédex.\p"
+            "It's a high-tech device that records data on any Pokémon you encounter or catch.\p"
+            "It's a valuable tool for any Trainer, and I'm entrusting you both with it.\p"
+            "Oh, and before I forget--here, take these as well.")
+}
+
+text Route301_HawthorneResearchLab_Text_ReportBack_Hawthorne6 {
+    format("These'll help you catch Pokémon out in the wild.\p"
+            "The more Pokémon you catch, the more we'll learn about their behaviors and habitats.\p"
+            "If you run out them, you can always buy more at Poké Marts.")
+}
+
+text Route301_HawthorneResearchLab_Text_ReportBack_Caden1 {
+    format("Oh, now this is what I'm talking about!\pExploring the entire region, catching tons of Pokémon--I'm in!")   
+}
+
+text Route301_HawthorneResearchLab_Text_ReportBack_Holly1 {
+    format("That sounds amazing!\pI've always wanted to see more of the world, and this is the perfect excuse!")
+}
+
+text Route301_HawthorneResearchLab_Text_ReportBack_Hawthorne7 {  
+    format("I'm glad to hear you're both excited!\p"  
+           "Of course, traveling the region isn't just about research--it's about making memories, meeting new people, and growing as Trainers.\p"  
+           "Perhaps you two should also consider taking on the Pokémon League.\p"  
+           "The League challenge is a test of skill, strategy, and perseverance.\p"  
+           "If you collect all eight Gym Badges, you'll earn the right to compete in the Paragon Conference, challenge the Elite Four--and perhaps even take on the Champion!\p"  
+           "Many of the world's greatest Trainers began as Pokédex researchers.\p"  
+           "After all, battling and studying Pokémon go hand in hand!")  
+}  
+
+text Route301_HawthorneResearchLab_Text_ReportBack_Caden2 {  
+    format("The Pokémon League, huh?\p"  
+           "That actually sounds kinda awesome... \n"  
+           "I mean, if we're already traveling, why not prove we're the best along the way?")  
+}  
+
+text Route301_HawthorneResearchLab_Text_ReportBack_Holly2 {  
+    format("Taking on the League sounds like a huge challenge...\p"  
+           "But honestly? I think it could be really fun!\p"  
+           "I'd love to see just how strong I can become.")  
+}  
+
+text Route301_HawthorneResearchLab_Text_ReportBack_Hawthorne8 {  
+    format("That's the spirit!\p"  
+           "Whatever path you choose, I have no doubt you'll both grow into remarkable Trainers.\p"
+           "The first Gym is in Dolomite City. I suggest you start there.")
+}  
+
+
+
 
 script Route301_HawthorneResearchLab_MapScript_MeetProf {
     lockall
@@ -285,10 +472,6 @@ script Route301_HawthorneResearchLab_EventScript_ExplainErrand {
     speakername("Hawthorne")
     msgbox(Route301_HawthorneResearchLab_Text_ExplainErrand_Hawthorne1)
     closemessage
-    
-    // playfanfare(MUS_OBTAIN_ITEM)
-    // msgbox(format("You obtained the Pokédex!"))
-    // waitfanfare
 
     applymovement(OBJ_RIVAL, Common_Movement_WalkInPlaceFasterDown)
     speakername("{RIVAL}")
@@ -308,8 +491,6 @@ script Route301_HawthorneResearchLab_EventScript_ExplainErrand {
 
     giveitem(ITEM_PARCEL)
 
-    // setflag(FLAG_SYS_POKEDEX_GET)
-    // special(SetUnlockedPokedexFlags)
     fadescreen(FADE_TO_BLACK)
     setvar(VAR_HAWTHORNE_LAB_STATE, 2)
     setvar(VAR_ROUTE301_STATE, 1)
@@ -327,13 +508,6 @@ text Route301_HawthorneResearchLab_Text_ExplainErrand_Hawthorne1 {
            "As for you, {PLAYER}, I could use some help cataloging Pokémon habitats on Route 301.\p"
            "Think of it as a chance to get to know your new partner better!")
 }
-
-// text Route301_HawthorneResearchLab_Text_ExplainErrand_Hawthorne2 {
-//     format("Oh, before I forget--this is a Pokédex!\p"
-//            "It's a high-tech device that records data on any Pokémon you encounter or catch.\p"
-//            "By using it, you'll be helping to expand our knowledge of the Pokémon in the Avaro Region.\p"
-//            "Try to catch as many different Pokémon as you can to fill it out!")
-// }
 
 // text Route301_HawthorneResearchLab_Text_ExplainErrand_Hawthorne3 {
 //     format("These are Poké Balls, used for catching wild Pokémon.\p"

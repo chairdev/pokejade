@@ -689,6 +689,7 @@
     "Route301_HawthorneResearchLab"
   ],
   "gMapGroup_IndoorDolomite": [
-    "DolomiteCity_TrainerSchool"
+    "DolomiteCity_TrainerSchool",
+    "DolomiteCity_PokemonCenter_1F"
   ]
 }

@@ -23,7 +23,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(ROOKIDEE)",
       "x": 6,
-      "y": 8,
+      "y": 9,
       "elevation": 4,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 2,
@@ -34,16 +34,16 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ROOKIDEE)",
-      "x": 16,
-      "y": 2,
+      "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
+      "x": 18,
+      "y": 8,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 2,
-      "movement_range_y": 3,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "BaycrestCity_EventScript_Lillipup",
+      "script": "ArgilTown_EventScript_TechnologyGuy",
       "flag": "0"
     }
   ],
@@ -64,7 +64,42 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 8,
+      "elevation": 0,
+      "var": "VAR_ARGIL_TOWN_STATE",
+      "var_value": "1",
+      "script": "ArgilTown_Trigger_DontLeave1"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_ARGIL_TOWN_STATE",
+      "var_value": "1",
+      "script": "ArgilTown_Trigger_DontLeave2"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_ARGIL_TOWN_STATE",
+      "var_value": "1",
+      "script": "ArgilTown_Trigger_DontLeave3"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_ARGIL_TOWN_STATE",
+      "var_value": "1",
+      "script": "ArgilTown_Trigger_DontLeave4"
+    }
   ],
   "bg_events": [
 

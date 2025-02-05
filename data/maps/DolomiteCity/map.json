@@ -2,7 +2,7 @@
   "id": "MAP_DOLOMITE_CITY",
   "name": "DolomiteCity",
   "layout": "LAYOUT_DOLOMITE_CITY",
-  "music": "MUS_DUMMY",
+  "music": "MUS_PETALBURG",
   "region_map_section": "MAPSEC_ABANDONED_SHIP",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -23,7 +23,20 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 20,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_DOLOMITE_CITY_TRAINER_SCHOOL",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 11,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_DOLOMITE_CITY_POKEMON_CENTER_1F",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
 

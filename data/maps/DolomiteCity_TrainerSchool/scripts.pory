@@ -1,1 +1,102 @@
-mapscripts DolomiteCity_TrainerSchool_MapScripts {}
+const OBJ_MEGA_EVO_GURU = 1
+
+mapscripts DolomiteCity_TrainerSchool_MapScripts {
+        MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_DOLOMITE_CITY_STATE, 0:  DolomiteCity_TrainerSchool_MapScript_DeliverParcel
+    ]
+}
+
+script DolomiteCity_TrainerSchool_MapScript_DeliverParcel {
+    lockall
+
+    applymovement(OBJ_EVENT_ID_PLAYER, DolomiteCity_TrainerSchool_Movement_DeliverParcel_WalkIn)
+
+    msgbox(DolomiteCity_TrainerSchool_Text_DeliverParcel_MegaEvoGuru1)
+    closemessage
+
+    call(DolomiteCity_TrainerSchool_MapScript_MegaEvoGuruExclamation)
+
+    msgbox(DolomiteCity_TrainerSchool_Text_DeliverParcel_MegaEvoGuru2)
+    closemessage
+
+    applymovement(OBJ_EVENT_ID_PLAYER, DolomiteCity_TrainerSchool_Movement_DeliverParcel_ApproachMegaEvoGuru)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+
+    applymovement(OBJ_MEGA_EVO_GURU, Common_Movement_WalkInPlaceFasterRight)
+    waitmovement(0)
+
+    msgbox(DolomiteCity_TrainerSchool_Text_DeliverParcel_MegaEvoGuru3)
+
+    call(DolomiteCity_TrainerSchool_MapScript_MegaEvoGuruExclamation)
+
+    msgbox(DolomiteCity_TrainerSchool_Text_DeliverParcel_MegaEvoGuru4)
+    giveitem(ITEM_EXP_SHARE)
+    closemessage
+
+    msgbox(DolomiteCity_TrainerSchool_Text_DeliverParcel_MegaEvoGuru5)
+    closemessage
+
+    setvar(VAR_DOLOMITE_CITY_STATE, 1)
+    setvar(VAR_HAWTHORNE_LAB_STATE, 3)
+    removeitem(ITEM_PARCEL)
+
+    releaseall
+}
+
+script DolomiteCity_TrainerSchool_MapScript_MegaEvoGuruExclamation {
+    playse(SE_PIN)
+    applymovement(OBJ_MEGA_EVO_GURU, Common_Movement_ExclamationMark)
+    waitse
+    waitmovement(0)
+    delay(16)
+}
+
+movement DolomiteCity_TrainerSchool_Movement_DeliverParcel_WalkIn {
+    walk_slow_up * 4
+}
+
+movement DolomiteCity_TrainerSchool_Movement_DeliverParcel_ApproachMegaEvoGuru {
+    walk_fast_right * 2
+    walk_fast_up * 3
+    walk_in_place_faster_left
+}
+
+text DolomiteCity_TrainerSchool_Text_DeliverParcel_MegaEvoGuru1 {
+    format("--and that is why only certain Pokémon species are capable of Mega Evolution.\p"
+           "However, simply possessing a Mega Stone is not enough. The bond between Trainer and Pokémon--")
+}
+
+text DolomiteCity_TrainerSchool_Text_DeliverParcel_MegaEvoGuru2 {
+    format("Ah, a visitor! Can I help you with something?")
+}
+
+text DolomiteCity_TrainerSchool_Text_DeliverParcel_MegaEvoGuru3 {
+    format( "Oh? A delivery from Professor Hawthorne?\p"
+            "Let me see...")
+}
+
+text DolomiteCity_TrainerSchool_Text_DeliverParcel_MegaEvoGuru4 {
+    format( "Incredible... These are never before seen Mega Stones!\p"
+            "Professor Hawthorne must trust you a great deal to handle something so valuable.\p"
+            "I must thank you for delivering these to me. Please, take this as a token of my gratitude.")
+}
+
+text DolomiteCity_TrainerSchool_Text_DeliverParcel_MegaEvoGuru5 {
+    format( "You can turn the Exp. Share on or off by selecting it from your Bag.\p"
+            "Please give Professor Hawthorne my regards. I must get back to my research.\p"
+            "I hope to see you again soon.")
+}
+
+script DolomiteCity_TrainerSchool_EventScript_MegaEvoGuru {
+    lock
+    faceplayer
+    msgbox(DolomiteCity_TrainerSchool_Text_MegaEvoGuru)
+    closemessage
+    release
+}
+
+text DolomiteCity_TrainerSchool_Text_MegaEvoGuru {
+    format("Thank you again for delivering these.\pIf you ever wish to learn more about Mega Evolution, my door is always open.")
+}
+
+

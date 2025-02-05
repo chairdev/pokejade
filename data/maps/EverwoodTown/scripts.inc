@@ -236,7 +236,7 @@ EverwoodTown_GoodbyeMom::
 # 178 "data/maps/EverwoodTown/scripts.pory"
 	setflag FLAG_SYS_B_DASH
 # 179 "data/maps/EverwoodTown/scripts.pory"
-	setflag FLAG_HIDE_EVERWOOD_TOWN_MOM_OUTSIDE
+	setflag FLAG_HIDE_ROUTE_301_MOM_OUTSIDE
 # 180 "data/maps/EverwoodTown/scripts.pory"
 	setvar VAR_ARGIL_TOWN_STATE, 4
 # 181 "data/maps/EverwoodTown/scripts.pory"

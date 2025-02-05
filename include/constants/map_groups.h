@@ -648,7 +648,8 @@
 #define MAP_ROUTE301_HAWTHORNE_RESEARCH_LAB (0 | (42 << 8))
 
 // gMapGroup_IndoorDolomite
-#define MAP_DOLOMITE_CITY_TRAINER_SCHOOL (0 | (43 << 8))
+#define MAP_DOLOMITE_CITY_TRAINER_SCHOOL    (0 | (43 << 8))
+#define MAP_DOLOMITE_CITY_POKEMON_CENTER_1F (1 | (43 << 8))
 
 #define MAP_GROUPS_COUNT 44
 

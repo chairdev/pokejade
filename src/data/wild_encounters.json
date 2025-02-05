@@ -12882,22 +12882,22 @@
               {
                 "min_level": 3,
                 "max_level": 5,
-                "species": "SPECIES_GRUBBIN"
+                "species": "SPECIES_VENIPEDE"
               },
               {
                 "min_level": 3,
                 "max_level": 5,
-                "species": "SPECIES_GRUBBIN"
+                "species": "SPECIES_VENIPEDE"
               },
               {
                 "min_level": 3,
                 "max_level": 5,
-                "species": "SPECIES_GRUBBIN"
+                "species": "SPECIES_VENIPEDE"
               },
               {
                 "min_level": 3,
                 "max_level": 5,
-                "species": "SPECIES_GRUBBIN"
+                "species": "SPECIES_VENIPEDE"
               }
             ]
           },

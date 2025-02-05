@@ -92,7 +92,7 @@ script EverwoodTown_HawthornResearchLab_MapScript_ReceiveStarter {
     setflag(FLAG_SYS_POKEDEX_GET)
     special(SetUnlockedPokedexFlags)
 
-    clearflag(FLAG_HIDE_EVERWOOD_TOWN_MOM_OUTSIDE)
+    clearflag(FLAG_HIDE_ROUTE_301_MOM_OUTSIDE)
     setvar(VAR_CABLE_CLUB_TUTORIAL_STATE, 1)
     setvar(VAR_ARGIL_TOWN_STATE, 3)
     setvar(VAR_HAWTHORNE_LAB_STATE, 3)

@@ -127,7 +127,7 @@ EverwoodTown_HawthornResearchLab_MapScript_ReceiveStarter_1:
 # 93 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	special SetUnlockedPokedexFlags
 # 95 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
-	clearflag FLAG_HIDE_EVERWOOD_TOWN_MOM_OUTSIDE
+	clearflag FLAG_HIDE_ROUTE_301_MOM_OUTSIDE
 # 96 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
 	setvar VAR_CABLE_CLUB_TUTORIAL_STATE, 1
 # 97 "data/maps/EverwoodTown_HawthornResearchLab/scripts.pory"
