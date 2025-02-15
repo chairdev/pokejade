@@ -611,10 +611,9 @@
 
 // gMapGroup_IndoorBaycrest
 #define MAP_BAYCREST_CITY_POKEMON_CENTER_1F     (0 | (35 << 8))
-#define MAP_BAYCREST_CITY_GYM                   (1 | (35 << 8))
-#define MAP_BAYCREST_CITY_MART                  (2 | (35 << 8))
-#define MAP_BAYCREST_CITY_ROCK_SMASH_MANS_HOUSE (3 | (35 << 8))
-#define MAP_BAYCREST_CITY_HOUSE1                (4 | (35 << 8))
+#define MAP_BAYCREST_CITY_MART                  (1 | (35 << 8))
+#define MAP_BAYCREST_CITY_ROCK_SMASH_MANS_HOUSE (2 | (35 << 8))
+#define MAP_BAYCREST_CITY_HOUSE1                (3 | (35 << 8))
 
 // gMapGroup_IndoorRoute503
 #define MAP_STEMFORD_GATE (0 | (36 << 8))
@@ -650,6 +649,7 @@
 // gMapGroup_IndoorDolomite
 #define MAP_DOLOMITE_CITY_TRAINER_SCHOOL    (0 | (43 << 8))
 #define MAP_DOLOMITE_CITY_POKEMON_CENTER_1F (1 | (43 << 8))
+#define MAP_DOLOMITE_CITY_GYM               (2 | (43 << 8))
 
 #define MAP_GROUPS_COUNT 44
 

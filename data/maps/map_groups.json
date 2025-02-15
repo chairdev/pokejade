@@ -651,7 +651,6 @@
   ],
   "gMapGroup_IndoorBaycrest": [
     "BaycrestCity_PokemonCenter_1F",
-    "BaycrestCity_Gym",
     "BaycrestCity_Mart",
     "BaycrestCity_RockSmashMansHouse",
     "BaycrestCity_House1"
@@ -690,6 +689,7 @@
   ],
   "gMapGroup_IndoorDolomite": [
     "DolomiteCity_TrainerSchool",
-    "DolomiteCity_PokemonCenter_1F"
+    "DolomiteCity_PokemonCenter_1F",
+    "DolomiteCity_Gym"
   ]
 }

@@ -102,7 +102,7 @@
 #define FLAG_UNUSED_0x055                    0x55  // Unused Flag
 
 #define FLAG_HIDE_CONTEST_POKE_BALL          0x56  // Always set after new game, object it hides is added directly
-#define FLAG_RECEIVED_SODA_POP_BAYCREST_GYM  0x57
+#define FLAG_RECEIVED_SODA_POP_DOLOMITE_GYM  0x57
 #define FLAG_BIRCH_AIDE_MET                  0x58
 #define FLAG_DECLINED_BIKE                   0x59
 #define FLAG_RECEIVED_BIKE                   0x5A
@@ -1314,7 +1314,7 @@
 #define FLAG_UNUSED_0x4EE                                           0x4EE // Unused Flag
 #define FLAG_UNUSED_0x4EF                                           0x4EF // Unused Flag
 
-#define FLAG_DEFEATED_BAYCREST_GYM                                  0x4F0
+#define FLAG_DEFEATED_DOLOMITE_GYM                                  0x4F0
 #define FLAG_DEFEATED_STARRIDGE_GYM                                   0x4F1
 #define FLAG_DEFEATED_MAUVILLE_GYM                                  0x4F2
 #define FLAG_DEFEATED_LAVARIDGE_GYM                                 0x4F3

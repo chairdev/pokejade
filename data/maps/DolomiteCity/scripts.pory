@@ -1,6 +1,6 @@
 mapscripts DolomiteCity_MapScripts {}
 
-script DolomiteCity_Gym_EventScript_GymGuide {
+script DolomiteCity_EventScript_GymGuide {
     lock
     faceplayer
 

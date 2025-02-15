@@ -592,8 +592,8 @@ EventScript_AfterWhiteOutHeal::
 	lockall
 	msgbox gText_FirstShouldRestoreMonsHealth
 	call EventScript_PkmnCenterNurse_TakeAndHealPkmn
-	call_if_unset FLAG_DEFEATED_BAYCREST_GYM, EventScript_AfterWhiteOutHealMsgPreRoxanne
-	call_if_set FLAG_DEFEATED_BAYCREST_GYM, EventScript_AfterWhiteOutHealMsg
+	call_if_unset FLAG_DEFEATED_DOLOMITE_GYM, EventScript_AfterWhiteOutHealMsgPreRoxanne
+	call_if_set FLAG_DEFEATED_DOLOMITE_GYM, EventScript_AfterWhiteOutHealMsg
 	applymovement VAR_LAST_TALKED, Movement_PkmnCenterNurse_Bow
 	waitmovement 0
 	fadedefaultbgm
@@ -1168,7 +1168,7 @@ EventScript_VsSeekerChargingDone::
 
 	.include "data/maps/BaycrestCity_PokemonCenter_1F/scripts.inc"
 
-	.include "data/maps/BaycrestCity_Gym/scripts.inc"
+	
 
 	.include "data/maps/BaycrestCity_Mart/scripts.inc"
 
@@ -1233,3 +1233,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/DolomiteCity_TrainerSchool/scripts.inc"
 
 	.include "data/maps/DolomiteCity_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/DolomiteCity_Gym/scripts.inc"

@@ -4803,31 +4803,31 @@ Double Battle: No
 AI: Check Bad Move / Check Viability / Try To Faint / Force Setup First Turn / Ace Pokemon
 
 Wooper 
-Level: 12
+Level: 8
 Ability: Water Absorb  
 Quiet Nature  
 IVs: 20 HP / 20 Def / 20 SpA / 20 SpD / 20 Spe  
 - Tail Whip  
 - Water Gun  
-- Sand Tomb
+- Mud Snare
 
 Mudbray
-Level: 12
+Level: 8
 Brave Nature  
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe  
-- Double Kick  
+- Tackle  
 - Iron Defense  
-- Sand Tomb
+- Mud Snare
 
 Toedscool  @Berry Juice
-Level: 13
+Level: 10
 EVs: 252 HP  
 Hasty Nature  
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe  
-- Rapid Spin  
+- Poison Powder  
 - Absorb  
 - Mud-Slap  
-- Sand Tomb
+- Mud Snare
 
 === TRAINER_MELODY_1 ===
 Name: Melody
@@ -5997,7 +5997,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Geodude
-Level: 9
+Level: 7
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_KENNETH ===
@@ -6010,11 +6010,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Geodude
-Level: 9
+Level: 6
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
 Wooper
-Level: 10
+Level: 7
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_JOEY ===
