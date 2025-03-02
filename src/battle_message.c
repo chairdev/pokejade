@@ -3558,6 +3558,7 @@ struct TrainerSlide
     const u8 *msgDynamax;
 };
 
+#pragma region Rival Caden Holly 
 const u8 sText_CadenFirstBattle_BeforeFirstTurn[] = COMPOUND_STRING("Alright, let's see what you've got! Don't hold back!");
 const u8 sText_CadenFirstBattle_FirstCriticalHit[] = COMPOUND_STRING("Seriously?! A critical hit already? Talk about lucky!");
 const u8 sText_CadenFirstBattle_FirstSuperEffectiveHit[] = COMPOUND_STRING("Whoa! That was a solid hit--guess I need to step up my game!");
@@ -3575,7 +3576,13 @@ const u8 sText_HollySecondBattle_BeforeFirstTurn[] = COMPOUND_STRING("Back at it
 const u8 sText_HollySecondBattle_FirstSuperEffectiveHit[] = COMPOUND_STRING("Whoa, nice super-effective hit! You've done your homework!");
 const u8 sText_HollySecondBattle_FirstCriticalHit[] = COMPOUND_STRING("Critical hit!? That was awesome!");
 const u8 sText_HollySecondBattle_LastSwitchIn[] = COMPOUND_STRING("Okay, time to get serious! Let's turn this around!");
+#pragma endregion
 
+#pragma region Gym Leaders 
+const u8 sText_Geo_BeforeFirstTurn[] = COMPOUND_STRING("I've prepared a lot for this!\nLet's put my knowledge to the test!");
+const u8 sText_Geo_FirstSTABMove[] = COMPOUND_STRING("Using my Pokémon's natural strength--this should do some real damage!");
+const u8 sText_Geo_LastSwitchIn[] = COMPOUND_STRING("This is my last Pokémon... but I still have a plan!");
+#pragma endregion
 
 static const struct TrainerSlide sTrainerSlides[] =
 {
@@ -3680,6 +3687,13 @@ static const struct TrainerSlide sTrainerSlides[] =
         .msgFirstSuperEffectiveHit = sText_CadenSecondBattle_FirstSuperEffectiveHit,
         .msgBeforeFirstTurn = sText_CadenSecondBattle_BeforeFirstTurn,
         .msgLastSwitchIn = sText_CadenSecondBattle_LastSwitchIn,
+    },
+    {
+        .trainerId = TRAINER_GEO_1,
+        .isFrontierTrainer = FALSE,
+        .msgFirstSTABMove = sText_Geo_FirstSTABMove,
+        .msgBeforeFirstTurn = sText_Geo_BeforeFirstTurn,
+        .msgLastSwitchIn = sText_Geo_LastSwitchIn,
     },
 };
 

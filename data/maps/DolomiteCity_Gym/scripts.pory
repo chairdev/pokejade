@@ -94,7 +94,7 @@ script DolomiteCity_Gym_EventScript_GeoDefeated {
 
    	setflag(FLAG_DEFEATED_DOLOMITE_GYM)
     setflag(FLAG_BADGE01_GET)
-    setvar(VAR_DOLOMITE_CITY_STATE, 1)
+    setvar(VAR_DOLOMITE_CITY_STATE, 2)
     clearflag(FLAG_HIDE_DOLOMITE_CITY_RIVAL)
     clearflag(FLAG_HIDE_DOLOMITE_CITY_ETERNITY_GRUNT)
     clearflag(FLAG_HIDE_DOLOMITE_CITY_ETERNITY_GRUNT)
@@ -126,7 +126,8 @@ text DolomiteCity_Gym_Text_GeoIntro {
             "As you know, my name's Geo, and I'm the Gym Leader here in Dolomite City!\p"
             "Some people think I'm just a kid, but I study really hard.\p"
             "I graduated from the Trainer School really fast because I love learning about Pokémon and battles!\p"
-            "Ground-types are my favorite!\nThey're really strong and solid, like the earth itself.\p"
+            "So much so that they let me be the Gym Leader here and teach classes!\p"
+            "You know, Ground-types are my favorite! They're really strong and solid, like the earth itself.\p"
             "I hope you're ready!\nI'm going to show you just how strong Ground-types can be!"
     )
 }

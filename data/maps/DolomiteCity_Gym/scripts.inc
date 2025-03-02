@@ -85,56 +85,66 @@ DolomiteCity_Gym_EventScript_GeoDefeated::
 	setflag FLAG_DEFEATED_DOLOMITE_GYM
 # 96 "data/maps/DolomiteCity_Gym/scripts.pory"
 	setflag FLAG_BADGE01_GET
+# 97 "data/maps/DolomiteCity_Gym/scripts.pory"
+	setvar VAR_DOLOMITE_CITY_STATE, 2
 # 98 "data/maps/DolomiteCity_Gym/scripts.pory"
-	goto DolomiteCity_Gym_EventScript_GiveSandTomb
+	clearflag FLAG_HIDE_DOLOMITE_CITY_RIVAL
+# 99 "data/maps/DolomiteCity_Gym/scripts.pory"
+	clearflag FLAG_HIDE_DOLOMITE_CITY_ETERNITY_GRUNT
 # 100 "data/maps/DolomiteCity_Gym/scripts.pory"
-	call Common_EventScript_SetGymTrainers
+	clearflag FLAG_HIDE_DOLOMITE_CITY_ETERNITY_GRUNT
 # 101 "data/maps/DolomiteCity_Gym/scripts.pory"
+	clearflag FLAG_HIDE_DOLOMITE_GROTTO_MEGA_GURU
+# 103 "data/maps/DolomiteCity_Gym/scripts.pory"
+	goto DolomiteCity_Gym_EventScript_GiveSandTomb
+# 105 "data/maps/DolomiteCity_Gym/scripts.pory"
+	call Common_EventScript_SetGymTrainers
+# 106 "data/maps/DolomiteCity_Gym/scripts.pory"
 	release
 	return
 
 
 DolomiteCity_Gym_EventScript_GiveSandTomb::
-# 105 "data/maps/DolomiteCity_Gym/scripts.pory"
+# 110 "data/maps/DolomiteCity_Gym/scripts.pory"
 	closemessage
-# 106 "data/maps/DolomiteCity_Gym/scripts.pory"
+# 111 "data/maps/DolomiteCity_Gym/scripts.pory"
 	giveitem ITEM_TM_SAND_TOMB
-# 108 "data/maps/DolomiteCity_Gym/scripts.pory"
+# 113 "data/maps/DolomiteCity_Gym/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq DolomiteCity_Gym_EventScript_GiveSandTomb_2
 DolomiteCity_Gym_EventScript_GiveSandTomb_1:
-# 113 "data/maps/DolomiteCity_Gym/scripts.pory"
+# 118 "data/maps/DolomiteCity_Gym/scripts.pory"
 	setflag FLAG_RECEIVED_TM_SAND_TOMB
-# 114 "data/maps/DolomiteCity_Gym/scripts.pory"
+# 119 "data/maps/DolomiteCity_Gym/scripts.pory"
 	speakername DolomiteCity_Gym_EventScript_Geo_Text_0
-# 115 "data/maps/DolomiteCity_Gym/scripts.pory"
+# 120 "data/maps/DolomiteCity_Gym/scripts.pory"
 	msgbox DolomiteCity_Gym_Text_ExplainSandTomb
-# 116 "data/maps/DolomiteCity_Gym/scripts.pory"
+# 121 "data/maps/DolomiteCity_Gym/scripts.pory"
 	release
 	return
 
 DolomiteCity_Gym_EventScript_GiveSandTomb_2:
-# 110 "data/maps/DolomiteCity_Gym/scripts.pory"
+# 115 "data/maps/DolomiteCity_Gym/scripts.pory"
 	goto Common_EventScript_ShowBagIsFull
 	goto DolomiteCity_Gym_EventScript_GiveSandTomb_1
 
 
 DolomiteCity_Gym_EventScript_Kenneth::
-# 168 "data/maps/DolomiteCity_Gym/scripts.pory"
+# 174 "data/maps/DolomiteCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_KENNETH, DolomiteCity_Gym_Text_KennethIntro, DolomiteCity_Gym_Text_KennethDefeated
-# 169 "data/maps/DolomiteCity_Gym/scripts.pory"
+# 175 "data/maps/DolomiteCity_Gym/scripts.pory"
 	msgbox DolomiteCity_Gym_Text_KennethPostBattle, MSGBOX_AUTOCLOSE
-# 170 "data/maps/DolomiteCity_Gym/scripts.pory"
+# 176 "data/maps/DolomiteCity_Gym/scripts.pory"
 	waitmessage
 	end
 
 
 DolomiteCity_Gym_EventScript_Christopher::
-# 187 "data/maps/DolomiteCity_Gym/scripts.pory"
+# 193 "data/maps/DolomiteCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_CHRISTOPHER, DolomiteCity_Gym_Text_ChristopherIntro, DolomiteCity_Gym_Text_ChristopherDefeated
-# 188 "data/maps/DolomiteCity_Gym/scripts.pory"
+# 194 "data/maps/DolomiteCity_Gym/scripts.pory"
 	msgbox DolomiteCity_Gym_Text_ChristopherPostBattle, MSGBOX_AUTOCLOSE
-# 189 "data/maps/DolomiteCity_Gym/scripts.pory"
+# 195 "data/maps/DolomiteCity_Gym/scripts.pory"
 	waitmessage
 	end
 
@@ -205,7 +215,7 @@ DolomiteCity_Gym_Text_GymGuideWin::
 	.string "Keep it up, kid!$"
 
 DolomiteCity_Gym_Text_GeoIntro::
-# 119 "data/maps/DolomiteCity_Gym/scripts.pory"
+# 124 "data/maps/DolomiteCity_Gym/scripts.pory"
 	.string "I had faith you'd make it here since the\n"
 	.string "moment I saw you fight Challenger\l"
 	.string "{RIVAL}!\p"
@@ -216,15 +226,17 @@ DolomiteCity_Gym_Text_GeoIntro::
 	.string "I graduated from the Trainer School\n"
 	.string "really fast because I love learning\l"
 	.string "about Pokémon and battles!\p"
-	.string "Ground-types are my favorite!\n"
-	.string "They're really strong and solid, like the\l"
-	.string "earth itself.\p"
+	.string "So much so that they let me be the Gym\n"
+	.string "Leader here and teach classes!\p"
+	.string "You know, Ground-types are my\n"
+	.string "favorite! They're really strong and\l"
+	.string "solid, like the earth itself.\p"
 	.string "I hope you're ready!\n"
 	.string "I'm going to show you just how strong\l"
 	.string "Ground-types can be!$"
 
 DolomiteCity_Gym_Text_GeoDefeat::
-# 129 "data/maps/DolomiteCity_Gym/scripts.pory"
+# 135 "data/maps/DolomiteCity_Gym/scripts.pory"
 	.string "Whoa... I guess my plans weren't as\n"
 	.string "strong as I thought.\p"
 	.string "Thank you, Challenger\n"
@@ -232,7 +244,7 @@ DolomiteCity_Gym_Text_GeoDefeat::
 	.string "think about!$"
 
 DolomiteCity_Gym_Text_GeoDefeated::
-# 134 "data/maps/DolomiteCity_Gym/scripts.pory"
+# 140 "data/maps/DolomiteCity_Gym/scripts.pory"
 	.string "Oh! You really did it--great job,\n"
 	.string "Challenger {PLAYER}!\p"
 	.string "As the Gym Leader, I officially give you\n"
@@ -242,11 +254,11 @@ DolomiteCity_Gym_Text_GeoDefeated::
 	.string "You've earned it with your hard work!$"
 
 DolomiteCity_Gym_Text_ReceivedFoundationBadge::
-# 140 "data/maps/DolomiteCity_Gym/scripts.pory"
+# 146 "data/maps/DolomiteCity_Gym/scripts.pory"
 	.string "You received the Foundation Badge!$"
 
 DolomiteCity_Gym_Text_FoundationBadgeInfo::
-# 144 "data/maps/DolomiteCity_Gym/scripts.pory"
+# 150 "data/maps/DolomiteCity_Gym/scripts.pory"
 	.string "With one badge, Pokémon of up to level\n"
 	.string "25 will be easier to catch and will\l"
 	.string "listen to your commands!\p"
@@ -256,7 +268,7 @@ DolomiteCity_Gym_Text_FoundationBadgeInfo::
 	.string "you--this TM!$"
 
 DolomiteCity_Gym_Text_ExplainSandTomb::
-# 151 "data/maps/DolomiteCity_Gym/scripts.pory"
+# 157 "data/maps/DolomiteCity_Gym/scripts.pory"
 	.string "This TM teaches Sand Tomb, a\n"
 	.string "Ground-type move. It traps the\l"
 	.string "opponent in a vortex of sand for 4-5\l"
@@ -267,39 +279,39 @@ DolomiteCity_Gym_Text_ExplainSandTomb::
 	.string "think?$"
 
 DolomiteCity_Gym_Text_GeoPostBattle::
-# 159 "data/maps/DolomiteCity_Gym/scripts.pory"
+# 165 "data/maps/DolomiteCity_Gym/scripts.pory"
 	.string "You were really awesome, Challenger\n"
 	.string "{PLAYER}! I hope you'll come back and\l"
 	.string "battle me again sometime! And good luck\l"
 	.string "with your next Gym!$"
 
 DolomiteCity_Gym_Text_KennethIntro::
-# 174 "data/maps/DolomiteCity_Gym/scripts.pory"
+# 180 "data/maps/DolomiteCity_Gym/scripts.pory"
 	.string "I'm a rock-solid trainer!\n"
 	.string "You'll never break through my defenses!$"
 
 DolomiteCity_Gym_Text_KennethDefeated::
-# 178 "data/maps/DolomiteCity_Gym/scripts.pory"
+# 184 "data/maps/DolomiteCity_Gym/scripts.pory"
 	.string "My offense broke and my defense\n"
 	.string "crumbled...$"
 
 DolomiteCity_Gym_Text_KennethPostBattle::
-# 182 "data/maps/DolomiteCity_Gym/scripts.pory"
+# 188 "data/maps/DolomiteCity_Gym/scripts.pory"
 	.string "Maybe I should take extra battle\n"
 	.string "classes...$"
 
 DolomiteCity_Gym_Text_ChristopherIntro::
-# 193 "data/maps/DolomiteCity_Gym/scripts.pory"
+# 199 "data/maps/DolomiteCity_Gym/scripts.pory"
 	.string "The sandstorm in this gym raises my\n"
 	.string "Pokémon's Special Defense!\p"
 	.string "But I bet you didn't know that!$"
 
 DolomiteCity_Gym_Text_ChristopherDefeated::
-# 198 "data/maps/DolomiteCity_Gym/scripts.pory"
+# 204 "data/maps/DolomiteCity_Gym/scripts.pory"
 	.string "I lost?\n"
 	.string "Even with my speed advantage?$"
 
 DolomiteCity_Gym_Text_ChristopherPostBattle::
-# 202 "data/maps/DolomiteCity_Gym/scripts.pory"
+# 208 "data/maps/DolomiteCity_Gym/scripts.pory"
 	.string "Weather effects can be a real game\n"
 	.string "changer, huh?$"

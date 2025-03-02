@@ -1,15 +1,16 @@
 //VAR_DOLOMITE_CITY_STATE
-//0: Before Gym
-//1: See Grunt
-//2 Go after Grunt
-//3: After Grunt
+//0: Havent Delivered Parcel
+//1: Delivered Parcel
+//2: See Grunt
+//3 Go after Grunt
+//4: After Grunt
 
 const OBJ_RIVAL = 2
 const OBJ_GRUNT = 3
 
 mapscripts DolomiteCity_MapScripts {
     MAP_SCRIPT_ON_FRAME_TABLE [
-        VAR_DOLOMITE_CITY_STATE, 1: DolomiteCity_MapScript_SeeGrunt
+        VAR_DOLOMITE_CITY_STATE, 2: DolomiteCity_MapScript_SeeGrunt
     ]
 }
 
@@ -45,6 +46,7 @@ script DolomiteCity_MapScript_SeeGrunt {
     }
     closemessage
     fadeoutbgm(4)
+    playbgm(MUS_ENCOUNTER_MAGMA, TRUE)
 
     applymovement(OBJ_GRUNT, DolomiteCity_Movement_GruntRunOnScreen)
     waitmovement(0)
@@ -52,13 +54,15 @@ script DolomiteCity_MapScript_SeeGrunt {
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight)
     waitmovement(0)
 
-    playbgm(MUS_ENCOUNTER_MAGMA, TRUE)
     msgbox(DolomiteCity_Text_SeeGrunt_Grunt)
     closemessage
 
     applymovement(OBJ_GRUNT, DolomiteCity_Movement_GruntRunOffScreen)
     waitmovement(0)
     removeobject(OBJ_GRUNT)
+
+    applymovement(OBJ_RIVAL, Common_Movement_WalkInPlaceFasterUp)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown)
 
     if(var(VAR_RESULT) == FEMALE)
     {
@@ -85,7 +89,11 @@ script DolomiteCity_MapScript_SeeGrunt {
     closemessage
 
     setflag(FLAG_RECEIVED_HM_ROCK_SMASH)
-    setvar(VAR_DOLOMITE_CITY_STATE, 2)
+    setflag(FLAG_HIDE_DOLOMITE_CITY_ETERNITY_GRUNT)
+    setvar(VAR_DOLOMITE_CITY_STATE, 3)
+
+    fadedefaultbgm
+    releaseall
 }
 
 movement DolomiteCity_Movement_GruntRunOnScreen {
@@ -95,19 +103,21 @@ movement DolomiteCity_Movement_GruntRunOnScreen {
 }
 
 movement DolomiteCity_Movement_GruntRunOffScreen {
-    walk_fast_up * 6
+    walk_fast_up * 8
 }
 
 text DolomiteCity_Text_SeeGrunt_Caden_1 {
     format("Phew, finally caught up to you!\p"
             "So, how was it? Geo didn't make it easy, did he?\p"
-            "The Foundation Badge, huh? Not bad!\nGuess that means I'm up next!")
+            "The Foundation Badge, huh? Not bad!\p"
+            "Guess that means I'm up next!")
 }
 
 text DolomiteCity_Text_SeeGrunt_Holly_1 {
     format( "You're back!\p"
             "So, how was the battle?\nGeo's tough, isn't he?\p"
-            "Wow, the Foundation Badge! That's so cool!\nI guess that means it's my turn now!")
+            "Wow, the Foundation Badge! That's so cool!\p"
+            "I guess that means it's my turn now!")
 }
 
 text DolomiteCity_Text_SeeGrunt_Grunt {

@@ -651,7 +651,7 @@ Route301_EventScript_RodMan::
 # 488 "data/maps/Route301/scripts.pory"
 	faceplayer
 # 490 "data/maps/Route301/scripts.pory"
-	compare VAR_ROUTE301_STATE, 2
+	compare VAR_ROUTE301_STATE, 3
 	goto_if_gt Route301_EventScript_RodMan_2
 # 503 "data/maps/Route301/scripts.pory"
 	msgbox Route301_Text_RodMan4
