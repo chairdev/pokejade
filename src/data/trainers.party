@@ -4816,7 +4816,7 @@ Level: 8
 Brave Nature  
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe  
 - Tackle  
-- Iron Defense  
+- Double Kick  
 - Mud Snare
 
 Toedscool  @Berry Juice
@@ -4825,8 +4825,7 @@ EVs: 252 HP
 Hasty Nature  
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe  
 - Poison Powder  
-- Absorb  
-- Mud-Slap  
+- Absorb 
 - Mud Snare
 
 === TRAINER_MELODY_1 ===

@@ -4810,6 +4810,16 @@
       "secondary_tileset": "gTileset_RustboroGym",
       "border_filepath": "data/layouts/DolomiteCity_Gym/border.bin",
       "blockdata_filepath": "data/layouts/DolomiteCity_Gym/map.bin"
+    },
+    {
+      "id": "LAYOUT_DOLOMITE_GROTTO",
+      "name": "DolomiteGrotto_Layout",
+      "width": 40,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/DolomiteGrotto/border.bin",
+      "blockdata_filepath": "data/layouts/DolomiteGrotto/map.bin"
     }
   ]
 }

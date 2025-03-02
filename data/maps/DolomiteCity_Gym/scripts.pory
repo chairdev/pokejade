@@ -94,6 +94,11 @@ script DolomiteCity_Gym_EventScript_GeoDefeated {
 
    	setflag(FLAG_DEFEATED_DOLOMITE_GYM)
     setflag(FLAG_BADGE01_GET)
+    setvar(VAR_DOLOMITE_CITY_STATE, 1)
+    clearflag(FLAG_HIDE_DOLOMITE_CITY_RIVAL)
+    clearflag(FLAG_HIDE_DOLOMITE_CITY_ETERNITY_GRUNT)
+    clearflag(FLAG_HIDE_DOLOMITE_CITY_ETERNITY_GRUNT)
+    clearflag(FLAG_HIDE_DOLOMITE_GROTTO_MEGA_GURU)
 
     goto(DolomiteCity_Gym_EventScript_GiveSandTomb)
 

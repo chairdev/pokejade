@@ -1,4 +1,167 @@
-mapscripts DolomiteCity_MapScripts {}
+//VAR_DOLOMITE_CITY_STATE
+//0: Before Gym
+//1: See Grunt
+//2 Go after Grunt
+//3: After Grunt
+
+const OBJ_RIVAL = 2
+const OBJ_GRUNT = 3
+
+mapscripts DolomiteCity_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_DOLOMITE_CITY_STATE, 1: DolomiteCity_MapScript_SeeGrunt
+    ]
+}
+
+script DolomiteCity_MapScript_SeeGrunt {
+    lockall
+
+    applymovement(OBJ_RIVAL, Common_Movement_WalkInPlaceFasterUp)
+    waitmovement(0)
+    playse(SE_PIN)
+    applymovement(OBJ_RIVAL, Common_Movement_ExclamationMark)
+    waitse
+    waitmovement(0)
+    delay(16)
+
+    speakername("{RIVAL}")
+    msgbox("Oh! {PLAYER}!")
+    closemessage
+
+    applymovement(OBJ_RIVAL, Common_Movement_WalkUp2)
+    waitmovement(0)
+
+    checkplayergender
+    speakername("{RIVAL}")
+    if(var(VAR_RESULT) == FEMALE)
+    {
+        playbgm(MUS_ENCOUNTER_BRENDAN, TRUE)
+        msgbox(DolomiteCity_Text_SeeGrunt_Caden_1)
+    }
+    else
+    {
+        playbgm(MUS_ENCOUNTER_MAY, TRUE)
+        msgbox(DolomiteCity_Text_SeeGrunt_Holly_1)
+    }
+    closemessage
+    fadeoutbgm(4)
+
+    applymovement(OBJ_GRUNT, DolomiteCity_Movement_GruntRunOnScreen)
+    waitmovement(0)
+    applymovement(OBJ_RIVAL, Common_Movement_WalkInPlaceFasterRight)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight)
+    waitmovement(0)
+
+    playbgm(MUS_ENCOUNTER_MAGMA, TRUE)
+    msgbox(DolomiteCity_Text_SeeGrunt_Grunt)
+    closemessage
+
+    applymovement(OBJ_GRUNT, DolomiteCity_Movement_GruntRunOffScreen)
+    waitmovement(0)
+    removeobject(OBJ_GRUNT)
+
+    if(var(VAR_RESULT) == FEMALE)
+    {
+        speakername("{RIVAL}")
+        msgbox(DolomiteCity_Text_SeeGrunt_Caden_2)
+        closemessage
+
+        giveitem(ITEM_HM_ROCK_SMASH)
+
+        speakername("{RIVAL}")
+        msgbox(DolomiteCity_Text_GoAfterGrunt_Caden)
+    }
+    else
+    {
+        speakername("{RIVAL}")
+        msgbox(DolomiteCity_Text_SeeGrunt_Holly_2)
+        closemessage
+
+        giveitem(ITEM_HM_ROCK_SMASH)
+
+        speakername("{RIVAL}")
+        msgbox(DolomiteCity_Text_GoAfterGrunt_Holly)
+    }
+    closemessage
+
+    setflag(FLAG_RECEIVED_HM_ROCK_SMASH)
+    setvar(VAR_DOLOMITE_CITY_STATE, 2)
+}
+
+movement DolomiteCity_Movement_GruntRunOnScreen {
+    walk_fast_up * 4
+    walk_fast_right * 9
+    walk_in_place_up
+}
+
+movement DolomiteCity_Movement_GruntRunOffScreen {
+    walk_fast_up * 6
+}
+
+text DolomiteCity_Text_SeeGrunt_Caden_1 {
+    format("Phew, finally caught up to you!\p"
+            "So, how was it? Geo didn't make it easy, did he?\p"
+            "The Foundation Badge, huh? Not bad!\nGuess that means I'm up next!")
+}
+
+text DolomiteCity_Text_SeeGrunt_Holly_1 {
+    format( "You're back!\p"
+            "So, how was the battle?\nGeo's tough, isn't he?\p"
+            "Wow, the Foundation Badge! That's so cool!\nI guess that means it's my turn now!")
+}
+
+text DolomiteCity_Text_SeeGrunt_Grunt {
+    format( "Tch--finally, some good luck!\p"
+            "That old Mega Evolution Guru is hanging around in the grotto...\p"
+            "Perfect chance to grab that package!")
+}
+
+text DolomiteCity_Text_SeeGrunt_Caden_2 {
+    format( "Wait--did you hear that?\nHe said something about the Mega Evolution Guru... And stealing a package?\p"
+            "Hold on--wasn't that package you delivered full of Mega Stones!?\p"
+            "If someone's after it, we can't just stand around!\p"
+            "Ugh--I still need to battle Geo first!\nI can't even use Rock Smash yet...\p"
+            "But you can, right? You have to go after him!"
+            "Here, take this. Some burly guy gave it to me, but I can't use it yet.\p"
+            "You'll need it to get through Dolomite Grotto.")
+}
+
+text DolomiteCity_Text_SeeGrunt_Holly_2 {
+    format( "Uh--did you hear that!?\nHe just said something about the Mega Evolution Guru... And stealing something?\p"
+            "Wait--wasn't that package we delivered full of Mega Stones!?\p"
+            "If someone's after it, we have to stop them!\p"
+            "Oh no, I haven't even battled Geo yet! I can't use Rock Smash...\p"
+            "But you can, right?\nYou have to go after him!\p"
+            "Oh! Here, take this!\nA really bulky guy gave it to me, but I can't use it yet.\p"
+            "You'll need it to get through Dolomite Grotto.")
+}
+
+script DolomiteCity_EventScript_GoAfterGrunt {
+    lock
+    faceplayer
+
+    checkplayergender
+    if(var(VAR_RESULT) == FEMALE)
+    {
+        msgbox(DolomiteCity_Text_GoAfterGrunt_Caden)
+    }
+    else
+    {
+        msgbox(DolomiteCity_Text_GoAfterGrunt_Holly)
+    }
+
+    release
+}
+
+text DolomiteCity_Text_GoAfterGrunt_Caden {
+    format( "I'll catch up after I win my badge!\p"
+            "Don't let them get away with those Mega Stones!")
+}
+
+text DolomiteCity_Text_GoAfterGrunt_Holly {
+    format( "I'll be right behind you once I win my badge!\p"
+            "Don't let them get away with those Mega Stones!")
+}
 
 script DolomiteCity_EventScript_GymGuide {
     lock

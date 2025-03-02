@@ -408,67 +408,68 @@ DolomiteCity_TrainerSchool_Text_MegaEvoGuru::
 
 DolomiteCity_TrainerSchool_Geo_Text1::
 # 244 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
-	.string "Oh hello!\n"
+	.string "Hi there!\n"
 	.string "Welcome to the Pokémon Trainer's\l"
 	.string "School.$"
 
 DolomiteCity_TrainerSchool_Geo_Text2::
 # 248 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
-	.string "I am Geo, this city's Gym Leader.\p"
-	.string "Currently, I'm instructing these\n"
-	.string "students on Pokémon battle strategies\l"
-	.string "and the importance of type matchups.$"
+	.string "I'm Geo, the Gym Leader here.\p"
+	.string "Right now, I'm teaching these students\n"
+	.string "about Pokémon battles and why type\l"
+	.string "matchups are super important.$"
 
 DolomiteCity_TrainerSchool_Geo_Text3::
 # 253 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
-	.string "But just like Challenger {RIVAL}\n"
-	.string "over there, I imagine you're not here\l"
-	.string "for a lesson.\p"
-	.string "Let me guess--you seek a Gym\n"
-	.string "Challenge?$"
+	.string "But I bet you're not here for a lesson,\n"
+	.string "just like Challenger {RIVAL} over\l"
+	.string "there.\p"
+	.string "You want a Gym Challenge, don't you?$"
 
 DolomiteCity_TrainerSchool_Geo_Text_Accept::
 # 258 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
-	.string "Eager to prove yourself--good.\p"
-	.string "But before you battle me, you must\n"
-	.string "demonstrate your ability in battle.\p"
-	.string "Challenger {RIVAL} here has been\n"
-	.string "attending my lessons.\p"
-	.string "Why don't you two put your skills to the\n"
-	.string "test?$"
+	.string "You're excited to prove yourself, huh?\n"
+	.string "That's great!\p"
+	.string "But before you can battle me, you need\n"
+	.string "to show me your skills in a battle.\p"
+	.string "Challenger {RIVAL} has been learning\n"
+	.string "a lot from my lessons.\p"
+	.string "Why don't you two have a battle and\n"
+	.string "show me what you've got?$"
 
 DolomiteCity_TrainerSchool_Geo_Text_RivalIntro::
 # 265 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
-	.string "{RIVAL}, step forward. Show me what\n"
-	.string "you've learned.$"
+	.string "Challenger {RIVAL}, come on up.\n"
+	.string "Show me what you've learned.$"
+
+DolomiteCity_TrainerSchool_Geo_Text_AfterBattle::
+# 269 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+	.string "Wow, that was impressive, Challenger\n"
+	.string "{PLAYER}.\n"
+	.string "You did really well in that battle.\p"
+	.string "Now, come meet me at the Dolomite Gym.\n"
+	.string "Let's see if you have what it takes to\l"
+	.string "earn my badge.$"
 
 DolomiteCity_TrainerSchool_Rival_Text1_Caden::
-# 269 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 274 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	.string "Oh, you're in for it now, {PLAYER}.\p"
 	.string "I've been paying attention, and I've\n"
 	.string "got a few new tricks up my sleeve!$"
 
 DolomiteCity_TrainerSchool_Rival_Text1_Holly::
-# 274 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 279 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	.string "This is perfect, {PLAYER}!\p"
 	.string "A real battle in front of a Gym Leader?\n"
 	.string "Let's give it everything we've got!$"
 
 DolomiteCity_TrainerSchool_CadenDefeated::
-# 279 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 284 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	.string "What?! No way!\p"
 	.string "Ugh, alright, alright. You got me this\n"
 	.string "time.$"
 
 DolomiteCity_TrainerSchool_HollyDefeated::
-# 284 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 289 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	.string "Wow, {PLAYER}, you're a real natural!\p"
 	.string "I've got a lot to learn.$"
-
-DolomiteCity_TrainerSchool_Geo_Text_AfterBattle::
-# 289 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
-	.string "Impressive, Challenger {PLAYER}.\n"
-	.string "You handled that battle well.\p"
-	.string "Now, meet me at the Dolomite Gym.\n"
-	.string "Show me if you truly have what it takes\l"
-	.string "to earn my badge.$"

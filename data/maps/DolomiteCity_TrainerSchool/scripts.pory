@@ -242,28 +242,33 @@ movement DolomiteCity_TrainerSchool_Movement_RivalLeave {
 
 
 text DolomiteCity_TrainerSchool_Geo_Text1 {  
-    format("Oh hello!\nWelcome to the Pokémon Trainer's School.")  
+    format("Hi there!\nWelcome to the Pokémon Trainer's School.")  
 }  
 
 text DolomiteCity_TrainerSchool_Geo_Text2 {  
-    format("I am Geo, this city's Gym Leader.\p"  
-           "Currently, I'm instructing these students on Pokémon battle strategies and the importance of type matchups.")  
+    format("I'm Geo, the Gym Leader here.\p"  
+           "Right now, I'm teaching these students about Pokémon battles and why type matchups are super important.")  
 }  
 
 text DolomiteCity_TrainerSchool_Geo_Text3 {  
-    format("But just like Challenger {RIVAL} over there, I imagine you're not here for a lesson.\p"  
-           "Let me guess--you seek a Gym Challenge?")  
+    format("But I bet you're not here for a lesson, just like Challenger {RIVAL} over there.\p"  
+           "You want a Gym Challenge, don't you?")  
 }  
 
 text DolomiteCity_TrainerSchool_Geo_Text_Accept {  
-    format("Eager to prove yourself--good.\p"  
-           "But before you battle me, you must demonstrate your ability in battle.\p"  
-           "Challenger {RIVAL} here has been attending my lessons.\p"
-           "Why don't you two put your skills to the test?")  
+    format("You're excited to prove yourself, huh? That's great!\p"  
+           "But before you can battle me, you need to show me your skills in a battle.\p"  
+           "Challenger {RIVAL} has been learning a lot from my lessons.\p"
+           "Why don't you two have a battle and show me what you've got?")  
 }  
 
 text DolomiteCity_TrainerSchool_Geo_Text_RivalIntro {  
-    format("{RIVAL}, step forward. Show me what you've learned.")  
+    format("Challenger {RIVAL}, come on up.\nShow me what you've learned.")  
+}  
+
+text DolomiteCity_TrainerSchool_Geo_Text_AfterBattle {  
+    format("Wow, that was impressive, Challenger {PLAYER}.\nYou did really well in that battle.\p"  
+           "Now, come meet me at the Dolomite Gym.\nLet's see if you have what it takes to earn my badge.")  
 }  
 
 text DolomiteCity_TrainerSchool_Rival_Text1_Caden {  
@@ -284,9 +289,4 @@ text DolomiteCity_TrainerSchool_CadenDefeated {
 text DolomiteCity_TrainerSchool_HollyDefeated {  
     format("Wow, {PLAYER}, you're a real natural!\p"
            "I've got a lot to learn.")  
-}  
-
-text DolomiteCity_TrainerSchool_Geo_Text_AfterBattle {  
-    format("Impressive, Challenger {PLAYER}.\nYou handled that battle well.\p"  
-           "Now, meet me at the Dolomite Gym.\nShow me if you truly have what it takes to earn my badge.")  
 }  

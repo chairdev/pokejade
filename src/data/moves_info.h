@@ -20698,8 +20698,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .makesContact = TRUE,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_WRAP,
+        },
+        {
+                .moveEffect = MOVE_EFFECT_SPD_MINUS_1,
+                .chance = 30,
         }),
-         .contestEffect = CONTEST_EFFECT_STARTLE_PREV_MONS,
+        .contestEffect = CONTEST_EFFECT_STARTLE_PREV_MONS,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_MUD_SPORT},

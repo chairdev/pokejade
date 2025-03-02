@@ -636,6 +636,7 @@
 #define MAP_DOLOMITE_CITY (2 | (39 << 8))
 
 // gMapGroup_AvaroDungeons
+#define MAP_DOLOMITE_GROTTO (0 | (40 << 8))
 
 // gMapGroup_IndoorArgil
 #define MAP_ARGIL_TOWN_PLAYERS_HOUSE_1F (0 | (41 << 8))

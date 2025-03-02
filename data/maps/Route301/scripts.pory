@@ -482,3 +482,52 @@ text Route301_Text_GoToLabWithRival_Holly2 {
 text Route301_Text_GoToLabWithRival_Holly3 {
     format("Come on, {PLAYER}!\nThe professor's waiting, and I wanna get moving!")
 }
+
+script Route301_EventScript_RodMan {
+    lock
+    faceplayer
+
+    if(var(VAR_ROUTE301_STATE) > 3)
+    {
+        if(!flag(FLAG_RECEIVED_SUPER_ROD))
+        {
+            msgbox(Route301_Text_RodMan1)
+            giveitem(ITEM_SUPER_ROD, 1)
+            setflag(FLAG_RECEIVED_SUPER_ROD)
+            msgbox(Route301_Text_RodMan2)
+        }
+        msgbox(Route301_Text_RodMan3)
+    }
+    else
+    {
+        msgbox(Route301_Text_RodMan4)
+    }
+
+    release
+}
+
+text Route301_Text_RodMan1 { //gives a fishing rod
+    format( "Hey, kid.\nCould you stop stomping around so much?\p"
+            "You're scaring away all the fish!\p"
+            "I'm trying to catch something here!\p"
+            "... ... ...\p"
+            "You're not going to leave me alone, are you?\p"
+            "If I give you this, will you go away?"
+    )
+}
+
+text Route301_Text_RodMan2 {
+    format("With that Super Rod, you can catch some really cool Pokémon!\p"
+           "Just don't scare them away like you did to me!\p"
+           "So uh...")
+}
+
+text Route301_Text_RodMan3 {
+    format("Go away and let me fish in peace!\p"
+           "Man, kids these days...")
+}
+
+text Route301_Text_RodMan4 {
+    format("Hey, kid.\nI'm trying to fish here, so could you give me some space?")
+}
+

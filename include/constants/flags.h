@@ -777,8 +777,8 @@
 #define FLAG_HIDE_PETALBURG_CITY_WALLYS_MOM                         0x2D8
 #define FLAG_HIDE_DOLOMITE_CITY_GYM_GUIDE                           0x2D9
 #define FLAG_HIDE_LILYCOVE_FAN_CLUB_INTERVIEWER                     0x2DA
-#define FLAG_HIDE_RUSTBORO_CITY_AQUA_GRUNT                          0x2DB
-#define FLAG_HIDE_RUSTBORO_CITY_DEVON_EMPLOYEE_1                    0x2DC
+#define FLAG_HIDE_DOLOMITE_CITY_ETERNITY_GRUNT                      0x2DB
+#define FLAG_HIDE_DOLOMITE_CITY_RIVAL                               0x2DC
 #define FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_KYOGRE_ASLEEP              0x2DD
 #define FLAG_HIDE_PLAYERS_HOUSE_DAD                                 0x2DE
 #define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_SIBLING      0x2DF
@@ -924,9 +924,9 @@
 #define FLAG_HIDE_ROUTE_111_PLAYER_DESCENT                          0x36B
 #define FLAG_HIDE_ROUTE_111_DESERT_FOSSIL                           0x36C
 #define FLAG_HIDE_MT_CHIMNEY_TRAINERS                               0x36D
-#define FLAG_HIDE_ROUTE_304_UPSILON_GRUNT                           0x36E
+#define FLAG_HIDE_DOLOMITE_GROTTO_ETERNITY_GRUNT                    0x36E
 #define FLAG_HIDE_STARRIDGE_RUINS_B1F_UPSILON_GRUNTS                0x36F
-#define FLAG_HIDE_RUSTURF_TUNNEL_PEEKO                              0x370
+#define FLAG_HIDE_DOLOMITE_GROTTO_MEGA_GURU                         0x370
 #define FLAG_HIDE_BRINEYS_HOUSE_PEEKO                               0x371
 #define FLAG_HIDE_SLATEPORT_CITY_TEAM_AQUA                          0x372
 #define FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_AQUA_GRUNTS         0x373

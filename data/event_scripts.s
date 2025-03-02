@@ -1235,3 +1235,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/DolomiteCity_PokemonCenter_1F/scripts.inc"
 
 	.include "data/maps/DolomiteCity_Gym/scripts.inc"
+
+	.include "data/maps/DolomiteGrotto/scripts.inc"

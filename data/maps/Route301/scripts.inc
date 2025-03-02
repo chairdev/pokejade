@@ -645,6 +645,41 @@ Route301_Movement_GoToLabWithRival_PlayerPath:
 	walk_in_place_faster_up
 	step_end
 
+Route301_EventScript_RodMan::
+# 487 "data/maps/Route301/scripts.pory"
+	lock
+# 488 "data/maps/Route301/scripts.pory"
+	faceplayer
+# 490 "data/maps/Route301/scripts.pory"
+	compare VAR_ROUTE301_STATE, 2
+	goto_if_gt Route301_EventScript_RodMan_2
+# 503 "data/maps/Route301/scripts.pory"
+	msgbox Route301_Text_RodMan4
+Route301_EventScript_RodMan_1:
+# 506 "data/maps/Route301/scripts.pory"
+	release
+	return
+
+Route301_EventScript_RodMan_2:
+# 492 "data/maps/Route301/scripts.pory"
+	goto_if_unset FLAG_RECEIVED_SUPER_ROD, Route301_EventScript_RodMan_6
+Route301_EventScript_RodMan_5:
+# 499 "data/maps/Route301/scripts.pory"
+	msgbox Route301_Text_RodMan3
+	goto Route301_EventScript_RodMan_1
+
+Route301_EventScript_RodMan_6:
+# 494 "data/maps/Route301/scripts.pory"
+	msgbox Route301_Text_RodMan1
+# 495 "data/maps/Route301/scripts.pory"
+	giveitem ITEM_SUPER_ROD, 1
+# 496 "data/maps/Route301/scripts.pory"
+	setflag FLAG_RECEIVED_SUPER_ROD
+# 497 "data/maps/Route301/scripts.pory"
+	msgbox Route301_Text_RodMan2
+	goto Route301_EventScript_RodMan_5
+
+
 Route301_MapScript_MomGoodbye_Text_0:
 # 35 "data/maps/Route301/scripts.pory"
 	.string "Mom$"
@@ -826,3 +861,34 @@ Route301_Text_GoToLabWithRival_Holly3::
 	.string "Come on, {PLAYER}!\n"
 	.string "The professor's waiting, and I wanna\l"
 	.string "get moving!$"
+
+Route301_Text_RodMan1::
+# 509 "data/maps/Route301/scripts.pory"
+	.string "Hey, kid.\n"
+	.string "Could you stop stomping around so\l"
+	.string "much?\p"
+	.string "You're scaring away all the fish!\p"
+	.string "I'm trying to catch something here!\p"
+	.string "... ... ...\p"
+	.string "You're not going to leave me alone, are\n"
+	.string "you?\p"
+	.string "If I give you this, will you go away?$"
+
+Route301_Text_RodMan2::
+# 519 "data/maps/Route301/scripts.pory"
+	.string "With that Super Rod, you can catch some\n"
+	.string "really cool Pokémon!\p"
+	.string "Just don't scare them away like you did\n"
+	.string "to me!\p"
+	.string "So uh...$"
+
+Route301_Text_RodMan3::
+# 525 "data/maps/Route301/scripts.pory"
+	.string "Go away and let me fish in peace!\p"
+	.string "Man, kids these days...$"
+
+Route301_Text_RodMan4::
+# 530 "data/maps/Route301/scripts.pory"
+	.string "Hey, kid.\n"
+	.string "I'm trying to fish here, so could you\l"
+	.string "give me some space?$"
