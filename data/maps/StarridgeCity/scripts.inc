@@ -290,7 +290,7 @@ StarridgeCity_EventScript_HostageSituation::
 # 245 "data/maps/StarridgeCity/scripts.pory"
 	lockall
 # 246 "data/maps/StarridgeCity/scripts.pory"
-	clearflag FLAG_HIDE_DOLOMITE_GROTTO_ETERNITY_GRUNT
+	clearflag FLAG_HIDE_DOLOMITE_GROTTO_GRUNT_AND_GURU
 # 248 "data/maps/StarridgeCity/scripts.pory"
 	applymovement 2, StarridgeCity_Movement_ScientistApproachPlayer
 # 249 "data/maps/StarridgeCity/scripts.pory"

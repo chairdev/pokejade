@@ -90,7 +90,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "RusturfTunnel_EventScript_Grunt",
-      "flag": "FLAG_HIDE_DOLOMITE_GROTTO_ETERNITY_GRUNT"
+      "flag": "FLAG_HIDE_DOLOMITE_GROTTO_GRUNT_AND_GURU"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WINGULL",

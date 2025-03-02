@@ -243,7 +243,7 @@ script StarridgeCity_Trigger_GoSaveBoss3 {
 
 script StarridgeCity_EventScript_HostageSituation {
     lockall
-    clearflag(FLAG_HIDE_DOLOMITE_GROTTO_ETERNITY_GRUNT)
+    clearflag(FLAG_HIDE_DOLOMITE_GROTTO_GRUNT_AND_GURU)
 
     applymovement(OBJ_SCIENTIST, StarridgeCity_Movement_ScientistApproachPlayer)
     waitmovement(0)

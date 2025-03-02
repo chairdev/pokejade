@@ -409,7 +409,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SPACE_CENTER_1 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Eternity
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -2162,7 +2162,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_GRUNT_SPACE_CENTER_2 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Eternity
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -2676,7 +2676,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MT_CHIMNEY_1 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Eternity
 Pic: Magma Grunt F
 Gender: Female
 Music: Magma
@@ -10541,22 +10541,22 @@ Golbat
 Level: 35
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-=== TRAINER_GRUNT_UNUSED ===
-Name: GRUNT
-Class: Team Magma
-Pic: Aqua Grunt F
+=== TRAINER_GRUNT_DOLOMITE_GROTTO ===
+Name: Grunt
+Class: Team Eternity
+Pic: Magma Grunt F
 Gender: Female
 Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Wailmer
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
 Zubat
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 8
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Houndour
+Level: 10
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 === TRAINER_GRUNT_MT_PYRE_4 ===
 Name: GRUNT
@@ -10577,7 +10577,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_JAGGED_PASS ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Eternity
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -10712,7 +10712,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MT_CHIMNEY_2 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Eternity
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -10803,7 +10803,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SPACE_CENTER_3 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Eternity
 Pic: Magma Grunt F
 Gender: Female
 Music: Magma
@@ -10820,7 +10820,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SPACE_CENTER_4 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Eternity
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -10833,7 +10833,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SPACE_CENTER_5 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Eternity
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -10846,7 +10846,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SPACE_CENTER_6 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Eternity
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -10859,7 +10859,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SPACE_CENTER_7 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Eternity
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -13346,7 +13346,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_1 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Eternity
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -13359,7 +13359,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_2 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Eternity
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -13372,7 +13372,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_3 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Eternity
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -13385,7 +13385,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_4 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Eternity
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -13402,7 +13402,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_5 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Eternity
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -13419,7 +13419,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_6 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Eternity
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -13432,7 +13432,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_7 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Eternity
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -13445,7 +13445,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_8 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Eternity
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -13458,7 +13458,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_9 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Eternity
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -13471,7 +13471,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_10 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Eternity
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -13484,7 +13484,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_11 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Eternity
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -13497,7 +13497,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_12 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Eternity
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -13510,7 +13510,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_13 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Eternity
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -13523,7 +13523,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_14 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Eternity
 Pic: Magma Grunt F
 Gender: Female
 Music: Magma
@@ -13536,7 +13536,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_15 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Eternity
 Pic: Magma Grunt F
 Gender: Female
 Music: Magma
@@ -13549,7 +13549,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_16 ===
 Name: GRUNT
-Class: Team Magma
+Class: Team Eternity
 Pic: Magma Grunt F
 Gender: Female
 Music: Magma

@@ -924,7 +924,7 @@
 #define FLAG_HIDE_ROUTE_111_PLAYER_DESCENT                          0x36B
 #define FLAG_HIDE_ROUTE_111_DESERT_FOSSIL                           0x36C
 #define FLAG_HIDE_MT_CHIMNEY_TRAINERS                               0x36D
-#define FLAG_HIDE_DOLOMITE_GROTTO_ETERNITY_GRUNT                    0x36E
+#define FLAG_HIDE_DOLOMITE_GROTTO_GRUNT_AND_GURU                    0x36E
 #define FLAG_HIDE_STARRIDGE_RUINS_B1F_UPSILON_GRUNTS                0x36F
 #define FLAG_HIDE_DOLOMITE_GROTTO_MEGA_GURU                         0x370
 #define FLAG_HIDE_BRINEYS_HOUSE_PEEKO                               0x371

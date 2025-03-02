@@ -673,7 +673,8 @@
   "gMapGroup_AvaroRegion": [
     "ArgilTown",
     "Route301",
-    "DolomiteCity"
+    "DolomiteCity",
+    "Route302"
   ],
   "gMapGroup_AvaroDungeons": [
     "DolomiteGrotto"

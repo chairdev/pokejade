@@ -1,1 +1,160 @@
+const OBJ_GRUNT = 5
+const OBJ_GURU = 4
+
 mapscripts DolomiteGrotto_MapScripts {}
+
+script DolomiteGrotto_Trigger_EternityEncounter {
+    lockall
+
+    applymovement(OBJ_EVENT_ID_PLAYER, DolomiteGrotto_Movement_EternityEncounter_PlayerApproach)
+    waitmovement(0)
+
+    playbgm(MUS_ENCOUNTER_MAGMA, FALSE)
+
+    applymovement(OBJ_GRUNT, Common_Movement_WalkInPlaceFasterRight)
+    waitmovement(0)
+
+    msgbox(DolomiteGrotto_Text_EternityEncounter_Grunt_1)
+
+    applymovement(OBJ_GURU, Common_Movement_WalkInPlaceFasterLeft)
+    waitmovement(0)
+    msgbox(DolomiteGrotto_Text_EternityEncounter_Guru_1)
+
+    applymovement(OBJ_GRUNT, Common_Movement_WalkInPlaceFasterRight)
+    waitmovement(0)
+    msgbox(DolomiteGrotto_Text_EternityEncounter_Grunt_2)
+    closemessage
+
+    applymovement(OBJ_GRUNT, Common_Movement_WalkInPlaceFasterDown)
+    waitmovement(0)
+    playse(SE_PIN)
+    applymovement(OBJ_GRUNT, Common_Movement_ExclamationMark)
+    waitse
+    waitmovement(0)
+    delay(16)
+
+    msgbox(DolomiteGrotto_Text_EternityEncounter_Grunt_3)
+    closemessage
+
+    applymovement(OBJ_GRUNT, DolomiteGrotto_Movement_EternityEncounter_GruntApproach)
+    waitmovement(0)
+    
+    trainerbattle_no_intro(TRAINER_GRUNT_DOLOMITE_GROTTO, DolomiteGrotto_Text_GruntDefeated)
+
+    msgbox(DolomiteGrotto_Text_EternityEncounter_Grunt_4)
+    closemessage
+
+    fadescreen(FADE_TO_BLACK)
+    fadedefaultbgm
+    removeobject(OBJ_GRUNT)
+    setobjectxy(OBJ_GURU, 24, 8)
+    turnobject(OBJ_GURU, DIR_SOUTH)
+    playse(SE_EXIT)
+    waitse
+    fadescreen(FADE_FROM_BLACK)
+
+    msgbox(DolomiteGrotto_Text_EternityEncounter_Guru_2)
+
+    dynmultichoice(20, 8, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE,
+    "What was she after?", "Who are they?")
+    
+    if (var(VAR_RESULT) == 0) 
+    {
+        msgbox(DolomiteGrotto_Text_EternityEncounter_Guru_3)
+    }
+    msgbox(DolomiteGrotto_Text_EternityEncounter_Guru_4)
+
+    switch(var(VAR_STARTER_MON)) {
+        case 0:
+            giveitem(ITEM_MIRACLE_SEED)
+            break
+        case 1:
+            giveitem(ITEM_CHARCOAL)
+            break
+        case 2:
+            giveitem(ITEM_MYSTIC_WATER)
+            break
+    }
+
+    msgbox(DolomiteGrotto_Text_EternityEncounter_Guru_5)
+    closemessage
+
+    fadescreen(FADE_TO_BLACK)
+    removeobject(OBJ_GURU)
+    playse(SE_EXIT)
+    waitse
+    setflag(FLAG_HIDE_DOLOMITE_GROTTO_GRUNT_AND_GURU)
+    fadescreen(FADE_FROM_BLACK)
+
+    setflag(FLAG_HIDE_DOLOMITE_CITY_RIVAL)
+    setvar(VAR_DOLOMITE_CITY_STATE, 4)
+    releaseall
+}
+
+movement DolomiteGrotto_Movement_EternityEncounter_PlayerApproach {
+    walk_fast_right * 8
+    walk_in_place_up
+}
+
+movement DolomiteGrotto_Movement_EternityEncounter_GruntApproach {
+    walk_down * 2
+    delay_16
+}
+
+text DolomiteGrotto_Text_EternityEncounter_Grunt_1 {
+    format("Listen, old man, let's not make this difficult.\p"
+            "Just hand over whatever Mega Stones you've got, and maybe I won't have to get rough!")
+}
+
+text DolomiteGrotto_Text_EternityEncounter_Guru_1 {
+    format("Stealing what you do not understand... a predictable path for the misguided.\p"
+            "Mega Evolution is not some tool to be snatched up by greedy hands.\p"
+            "It is a bond--one that cannot be stolen, only earned.")
+}
+
+text DolomiteGrotto_Text_EternityEncounter_Grunt_2 {
+    format("Yeah, yeah, save the speech!\nWe don't care about 'bonds'--We only care about power!\p"
+            "And Team Eternity will be the ones holding all of it soon enough!")
+}
+
+text DolomiteGrotto_Text_EternityEncounter_Grunt_3 {
+    format("Huh? Who're you supposed to be?\p"
+            "Another trainer poking their nose where it doesn't belong?\p"
+            "Tch. Doesn't matter.\p"
+            "If you're here to get in my way, then I'll just have to show you what Team Eternity is all about!")
+}
+
+text DolomiteGrotto_Text_EternityEncounter_Grunt_4 {
+    format("This isn't over.\nTeam Eternity always gets what we want!")
+}
+
+text DolomiteGrotto_Text_EternityEncounter_Guru_2 {
+    format("Thank you for your help, young one.\p"
+            "That woman... Team Eternity, was it?\nThey are a dangerous group.")
+}
+
+text DolomiteGrotto_Text_EternityEncounter_Guru_3 {
+    format("They came for my research on Mega Evolution. But not just the research--they were after something far more dangerous...\p"
+            "This time they were after Mega Stones, specifically. Such stones are not meant to be misused for the selfish desires of people like them.")
+}
+
+text DolomiteGrotto_Text_EternityEncounter_Guru_4 {
+    format("Team Eternity is a shadowy group with a dangerous agenda. They seek to exploit the powers of Pokémon for control.\p"
+            "Their leader believes that power should be in the hands of the few, not the many. \p"
+            "They are a growing threat, and I fear they will stop at nothing to get what they want.\p"
+            "You were able to defeat this grunt... but know that you'll surely run into more of them.\p"
+            "I suggest you remain vigilant.\p"
+            "Here... take this. It will help you on your journey. I can see the potential in you.")
+}
+
+text DolomiteGrotto_Text_EternityEncounter_Guru_5 {
+    format( "You should give that to your starter Pokémon to hold. It will help them in battle.\p"
+            "...Oh, how rude of me. I never asked your name.\p"
+            "Ah, {PLAYER}... a name that will be remembered, I'm sure.\p"
+            "I must return to my research.\nBut should you ever wish to learn more about Mega Evolution, you may find me again.\p"
+            "I'm truly grateful for your bravery today and hope to see you again soon.")
+}
+
+text DolomiteGrotto_Text_GruntDefeated {
+    format("Ugh, you're tougher than I thought... but don't get too cocky, alright?")
+}

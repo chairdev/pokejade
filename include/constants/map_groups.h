@@ -634,6 +634,7 @@
 #define MAP_ARGIL_TOWN    (0 | (39 << 8))
 #define MAP_ROUTE301      (1 | (39 << 8))
 #define MAP_DOLOMITE_CITY (2 | (39 << 8))
+#define MAP_ROUTE302      (3 | (39 << 8))
 
 // gMapGroup_AvaroDungeons
 #define MAP_DOLOMITE_GROTTO (0 | (40 << 8))

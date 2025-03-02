@@ -316,7 +316,7 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     [TRAINER_CLASS_BIRD_KEEPER] = { _("Bird Keeper"), 8 },
     [TRAINER_CLASS_COLLECTOR] = { _("Collector"), 15, ITEM_PREMIER_BALL },
     [TRAINER_CLASS_SWIMMER_M] = { _("Swimmer♂"), 2, ITEM_DIVE_BALL },
-    [TRAINER_CLASS_TEAM_MAGMA] = { _("Team Magma") },
+    [TRAINER_CLASS_TEAM_ETERNITY] = { _("Team Eternity") },
     [TRAINER_CLASS_EXPERT] = { _("Expert"), 10 },
     [TRAINER_CLASS_AQUA_ADMIN] = { _("Team Upsilon Admin"), 10 },
     [TRAINER_CLASS_BLACK_BELT] = { _("Black Belt"), 8, ITEM_ULTRA_BALL },
@@ -5429,7 +5429,7 @@ static void HandleEndTurn_BattleWon(void)
             PlayBGM(MUS_VICTORY_LEAGUE);
             break;
         case TRAINER_CLASS_TEAM_AQUA:
-        case TRAINER_CLASS_TEAM_MAGMA:
+        case TRAINER_CLASS_TEAM_ETERNITY:
         case TRAINER_CLASS_AQUA_ADMIN:
         case TRAINER_CLASS_AQUA_LEADER:
         case TRAINER_CLASS_MAGMA_ADMIN:
