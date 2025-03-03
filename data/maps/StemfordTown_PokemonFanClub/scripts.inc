@@ -79,7 +79,7 @@ StemfordTown_PokemonFanClub_TeamUpsilonIntro_1:
 # 57 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
 	setvar VAR_STEMFORD_TOWN_STATE, 1
 # 58 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
-	setflag FLAG_SAVED_NURSERY_MAN
+	setflag FLAG_HIDE_ROUTE_302_RIVAL
 # 60 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
 	goto StemfordTown_PokemonFanClub_NurseryMan
 	return

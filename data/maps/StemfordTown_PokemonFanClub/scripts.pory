@@ -55,7 +55,7 @@ script StemfordTown_PokemonFanClub_TeamUpsilonIntro {
 
     msgbox(StemfordTown_PokemonFanClub_Text_NurseryMan1)
     setvar(VAR_STEMFORD_TOWN_STATE, 1)
-    setflag(FLAG_SAVED_NURSERY_MAN)
+    setflag(FLAG_HIDE_ROUTE_302_RIVAL)
 
     goto(StemfordTown_PokemonFanClub_NurseryMan)
 }

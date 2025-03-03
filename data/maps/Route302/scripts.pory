@@ -1,1 +1,201 @@
+const OBJ_RIVAL = 7
+
+//VAR_ROUTE302_STATE
+//0: Daycare Explantion (Rival)
+//1: Aster First Battle
+//2: Done
+
 mapscripts Route302_MapScripts {}
+
+
+script Route302_Trigger_RivalEncounter1 {
+    lockall
+
+    removeobject(OBJ_RIVAL)
+
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp)
+    waitmovement(0)
+    playse(SE_PIN)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+    waitse
+    waitmovement(0)
+    delay(16)
+
+    msgbox(Route302_Text_RivalEncounter_Rival_1)
+    closemessage
+
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2)
+    waitmovement(0)
+
+    call(Route302_Trigger_RivalEncounter)
+}
+
+script Route302_Trigger_RivalEncounter2 {
+    lockall
+
+    removeobject(OBJ_RIVAL)
+
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp)
+    waitmovement(0)
+    playse(SE_PIN)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+    waitse
+    waitmovement(0)
+    delay(16)
+
+    msgbox(Route302_Text_RivalEncounter_Rival_1)
+    closemessage
+
+    applymovement(OBJ_EVENT_ID_PLAYER, Route302_Movement_RivalEncounter_PlayerNoticeRival)
+    waitmovement(0)
+
+    call(Route302_Trigger_RivalEncounter)
+}
+
+script Route302_Trigger_RivalEncounter {
+    addobject(OBJ_RIVAL)
+    setobjectxy(OBJ_RIVAL, 12, 22)
+
+    checkplayergender
+    if(var(VAR_RESULT) == FEMALE)
+    {
+        playbgm(MUS_ENCOUNTER_BRENDAN, FALSE)
+    }
+    else
+    {
+        playbgm(MUS_ENCOUNTER_MAY, TRUE)
+    }
+
+    applymovement(OBJ_RIVAL, Route302_Movement_RivalEncounter_RivalApproachPlayer)
+    waitmovement(0)
+
+    speakername("{RIVAL}")
+    msgbox(Route302_Text_RivalEncounter_Rival_2)
+    closemessage
+
+    applymovement(OBJ_EVENT_ID_PLAYER, Route302_Movement_RivalEncounter_PlayerGoToDaycare)
+    applymovement(OBJ_RIVAL, Route302_Movement_RivalEncounter_RivalGoToDaycare)
+    waitmovement(0)
+
+    speakername("{RIVAL}")
+    if(var(VAR_RESULT) == FEMALE)
+    {
+        msgbox(Route302_Text_RivalEncounter_Caden_1)
+    }
+    else
+    {
+        msgbox(Route302_Text_RivalEncounter_Holly_1)
+    }
+    closemessage
+
+    playse(SE_PIN)
+    applymovement(OBJ_RIVAL, Common_Movement_ExclamationMark)
+    waitse
+    waitmovement(0)
+    delay(16)
+
+    speakername("{RIVAL}")
+    if(var(VAR_RESULT) == FEMALE)
+    {
+        msgbox(Route302_Text_RivalEncounter_Caden_2)
+    }
+    else
+    {
+        msgbox(Route302_Text_RivalEncounter_Holly_2)
+    }
+    closemessage
+
+    applymovement(OBJ_RIVAL, Route302_Movement_RivalEncounter_RivalLeave)
+    waitmovement(0)
+
+    fadedefaultbgm
+
+    removeobject(OBJ_RIVAL)
+    setflag(FLAG_HIDE_ROUTE_302_RIVAL)
+    setvar(VAR_ROUTE302_STATE, 1)
+
+    releaseall
+}
+
+movement Route302_Movement_RivalEncounter_PlayerNoticeRival {
+    walk_up * 2
+    walk_left
+    walk_in_place_up
+}
+
+movement Route302_Movement_RivalEncounter_RivalApproachPlayer {
+    walk_fast_down * 5
+}
+
+movement Route302_Movement_RivalEncounter_PlayerGoToDaycare {
+    walk_right * 8
+    walk_in_place_up
+    delay_16
+}
+
+movement Route302_Movement_RivalEncounter_RivalGoToDaycare {
+    walk_right * 8
+    walk_in_place_down
+    delay_16
+}
+
+movement Route302_Movement_RivalEncounter_RivalLeave {
+    walk_left * 8
+}
+
+text Route302_Text_RivalEncounter_Rival_1 {
+    format("Hey, {PLAYER}!\nWait up!")
+}
+
+text Route302_Text_RivalEncounter_Rival_2 {
+    format("So? How'd it go with the Mega Evolution Guru? Everything go smoothly?\p"
+            "...Wait, hold on--Team Eternity? What kind of name is that?\p"
+            "No way. A whole group of weirdos running around, trying to steal important stuff? Sounds like classic villain material to me.\p"
+            "Well, at least you stopped them this time! If they show up again, we'll both be ready to take them down!\p"
+            "Anyway, there's a place I wanna show you up ahead. It's a little out of the way, but I think you'll like it.\p"
+            "Let's go!"
+    )
+}
+
+text Route302_Text_RivalEncounter_Caden_1 {
+    format("And here we are--the Pokémon Daycare!\p"
+            "This is where you can leave two Pokémon to hang out and maybe even make an Egg!\p"
+            "It's a great place to leave Pokémon you want to train up, or to breed Pokémon with good stats.\p"
+            "My uncle runs this place, so I've been here a bunch of times with my parents.\p"
+            "He's always going on about how raising Pokémon properly is just as important as battling with them.\p"
+            "Guess I never really thought much about it before. I mean, isn't the whole point of training just getting stronger?\p"
+            "...But hey, I guess it makes sense. I mean, if you're gonna be a good Trainer, you gotta be a good caretaker too, right?"
+    )
+}
+
+text Route302_Text_RivalEncounter_Holly_1 {
+    format("Aaand here we are!\nWelcome to the Pokémon Daycare!\p"
+            "You can leave two Pokémon here to hang out and maybe even make an Egg!\p"
+            "It's a great place to leave Pokémon you want to train up.\p"
+            "My uncle runs it, so I used to visit all the time with my mom.\p"
+            "He always says raising Pokémon is more than just battling--it's about helping them grow in their own way.\p"
+            "I never really thought about it like that before. I always just wanted to get stronger.\p"
+            "I guess it's true, though. If you're gonna be a good Trainer, you gotta take good care of your Pokémon too, right?"
+    )
+}
+
+text Route302_Text_RivalEncounter_Caden_2 {
+    format("Oh yeah! Almost forgot--\nFinally got my first Gym Badge from Geo!\p"
+            "Took me a couple of tries, not gonna lie. That guy is tough. He actually called me out for just charging in without a plan!\p"
+            "But hey, a win's a win, right? And now I'm one step closer to the Pokémon League!\p"
+            "Anyway, I should get moving. I wanna hurry up and get to Starridge City. I heard there's a Gym there that's all about Fairy-type Pokémon!\p"
+            "Oh, but don't think you're leaving me in the dust!\p"
+            "Next time we battle, I'm coming out on top, {PLAYER}!")
+
+}
+
+text Route302_Text_RivalEncounter_Holly_2 {
+    format("Oh! That reminds me--\nI finally beat Geo and got my first badge!\p"
+            "He's really smart, you know?\nI had to change my whole approach just to keep up!\p"
+            "I get why he's a teacher--he doesn't just test your Pokémon, he tests you too!\p"
+            "I didn't think I'd be able to do it, but I did! And now I can explore more of the region!\p"
+            "We've both got a long way to go, but... I think we're gonna do amazing things, {PLAYER}.\p"
+            "I'm heading to Starridge City next. I heard there's a Gym there that's all about Fairy-type Pokémon!\p"
+            "Oh, and next time we battle? I'll be stronger, so you'd better be ready!")
+
+}

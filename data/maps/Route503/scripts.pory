@@ -14,7 +14,7 @@ mapscripts Route503_MapScripts {
 
         setflag(FLAG_HIDE_ROUTE_503_MOM_DELCATTY)
 
-        if(!flag(FLAG_SAVED_NURSERY_MAN))
+        if(!flag(FLAG_HIDE_ROUTE_302_RIVAL))
         {
             setflag(FLAG_HIDE_ROUTE_503_NURSERY_MAN)
         }

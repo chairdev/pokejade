@@ -113,8 +113,10 @@ DolomiteGrotto_Trigger_EternityEncounter_4:
 # 89 "data/maps/DolomiteGrotto/scripts.pory"
 	setflag FLAG_HIDE_DOLOMITE_CITY_RIVAL
 # 90 "data/maps/DolomiteGrotto/scripts.pory"
-	setvar VAR_DOLOMITE_CITY_STATE, 4
+	setflag FLAG_HIDE_ROUTE_302_RIVAL
 # 91 "data/maps/DolomiteGrotto/scripts.pory"
+	setvar VAR_DOLOMITE_CITY_STATE, 4
+# 92 "data/maps/DolomiteGrotto/scripts.pory"
 	releaseall
 	return
 
@@ -139,35 +141,35 @@ DolomiteGrotto_Trigger_EternityEncounter_8:
 	goto DolomiteGrotto_Trigger_EternityEncounter_4
 
 
-# 94 "data/maps/DolomiteGrotto/scripts.pory"
+# 95 "data/maps/DolomiteGrotto/scripts.pory"
 DolomiteGrotto_Movement_EternityEncounter_PlayerApproach:
-# 95 "data/maps/DolomiteGrotto/scripts.pory"
-	walk_fast_right
-# 95 "data/maps/DolomiteGrotto/scripts.pory"
-	walk_fast_right
-# 95 "data/maps/DolomiteGrotto/scripts.pory"
-	walk_fast_right
-# 95 "data/maps/DolomiteGrotto/scripts.pory"
-	walk_fast_right
-# 95 "data/maps/DolomiteGrotto/scripts.pory"
-	walk_fast_right
-# 95 "data/maps/DolomiteGrotto/scripts.pory"
-	walk_fast_right
-# 95 "data/maps/DolomiteGrotto/scripts.pory"
-	walk_fast_right
-# 95 "data/maps/DolomiteGrotto/scripts.pory"
+# 96 "data/maps/DolomiteGrotto/scripts.pory"
 	walk_fast_right
 # 96 "data/maps/DolomiteGrotto/scripts.pory"
+	walk_fast_right
+# 96 "data/maps/DolomiteGrotto/scripts.pory"
+	walk_fast_right
+# 96 "data/maps/DolomiteGrotto/scripts.pory"
+	walk_fast_right
+# 96 "data/maps/DolomiteGrotto/scripts.pory"
+	walk_fast_right
+# 96 "data/maps/DolomiteGrotto/scripts.pory"
+	walk_fast_right
+# 96 "data/maps/DolomiteGrotto/scripts.pory"
+	walk_fast_right
+# 96 "data/maps/DolomiteGrotto/scripts.pory"
+	walk_fast_right
+# 97 "data/maps/DolomiteGrotto/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 99 "data/maps/DolomiteGrotto/scripts.pory"
+# 100 "data/maps/DolomiteGrotto/scripts.pory"
 DolomiteGrotto_Movement_EternityEncounter_GruntApproach:
-# 100 "data/maps/DolomiteGrotto/scripts.pory"
-	walk_down
-# 100 "data/maps/DolomiteGrotto/scripts.pory"
+# 101 "data/maps/DolomiteGrotto/scripts.pory"
 	walk_down
 # 101 "data/maps/DolomiteGrotto/scripts.pory"
+	walk_down
+# 102 "data/maps/DolomiteGrotto/scripts.pory"
 	delay_16
 	step_end
 
@@ -180,7 +182,7 @@ DolomiteGrotto_Trigger_EternityEncounter_Text_1:
 	.string "Who are they?$"
 
 DolomiteGrotto_Text_EternityEncounter_Grunt_1::
-# 104 "data/maps/DolomiteGrotto/scripts.pory"
+# 105 "data/maps/DolomiteGrotto/scripts.pory"
 	.string "Listen, old man, let's not make this\n"
 	.string "difficult.\p"
 	.string "Just hand over whatever Mega Stones\n"
@@ -188,7 +190,7 @@ DolomiteGrotto_Text_EternityEncounter_Grunt_1::
 	.string "get rough!$"
 
 DolomiteGrotto_Text_EternityEncounter_Guru_1::
-# 109 "data/maps/DolomiteGrotto/scripts.pory"
+# 110 "data/maps/DolomiteGrotto/scripts.pory"
 	.string "Stealing what you do not understand... a\n"
 	.string "predictable path for the misguided.\p"
 	.string "Mega Evolution is not some tool to be\n"
@@ -197,7 +199,7 @@ DolomiteGrotto_Text_EternityEncounter_Guru_1::
 	.string "stolen, only earned.$"
 
 DolomiteGrotto_Text_EternityEncounter_Grunt_2::
-# 115 "data/maps/DolomiteGrotto/scripts.pory"
+# 116 "data/maps/DolomiteGrotto/scripts.pory"
 	.string "Yeah, yeah, save the speech!\n"
 	.string "We don't care about 'bonds'--We only\l"
 	.string "care about power!\p"
@@ -205,7 +207,7 @@ DolomiteGrotto_Text_EternityEncounter_Grunt_2::
 	.string "holding all of it soon enough!$"
 
 DolomiteGrotto_Text_EternityEncounter_Grunt_3::
-# 120 "data/maps/DolomiteGrotto/scripts.pory"
+# 121 "data/maps/DolomiteGrotto/scripts.pory"
 	.string "Huh? Who're you supposed to be?\p"
 	.string "Another trainer poking their nose where\n"
 	.string "it doesn't belong?\p"
@@ -215,19 +217,19 @@ DolomiteGrotto_Text_EternityEncounter_Grunt_3::
 	.string "Eternity is all about!$"
 
 DolomiteGrotto_Text_EternityEncounter_Grunt_4::
-# 127 "data/maps/DolomiteGrotto/scripts.pory"
+# 128 "data/maps/DolomiteGrotto/scripts.pory"
 	.string "This isn't over.\n"
 	.string "Team Eternity always gets what we\l"
 	.string "want!$"
 
 DolomiteGrotto_Text_EternityEncounter_Guru_2::
-# 131 "data/maps/DolomiteGrotto/scripts.pory"
+# 132 "data/maps/DolomiteGrotto/scripts.pory"
 	.string "Thank you for your help, young one.\p"
 	.string "That woman... Team Eternity, was it?\n"
 	.string "They are a dangerous group.$"
 
 DolomiteGrotto_Text_EternityEncounter_Guru_3::
-# 136 "data/maps/DolomiteGrotto/scripts.pory"
+# 137 "data/maps/DolomiteGrotto/scripts.pory"
 	.string "They came for my research on Mega\n"
 	.string "Evolution. But not just the\l"
 	.string "research--they were after something\l"
@@ -238,7 +240,7 @@ DolomiteGrotto_Text_EternityEncounter_Guru_3::
 	.string "of people like them.$"
 
 DolomiteGrotto_Text_EternityEncounter_Guru_4::
-# 141 "data/maps/DolomiteGrotto/scripts.pory"
+# 142 "data/maps/DolomiteGrotto/scripts.pory"
 	.string "Team Eternity is a shadowy group with a\n"
 	.string "dangerous agenda. They seek to exploit\l"
 	.string "the powers of Pokémon for control.\p"
@@ -257,7 +259,7 @@ DolomiteGrotto_Text_EternityEncounter_Guru_4::
 	.string "you.$"
 
 DolomiteGrotto_Text_EternityEncounter_Guru_5::
-# 150 "data/maps/DolomiteGrotto/scripts.pory"
+# 151 "data/maps/DolomiteGrotto/scripts.pory"
 	.string "You should give that to your starter\n"
 	.string "Pokémon to hold. It will help them in\l"
 	.string "battle.\p"
@@ -273,6 +275,6 @@ DolomiteGrotto_Text_EternityEncounter_Guru_5::
 	.string "today and hope to see you again soon.$"
 
 DolomiteGrotto_Text_GruntDefeated::
-# 158 "data/maps/DolomiteGrotto/scripts.pory"
+# 159 "data/maps/DolomiteGrotto/scripts.pory"
 	.string "Ugh, you're tougher than I thought...\n"
 	.string "but don't get too cocky, alright?$"

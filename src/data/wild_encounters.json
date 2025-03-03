@@ -13175,12 +13175,12 @@
           "map": "MAP_ROUTE302",
           "base_label": "gRoute3020",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 20,
             "mons": [
               {
                 "min_level": 9,
                 "max_level": 11,
-                "species": "SPECIES_PIKACHU"
+                "species": "SPECIES_PICHU"
               },
               {
                 "min_level": 9,
@@ -13190,12 +13190,12 @@
               {
                 "min_level": 9,
                 "max_level": 11,
-                "species": "SPECIES_MUDBRAY"
+                "species": "SPECIES_NICKIT"
               },
               {
                 "min_level": 9,
                 "max_level": 11,
-                "species": "SPECIES_MUDBRAY"
+                "species": "SPECIES_NICKIT"
               },
               {
                 "min_level": 9,
@@ -13215,27 +13215,27 @@
               {
                 "min_level": 9,
                 "max_level": 11,
-                "species": "SPECIES_PIKACHU"
+                "species": "SPECIES_PICHU"
               },
               {
                 "min_level": 9,
                 "max_level": 11,
-                "species": "SPECIES_PIKACHU"
+                "species": "SPECIES_PICHU"
               },
               {
                 "min_level": 9,
                 "max_level": 11,
-                "species": "SPECIES_EEVEE"
+                "species": "SPECIES_WYNAUT"
               },
               {
                 "min_level": 9,
                 "max_level": 11,
-                "species": "SPECIES_EEVEE"
+                "species": "SPECIES_WYNAUT"
               },
               {
                 "min_level": 9,
                 "max_level": 11,
-                "species": "SPECIES_EEVEE"
+                "species": "SPECIES_WYNAUT"
               }
             ]
           }

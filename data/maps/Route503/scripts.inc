@@ -9,7 +9,7 @@ Route503_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 # 15 "data/maps/Route503/scripts.pory"
 	setflag FLAG_HIDE_ROUTE_503_MOM_DELCATTY
 # 17 "data/maps/Route503/scripts.pory"
-	goto_if_unset FLAG_SAVED_NURSERY_MAN, Route503_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
+	goto_if_unset FLAG_HIDE_ROUTE_302_RIVAL, Route503_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
 # 23 "data/maps/Route503/scripts.pory"
 	clearflag FLAG_HIDE_ROUTE_503_NURSERY_MAN
 	return

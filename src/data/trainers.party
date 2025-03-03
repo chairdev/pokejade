@@ -90,8 +90,8 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Skwovet
-Level: 3
+Lechonk
+Level: 10
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_1 ===
@@ -5978,12 +5978,12 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Blipbug
-Level: 6
+Venipede
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Nickit
-Level: 8
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHRISTOPHER ===
@@ -6344,7 +6344,7 @@ Nickit
 Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Skwovet
+Lechonk
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -11098,12 +11098,12 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Jigglypuff
-Level: 6
+Pikachu
+Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Chewtle
-Level: 6
+Eevee
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HALEY_1 ===
