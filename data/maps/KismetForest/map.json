@@ -16,8 +16,8 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY_3",
-      "x": 19,
-      "y": 30,
+      "x": 20,
+      "y": 31,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 2,
@@ -156,6 +156,32 @@
       "trainer_sight_or_berry_tree_id": "ITEM_TM_GRASS_KNOT",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_KISMET_FOREST_TM_GRASS_KNOT"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
+      "x": 11,
+      "y": 14,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_CutTree",
+      "flag": "FLAG_TEMP_10"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_RICH_BOY",
+      "x": 28,
+      "y": 32,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_LEFT_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "Route503_EventScript_RichboyCarl",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -163,15 +189,15 @@
       "x": 20,
       "y": 34,
       "elevation": 0,
-      "dest_map": "MAP_ROUTE503",
-      "dest_warp_id": "1"
+      "dest_map": "MAP_ZIRCON_TOWN",
+      "dest_warp_id": "0"
     },
     {
       "x": 21,
       "y": 34,
       "elevation": 0,
-      "dest_map": "MAP_ROUTE503",
-      "dest_warp_id": "2"
+      "dest_map": "MAP_ZIRCON_TOWN",
+      "dest_warp_id": "1"
     },
     {
       "x": 30,
@@ -185,6 +211,20 @@
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_ROUTE305",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 42,
+      "y": 20,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE303",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 43,
+      "y": 20,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE303",
       "dest_warp_id": "1"
     }
   ],

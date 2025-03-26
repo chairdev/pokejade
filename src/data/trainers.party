@@ -2536,7 +2536,7 @@ Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
-Dunsparce @ Nugget
+Wimpod @ Nugget
 Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -4442,7 +4442,7 @@ Gender: Female
 Music: Intense
 Double Battle: No
 AI: Check Bad Move
-
+WALTER
 Lunatone
 Level: 43
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
@@ -11132,8 +11132,8 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Azumarill
-Level: 18
+Buizel
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_VIVI ===
@@ -11324,11 +11324,11 @@ Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Spewpa
-Level: 18
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 VIVILLON_ELEGANT
-Level: 16
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JOSE ===
@@ -11340,12 +11340,12 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Wurmple
-Level: 8
+Venipede
+Level: 14
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Nincada
-Level: 8
+Wimpod
+Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_DOUG ===
@@ -11405,11 +11405,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Dewpider
-Level: 16
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Dwebble
-Level: 15
+Venipede
+Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JAMES_2 ===

@@ -61,7 +61,20 @@
     }
   ],
   "warp_events": [
-
+    {
+      "x": 8,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_KISMET_FOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 9,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_KISMET_FOREST",
+      "dest_warp_id": "1"
+    }
   ],
   "coord_events": [
     {

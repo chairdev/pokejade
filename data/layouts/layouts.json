@@ -4534,7 +4534,7 @@
     {
       "id": "LAYOUT_KISMET_FOREST",
       "name": "KismetForest_Layout",
-      "width": 40,
+      "width": 50,
       "height": 40,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Rustboro",
@@ -4840,6 +4840,26 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/ZirconTown/border.bin",
       "blockdata_filepath": "data/layouts/ZirconTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE303",
+      "name": "Route303_Layout",
+      "width": 40,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/Route303/border.bin",
+      "blockdata_filepath": "data/layouts/Route303/map.bin"
+    },
+    {
+      "id": "LAYOUT_SPINEL_CITY",
+      "name": "SpinelCity_Layout",
+      "width": 40,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/SpinelCity/border.bin",
+      "blockdata_filepath": "data/layouts/SpinelCity/map.bin"
     }
   ]
 }

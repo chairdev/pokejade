@@ -451,7 +451,6 @@
     "AlteringCave",
     "MeteorFalls_StevensCave",
     "FortuneCave",
-    "KismetForest",
     "StarridgeRuins_1F",
     "StarridgeRuins_B1F"
   ],
@@ -675,10 +674,13 @@
     "Route301",
     "DolomiteCity",
     "Route302",
-    "ZirconTown"
+    "ZirconTown",
+    "Route303",
+    "SpinelCity"
   ],
   "gMapGroup_AvaroDungeons": [
-    "DolomiteGrotto"
+    "DolomiteGrotto",
+    "KismetForest"
   ],
   "gMapGroup_IndoorArgil": [
     "ArgilTown_PlayersHouse_1F",

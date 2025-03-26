@@ -1241,3 +1241,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route302/scripts.inc"
 
 	.include "data/maps/ZirconTown/scripts.inc"
+
+	.include "data/maps/Route303/scripts.inc"
+
+	.include "data/maps/SpinelCity/scripts.inc"

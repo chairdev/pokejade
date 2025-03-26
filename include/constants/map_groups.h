@@ -411,9 +411,8 @@
 #define MAP_ALTERING_CAVE                            (106 | (24 << 8))
 #define MAP_METEOR_FALLS_STEVENS_CAVE                (107 | (24 << 8))
 #define MAP_FORTUNE_CAVE                             (108 | (24 << 8))
-#define MAP_KISMET_FOREST                            (109 | (24 << 8))
-#define MAP_STARRIDGE_RUINS_1F                       (110 | (24 << 8))
-#define MAP_STARRIDGE_RUINS_B1F                      (111 | (24 << 8))
+#define MAP_STARRIDGE_RUINS_1F                       (109 | (24 << 8))
+#define MAP_STARRIDGE_RUINS_B1F                      (110 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1    (0 | (25 << 8))
@@ -636,9 +635,12 @@
 #define MAP_DOLOMITE_CITY (2 | (39 << 8))
 #define MAP_ROUTE302      (3 | (39 << 8))
 #define MAP_ZIRCON_TOWN   (4 | (39 << 8))
+#define MAP_ROUTE303      (5 | (39 << 8))
+#define MAP_SPINEL_CITY   (6 | (39 << 8))
 
 // gMapGroup_AvaroDungeons
 #define MAP_DOLOMITE_GROTTO (0 | (40 << 8))
+#define MAP_KISMET_FOREST   (1 | (40 << 8))
 
 // gMapGroup_IndoorArgil
 #define MAP_ARGIL_TOWN_PLAYERS_HOUSE_1F (0 | (41 << 8))
