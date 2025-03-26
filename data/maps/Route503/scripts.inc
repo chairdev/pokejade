@@ -124,7 +124,7 @@ Route503_MeetAster_1:
 # 103 "data/maps/Route503/scripts.pory"
 	msgbox Route503_Text_MeetAster_Aster2
 # 105 "data/maps/Route503/scripts.pory"
-	trainerbattle_no_intro TRAINER_ASTER_ROUTE_503, Route503_Text_AsterDefeated
+	trainerbattle_no_intro TRAINER_ASTER_ROUTE_302, Route503_Text_AsterDefeated
 # 107 "data/maps/Route503/scripts.pory"
 	applymovement 8, Route503_AsterStepBack
 # 108 "data/maps/Route503/scripts.pory"
@@ -211,7 +211,7 @@ Route503_MeetAster_4:
 # 168 "data/maps/Route503/scripts.pory"
 	setvar VAR_ROUTE503_STATE, 1
 # 169 "data/maps/Route503/scripts.pory"
-	setflag FLAG_ROUTE_503_METASTER
+	setflag FLAG_HIDE_ROUTE_302_ASTER
 # 171 "data/maps/Route503/scripts.pory"
 	releaseall
 	return

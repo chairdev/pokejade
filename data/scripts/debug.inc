@@ -29,7 +29,7 @@ Debug_CheatStart::
 # 15 "data/scripts/debug.pory"
 	setflag FLAG_RESCUED_BIRCH
 # 16 "data/scripts/debug.pory"
-	setflag FLAG_ROUTE_503_METASTER
+	setflag FLAG_HIDE_ROUTE_302_ASTER
 # 17 "data/scripts/debug.pory"
 	setflag FLAG_ADVENTURE_STARTED
 # 18 "data/scripts/debug.pory"

@@ -4830,6 +4830,16 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/Route302/border.bin",
       "blockdata_filepath": "data/layouts/Route302/map.bin"
+    },
+    {
+      "id": "LAYOUT_ZIRCON_TOWN",
+      "name": "ZirconTown_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/ZirconTown/border.bin",
+      "blockdata_filepath": "data/layouts/ZirconTown/map.bin"
     }
   ]
 }

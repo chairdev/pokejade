@@ -766,7 +766,7 @@
 #define FLAG_HIDE_SAFARI_ZONE_SOUTH_CONSTRUCTION_WORKERS            0x2CD
 #define FLAG_HIDE_MEW                                               0x2CE
 #define FLAG_HIDE_STARRIDGE_CITY_RIVAL                              0x2CF
-#define FLAG_ROUTE_503_METASTER                                     0x2D0
+#define FLAG_HIDE_ROUTE_302_ASTER                                     0x2D0
 #define FLAG_HIDE_EVERWOOD_TOWN_RESEARCH_LAB_RIVAL                  0x2D1
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_BEDROOM          0x2D2
 #define FLAG_HIDE_ROUTE_301_RIVAL                                   0x2D3
@@ -1051,7 +1051,7 @@
 #define FLAG_ITEM_ROUTE_302_TM_ICY_WIND                             0x3E8
 #define FLAG_ITEM_KISMET_FOREST_TM_GRASS_KNOT                       0x3E9
 #define FLAG_ITEM_STARRIDGE_RUINS_1F_TM_ROCK_BLAST                  0x3EA
-#define FLAG_ITEM_ROUTE_105_IRON                                    0x3EB
+#define FLAG_ITEM_ROUTE_301_ANTIDOTE                                    0x3EB
 #define FLAG_ITEM_ROUTE_106_PROTEIN                                 0x3EC
 #define FLAG_ITEM_ROUTE_109_PP_UP                                   0x3ED
 #define FLAG_ITEM_ROUTE_110_RARE_CANDY                              0x3EE

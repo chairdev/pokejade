@@ -102,7 +102,7 @@ script Route503_MeetAster { //the rival and aster just faught, and the rival los
     speakername("Aster")
     msgbox(Route503_Text_MeetAster_Aster2)
 
-    trainerbattle_no_intro(TRAINER_ASTER_ROUTE_503, Route503_Text_AsterDefeated)
+    trainerbattle_no_intro(TRAINER_ASTER_ROUTE_302, Route503_Text_AsterDefeated)
 
     applymovement(OBJ_ASTER, Route503_AsterStepBack)
     waitmovement(0)
@@ -166,7 +166,7 @@ script Route503_MeetAster { //the rival and aster just faught, and the rival los
     removeobject(OBJ_RIVAL)
 
     setvar(VAR_ROUTE503_STATE, 1)
-    setflag(FLAG_ROUTE_503_METASTER)
+    setflag(FLAG_HIDE_ROUTE_302_ASTER)
 
     releaseall
 }

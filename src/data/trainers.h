@@ -51,7 +51,7 @@
 #line 95
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 94
-            .lvl = 10,
+            .lvl = 5,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -22073,12 +22073,12 @@ F_TRAINER_FEMALE |
         {
             {
 #line 8850
-            .species = SPECIES_IGGLYBUFF,
+            .species = SPECIES_WYNAUT,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8852
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 8851
-            .lvl = 6,
+            .lvl = 9,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -22089,7 +22089,7 @@ F_TRAINER_FEMALE |
 #line 8856
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 8855
-            .lvl = 6,
+            .lvl = 10,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -27821,7 +27821,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 11105
-            .species = SPECIES_EEVEE,
+            .species = SPECIES_WYNAUT,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11107
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -30274,7 +30274,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 12072
-    [TRAINER_ASTER_ROUTE_503] =
+    [TRAINER_ASTER_ROUTE_302] =
     {
 #line 12073
         .trainerName = _("Aster"),
@@ -30310,7 +30310,7 @@ F_TRAINER_FEMALE |
 #line 12087
             .iv = TRAINER_PARTY_IVS(20, 20, 20, 20, 20, 20),
 #line 12086
-            .lvl = 15,
+            .lvl = 12,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -30321,7 +30321,7 @@ F_TRAINER_FEMALE |
 #line 12091
             .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
 #line 12090
-            .lvl = 16,
+            .lvl = 12,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },

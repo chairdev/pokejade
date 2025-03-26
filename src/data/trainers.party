@@ -91,7 +91,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Lechonk
-Level: 10
+Level: 5
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_1 ===
@@ -8847,12 +8847,12 @@ Music: Twins
 Double Battle: Yes
 AI: Check Bad Move
 
-Igglybuff
-Level: 6
+Wynaut
+Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Pichu
-Level: 6
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MIU_AND_YUKI ===
@@ -11098,11 +11098,11 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Pikachu
+Rookidee
 Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Eevee
+Pikachu
 Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -12069,7 +12069,7 @@ Swablu
 Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_ASTER_ROUTE_503 ===
+=== TRAINER_ASTER_ROUTE_302 ===
 Name: Aster
 Class: Rival
 Pic: Wally
@@ -12083,11 +12083,11 @@ Level: 13
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 Zubat
-Level: 15
+Level: 12
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 Eevee
-Level: 16
+Level: 12
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_WALLY_VR_2 ===

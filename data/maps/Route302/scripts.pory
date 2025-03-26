@@ -1,4 +1,5 @@
 const OBJ_RIVAL = 7
+const OBJ_ASTER = 6
 
 //VAR_ROUTE302_STATE
 //0: Daycare Explantion (Rival)
@@ -112,6 +113,7 @@ script Route302_Trigger_RivalEncounter {
 
     removeobject(OBJ_RIVAL)
     setflag(FLAG_HIDE_ROUTE_302_RIVAL)
+    clearflag(FLAG_HIDE_ROUTE_302_ASTER)
     setvar(VAR_ROUTE302_STATE, 1)
 
     releaseall
@@ -198,4 +200,148 @@ text Route302_Text_RivalEncounter_Holly_2 {
             "I'm heading to Starridge City next. I heard there's a Gym there that's all about Fairy-type Pokémon!\p"
             "Oh, and next time we battle? I'll be stronger, so you'd better be ready!")
 
+}
+
+script Route302_Trigger_AsterFirstBattle1 {
+    lockall
+
+    addobject(OBJ_ASTER)
+    playse(SE_PIN)
+    applymovement(OBJ_ASTER, Common_Movement_ExclamationMark)
+    waitse
+    waitmovement(0)
+    delay(16)
+    applymovement(OBJ_ASTER, Common_Movement_WalkInPlaceFasterDown)
+    waitmovement(0)
+
+    speakername("???")
+    msgbox(Route302_Text_AsterFirstBattle_Aster_1)
+    closemessage
+
+    playbgm(MUS_RG_ENCOUNTER_BOY, TRUE)
+
+    applymovement(OBJ_ASTER, Route302_Movement_AsterFirstBattle_AsterApproachPlayer1)
+    waitmovement(0)
+
+    call(Route302_Trigger_AsterFirstBattle)
+}
+
+script Route302_Trigger_AsterFirstBattle2 {
+    lockall
+
+    addobject(OBJ_ASTER)
+    playse(SE_PIN)
+    applymovement(OBJ_ASTER, Common_Movement_ExclamationMark)
+    waitse
+    waitmovement(0)
+    delay(16)
+    applymovement(OBJ_ASTER, Common_Movement_WalkInPlaceFasterDown)
+    waitmovement(0)
+
+    playbgm(MUS_RG_ENCOUNTER_BOY, TRUE)
+
+    speakername("???")
+    msgbox(Route302_Text_AsterFirstBattle_Aster_1)
+    closemessage
+
+    applymovement(OBJ_ASTER, Route302_Movement_AsterFirstBattle_AsterApproachPlayer2)
+    waitmovement(0)
+
+    call(Route302_Trigger_AsterFirstBattle)
+}
+
+script Route302_Trigger_AsterFirstBattle {
+    speakername("???")
+    msgbox(Route302_Text_AsterFirstBattle_Aster_2)
+
+    speakername("Aster")
+    msgbox(Route302_Text_AsterFirstBattle_Aster_3)
+
+    dynmultichoice(20, 8, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE,
+    "...Who?", "Aster?")
+
+    msgbox(Route302_Text_AsterFirstBattle_Aster_4)
+
+    dynmultichoice(20, 8, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE,
+    "I'm {PLAYER}!", "...It's {PLAYER}.")
+
+    msgbox(Route302_Text_AsterFirstBattle_Aster_5)
+    closemessage
+
+    trainerbattle_no_intro(TRAINER_ASTER_ROUTE_302, Route302_Text_AsterDefeated)
+
+    speakername("Aster")
+    msgbox(Route302_Text_AsterFirstBattle_Aster_6)
+    closemessage
+
+    applymovement(OBJ_ASTER, Common_Movement_WalkInPlaceFasterUp)
+
+    speakername("Aster")
+    msgbox(Route302_Text_AsterFirstBattle_Aster_7)
+    closemessage
+
+    applymovement(OBJ_ASTER, Route302_Movement_AsterFirstBattle_AsterLeave)
+    waitmovement(0)
+    removeobject(OBJ_ASTER)
+
+    setflag(FLAG_HIDE_ROUTE_302_ASTER)
+    setvar(VAR_ROUTE302_STATE, 2)
+
+    fadedefaultbgm
+    releaseall
+}
+
+movement Route302_Movement_AsterFirstBattle_AsterApproachPlayer1 {
+    walk_down * 2
+}
+
+movement Route302_Movement_AsterFirstBattle_AsterApproachPlayer2 {
+    walk_right
+    walk_down * 2
+}
+
+movement Route302_Movement_AsterFirstBattle_AsterLeave {
+    walk_up * 6
+}
+
+
+text Route302_Text_AsterFirstBattle_Aster_1 {
+    format("Hmph. And who might you be?")
+}
+
+text Route302_Text_AsterFirstBattle_Aster_2 {
+    format("I don't think I've seen you around before. And trust me, I remember important people.")
+}
+
+text Route302_Text_AsterFirstBattle_Aster_3 {
+    format("I'm Aster. You know, THE Aster--the rising star? Surely you've heard of me.")
+}
+
+text Route302_Text_AsterFirstBattle_Aster_4 {
+    format("Tch. Figures.\nNot everyone has good taste.\p"
+            "Anyway, I can't just let some random nobody walk past me without proving they belong on this road.\p"
+            "What's your name, anyway?")
+}
+
+text Route302_Text_AsterFirstBattle_Aster_5 {
+    format("Hah! {PLAYER}, huh?\nDoesn't exactly scream 'future champion,' but I guess I've heard worse.\p"
+            "Oh? Look at that--you've got a Gym Badge already. Not bad, not bad.\p"
+            "Well, {PLAYER}, I'll give you a chance to impress me. A battle--right here, right now.\p"
+            "Try not to waste my time.")
+}
+
+text Route302_Text_AsterDefeated {
+    format("What!? No--there's no way I lost to some random nobody!")
+}
+
+text Route302_Text_AsterFirstBattle_Aster_6 {
+    format("Hmph... Maybe you're not a complete pushover after all.\p"
+            "But don't get too comfortable. This was just a warm-up.\p"
+            "I never lose twice. So next time, I'll crush you.")
+}
+
+text Route302_Text_AsterFirstBattle_Aster_7 {
+    format("...\p"
+    "...Guess I'll have to remember your name after all, {PLAYER}.\p"
+    "Try not to embarrass yourself before our next battle.")
 }

@@ -3578,6 +3578,13 @@ const u8 sText_HollySecondBattle_FirstCriticalHit[] = COMPOUND_STRING("Critical 
 const u8 sText_HollySecondBattle_LastSwitchIn[] = COMPOUND_STRING("Okay, time to get serious! Let's turn this around!");
 #pragma endregion
 
+#pragma region Rival Aster
+const u8 sText_AsterFirstBattle_BeforeFirstTurn[] = COMPOUND_STRING("You should feel honored. Not everyone gets the chance to battle me.");
+const u8 sText_AsterFirstBattle_FirstCriticalHit[] = COMPOUND_STRING("Seriously?! A critical hit? Don't think that means you're better than me!");
+const u8 sText_AsterFirstBattle_FirstSuperEffectiveHit[] = COMPOUND_STRING("Tch--You know your type matchups? Hah, lucky break!");
+const u8 sText_AsterFirstBattle_LastSwitchIn[] = COMPOUND_STRING("Alright, I've seen enough. Let's end this little test.");
+#pragma endregion
+
 #pragma region Gym Leaders 
 const u8 sText_Geo_BeforeFirstTurn[] = COMPOUND_STRING("I've prepared a lot for this!\nLet's put my knowledge to the test!");
 const u8 sText_Geo_FirstSTABMove[] = COMPOUND_STRING("Using my Pokémon's natural strength--this should do some real damage!");
@@ -3687,6 +3694,14 @@ static const struct TrainerSlide sTrainerSlides[] =
         .msgFirstSuperEffectiveHit = sText_CadenSecondBattle_FirstSuperEffectiveHit,
         .msgBeforeFirstTurn = sText_CadenSecondBattle_BeforeFirstTurn,
         .msgLastSwitchIn = sText_CadenSecondBattle_LastSwitchIn,
+    },
+    {
+        .trainerId = TRAINER_ASTER_ROUTE_302,
+        .isFrontierTrainer = FALSE,
+        .msgFirstCriticalHit = sText_AsterFirstBattle_FirstCriticalHit,
+        .msgFirstSuperEffectiveHit = sText_AsterFirstBattle_FirstSuperEffectiveHit,
+        .msgBeforeFirstTurn = sText_AsterFirstBattle_BeforeFirstTurn,
+        .msgLastSwitchIn = sText_AsterFirstBattle_LastSwitchIn,
     },
     {
         .trainerId = TRAINER_GEO_1,

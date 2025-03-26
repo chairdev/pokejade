@@ -3,265 +3,449 @@ Route302_MapScripts::
 
 
 Route302_Trigger_RivalEncounter1::
-# 12 "data/maps/Route302/scripts.pory"
+# 13 "data/maps/Route302/scripts.pory"
 	lockall
-# 14 "data/maps/Route302/scripts.pory"
+# 15 "data/maps/Route302/scripts.pory"
 	removeobject 7
-# 16 "data/maps/Route302/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 # 17 "data/maps/Route302/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 # 18 "data/maps/Route302/scripts.pory"
-	playse SE_PIN
+	waitmovement 0
 # 19 "data/maps/Route302/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
+	playse SE_PIN
 # 20 "data/maps/Route302/scripts.pory"
-	waitse
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
 # 21 "data/maps/Route302/scripts.pory"
-	waitmovement 0
+	waitse
 # 22 "data/maps/Route302/scripts.pory"
-	delay 16
-# 24 "data/maps/Route302/scripts.pory"
-	msgbox Route302_Text_RivalEncounter_Rival_1
-# 25 "data/maps/Route302/scripts.pory"
-	closemessage
-# 27 "data/maps/Route302/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2
-# 28 "data/maps/Route302/scripts.pory"
 	waitmovement 0
-# 30 "data/maps/Route302/scripts.pory"
+# 23 "data/maps/Route302/scripts.pory"
+	delay 16
+# 25 "data/maps/Route302/scripts.pory"
+	msgbox Route302_Text_RivalEncounter_Rival_1
+# 26 "data/maps/Route302/scripts.pory"
+	closemessage
+# 28 "data/maps/Route302/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2
+# 29 "data/maps/Route302/scripts.pory"
+	waitmovement 0
+# 31 "data/maps/Route302/scripts.pory"
 	call Route302_Trigger_RivalEncounter
 	return
 
 
 Route302_Trigger_RivalEncounter2::
-# 34 "data/maps/Route302/scripts.pory"
+# 35 "data/maps/Route302/scripts.pory"
 	lockall
-# 36 "data/maps/Route302/scripts.pory"
+# 37 "data/maps/Route302/scripts.pory"
 	removeobject 7
-# 38 "data/maps/Route302/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 # 39 "data/maps/Route302/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 # 40 "data/maps/Route302/scripts.pory"
-	playse SE_PIN
+	waitmovement 0
 # 41 "data/maps/Route302/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
+	playse SE_PIN
 # 42 "data/maps/Route302/scripts.pory"
-	waitse
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
 # 43 "data/maps/Route302/scripts.pory"
-	waitmovement 0
+	waitse
 # 44 "data/maps/Route302/scripts.pory"
-	delay 16
-# 46 "data/maps/Route302/scripts.pory"
-	msgbox Route302_Text_RivalEncounter_Rival_1
-# 47 "data/maps/Route302/scripts.pory"
-	closemessage
-# 49 "data/maps/Route302/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Route302_Movement_RivalEncounter_PlayerNoticeRival
-# 50 "data/maps/Route302/scripts.pory"
 	waitmovement 0
-# 52 "data/maps/Route302/scripts.pory"
+# 45 "data/maps/Route302/scripts.pory"
+	delay 16
+# 47 "data/maps/Route302/scripts.pory"
+	msgbox Route302_Text_RivalEncounter_Rival_1
+# 48 "data/maps/Route302/scripts.pory"
+	closemessage
+# 50 "data/maps/Route302/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route302_Movement_RivalEncounter_PlayerNoticeRival
+# 51 "data/maps/Route302/scripts.pory"
+	waitmovement 0
+# 53 "data/maps/Route302/scripts.pory"
 	call Route302_Trigger_RivalEncounter
 	return
 
 
 Route302_Trigger_RivalEncounter::
-# 56 "data/maps/Route302/scripts.pory"
-	addobject 7
 # 57 "data/maps/Route302/scripts.pory"
+	addobject 7
+# 58 "data/maps/Route302/scripts.pory"
 	setobjectxy 7, 12, 22
-# 59 "data/maps/Route302/scripts.pory"
-	checkplayergender
 # 60 "data/maps/Route302/scripts.pory"
+	checkplayergender
+# 61 "data/maps/Route302/scripts.pory"
 	compare VAR_RESULT, FEMALE
 	goto_if_eq Route302_Trigger_RivalEncounter_2
-# 66 "data/maps/Route302/scripts.pory"
+# 67 "data/maps/Route302/scripts.pory"
 	playbgm MUS_ENCOUNTER_MAY, TRUE
 Route302_Trigger_RivalEncounter_1:
-# 69 "data/maps/Route302/scripts.pory"
-	applymovement 7, Route302_Movement_RivalEncounter_RivalApproachPlayer
 # 70 "data/maps/Route302/scripts.pory"
+	applymovement 7, Route302_Movement_RivalEncounter_RivalApproachPlayer
+# 71 "data/maps/Route302/scripts.pory"
 	waitmovement 0
-# 72 "data/maps/Route302/scripts.pory"
-	speakername Route302_Trigger_RivalEncounter_Text_0
 # 73 "data/maps/Route302/scripts.pory"
-	msgbox Route302_Text_RivalEncounter_Rival_2
-# 74 "data/maps/Route302/scripts.pory"
-	closemessage
-# 76 "data/maps/Route302/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Route302_Movement_RivalEncounter_PlayerGoToDaycare
-# 77 "data/maps/Route302/scripts.pory"
-	applymovement 7, Route302_Movement_RivalEncounter_RivalGoToDaycare
-# 78 "data/maps/Route302/scripts.pory"
-	waitmovement 0
-# 80 "data/maps/Route302/scripts.pory"
 	speakername Route302_Trigger_RivalEncounter_Text_0
+# 74 "data/maps/Route302/scripts.pory"
+	msgbox Route302_Text_RivalEncounter_Rival_2
+# 75 "data/maps/Route302/scripts.pory"
+	closemessage
+# 77 "data/maps/Route302/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route302_Movement_RivalEncounter_PlayerGoToDaycare
+# 78 "data/maps/Route302/scripts.pory"
+	applymovement 7, Route302_Movement_RivalEncounter_RivalGoToDaycare
+# 79 "data/maps/Route302/scripts.pory"
+	waitmovement 0
 # 81 "data/maps/Route302/scripts.pory"
+	speakername Route302_Trigger_RivalEncounter_Text_0
+# 82 "data/maps/Route302/scripts.pory"
 	compare VAR_RESULT, FEMALE
 	goto_if_eq Route302_Trigger_RivalEncounter_6
-# 87 "data/maps/Route302/scripts.pory"
+# 88 "data/maps/Route302/scripts.pory"
 	msgbox Route302_Text_RivalEncounter_Holly_1
 Route302_Trigger_RivalEncounter_5:
-# 89 "data/maps/Route302/scripts.pory"
+# 90 "data/maps/Route302/scripts.pory"
 	closemessage
-# 91 "data/maps/Route302/scripts.pory"
-	playse SE_PIN
 # 92 "data/maps/Route302/scripts.pory"
-	applymovement 7, Common_Movement_ExclamationMark
+	playse SE_PIN
 # 93 "data/maps/Route302/scripts.pory"
-	waitse
+	applymovement 7, Common_Movement_ExclamationMark
 # 94 "data/maps/Route302/scripts.pory"
-	waitmovement 0
+	waitse
 # 95 "data/maps/Route302/scripts.pory"
+	waitmovement 0
+# 96 "data/maps/Route302/scripts.pory"
 	delay 16
-# 97 "data/maps/Route302/scripts.pory"
-	speakername Route302_Trigger_RivalEncounter_Text_0
 # 98 "data/maps/Route302/scripts.pory"
+	speakername Route302_Trigger_RivalEncounter_Text_0
+# 99 "data/maps/Route302/scripts.pory"
 	compare VAR_RESULT, FEMALE
 	goto_if_eq Route302_Trigger_RivalEncounter_10
-# 104 "data/maps/Route302/scripts.pory"
+# 105 "data/maps/Route302/scripts.pory"
 	msgbox Route302_Text_RivalEncounter_Holly_2
 Route302_Trigger_RivalEncounter_9:
-# 106 "data/maps/Route302/scripts.pory"
+# 107 "data/maps/Route302/scripts.pory"
 	closemessage
-# 108 "data/maps/Route302/scripts.pory"
-	applymovement 7, Route302_Movement_RivalEncounter_RivalLeave
 # 109 "data/maps/Route302/scripts.pory"
+	applymovement 7, Route302_Movement_RivalEncounter_RivalLeave
+# 110 "data/maps/Route302/scripts.pory"
 	waitmovement 0
-# 111 "data/maps/Route302/scripts.pory"
+# 112 "data/maps/Route302/scripts.pory"
 	fadedefaultbgm
-# 113 "data/maps/Route302/scripts.pory"
-	removeobject 7
 # 114 "data/maps/Route302/scripts.pory"
-	setflag FLAG_HIDE_ROUTE_302_RIVAL
+	removeobject 7
 # 115 "data/maps/Route302/scripts.pory"
-	setvar VAR_ROUTE302_STATE, 1
+	setflag FLAG_HIDE_ROUTE_302_RIVAL
+# 116 "data/maps/Route302/scripts.pory"
+	clearflag FLAG_HIDE_ROUTE_302_ASTER
 # 117 "data/maps/Route302/scripts.pory"
+	setvar VAR_ROUTE302_STATE, 1
+# 119 "data/maps/Route302/scripts.pory"
 	releaseall
 	return
 
 Route302_Trigger_RivalEncounter_2:
-# 62 "data/maps/Route302/scripts.pory"
+# 63 "data/maps/Route302/scripts.pory"
 	playbgm MUS_ENCOUNTER_BRENDAN, FALSE
 	goto Route302_Trigger_RivalEncounter_1
 
 Route302_Trigger_RivalEncounter_6:
-# 83 "data/maps/Route302/scripts.pory"
+# 84 "data/maps/Route302/scripts.pory"
 	msgbox Route302_Text_RivalEncounter_Caden_1
 	goto Route302_Trigger_RivalEncounter_5
 
 Route302_Trigger_RivalEncounter_10:
-# 100 "data/maps/Route302/scripts.pory"
+# 101 "data/maps/Route302/scripts.pory"
 	msgbox Route302_Text_RivalEncounter_Caden_2
 	goto Route302_Trigger_RivalEncounter_9
 
 
-# 120 "data/maps/Route302/scripts.pory"
-Route302_Movement_RivalEncounter_PlayerNoticeRival:
-# 121 "data/maps/Route302/scripts.pory"
-	walk_up
-# 121 "data/maps/Route302/scripts.pory"
-	walk_up
 # 122 "data/maps/Route302/scripts.pory"
-	walk_left
+Route302_Movement_RivalEncounter_PlayerNoticeRival:
 # 123 "data/maps/Route302/scripts.pory"
+	walk_up
+# 123 "data/maps/Route302/scripts.pory"
+	walk_up
+# 124 "data/maps/Route302/scripts.pory"
+	walk_left
+# 125 "data/maps/Route302/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 126 "data/maps/Route302/scripts.pory"
+# 128 "data/maps/Route302/scripts.pory"
 Route302_Movement_RivalEncounter_RivalApproachPlayer:
-# 127 "data/maps/Route302/scripts.pory"
+# 129 "data/maps/Route302/scripts.pory"
 	walk_fast_down
-# 127 "data/maps/Route302/scripts.pory"
+# 129 "data/maps/Route302/scripts.pory"
 	walk_fast_down
-# 127 "data/maps/Route302/scripts.pory"
+# 129 "data/maps/Route302/scripts.pory"
 	walk_fast_down
-# 127 "data/maps/Route302/scripts.pory"
+# 129 "data/maps/Route302/scripts.pory"
 	walk_fast_down
-# 127 "data/maps/Route302/scripts.pory"
+# 129 "data/maps/Route302/scripts.pory"
 	walk_fast_down
 	step_end
 
-# 130 "data/maps/Route302/scripts.pory"
-Route302_Movement_RivalEncounter_PlayerGoToDaycare:
-# 131 "data/maps/Route302/scripts.pory"
-	walk_right
-# 131 "data/maps/Route302/scripts.pory"
-	walk_right
-# 131 "data/maps/Route302/scripts.pory"
-	walk_right
-# 131 "data/maps/Route302/scripts.pory"
-	walk_right
-# 131 "data/maps/Route302/scripts.pory"
-	walk_right
-# 131 "data/maps/Route302/scripts.pory"
-	walk_right
-# 131 "data/maps/Route302/scripts.pory"
-	walk_right
-# 131 "data/maps/Route302/scripts.pory"
-	walk_right
 # 132 "data/maps/Route302/scripts.pory"
-	walk_in_place_up
+Route302_Movement_RivalEncounter_PlayerGoToDaycare:
 # 133 "data/maps/Route302/scripts.pory"
+	walk_right
+# 133 "data/maps/Route302/scripts.pory"
+	walk_right
+# 133 "data/maps/Route302/scripts.pory"
+	walk_right
+# 133 "data/maps/Route302/scripts.pory"
+	walk_right
+# 133 "data/maps/Route302/scripts.pory"
+	walk_right
+# 133 "data/maps/Route302/scripts.pory"
+	walk_right
+# 133 "data/maps/Route302/scripts.pory"
+	walk_right
+# 133 "data/maps/Route302/scripts.pory"
+	walk_right
+# 134 "data/maps/Route302/scripts.pory"
+	walk_in_place_up
+# 135 "data/maps/Route302/scripts.pory"
 	delay_16
 	step_end
 
-# 136 "data/maps/Route302/scripts.pory"
-Route302_Movement_RivalEncounter_RivalGoToDaycare:
-# 137 "data/maps/Route302/scripts.pory"
-	walk_right
-# 137 "data/maps/Route302/scripts.pory"
-	walk_right
-# 137 "data/maps/Route302/scripts.pory"
-	walk_right
-# 137 "data/maps/Route302/scripts.pory"
-	walk_right
-# 137 "data/maps/Route302/scripts.pory"
-	walk_right
-# 137 "data/maps/Route302/scripts.pory"
-	walk_right
-# 137 "data/maps/Route302/scripts.pory"
-	walk_right
-# 137 "data/maps/Route302/scripts.pory"
-	walk_right
 # 138 "data/maps/Route302/scripts.pory"
-	walk_in_place_down
+Route302_Movement_RivalEncounter_RivalGoToDaycare:
 # 139 "data/maps/Route302/scripts.pory"
+	walk_right
+# 139 "data/maps/Route302/scripts.pory"
+	walk_right
+# 139 "data/maps/Route302/scripts.pory"
+	walk_right
+# 139 "data/maps/Route302/scripts.pory"
+	walk_right
+# 139 "data/maps/Route302/scripts.pory"
+	walk_right
+# 139 "data/maps/Route302/scripts.pory"
+	walk_right
+# 139 "data/maps/Route302/scripts.pory"
+	walk_right
+# 139 "data/maps/Route302/scripts.pory"
+	walk_right
+# 140 "data/maps/Route302/scripts.pory"
+	walk_in_place_down
+# 141 "data/maps/Route302/scripts.pory"
 	delay_16
 	step_end
 
-# 142 "data/maps/Route302/scripts.pory"
+# 144 "data/maps/Route302/scripts.pory"
 Route302_Movement_RivalEncounter_RivalLeave:
-# 143 "data/maps/Route302/scripts.pory"
+# 145 "data/maps/Route302/scripts.pory"
 	walk_left
-# 143 "data/maps/Route302/scripts.pory"
+# 145 "data/maps/Route302/scripts.pory"
 	walk_left
-# 143 "data/maps/Route302/scripts.pory"
+# 145 "data/maps/Route302/scripts.pory"
 	walk_left
-# 143 "data/maps/Route302/scripts.pory"
+# 145 "data/maps/Route302/scripts.pory"
 	walk_left
-# 143 "data/maps/Route302/scripts.pory"
+# 145 "data/maps/Route302/scripts.pory"
 	walk_left
-# 143 "data/maps/Route302/scripts.pory"
+# 145 "data/maps/Route302/scripts.pory"
 	walk_left
-# 143 "data/maps/Route302/scripts.pory"
+# 145 "data/maps/Route302/scripts.pory"
 	walk_left
-# 143 "data/maps/Route302/scripts.pory"
+# 145 "data/maps/Route302/scripts.pory"
 	walk_left
+	step_end
+
+Route302_Trigger_AsterFirstBattle1::
+# 206 "data/maps/Route302/scripts.pory"
+	lockall
+# 208 "data/maps/Route302/scripts.pory"
+	addobject 6
+# 209 "data/maps/Route302/scripts.pory"
+	playse SE_PIN
+# 210 "data/maps/Route302/scripts.pory"
+	applymovement 6, Common_Movement_ExclamationMark
+# 211 "data/maps/Route302/scripts.pory"
+	waitse
+# 212 "data/maps/Route302/scripts.pory"
+	waitmovement 0
+# 213 "data/maps/Route302/scripts.pory"
+	delay 16
+# 214 "data/maps/Route302/scripts.pory"
+	applymovement 6, Common_Movement_WalkInPlaceFasterDown
+# 215 "data/maps/Route302/scripts.pory"
+	waitmovement 0
+# 217 "data/maps/Route302/scripts.pory"
+	speakername Route302_Trigger_AsterFirstBattle1_Text_0
+# 218 "data/maps/Route302/scripts.pory"
+	msgbox Route302_Text_AsterFirstBattle_Aster_1
+# 219 "data/maps/Route302/scripts.pory"
+	closemessage
+# 221 "data/maps/Route302/scripts.pory"
+	playbgm MUS_RG_ENCOUNTER_BOY, TRUE
+# 223 "data/maps/Route302/scripts.pory"
+	applymovement 6, Route302_Movement_AsterFirstBattle_AsterApproachPlayer1
+# 224 "data/maps/Route302/scripts.pory"
+	waitmovement 0
+# 226 "data/maps/Route302/scripts.pory"
+	call Route302_Trigger_AsterFirstBattle
+	return
+
+
+Route302_Trigger_AsterFirstBattle2::
+# 230 "data/maps/Route302/scripts.pory"
+	lockall
+# 232 "data/maps/Route302/scripts.pory"
+	addobject 6
+# 233 "data/maps/Route302/scripts.pory"
+	playse SE_PIN
+# 234 "data/maps/Route302/scripts.pory"
+	applymovement 6, Common_Movement_ExclamationMark
+# 235 "data/maps/Route302/scripts.pory"
+	waitse
+# 236 "data/maps/Route302/scripts.pory"
+	waitmovement 0
+# 237 "data/maps/Route302/scripts.pory"
+	delay 16
+# 238 "data/maps/Route302/scripts.pory"
+	applymovement 6, Common_Movement_WalkInPlaceFasterDown
+# 239 "data/maps/Route302/scripts.pory"
+	waitmovement 0
+# 241 "data/maps/Route302/scripts.pory"
+	playbgm MUS_RG_ENCOUNTER_BOY, TRUE
+# 243 "data/maps/Route302/scripts.pory"
+	speakername Route302_Trigger_AsterFirstBattle1_Text_0
+# 244 "data/maps/Route302/scripts.pory"
+	msgbox Route302_Text_AsterFirstBattle_Aster_1
+# 245 "data/maps/Route302/scripts.pory"
+	closemessage
+# 247 "data/maps/Route302/scripts.pory"
+	applymovement 6, Route302_Movement_AsterFirstBattle_AsterApproachPlayer2
+# 248 "data/maps/Route302/scripts.pory"
+	waitmovement 0
+# 250 "data/maps/Route302/scripts.pory"
+	call Route302_Trigger_AsterFirstBattle
+	return
+
+
+Route302_Trigger_AsterFirstBattle::
+# 254 "data/maps/Route302/scripts.pory"
+	speakername Route302_Trigger_AsterFirstBattle1_Text_0
+# 255 "data/maps/Route302/scripts.pory"
+	msgbox Route302_Text_AsterFirstBattle_Aster_2
+# 257 "data/maps/Route302/scripts.pory"
+	speakername Route302_Trigger_AsterFirstBattle_Text_0
+# 258 "data/maps/Route302/scripts.pory"
+	msgbox Route302_Text_AsterFirstBattle_Aster_3
+# 260 "data/maps/Route302/scripts.pory"
+	dynmultichoice 20, 8, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, Route302_Trigger_AsterFirstBattle_Text_1, Route302_Trigger_AsterFirstBattle_Text_2
+# 263 "data/maps/Route302/scripts.pory"
+	msgbox Route302_Text_AsterFirstBattle_Aster_4
+# 265 "data/maps/Route302/scripts.pory"
+	dynmultichoice 20, 8, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, Route302_Trigger_AsterFirstBattle_Text_3, Route302_Trigger_AsterFirstBattle_Text_4
+# 268 "data/maps/Route302/scripts.pory"
+	msgbox Route302_Text_AsterFirstBattle_Aster_5
+# 269 "data/maps/Route302/scripts.pory"
+	closemessage
+# 271 "data/maps/Route302/scripts.pory"
+	trainerbattle_no_intro TRAINER_ASTER_ROUTE_302, Route302_Text_AsterDefeated
+# 273 "data/maps/Route302/scripts.pory"
+	speakername Route302_Trigger_AsterFirstBattle_Text_0
+# 274 "data/maps/Route302/scripts.pory"
+	msgbox Route302_Text_AsterFirstBattle_Aster_6
+# 275 "data/maps/Route302/scripts.pory"
+	closemessage
+# 277 "data/maps/Route302/scripts.pory"
+	applymovement 6, Common_Movement_WalkInPlaceFasterUp
+# 279 "data/maps/Route302/scripts.pory"
+	speakername Route302_Trigger_AsterFirstBattle_Text_0
+# 280 "data/maps/Route302/scripts.pory"
+	msgbox Route302_Text_AsterFirstBattle_Aster_7
+# 281 "data/maps/Route302/scripts.pory"
+	closemessage
+# 283 "data/maps/Route302/scripts.pory"
+	applymovement 6, Route302_Movement_AsterFirstBattle_AsterLeave
+# 284 "data/maps/Route302/scripts.pory"
+	waitmovement 0
+# 285 "data/maps/Route302/scripts.pory"
+	removeobject 6
+# 287 "data/maps/Route302/scripts.pory"
+	setflag FLAG_HIDE_ROUTE_302_ASTER
+# 288 "data/maps/Route302/scripts.pory"
+	setvar VAR_ROUTE302_STATE, 2
+# 290 "data/maps/Route302/scripts.pory"
+	fadedefaultbgm
+# 291 "data/maps/Route302/scripts.pory"
+	releaseall
+	return
+
+
+# 294 "data/maps/Route302/scripts.pory"
+Route302_Movement_AsterFirstBattle_AsterApproachPlayer1:
+# 295 "data/maps/Route302/scripts.pory"
+	walk_down
+# 295 "data/maps/Route302/scripts.pory"
+	walk_down
+	step_end
+
+# 298 "data/maps/Route302/scripts.pory"
+Route302_Movement_AsterFirstBattle_AsterApproachPlayer2:
+# 299 "data/maps/Route302/scripts.pory"
+	walk_right
+# 300 "data/maps/Route302/scripts.pory"
+	walk_down
+# 300 "data/maps/Route302/scripts.pory"
+	walk_down
+	step_end
+
+# 303 "data/maps/Route302/scripts.pory"
+Route302_Movement_AsterFirstBattle_AsterLeave:
+# 304 "data/maps/Route302/scripts.pory"
+	walk_up
+# 304 "data/maps/Route302/scripts.pory"
+	walk_up
+# 304 "data/maps/Route302/scripts.pory"
+	walk_up
+# 304 "data/maps/Route302/scripts.pory"
+	walk_up
+# 304 "data/maps/Route302/scripts.pory"
+	walk_up
+# 304 "data/maps/Route302/scripts.pory"
+	walk_up
 	step_end
 
 Route302_Trigger_RivalEncounter_Text_0:
-# 72 "data/maps/Route302/scripts.pory"
+# 73 "data/maps/Route302/scripts.pory"
 	.string "{RIVAL}$"
 
+Route302_Trigger_AsterFirstBattle1_Text_0:
+# 217 "data/maps/Route302/scripts.pory"
+	.string "???$"
+
+Route302_Trigger_AsterFirstBattle_Text_0:
+# 257 "data/maps/Route302/scripts.pory"
+	.string "Aster$"
+
+Route302_Trigger_AsterFirstBattle_Text_1:
+# 261 "data/maps/Route302/scripts.pory"
+	.string "...Who?$"
+
+Route302_Trigger_AsterFirstBattle_Text_2:
+# 261 "data/maps/Route302/scripts.pory"
+	.string "Aster?$"
+
+Route302_Trigger_AsterFirstBattle_Text_3:
+# 266 "data/maps/Route302/scripts.pory"
+	.string "I'm {PLAYER}!$"
+
+Route302_Trigger_AsterFirstBattle_Text_4:
+# 266 "data/maps/Route302/scripts.pory"
+	.string "...It's {PLAYER}.$"
+
 Route302_Text_RivalEncounter_Rival_1::
-# 146 "data/maps/Route302/scripts.pory"
+# 148 "data/maps/Route302/scripts.pory"
 	.string "Hey, {PLAYER}!\n"
 	.string "Wait up!$"
 
 Route302_Text_RivalEncounter_Rival_2::
-# 150 "data/maps/Route302/scripts.pory"
+# 152 "data/maps/Route302/scripts.pory"
 	.string "So? How'd it go with the Mega Evolution\n"
 	.string "Guru? Everything go smoothly?\p"
 	.string "...Wait, hold on--Team Eternity? What\n"
@@ -279,7 +463,7 @@ Route302_Text_RivalEncounter_Rival_2::
 	.string "Let's go!$"
 
 Route302_Text_RivalEncounter_Caden_1::
-# 160 "data/maps/Route302/scripts.pory"
+# 162 "data/maps/Route302/scripts.pory"
 	.string "And here we are--the Pokémon Daycare!\p"
 	.string "This is where you can leave two Pokémon\n"
 	.string "to hang out and maybe even make an Egg!\p"
@@ -301,7 +485,7 @@ Route302_Text_RivalEncounter_Caden_1::
 	.string "right?$"
 
 Route302_Text_RivalEncounter_Holly_1::
-# 171 "data/maps/Route302/scripts.pory"
+# 173 "data/maps/Route302/scripts.pory"
 	.string "Aaand here we are!\n"
 	.string "Welcome to the Pokémon Daycare!\p"
 	.string "You can leave two Pokémon here to hang\n"
@@ -321,7 +505,7 @@ Route302_Text_RivalEncounter_Holly_1::
 	.string "good care of your Pokémon too, right?$"
 
 Route302_Text_RivalEncounter_Caden_2::
-# 182 "data/maps/Route302/scripts.pory"
+# 184 "data/maps/Route302/scripts.pory"
 	.string "Oh yeah! Almost forgot--\n"
 	.string "Finally got my first Gym Badge from Geo!\p"
 	.string "Took me a couple of tries, not gonna lie.\n"
@@ -339,7 +523,7 @@ Route302_Text_RivalEncounter_Caden_2::
 	.string "top, {PLAYER}!$"
 
 Route302_Text_RivalEncounter_Holly_2::
-# 192 "data/maps/Route302/scripts.pory"
+# 194 "data/maps/Route302/scripts.pory"
 	.string "Oh! That reminds me--\n"
 	.string "I finally beat Geo and got my first\l"
 	.string "badge!\p"
@@ -360,3 +544,61 @@ Route302_Text_RivalEncounter_Holly_2::
 	.string "about Fairy-type Pokémon!\p"
 	.string "Oh, and next time we battle? I'll be\n"
 	.string "stronger, so you'd better be ready!$"
+
+Route302_Text_AsterFirstBattle_Aster_1::
+# 308 "data/maps/Route302/scripts.pory"
+	.string "Hmph. And who might you be?$"
+
+Route302_Text_AsterFirstBattle_Aster_2::
+# 312 "data/maps/Route302/scripts.pory"
+	.string "I don't think I've seen you around\n"
+	.string "before. And trust me, I remember\l"
+	.string "important people.$"
+
+Route302_Text_AsterFirstBattle_Aster_3::
+# 316 "data/maps/Route302/scripts.pory"
+	.string "I'm Aster. You know, THE Aster--the\n"
+	.string "rising star? Surely you've heard of me.$"
+
+Route302_Text_AsterFirstBattle_Aster_4::
+# 320 "data/maps/Route302/scripts.pory"
+	.string "Tch. Figures.\n"
+	.string "Not everyone has good taste.\p"
+	.string "Anyway, I can't just let some random\n"
+	.string "nobody walk past me without proving\l"
+	.string "they belong on this road.\p"
+	.string "What's your name, anyway?$"
+
+Route302_Text_AsterFirstBattle_Aster_5::
+# 326 "data/maps/Route302/scripts.pory"
+	.string "Hah! {PLAYER}, huh?\n"
+	.string "Doesn't exactly scream 'future\l"
+	.string "champion,' but I guess I've heard worse.\p"
+	.string "Oh? Look at that--you've got a Gym\n"
+	.string "Badge already. Not bad, not bad.\p"
+	.string "Well, {PLAYER}, I'll give you a chance\n"
+	.string "to impress me. A battle--right here,\l"
+	.string "right now.\p"
+	.string "Try not to waste my time.$"
+
+Route302_Text_AsterDefeated::
+# 333 "data/maps/Route302/scripts.pory"
+	.string "What!? No--there's no way I lost to\n"
+	.string "some random nobody!$"
+
+Route302_Text_AsterFirstBattle_Aster_6::
+# 337 "data/maps/Route302/scripts.pory"
+	.string "Hmph... Maybe you're not a complete\n"
+	.string "pushover after all.\p"
+	.string "But don't get too comfortable. This was\n"
+	.string "just a warm-up.\p"
+	.string "I never lose twice. So next time, I'll\n"
+	.string "crush you.$"
+
+Route302_Text_AsterFirstBattle_Aster_7::
+# 343 "data/maps/Route302/scripts.pory"
+	.string "...\p"
+	.string "...Guess I'll have to remember your name\n"
+	.string "after all, {PLAYER}.\p"
+	.string "Try not to embarrass yourself before\n"
+	.string "our next battle.$"
