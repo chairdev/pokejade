@@ -235,7 +235,7 @@ Route101_EventScript_BirchsBag::
 	msgbox Route101_Text_YouSavedMe, MSGBOX_DEFAULT
 	special HealPlayerParty
 	setflag FLAG_HIDE_ROUTE_302_ASTER
-	clearflag FLAG_HIDE_EVERWOOD_TOWN_RESEARCH_LAB_RIVAL
+	clearflag FLAG_HIDE_ZIRCON_TOWN_SPEECH_NPCS
 	setflag FLAG_CHOSE_STARTER
 	setvar VAR_HAWTHORNE_LAB_STATE, 2
 	setvar VAR_ROUTE301_STATE, 3

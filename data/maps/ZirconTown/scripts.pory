@@ -1,1 +1,289 @@
-mapscripts ZirconTown_MapScripts {}
+//VAR_ZIRCON_TOWN_STATE
+// 0: Alden's Speech
+// 1: Done
+
+const OBJ_ALDEN = 0
+const OBJ_RIVAL = 3
+
+mapscripts ZirconTown_MapScripts {
+        MAP_SCRIPT_ON_TRANSITION {
+        call(Common_EventScript_SetupRivalGfxId)
+    }
+
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_ZIRCON_TOWN_STATE, 0:  ZirconTown_Trigger_AldenSpeech
+    ]
+}
+
+script ZirconTown_Trigger_AldenSpeech
+{
+    lockall
+
+    checkplayergender
+    speakername("{RIVAL}")
+    if(var(VAR_RESULT) == FEMALE)
+    {
+        
+        msgbox(ZirconTown_Text_AldenSpeech_Caden_1)
+    }
+    else
+    {
+        msgbox(ZirconTown_Text_AldenSpeech_Holly_1)
+    }
+    closemessage
+
+    playse(SE_PIN)
+    applymovement(OBJ_ALDEN, Common_Movement_ExclamationMark)
+    waitse
+    waitmovement(0)
+    delay(16)
+    applymovement(OBJ_ALDEN, Common_Movement_WalkInPlaceFasterDown)
+    speakername("???")
+    msgbox(ZirconTown_Text_AldenSpeech_Alden_1)
+
+    dynmultichoice(20, 8, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE,
+    "Yeah, I am.", "Who's asking?")
+
+    if (var(VAR_RESULT) == 0) {
+        speakername("???")
+        msgbox(ZirconTown_Text_AldenSpeech_Alden_2A)
+    }
+    else {
+        speakername("???")
+        msgbox(ZirconTown_Text_AldenSpeech_Alden_2B)
+    }
+
+    speakername("Alden")
+    msgbox(ZirconTown_Text_AldenSpeech_Alden_3)
+    closemessage
+
+    playse(SE_PIN)
+    applymovement(OBJ_RIVAL, Common_Movement_ExclamationMark)
+    waitse
+    waitmovement(0)
+    delay(16)
+    applymovement(OBJ_RIVAL, Common_Movement_WalkInPlaceFasterUp)
+    checkplayergender
+    checkplayergender
+    speakername("{RIVAL}")
+    if(var(VAR_RESULT) == FEMALE)
+    {
+        msgbox(ZirconTown_Text_AldenSpeech_Caden_2)
+    }
+    else
+    {
+        msgbox(ZirconTown_Text_AldenSpeech_Holly_2)
+    }
+
+    speakername("Alden")
+    msgbox(ZirconTown_Text_AldenSpeech_Alden_4)
+
+    dynmultichoice(20, 8, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE,
+    "Yeah, history is fascinating!", "A little.", "Not really.")
+
+    if (var(VAR_RESULT) == 0) {
+        speakername("Alden")
+        msgbox(ZirconTown_Text_AldenSpeech_Alden_5A)
+    }
+    else if (var(VAR_RESULT) == 1) {
+        speakername("Alden")
+        msgbox(ZirconTown_Text_AldenSpeech_Alden_5B)
+    }
+    else {
+        speakername("Alden")
+        msgbox(ZirconTown_Text_AldenSpeech_Alden_5C)
+    }
+    msgbox(ZirconTown_Text_AldenSpeech_Alden_6)
+
+    checkplayergender
+    speakername("{RIVAL}")
+    if(var(VAR_RESULT) == FEMALE)
+    {
+        msgbox(ZirconTown_Text_AldenSpeech_Caden_3)
+    }
+    else
+    {
+        msgbox(ZirconTown_Text_AldenSpeech_Holly_3)
+    }
+
+    speakername("Alden")
+    msgbox(ZirconTown_Text_AldenSpeech_Alden_7)
+
+    dynmultichoice(20, 8, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE,
+    "That would be incredible!", "You can't just control life.")
+
+    if (var(VAR_RESULT) == 0) {
+        speakername("Alden")
+        msgbox(ZirconTown_Text_AldenSpeech_Alden_8A)
+    }
+    else {
+        speakername("Alden")
+        msgbox(ZirconTown_Text_AldenSpeech_Alden_8B)
+    }
+
+    checkplayergender
+    speakername("{RIVAL}")
+    if(var(VAR_RESULT) == FEMALE)
+    {
+        msgbox(ZirconTown_Text_AldenSpeech_Caden_4)
+    }
+    else
+    {
+        msgbox(ZirconTown_Text_AldenSpeech_Holly_4)
+    }
+
+    speakername("Alden")
+    msgbox(ZirconTown_Text_AldenSpeech_Alden_9)
+
+    applymovement(OBJ_ALDEN, Common_Movement_WalkInPlaceFasterUp)
+    msgbox(ZirconTown_Text_AldenSpeech_Alden_10)
+    closemessage
+
+    applymovement(OBJ_ALDEN, ZirconTown_Movement_AldenLeave)
+    waitmovement(0)
+
+    checkplayergender
+    speakername("{RIVAL}")
+    if(var(VAR_RESULT) == FEMALE)
+    {
+        msgbox(ZirconTown_Text_AldenSpeech_Caden_5)
+    }
+    else
+    {
+        msgbox(ZirconTown_Text_AldenSpeech_Holly_5)
+    }
+
+    fadescreen(FADE_TO_BLACK)
+    removeobject(OBJ_ALDEN)
+    removeobject(OBJ_RIVAL)
+    setflag(FLAG_HIDE_ZIRCON_TOWN_SPEECH_NPCS)
+    setvar(VAR_ZIRCON_TOWN_STATE, 1)
+    fadescreen(FADE_FROM_BLACK)
+    releaseall
+}
+
+text ZirconTown_Text_AldenSpeech_Caden_1 {
+    format( "Oh, there you are!\nTook you long enough!\p"
+            "You just missed the start of this guy's speech.")
+}
+
+text ZirconTown_Text_AldenSpeech_Holly_1 {
+    format( "Hey, {PLAYER}!\nYou made it!\p"
+            "I was just listening to this guy talk about Avaro's history—it's actually really interesting!.")
+}
+
+text ZirconTown_Text_AldenSpeech_Alden_1 {
+    format("Ah, another young traveler. Welcome.\nI assume you're a Trainer as well?"
+    )
+}
+
+text ZirconTown_Text_AldenSpeech_Alden_2A {
+    format("Excellent. It is always good to see the next generation carrying on Avaro's traditions."
+    )
+}
+
+text ZirconTown_Text_AldenSpeech_Alden_2B {
+    format("A fair question. Forgive my manners--allow me to introduce myself."
+    )
+}
+
+text ZirconTown_Text_AldenSpeech_Alden_3 {
+    format( "I am Alden, the CEO of the Alden Corporation and a researcher of history and culture."
+            "You two must be quite talented to have earned the Foundation Badge so quickly.\p"
+            "Avaro's history is filled with stories of great Trainers--perhaps you will one day be among them."
+    )
+}
+
+text ZirconTown_Text_AldenSpeech_Caden_2 {
+    format("Whoa, hold up.\nYou already heard about {PLAYER} and I getting a Gym Badge?\p"
+            "You should come find me when you're done here!")
+}
+
+text ZirconTown_Text_AldenSpeech_Holly_2 {
+    format("Wait, really? News travels fast, I guess!")
+}
+
+text ZirconTown_Text_AldenSpeech_Alden_4 {
+    format("A Trainer's accomplishments tend to echo.\nIt is not just strength that defines a great Trainer, but the impact they leave behind.\p"
+            "Tell me, {PLAYER}--do you take an interest in Avaro's past?")
+}
+
+text ZirconTown_Text_AldenSpeech_Alden_5A {
+    format("A fellow scholar, then! Perhaps you will appreciate a lesson in Avaro's foundations.")
+}
+
+text ZirconTown_Text_AldenSpeech_Alden_5B {
+    format("Curiosity is a valuable trait. The past holds more answers than one might think.")
+}
+
+text ZirconTown_Text_AldenSpeech_Alden_5C {
+    format("A pity. The past is a treasure trove of knowledge, waiting to be discovered.\p")
+            "But I digress. I must return to my speech. I hope you enjoy the rest of your time in Zircon Town."
+}
+
+text ZirconTown_Text_AldenSpeech_Alden_6 {
+    format("Long before the Pokémon League, Avaro was home to an ancient civilization.\p"
+            "Unlike modern society, they sought something beyond simple progress--they sought control over life itself."
+            "However, their ambitions were met with disaster. Some say their greed led to their downfall, while others believe they were erased from history by those who feared their knowledge.\p"
+            "What remains of them is hidden across Avaro--ruins, artifacts, echoes of a forgotten time.\p"
+    )
+}
+
+text ZirconTown_Text_AldenSpeech_Caden_3 {
+    format("Man, that's wild.\nCan you imagine if someone actually pulled off something like that?\p")
+}
+
+text ZirconTown_Text_AldenSpeech_Holly_3 {
+    format("I don't know... messing with life sounds dangerous.\p"
+            "Maybe some things aren't meant to be controlled.")
+}
+
+text ZirconTown_Text_AldenSpeech_Alden_7 {
+    format("Perhaps. But if you could reshape the world--if you could erase suffering, prevent loss--would you not consider it?")
+}
+
+text ZirconTown_Text_AldenSpeech_Alden_8A {
+    format("Indeed... a world where pain and loss are mere memories. A world perfected.")
+}
+
+text ZirconTown_Text_AldenSpeech_Alden_8B {
+    format("An understandable perspective. But many things we now accept--Pokémon evolution, medicine, even Poké Balls--were once considered unnatural.")
+}
+
+text ZirconTown_Text_AldenSpeech_Caden_4 {
+    format("I guess you've got a point.\nBut still, it's a little scary to think about.")
+}
+
+text ZirconTown_Text_AldenSpeech_Holly_4 {
+    format("I think I'd rather live in a world where things are a little messy.\p"
+            "It's what makes every day different, right?")
+}
+
+text ZirconTown_Text_AldenSpeech_Alden_9 {
+    format("Ah, but I digress. I must not bore young Trainers with the weight of history.\p"
+            "Perhaps, one day, you will seek answers on your own.")
+}
+
+text ZirconTown_Text_AldenSpeech_Alden_10 {
+    format("Now, I must take my leave. There is much more of Avaro to explore.\p"
+            "Safe travels, young Trainers.\nAnd remember--knowledge is the key to shaping the future.")
+}
+
+text ZirconTown_Text_AldenSpeech_Caden_5 {
+    format("Okay, tell me that guy wasn't kinda weird.\p"
+            "Eh, whatever. We've got real stuff to focus on--Gym battles, catching Pokémon, y'know, Trainer things.\p"
+            "The next Gym is in Spinel City, right through the Kismet Forest. We should head there next!")
+            "See you later, {PLAYER}!"
+}
+
+text ZirconTown_Text_AldenSpeech_Holly_5 {
+    format("That was... a lot to take in.\nSomething about the way he talked gave me a bad feeling\p"
+            "Still... I think we should remember what he said.\nJust in case.\p"
+            "Oh right, the next Gym is in Spinel City. To get there, we have to go through the Kismet Forest.\p"
+            "Let's head there next, okay?\nI'll see you later, {PLAYER}!")
+}
+
+movement ZirconTown_Movement_AldenLeave {
+    walk_left
+    walk_up * 4
+}

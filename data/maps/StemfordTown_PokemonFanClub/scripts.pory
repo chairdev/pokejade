@@ -3,7 +3,7 @@ const OBJ_NURSERY_MAN = 6
 
 mapscripts StemfordTown_PokemonFanClub_MapScripts {
     MAP_SCRIPT_ON_FRAME_TABLE [
-        VAR_STEMFORD_TOWN_STATE, 0: StemfordTown_PokemonFanClub_TeamUpsilonIntro
+        VAR_ZIRCON_TOWN_STATE, 0: StemfordTown_PokemonFanClub_TeamUpsilonIntro
     ]
 }
 
@@ -54,7 +54,7 @@ script StemfordTown_PokemonFanClub_TeamUpsilonIntro {
     waitmovement(0)
 
     msgbox(StemfordTown_PokemonFanClub_Text_NurseryMan1)
-    setvar(VAR_STEMFORD_TOWN_STATE, 1)
+    setvar(VAR_ZIRCON_TOWN_STATE, 1)
     setflag(FLAG_HIDE_ROUTE_302_RIVAL)
 
     goto(StemfordTown_PokemonFanClub_NurseryMan)

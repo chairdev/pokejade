@@ -5,7 +5,7 @@ StemfordTown_PokemonFanClub_MapScripts::
 
 StemfordTown_PokemonFanClub_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 # 6 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
-	map_script_2 VAR_STEMFORD_TOWN_STATE, 0, StemfordTown_PokemonFanClub_TeamUpsilonIntro
+	map_script_2 VAR_ZIRCON_TOWN_STATE, 0, StemfordTown_PokemonFanClub_TeamUpsilonIntro
 	.2byte 0
 
 
@@ -77,7 +77,7 @@ StemfordTown_PokemonFanClub_TeamUpsilonIntro_1:
 # 56 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
 	msgbox StemfordTown_PokemonFanClub_Text_NurseryMan1
 # 57 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
-	setvar VAR_STEMFORD_TOWN_STATE, 1
+	setvar VAR_ZIRCON_TOWN_STATE, 1
 # 58 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
 	setflag FLAG_HIDE_ROUTE_302_RIVAL
 # 60 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"

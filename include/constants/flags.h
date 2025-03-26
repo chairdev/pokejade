@@ -766,11 +766,11 @@
 #define FLAG_HIDE_SAFARI_ZONE_SOUTH_CONSTRUCTION_WORKERS            0x2CD
 #define FLAG_HIDE_MEW                                               0x2CE
 #define FLAG_HIDE_STARRIDGE_CITY_RIVAL                              0x2CF
-#define FLAG_HIDE_ROUTE_302_ASTER                                     0x2D0
-#define FLAG_HIDE_EVERWOOD_TOWN_RESEARCH_LAB_RIVAL                  0x2D1
+#define FLAG_HIDE_ROUTE_302_ASTER                                   0x2D0
+#define FLAG_HIDE_ZIRCON_TOWN_SPEECH_NPCS                           0x2D1
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_BEDROOM          0x2D2
 #define FLAG_HIDE_ROUTE_301_RIVAL                                   0x2D3
-#define FLAG_HIDE_ROUTE_302_RIVAL                                      0x2D4
+#define FLAG_HIDE_ROUTE_302_RIVAL                                   0x2D4
 #define FLAG_HIDE_STARRIDGE_RUINS_1F_UPSILON_GRUNTS                 0x2D5
 #define FLAG_HIDE_PETALBURG_CITY_WALLY                              0x2D6
 #define FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_INVISIBLE_NINJA_BOY   0x2D7

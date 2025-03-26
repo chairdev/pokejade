@@ -155,7 +155,7 @@ Route501_RivalHolly::
 # 110 "data/maps/Route501/scripts.pory"
 	setflag FLAG_CHOSE_STARTER
 # 111 "data/maps/Route501/scripts.pory"
-	clearflag FLAG_HIDE_EVERWOOD_TOWN_RESEARCH_LAB_RIVAL
+	clearflag FLAG_HIDE_ZIRCON_TOWN_SPEECH_NPCS
 # 112 "data/maps/Route501/scripts.pory"
 	setvar VAR_ROUTE301_STATE, 1
 # 113 "data/maps/Route501/scripts.pory"
@@ -257,7 +257,7 @@ Route501_RivalCaden::
 # 178 "data/maps/Route501/scripts.pory"
 	setflag FLAG_CHOSE_STARTER
 # 179 "data/maps/Route501/scripts.pory"
-	clearflag FLAG_HIDE_EVERWOOD_TOWN_RESEARCH_LAB_RIVAL
+	clearflag FLAG_HIDE_ZIRCON_TOWN_SPEECH_NPCS
 # 180 "data/maps/Route501/scripts.pory"
 	setvar VAR_ROUTE301_STATE, 1
 # 181 "data/maps/Route501/scripts.pory"

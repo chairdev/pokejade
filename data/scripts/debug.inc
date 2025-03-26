@@ -33,7 +33,7 @@ Debug_CheatStart::
 # 17 "data/scripts/debug.pory"
 	setflag FLAG_ADVENTURE_STARTED
 # 18 "data/scripts/debug.pory"
-	clearflag FLAG_HIDE_EVERWOOD_TOWN_RESEARCH_LAB_RIVAL
+	clearflag FLAG_HIDE_ZIRCON_TOWN_SPEECH_NPCS
 # 19 "data/scripts/debug.pory"
 	setflag FLAG_CHOSE_STARTER
 # 20 "data/scripts/debug.pory"
