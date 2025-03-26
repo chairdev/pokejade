@@ -4824,7 +4824,7 @@
     {
       "id": "LAYOUT_ROUTE302",
       "name": "Route302_Layout",
-      "width": 40,
+      "width": 50,
       "height": 40,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Rustboro",
