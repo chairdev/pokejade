@@ -285,6 +285,7 @@ script Route302_Trigger_AsterFirstBattle {
     removeobject(OBJ_ASTER)
 
     setflag(FLAG_HIDE_ROUTE_302_ASTER)
+    clearflag(FLAG_HIDE_ZIRCON_TOWN_SPEECH_NPCS)
     setvar(VAR_ROUTE302_STATE, 2)
 
     fadedefaultbgm

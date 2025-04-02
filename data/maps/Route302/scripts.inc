@@ -369,45 +369,47 @@ Route302_Trigger_AsterFirstBattle::
 # 287 "data/maps/Route302/scripts.pory"
 	setflag FLAG_HIDE_ROUTE_302_ASTER
 # 288 "data/maps/Route302/scripts.pory"
+	clearflag FLAG_HIDE_ZIRCON_TOWN_SPEECH_NPCS
+# 289 "data/maps/Route302/scripts.pory"
 	setvar VAR_ROUTE302_STATE, 2
-# 290 "data/maps/Route302/scripts.pory"
-	fadedefaultbgm
 # 291 "data/maps/Route302/scripts.pory"
+	fadedefaultbgm
+# 292 "data/maps/Route302/scripts.pory"
 	releaseall
 	return
 
 
-# 294 "data/maps/Route302/scripts.pory"
+# 295 "data/maps/Route302/scripts.pory"
 Route302_Movement_AsterFirstBattle_AsterApproachPlayer1:
-# 295 "data/maps/Route302/scripts.pory"
+# 296 "data/maps/Route302/scripts.pory"
 	walk_down
-# 295 "data/maps/Route302/scripts.pory"
+# 296 "data/maps/Route302/scripts.pory"
 	walk_down
 	step_end
 
-# 298 "data/maps/Route302/scripts.pory"
-Route302_Movement_AsterFirstBattle_AsterApproachPlayer2:
 # 299 "data/maps/Route302/scripts.pory"
+Route302_Movement_AsterFirstBattle_AsterApproachPlayer2:
+# 300 "data/maps/Route302/scripts.pory"
 	walk_right
-# 300 "data/maps/Route302/scripts.pory"
+# 301 "data/maps/Route302/scripts.pory"
 	walk_down
-# 300 "data/maps/Route302/scripts.pory"
+# 301 "data/maps/Route302/scripts.pory"
 	walk_down
 	step_end
 
-# 303 "data/maps/Route302/scripts.pory"
+# 304 "data/maps/Route302/scripts.pory"
 Route302_Movement_AsterFirstBattle_AsterLeave:
-# 304 "data/maps/Route302/scripts.pory"
+# 305 "data/maps/Route302/scripts.pory"
 	walk_up
-# 304 "data/maps/Route302/scripts.pory"
+# 305 "data/maps/Route302/scripts.pory"
 	walk_up
-# 304 "data/maps/Route302/scripts.pory"
+# 305 "data/maps/Route302/scripts.pory"
 	walk_up
-# 304 "data/maps/Route302/scripts.pory"
+# 305 "data/maps/Route302/scripts.pory"
 	walk_up
-# 304 "data/maps/Route302/scripts.pory"
+# 305 "data/maps/Route302/scripts.pory"
 	walk_up
-# 304 "data/maps/Route302/scripts.pory"
+# 305 "data/maps/Route302/scripts.pory"
 	walk_up
 	step_end
 
@@ -546,22 +548,22 @@ Route302_Text_RivalEncounter_Holly_2::
 	.string "stronger, so you'd better be ready!$"
 
 Route302_Text_AsterFirstBattle_Aster_1::
-# 308 "data/maps/Route302/scripts.pory"
+# 309 "data/maps/Route302/scripts.pory"
 	.string "Hmph. And who might you be?$"
 
 Route302_Text_AsterFirstBattle_Aster_2::
-# 312 "data/maps/Route302/scripts.pory"
+# 313 "data/maps/Route302/scripts.pory"
 	.string "I don't think I've seen you around\n"
 	.string "before. And trust me, I remember\l"
 	.string "important people.$"
 
 Route302_Text_AsterFirstBattle_Aster_3::
-# 316 "data/maps/Route302/scripts.pory"
+# 317 "data/maps/Route302/scripts.pory"
 	.string "I'm Aster. You know, THE Aster--the\n"
 	.string "rising star? Surely you've heard of me.$"
 
 Route302_Text_AsterFirstBattle_Aster_4::
-# 320 "data/maps/Route302/scripts.pory"
+# 321 "data/maps/Route302/scripts.pory"
 	.string "Tch. Figures.\n"
 	.string "Not everyone has good taste.\p"
 	.string "Anyway, I can't just let some random\n"
@@ -570,7 +572,7 @@ Route302_Text_AsterFirstBattle_Aster_4::
 	.string "What's your name, anyway?$"
 
 Route302_Text_AsterFirstBattle_Aster_5::
-# 326 "data/maps/Route302/scripts.pory"
+# 327 "data/maps/Route302/scripts.pory"
 	.string "Hah! {PLAYER}, huh?\n"
 	.string "Doesn't exactly scream 'future\l"
 	.string "champion,' but I guess I've heard worse.\p"
@@ -582,12 +584,12 @@ Route302_Text_AsterFirstBattle_Aster_5::
 	.string "Try not to waste my time.$"
 
 Route302_Text_AsterDefeated::
-# 333 "data/maps/Route302/scripts.pory"
+# 334 "data/maps/Route302/scripts.pory"
 	.string "What!? No--there's no way I lost to\n"
 	.string "some random nobody!$"
 
 Route302_Text_AsterFirstBattle_Aster_6::
-# 337 "data/maps/Route302/scripts.pory"
+# 338 "data/maps/Route302/scripts.pory"
 	.string "Hmph... Maybe you're not a complete\n"
 	.string "pushover after all.\p"
 	.string "But don't get too comfortable. This was\n"
@@ -596,7 +598,7 @@ Route302_Text_AsterFirstBattle_Aster_6::
 	.string "crush you.$"
 
 Route302_Text_AsterFirstBattle_Aster_7::
-# 343 "data/maps/Route302/scripts.pory"
+# 344 "data/maps/Route302/scripts.pory"
 	.string "...\p"
 	.string "...Guess I'll have to remember your name\n"
 	.string "after all, {PLAYER}.\p"

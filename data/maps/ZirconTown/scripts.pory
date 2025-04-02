@@ -2,17 +2,13 @@
 // 0: Alden's Speech
 // 1: Done
 
-const OBJ_ALDEN = 0
+const OBJ_ALDEN = 1
 const OBJ_RIVAL = 3
 
 mapscripts ZirconTown_MapScripts {
         MAP_SCRIPT_ON_TRANSITION {
         call(Common_EventScript_SetupRivalGfxId)
     }
-
-    MAP_SCRIPT_ON_FRAME_TABLE [
-        VAR_ZIRCON_TOWN_STATE, 0:  ZirconTown_Trigger_AldenSpeech
-    ]
 }
 
 script ZirconTown_Trigger_AldenSpeech
@@ -38,6 +34,7 @@ script ZirconTown_Trigger_AldenSpeech
     waitmovement(0)
     delay(16)
     applymovement(OBJ_ALDEN, Common_Movement_WalkInPlaceFasterDown)
+    waitmovement(0)
     speakername("???")
     msgbox(ZirconTown_Text_AldenSpeech_Alden_1)
 
@@ -63,7 +60,7 @@ script ZirconTown_Trigger_AldenSpeech
     waitmovement(0)
     delay(16)
     applymovement(OBJ_RIVAL, Common_Movement_WalkInPlaceFasterUp)
-    checkplayergender
+    waitmovement(0)
     checkplayergender
     speakername("{RIVAL}")
     if(var(VAR_RESULT) == FEMALE)
@@ -78,20 +75,22 @@ script ZirconTown_Trigger_AldenSpeech
     speakername("Alden")
     msgbox(ZirconTown_Text_AldenSpeech_Alden_4)
 
-    dynmultichoice(20, 8, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE,
+    dynmultichoice(20, 4, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE,
     "Yeah, history is fascinating!", "A little.", "Not really.")
 
-    if (var(VAR_RESULT) == 0) {
-        speakername("Alden")
-        msgbox(ZirconTown_Text_AldenSpeech_Alden_5A)
-    }
-    else if (var(VAR_RESULT) == 1) {
-        speakername("Alden")
-        msgbox(ZirconTown_Text_AldenSpeech_Alden_5B)
-    }
-    else {
-        speakername("Alden")
-        msgbox(ZirconTown_Text_AldenSpeech_Alden_5C)
+    switch(var(VAR_RESULT)) {
+        case 0:
+            speakername("Alden")
+            msgbox(ZirconTown_Text_AldenSpeech_Alden_5A)
+        break
+        case 1:
+            speakername("Alden")
+            msgbox(ZirconTown_Text_AldenSpeech_Alden_5B)
+        break
+        case 2:
+            speakername("Alden")
+            msgbox(ZirconTown_Text_AldenSpeech_Alden_5C)
+        break
     }
     msgbox(ZirconTown_Text_AldenSpeech_Alden_6)
 
@@ -169,7 +168,7 @@ text ZirconTown_Text_AldenSpeech_Caden_1 {
 
 text ZirconTown_Text_AldenSpeech_Holly_1 {
     format( "Hey, {PLAYER}!\nYou made it!\p"
-            "I was just listening to this guy talk about Avaro's history—it's actually really interesting!.")
+            "I was just listening to this guy talk about Avaro's history--it's actually really interesting!.")
 }
 
 text ZirconTown_Text_AldenSpeech_Alden_1 {
@@ -217,13 +216,13 @@ text ZirconTown_Text_AldenSpeech_Alden_5B {
 }
 
 text ZirconTown_Text_AldenSpeech_Alden_5C {
-    format("A pity. The past is a treasure trove of knowledge, waiting to be discovered.\p")
-            "But I digress. I must return to my speech. I hope you enjoy the rest of your time in Zircon Town."
+    format("A pity. The past is a treasure trove of knowledge, waiting to be discovered.\p"
+            "But I digress. I must return to my speech. I hope you enjoy the rest of your time in Zircon Town.")
 }
 
 text ZirconTown_Text_AldenSpeech_Alden_6 {
     format("Long before the Pokémon League, Avaro was home to an ancient civilization.\p"
-            "Unlike modern society, they sought something beyond simple progress--they sought control over life itself."
+            "Unlike modern society, they sought something beyond simple progress--they sought control over life itself.\p"
             "However, their ambitions were met with disaster. Some say their greed led to their downfall, while others believe they were erased from history by those who feared their knowledge.\p"
             "What remains of them is hidden across Avaro--ruins, artifacts, echoes of a forgotten time.\p"
     )
@@ -272,8 +271,8 @@ text ZirconTown_Text_AldenSpeech_Alden_10 {
 text ZirconTown_Text_AldenSpeech_Caden_5 {
     format("Okay, tell me that guy wasn't kinda weird.\p"
             "Eh, whatever. We've got real stuff to focus on--Gym battles, catching Pokémon, y'know, Trainer things.\p"
-            "The next Gym is in Spinel City, right through the Kismet Forest. We should head there next!")
-            "See you later, {PLAYER}!"
+            "The next Gym is in Spinel City, right through the Kismet Forest. We should head there next!\p"
+            "See you later, {PLAYER}!")
 }
 
 text ZirconTown_Text_AldenSpeech_Holly_5 {
