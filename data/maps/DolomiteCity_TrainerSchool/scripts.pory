@@ -161,13 +161,13 @@ script DolomiteCity_TrainerSchool_EventScript_Geo {
 
             switch(var(VAR_STARTER_MON)) {
             case 0:
-                trainerbattle_no_intro(TRAINER_CADEN_DOLOMITE_CHIKORITA, DolomiteCity_TrainerSchool_CadenDefeated)
+                trainerbattle_no_intro(TRAINER_CADEN_DOLOMITE_CHESPIN, DolomiteCity_TrainerSchool_CadenDefeated)
                 break
             case 1:
-                trainerbattle_no_intro(TRAINER_CADEN_DOLOMITE_CYNDAQUIL, DolomiteCity_TrainerSchool_CadenDefeated)
+                trainerbattle_no_intro(TRAINER_CADEN_DOLOMITE_FENNEKIN, DolomiteCity_TrainerSchool_CadenDefeated)
                 break   
             case 2:
-                trainerbattle_no_intro(TRAINER_CADEN_DOLOMITE_TOTODILE, DolomiteCity_TrainerSchool_CadenDefeated)
+                trainerbattle_no_intro(TRAINER_CADEN_DOLOMITE_FROAKIE, DolomiteCity_TrainerSchool_CadenDefeated)
                 break
             }
         }
@@ -178,13 +178,13 @@ script DolomiteCity_TrainerSchool_EventScript_Geo {
 
             switch(var(VAR_STARTER_MON)) {
             case 0:
-                trainerbattle_no_intro(TRAINER_HOLLY_DOLOMITE_CHIKORITA, DolomiteCity_TrainerSchool_HollyDefeated)
+                trainerbattle_no_intro(TRAINER_HOLLY_DOLOMITE_CHESPIN, DolomiteCity_TrainerSchool_HollyDefeated)
                 break
             case 1:
-                trainerbattle_no_intro(TRAINER_HOLLY_DOLOMITE_CYNDAQUIL, DolomiteCity_TrainerSchool_HollyDefeated)
+                trainerbattle_no_intro(TRAINER_HOLLY_DOLOMITE_FENNEKIN, DolomiteCity_TrainerSchool_HollyDefeated)
                 break
             case 2:
-                trainerbattle_no_intro(TRAINER_HOLLY_DOLOMITE_TOTODILE, DolomiteCity_TrainerSchool_HollyDefeated)
+                trainerbattle_no_intro(TRAINER_HOLLY_DOLOMITE_FROAKIE, DolomiteCity_TrainerSchool_HollyDefeated)
                 break
             }
         }
@@ -386,4 +386,51 @@ text DolomiteCity_TrainerSchool_Text_Teacher_AllCorrect {
 
 text DolomiteCity_TrainerSchool_Text_Teacher_FeelFreeToStudy {
     format("Feel free to study up as much as you like.")
+}
+
+
+script DolomiteCity_TrainerSchool_EventScript_UnderstandingStats {
+    lock
+    faceplayer
+
+    msgbox(format("Every Pokémon has six stats: HP, Attack, Defense, Special Attack, Special Defense, and Speed.\p"
+           "Speed decides who moves first in battle.\p"
+           "Attack and Special Attack deal damage, but only one matters depending on the move!\p"
+           "Use the right stat or you're just flailing."))
+    release
+}
+
+script DolomiteCity_TrainerSchool_EventScript_HowToCatch {
+    lock
+    faceplayer
+
+    msgbox(format("Poison, Burn, Paralysis, Sleep, and Freeze--they're all super annoying and super useful!\p"
+           "Burn lowers Attack. Paralysis sometimes stops Pokémon from moving.\p"
+           "Sleep and Freeze are the best, but they wear off after a while.\p"
+           "You can use them to catch Pokémon, but be careful!\p"
+           "If you knock them out, you won't be able to catch them at all!"))
+    release
+}
+
+script DolomiteCity_TrainerSchool_EventScript_HeldItems {
+    lock
+    faceplayer
+
+    msgbox(format("Give a Pokémon an item and they'll use it in battle by themselves.\p"
+           "Like, Leftovers heals them a bit each turn! Oran Berries are great early on.\p"
+           "Some items only work once, others boost stats--it's like giving them a secret weapon!\p"
+           "Oh, but they can't use man-made items like Potions or Revives.\p"
+           "Those are for you to use, not them."))
+    release
+}
+
+script DolomiteCity_TrainerSchool_EventScript_Abilities {
+    lock
+    faceplayer
+
+    msgbox(format("Abilities are like a Pokémon's secret superpower.\p"
+           "Some boost stats, some change the weather, and some even stop moves from working!\p"
+           "Like, if you have a Pokémon with Levitate, they can't be hit by Ground-type moves.\p"
+           "It's like having a built-in shield!"))
+    release
 }

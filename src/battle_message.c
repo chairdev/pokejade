@@ -3614,49 +3614,49 @@ static const struct TrainerSlide sTrainerSlides[] =
     */
 
    {
-        .trainerId = TRAINER_HOLLY_ROUTE_301_CHIKORITA,
+        .trainerId = TRAINER_HOLLY_ROUTE_301_CHESPIN,
         .isFrontierTrainer = FALSE,
         .msgFirstCriticalHit = sText_HollyFirstBattle_FirstCriticalHit,
         .msgFirstSuperEffectiveHit = sText_HollyFirstBattle_FirstSuperEffectiveHit,
         .msgBeforeFirstTurn = sText_HollyFirstBattle_BeforeFirstTurn,
     },
     {
-        .trainerId = TRAINER_HOLLY_ROUTE_301_CYNDAQUIL,
+        .trainerId = TRAINER_HOLLY_ROUTE_301_FENNEKIN,
         .isFrontierTrainer = FALSE,
         .msgFirstCriticalHit = sText_HollyFirstBattle_FirstCriticalHit,
         .msgFirstSuperEffectiveHit = sText_HollyFirstBattle_FirstSuperEffectiveHit,
         .msgBeforeFirstTurn = sText_HollyFirstBattle_BeforeFirstTurn,
     },
     {
-        .trainerId = TRAINER_HOLLY_ROUTE_301_TOTODILE,
+        .trainerId = TRAINER_HOLLY_ROUTE_301_FROAKIE,
         .isFrontierTrainer = FALSE,
         .msgFirstCriticalHit = sText_HollyFirstBattle_FirstCriticalHit,
         .msgFirstSuperEffectiveHit = sText_HollyFirstBattle_FirstSuperEffectiveHit,
         .msgBeforeFirstTurn = sText_HollyFirstBattle_BeforeFirstTurn,
     },
     {
-        .trainerId = TRAINER_CADEN_ROUTE_301_CHIKORITA,
+        .trainerId = TRAINER_CADEN_ROUTE_301_CHESPIN,
         .isFrontierTrainer = FALSE,
         .msgFirstCriticalHit = sText_CadenFirstBattle_FirstCriticalHit,
         .msgFirstSuperEffectiveHit = sText_CadenFirstBattle_FirstSuperEffectiveHit,
         .msgBeforeFirstTurn = sText_CadenFirstBattle_BeforeFirstTurn,
     },
     {
-        .trainerId = TRAINER_CADEN_ROUTE_301_CYNDAQUIL,
+        .trainerId = TRAINER_CADEN_ROUTE_301_FENNEKIN,
         .isFrontierTrainer = FALSE,
         .msgFirstCriticalHit = sText_CadenFirstBattle_FirstCriticalHit,
         .msgFirstSuperEffectiveHit = sText_CadenFirstBattle_FirstSuperEffectiveHit,
         .msgBeforeFirstTurn = sText_CadenFirstBattle_BeforeFirstTurn,
     },
     {
-        .trainerId = TRAINER_CADEN_ROUTE_301_TOTODILE,
+        .trainerId = TRAINER_CADEN_ROUTE_301_FROAKIE,
         .isFrontierTrainer = FALSE,
         .msgFirstCriticalHit = sText_CadenFirstBattle_FirstCriticalHit,
         .msgFirstSuperEffectiveHit = sText_CadenFirstBattle_FirstSuperEffectiveHit,
         .msgBeforeFirstTurn = sText_CadenFirstBattle_BeforeFirstTurn,
     },
     {
-        .trainerId = TRAINER_HOLLY_DOLOMITE_CHIKORITA,
+        .trainerId = TRAINER_HOLLY_DOLOMITE_CHESPIN,
         .isFrontierTrainer = FALSE,
         .msgFirstCriticalHit = sText_HollySecondBattle_FirstCriticalHit,
         .msgFirstSuperEffectiveHit = sText_HollySecondBattle_FirstSuperEffectiveHit,
@@ -3664,7 +3664,7 @@ static const struct TrainerSlide sTrainerSlides[] =
         .msgLastSwitchIn = sText_HollySecondBattle_LastSwitchIn,
     },
     {
-        .trainerId = TRAINER_HOLLY_DOLOMITE_CYNDAQUIL,
+        .trainerId = TRAINER_HOLLY_DOLOMITE_FENNEKIN,
         .isFrontierTrainer = FALSE,
         .msgFirstCriticalHit = sText_HollySecondBattle_FirstCriticalHit,
         .msgFirstSuperEffectiveHit = sText_HollySecondBattle_FirstSuperEffectiveHit,
@@ -3672,7 +3672,7 @@ static const struct TrainerSlide sTrainerSlides[] =
         .msgLastSwitchIn = sText_HollySecondBattle_LastSwitchIn,
     },
     {
-        .trainerId = TRAINER_HOLLY_DOLOMITE_TOTODILE,
+        .trainerId = TRAINER_HOLLY_DOLOMITE_FROAKIE,
         .isFrontierTrainer = FALSE,
         .msgFirstCriticalHit = sText_HollySecondBattle_FirstCriticalHit,
         .msgFirstSuperEffectiveHit = sText_HollySecondBattle_FirstSuperEffectiveHit,
@@ -3680,7 +3680,7 @@ static const struct TrainerSlide sTrainerSlides[] =
         .msgLastSwitchIn = sText_HollySecondBattle_LastSwitchIn,
     },
     {
-        .trainerId = TRAINER_CADEN_DOLOMITE_CHIKORITA,
+        .trainerId = TRAINER_CADEN_DOLOMITE_CHESPIN,
         .isFrontierTrainer = FALSE,
         .msgFirstCriticalHit = sText_CadenSecondBattle_FirstCriticalHit,
         .msgFirstSuperEffectiveHit = sText_CadenSecondBattle_FirstSuperEffectiveHit,
@@ -3688,7 +3688,7 @@ static const struct TrainerSlide sTrainerSlides[] =
         .msgLastSwitchIn = sText_CadenSecondBattle_LastSwitchIn,
     },
     {
-        .trainerId = TRAINER_CADEN_DOLOMITE_CYNDAQUIL,
+        .trainerId = TRAINER_CADEN_DOLOMITE_FENNEKIN,
         .isFrontierTrainer = FALSE,
         .msgFirstCriticalHit = sText_CadenSecondBattle_FirstCriticalHit,
         .msgFirstSuperEffectiveHit = sText_CadenSecondBattle_FirstSuperEffectiveHit,

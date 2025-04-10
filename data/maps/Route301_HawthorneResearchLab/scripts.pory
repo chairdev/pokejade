@@ -1,8 +1,8 @@
 const OBJ_PROF_HAWTHORNE = 1
 const OBJ_RIVAL = 2
-const OBJ_CHIKORITA = 3
-const OBJ_CYNDAQUIL = 4
-const OBJ_TOTODILE = 5
+const OBJ_CHESPIN = 3
+const OBJ_FENNEKIN = 4
+const OBJ_FROAKIE = 5
 
 //VAR_HAWTHORNE_LAB_STATE
 //0: Walk in
@@ -210,9 +210,9 @@ script Route301_HawthorneResearchLab_MapScript_MeetProf {
     lockall
 
     addobject(OBJ_RIVAL)
-    addobject(OBJ_CHIKORITA)
-    addobject(OBJ_CYNDAQUIL)
-    addobject(OBJ_TOTODILE)
+    addobject(OBJ_CHESPIN)
+    addobject(OBJ_FENNEKIN)
+    addobject(OBJ_FROAKIE)
 
     applymovement(OBJ_RIVAL, Route301_HawthorneResearchLab_Movement_Rival_WalkIntoLab)
     applymovement(OBJ_EVENT_ID_PLAYER, Route301_HawthorneResearchLab_Movement_Player_WalkIntoLab)
@@ -257,9 +257,9 @@ script Route301_HawthorneResearchLab_MapScript_MeetProf {
     msgbox(Route301_HawthorneResearchLab_Text_MeetProf_ProfHawthorne4)
 
     setvar(VAR_HAWTHORNE_LAB_STATE, 1)
-    setobjectmovementtype(OBJ_CHIKORITA, MOVEMENT_TYPE_FACE_DOWN)
-    setobjectmovementtype(OBJ_CYNDAQUIL, MOVEMENT_TYPE_FACE_DOWN)
-    setobjectmovementtype(OBJ_TOTODILE, MOVEMENT_TYPE_FACE_DOWN)
+    setobjectmovementtype(OBJ_CHESPIN, MOVEMENT_TYPE_FACE_DOWN)
+    setobjectmovementtype(OBJ_FENNEKIN, MOVEMENT_TYPE_FACE_DOWN)
+    setobjectmovementtype(OBJ_FROAKIE, MOVEMENT_TYPE_FACE_DOWN)
 
     releaseall
 }
@@ -269,35 +269,35 @@ script Route301_HawthorneResearchLab_MapScript_StarterIntro {
     applymovement(OBJ_EVENT_ID_CAMERA, Route301_HawthorneResearchLab_Movement_CameraPan1)
     waitmovement(OBJ_EVENT_ID_CAMERA)
 
-    playmoncry(SPECIES_CHIKORITA, CRY_MODE_NORMAL)
-    applymovement(OBJ_CHIKORITA, Route301_HawthorneResearchLab_Movement_StarterHop)
+    playmoncry(SPECIES_CHESPIN, CRY_MODE_NORMAL)
+    applymovement(OBJ_CHESPIN, Route301_HawthorneResearchLab_Movement_StarterHop)
     waitmoncry
     waitmovement(0)
 
     speakername("Hawthorne")
-    msgbox(format("Chikorita, the Leaf Pokémon."))
+    msgbox(format("Chespin, the Spiny Nut Pokémon."))
     closemessage
 
     applymovement(OBJ_EVENT_ID_CAMERA, Route301_HawthorneResearchLab_Movement_CameraPan2)
 
-    playmoncry(SPECIES_CYNDAQUIL,CRY_MODE_NORMAL)
-    applymovement(OBJ_CYNDAQUIL, Route301_HawthorneResearchLab_Movement_StarterHop)
+    playmoncry(SPECIES_FENNEKIN,CRY_MODE_NORMAL)
+    applymovement(OBJ_FENNEKIN, Route301_HawthorneResearchLab_Movement_StarterHop)
     waitmoncry
     waitmovement(0)
 
     speakername("Hawthorne")
-    msgbox(format("Cyndaquil, the Fire Mouse Pokémon."))
+    msgbox(format("Fennekin, the Fox Pokémon."))
     closemessage
 
     applymovement(OBJ_EVENT_ID_CAMERA, Route301_HawthorneResearchLab_Movement_CameraPan2)
 
-    playmoncry(SPECIES_TOTODILE, CRY_MODE_NORMAL)
-    applymovement(OBJ_TOTODILE, Route301_HawthorneResearchLab_Movement_StarterHop)
+    playmoncry(SPECIES_FROAKIE, CRY_MODE_NORMAL)
+    applymovement(OBJ_FROAKIE, Route301_HawthorneResearchLab_Movement_StarterHop)
     waitmoncry
     waitmovement(0)
 
     speakername("Hawthorne")
-    msgbox(format("And last but not least,\nTotodile, the Big Jaw Pokémon."))
+    msgbox(format("And last but not least,\nFroakie, the Bubble Frog Pokémon."))
     closemessage
 
     applymovement(OBJ_EVENT_ID_CAMERA, Route301_HawthorneResearchLab_Movement_CameraPan3)
@@ -334,11 +334,11 @@ script Route301_HawthorneResearchLab_EventScript_ReceiveStarter {
 
     switch(var(VAR_STARTER_MON)) {
         case 0:
-           bufferspeciesname(STR_VAR_2, SPECIES_TOTODILE)
+           bufferspeciesname(STR_VAR_2, SPECIES_FROAKIE)
         case 1:
-            bufferspeciesname(STR_VAR_2, SPECIES_CHIKORITA)
+            bufferspeciesname(STR_VAR_2, SPECIES_CHESPIN)
         case 2:
-            bufferspeciesname(STR_VAR_2, SPECIES_CYNDAQUIL)
+            bufferspeciesname(STR_VAR_2, SPECIES_FENNEKIN)
     }
 
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown)
@@ -359,13 +359,13 @@ script Route301_HawthorneResearchLab_EventScript_ReceiveStarter {
     switch(var(VAR_STARTER_MON)) {
         case 0:
             applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight)
-            applymovement(OBJ_RIVAL, Route301_HawthorneResearchLab_Movement_ReceiveStarter_RivalWalkToTotodile)
+            applymovement(OBJ_RIVAL, Route301_HawthorneResearchLab_Movement_ReceiveStarter_RivalWalkToFroakie)
         case 1:
             applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft)
-            applymovement(OBJ_RIVAL, Route301_HawthorneResearchLab_Movement_ReceiveStarter_RivalWalkToChikorita)
+            applymovement(OBJ_RIVAL, Route301_HawthorneResearchLab_Movement_ReceiveStarter_RivalWalkToChespin)
         case 2:
             applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft)
-            applymovement(OBJ_RIVAL, Route301_HawthorneResearchLab_Movement_ReceiveStarter_RivalWalkToCyndaquil)
+            applymovement(OBJ_RIVAL, Route301_HawthorneResearchLab_Movement_ReceiveStarter_RivalWalkToFennekin)
     }
     waitmovement(0)
 
@@ -380,36 +380,36 @@ script Route301_HawthorneResearchLab_EventScript_ReceiveStarter {
 
     switch(var(VAR_STARTER_MON)) {
         case 0:
-            playmoncry(SPECIES_TOTODILE, CRY_MODE_NORMAL)
-            applymovement(OBJ_TOTODILE, Route301_HawthorneResearchLab_Movement_StarterHop)
+            playmoncry(SPECIES_FROAKIE, CRY_MODE_NORMAL)
+            applymovement(OBJ_FROAKIE, Route301_HawthorneResearchLab_Movement_StarterHop)
 
-            speakername("Totodile")
-            msgbox("Ararara!")
+            speakername("Froakie")
+            msgbox("(Froakie croaks confidently!)")
             closemessage
             waitmovement(0)
-            removeobject(OBJ_TOTODILE)
+            removeobject(OBJ_FROAKIE)
             break
 
         case 1:
-            playmoncry(SPECIES_CHIKORITA, CRY_MODE_NORMAL)
-            applymovement(OBJ_CHIKORITA, Route301_HawthorneResearchLab_Movement_StarterHop)
+            playmoncry(SPECIES_CHESPIN, CRY_MODE_NORMAL)
+            applymovement(OBJ_CHESPIN, Route301_HawthorneResearchLab_Movement_StarterHop)
 
-            speakername("Chikorita")
-            msgbox("Ritarara!")
+            speakername("Chespin")
+            msgbox("(Chespin chirps happily!)")
             closemessage
             waitmovement(0)
-            removeobject(OBJ_CHIKORITA)
+            removeobject(OBJ_CHESPIN)
             break
 
         case 2:
-            playmoncry(SPECIES_CYNDAQUIL, CRY_MODE_NORMAL)
-            applymovement(OBJ_CYNDAQUIL, Route301_HawthorneResearchLab_Movement_StarterHop)
+            playmoncry(SPECIES_FENNEKIN, CRY_MODE_NORMAL)
+            applymovement(OBJ_FENNEKIN, Route301_HawthorneResearchLab_Movement_StarterHop)
 
-            speakername("Cyndaquil")
-            msgbox("Quililil!")
+            speakername("Fennekin")
+            msgbox("(Fennekin lets out a cheerful bark!)")
             closemessage
             waitmovement(0)
-            removeobject(OBJ_CYNDAQUIL)
+            removeobject(OBJ_FENNEKIN)
             break
     }
 
@@ -451,18 +451,18 @@ text Route301_HawthorneResearchLab_Text_ReceiveStarter_Hawthorne1 {
            "Treat them well, and they'll be sure to grow alongside you.")
 }
 
-movement Route301_HawthorneResearchLab_Movement_ReceiveStarter_RivalWalkToChikorita {
+movement Route301_HawthorneResearchLab_Movement_ReceiveStarter_RivalWalkToChespin {
     walk_up * 3
     walk_in_place_faster_up
 }
 
-movement Route301_HawthorneResearchLab_Movement_ReceiveStarter_RivalWalkToCyndaquil {
+movement Route301_HawthorneResearchLab_Movement_ReceiveStarter_RivalWalkToFennekin {
     walk_up * 3
     walk_right
     walk_in_place_faster_up
 }
 
-movement Route301_HawthorneResearchLab_Movement_ReceiveStarter_RivalWalkToTotodile {
+movement Route301_HawthorneResearchLab_Movement_ReceiveStarter_RivalWalkToFroakie {
     walk_right * 2
     walk_up * 3
     walk_in_place_faster_up
@@ -495,9 +495,9 @@ script Route301_HawthorneResearchLab_EventScript_ExplainErrand {
     setvar(VAR_HAWTHORNE_LAB_STATE, 2)
     setvar(VAR_ROUTE301_STATE, 1)
     setflag(FLAG_CHOSE_STARTER)
-    removeobject(OBJ_CHIKORITA)
-    removeobject(OBJ_CYNDAQUIL)
-    removeobject(OBJ_TOTODILE)
+    removeobject(OBJ_CHESPIN)
+    removeobject(OBJ_FENNEKIN)
+    removeobject(OBJ_FROAKIE)
     fadescreen(FADE_FROM_BLACK)
 }
 
@@ -508,12 +508,6 @@ text Route301_HawthorneResearchLab_Text_ExplainErrand_Hawthorne1 {
            "As for you, {PLAYER}, I could use some help cataloging Pokémon habitats on Route 301.\p"
            "Think of it as a chance to get to know your new partner better!")
 }
-
-// text Route301_HawthorneResearchLab_Text_ExplainErrand_Hawthorne3 {
-//     format("These are Poké Balls, used for catching wild Pokémon.\p"
-//            "You'll need them to catch Pokémon in the wild.\p"
-//            "Take a few to get started!")
-// }
 
 text Route301_HawthorneResearchLab_Text_ExplainErrand_Caden1 {
     format( "Wait, hang on--why don't I do the fieldwork and let {PLAYER} deliver the package?\p"
@@ -533,103 +527,103 @@ text Route301_HawthorneResearchLab_Text_ExplainErrand_Hawthorne2 {
             "I don't want to be the one to get a call from them asking where you've run off to... again!")
 }
 
-script Route301_HawthorneResearchLab_EventScript_Chikorita {
+script Route301_HawthorneResearchLab_EventScript_Chespin {
     lock
 
-    showmonpic(SPECIES_CHIKORITA, 10, 3)
-    playmoncry(SPECIES_CHIKORITA, CRY_MODE_NORMAL)
+    showmonpic(SPECIES_CHESPIN, 10, 3)
+    playmoncry(SPECIES_CHESPIN, CRY_MODE_NORMAL)
 
-    speakername("Chikorita")
-    msgbox("Pakaan?")
-    
+    speakername("Chespin")
+    msgbox(format("(Chespin chirps excitedly!)"))
+
     speakername("Hawthorne")
-    msgbox(format("Chikorita is a Grass-type Pokémon.\p"
-                  "It uses the leaf on its head to determine the air's temperature and humidity. It loves to sunbathe.\p"
-                  "Would you like to choose the Grass-type Pokémon, Chikorita?"), MSGBOX_YESNO)
+    msgbox(format("Chespin is a Grass-type Pokémon.\p"
+                  "It has a tough shell and loves to play rough.\p"
+                  "Would you like to choose the Grass-type Pokémon, Chespin?"), MSGBOX_YESNO)
 
     hidemonpic
 
     if(var(VAR_RESULT) == YES) {
-        playmoncry(SPECIES_CHIKORITA, CRY_MODE_NORMAL)
-        applymovement(OBJ_CHIKORITA, Route301_HawthorneResearchLab_Movement_StarterHop)
+        playmoncry(SPECIES_CHESPIN, CRY_MODE_NORMAL)
+        applymovement(OBJ_CHESPIN, Route301_HawthorneResearchLab_Movement_StarterHop)
 
-        speakername("Chikorita")
-        msgbox("Ritarara!")
+        speakername("Chespin")
+        msgbox("(Chespin chirps happily!)")
         closemessage
         waitmovement(0)
 
-        givemon(SPECIES_CHIKORITA, 5)
+        givemon(SPECIES_CHESPIN, 5)
         setvar(VAR_STARTER_MON, 0)
 
-        removeobject(OBJ_CHIKORITA)
+        removeobject(OBJ_CHESPIN)
         call(Route301_HawthorneResearchLab_EventScript_ReceiveStarter)
     }
     releaseall
 }
 
-script Route301_HawthorneResearchLab_EventScript_Cyndaquil {
+script Route301_HawthorneResearchLab_EventScript_Fennekin {
     lock
 
-    showmonpic(SPECIES_CYNDAQUIL, 10, 3)
-    playmoncry(SPECIES_CYNDAQUIL, CRY_MODE_NORMAL)
+    showmonpic(SPECIES_FENNEKIN, 10, 3)
+    playmoncry(SPECIES_FENNEKIN, CRY_MODE_NORMAL)
 
-    speakername("Cyndaquil")
-    msgbox("...Quil?")
+    speakername("Fennekin")
+    msgbox(format("(Fennekin tilts its head curiously.)"))
 
     speakername("Hawthorne")
-    msgbox(format("Cyndaquil is a Fire-type Pokémon.\p"
-                  "It has a timid nature. If it is startled, the flames on its back burn more vigorously.\p"
-                  "Would you like to choose the Fire-type Pokémon, Cyndaquil?"), MSGBOX_YESNO)
+    msgbox(format("Fennekin is a Fire-type Pokémon.\p"
+                  "It loves to snack on twigs and has a fiery personality.\p"
+                  "Would you like to choose the Fire-type Pokémon, Fennekin?"), MSGBOX_YESNO)
 
     hidemonpic
 
     if(var(VAR_RESULT) == YES) {
-        playmoncry(SPECIES_CYNDAQUIL, CRY_MODE_NORMAL)
-        applymovement(OBJ_CYNDAQUIL, Route301_HawthorneResearchLab_Movement_StarterHop)
+        playmoncry(SPECIES_FENNEKIN, CRY_MODE_NORMAL)
+        applymovement(OBJ_FENNEKIN, Route301_HawthorneResearchLab_Movement_StarterHop)
 
-        speakername("Cyndaquil")
-        msgbox("Quililil!")
+        speakername("Fennekin")
+        msgbox(format("(Fennekin lets out a cheerful bark!)"))
         closemessage
         waitmovement(0)
 
-        givemon(SPECIES_CYNDAQUIL, 5)
+        givemon(SPECIES_FENNEKIN, 5)
         setvar(VAR_STARTER_MON, 1)
 
-        removeobject(OBJ_CYNDAQUIL)
+        removeobject(OBJ_FENNEKIN)
         call(Route301_HawthorneResearchLab_EventScript_ReceiveStarter)
     }
     releaseall
 }
 
-script Route301_HawthorneResearchLab_EventScript_Totodile {
+script Route301_HawthorneResearchLab_EventScript_Froakie {
     lock
 
-    showmonpic(SPECIES_TOTODILE, 10, 3)
-    playmoncry(SPECIES_TOTODILE, CRY_MODE_NORMAL)
+    showmonpic(SPECIES_FROAKIE, 10, 3)
+    playmoncry(SPECIES_FROAKIE, CRY_MODE_NORMAL)
 
-    speakername("Totodile")
-    msgbox("Aradun!")
+    speakername("Froakie")
+    msgbox(format("(Froakie looks at you with determination.)"))
 
     speakername("Hawthorne")
-    msgbox(format("Totodile is a Water-type Pokémon.\p"
-                  "It has a habit of biting everything with its well-developed jaws. Even its Trainer needs to be careful.\p"
-                  "Would you like to choose the Water-type Pokémon, Totodile?"), MSGBOX_YESNO)
+    msgbox(format("Froakie is a Water-type Pokémon.\p"
+                  "It uses its bubbles to protect itself and its Trainer.\p"
+                  "Would you like to choose the Water-type Pokémon, Froakie?"), MSGBOX_YESNO)
 
     hidemonpic
 
     if(var(VAR_RESULT) == YES) {
-        playmoncry(SPECIES_TOTODILE, CRY_MODE_NORMAL)
-        applymovement(OBJ_TOTODILE, Route301_HawthorneResearchLab_Movement_StarterHop)
+        playmoncry(SPECIES_FROAKIE, CRY_MODE_NORMAL)
+        applymovement(OBJ_FROAKIE, Route301_HawthorneResearchLab_Movement_StarterHop)
 
-        speakername("Totodile")
-        msgbox("Ararara!")
+        speakername("Froakie")
+        msgbox(format("(Froakie croaks confidently!)"))
         closemessage
         waitmovement(0)
 
-        givemon(SPECIES_TOTODILE, 5)
+        givemon(SPECIES_FROAKIE, 5)
         setvar(VAR_STARTER_MON, 2)
 
-        removeobject(OBJ_TOTODILE)
+        removeobject(OBJ_FROAKIE)
         call(Route301_HawthorneResearchLab_EventScript_ReceiveStarter)
     }
     releaseall
@@ -661,7 +655,10 @@ text Route301_HawthorneResearchLab_Text_MeetProf_ProfHawthorne3 {
 
 text Route301_HawthorneResearchLab_Text_MeetProf_ProfHawthorne4 {
     format("Each one is a unique species with its own strengths and weaknesses.\p"
-           "Take your time and choose the one that speaks to you the most.")
+           "Take your time and choose the one that speaks to you the most:\p"
+           "Chespin, the Grass-type Pokémon.\n"
+           "Fennekin, the Fire-type Pokémon.\n"
+           "Froakie, the Water-type Pokémon.")
 }
 
 text Route301_HawthorneResearchLab_Text_MeetProf_Caden1 {

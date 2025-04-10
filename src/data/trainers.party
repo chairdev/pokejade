@@ -4442,7 +4442,7 @@ Gender: Female
 Music: Intense
 Double Battle: No
 AI: Check Bad Move
-WALTER
+
 Lunatone
 Level: 43
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
@@ -9542,7 +9542,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Psychic
 - Future Sight
 
-=== TRAINER_CADEN_ROUTE_301_TOTODILE ===
+=== TRAINER_CADEN_ROUTE_301_FROAKIE ===
 Name: Caden
 Class: Rival
 Pic: Brendan
@@ -9551,7 +9551,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Force Setup First Turn / Ace Pokemon
 
-Cyndaquil
+Fennekin
 Level: 5
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
@@ -9597,7 +9597,7 @@ Grovyle
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_CADEN_ROUTE_301_CHIKORITA ===
+=== TRAINER_CADEN_ROUTE_301_CHESPIN ===
 Name: Caden
 Class: Rival
 Pic: Brendan
@@ -9606,7 +9606,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Force Setup First Turn / Ace Pokemon
 
-Totodile
+Froakie
 Level: 5
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
@@ -9652,7 +9652,7 @@ Combusken
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_CADEN_ROUTE_301_CYNDAQUIL ===
+=== TRAINER_CADEN_ROUTE_301_FENNEKIN ===
 Name: Caden
 Class: Rival
 Pic: Brendan
@@ -9661,7 +9661,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Force Setup First Turn / Ace Pokemon
 
-Chikorita
+Fennekin
 Level: 5
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
@@ -9707,7 +9707,7 @@ Marshtomp
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_HOLLY_ROUTE_301_TOTODILE ===
+=== TRAINER_HOLLY_ROUTE_301_FROAKIE ===
 Name: Holly
 Class: Rival
 Pic: May
@@ -9716,7 +9716,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Force Setup First Turn / Ace Pokemon
 
-Cyndaquil
+Fennekin
 Level: 5
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
@@ -9762,7 +9762,7 @@ Grovyle
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_HOLLY_ROUTE_301_CHIKORITA ===
+=== TRAINER_HOLLY_ROUTE_301_CHESPIN ===
 Name: Holly
 Class: Rival
 Pic: May
@@ -9771,7 +9771,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Totodile
+Froakie
 Level: 5
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
@@ -9817,7 +9817,7 @@ Combusken
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_HOLLY_ROUTE_301_CYNDAQUIL ===
+=== TRAINER_HOLLY_ROUTE_301_FENNEKIN ===
 Name: Holly
 Class: Rival
 Pic: May
@@ -9826,7 +9826,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Force Setup First Turn / Ace Pokemon
 
-Chikorita
+Chespin
 Level: 5
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
@@ -10883,7 +10883,7 @@ Natu
 Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CADEN_DOLOMITE_CHIKORITA ===
+=== TRAINER_CADEN_DOLOMITE_CHESPIN ===
 Name: Caden
 Class: Rival
 Pic: Brendan
@@ -10896,12 +10896,12 @@ Rookidee
 Level: 5
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Totodile
+Froakie
 Level: 8
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
 EVs: 252 HP
 
-=== TRAINER_CADEN_DOLOMITE_TOTODILE ===
+=== TRAINER_CADEN_DOLOMITE_FROAKIE ===
 Name: Caden
 Class: Rival
 Pic: Brendan
@@ -10914,7 +10914,7 @@ Rookidee
 Level: 5
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Cyndaquil
+Fennekin
 Level: 9
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
 EVs: 252 HP
@@ -11009,7 +11009,7 @@ Loudred
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CADEN_DOLOMITE_CYNDAQUIL ===
+=== TRAINER_CADEN_DOLOMITE_FENNEKIN ===
 Name: Caden
 Class: Rival
 Pic: Brendan
@@ -11022,12 +11022,12 @@ Rookidee
 Level: 5
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Chikorita
+Chespin
 Level: 8
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
 EVs: 252 HP
 
-=== TRAINER_HOLLY_DOLOMITE_TOTODILE ===
+=== TRAINER_HOLLY_DOLOMITE_FROAKIE ===
 Name: Holly
 Class: Rival
 Pic: May
@@ -11040,7 +11040,7 @@ Rookidee
 Level: 5
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Cyndaquil
+Fennekin
 Level: 8
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
 EVs: 252 HP
@@ -11599,11 +11599,11 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Shellos
+Gulpin
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Lillipup
+Lechonk
 Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -14188,7 +14188,7 @@ Vigoroth
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_HOLLY_DOLOMITE_CHIKORITA ===
+=== TRAINER_HOLLY_DOLOMITE_CHESPIN ===
 Name: Holly
 Class: Rival
 Pic: May
@@ -14201,12 +14201,12 @@ Rookidee
 Level: 5
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Totodile
+Froakie
 Level: 8
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
 EVs: 252 HP
 
-=== TRAINER_HOLLY_DOLOMITE_CYNDAQUIL ===
+=== TRAINER_HOLLY_DOLOMITE_FENNEKIN ===
 Name: Holly
 Class: Rival
 Pic: May
@@ -14219,7 +14219,7 @@ Rookidee
 Level: 5
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Chikorita
+Chespin
 Level: 8
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
 EVs: 252 HP

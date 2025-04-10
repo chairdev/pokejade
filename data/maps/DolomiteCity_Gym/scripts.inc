@@ -255,7 +255,8 @@ DolomiteCity_Gym_Text_GeoDefeated::
 
 DolomiteCity_Gym_Text_ReceivedFoundationBadge::
 # 146 "data/maps/DolomiteCity_Gym/scripts.pory"
-	.string "You received the Foundation Badge!$"
+	.string "You received the Foundation Badge from\n"
+	.string "Geo!$"
 
 DolomiteCity_Gym_Text_FoundationBadgeInfo::
 # 150 "data/maps/DolomiteCity_Gym/scripts.pory"

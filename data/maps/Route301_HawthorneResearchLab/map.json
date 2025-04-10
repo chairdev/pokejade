@@ -41,7 +41,7 @@
       "flag": "FLAG_HIDE_ZIRCON_TOWN_SPEECH_NPCS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CHIKORITA)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CHESPIN)",
       "x": 5,
       "y": 2,
       "elevation": 3,
@@ -50,11 +50,11 @@
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route301_HawthorneResearchLab_EventScript_Chikorita",
+      "script": "Route301_HawthorneResearchLab_EventScript_Chespin",
       "flag": "FLAG_CHOSE_STARTER"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CYNDAQUIL)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(FENNEKIN)",
       "x": 6,
       "y": 2,
       "elevation": 3,
@@ -63,11 +63,11 @@
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route301_HawthorneResearchLab_EventScript_Cyndaquil",
+      "script": "Route301_HawthorneResearchLab_EventScript_Fennekin",
       "flag": "FLAG_CHOSE_STARTER"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(TOTODILE)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(FROAKIE)",
       "x": 7,
       "y": 2,
       "elevation": 3,
@@ -76,7 +76,7 @@
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route301_HawthorneResearchLab_EventScript_Totodile",
+      "script": "Route301_HawthorneResearchLab_EventScript_Froakie",
       "flag": "FLAG_CHOSE_STARTER"
     }
   ],

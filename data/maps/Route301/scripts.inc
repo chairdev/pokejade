@@ -316,32 +316,32 @@ Route301_MapScript_FirstRivalBattle_17:
 
 Route301_MapScript_FirstRivalBattle_21:
 # 174 "data/maps/Route301/scripts.pory"
-	trainerbattle_no_intro TRAINER_CADEN_ROUTE_301_CHIKORITA, Route301_Text_FirstRivalBattle_CadenDefeated
+	trainerbattle_no_intro TRAINER_CADEN_ROUTE_301_CHESPIN, Route301_Text_FirstRivalBattle_CadenDefeated
 	goto Route301_MapScript_FirstRivalBattle_19
 
 Route301_MapScript_FirstRivalBattle_22:
 # 177 "data/maps/Route301/scripts.pory"
-	trainerbattle_no_intro TRAINER_CADEN_ROUTE_301_CYNDAQUIL, Route301_Text_FirstRivalBattle_CadenDefeated
+	trainerbattle_no_intro TRAINER_CADEN_ROUTE_301_FENNEKIN, Route301_Text_FirstRivalBattle_CadenDefeated
 	goto Route301_MapScript_FirstRivalBattle_19
 
 Route301_MapScript_FirstRivalBattle_23:
 # 180 "data/maps/Route301/scripts.pory"
-	trainerbattle_no_intro TRAINER_CADEN_ROUTE_301_TOTODILE, Route301_Text_FirstRivalBattle_CadenDefeated
+	trainerbattle_no_intro TRAINER_CADEN_ROUTE_301_FROAKIE, Route301_Text_FirstRivalBattle_CadenDefeated
 	goto Route301_MapScript_FirstRivalBattle_19
 
 Route301_MapScript_FirstRivalBattle_26:
 # 207 "data/maps/Route301/scripts.pory"
-	trainerbattle_no_intro TRAINER_HOLLY_ROUTE_301_CHIKORITA, Route301_Text_FirstRivalBattle_HollyDefeated
+	trainerbattle_no_intro TRAINER_HOLLY_ROUTE_301_CHESPIN, Route301_Text_FirstRivalBattle_HollyDefeated
 	goto Route301_MapScript_FirstRivalBattle_24
 
 Route301_MapScript_FirstRivalBattle_27:
 # 210 "data/maps/Route301/scripts.pory"
-	trainerbattle_no_intro TRAINER_HOLLY_ROUTE_301_CYNDAQUIL, Route301_Text_FirstRivalBattle_HollyDefeated
+	trainerbattle_no_intro TRAINER_HOLLY_ROUTE_301_FENNEKIN, Route301_Text_FirstRivalBattle_HollyDefeated
 	goto Route301_MapScript_FirstRivalBattle_24
 
 Route301_MapScript_FirstRivalBattle_28:
 # 213 "data/maps/Route301/scripts.pory"
-	trainerbattle_no_intro TRAINER_HOLLY_ROUTE_301_TOTODILE, Route301_Text_FirstRivalBattle_HollyDefeated
+	trainerbattle_no_intro TRAINER_HOLLY_ROUTE_301_FROAKIE, Route301_Text_FirstRivalBattle_HollyDefeated
 	goto Route301_MapScript_FirstRivalBattle_24
 
 

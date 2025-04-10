@@ -144,7 +144,7 @@ text DolomiteCity_Gym_Text_GeoDefeated {
 }
 
 text DolomiteCity_Gym_Text_ReceivedFoundationBadge {
-    "You received the Foundation Badge!"
+    format("You received the Foundation Badge from Geo!")
 }
 
 text DolomiteCity_Gym_Text_FoundationBadgeInfo {

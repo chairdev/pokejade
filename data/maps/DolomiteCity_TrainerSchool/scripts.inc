@@ -149,7 +149,7 @@ DolomiteCity_TrainerSchool_EventScript_Geo::
 	compare VAR_RESULT, 0
 	goto_if_eq DolomiteCity_TrainerSchool_EventScript_Geo_2
 DolomiteCity_TrainerSchool_EventScript_Geo_1:
-# 230 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 235 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	releaseall
 	return
 
@@ -236,27 +236,35 @@ DolomiteCity_TrainerSchool_EventScript_Geo_9:
 	msgbox DolomiteCity_TrainerSchool_EventScript_Geo_Text_5
 # 211 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	closemessage
-# 213 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
-	applymovement 3, DolomiteCity_TrainerSchool_Movement_RivalLeave
+# 212 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+	giveitem ITEM_TM_SWIFT
 # 214 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
-	waitmovement 0
+	speakername DolomiteCity_TrainerSchool_EventScript_Geo_Text_4
+# 215 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+	msgbox DolomiteCity_TrainerSchool_EventScript_Geo_Text_6
 # 216 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 217 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
-	delay 16
+	closemessage
 # 218 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
-	playse SE_EXIT
+	applymovement 3, DolomiteCity_TrainerSchool_Movement_RivalLeave
 # 219 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
-	removeobject 3
-# 220 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
-	waitse
+	waitmovement 0
 # 221 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
-	delay 16
+	fadescreen FADE_TO_BLACK
 # 222 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
-	setflag FLAG_HIDE_TRAINER_SCHOOL_GEO_RIVAL
+	delay 16
 # 223 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	playse SE_EXIT
+# 224 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+	removeobject 3
 # 225 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+	waitse
+# 226 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+	delay 16
+# 227 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+	setflag FLAG_HIDE_TRAINER_SCHOOL_GEO_RIVAL
+# 228 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 230 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	setflag FLAG_HIDE_DOLOMITE_CITY_GYM_GUIDE
 	goto DolomiteCity_TrainerSchool_EventScript_Geo_1
 
@@ -282,139 +290,187 @@ DolomiteCity_TrainerSchool_EventScript_Geo_10:
 
 DolomiteCity_TrainerSchool_EventScript_Geo_14:
 # 164 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
-	trainerbattle_no_intro TRAINER_CADEN_DOLOMITE_CHIKORITA, DolomiteCity_TrainerSchool_CadenDefeated
+	trainerbattle_no_intro TRAINER_CADEN_DOLOMITE_CHESPIN, DolomiteCity_TrainerSchool_CadenDefeated
 	goto DolomiteCity_TrainerSchool_EventScript_Geo_9
 
 DolomiteCity_TrainerSchool_EventScript_Geo_15:
 # 167 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
-	trainerbattle_no_intro TRAINER_CADEN_DOLOMITE_CYNDAQUIL, DolomiteCity_TrainerSchool_CadenDefeated
+	trainerbattle_no_intro TRAINER_CADEN_DOLOMITE_FENNEKIN, DolomiteCity_TrainerSchool_CadenDefeated
 	goto DolomiteCity_TrainerSchool_EventScript_Geo_9
 
 DolomiteCity_TrainerSchool_EventScript_Geo_16:
 # 170 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
-	trainerbattle_no_intro TRAINER_CADEN_DOLOMITE_TOTODILE, DolomiteCity_TrainerSchool_CadenDefeated
+	trainerbattle_no_intro TRAINER_CADEN_DOLOMITE_FROAKIE, DolomiteCity_TrainerSchool_CadenDefeated
 	goto DolomiteCity_TrainerSchool_EventScript_Geo_9
 
 DolomiteCity_TrainerSchool_EventScript_Geo_18:
 # 181 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
-	trainerbattle_no_intro TRAINER_HOLLY_DOLOMITE_CHIKORITA, DolomiteCity_TrainerSchool_HollyDefeated
+	trainerbattle_no_intro TRAINER_HOLLY_DOLOMITE_CHESPIN, DolomiteCity_TrainerSchool_HollyDefeated
 	goto DolomiteCity_TrainerSchool_EventScript_Geo_9
 
 DolomiteCity_TrainerSchool_EventScript_Geo_19:
 # 184 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
-	trainerbattle_no_intro TRAINER_HOLLY_DOLOMITE_CYNDAQUIL, DolomiteCity_TrainerSchool_HollyDefeated
+	trainerbattle_no_intro TRAINER_HOLLY_DOLOMITE_FENNEKIN, DolomiteCity_TrainerSchool_HollyDefeated
 	goto DolomiteCity_TrainerSchool_EventScript_Geo_9
 
 DolomiteCity_TrainerSchool_EventScript_Geo_20:
 # 187 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
-	trainerbattle_no_intro TRAINER_HOLLY_DOLOMITE_TOTODILE, DolomiteCity_TrainerSchool_HollyDefeated
+	trainerbattle_no_intro TRAINER_HOLLY_DOLOMITE_FROAKIE, DolomiteCity_TrainerSchool_HollyDefeated
 	goto DolomiteCity_TrainerSchool_EventScript_Geo_9
 
 
-# 233 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
-DolomiteCity_TrainerSchool_Movement_RivalApproachPlayer:
-# 234 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
-	walk_left
-# 235 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
-	walk_up
-	step_end
-
 # 238 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
-DolomiteCity_TrainerSchool_Movement_RivalLeave:
+DolomiteCity_TrainerSchool_Movement_RivalApproachPlayer:
 # 239 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	walk_left
 # 240 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+	walk_up
+	step_end
+
+# 243 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+DolomiteCity_TrainerSchool_Movement_RivalLeave:
+# 244 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+	walk_left
+# 245 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	walk_down
-# 240 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 245 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	walk_down
-# 240 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 245 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	walk_down
-# 240 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 245 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	walk_down
-# 240 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 245 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	walk_down
 	step_end
 
 DolomiteCity_TrainerSchool_EventScript_Teacher::
-# 296 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 301 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	lock
-# 297 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 302 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	faceplayer
-# 299 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 304 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	goto_if_unset FLAG_RECEIVED_QUICK_CLAW, DolomiteCity_TrainerSchool_EventScript_Teacher_2
-# 340 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 345 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	msgbox DolomiteCity_TrainerSchool_Text_Teacher_FeelFreeToStudy
 DolomiteCity_TrainerSchool_EventScript_Teacher_1:
-# 343 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 348 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	release
 	return
 
 DolomiteCity_TrainerSchool_EventScript_Teacher_2:
-# 301 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 306 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	msgbox DolomiteCity_TrainerSchool_Text_Teacher1, MSGBOX_YESNO
-# 302 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 307 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	compare VAR_RESULT, NO
 	goto_if_eq DolomiteCity_TrainerSchool_EventScript_Teacher_5
-# 305 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 310 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	msgbox DolomiteCity_TrainerSchool_Text_Teacher3
-# 306 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 311 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	dynmultichoice 20, 4, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, DolomiteCity_TrainerSchool_EventScript_Teacher_Text_0, DolomiteCity_TrainerSchool_EventScript_Teacher_Text_1, DolomiteCity_TrainerSchool_EventScript_Teacher_Text_2
-# 309 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 314 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	compare VAR_RESULT, 2
 	goto_if_ne DolomiteCity_TrainerSchool_EventScript_Teacher_8
-# 313 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 318 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	playse SE_DING_DONG
-# 314 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 319 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	msgbox DolomiteCity_TrainerSchool_Text_Teacher4
-# 315 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 320 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	dynmultichoice 20, 4, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, DolomiteCity_TrainerSchool_EventScript_Teacher_Text_3, DolomiteCity_TrainerSchool_EventScript_Teacher_Text_4, DolomiteCity_TrainerSchool_EventScript_Teacher_Text_5
-# 317 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 322 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_ne DolomiteCity_TrainerSchool_EventScript_Teacher_11
-# 321 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 326 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	playse SE_DING_DONG
-# 322 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 327 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	msgbox DolomiteCity_TrainerSchool_Text_Teacher5
-# 323 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 328 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	dynmultichoice 20, 4, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, DolomiteCity_TrainerSchool_EventScript_Teacher_Text_5, DolomiteCity_TrainerSchool_EventScript_Teacher_Text_6, DolomiteCity_TrainerSchool_EventScript_Teacher_Text_7
-# 325 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 330 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne DolomiteCity_TrainerSchool_EventScript_Teacher_14
-# 329 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 334 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	playse SE_DING_DONG
-# 330 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 335 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	msgbox DolomiteCity_TrainerSchool_Text_Teacher_AllCorrect
-# 331 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 336 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	giveitem ITEM_QUICK_CLAW
-# 332 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 337 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	setflag FLAG_RECEIVED_QUICK_CLAW
 	goto DolomiteCity_TrainerSchool_EventScript_Teacher_1
 
 DolomiteCity_TrainerSchool_EventScript_Teacher_5:
-# 303 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 308 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	msgbox DolomiteCity_TrainerSchool_Text_Teacher2
 	goto DolomiteCity_TrainerSchool_EventScript_Teacher_1
 
 DolomiteCity_TrainerSchool_EventScript_Teacher_8:
-# 310 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 315 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	playse SE_BOO
-# 311 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 316 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	msgbox DolomiteCity_TrainerSchool_Text_Teacher_ThatsWrong
 	goto DolomiteCity_TrainerSchool_EventScript_Teacher_1
 
 DolomiteCity_TrainerSchool_EventScript_Teacher_11:
-# 318 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 323 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	playse SE_BOO
-# 319 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 324 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	msgbox DolomiteCity_TrainerSchool_Text_Teacher_ThatsWrong
 	goto DolomiteCity_TrainerSchool_EventScript_Teacher_1
 
 DolomiteCity_TrainerSchool_EventScript_Teacher_14:
-# 326 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 331 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	playse SE_BOO
-# 327 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 332 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	msgbox DolomiteCity_TrainerSchool_Text_Teacher_ThatsWrong
 	goto DolomiteCity_TrainerSchool_EventScript_Teacher_1
+
+
+DolomiteCity_TrainerSchool_EventScript_UnderstandingStats::
+# 393 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+	lock
+# 394 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+	faceplayer
+# 396 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+	msgbox DolomiteCity_TrainerSchool_EventScript_UnderstandingStats_Text_0
+# 400 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+	release
+	return
+
+
+DolomiteCity_TrainerSchool_EventScript_HowToCatch::
+# 404 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+	lock
+# 405 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+	faceplayer
+# 407 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+	msgbox DolomiteCity_TrainerSchool_EventScript_HowToCatch_Text_0
+# 411 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+	release
+	return
+
+
+DolomiteCity_TrainerSchool_EventScript_HeldItems::
+# 415 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+	lock
+# 416 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+	faceplayer
+# 418 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+	msgbox DolomiteCity_TrainerSchool_EventScript_HeldItems_Text_0
+# 423 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+	release
+	return
+
+
+DolomiteCity_TrainerSchool_EventScript_Abilities::
+# 427 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+	lock
+# 428 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+	faceplayer
+# 430 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+	msgbox DolomiteCity_TrainerSchool_EventScript_Abilities_Text_0
+# 434 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+	release
+	return
 
 
 DolomiteCity_TrainerSchool_EventScript_Geo_Text_0:
@@ -441,39 +497,94 @@ DolomiteCity_TrainerSchool_EventScript_Geo_Text_5:
 # 209 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	.string "I'm going to train hard and challenge\n"
 	.string "the Dolomite Gym!\p"
+	.string "You should take this TM as a thank you\n"
+	.string "for helping me out.$"
+
+DolomiteCity_TrainerSchool_EventScript_Geo_Text_6:
+# 215 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	.string "I'll see you later, {PLAYER}!$"
 
 DolomiteCity_TrainerSchool_EventScript_Teacher_Text_0:
-# 307 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 312 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	.string "Fairy$"
 
 DolomiteCity_TrainerSchool_EventScript_Teacher_Text_1:
-# 307 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 312 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	.string "Ground$"
 
 DolomiteCity_TrainerSchool_EventScript_Teacher_Text_2:
-# 307 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 312 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	.string "Electric$"
 
 DolomiteCity_TrainerSchool_EventScript_Teacher_Text_3:
-# 316 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 321 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	.string "Rock$"
 
 DolomiteCity_TrainerSchool_EventScript_Teacher_Text_4:
-# 316 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 321 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	.string "Flying$"
 
 DolomiteCity_TrainerSchool_EventScript_Teacher_Text_5:
-# 316 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 321 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	.string "Steel$"
 
 DolomiteCity_TrainerSchool_EventScript_Teacher_Text_6:
-# 324 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 329 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	.string "Poison$"
 
 DolomiteCity_TrainerSchool_EventScript_Teacher_Text_7:
-# 324 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 329 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	.string "Ghost$"
+
+DolomiteCity_TrainerSchool_EventScript_UnderstandingStats_Text_0:
+# 396 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+	.string "Every Pokémon has six stats: HP,\n"
+	.string "Attack, Defense, Special Attack,\l"
+	.string "Special Defense, and Speed.\p"
+	.string "Speed decides who moves first in\n"
+	.string "battle.\p"
+	.string "Attack and Special Attack deal damage,\n"
+	.string "but only one matters depending on the\l"
+	.string "move!\p"
+	.string "Use the right stat or you're just\n"
+	.string "flailing.$"
+
+DolomiteCity_TrainerSchool_EventScript_HowToCatch_Text_0:
+# 407 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+	.string "You wanna catch a Pokémon?\n"
+	.string "First, weaken it!.\p"
+	.string "Red HP is your best bet.\n"
+	.string "Status moves like Sleep or Paralysis\l"
+	.string "help too.\p"
+	.string "Then throw a Poké Ball--Bonus points if\n"
+	.string "you strike a pose while you do it, hee\l"
+	.string "hee!\p"
+	.string "Go on, try it if you haven't already!$"
+
+DolomiteCity_TrainerSchool_EventScript_HeldItems_Text_0:
+# 418 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+	.string "Give a Pokémon an item and they'll use\n"
+	.string "it in battle by themselves.\p"
+	.string "Like, Leftovers heals them a bit each\n"
+	.string "turn! Oran Berries are great early on.\p"
+	.string "Some items only work once, others boost\n"
+	.string "stats--it's like giving them a secret\l"
+	.string "weapon!\p"
+	.string "Oh, but they can't use man-made items\n"
+	.string "like Potions or Revives.\p"
+	.string "Those are for you to use, not them.$"
+
+DolomiteCity_TrainerSchool_EventScript_Abilities_Text_0:
+# 430 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+	.string "Abilities are like a Pokémon's secret\n"
+	.string "superpower.\p"
+	.string "Some boost stats, some change the\n"
+	.string "weather, and some even stop moves from\l"
+	.string "working!\p"
+	.string "Like, if you have a Pokémon with\n"
+	.string "Levitate, they can't be hit by\l"
+	.string "Ground-type moves.\p"
+	.string "It's like having a built-in shield!$"
 
 DolomiteCity_TrainerSchool_Text_DeliverParcel_MegaEvoGuru1::
 # 71 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
@@ -521,27 +632,27 @@ DolomiteCity_TrainerSchool_Text_MegaEvoGuru::
 	.string "Mega Evolution, my door is always open.$"
 
 DolomiteCity_TrainerSchool_Geo_Text1::
-# 244 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 249 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	.string "Hi there!\n"
 	.string "Welcome to the Pokémon Trainer's\l"
 	.string "School.$"
 
 DolomiteCity_TrainerSchool_Geo_Text2::
-# 248 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 253 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	.string "I'm Geo, the Gym Leader here.\p"
 	.string "Right now, I'm teaching these students\n"
 	.string "about Pokémon battles and why type\l"
 	.string "matchups are super important.$"
 
 DolomiteCity_TrainerSchool_Geo_Text3::
-# 253 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 258 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	.string "But I bet you're not here for a lesson,\n"
 	.string "just like Challenger {RIVAL} over\l"
 	.string "there.\p"
 	.string "You want a Gym Challenge, don't you?$"
 
 DolomiteCity_TrainerSchool_Geo_Text_Accept::
-# 258 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 263 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	.string "You're excited to prove yourself, huh?\n"
 	.string "That's great!\p"
 	.string "But before you can battle me, you need\n"
@@ -552,12 +663,12 @@ DolomiteCity_TrainerSchool_Geo_Text_Accept::
 	.string "show me what you've got?$"
 
 DolomiteCity_TrainerSchool_Geo_Text_RivalIntro::
-# 265 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 270 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	.string "Challenger {RIVAL}, come on up.\n"
 	.string "Show me what you've learned.$"
 
 DolomiteCity_TrainerSchool_Geo_Text_AfterBattle::
-# 269 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 274 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	.string "Wow, that was impressive, Challenger\n"
 	.string "{PLAYER}.\n"
 	.string "You did really well in that battle.\p"
@@ -566,30 +677,30 @@ DolomiteCity_TrainerSchool_Geo_Text_AfterBattle::
 	.string "earn my badge.$"
 
 DolomiteCity_TrainerSchool_Rival_Text1_Caden::
-# 274 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 279 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	.string "Oh, you're in for it now, {PLAYER}.\p"
 	.string "I've been paying attention, and I've\n"
 	.string "got a few new tricks up my sleeve!$"
 
 DolomiteCity_TrainerSchool_Rival_Text1_Holly::
-# 279 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 284 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	.string "This is perfect, {PLAYER}!\p"
 	.string "A real battle in front of a Gym Leader?\n"
 	.string "Let's give it everything we've got!$"
 
 DolomiteCity_TrainerSchool_CadenDefeated::
-# 284 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 289 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	.string "What?! No way!\p"
 	.string "Ugh, alright, alright. You got me this\n"
 	.string "time.$"
 
 DolomiteCity_TrainerSchool_HollyDefeated::
-# 289 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 294 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	.string "Wow, {PLAYER}, you're a real natural!\p"
 	.string "I've got a lot to learn.$"
 
 DolomiteCity_TrainerSchool_Text_Teacher1::
-# 346 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 351 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	.string "I'm the teacher here at the Trainer's\n"
 	.string "School.\p"
 	.string "I'm going to ask you a few questions\n"
@@ -597,43 +708,43 @@ DolomiteCity_TrainerSchool_Text_Teacher1::
 	.string "Are you ready?$"
 
 DolomiteCity_TrainerSchool_Text_Teacher2::
-# 352 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 357 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	.string "No worries! I'll be here if you want to\n"
 	.string "try again.$"
 
 DolomiteCity_TrainerSchool_Text_Teacher_ThatsWrong::
-# 356 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 361 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	.string "That's not quite right. You should\n"
 	.string "study up on your type matchups and try\l"
 	.string "again.$"
 
 DolomiteCity_TrainerSchool_Text_Teacher3::
-# 360 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 365 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	.string "Great! Here's the first question:\p"
 	.string "What type is super effective against\n"
 	.string "Water-type Pokémon?$"
 
 DolomiteCity_TrainerSchool_Text_Teacher4::
-# 365 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 370 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	.string "That's correct!\p"
 	.string "Here's the next question:\p"
 	.string "What type is weak to Electric-type\n"
 	.string "moves?$"
 
 DolomiteCity_TrainerSchool_Text_Teacher5::
-# 371 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 376 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	.string "That's correct!\p"
 	.string "Here's the final question:\p"
 	.string "What type is immune to Poison-type\n"
 	.string "moves?$"
 
 DolomiteCity_TrainerSchool_Text_Teacher_AllCorrect::
-# 377 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 382 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	.string "Wow! You got all the questions right!\p"
 	.string "Here, take this held item as a reward\n"
 	.string "for your participation.$"
 
 DolomiteCity_TrainerSchool_Text_Teacher_FeelFreeToStudy::
-# 382 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 387 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	.string "Feel free to study up as much as you\n"
 	.string "like.$"

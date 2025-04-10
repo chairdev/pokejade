@@ -6209,7 +6209,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 2539
-            .species = SPECIES_DUNSPARCE,
+            .species = SPECIES_WIMPOD,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2539
             .heldItem = ITEM_NUGGET,
@@ -23805,7 +23805,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9545
-    [TRAINER_CADEN_ROUTE_301_TOTODILE] =
+    [TRAINER_CADEN_ROUTE_301_FROAKIE] =
     {
 #line 9546
         .trainerName = _("Caden"),
@@ -23825,7 +23825,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 9554
-            .species = SPECIES_CYNDAQUIL,
+            .species = SPECIES_FENNEKIN,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9556
             .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
@@ -23945,7 +23945,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9600
-    [TRAINER_CADEN_ROUTE_301_CHIKORITA] =
+    [TRAINER_CADEN_ROUTE_301_CHESPIN] =
     {
 #line 9601
         .trainerName = _("Caden"),
@@ -23965,7 +23965,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 9609
-            .species = SPECIES_TOTODILE,
+            .species = SPECIES_FROAKIE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9611
             .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
@@ -24085,7 +24085,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9655
-    [TRAINER_CADEN_ROUTE_301_CYNDAQUIL] =
+    [TRAINER_CADEN_ROUTE_301_FENNEKIN] =
     {
 #line 9656
         .trainerName = _("Caden"),
@@ -24105,7 +24105,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 9664
-            .species = SPECIES_CHIKORITA,
+            .species = SPECIES_FENNEKIN,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9666
             .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
@@ -24225,7 +24225,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9710
-    [TRAINER_HOLLY_ROUTE_301_TOTODILE] =
+    [TRAINER_HOLLY_ROUTE_301_FROAKIE] =
     {
 #line 9711
         .trainerName = _("Holly"),
@@ -24247,7 +24247,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 9719
-            .species = SPECIES_CYNDAQUIL,
+            .species = SPECIES_FENNEKIN,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9721
             .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
@@ -24371,7 +24371,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9765
-    [TRAINER_HOLLY_ROUTE_301_CHIKORITA] =
+    [TRAINER_HOLLY_ROUTE_301_CHESPIN] =
     {
 #line 9766
         .trainerName = _("Holly"),
@@ -24393,7 +24393,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 9774
-            .species = SPECIES_TOTODILE,
+            .species = SPECIES_FROAKIE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9776
             .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
@@ -24517,7 +24517,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9820
-    [TRAINER_HOLLY_ROUTE_301_CYNDAQUIL] =
+    [TRAINER_HOLLY_ROUTE_301_FENNEKIN] =
     {
 #line 9821
         .trainerName = _("Holly"),
@@ -24539,7 +24539,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 9829
-            .species = SPECIES_CHIKORITA,
+            .species = SPECIES_CHESPIN,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9831
             .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
@@ -27262,7 +27262,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 10886
-    [TRAINER_CADEN_DOLOMITE_CHIKORITA] =
+    [TRAINER_CADEN_DOLOMITE_CHESPIN] =
     {
 #line 10887
         .trainerName = _("Caden"),
@@ -27293,7 +27293,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 10899
-            .species = SPECIES_TOTODILE,
+            .species = SPECIES_FROAKIE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10902
             .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 0),
@@ -27307,7 +27307,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 10904
-    [TRAINER_CADEN_DOLOMITE_TOTODILE] =
+    [TRAINER_CADEN_DOLOMITE_FROAKIE] =
     {
 #line 10905
         .trainerName = _("Caden"),
@@ -27338,7 +27338,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 10917
-            .species = SPECIES_CYNDAQUIL,
+            .species = SPECIES_FENNEKIN,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10920
             .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 0),
@@ -27584,7 +27584,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 11012
-    [TRAINER_CADEN_DOLOMITE_CYNDAQUIL] =
+    [TRAINER_CADEN_DOLOMITE_FENNEKIN] =
     {
 #line 11013
         .trainerName = _("Caden"),
@@ -27615,7 +27615,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 11025
-            .species = SPECIES_CHIKORITA,
+            .species = SPECIES_CHESPIN,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11028
             .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 0),
@@ -27629,7 +27629,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 11030
-    [TRAINER_HOLLY_DOLOMITE_TOTODILE] =
+    [TRAINER_HOLLY_DOLOMITE_FROAKIE] =
     {
 #line 11031
         .trainerName = _("Holly"),
@@ -27662,7 +27662,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 11043
-            .species = SPECIES_CYNDAQUIL,
+            .species = SPECIES_FENNEKIN,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11046
             .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 0),
@@ -27810,7 +27810,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 11101
-            .species = SPECIES_PIKACHU,
+            .species = SPECIES_ROOKIDEE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11103
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -27821,7 +27821,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 11105
-            .species = SPECIES_WYNAUT,
+            .species = SPECIES_PIKACHU,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11107
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -27900,12 +27900,12 @@ F_TRAINER_FEMALE |
         {
             {
 #line 11135
-            .species = SPECIES_AZUMARILL,
+            .species = SPECIES_BUIZEL,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11137
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 11136
-            .lvl = 18,
+            .lvl = 15,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -28407,7 +28407,7 @@ F_TRAINER_FEMALE |
 #line 11328
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 11327
-            .lvl = 18,
+            .lvl = 16,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -28418,7 +28418,7 @@ F_TRAINER_FEMALE |
 #line 11332
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 11331
-            .lvl = 16,
+            .lvl = 14,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -28445,23 +28445,23 @@ F_TRAINER_FEMALE |
         {
             {
 #line 11343
-            .species = SPECIES_WURMPLE,
+            .species = SPECIES_VENIPEDE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11345
             .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
 #line 11344
-            .lvl = 8,
+            .lvl = 14,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
 #line 11347
-            .species = SPECIES_NINCADA,
+            .species = SPECIES_WIMPOD,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11349
             .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
 #line 11348
-            .lvl = 8,
+            .lvl = 15,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -28611,18 +28611,18 @@ F_TRAINER_FEMALE |
 #line 11409
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 11408
-            .lvl = 16,
+            .lvl = 13,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
 #line 11411
-            .species = SPECIES_DWEBBLE,
+            .species = SPECIES_VENIPEDE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11413
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 11412
-            .lvl = 15,
+            .lvl = 12,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -29101,7 +29101,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 11602
-            .species = SPECIES_SHELLOS,
+            .species = SPECIES_GULPIN,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11604
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -29112,7 +29112,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 11606
-            .species = SPECIES_LILLIPUP,
+            .species = SPECIES_LECHONK,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11608
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -35600,7 +35600,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 14191
-    [TRAINER_HOLLY_DOLOMITE_CHIKORITA] =
+    [TRAINER_HOLLY_DOLOMITE_CHESPIN] =
     {
 #line 14192
         .trainerName = _("Holly"),
@@ -35633,7 +35633,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 14204
-            .species = SPECIES_TOTODILE,
+            .species = SPECIES_FROAKIE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 14207
             .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 0),
@@ -35647,7 +35647,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 14209
-    [TRAINER_HOLLY_DOLOMITE_CYNDAQUIL] =
+    [TRAINER_HOLLY_DOLOMITE_FENNEKIN] =
     {
 #line 14210
         .trainerName = _("Holly"),
@@ -35680,7 +35680,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 14222
-            .species = SPECIES_CHIKORITA,
+            .species = SPECIES_CHESPIN,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 14225
             .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 0, 0),

@@ -111,17 +111,17 @@ BaycrestCity_Holly_1:
 
 BaycrestCity_Holly_3:
 # 60 "data/maps/BaycrestCity/scripts.pory"
-	trainerbattle_no_intro TRAINER_HOLLY_ROUTE_301_CHIKORITA, BaycrestCity_Text_HollyDefeated
+	trainerbattle_no_intro TRAINER_HOLLY_ROUTE_301_CHESPIN, BaycrestCity_Text_HollyDefeated
 	goto BaycrestCity_Holly_1
 
 BaycrestCity_Holly_4:
 # 63 "data/maps/BaycrestCity/scripts.pory"
-	trainerbattle_no_intro TRAINER_HOLLY_ROUTE_301_CYNDAQUIL, BaycrestCity_Text_HollyDefeated
+	trainerbattle_no_intro TRAINER_HOLLY_ROUTE_301_FENNEKIN, BaycrestCity_Text_HollyDefeated
 	goto BaycrestCity_Holly_1
 
 BaycrestCity_Holly_5:
 # 66 "data/maps/BaycrestCity/scripts.pory"
-	trainerbattle_no_intro TRAINER_HOLLY_ROUTE_301_CYNDAQUIL, BaycrestCity_Text_HollyDefeated
+	trainerbattle_no_intro TRAINER_HOLLY_ROUTE_301_FENNEKIN, BaycrestCity_Text_HollyDefeated
 	goto BaycrestCity_Holly_1
 
 
@@ -171,17 +171,17 @@ BaycrestCity_Caden_1:
 
 BaycrestCity_Caden_3:
 # 96 "data/maps/BaycrestCity/scripts.pory"
-	trainerbattle_no_intro TRAINER_CADEN_ROUTE_301_CHIKORITA, BaycrestCity_Text_CadenDefeated
+	trainerbattle_no_intro TRAINER_CADEN_ROUTE_301_CHESPIN, BaycrestCity_Text_CadenDefeated
 	goto BaycrestCity_Caden_1
 
 BaycrestCity_Caden_4:
 # 99 "data/maps/BaycrestCity/scripts.pory"
-	trainerbattle_no_intro TRAINER_CADEN_ROUTE_301_CYNDAQUIL, BaycrestCity_Text_CadenDefeated
+	trainerbattle_no_intro TRAINER_CADEN_ROUTE_301_FENNEKIN, BaycrestCity_Text_CadenDefeated
 	goto BaycrestCity_Caden_1
 
 BaycrestCity_Caden_5:
 # 102 "data/maps/BaycrestCity/scripts.pory"
-	trainerbattle_no_intro TRAINER_CADEN_ROUTE_301_CYNDAQUIL, BaycrestCity_Text_CadenDefeated
+	trainerbattle_no_intro TRAINER_CADEN_ROUTE_301_FENNEKIN, BaycrestCity_Text_CadenDefeated
 	goto BaycrestCity_Caden_1
 
 

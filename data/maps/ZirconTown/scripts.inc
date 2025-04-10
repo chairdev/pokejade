@@ -37,137 +37,139 @@ ZirconTown_Trigger_AldenSpeech_1:
 # 36 "data/maps/ZirconTown/scripts.pory"
 	applymovement 1, Common_Movement_WalkInPlaceFasterDown
 # 37 "data/maps/ZirconTown/scripts.pory"
-	speakername ZirconTown_Trigger_AldenSpeech_Text_1
+	waitmovement 0
 # 38 "data/maps/ZirconTown/scripts.pory"
+	speakername ZirconTown_Trigger_AldenSpeech_Text_1
+# 39 "data/maps/ZirconTown/scripts.pory"
 	msgbox ZirconTown_Text_AldenSpeech_Alden_1
-# 40 "data/maps/ZirconTown/scripts.pory"
+# 41 "data/maps/ZirconTown/scripts.pory"
 	dynmultichoice 20, 8, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, ZirconTown_Trigger_AldenSpeech_Text_2, ZirconTown_Trigger_AldenSpeech_Text_3
-# 43 "data/maps/ZirconTown/scripts.pory"
+# 44 "data/maps/ZirconTown/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq ZirconTown_Trigger_AldenSpeech_6
-# 48 "data/maps/ZirconTown/scripts.pory"
-	speakername ZirconTown_Trigger_AldenSpeech_Text_1
 # 49 "data/maps/ZirconTown/scripts.pory"
+	speakername ZirconTown_Trigger_AldenSpeech_Text_1
+# 50 "data/maps/ZirconTown/scripts.pory"
 	msgbox ZirconTown_Text_AldenSpeech_Alden_2B
 ZirconTown_Trigger_AldenSpeech_5:
-# 52 "data/maps/ZirconTown/scripts.pory"
-	speakername ZirconTown_Trigger_AldenSpeech_Text_4
 # 53 "data/maps/ZirconTown/scripts.pory"
-	msgbox ZirconTown_Text_AldenSpeech_Alden_3
+	speakername ZirconTown_Trigger_AldenSpeech_Text_4
 # 54 "data/maps/ZirconTown/scripts.pory"
+	msgbox ZirconTown_Text_AldenSpeech_Alden_3
+# 55 "data/maps/ZirconTown/scripts.pory"
 	closemessage
-# 56 "data/maps/ZirconTown/scripts.pory"
-	playse SE_PIN
 # 57 "data/maps/ZirconTown/scripts.pory"
-	applymovement 3, Common_Movement_ExclamationMark
+	playse SE_PIN
 # 58 "data/maps/ZirconTown/scripts.pory"
-	waitse
+	applymovement 3, Common_Movement_ExclamationMark
 # 59 "data/maps/ZirconTown/scripts.pory"
-	waitmovement 0
+	waitse
 # 60 "data/maps/ZirconTown/scripts.pory"
-	delay 16
+	waitmovement 0
 # 61 "data/maps/ZirconTown/scripts.pory"
-	applymovement 3, Common_Movement_WalkInPlaceFasterUp
+	delay 16
 # 62 "data/maps/ZirconTown/scripts.pory"
-	checkplayergender
+	applymovement 3, Common_Movement_WalkInPlaceFasterUp
 # 63 "data/maps/ZirconTown/scripts.pory"
-	checkplayergender
+	waitmovement 0
 # 64 "data/maps/ZirconTown/scripts.pory"
-	speakername ZirconTown_Trigger_AldenSpeech_Text_0
+	checkplayergender
 # 65 "data/maps/ZirconTown/scripts.pory"
+	speakername ZirconTown_Trigger_AldenSpeech_Text_0
+# 66 "data/maps/ZirconTown/scripts.pory"
 	compare VAR_RESULT, FEMALE
 	goto_if_eq ZirconTown_Trigger_AldenSpeech_10
-# 71 "data/maps/ZirconTown/scripts.pory"
+# 72 "data/maps/ZirconTown/scripts.pory"
 	msgbox ZirconTown_Text_AldenSpeech_Holly_2
 ZirconTown_Trigger_AldenSpeech_9:
-# 74 "data/maps/ZirconTown/scripts.pory"
-	speakername ZirconTown_Trigger_AldenSpeech_Text_4
 # 75 "data/maps/ZirconTown/scripts.pory"
+	speakername ZirconTown_Trigger_AldenSpeech_Text_4
+# 76 "data/maps/ZirconTown/scripts.pory"
 	msgbox ZirconTown_Text_AldenSpeech_Alden_4
-# 77 "data/maps/ZirconTown/scripts.pory"
+# 78 "data/maps/ZirconTown/scripts.pory"
 	dynmultichoice 20, 4, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, ZirconTown_Trigger_AldenSpeech_Text_5, ZirconTown_Trigger_AldenSpeech_Text_6, ZirconTown_Trigger_AldenSpeech_Text_7
-# 80 "data/maps/ZirconTown/scripts.pory"
-	switch VAR_RESULT
 # 81 "data/maps/ZirconTown/scripts.pory"
+	switch VAR_RESULT
+# 82 "data/maps/ZirconTown/scripts.pory"
 	case 0, ZirconTown_Trigger_AldenSpeech_15
-# 85 "data/maps/ZirconTown/scripts.pory"
+# 86 "data/maps/ZirconTown/scripts.pory"
 	case 1, ZirconTown_Trigger_AldenSpeech_16
-# 89 "data/maps/ZirconTown/scripts.pory"
+# 90 "data/maps/ZirconTown/scripts.pory"
 	case 2, ZirconTown_Trigger_AldenSpeech_17
 ZirconTown_Trigger_AldenSpeech_13:
-# 94 "data/maps/ZirconTown/scripts.pory"
+# 95 "data/maps/ZirconTown/scripts.pory"
 	msgbox ZirconTown_Text_AldenSpeech_Alden_6
-# 96 "data/maps/ZirconTown/scripts.pory"
-	checkplayergender
 # 97 "data/maps/ZirconTown/scripts.pory"
-	speakername ZirconTown_Trigger_AldenSpeech_Text_0
+	checkplayergender
 # 98 "data/maps/ZirconTown/scripts.pory"
+	speakername ZirconTown_Trigger_AldenSpeech_Text_0
+# 99 "data/maps/ZirconTown/scripts.pory"
 	compare VAR_RESULT, FEMALE
 	goto_if_eq ZirconTown_Trigger_AldenSpeech_19
-# 104 "data/maps/ZirconTown/scripts.pory"
+# 105 "data/maps/ZirconTown/scripts.pory"
 	msgbox ZirconTown_Text_AldenSpeech_Holly_3
 ZirconTown_Trigger_AldenSpeech_18:
-# 107 "data/maps/ZirconTown/scripts.pory"
-	speakername ZirconTown_Trigger_AldenSpeech_Text_4
 # 108 "data/maps/ZirconTown/scripts.pory"
+	speakername ZirconTown_Trigger_AldenSpeech_Text_4
+# 109 "data/maps/ZirconTown/scripts.pory"
 	msgbox ZirconTown_Text_AldenSpeech_Alden_7
-# 110 "data/maps/ZirconTown/scripts.pory"
+# 111 "data/maps/ZirconTown/scripts.pory"
 	dynmultichoice 20, 8, TRUE, 2, 0, DYN_MULTICHOICE_CB_NONE, ZirconTown_Trigger_AldenSpeech_Text_8, ZirconTown_Trigger_AldenSpeech_Text_9
-# 113 "data/maps/ZirconTown/scripts.pory"
+# 114 "data/maps/ZirconTown/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq ZirconTown_Trigger_AldenSpeech_23
-# 118 "data/maps/ZirconTown/scripts.pory"
-	speakername ZirconTown_Trigger_AldenSpeech_Text_4
 # 119 "data/maps/ZirconTown/scripts.pory"
+	speakername ZirconTown_Trigger_AldenSpeech_Text_4
+# 120 "data/maps/ZirconTown/scripts.pory"
 	msgbox ZirconTown_Text_AldenSpeech_Alden_8B
 ZirconTown_Trigger_AldenSpeech_22:
-# 122 "data/maps/ZirconTown/scripts.pory"
-	checkplayergender
 # 123 "data/maps/ZirconTown/scripts.pory"
-	speakername ZirconTown_Trigger_AldenSpeech_Text_0
+	checkplayergender
 # 124 "data/maps/ZirconTown/scripts.pory"
+	speakername ZirconTown_Trigger_AldenSpeech_Text_0
+# 125 "data/maps/ZirconTown/scripts.pory"
 	compare VAR_RESULT, FEMALE
 	goto_if_eq ZirconTown_Trigger_AldenSpeech_27
-# 130 "data/maps/ZirconTown/scripts.pory"
+# 131 "data/maps/ZirconTown/scripts.pory"
 	msgbox ZirconTown_Text_AldenSpeech_Holly_4
 ZirconTown_Trigger_AldenSpeech_26:
-# 133 "data/maps/ZirconTown/scripts.pory"
-	speakername ZirconTown_Trigger_AldenSpeech_Text_4
 # 134 "data/maps/ZirconTown/scripts.pory"
+	speakername ZirconTown_Trigger_AldenSpeech_Text_4
+# 135 "data/maps/ZirconTown/scripts.pory"
 	msgbox ZirconTown_Text_AldenSpeech_Alden_9
-# 136 "data/maps/ZirconTown/scripts.pory"
-	applymovement 1, Common_Movement_WalkInPlaceFasterUp
 # 137 "data/maps/ZirconTown/scripts.pory"
-	msgbox ZirconTown_Text_AldenSpeech_Alden_10
+	applymovement 1, Common_Movement_WalkInPlaceFasterUp
 # 138 "data/maps/ZirconTown/scripts.pory"
+	msgbox ZirconTown_Text_AldenSpeech_Alden_10
+# 139 "data/maps/ZirconTown/scripts.pory"
 	closemessage
-# 140 "data/maps/ZirconTown/scripts.pory"
-	applymovement 1, ZirconTown_Movement_AldenLeave
 # 141 "data/maps/ZirconTown/scripts.pory"
+	applymovement 1, ZirconTown_Movement_AldenLeave
+# 142 "data/maps/ZirconTown/scripts.pory"
 	waitmovement 0
-# 143 "data/maps/ZirconTown/scripts.pory"
-	checkplayergender
 # 144 "data/maps/ZirconTown/scripts.pory"
-	speakername ZirconTown_Trigger_AldenSpeech_Text_0
+	checkplayergender
 # 145 "data/maps/ZirconTown/scripts.pory"
+	speakername ZirconTown_Trigger_AldenSpeech_Text_0
+# 146 "data/maps/ZirconTown/scripts.pory"
 	compare VAR_RESULT, FEMALE
 	goto_if_eq ZirconTown_Trigger_AldenSpeech_31
-# 151 "data/maps/ZirconTown/scripts.pory"
+# 152 "data/maps/ZirconTown/scripts.pory"
 	msgbox ZirconTown_Text_AldenSpeech_Holly_5
 ZirconTown_Trigger_AldenSpeech_30:
-# 154 "data/maps/ZirconTown/scripts.pory"
-	fadescreen FADE_TO_BLACK
 # 155 "data/maps/ZirconTown/scripts.pory"
-	removeobject 1
+	fadescreen FADE_TO_BLACK
 # 156 "data/maps/ZirconTown/scripts.pory"
-	removeobject 3
+	removeobject 1
 # 157 "data/maps/ZirconTown/scripts.pory"
-	setflag FLAG_HIDE_ZIRCON_TOWN_SPEECH_NPCS
+	removeobject 3
 # 158 "data/maps/ZirconTown/scripts.pory"
-	setvar VAR_ZIRCON_TOWN_STATE, 1
+	setflag FLAG_HIDE_ZIRCON_TOWN_SPEECH_NPCS
 # 159 "data/maps/ZirconTown/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	setvar VAR_ZIRCON_TOWN_STATE, 1
 # 160 "data/maps/ZirconTown/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 161 "data/maps/ZirconTown/scripts.pory"
 	releaseall
 	return
 
@@ -177,72 +179,72 @@ ZirconTown_Trigger_AldenSpeech_2:
 	goto ZirconTown_Trigger_AldenSpeech_1
 
 ZirconTown_Trigger_AldenSpeech_6:
-# 44 "data/maps/ZirconTown/scripts.pory"
-	speakername ZirconTown_Trigger_AldenSpeech_Text_1
 # 45 "data/maps/ZirconTown/scripts.pory"
+	speakername ZirconTown_Trigger_AldenSpeech_Text_1
+# 46 "data/maps/ZirconTown/scripts.pory"
 	msgbox ZirconTown_Text_AldenSpeech_Alden_2A
 	goto ZirconTown_Trigger_AldenSpeech_5
 
 ZirconTown_Trigger_AldenSpeech_10:
-# 67 "data/maps/ZirconTown/scripts.pory"
+# 68 "data/maps/ZirconTown/scripts.pory"
 	msgbox ZirconTown_Text_AldenSpeech_Caden_2
 	goto ZirconTown_Trigger_AldenSpeech_9
 
 ZirconTown_Trigger_AldenSpeech_15:
-# 82 "data/maps/ZirconTown/scripts.pory"
-	speakername ZirconTown_Trigger_AldenSpeech_Text_4
 # 83 "data/maps/ZirconTown/scripts.pory"
+	speakername ZirconTown_Trigger_AldenSpeech_Text_4
+# 84 "data/maps/ZirconTown/scripts.pory"
 	msgbox ZirconTown_Text_AldenSpeech_Alden_5A
 	goto ZirconTown_Trigger_AldenSpeech_13
 
 ZirconTown_Trigger_AldenSpeech_16:
-# 86 "data/maps/ZirconTown/scripts.pory"
-	speakername ZirconTown_Trigger_AldenSpeech_Text_4
 # 87 "data/maps/ZirconTown/scripts.pory"
+	speakername ZirconTown_Trigger_AldenSpeech_Text_4
+# 88 "data/maps/ZirconTown/scripts.pory"
 	msgbox ZirconTown_Text_AldenSpeech_Alden_5B
 	goto ZirconTown_Trigger_AldenSpeech_13
 
 ZirconTown_Trigger_AldenSpeech_17:
-# 90 "data/maps/ZirconTown/scripts.pory"
-	speakername ZirconTown_Trigger_AldenSpeech_Text_4
 # 91 "data/maps/ZirconTown/scripts.pory"
+	speakername ZirconTown_Trigger_AldenSpeech_Text_4
+# 92 "data/maps/ZirconTown/scripts.pory"
 	msgbox ZirconTown_Text_AldenSpeech_Alden_5C
 	goto ZirconTown_Trigger_AldenSpeech_13
 
 ZirconTown_Trigger_AldenSpeech_19:
-# 100 "data/maps/ZirconTown/scripts.pory"
+# 101 "data/maps/ZirconTown/scripts.pory"
 	msgbox ZirconTown_Text_AldenSpeech_Caden_3
 	goto ZirconTown_Trigger_AldenSpeech_18
 
 ZirconTown_Trigger_AldenSpeech_23:
-# 114 "data/maps/ZirconTown/scripts.pory"
-	speakername ZirconTown_Trigger_AldenSpeech_Text_4
 # 115 "data/maps/ZirconTown/scripts.pory"
+	speakername ZirconTown_Trigger_AldenSpeech_Text_4
+# 116 "data/maps/ZirconTown/scripts.pory"
 	msgbox ZirconTown_Text_AldenSpeech_Alden_8A
 	goto ZirconTown_Trigger_AldenSpeech_22
 
 ZirconTown_Trigger_AldenSpeech_27:
-# 126 "data/maps/ZirconTown/scripts.pory"
+# 127 "data/maps/ZirconTown/scripts.pory"
 	msgbox ZirconTown_Text_AldenSpeech_Caden_4
 	goto ZirconTown_Trigger_AldenSpeech_26
 
 ZirconTown_Trigger_AldenSpeech_31:
-# 147 "data/maps/ZirconTown/scripts.pory"
+# 148 "data/maps/ZirconTown/scripts.pory"
 	msgbox ZirconTown_Text_AldenSpeech_Caden_5
 	goto ZirconTown_Trigger_AldenSpeech_30
 
 
-# 284 "data/maps/ZirconTown/scripts.pory"
-ZirconTown_Movement_AldenLeave:
 # 285 "data/maps/ZirconTown/scripts.pory"
+ZirconTown_Movement_AldenLeave:
+# 286 "data/maps/ZirconTown/scripts.pory"
 	walk_left
-# 286 "data/maps/ZirconTown/scripts.pory"
+# 287 "data/maps/ZirconTown/scripts.pory"
 	walk_up
-# 286 "data/maps/ZirconTown/scripts.pory"
+# 287 "data/maps/ZirconTown/scripts.pory"
 	walk_up
-# 286 "data/maps/ZirconTown/scripts.pory"
+# 287 "data/maps/ZirconTown/scripts.pory"
 	walk_up
-# 286 "data/maps/ZirconTown/scripts.pory"
+# 287 "data/maps/ZirconTown/scripts.pory"
 	walk_up
 	step_end
 
@@ -251,50 +253,50 @@ ZirconTown_Trigger_AldenSpeech_Text_0:
 	.string "{RIVAL}$"
 
 ZirconTown_Trigger_AldenSpeech_Text_1:
-# 37 "data/maps/ZirconTown/scripts.pory"
+# 38 "data/maps/ZirconTown/scripts.pory"
 	.string "???$"
 
 ZirconTown_Trigger_AldenSpeech_Text_2:
-# 41 "data/maps/ZirconTown/scripts.pory"
+# 42 "data/maps/ZirconTown/scripts.pory"
 	.string "Yeah, I am.$"
 
 ZirconTown_Trigger_AldenSpeech_Text_3:
-# 41 "data/maps/ZirconTown/scripts.pory"
+# 42 "data/maps/ZirconTown/scripts.pory"
 	.string "Who's asking?$"
 
 ZirconTown_Trigger_AldenSpeech_Text_4:
-# 52 "data/maps/ZirconTown/scripts.pory"
+# 53 "data/maps/ZirconTown/scripts.pory"
 	.string "Alden$"
 
 ZirconTown_Trigger_AldenSpeech_Text_5:
-# 78 "data/maps/ZirconTown/scripts.pory"
+# 79 "data/maps/ZirconTown/scripts.pory"
 	.string "Yeah, history is fascinating!$"
 
 ZirconTown_Trigger_AldenSpeech_Text_6:
-# 78 "data/maps/ZirconTown/scripts.pory"
+# 79 "data/maps/ZirconTown/scripts.pory"
 	.string "A little.$"
 
 ZirconTown_Trigger_AldenSpeech_Text_7:
-# 78 "data/maps/ZirconTown/scripts.pory"
+# 79 "data/maps/ZirconTown/scripts.pory"
 	.string "Not really.$"
 
 ZirconTown_Trigger_AldenSpeech_Text_8:
-# 111 "data/maps/ZirconTown/scripts.pory"
+# 112 "data/maps/ZirconTown/scripts.pory"
 	.string "That would be incredible!$"
 
 ZirconTown_Trigger_AldenSpeech_Text_9:
-# 111 "data/maps/ZirconTown/scripts.pory"
+# 112 "data/maps/ZirconTown/scripts.pory"
 	.string "You can't just control life.$"
 
 ZirconTown_Text_AldenSpeech_Caden_1::
-# 163 "data/maps/ZirconTown/scripts.pory"
+# 164 "data/maps/ZirconTown/scripts.pory"
 	.string "Oh, there you are!\n"
 	.string "Took you long enough!\p"
 	.string "You just missed the start of this guy's\n"
 	.string "speech.$"
 
 ZirconTown_Text_AldenSpeech_Holly_1::
-# 168 "data/maps/ZirconTown/scripts.pory"
+# 169 "data/maps/ZirconTown/scripts.pory"
 	.string "Hey, {PLAYER}!\n"
 	.string "You made it!\p"
 	.string "I was just listening to this guy talk\n"
@@ -302,23 +304,23 @@ ZirconTown_Text_AldenSpeech_Holly_1::
 	.string "really interesting!.$"
 
 ZirconTown_Text_AldenSpeech_Alden_1::
-# 173 "data/maps/ZirconTown/scripts.pory"
+# 174 "data/maps/ZirconTown/scripts.pory"
 	.string "Ah, another young traveler. Welcome.\n"
 	.string "I assume you're a Trainer as well?$"
 
 ZirconTown_Text_AldenSpeech_Alden_2A::
-# 178 "data/maps/ZirconTown/scripts.pory"
+# 179 "data/maps/ZirconTown/scripts.pory"
 	.string "Excellent. It is always good to see the\n"
 	.string "next generation carrying on Avaro's\l"
 	.string "traditions.$"
 
 ZirconTown_Text_AldenSpeech_Alden_2B::
-# 183 "data/maps/ZirconTown/scripts.pory"
+# 184 "data/maps/ZirconTown/scripts.pory"
 	.string "A fair question. Forgive my\n"
 	.string "manners--allow me to introduce myself.$"
 
 ZirconTown_Text_AldenSpeech_Alden_3::
-# 188 "data/maps/ZirconTown/scripts.pory"
+# 189 "data/maps/ZirconTown/scripts.pory"
 	.string "I am Alden, the CEO of the Alden\n"
 	.string "Corporation and a researcher of\l"
 	.string "history and culture. You two must be\l"
@@ -329,7 +331,7 @@ ZirconTown_Text_AldenSpeech_Alden_3::
 	.string "day be among them.$"
 
 ZirconTown_Text_AldenSpeech_Caden_2::
-# 195 "data/maps/ZirconTown/scripts.pory"
+# 196 "data/maps/ZirconTown/scripts.pory"
 	.string "Whoa, hold up.\n"
 	.string "You already heard about {PLAYER} and\l"
 	.string "I getting a Gym Badge?\p"
@@ -337,12 +339,12 @@ ZirconTown_Text_AldenSpeech_Caden_2::
 	.string "done here!$"
 
 ZirconTown_Text_AldenSpeech_Holly_2::
-# 200 "data/maps/ZirconTown/scripts.pory"
+# 201 "data/maps/ZirconTown/scripts.pory"
 	.string "Wait, really? News travels fast, I\n"
 	.string "guess!$"
 
 ZirconTown_Text_AldenSpeech_Alden_4::
-# 204 "data/maps/ZirconTown/scripts.pory"
+# 205 "data/maps/ZirconTown/scripts.pory"
 	.string "A Trainer's accomplishments tend to\n"
 	.string "echo.\n"
 	.string "It is not just strength that defines a\l"
@@ -352,19 +354,19 @@ ZirconTown_Text_AldenSpeech_Alden_4::
 	.string "interest in Avaro's past?$"
 
 ZirconTown_Text_AldenSpeech_Alden_5A::
-# 209 "data/maps/ZirconTown/scripts.pory"
+# 210 "data/maps/ZirconTown/scripts.pory"
 	.string "A fellow scholar, then! Perhaps you will\n"
 	.string "appreciate a lesson in Avaro's\l"
 	.string "foundations.$"
 
 ZirconTown_Text_AldenSpeech_Alden_5B::
-# 213 "data/maps/ZirconTown/scripts.pory"
+# 214 "data/maps/ZirconTown/scripts.pory"
 	.string "Curiosity is a valuable trait. The past\n"
 	.string "holds more answers than one might\l"
 	.string "think.$"
 
 ZirconTown_Text_AldenSpeech_Alden_5C::
-# 217 "data/maps/ZirconTown/scripts.pory"
+# 218 "data/maps/ZirconTown/scripts.pory"
 	.string "A pity. The past is a treasure trove of\n"
 	.string "knowledge, waiting to be discovered.\p"
 	.string "But I digress. I must return to my\n"
@@ -372,7 +374,7 @@ ZirconTown_Text_AldenSpeech_Alden_5C::
 	.string "your time in Zircon Town.$"
 
 ZirconTown_Text_AldenSpeech_Alden_6::
-# 222 "data/maps/ZirconTown/scripts.pory"
+# 223 "data/maps/ZirconTown/scripts.pory"
 	.string "Long before the Pokémon League, Avaro\n"
 	.string "was home to an ancient civilization.\p"
 	.string "Unlike modern society, they sought\n"
@@ -390,60 +392,60 @@ ZirconTown_Text_AldenSpeech_Alden_6::
 	.string "$"
 
 ZirconTown_Text_AldenSpeech_Caden_3::
-# 230 "data/maps/ZirconTown/scripts.pory"
+# 231 "data/maps/ZirconTown/scripts.pory"
 	.string "Man, that's wild.\n"
 	.string "Can you imagine if someone actually\l"
 	.string "pulled off something like that?\p"
 	.string "$"
 
 ZirconTown_Text_AldenSpeech_Holly_3::
-# 234 "data/maps/ZirconTown/scripts.pory"
+# 235 "data/maps/ZirconTown/scripts.pory"
 	.string "I don't know... messing with life sounds\n"
 	.string "dangerous.\p"
 	.string "Maybe some things aren't meant to be\n"
 	.string "controlled.$"
 
 ZirconTown_Text_AldenSpeech_Alden_7::
-# 239 "data/maps/ZirconTown/scripts.pory"
+# 240 "data/maps/ZirconTown/scripts.pory"
 	.string "Perhaps. But if you could reshape the\n"
 	.string "world--if you could erase suffering,\l"
 	.string "prevent loss--would you not consider\l"
 	.string "it?$"
 
 ZirconTown_Text_AldenSpeech_Alden_8A::
-# 243 "data/maps/ZirconTown/scripts.pory"
+# 244 "data/maps/ZirconTown/scripts.pory"
 	.string "Indeed... a world where pain and loss are\n"
 	.string "mere memories. A world perfected.$"
 
 ZirconTown_Text_AldenSpeech_Alden_8B::
-# 247 "data/maps/ZirconTown/scripts.pory"
+# 248 "data/maps/ZirconTown/scripts.pory"
 	.string "An understandable perspective. But\n"
 	.string "many things we now accept--Pokémon\l"
 	.string "evolution, medicine, even Poké\l"
 	.string "Balls--were once considered unnatural.$"
 
 ZirconTown_Text_AldenSpeech_Caden_4::
-# 251 "data/maps/ZirconTown/scripts.pory"
+# 252 "data/maps/ZirconTown/scripts.pory"
 	.string "I guess you've got a point.\n"
 	.string "But still, it's a little scary to think\l"
 	.string "about.$"
 
 ZirconTown_Text_AldenSpeech_Holly_4::
-# 255 "data/maps/ZirconTown/scripts.pory"
+# 256 "data/maps/ZirconTown/scripts.pory"
 	.string "I think I'd rather live in a world where\n"
 	.string "things are a little messy.\p"
 	.string "It's what makes every day different,\n"
 	.string "right?$"
 
 ZirconTown_Text_AldenSpeech_Alden_9::
-# 260 "data/maps/ZirconTown/scripts.pory"
+# 261 "data/maps/ZirconTown/scripts.pory"
 	.string "Ah, but I digress. I must not bore young\n"
 	.string "Trainers with the weight of history.\p"
 	.string "Perhaps, one day, you will seek answers\n"
 	.string "on your own.$"
 
 ZirconTown_Text_AldenSpeech_Alden_10::
-# 265 "data/maps/ZirconTown/scripts.pory"
+# 266 "data/maps/ZirconTown/scripts.pory"
 	.string "Now, I must take my leave. There is much\n"
 	.string "more of Avaro to explore.\p"
 	.string "Safe travels, young Trainers.\n"
@@ -451,7 +453,7 @@ ZirconTown_Text_AldenSpeech_Alden_10::
 	.string "shaping the future.$"
 
 ZirconTown_Text_AldenSpeech_Caden_5::
-# 270 "data/maps/ZirconTown/scripts.pory"
+# 271 "data/maps/ZirconTown/scripts.pory"
 	.string "Okay, tell me that guy wasn't kinda\n"
 	.string "weird.\p"
 	.string "Eh, whatever. We've got real stuff to\n"
@@ -463,7 +465,7 @@ ZirconTown_Text_AldenSpeech_Caden_5::
 	.string "See you later, {PLAYER}!$"
 
 ZirconTown_Text_AldenSpeech_Holly_5::
-# 277 "data/maps/ZirconTown/scripts.pory"
+# 278 "data/maps/ZirconTown/scripts.pory"
 	.string "That was... a lot to take in.\n"
 	.string "Something about the way he talked gave\l"
 	.string "me a bad feeling\p"

@@ -171,13 +171,13 @@ script Route301_MapScript_FirstRivalBattle {
 
         switch(var(VAR_STARTER_MON)) {
         case 0:
-            trainerbattle_no_intro(TRAINER_CADEN_ROUTE_301_CHIKORITA, Route301_Text_FirstRivalBattle_CadenDefeated)
+            trainerbattle_no_intro(TRAINER_CADEN_ROUTE_301_CHESPIN, Route301_Text_FirstRivalBattle_CadenDefeated)
             break
         case 1:
-            trainerbattle_no_intro(TRAINER_CADEN_ROUTE_301_CYNDAQUIL, Route301_Text_FirstRivalBattle_CadenDefeated)
+            trainerbattle_no_intro(TRAINER_CADEN_ROUTE_301_FENNEKIN, Route301_Text_FirstRivalBattle_CadenDefeated)
             break   
         case 2:
-            trainerbattle_no_intro(TRAINER_CADEN_ROUTE_301_TOTODILE, Route301_Text_FirstRivalBattle_CadenDefeated)
+            trainerbattle_no_intro(TRAINER_CADEN_ROUTE_301_FROAKIE, Route301_Text_FirstRivalBattle_CadenDefeated)
             break
         }
 
@@ -204,13 +204,13 @@ script Route301_MapScript_FirstRivalBattle {
 
         switch(var(VAR_STARTER_MON)) {
         case 0:
-            trainerbattle_no_intro(TRAINER_HOLLY_ROUTE_301_CHIKORITA, Route301_Text_FirstRivalBattle_HollyDefeated)
+            trainerbattle_no_intro(TRAINER_HOLLY_ROUTE_301_CHESPIN, Route301_Text_FirstRivalBattle_HollyDefeated)
             break
         case 1:
-            trainerbattle_no_intro(TRAINER_HOLLY_ROUTE_301_CYNDAQUIL, Route301_Text_FirstRivalBattle_HollyDefeated)
+            trainerbattle_no_intro(TRAINER_HOLLY_ROUTE_301_FENNEKIN, Route301_Text_FirstRivalBattle_HollyDefeated)
             break
         case 2:
-            trainerbattle_no_intro(TRAINER_HOLLY_ROUTE_301_TOTODILE, Route301_Text_FirstRivalBattle_HollyDefeated)
+            trainerbattle_no_intro(TRAINER_HOLLY_ROUTE_301_FROAKIE, Route301_Text_FirstRivalBattle_HollyDefeated)
             break
         }
 
