@@ -11996,63 +11996,63 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "min_level": 14,
-                "max_level": 17,
+                "min_level": 12,
+                "max_level": 15,
                 "species": "SPECIES_VIVILLON_ELEGANT"
               },
               {
-                "min_level": 14,
-                "max_level": 17,
+                "min_level": 12,
+                "max_level": 15,
                 "species": "SPECIES_VENIPEDE"
               },
               {
-                "min_level": 14,
-                "max_level": 17,
+                "min_level": 12,
+                "max_level": 15,
                 "species": "SPECIES_VENIPEDE"
               },
               {
-                "min_level": 14,
-                "max_level": 17,
+                "min_level": 12,
+                "max_level": 15,
                 "species": "SPECIES_HOOTHOOT"
               },
               {
-                "min_level": 14,
-                "max_level": 17,
+                "min_level": 12,
+                "max_level": 15,
                 "species": "SPECIES_HOOTHOOT"
               },
               {
-                "min_level": 14,
-                "max_level": 17,
+                "min_level": 12,
+                "max_level": 15,
                 "species": "SPECIES_TOEDSCOOL"
               },
               {
-                "min_level": 14,
-                "max_level": 17,
+                "min_level": 12,
+                "max_level": 15,
                 "species": "SPECIES_TOEDSCOOL"
               },
               {
-                "min_level": 14,
-                "max_level": 17,
+                "min_level": 12,
+                "max_level": 15,
                 "species": "SPECIES_VIVILLON_ELEGANT"
               },
               {
-                "min_level": 14,
-                "max_level": 17,
+                "min_level": 12,
+                "max_level": 15,
                 "species": "SPECIES_VIVILLON_ELEGANT"
               },
               {
-                "min_level": 14,
-                "max_level": 17,
+                "min_level": 12,
+                "max_level": 15,
                 "species": "SPECIES_WIMPOD"
               },
               {
-                "min_level": 14,
-                "max_level": 17,
+                "min_level": 12,
+                "max_level": 15,
                 "species": "SPECIES_WIMPOD"
               },
               {
-                "min_level": 14,
-                "max_level": 17,
+                "min_level": 12,
+                "max_level": 15,
                 "species": "SPECIES_WIMPOD"
               }
             ]
@@ -13225,17 +13225,17 @@
               {
                 "min_level": 9,
                 "max_level": 11,
-                "species": "SPECIES_WYNAUT"
+                "species": "SPECIES_PHANPY"
               },
               {
                 "min_level": 9,
                 "max_level": 11,
-                "species": "SPECIES_WYNAUT"
+                "species": "SPECIES_PHANPY"
               },
               {
                 "min_level": 9,
                 "max_level": 11,
-                "species": "SPECIES_WYNAUT"
+                "species": "SPECIES_PHANPY"
               }
             ]
           }
@@ -13247,63 +13247,63 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 18,
-                "max_level": 21,
-                "species": "SPECIES_PIDGEOTTO"
+                "min_level": 14,
+                "max_level": 17,
+                "species": "SPECIES_PIDGEY"
               },
               {
-                "min_level": 16,
-                "max_level": 19,
+                "min_level": 14,
+                "max_level": 17,
                 "species": "SPECIES_BUNNELBY"
               },
               {
-                "min_level": 18,
-                "max_level": 21,
-                "species": "SPECIES_PIDGEOTTO"
+                "min_level": 14,
+                "max_level": 17,
+                "species": "SPECIES_PIDGEY"
               },
               {
-                "min_level": 16,
-                "max_level": 19,
+                "min_level": 14,
+                "max_level": 17,
                 "species": "SPECIES_BUNNELBY"
               },
               {
-                "min_level": 16,
-                "max_level": 19,
+                "min_level": 14,
+                "max_level": 17,
                 "species": "SPECIES_RIBOMBEE"
               },
               {
-                "min_level": 16,
-                "max_level": 19,
+                "min_level": 14,
+                "max_level": 17,
                 "species": "SPECIES_RIBOMBEE"
               },
               {
-                "min_level": 19,
-                "max_level": 19,
+                "min_level": 14,
+                "max_level": 17,
                 "species": "SPECIES_RIBOMBEE"
               },
               {
-                "min_level": 16,
-                "max_level": 19,
+                "min_level": 14,
+                "max_level": 17,
                 "species": "SPECIES_GULPIN"
               },
               {
-                "min_level": 16,
-                "max_level": 19,
+                "min_level": 14,
+                "max_level": 17,
                 "species": "SPECIES_GULPIN"
               },
               {
-                "min_level": 16,
-                "max_level": 19,
+                "min_level": 14,
+                "max_level": 17,
                 "species": "SPECIES_EEVEE"
               },
               {
-                "min_level": 16,
-                "max_level": 19,
+                "min_level": 14,
+                "max_level": 17,
                 "species": "SPECIES_EEVEE"
               },
               {
-                "min_level": 16,
-                "max_level": 19,
+                "min_level": 14,
+                "max_level": 17,
                 "species": "SPECIES_EEVEE"
               }
             ]

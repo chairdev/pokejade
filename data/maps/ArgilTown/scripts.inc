@@ -8,7 +8,7 @@ ArgilTown_Trigger_DontLeave1::
 # 15 "data/maps/ArgilTown/scripts.pory"
 	call ArgilTown_Trigger_DontLeaveExclamation
 # 16 "data/maps/ArgilTown/scripts.pory"
-	applymovement 3, Common_Movement_WalkInPlaceFasterRight
+	applymovement 2, Common_Movement_WalkInPlaceFasterRight
 # 17 "data/maps/ArgilTown/scripts.pory"
 	waitmovement 0
 # 18 "data/maps/ArgilTown/scripts.pory"
@@ -28,17 +28,17 @@ ArgilTown_Trigger_DontLeave2::
 # 27 "data/maps/ArgilTown/scripts.pory"
 	call ArgilTown_Trigger_DontLeaveExclamation
 # 28 "data/maps/ArgilTown/scripts.pory"
-	applymovement 3, ArgilTown_Movement_DontLeave_ApproachPlayer1
+	applymovement 2, ArgilTown_Movement_DontLeave_ApproachPlayer1
 # 29 "data/maps/ArgilTown/scripts.pory"
 	waitmovement 0
 # 30 "data/maps/ArgilTown/scripts.pory"
-	applymovement 3, Common_Movement_WalkInPlaceFasterRight
+	applymovement 2, Common_Movement_WalkInPlaceFasterRight
 # 31 "data/maps/ArgilTown/scripts.pory"
 	waitmovement 0
 # 32 "data/maps/ArgilTown/scripts.pory"
 	call ArgilTown_Trigger_DontLeave
 # 33 "data/maps/ArgilTown/scripts.pory"
-	applymovement 3, ArgilTown_Movement_DontLeave_GoBack1
+	applymovement 2, ArgilTown_Movement_DontLeave_GoBack1
 # 35 "data/maps/ArgilTown/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, ArgilTown_Movement_DontLeave_WalkBackIntoTown2
 # 36 "data/maps/ArgilTown/scripts.pory"
@@ -54,17 +54,17 @@ ArgilTown_Trigger_DontLeave3::
 # 43 "data/maps/ArgilTown/scripts.pory"
 	call ArgilTown_Trigger_DontLeaveExclamation
 # 44 "data/maps/ArgilTown/scripts.pory"
-	applymovement 3, ArgilTown_Movement_DontLeave_ApproachPlayer2
+	applymovement 2, ArgilTown_Movement_DontLeave_ApproachPlayer2
 # 45 "data/maps/ArgilTown/scripts.pory"
 	waitmovement 0
 # 46 "data/maps/ArgilTown/scripts.pory"
-	applymovement 3, Common_Movement_WalkInPlaceFasterRight
+	applymovement 2, Common_Movement_WalkInPlaceFasterRight
 # 47 "data/maps/ArgilTown/scripts.pory"
 	waitmovement 0
 # 48 "data/maps/ArgilTown/scripts.pory"
 	call ArgilTown_Trigger_DontLeave
 # 49 "data/maps/ArgilTown/scripts.pory"
-	applymovement 3, ArgilTown_Movement_DontLeave_GoBack2
+	applymovement 2, ArgilTown_Movement_DontLeave_GoBack2
 # 51 "data/maps/ArgilTown/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, ArgilTown_Movement_DontLeave_WalkBackIntoTown2
 # 52 "data/maps/ArgilTown/scripts.pory"
@@ -80,17 +80,17 @@ ArgilTown_Trigger_DontLeave4::
 # 59 "data/maps/ArgilTown/scripts.pory"
 	call ArgilTown_Trigger_DontLeaveExclamation
 # 60 "data/maps/ArgilTown/scripts.pory"
-	applymovement 3, ArgilTown_Movement_DontLeave_ApproachPlayer3
+	applymovement 2, ArgilTown_Movement_DontLeave_ApproachPlayer3
 # 61 "data/maps/ArgilTown/scripts.pory"
 	waitmovement 0
 # 62 "data/maps/ArgilTown/scripts.pory"
-	applymovement 3, Common_Movement_WalkInPlaceFasterRight
+	applymovement 2, Common_Movement_WalkInPlaceFasterRight
 # 63 "data/maps/ArgilTown/scripts.pory"
 	waitmovement 0
 # 64 "data/maps/ArgilTown/scripts.pory"
 	call ArgilTown_Trigger_DontLeave
 # 65 "data/maps/ArgilTown/scripts.pory"
-	applymovement 3, ArgilTown_Movement_DontLeave_GoBack3
+	applymovement 2, ArgilTown_Movement_DontLeave_GoBack3
 # 67 "data/maps/ArgilTown/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, ArgilTown_Movement_DontLeave_WalkBackIntoTown2
 # 68 "data/maps/ArgilTown/scripts.pory"
@@ -104,7 +104,7 @@ ArgilTown_Trigger_DontLeaveExclamation::
 # 73 "data/maps/ArgilTown/scripts.pory"
 	playse SE_PIN
 # 74 "data/maps/ArgilTown/scripts.pory"
-	applymovement 3, Common_Movement_ExclamationMark
+	applymovement 2, Common_Movement_ExclamationMark
 # 75 "data/maps/ArgilTown/scripts.pory"
 	waitse
 # 76 "data/maps/ArgilTown/scripts.pory"

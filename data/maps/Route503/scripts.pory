@@ -3,7 +3,7 @@ const OBJ_ASTER = 8
 const OBJ_DELCATTY = 16
 const OBJ_MOM = 15
 
-//VAR_ROUTE503_STATE
+//VAR_ROUTE303_STATE
 //0: Aster Fight
 //1: Receive PokeNav
 //2: Done
@@ -165,7 +165,7 @@ script Route503_MeetAster { //the rival and aster just faught, and the rival los
     waitmovement(0)
     removeobject(OBJ_RIVAL)
 
-    setvar(VAR_ROUTE503_STATE, 1)
+    setvar(VAR_ROUTE303_STATE, 1)
     setflag(FLAG_HIDE_ROUTE_302_ASTER)
 
     releaseall
@@ -353,7 +353,7 @@ script Route503_GetPokeNav {
     msgbox(Route503_Text_GetPokeNav_Mom3)
     closemessage
 
-    setvar(VAR_ROUTE503_STATE, 2)
+    setvar(VAR_ROUTE303_STATE, 2)
 
     fadedefaultbgm
     fadescreen(FADE_TO_BLACK)

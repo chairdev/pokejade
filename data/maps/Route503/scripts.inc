@@ -209,7 +209,7 @@ Route503_MeetAster_4:
 # 166 "data/maps/Route503/scripts.pory"
 	removeobject 9
 # 168 "data/maps/Route503/scripts.pory"
-	setvar VAR_ROUTE503_STATE, 1
+	setvar VAR_ROUTE303_STATE, 1
 # 169 "data/maps/Route503/scripts.pory"
 	setflag FLAG_HIDE_ROUTE_302_ASTER
 # 171 "data/maps/Route503/scripts.pory"
@@ -448,7 +448,7 @@ Route503_GetPokeNav::
 # 354 "data/maps/Route503/scripts.pory"
 	closemessage
 # 356 "data/maps/Route503/scripts.pory"
-	setvar VAR_ROUTE503_STATE, 2
+	setvar VAR_ROUTE303_STATE, 2
 # 358 "data/maps/Route503/scripts.pory"
 	fadedefaultbgm
 # 359 "data/maps/Route503/scripts.pory"

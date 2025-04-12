@@ -6,7 +6,7 @@ Route302_Trigger_RivalEncounter1::
 # 13 "data/maps/Route302/scripts.pory"
 	lockall
 # 15 "data/maps/Route302/scripts.pory"
-	removeobject 7
+	removeobject 6
 # 17 "data/maps/Route302/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 # 18 "data/maps/Route302/scripts.pory"
@@ -38,7 +38,7 @@ Route302_Trigger_RivalEncounter2::
 # 35 "data/maps/Route302/scripts.pory"
 	lockall
 # 37 "data/maps/Route302/scripts.pory"
-	removeobject 7
+	removeobject 6
 # 39 "data/maps/Route302/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 # 40 "data/maps/Route302/scripts.pory"
@@ -68,9 +68,9 @@ Route302_Trigger_RivalEncounter2::
 
 Route302_Trigger_RivalEncounter::
 # 57 "data/maps/Route302/scripts.pory"
-	addobject 7
+	addobject 6
 # 58 "data/maps/Route302/scripts.pory"
-	setobjectxy 7, 12, 22
+	setobjectxy 6, 12, 22
 # 60 "data/maps/Route302/scripts.pory"
 	checkplayergender
 # 61 "data/maps/Route302/scripts.pory"
@@ -80,7 +80,7 @@ Route302_Trigger_RivalEncounter::
 	playbgm MUS_ENCOUNTER_MAY, TRUE
 Route302_Trigger_RivalEncounter_1:
 # 70 "data/maps/Route302/scripts.pory"
-	applymovement 7, Route302_Movement_RivalEncounter_RivalApproachPlayer
+	applymovement 6, Route302_Movement_RivalEncounter_RivalApproachPlayer
 # 71 "data/maps/Route302/scripts.pory"
 	waitmovement 0
 # 73 "data/maps/Route302/scripts.pory"
@@ -92,7 +92,7 @@ Route302_Trigger_RivalEncounter_1:
 # 77 "data/maps/Route302/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Route302_Movement_RivalEncounter_PlayerGoToDaycare
 # 78 "data/maps/Route302/scripts.pory"
-	applymovement 7, Route302_Movement_RivalEncounter_RivalGoToDaycare
+	applymovement 6, Route302_Movement_RivalEncounter_RivalGoToDaycare
 # 79 "data/maps/Route302/scripts.pory"
 	waitmovement 0
 # 81 "data/maps/Route302/scripts.pory"
@@ -108,7 +108,7 @@ Route302_Trigger_RivalEncounter_5:
 # 92 "data/maps/Route302/scripts.pory"
 	playse SE_PIN
 # 93 "data/maps/Route302/scripts.pory"
-	applymovement 7, Common_Movement_ExclamationMark
+	applymovement 6, Common_Movement_ExclamationMark
 # 94 "data/maps/Route302/scripts.pory"
 	waitse
 # 95 "data/maps/Route302/scripts.pory"
@@ -126,13 +126,13 @@ Route302_Trigger_RivalEncounter_9:
 # 107 "data/maps/Route302/scripts.pory"
 	closemessage
 # 109 "data/maps/Route302/scripts.pory"
-	applymovement 7, Route302_Movement_RivalEncounter_RivalLeave
+	applymovement 6, Route302_Movement_RivalEncounter_RivalLeave
 # 110 "data/maps/Route302/scripts.pory"
 	waitmovement 0
 # 112 "data/maps/Route302/scripts.pory"
 	fadedefaultbgm
 # 114 "data/maps/Route302/scripts.pory"
-	removeobject 7
+	removeobject 6
 # 115 "data/maps/Route302/scripts.pory"
 	setflag FLAG_HIDE_ROUTE_302_RIVAL
 # 116 "data/maps/Route302/scripts.pory"
@@ -257,11 +257,11 @@ Route302_Trigger_AsterFirstBattle1::
 # 206 "data/maps/Route302/scripts.pory"
 	lockall
 # 208 "data/maps/Route302/scripts.pory"
-	addobject 6
+	addobject 5
 # 209 "data/maps/Route302/scripts.pory"
 	playse SE_PIN
 # 210 "data/maps/Route302/scripts.pory"
-	applymovement 6, Common_Movement_ExclamationMark
+	applymovement 5, Common_Movement_ExclamationMark
 # 211 "data/maps/Route302/scripts.pory"
 	waitse
 # 212 "data/maps/Route302/scripts.pory"
@@ -269,7 +269,7 @@ Route302_Trigger_AsterFirstBattle1::
 # 213 "data/maps/Route302/scripts.pory"
 	delay 16
 # 214 "data/maps/Route302/scripts.pory"
-	applymovement 6, Common_Movement_WalkInPlaceFasterDown
+	applymovement 5, Common_Movement_WalkInPlaceFasterDown
 # 215 "data/maps/Route302/scripts.pory"
 	waitmovement 0
 # 217 "data/maps/Route302/scripts.pory"
@@ -281,7 +281,7 @@ Route302_Trigger_AsterFirstBattle1::
 # 221 "data/maps/Route302/scripts.pory"
 	playbgm MUS_RG_ENCOUNTER_BOY, TRUE
 # 223 "data/maps/Route302/scripts.pory"
-	applymovement 6, Route302_Movement_AsterFirstBattle_AsterApproachPlayer1
+	applymovement 5, Route302_Movement_AsterFirstBattle_AsterApproachPlayer1
 # 224 "data/maps/Route302/scripts.pory"
 	waitmovement 0
 # 226 "data/maps/Route302/scripts.pory"
@@ -293,11 +293,11 @@ Route302_Trigger_AsterFirstBattle2::
 # 230 "data/maps/Route302/scripts.pory"
 	lockall
 # 232 "data/maps/Route302/scripts.pory"
-	addobject 6
+	addobject 5
 # 233 "data/maps/Route302/scripts.pory"
 	playse SE_PIN
 # 234 "data/maps/Route302/scripts.pory"
-	applymovement 6, Common_Movement_ExclamationMark
+	applymovement 5, Common_Movement_ExclamationMark
 # 235 "data/maps/Route302/scripts.pory"
 	waitse
 # 236 "data/maps/Route302/scripts.pory"
@@ -305,7 +305,7 @@ Route302_Trigger_AsterFirstBattle2::
 # 237 "data/maps/Route302/scripts.pory"
 	delay 16
 # 238 "data/maps/Route302/scripts.pory"
-	applymovement 6, Common_Movement_WalkInPlaceFasterDown
+	applymovement 5, Common_Movement_WalkInPlaceFasterDown
 # 239 "data/maps/Route302/scripts.pory"
 	waitmovement 0
 # 241 "data/maps/Route302/scripts.pory"
@@ -317,7 +317,7 @@ Route302_Trigger_AsterFirstBattle2::
 # 245 "data/maps/Route302/scripts.pory"
 	closemessage
 # 247 "data/maps/Route302/scripts.pory"
-	applymovement 6, Route302_Movement_AsterFirstBattle_AsterApproachPlayer2
+	applymovement 5, Route302_Movement_AsterFirstBattle_AsterApproachPlayer2
 # 248 "data/maps/Route302/scripts.pory"
 	waitmovement 0
 # 250 "data/maps/Route302/scripts.pory"
@@ -353,7 +353,7 @@ Route302_Trigger_AsterFirstBattle::
 # 275 "data/maps/Route302/scripts.pory"
 	closemessage
 # 277 "data/maps/Route302/scripts.pory"
-	applymovement 6, Common_Movement_WalkInPlaceFasterUp
+	applymovement 5, Common_Movement_WalkInPlaceFasterUp
 # 279 "data/maps/Route302/scripts.pory"
 	speakername Route302_Trigger_AsterFirstBattle_Text_0
 # 280 "data/maps/Route302/scripts.pory"
@@ -361,11 +361,11 @@ Route302_Trigger_AsterFirstBattle::
 # 281 "data/maps/Route302/scripts.pory"
 	closemessage
 # 283 "data/maps/Route302/scripts.pory"
-	applymovement 6, Route302_Movement_AsterFirstBattle_AsterLeave
+	applymovement 5, Route302_Movement_AsterFirstBattle_AsterLeave
 # 284 "data/maps/Route302/scripts.pory"
 	waitmovement 0
 # 285 "data/maps/Route302/scripts.pory"
-	removeobject 6
+	removeobject 5
 # 287 "data/maps/Route302/scripts.pory"
 	setflag FLAG_HIDE_ROUTE_302_ASTER
 # 288 "data/maps/Route302/scripts.pory"

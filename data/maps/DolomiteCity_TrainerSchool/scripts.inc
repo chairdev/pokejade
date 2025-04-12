@@ -444,31 +444,31 @@ DolomiteCity_TrainerSchool_EventScript_HowToCatch::
 	faceplayer
 # 407 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	msgbox DolomiteCity_TrainerSchool_EventScript_HowToCatch_Text_0
-# 411 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 412 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	release
 	return
 
 
 DolomiteCity_TrainerSchool_EventScript_HeldItems::
-# 415 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
-	lock
 # 416 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+	lock
+# 417 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	faceplayer
-# 418 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 419 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	msgbox DolomiteCity_TrainerSchool_EventScript_HeldItems_Text_0
-# 423 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 425 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	release
 	return
 
 
 DolomiteCity_TrainerSchool_EventScript_Abilities::
-# 427 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 429 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	lock
-# 428 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
-	faceplayer
 # 430 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+	faceplayer
+# 432 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	msgbox DolomiteCity_TrainerSchool_EventScript_Abilities_Text_0
-# 434 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 436 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	release
 	return
 
@@ -551,22 +551,27 @@ DolomiteCity_TrainerSchool_EventScript_UnderstandingStats_Text_0:
 
 DolomiteCity_TrainerSchool_EventScript_HowToCatch_Text_0:
 # 407 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
-	.string "You wanna catch a Pokémon?\n"
-	.string "First, weaken it!.\p"
-	.string "Red HP is your best bet.\n"
-	.string "Status moves like Sleep or Paralysis\l"
-	.string "help too.\p"
-	.string "Then throw a Poké Ball--Bonus points if\n"
-	.string "you strike a pose while you do it, hee\l"
-	.string "hee!\p"
-	.string "Go on, try it if you haven't already!$"
+	.string "Poison, Burn, Paralysis, Sleep, and\n"
+	.string "Freeze--they're all super annoying and\l"
+	.string "super useful!\p"
+	.string "Burn lowers Attack. Paralysis sometimes\n"
+	.string "stops Pokémon from moving.\p"
+	.string "Sleep and Freeze are the best since\n"
+	.string "they completely stop Pokémon from\l"
+	.string "moving, but they wear off after a while.\p"
+	.string "You can use them to catch Pokémon\n"
+	.string "easier, but be careful!\p"
+	.string "If you knock them out, you won't be able\n"
+	.string "to catch them at all!$"
 
 DolomiteCity_TrainerSchool_EventScript_HeldItems_Text_0:
-# 418 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 419 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	.string "Give a Pokémon an item and they'll use\n"
 	.string "it in battle by themselves.\p"
 	.string "Like, Leftovers heals them a bit each\n"
-	.string "turn! Oran Berries are great early on.\p"
+	.string "turn!\p"
+	.string "Or a Berry can heal their HP or cure a\n"
+	.string "status condition.\p"
 	.string "Some items only work once, others boost\n"
 	.string "stats--it's like giving them a secret\l"
 	.string "weapon!\p"
@@ -575,7 +580,7 @@ DolomiteCity_TrainerSchool_EventScript_HeldItems_Text_0:
 	.string "Those are for you to use, not them.$"
 
 DolomiteCity_TrainerSchool_EventScript_Abilities_Text_0:
-# 430 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
+# 432 "data/maps/DolomiteCity_TrainerSchool/scripts.pory"
 	.string "Abilities are like a Pokémon's secret\n"
 	.string "superpower.\p"
 	.string "Some boost stats, some change the\n"

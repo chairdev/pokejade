@@ -106,32 +106,6 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_JASMINE",
-      "x": 30,
-      "y": 10,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "FLAG_RECEIVED_TM_HIDDEN_POWER"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(AMPHAROS)",
-      "x": 31,
-      "y": 10,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "2",
-      "script": "NULL",
-      "flag": "FLAG_RECEIVED_TM_HIDDEN_POWER"
-    },
-    {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(SCOLIPEDE)",
       "x": 36,
       "y": 20,
@@ -232,20 +206,20 @@
     {
       "type": "trigger",
       "x": 29,
-      "y": 6,
-      "elevation": 0,
-      "var": "VAR_KISMET_FOREST_STATE",
-      "var_value": "0",
-      "script": "KismetForest_Trigger_Jasmine1"
-    },
-    {
-      "type": "trigger",
-      "x": 29,
       "y": 7,
       "elevation": 0,
       "var": "VAR_KISMET_FOREST_STATE",
       "var_value": "0",
       "script": "KismetForest_Trigger_Jasmine2"
+    },
+    {
+      "type": "trigger",
+      "x": 29,
+      "y": 6,
+      "elevation": 0,
+      "var": "VAR_KISMET_FOREST_STATE",
+      "var_value": "0",
+      "script": "KismetForest_Trigger_Jasmine1"
     }
   ],
   "bg_events": [

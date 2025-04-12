@@ -1,5 +1,5 @@
-const OBJ_RIVAL = 7
-const OBJ_ASTER = 6
+const OBJ_RIVAL = 6
+const OBJ_ASTER = 5
 
 //VAR_ROUTE302_STATE
 //0: Daycare Explantion (Rival)

@@ -2537,7 +2537,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Wimpod @ Nugget
-Level: 17
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MOLLIE ===
@@ -8623,11 +8623,7 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Pidove
-Level: 13
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Marill
+Phanpy
 Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -8847,11 +8843,11 @@ Music: Twins
 Double Battle: Yes
 AI: Check Bad Move
 
-Wynaut
+Pichu
 Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Pichu
+Marill
 Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -11133,7 +11129,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Buizel
-Level: 15
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_VIVI ===
@@ -11320,15 +11316,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Scatterbug
-Level: 18
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Spewpa
-Level: 16
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 VIVILLON_ELEGANT
-Level: 14
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JOSE ===

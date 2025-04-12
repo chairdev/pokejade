@@ -263,7 +263,7 @@
       "x": 0,
       "y": 23,
       "elevation": 0,
-      "var": "VAR_ROUTE503_STATE",
+      "var": "VAR_ROUTE303_STATE",
       "var_value": "0",
       "script": "Route503_Trigger_MeetAster1"
     },
@@ -272,7 +272,7 @@
       "x": 0,
       "y": 24,
       "elevation": 0,
-      "var": "VAR_ROUTE503_STATE",
+      "var": "VAR_ROUTE303_STATE",
       "var_value": "0",
       "script": "Route503_Trigger_MeetAster2"
     },
@@ -281,7 +281,7 @@
       "x": 36,
       "y": 6,
       "elevation": 0,
-      "var": "VAR_ROUTE503_STATE",
+      "var": "VAR_ROUTE303_STATE",
       "var_value": "1",
       "script": "Route503_Trigger_GetPokeNav1"
     },
@@ -290,7 +290,7 @@
       "x": 37,
       "y": 6,
       "elevation": 0,
-      "var": "VAR_ROUTE503_STATE",
+      "var": "VAR_ROUTE303_STATE",
       "var_value": "1",
       "script": "Route503_Trigger_GetPokeNav2"
     }

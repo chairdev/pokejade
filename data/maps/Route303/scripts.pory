@@ -1,1 +1,135 @@
-mapscripts Route303_MapScripts {}
+const OBJ_JASMINE = 1
+
+// VAR_ROUTE303_STATE
+// 0: Meet Jasmine
+// 1: Jasmine left
+
+mapscripts Route303_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_ROUTE303_STATE, 0: Route303_MapScript_SeeJasmine
+    ]
+}
+
+
+script Route303_MapScript_SeeJasmine {
+    lockall
+
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp2)
+    waitmovement(0)
+
+    playse(SE_PIN)
+    applymovement(OBJ_JASMINE, Common_Movement_ExclamationMark)
+    waitse
+    waitmovement(0)
+    delay(32)
+    applymovement(OBJ_JASMINE, Common_Movement_WalkInPlaceFasterDown)
+    waitmovement(0)
+
+    getplayerxy(VAR_TEMP_0, VAR_TEMP_1)
+    if(var(VAR_TEMP_0) == 11)
+    {
+        applymovement(OBJ_JASMINE, moves(walk_left  walk_down * 2))
+    }
+    else
+    {
+        applymovement(OBJ_JASMINE, moves(walk_down * 2))
+    }
+    waitmovement(0)
+
+    applymovement(OBJ_JASMINE, Common_Movement_WalkInPlaceFasterDown)
+    speakername("???")
+    msgbox(Route303_Text_Jasmine_1)
+    speakername("Jasmine")
+    msgbox(Route303_Text_Jasmine_2)
+    closemessage
+
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_slow_up))
+    waitmovement(0)
+    delay(32)
+
+    speakername("Jasmine")
+    msgbox(Route303_Text_Jasmine_3)
+    closemessage
+
+    giveitem(ITEM_TM_HIDDEN_POWER)
+
+    speakername("Jasmine")
+    msgbox(Route303_Text_Jasmine_4)
+    closemessage
+
+    fadescreen(FADE_TO_BLACK)
+    removeobject(OBJ_JASMINE)
+    setflag(FLAG_RECEIVED_TM_HIDDEN_POWER)
+    setvar(VAR_ROUTE303_STATE, 1)
+    playse(SE_EXIT)
+    waitse
+    fadescreen(FADE_FROM_BLACK)
+
+    releaseall
+}
+
+text Route303_Text_Jasmine_1 {
+    format("Oh... hello there.\nYou're a Pokémon Trainer... right?\p"
+         "Sorry... I didn't mean to be strange.\p"
+         "I'm Jasmine. I'm a Gym Leader from the Johto region... Olivine City.")
+}
+
+text Route303_Text_Jasmine_2 {
+    format( "You know... you remind me of someone.\nA quiet boy I met back home.\p"
+            "He was kind, and strong.\nHe... won the Pokémon League, actually.\p"
+            "There was something about the way he battled--with heart, with care.\p"
+            "I feel like you give off that same energy.\p"
+            "I... I don't mean to be rude.\p"
+            "Right now, I'm here in Avaro, mentoring a new Gym Leader in Spinel City.\p"
+            "Her name is Melody and she specializes in Fairy-type Pokémon.\p"
+            "She's... very talented but she's a bit of a crybaby.\p"
+            "I want to... help her become a great Gym Leader.\p"
+            "I know she can do it.\nBut... I don't want to push her too hard.\p"
+            "I... I'm sorry, I... I'm just rambling.\p"
+            "Can I... ask your name?")
+}
+
+text Route303_Text_Jasmine_3 {
+    format( "Oh... I see.\p"
+            "It's nice to meet you, {PLAYER}.\p"
+            "I know this is a bit strange, but... I have something for you.")
+}
+
+text Route303_Text_Jasmine_4 {
+    format( "This TM contains Hidden Power.\nIt's a popular move back in Johto.\p"
+            "Hidden Power changes type depending on the Pokémon that uses it, so it truly reflects the user's inner strength.\p"
+            "I... I hope you find it useful.\p"
+            "Anyway... I won't keep you.\nMelody's Gym just opened, and I think you'd be a great first opponent for her, {PLAYER}.\p"
+            "Take care... and thank you for listening.")
+}
+
+
+script Route303_EventScript_IntriguedGuy {
+    lock
+    faceplayer
+
+    msgbox(format("nHave you noticed something about the Pokémon around here?\p"
+                  "In this area, you'll see a lot of Pidgey flying around.\nThey're pretty common in this part of the region.\p"
+                  "But if you head over to Dolomite City, you'll start seeing a lot of Rookidee instead.\p"
+                  "Different areas of Avaro have their own unique Pokémon populations.\nIt's fascinating, isn't it?\p"
+                  "You should explore as much as you can to see all the different Pokémon out there!"))
+    release
+}
+
+
+script Route303_EventScript_Susan {
+    trainerbattle_single(TRAINER_SUSAN, Route303_Text_SusanIntro, Route303_Text_SusanDefeat)
+    msgbox(Route303_Text_SusanPostBattle, MSGBOX_AUTOCLOSE)
+}
+
+text Route303_Text_SusanIntro {
+    format("It's a beautiful day for a picnic!\nIt's also a beautiful day for a battle!")
+}
+
+text Route303_Text_SusanDefeat {
+   format("...I think I'll stick to picnics from now on.")
+}
+
+text Route303_Text_SusanPostBattle {
+    format("You might have beaten me, but I still have a picnic to enjoy!")
+}
