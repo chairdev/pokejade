@@ -56,35 +56,37 @@ Route303_MapScript_SeeJasmine_1:
 	applymovement OBJ_EVENT_ID_PLAYER, Route303_MapScript_SeeJasmine_Movement_2
 # 47 "data/maps/Route303/scripts.pory"
 	waitmovement 0
-# 49 "data/maps/Route303/scripts.pory"
-	speakername Route303_MapScript_SeeJasmine_Text_1
+# 48 "data/maps/Route303/scripts.pory"
+	delay 32
 # 50 "data/maps/Route303/scripts.pory"
-	msgbox Route303_Text_Jasmine_3
-# 51 "data/maps/Route303/scripts.pory"
-	closemessage
-# 53 "data/maps/Route303/scripts.pory"
-	giveitem ITEM_TM_HIDDEN_POWER
-# 55 "data/maps/Route303/scripts.pory"
 	speakername Route303_MapScript_SeeJasmine_Text_1
-# 56 "data/maps/Route303/scripts.pory"
-	msgbox Route303_Text_Jasmine_4
-# 57 "data/maps/Route303/scripts.pory"
+# 51 "data/maps/Route303/scripts.pory"
+	msgbox Route303_Text_Jasmine_3
+# 52 "data/maps/Route303/scripts.pory"
 	closemessage
-# 59 "data/maps/Route303/scripts.pory"
-	fadescreen FADE_TO_BLACK
+# 54 "data/maps/Route303/scripts.pory"
+	giveitem ITEM_TM_HIDDEN_POWER
+# 56 "data/maps/Route303/scripts.pory"
+	speakername Route303_MapScript_SeeJasmine_Text_1
+# 57 "data/maps/Route303/scripts.pory"
+	msgbox Route303_Text_Jasmine_4
+# 58 "data/maps/Route303/scripts.pory"
+	closemessage
 # 60 "data/maps/Route303/scripts.pory"
-	removeobject 1
+	fadescreen FADE_TO_BLACK
 # 61 "data/maps/Route303/scripts.pory"
-	setflag FLAG_RECEIVED_TM_HIDDEN_POWER
+	removeobject 1
 # 62 "data/maps/Route303/scripts.pory"
-	setvar VAR_ROUTE303_STATE, 1
+	setflag FLAG_RECEIVED_TM_HIDDEN_POWER
 # 63 "data/maps/Route303/scripts.pory"
-	playse SE_EXIT
+	setvar VAR_ROUTE303_STATE, 1
 # 64 "data/maps/Route303/scripts.pory"
-	waitse
+	playse SE_EXIT
 # 65 "data/maps/Route303/scripts.pory"
+	waitse
+# 66 "data/maps/Route303/scripts.pory"
 	fadescreen FADE_FROM_BLACK
-# 67 "data/maps/Route303/scripts.pory"
+# 68 "data/maps/Route303/scripts.pory"
 	releaseall
 	return
 
@@ -94,10 +96,22 @@ Route303_MapScript_SeeJasmine_2:
 	goto Route303_MapScript_SeeJasmine_1
 
 
-Route303_EventScript_Susan::
-# 107 "data/maps/Route303/scripts.pory"
-	trainerbattle_single TRAINER_SUSAN, Route303_Text_SusanIntro, Route303_Text_SusanDefeat
+Route303_EventScript_IntriguedGuy::
 # 108 "data/maps/Route303/scripts.pory"
+	lock
+# 109 "data/maps/Route303/scripts.pory"
+	faceplayer
+# 111 "data/maps/Route303/scripts.pory"
+	msgbox Route303_EventScript_IntriguedGuy_Text_0
+# 116 "data/maps/Route303/scripts.pory"
+	release
+	return
+
+
+Route303_EventScript_Susan::
+# 121 "data/maps/Route303/scripts.pory"
+	trainerbattle_single TRAINER_SUSAN, Route303_Text_SusanIntro, Route303_Text_SusanDefeat
+# 122 "data/maps/Route303/scripts.pory"
 	msgbox Route303_Text_SusanPostBattle, MSGBOX_AUTOCLOSE
 	return
 
@@ -134,8 +148,26 @@ Route303_MapScript_SeeJasmine_Text_1:
 # 42 "data/maps/Route303/scripts.pory"
 	.string "Jasmine$"
 
+Route303_EventScript_IntriguedGuy_Text_0:
+# 111 "data/maps/Route303/scripts.pory"
+	.string "nHave you noticed something about the\n"
+	.string "Pokémon around here?\p"
+	.string "In this area, you'll see a lot of Pidgey\n"
+	.string "flying around.\n"
+	.string "They're pretty common in this part of\l"
+	.string "the region.\p"
+	.string "But if you head over to Dolomite City,\n"
+	.string "you'll start seeing a lot of Rookidee\l"
+	.string "instead.\p"
+	.string "Different areas of Avaro have their own\n"
+	.string "unique Pokémon populations.\n"
+	.string "It's fascinating, isn't it?\p"
+	.string "You should explore as much as you can\n"
+	.string "to see all the different Pokémon out\l"
+	.string "there!$"
+
 Route303_Text_Jasmine_1::
-# 70 "data/maps/Route303/scripts.pory"
+# 71 "data/maps/Route303/scripts.pory"
 	.string "Oh... hello there.\n"
 	.string "You're a Pokémon Trainer... right?\p"
 	.string "Sorry... I didn't mean to be strange.\p"
@@ -143,7 +175,7 @@ Route303_Text_Jasmine_1::
 	.string "Johto region... Olivine City.$"
 
 Route303_Text_Jasmine_2::
-# 76 "data/maps/Route303/scripts.pory"
+# 77 "data/maps/Route303/scripts.pory"
 	.string "You know... you remind me of someone.\n"
 	.string "A quiet boy I met back home.\p"
 	.string "He was kind, and strong.\n"
@@ -167,14 +199,14 @@ Route303_Text_Jasmine_2::
 	.string "Can I... ask your name?$"
 
 Route303_Text_Jasmine_3::
-# 91 "data/maps/Route303/scripts.pory"
+# 92 "data/maps/Route303/scripts.pory"
 	.string "Oh... I see.\p"
 	.string "It's nice to meet you, {PLAYER}.\p"
 	.string "I know this is a bit strange, but... I\n"
 	.string "have something for you.$"
 
 Route303_Text_Jasmine_4::
-# 97 "data/maps/Route303/scripts.pory"
+# 98 "data/maps/Route303/scripts.pory"
 	.string "This TM contains Hidden Power.\n"
 	.string "It's a popular move back in Johto.\p"
 	.string "Hidden Power changes type depending on\n"
@@ -188,16 +220,16 @@ Route303_Text_Jasmine_4::
 	.string "Take care... and thank you for listening.$"
 
 Route303_Text_SusanIntro::
-# 111 "data/maps/Route303/scripts.pory"
+# 125 "data/maps/Route303/scripts.pory"
 	.string "It's a beautiful day for a picnic!\n"
 	.string "It's also a beautiful day for a battle!$"
 
 Route303_Text_SusanDefeat::
-# 115 "data/maps/Route303/scripts.pory"
+# 129 "data/maps/Route303/scripts.pory"
 	.string "...I think I'll stick to picnics from now\n"
 	.string "on.$"
 
 Route303_Text_SusanPostBattle::
-# 119 "data/maps/Route303/scripts.pory"
+# 133 "data/maps/Route303/scripts.pory"
 	.string "You might have beaten me, but I still\n"
 	.string "have a picnic to enjoy!$"
