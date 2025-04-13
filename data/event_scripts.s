@@ -1255,3 +1255,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/ZirconTown_PokeMart/scripts.inc"
 
 	.include "data/maps/SpinelCity_PokeMart/scripts.inc"
+
+	.include "data/maps/SpinelCity_Gym/scripts.inc"

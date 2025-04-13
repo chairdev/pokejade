@@ -9,7 +9,7 @@ StarridgeCity_Gym_EventScript_Melody::
 	goto_if_unset FLAG_RECEIVED_TM_DRAINING_KISS, StarridgeCity_Gym_EventScript_Melody_2
 StarridgeCity_Gym_EventScript_Melody_1:
 # 12 "data/maps/StarridgeCity_Gym/scripts.pory"
-	compare VAR_STARRIDGE_CITY_STATE, 0
+	compare VAR_SPINEL_CITY_STATE, 0
 	goto_if_eq StarridgeCity_Gym_EventScript_Melody_5
 StarridgeCity_Gym_EventScript_Melody_4:
 # 17 "data/maps/StarridgeCity_Gym/scripts.pory"
@@ -27,7 +27,7 @@ StarridgeCity_Gym_EventScript_Melody_2:
 
 StarridgeCity_Gym_EventScript_Melody_5:
 # 14 "data/maps/StarridgeCity_Gym/scripts.pory"
-	setvar VAR_STARRIDGE_CITY_STATE, 1
+	setvar VAR_SPINEL_CITY_STATE, 1
 	goto StarridgeCity_Gym_EventScript_Melody_4
 
 
@@ -49,7 +49,7 @@ StarridgeCity_Gym_EventScript_MelodyDefeated::
 # 58 "data/maps/StarridgeCity_Gym/scripts.pory"
 	msgbox StarridgeCity_Gym_Text_GlintBadgeInfo
 # 60 "data/maps/StarridgeCity_Gym/scripts.pory"
-	setflag FLAG_DEFEATED_STARRIDGE_GYM
+	setflag FLAG_DEFEATED_SPINEL_GYM
 # 61 "data/maps/StarridgeCity_Gym/scripts.pory"
 	setflag FLAG_BADGE02_GET
 # 63 "data/maps/StarridgeCity_Gym/scripts.pory"
@@ -90,11 +90,11 @@ StarridgeCity_Gym_EventScript_GymGuide::
 # 102 "data/maps/StarridgeCity_Gym/scripts.pory"
 	faceplayer
 # 103 "data/maps/StarridgeCity_Gym/scripts.pory"
-	goto_if_set FLAG_DEFEATED_STARRIDGE_GYM, StarridgeCity_Gym_EventScript_GymGuide_2
+	goto_if_set FLAG_DEFEATED_SPINEL_GYM, StarridgeCity_Gym_EventScript_GymGuide_2
 # 109 "data/maps/StarridgeCity_Gym/scripts.pory"
 	msgbox StarridgeCity_Gym_Text_GymGuide
 # 110 "data/maps/StarridgeCity_Gym/scripts.pory"
-	goto_if_unset FLAG_RECEIVED_SODA_POP_STARRIDGE_GYM, StarridgeCity_Gym_EventScript_GymGuide_5
+	goto_if_unset FLAG_RECEIVED_SODA_POP_SPINEL_GYM, StarridgeCity_Gym_EventScript_GymGuide_5
 StarridgeCity_Gym_EventScript_GymGuide_1:
 # 118 "data/maps/StarridgeCity_Gym/scripts.pory"
 	release
@@ -111,7 +111,7 @@ StarridgeCity_Gym_EventScript_GymGuide_5:
 # 113 "data/maps/StarridgeCity_Gym/scripts.pory"
 	giveitem ITEM_SODA_POP
 # 114 "data/maps/StarridgeCity_Gym/scripts.pory"
-	setflag FLAG_RECEIVED_SODA_POP_STARRIDGE_GYM
+	setflag FLAG_RECEIVED_SODA_POP_SPINEL_GYM
 	goto StarridgeCity_Gym_EventScript_GymGuide_1
 
 

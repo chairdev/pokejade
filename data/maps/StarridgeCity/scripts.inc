@@ -12,7 +12,7 @@ StarridgeCity_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 
 StarridgeCity_MapScripts_MAP_SCRIPT_ON_LOAD:
 # 16 "data/maps/StarridgeCity/scripts.pory"
-	switch VAR_STARRIDGE_CITY_STATE
+	switch VAR_SPINEL_CITY_STATE
 # 17 "data/maps/StarridgeCity/scripts.pory"
 	case 2, StarridgeCity_MapScripts_MAP_SCRIPT_ON_LOAD_2
 	return
@@ -308,7 +308,7 @@ StarridgeCity_EventScript_HostageSituation_2:
 # 258 "data/maps/StarridgeCity/scripts.pory"
 	msgbox StarridgeCity_Text_HostageSituation_Scientist2
 # 259 "data/maps/StarridgeCity/scripts.pory"
-	setvar VAR_STARRIDGE_CITY_STATE, 2
+	setvar VAR_SPINEL_CITY_STATE, 2
 # 260 "data/maps/StarridgeCity/scripts.pory"
 	closemessage
 	return

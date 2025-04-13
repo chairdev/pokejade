@@ -664,6 +664,7 @@
 // gMapGroup_IndoorSpinel
 #define MAP_SPINEL_CITY_POKEMON_CENTER_1F (0 | (45 << 8))
 #define MAP_SPINEL_CITY_POKE_MART         (1 | (45 << 8))
+#define MAP_SPINEL_CITY_GYM               (2 | (45 << 8))
 
 #define MAP_GROUPS_COUNT 46
 

@@ -100,7 +100,7 @@
 #define VAR_ARGIL_TOWN_STATE                             0x4050
 #define VAR_DOLOMITE_CITY_STATE                          0x4051
 #define VAR_ZIRCON_TOWN_STATE                            0x4052
-#define VAR_STARRIDGE_CITY_STATE                         0x4053
+#define VAR_SPINEL_CITY_STATE                            0x4053
 #define VAR_CURRENT_SECRET_BASE                          0x4054 // was probably allocated for VAR_FALLARBOR_TOWN_STATE at one point
 #define VAR_VERDANTURF_TOWN_STATE                        0x4055 // Unused Var
 #define VAR_PACIFIDLOG_TOWN_STATE                        0x4056 // Unused Var

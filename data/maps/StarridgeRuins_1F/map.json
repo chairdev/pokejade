@@ -89,7 +89,7 @@
       "x": 7,
       "y": 7,
       "elevation": 0,
-      "var": "VAR_STARRIDGE_CITY_STATE",
+      "var": "VAR_SPINEL_CITY_STATE",
       "var_value": "2",
       "script": "StarridgeRuins_1F_EventScript_Grunts"
     },
@@ -98,7 +98,7 @@
       "x": 7,
       "y": 8,
       "elevation": 0,
-      "var": "VAR_STARRIDGE_CITY_STATE",
+      "var": "VAR_SPINEL_CITY_STATE",
       "var_value": "2",
       "script": "StarridgeRuins_1F_EventScript_Grunts"
     }

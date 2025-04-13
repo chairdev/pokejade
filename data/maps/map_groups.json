@@ -705,6 +705,7 @@
   ],
   "gMapGroup_IndoorSpinel": [
     "SpinelCity_PokemonCenter_1F",
-    "SpinelCity_PokeMart"
+    "SpinelCity_PokeMart",
+    "SpinelCity_Gym"
   ]
 }

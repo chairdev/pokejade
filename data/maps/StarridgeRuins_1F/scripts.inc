@@ -12,7 +12,7 @@ StarridgeRuins_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 
 StarridgeRuins_1F_MapScripts_MAP_SCRIPT_ON_LOAD:
 # 11 "data/maps/StarridgeRuins_1F/scripts.pory"
-	compare VAR_STARRIDGE_CITY_STATE, 3
+	compare VAR_SPINEL_CITY_STATE, 3
 	goto_if_eq StarridgeRuins_1F_MapScripts_MAP_SCRIPT_ON_LOAD_1
 	return
 
@@ -42,7 +42,7 @@ StarridgeRuins_1F_EventScript_Grunts::
 # 30 "data/maps/StarridgeRuins_1F/scripts.pory"
 	closemessage
 # 32 "data/maps/StarridgeRuins_1F/scripts.pory"
-	compare VAR_STARRIDGE_CITY_STATE, 2
+	compare VAR_SPINEL_CITY_STATE, 2
 	goto_if_eq StarridgeRuins_1F_EventScript_Grunts_2
 # 120 "data/maps/StarridgeRuins_1F/scripts.pory"
 	applymovement 3, StarridgeRuins_1F_Movement_GruntA_Push
@@ -132,7 +132,7 @@ StarridgeRuins_1F_EventScript_Grunts_5:
 # 115 "data/maps/StarridgeRuins_1F/scripts.pory"
 	removeobject 2
 # 116 "data/maps/StarridgeRuins_1F/scripts.pory"
-	setvar VAR_STARRIDGE_CITY_STATE, 3
+	setvar VAR_SPINEL_CITY_STATE, 3
 # 117 "data/maps/StarridgeRuins_1F/scripts.pory"
 	fadescreen FADE_FROM_BLACK
 	goto StarridgeRuins_1F_EventScript_Grunts_1

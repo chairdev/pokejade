@@ -2294,8 +2294,8 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Azumarill
-Level: 21
+Marill
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
@@ -4837,36 +4837,32 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn / Ace Pokemon
 
-Granbull
-Ability: Intimidate  
-Level: 23   
-IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe   
+Snubbull  
+Ability: Intimidate
+Level: 16  
 Brave Nature  
-- Draining Kiss  
-- Headbutt  
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe   
 - Lick  
 - Fire Fang  
+- Forlorn Echo
 
-Togetic
-Ability: Super Luck
-Level: 24  
-IVs: 20 HP / 20 Atk / 20 Def / 19 SpA / 20 SpD / 20 Spe  
-Modest Nature  
-- Draining Kiss  
-- Metronome  
-- Sweet Kiss  
-- Hidden Power
+Tinkatink  
+Ability: Mold Breaker  
+Level: 16
+Jolly Nature
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe    
+- Astonish  
+- Metal Claw
+- Forlorn Echo  
 
-Sylveon @ Kebia Berry  
+Clefable @ Kebia Berry  
 Ability: Cute Charm  
-Level: 25  
-IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe   
-EVs: 252 HP
-Quiet Nature  
-- Draining Kiss  
-- Baby-Doll Eyes  
-- Quick Attack  
-- Swift
+Level: 17   
+Bold Nature
+IVs: 25 HP / 25 Atk / 25 Def / 26 SpA / 26 SpD / 25 Spe
+- Hidden Power  
+- Thunder Wave 
+- Forlorn Echo
 
 === TRAINER_WATTSON_1 ===
 Name: WATTSON
@@ -11234,8 +11230,8 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Jigglypuff
-Level: 22
+Ribombee
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CAROL ===
@@ -13724,8 +13720,8 @@ Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Granbull
-Level: 23
+Snubbull
+Level: 15
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_ELIJAH ===

@@ -15,7 +15,7 @@ script SpinelCity_PokeMart_EventScript_SpecialClerk {
 	faceplayer
 	message(gText_HowMayIServeYou)
     waitmessage
-    msgbox(format("wip this is just dolomite's special clerk"))
+    msgbox(format("wip this the tms are gone"))
     pokemart(SpinelCity_Mart)
     msgbox(gText_PleaseComeAgain)
     release
@@ -26,7 +26,8 @@ mart SpinelCity_Mart {
     ITEM_TM_SAFEGUARD
     //ITEM_TM_ROUND
     //ITEM_TM_POWER_UP_PUNCH
-    ITEM_TM_SNARL
+    //ITEM_TM_SNARL
     ITEM_TM_RETURN
-    ITEM_TM_ATTRACT
+    //ITEM_TM_ATTRACT
+    ITEM_TM_BULLDOZE
 }

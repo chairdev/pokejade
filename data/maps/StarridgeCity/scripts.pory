@@ -1,4 +1,4 @@
-//VAR_STARRIDGE_CITY_STATE
+//VAR_SPINEL_CITY_STATE
 // 0: Melody has not been defeated
 // 1: Scientist has informed about the hostage situation
 // 2: Need to rescue the boss
@@ -13,7 +13,7 @@ mapscripts StarridgeCity_MapScripts {
         call(Common_EventScript_SetupRivalGfxId)
     }
     MAP_SCRIPT_ON_LOAD {
-         switch(var(VAR_STARRIDGE_CITY_STATE)) {
+         switch(var(VAR_SPINEL_CITY_STATE)) {
             case 2:
                 setobjectxy(OBJ_SCIENTIST, 32, 5)
                 break
@@ -256,7 +256,7 @@ script StarridgeCity_EventScript_HostageSituation {
         msgbox(StarridgeCity_Text_HostageSituation_ButWhy, MSGBOX_YESNO)
     }
     msgbox(StarridgeCity_Text_HostageSituation_Scientist2)
-    setvar(VAR_STARRIDGE_CITY_STATE, 2)
+    setvar(VAR_SPINEL_CITY_STATE, 2)
     closemessage
 }
 

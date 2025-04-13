@@ -4910,6 +4910,16 @@
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/SpinelCity_PokeMart/border.bin",
       "blockdata_filepath": "data/layouts/SpinelCity_PokeMart/map.bin"
+    },
+    {
+      "id": "LAYOUT_SPINEL_CITY_GYM",
+      "name": "SpinelCity_Gym_Layout",
+      "width": 40,
+      "height": 39,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_MossdeepGym",
+      "border_filepath": "data/layouts/SpinelCity_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/SpinelCity_Gym/map.bin"
     }
   ]
 }

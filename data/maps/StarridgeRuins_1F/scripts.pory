@@ -8,7 +8,7 @@ mapscripts StarridgeRuins_1F_MapScripts {
     }
 
     MAP_SCRIPT_ON_LOAD {
-         if(var(VAR_STARRIDGE_CITY_STATE) == 3) {
+         if(var(VAR_SPINEL_CITY_STATE) == 3) {
             setobjectxy(OBJ_RIVAL, 7, 8)
         }
      }
@@ -29,7 +29,7 @@ script StarridgeRuins_1F_EventScript_Grunts {
     msgbox(StarridgeRuins_1F_Text_Grunts_GruntA_1)
     closemessage
 
-    if(var(VAR_STARRIDGE_CITY_STATE) == 2) {
+    if(var(VAR_SPINEL_CITY_STATE) == 2) {
         playbgm(MUS_ENCOUNTER_AQUA, FALSE)
         applymovement(OBJ_GRUNT_B, StarridgeRuins_1F_Movement_GruntB_Exclamation)
         waitmovement(OBJ_GRUNT_B)
@@ -113,7 +113,7 @@ script StarridgeRuins_1F_EventScript_Grunts {
         setflag(FLAG_HIDE_STARRIDGE_RUINS_B1F_UPSILON_GRUNTS)
         removeobject(OBJ_GRUNT_A)
         removeobject(OBJ_GRUNT_B)
-        setvar(VAR_STARRIDGE_CITY_STATE, 3)
+        setvar(VAR_SPINEL_CITY_STATE, 3)
         fadescreen(FADE_FROM_BLACK)
     }
     else {

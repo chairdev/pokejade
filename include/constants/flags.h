@@ -161,7 +161,7 @@
 #define FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY   0x8B
 #define FLAG_RECEIVED_6_SODA_POP             0x8C
 #define FLAG_DEFEATED_SEASHORE_HOUSE         0x8D
-#define FLAG_RECEIVED_SODA_POP_STARRIDGE_GYM 0x8E
+#define FLAG_RECEIVED_SODA_POP_SPINEL_GYM    0x8E
 #define FLAG_DEFEATED_JASMINE_STARRIDGE      0x8F
 #define FLAG_RETURNED_DEVON_GOODS            0x90
 #define FLAG_CAUGHT_LUGIA                    0x91
@@ -1315,7 +1315,7 @@
 #define FLAG_UNUSED_0x4EF                                           0x4EF // Unused Flag
 
 #define FLAG_DEFEATED_DOLOMITE_GYM                                  0x4F0
-#define FLAG_DEFEATED_STARRIDGE_GYM                                   0x4F1
+#define FLAG_DEFEATED_SPINEL_GYM                                    0x4F1
 #define FLAG_DEFEATED_MAUVILLE_GYM                                  0x4F2
 #define FLAG_DEFEATED_LAVARIDGE_GYM                                 0x4F3
 #define FLAG_DEFEATED_PETALBURG_GYM                                 0x4F4

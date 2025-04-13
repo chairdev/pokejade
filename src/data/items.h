@@ -10883,19 +10883,19 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_BRICK_BREAK,
     },
 
-    [ITEM_TM_GRASS_KNOT] =
+    [ITEM_TM_BULLDOZE] =
     {
         .name = _("TM32"),
-        .price = 2000,
+        .price = 3000,
         .description = COMPOUND_STRING(
-            "The heavier the\n"
-            "target, the more\n"
-            "damage it inflicts."),
+            "The user stomps the\n"
+            "ground, hitting all\n"
+            "and lowering Speed."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_GRASS_KNOT,
+        .secondaryId = MOVE_BULLDOZE,
     },
 
     [ITEM_TM_REFLECT] =

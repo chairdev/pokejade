@@ -1,12 +1,12 @@
-mapscripts StarridgeCity_Gym_MapScripts {}
+mapscripts SpinelCity_Gym_MapScripts {}
 
 //Gym Leader
 
-script StarridgeCity_Gym_EventScript_Melody { //leader
-    trainerbattle_single(TRAINER_MELODY_1, StarridgeCity_Gym_Text_MelodyIntro, StarridgeCity_Gym_Text_MelodyDefeat, StarridgeCity_Gym_EventScript_MelodyDefeated, NO_MUSIC)
+script SpinelCity_Gym_EventScript_Melody { //leader
+    trainerbattle_single(TRAINER_MELODY_1, SpinelCity_Gym_Text_MelodyIntro, SpinelCity_Gym_Text_MelodyDefeat, SpinelCity_Gym_EventScript_MelodyDefeated, NO_MUSIC)
     if(flag(FLAG_RECEIVED_TM_DRAINING_KISS) == FALSE)
     {
-        goto(StarridgeCity_Gym_EventScript_GiveDrainingKiss)
+        goto(SpinelCity_Gym_EventScript_GiveDrainingKiss)
     }
 
     if(var(VAR_SPINEL_CITY_STATE) == 0)
@@ -15,74 +15,74 @@ script StarridgeCity_Gym_EventScript_Melody { //leader
     }
 
     speakername("Melody")
-    msgbox(StarridgeCity_Gym_Text_MelodyPostBattle, MSGBOX_AUTOCLOSE)
+    msgbox(SpinelCity_Gym_Text_MelodyPostBattle, MSGBOX_AUTOCLOSE)
     release
 }
 
-text StarridgeCity_Gym_Text_MelodyIntro {
-    format("Hi there! Melody's the new Gym Leader in Starridge City!\p"
+text SpinelCity_Gym_Text_MelodyIntro {
+    format("Hi there! Melody's the new Gym Leader in Spinel City!\p"
            "Melody only just moved here from Johto, so everything feels so... new and sparkly!\p"
            "Ms. Jasmine, Melody's role model, says to just 'be herself'...\nSo, here Melody is!\p"
            "Let's have a battle filled with sparkles and magic!\nFairy-style!")
 }
 
-text StarridgeCity_Gym_Text_MelodyDefeat {
+text SpinelCity_Gym_Text_MelodyDefeat {
     format("Wahhh! Melody... lost?\p"
            "Melody was so sure she was ready to be a Gym Leader!\p"
            "This is... so embarrassing!\p"
            "Melody feels like hiding under her covers for a week!\nSniff...")
 }
 
-text StarridgeCity_Gym_Text_MelodyDefeated {
+text SpinelCity_Gym_Text_MelodyDefeated {
     format("Sniff... Melody's sorry for crying.\p"
            "Melody wanted to be strong, but maybe she still has more to learn.\p"
            "You and your Pokémon taught Melody a lot today...\nThank you, {PLAYER}.\p"
            "You deserve this badge, and Melody hopes you'll accept it with a sprinkle of magic!")
 }
 
-text StarridgeCity_Gym_Text_MelodyPostBattle {
+text SpinelCity_Gym_Text_MelodyPostBattle {
     format("Thank you so, so much for battling with Melody, {PLAYER}!\p"
            "Melody learned so much from you and your Pokémon!\p"
            "Ms. Jasmine would say Melody tried her best, and Melody hopes she made her proud, too!\p"
            "Sparkles and cheers for you, {PLAYER}!")
 }
 
-script StarridgeCity_Gym_EventScript_MelodyDefeated {
+script SpinelCity_Gym_EventScript_MelodyDefeated {
     speakername("Melody")
-    msgbox(StarridgeCity_Gym_Text_MelodyDefeated)
+    msgbox(SpinelCity_Gym_Text_MelodyDefeated)
     playfanfare(MUS_OBTAIN_BADGE)
     closemessage
-    msgbox(StarridgeCity_Gym_Text_ReceivedGlintBadge)
+    msgbox(SpinelCity_Gym_Text_ReceivedGlintBadge)
     waitfanfare
     speakername("Melody")
-    msgbox(StarridgeCity_Gym_Text_GlintBadgeInfo)
+    msgbox(SpinelCity_Gym_Text_GlintBadgeInfo)
 
    	setflag(FLAG_DEFEATED_SPINEL_GYM)
     setflag(FLAG_BADGE02_GET)
 
-    goto(StarridgeCity_Gym_EventScript_GiveDrainingKiss)
+    goto(SpinelCity_Gym_EventScript_GiveDrainingKiss)
 
     call(Common_EventScript_SetGymTrainers)
     release
 }
 
-text StarridgeCity_Gym_Text_ReceivedGlintBadge {
+text SpinelCity_Gym_Text_ReceivedGlintBadge {
     format("You received the Glint Badge!")
 }
 
-text StarridgeCity_Gym_Text_GlintBadgeInfo {
+text SpinelCity_Gym_Text_GlintBadgeInfo {
     format("With two badges, Pokémon up to Level 35 will listen to you!\p"
            "Oh, and you can use the HM move Cut outside of battle, too!\p"
            "Oh, oh! Melody has a special gift as a thank-you! This TM!")
 }
 
-text StarridgeCity_Gym_Text_ExplainDrainingKiss {
+text SpinelCity_Gym_Text_ExplainDrainingKiss {
     format("This is the TM for Draining Kiss!\p"
            "It's a Fairy move that's super cute and heals you!\p"
            "Melody thinks it's perfect, and she hopes you like it too!")
 }
 
-script StarridgeCity_Gym_EventScript_GiveDrainingKiss {
+script SpinelCity_Gym_EventScript_GiveDrainingKiss {
     giveitem(ITEM_TM_DRAINING_KISS)
 
     if(var(VAR_RESULT) == FALSE)
@@ -92,24 +92,24 @@ script StarridgeCity_Gym_EventScript_GiveDrainingKiss {
 
     setflag(FLAG_RECEIVED_TM_DRAINING_KISS)
     speakername("Melody")
-    msgbox(StarridgeCity_Gym_Text_ExplainDrainingKiss)
+    msgbox(SpinelCity_Gym_Text_ExplainDrainingKiss)
     release
 }
 
 //Gym Guide
-script StarridgeCity_Gym_EventScript_GymGuide {
+script SpinelCity_Gym_EventScript_GymGuide {
     lock
     faceplayer
     if(flag(FLAG_DEFEATED_SPINEL_GYM))
     {
-        msgbox(StarridgeCity_Gym_Text_GymGuideYouWon)
+        msgbox(SpinelCity_Gym_Text_GymGuideYouWon)
     }
     else
     {
-        msgbox(StarridgeCity_Gym_Text_GymGuide)
+        msgbox(SpinelCity_Gym_Text_GymGuide)
         if(!flag(FLAG_RECEIVED_SODA_POP_SPINEL_GYM))
         {
-            msgbox(StarridgeCity_Gym_Text_GymGuideYouLookNervous)
+            msgbox(SpinelCity_Gym_Text_GymGuideYouLookNervous)
             giveitem(ITEM_SODA_POP)
             setflag(FLAG_RECEIVED_SODA_POP_SPINEL_GYM)
             
@@ -118,7 +118,7 @@ script StarridgeCity_Gym_EventScript_GymGuide {
     release
 }
 
-text StarridgeCity_Gym_Text_GymGuideYouWon {
+text SpinelCity_Gym_Text_GymGuideYouWon {
     format( "You won?\nI knew you could do it, champ!\p"
             "You sent Melody and her Pokémon crying! Literally!\p"
             "You're on your way to becoming a real champ!\p"
@@ -126,9 +126,9 @@ text StarridgeCity_Gym_Text_GymGuideYouWon {
             )
 }
 
-text StarridgeCity_Gym_Text_GymGuide {
+text SpinelCity_Gym_Text_GymGuide {
     format( "Yo! Champion-to-be!\nIt's me, Gyde!\p"
-            "I'm here to guide you through the Starridge City Gym!\p"
+            "I'm here to guide you through the Spinel City Gym!\p"
             "This Gym specializes in Fairy-type Pokémon!\p"
             "Fairy-types are weak to Poison and Steel-type moves, so keep that in mind!\p"
             "Bringing along a Fire-type Pokémon wouldn't hurt either since they resist Fairy-type moves!\p"
@@ -139,7 +139,7 @@ text StarridgeCity_Gym_Text_GymGuide {
             )
 }
 
-text StarridgeCity_Gym_Text_GymGuideYouLookNervous {
+text SpinelCity_Gym_Text_GymGuideYouLookNervous {
     format("You look nervous!\nDon't worry, I got your back!\p"
             "Take this Soda Pop to calm your nerves!"
             )
@@ -148,83 +148,82 @@ text StarridgeCity_Gym_Text_GymGuideYouLookNervous {
 
 
 //Hints
-script StarridgeCity_Gym_Sign_Hint1 {
+script SpinelCity_Gym_Sign_Hint1 {
     lock
-    msgbox(format("Fairies love the morning light.\nGo where it's bright."))
+    msgbox(format("Fairies love the morning light.\nThe brighter path will guide you."))
     release
 }
 
-script StarridgeCity_Gym_Sign_Hint2 {
+script SpinelCity_Gym_Sign_Hint2 {
     lock
-    msgbox(format("At dusk, fairies dance in the twilight.\nChoose the soft light."))
+    msgbox(format("At dusk, fairies dance in the twilight.\nThe softer glow is their choice."))
     release
 }
 
-script StarridgeCity_Gym_Sign_Hint3 {
+script SpinelCity_Gym_Sign_Hint3 {
     lock
-    msgbox(format("Fairies follow the golden rays.\nPick the sunny way."))
+    msgbox(format("Fairies follow the golden rays.\nThe sunlit way is the right way."))
     release
 }
 
-script StarridgeCity_Gym_Sign_Hint4 {
+script SpinelCity_Gym_Sign_Hint4 {
     lock
-    msgbox(format("Fairies love the moonlight.\nGo where it's dark."))
+    msgbox(format("Fairies love the moonlight.\nThe darker path is where they wander."))
     release
 }
 
 //Gym Trainers
-script StarridgeCity_Gym_EventScript_LassBetty {
-    trainerbattle_single(TRAINER_BETTY, StarridgeCity_Gym_Text_BettyIntro, StarridgeCity_Gym_Text_BettyDefeat)
-    msgbox(StarridgeCity_Gym_Text_BettyPostBattle, MSGBOX_AUTOCLOSE)
+script SpinelCity_Gym_EventScript_LassBetty {
+    trainerbattle_single(TRAINER_BETTY, SpinelCity_Gym_Text_BettyIntro, SpinelCity_Gym_Text_BettyDefeat)
+    msgbox(SpinelCity_Gym_Text_BettyPostBattle, MSGBOX_AUTOCLOSE)
 }
 
-text StarridgeCity_Gym_Text_BettyIntro {
+text SpinelCity_Gym_Text_BettyIntro {
     format( "Oops! Looks like you took a wrong turn!"
             "Ready for a dazzling battle?"
             )
 }
 
-text StarridgeCity_Gym_Text_BettyDefeat {
+text SpinelCity_Gym_Text_BettyDefeat {
     format("Wow, you've got some dazzling moves!")
 }
 
-text StarridgeCity_Gym_Text_BettyPostBattle {
+text SpinelCity_Gym_Text_BettyPostBattle {
     format("You didn't take the right path, but hey, battling me was totally worth it, right?")
 }
 
-script StarridgeCity_Gym_EventScript_BeautyHelen {
-    trainerbattle_single(TRAINER_HELEN, StarridgeCity_Gym_Text_HelenIntro, StarridgeCity_Gym_Text_HelenDefeat)
-    msgbox(StarridgeCity_Gym_Text_HelenPostBattle, MSGBOX_AUTOCLOSE)
+script SpinelCity_Gym_EventScript_BeautyHelen {
+    trainerbattle_single(TRAINER_HELEN, SpinelCity_Gym_Text_HelenIntro, SpinelCity_Gym_Text_HelenDefeat)
+    msgbox(SpinelCity_Gym_Text_HelenPostBattle, MSGBOX_AUTOCLOSE)
 }
 
-text StarridgeCity_Gym_Text_HelenIntro {
+text SpinelCity_Gym_Text_HelenIntro {
     format("Did you lose your way, kid?\nDon't worry, I'll guide you to the right path!")
 }
 
-text StarridgeCity_Gym_Text_HelenDefeat {
+text SpinelCity_Gym_Text_HelenDefeat {
     format( "You sure have a knack for this!\p"
             "Oh, I meant battling, not your sense of direction!"
             )
 }
 
-text StarridgeCity_Gym_Text_HelenPostBattle {
+text SpinelCity_Gym_Text_HelenPostBattle {
     format("You're wrong, but you're getting closer to the end!")
 }
 
-script StarridgeCity_Gym_EventScript_AceTrainerFiona {
-    trainerbattle_single(TRAINER_FIONA, StarridgeCity_Gym_Text_FionaIntro, StarridgeCity_Gym_Text_FionaDefeat)
-    msgbox(StarridgeCity_Gym_Text_FionaPostBattle, MSGBOX_AUTOCLOSE)
+script SpinelCity_Gym_EventScript_AceTrainerFiona {
+    trainerbattle_single(TRAINER_FIONA, SpinelCity_Gym_Text_FionaIntro, SpinelCity_Gym_Text_FionaDefeat)
+    msgbox(SpinelCity_Gym_Text_FionaPostBattle, MSGBOX_AUTOCLOSE)
 }
 
-text StarridgeCity_Gym_Text_FionaIntro {
-    format("Small hallways like these make me panic!\p"
-            "But I'm determined to win this battle!")
+text SpinelCity_Gym_Text_FionaIntro {
+    format("I've been wandering for what feels like forever... trying to find my way.")
 }
 
-text StarridgeCity_Gym_Text_FionaDefeat {
-    format("If it makes you feel better, I'm lost too!")
+text SpinelCity_Gym_Text_FionaDefeat {
+    format("You're strong...\nMaybe you'll find your way out of here.")
 }
 
-text StarridgeCity_Gym_Text_FionaPostBattle {
-    format("The Gym Leader is so close, I can feel it!")
+text SpinelCity_Gym_Text_FionaPostBattle {
+    format("The Gym Leader is just ahead.\nBut be careful...")
 }

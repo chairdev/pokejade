@@ -32,7 +32,7 @@ SpinelCity_PokeMart_EventScript_SpecialClerk::
 # 18 "data/maps/SpinelCity_PokeMart/scripts.pory"
 	msgbox SpinelCity_PokeMart_EventScript_SpecialClerk_Text_0
 # 19 "data/maps/SpinelCity_PokeMart/scripts.pory"
-	pokemart DolomiteCity_Mart
+	pokemart SpinelCity_Mart
 # 20 "data/maps/SpinelCity_PokeMart/scripts.pory"
 	msgbox gText_PleaseComeAgain
 # 21 "data/maps/SpinelCity_PokeMart/scripts.pory"
@@ -40,6 +40,17 @@ SpinelCity_PokeMart_EventScript_SpecialClerk::
 	return
 
 
+	.align 2
+# 24 "data/maps/SpinelCity_PokeMart/scripts.pory"
+SpinelCity_Mart:
+# 26 "data/maps/SpinelCity_PokeMart/scripts.pory"
+	.2byte ITEM_TM_SAFEGUARD
+# 30 "data/maps/SpinelCity_PokeMart/scripts.pory"
+	.2byte ITEM_TM_RETURN
+# 32 "data/maps/SpinelCity_PokeMart/scripts.pory"
+	.2byte ITEM_TM_BULLDOZE
+	.2byte ITEM_NONE
+
 SpinelCity_PokeMart_EventScript_SpecialClerk_Text_0:
 # 18 "data/maps/SpinelCity_PokeMart/scripts.pory"
-	.string "wip this is just dolomite's special clerk$"
+	.string "wip this the tms are gone$"
