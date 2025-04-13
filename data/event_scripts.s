@@ -1245,3 +1245,13 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route303/scripts.inc"
 
 	.include "data/maps/SpinelCity/scripts.inc"
+
+	.include "data/maps/ZirconTown_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/SpinelCity_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/DolomiteCity_PokeMart/scripts.inc"
+
+	.include "data/maps/ZirconTown_PokeMart/scripts.inc"
+
+	.include "data/maps/SpinelCity_PokeMart/scripts.inc"

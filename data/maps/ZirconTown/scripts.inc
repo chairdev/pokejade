@@ -234,17 +234,17 @@ ZirconTown_Trigger_AldenSpeech_31:
 	goto ZirconTown_Trigger_AldenSpeech_30
 
 
-# 285 "data/maps/ZirconTown/scripts.pory"
+# 288 "data/maps/ZirconTown/scripts.pory"
 ZirconTown_Movement_AldenLeave:
-# 286 "data/maps/ZirconTown/scripts.pory"
+# 289 "data/maps/ZirconTown/scripts.pory"
 	walk_left
-# 287 "data/maps/ZirconTown/scripts.pory"
+# 290 "data/maps/ZirconTown/scripts.pory"
 	walk_up
-# 287 "data/maps/ZirconTown/scripts.pory"
+# 290 "data/maps/ZirconTown/scripts.pory"
 	walk_up
-# 287 "data/maps/ZirconTown/scripts.pory"
+# 290 "data/maps/ZirconTown/scripts.pory"
 	walk_up
-# 287 "data/maps/ZirconTown/scripts.pory"
+# 290 "data/maps/ZirconTown/scripts.pory"
 	walk_up
 	step_end
 
@@ -460,12 +460,17 @@ ZirconTown_Text_AldenSpeech_Caden_5::
 	.string "focus on--Gym battles, catching\l"
 	.string "Pokémon, y'know, Trainer things.\p"
 	.string "The next Gym is in Spinel City, right\n"
-	.string "through the Kismet Forest. We should\l"
-	.string "head there next!\p"
-	.string "See you later, {PLAYER}!$"
+	.string "through the Kismet Forest.\p"
+	.string "It's crawling with bug-type Pokémon, so\n"
+	.string "make sure to stock up on berries at the\l"
+	.string "Berry Shop before you go!\p"
+	.string "Wouldn't want to get caught off guard,\n"
+	.string "right?\p"
+	.string "Anyway, I'll see you later, {PLAYER}!\n"
+	.string "Good luck out there!$"
 
 ZirconTown_Text_AldenSpeech_Holly_5::
-# 278 "data/maps/ZirconTown/scripts.pory"
+# 280 "data/maps/ZirconTown/scripts.pory"
 	.string "That was... a lot to take in.\n"
 	.string "Something about the way he talked gave\l"
 	.string "me a bad feeling\p"
@@ -475,5 +480,8 @@ ZirconTown_Text_AldenSpeech_Holly_5::
 	.string "Oh right, the next Gym is in Spinel City.\n"
 	.string "To get there, we have to go through the\l"
 	.string "Kismet Forest.\p"
+	.string "The forest is full of bug-type Pokémon,\n"
+	.string "so you should buy some berries at the\l"
+	.string "Berry Shop before you go.\p"
 	.string "Let's head there next, okay?\n"
 	.string "I'll see you later, {PLAYER}!$"

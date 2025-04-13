@@ -271,14 +271,17 @@ text ZirconTown_Text_AldenSpeech_Alden_10 {
 text ZirconTown_Text_AldenSpeech_Caden_5 {
     format("Okay, tell me that guy wasn't kinda weird.\p"
             "Eh, whatever. We've got real stuff to focus on--Gym battles, catching Pokémon, y'know, Trainer things.\p"
-            "The next Gym is in Spinel City, right through the Kismet Forest. We should head there next!\p"
-            "See you later, {PLAYER}!")
+            "The next Gym is in Spinel City, right through the Kismet Forest.\p"
+            "It's crawling with bug-type Pokémon, so make sure to stock up on berries at the Berry Shop before you go!\p"
+            "Wouldn't want to get caught off guard, right?\p"
+            "Anyway, I'll see you later, {PLAYER}!\nGood luck out there!")
 }
 
 text ZirconTown_Text_AldenSpeech_Holly_5 {
     format("That was... a lot to take in.\nSomething about the way he talked gave me a bad feeling\p"
             "Still... I think we should remember what he said.\nJust in case.\p"
             "Oh right, the next Gym is in Spinel City. To get there, we have to go through the Kismet Forest.\p"
+            "The forest is full of bug-type Pokémon, so you should buy some berries at the Berry Shop before you go.\p"
             "Let's head there next, okay?\nI'll see you later, {PLAYER}!")
 }
 

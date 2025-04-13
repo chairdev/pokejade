@@ -1,0 +1,32 @@
+mapscripts SpinelCity_PokeMart_MapScripts {}
+
+script SpinelCity_PokeMart_EventScript_Clerk {
+    lock
+	faceplayer
+	message(gText_HowMayIServeYou)
+    waitmessage
+    pokemart(0)
+    msgbox(gText_PleaseComeAgain)
+    release
+}
+
+script SpinelCity_PokeMart_EventScript_SpecialClerk {
+    lock
+	faceplayer
+	message(gText_HowMayIServeYou)
+    waitmessage
+    msgbox(format("wip this is just dolomite's special clerk"))
+    pokemart(SpinelCity_Mart)
+    msgbox(gText_PleaseComeAgain)
+    release
+}
+
+mart SpinelCity_Mart {
+    //ITEM_TM_ROAR
+    ITEM_TM_SAFEGUARD
+    //ITEM_TM_ROUND
+    //ITEM_TM_POWER_UP_PUNCH
+    ITEM_TM_SNARL
+    ITEM_TM_RETURN
+    ITEM_TM_ATTRACT
+}

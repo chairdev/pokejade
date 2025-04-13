@@ -74,6 +74,20 @@
       "elevation": 0,
       "dest_map": "MAP_KISMET_FOREST",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 5,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_ZIRCON_TOWN_POKEMON_CENTER_1F",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 13,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_ZIRCON_TOWN_POKE_MART",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

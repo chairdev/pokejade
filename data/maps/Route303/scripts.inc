@@ -103,15 +103,15 @@ Route303_EventScript_IntriguedGuy::
 	faceplayer
 # 111 "data/maps/Route303/scripts.pory"
 	msgbox Route303_EventScript_IntriguedGuy_Text_0
-# 116 "data/maps/Route303/scripts.pory"
+# 118 "data/maps/Route303/scripts.pory"
 	release
 	return
 
 
 Route303_EventScript_Susan::
-# 121 "data/maps/Route303/scripts.pory"
+# 123 "data/maps/Route303/scripts.pory"
 	trainerbattle_single TRAINER_SUSAN, Route303_Text_SusanIntro, Route303_Text_SusanDefeat
-# 122 "data/maps/Route303/scripts.pory"
+# 124 "data/maps/Route303/scripts.pory"
 	msgbox Route303_Text_SusanPostBattle, MSGBOX_AUTOCLOSE
 	return
 
@@ -150,18 +150,18 @@ Route303_MapScript_SeeJasmine_Text_1:
 
 Route303_EventScript_IntriguedGuy_Text_0:
 # 111 "data/maps/Route303/scripts.pory"
-	.string "nHave you noticed something about the\n"
+	.string "Have you noticed something about the\n"
 	.string "Pokémon around here?\p"
 	.string "In this area, you'll see a lot of Pidgey\n"
-	.string "flying around.\n"
-	.string "They're pretty common in this part of\l"
+	.string "flying around.\p"
+	.string "They're pretty common in this part of\n"
 	.string "the region.\p"
 	.string "But if you head over to Dolomite City,\n"
 	.string "you'll start seeing a lot of Rookidee\l"
 	.string "instead.\p"
 	.string "Different areas of Avaro have their own\n"
-	.string "unique Pokémon populations.\n"
-	.string "It's fascinating, isn't it?\p"
+	.string "unique Pokémon populations.\p"
+	.string "It's pretty cool, right?\p"
 	.string "You should explore as much as you can\n"
 	.string "to see all the different Pokémon out\l"
 	.string "there!$"
@@ -220,16 +220,16 @@ Route303_Text_Jasmine_4::
 	.string "Take care... and thank you for listening.$"
 
 Route303_Text_SusanIntro::
-# 125 "data/maps/Route303/scripts.pory"
+# 127 "data/maps/Route303/scripts.pory"
 	.string "It's a beautiful day for a picnic!\n"
 	.string "It's also a beautiful day for a battle!$"
 
 Route303_Text_SusanDefeat::
-# 129 "data/maps/Route303/scripts.pory"
+# 131 "data/maps/Route303/scripts.pory"
 	.string "...I think I'll stick to picnics from now\n"
 	.string "on.$"
 
 Route303_Text_SusanPostBattle::
-# 133 "data/maps/Route303/scripts.pory"
+# 135 "data/maps/Route303/scripts.pory"
 	.string "You might have beaten me, but I still\n"
 	.string "have a picnic to enjoy!$"

@@ -108,10 +108,12 @@ script Route303_EventScript_IntriguedGuy {
     lock
     faceplayer
 
-    msgbox(format("nHave you noticed something about the Pokémon around here?\p"
-                  "In this area, you'll see a lot of Pidgey flying around.\nThey're pretty common in this part of the region.\p"
+    msgbox(format("Have you noticed something about the Pokémon around here?\p"
+                  "In this area, you'll see a lot of Pidgey flying around.\p"
+                  "They're pretty common in this part of the region.\p"
                   "But if you head over to Dolomite City, you'll start seeing a lot of Rookidee instead.\p"
-                  "Different areas of Avaro have their own unique Pokémon populations.\nIt's fascinating, isn't it?\p"
+                  "Different areas of Avaro have their own unique Pokémon populations.\p"
+                  "It's pretty cool, right?\p"
                   "You should explore as much as you can to see all the different Pokémon out there!"))
     release
 }

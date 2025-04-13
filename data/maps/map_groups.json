@@ -43,7 +43,9 @@
     "gMapGroup_AvaroDungeons",
     "gMapGroup_IndoorArgil",
     "gMapGroup_IndoorRoute301",
-    "gMapGroup_IndoorDolomite"
+    "gMapGroup_IndoorDolomite",
+    "gMapGroup_IndoorZircon",
+    "gMapGroup_IndoorSpinel"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -694,6 +696,15 @@
   "gMapGroup_IndoorDolomite": [
     "DolomiteCity_TrainerSchool",
     "DolomiteCity_PokemonCenter_1F",
-    "DolomiteCity_Gym"
+    "DolomiteCity_Gym",
+    "DolomiteCity_PokeMart"
+  ],
+  "gMapGroup_IndoorZircon": [
+    "ZirconTown_PokemonCenter_1F",
+    "ZirconTown_PokeMart"
+  ],
+  "gMapGroup_IndoorSpinel": [
+    "SpinelCity_PokemonCenter_1F",
+    "SpinelCity_PokeMart"
   ]
 }

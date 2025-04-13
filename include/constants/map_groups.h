@@ -655,7 +655,16 @@
 #define MAP_DOLOMITE_CITY_TRAINER_SCHOOL    (0 | (43 << 8))
 #define MAP_DOLOMITE_CITY_POKEMON_CENTER_1F (1 | (43 << 8))
 #define MAP_DOLOMITE_CITY_GYM               (2 | (43 << 8))
+#define MAP_DOLOMITE_CITY_POKE_MART         (3 | (43 << 8))
 
-#define MAP_GROUPS_COUNT 44
+// gMapGroup_IndoorZircon
+#define MAP_ZIRCON_TOWN_POKEMON_CENTER_1F (0 | (44 << 8))
+#define MAP_ZIRCON_TOWN_POKE_MART         (1 | (44 << 8))
+
+// gMapGroup_IndoorSpinel
+#define MAP_SPINEL_CITY_POKEMON_CENTER_1F (0 | (45 << 8))
+#define MAP_SPINEL_CITY_POKE_MART         (1 | (45 << 8))
+
+#define MAP_GROUPS_COUNT 46
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H
