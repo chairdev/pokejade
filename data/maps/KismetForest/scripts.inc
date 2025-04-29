@@ -102,7 +102,7 @@ KismetForest_Trigger_Jasmine2::
 
 KismetForest_Jasmine::
 # 78 "data/maps/KismetForest/scripts.pory"
-	clearflag FLAG_HIDE_STARRIDGE_CITY_RIVAL
+	clearflag FLAG_HIDE_SPINEL_GYM_MELODY
 # 80 "data/maps/KismetForest/scripts.pory"
 	speakername KismetForest_Jasmine_Text_0
 # 81 "data/maps/KismetForest/scripts.pory"

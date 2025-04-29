@@ -82,7 +82,7 @@ StarridgeCity_EventScript_Rival_10:
 # 55 "data/maps/StarridgeCity/scripts.pory"
 	removeobject 1
 # 56 "data/maps/StarridgeCity/scripts.pory"
-	setflag FLAG_HIDE_STARRIDGE_CITY_RIVAL
+	setflag FLAG_HIDE_SPINEL_GYM_MELODY
 # 57 "data/maps/StarridgeCity/scripts.pory"
 	fadescreen FADE_FROM_BLACK
 	goto StarridgeCity_EventScript_Rival_1
@@ -108,7 +108,7 @@ StarridgeCity_EventScript_Rival_15:
 # 89 "data/maps/StarridgeCity/scripts.pory"
 	removeobject 1
 # 90 "data/maps/StarridgeCity/scripts.pory"
-	setflag FLAG_HIDE_STARRIDGE_CITY_RIVAL
+	setflag FLAG_HIDE_SPINEL_GYM_MELODY
 # 91 "data/maps/StarridgeCity/scripts.pory"
 	fadescreen FADE_FROM_BLACK
 	goto StarridgeCity_EventScript_Rival_1

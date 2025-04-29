@@ -75,7 +75,7 @@ script KismetForest_Trigger_Jasmine2 {
 }
 
 script KismetForest_Jasmine {
-    clearflag(FLAG_HIDE_STARRIDGE_CITY_RIVAL)
+    clearflag(FLAG_HIDE_SPINEL_GYM_MELODY)
     
     speakername("???")
     msgbox("Oh... hello.\nI'm... I'm Jasmine.")

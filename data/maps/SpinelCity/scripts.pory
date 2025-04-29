@@ -1,1 +1,65 @@
-mapscripts SpinelCity_MapScripts {}
+//VAR_SPINEL_CITY_STATE
+//0: Haven't beaten Melody
+//1: Jasmine pep talk
+//2:
+mapscripts SpinelCity_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_SPINEL_CITY_STATE, 1: SpinelCity_JasmineReassurance
+    ]
+}
+
+script SpinelCity_JasmineReassurance {
+    lockall
+
+    playse(SE_PIN)
+    applymovement(OBJ_JASMINE, Common_Movement_ExclamationMark)
+    waitse
+    waitmovement(0)
+    delay(32)
+    applymovement(OBJ_JASMINE, Common_Movement_WalkInPlaceFasterRight)
+    
+    speakername("Jasmine")
+    msgbox(SpinelCity_Text_JasmineReassurance1, MSGBOX_YESNO)
+
+    while(var(VAR_RESULT) == NO)
+    {
+        msgbox(SpinelCity_Text_JasmineForceYes, MSGBOX_YESNO)
+    }
+
+    msgbox(SpinelCity_Text_JasmineSaysThankYou)
+
+    releaseall
+}
+
+text SpinelCity_Text_JasmineReassurance1 {
+    format("Oh... {Player}, there you are.\p"
+           "Melody just ran off crying... so, I guess... you won?\p"
+           "She tries so hard, and when she loses... it really hurts her.\p"
+           "I know what that feels like... I used to struggle with it too.\p"
+           "She usually goes to the quarry when she's upset. It's quiet there.\p"
+           "Would... would you go check on her?")
+}
+
+text SpinelCity_Text_JasmineSaysThankYou {
+    format("Thank you...\p"
+           "She may act cheerful, but she's sensitive underneath.\p"
+           "If anyone can reach her right now... it's probably you.")
+}
+
+text SpinelCity_Text_JasmineForceYes {
+    format("I... I really think you should.\p"
+           "She looks up to you... more than she says.\p"
+           "Please, {Player}...\p"
+           "She needs someone right now.")
+}
+
+script SpinelCity_Jasmine {
+    lock
+    faceplayer
+
+    speakername("Jasmine")
+    msgbox(SpinelCity_Text_JasmineSaysThankYou)
+    
+    release
+}
+

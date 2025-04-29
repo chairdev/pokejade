@@ -53,7 +53,7 @@ script StarridgeCity_EventScript_Rival {
 
             fadescreen(FADE_TO_BLACK)
             removeobject(OBJ_RIVAL)
-            setflag(FLAG_HIDE_STARRIDGE_CITY_RIVAL)
+            setflag(FLAG_HIDE_SPINEL_GYM_MELODY)
             fadescreen(FADE_FROM_BLACK)
             
         }
@@ -87,7 +87,7 @@ script StarridgeCity_EventScript_Rival {
 
             fadescreen(FADE_TO_BLACK)
             removeobject(OBJ_RIVAL)
-            setflag(FLAG_HIDE_STARRIDGE_CITY_RIVAL)
+            setflag(FLAG_HIDE_SPINEL_GYM_MELODY)
             fadescreen(FADE_FROM_BLACK)
         }
     }

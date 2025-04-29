@@ -58,7 +58,7 @@ Route104_EventScript_RivalTrigger::
 	waitmovement 0
 	delay 10
 	addobject LOCALID_RIVAL
-	clearflag FLAG_HIDE_STARRIDGE_CITY_RIVAL
+	clearflag FLAG_HIDE_SPINEL_GYM_MELODY
 	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_PlayerBackUp
 	waitmovement 0
 	applymovement LOCALID_RIVAL, Route104_Movement_RivalExitBrineysCottage

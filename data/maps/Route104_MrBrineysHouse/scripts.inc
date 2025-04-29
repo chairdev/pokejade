@@ -81,7 +81,7 @@ Route104_MrBrineysHouse_EventScript_SailToDewford::
 	setvar VAR_RUSTBORO_CITY_STATE, 8
 	setvar VAR_ROUTE104_STATE, 2
 	setflag FLAG_HIDE_RUSTBORO_CITY_RIVAL
-	setflag FLAG_HIDE_STARRIDGE_CITY_RIVAL
+	setflag FLAG_HIDE_SPINEL_GYM_MELODY
 	warp MAP_ROUTE104, 13, 51
 	waitstate
 	releaseall

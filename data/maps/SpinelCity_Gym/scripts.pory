@@ -29,13 +29,15 @@ text SpinelCity_Gym_Text_MelodyIntro {
 }
 
 text SpinelCity_Gym_Text_MelodyDefeat {
-    format( "Waaaahh--! Melody really thought she had that one!\p"
-            "But... Melody promised she wouldn't cry every time she lost...\p")
+    format( "M-Melody... lost...?\p"
+            "But... Melody tried so hard...!\nSniff\p"
+            "This wasn't supposed to happen... not like this..."
+            )
 }
 
 text SpinelCity_Gym_Text_MelodyDefeated {
-    format( "Sniff! You were amazing!\nYou really sparkled!"
-            "This is for you—The Harmony Badge~!")
+    format( "Take... my Gym Badge...\nYou earned it.\p"
+            "You really did. You're... amazing...")
 }
 
 text SpinelCity_Gym_Text_MelodyPostBattle {
@@ -60,7 +62,20 @@ script SpinelCity_Gym_EventScript_MelodyDefeated {
 
     goto(SpinelCity_Gym_EventScript_GiveDrainingKiss)
 
+    msgbox(format(
+        "Melody... tried her best... but she still wasn't good enough..."
+        "Sorry, but... I think I need some time. To think.\p"
+        "You know... to figure out whether or not I'm cut out for this whole Gym Leader thing.\p"
+        "I'm sorry, but the Gym's gonna be closed for now..."))
+    
+    fadescreen(FADE_TO_BLACK)
+    setflag(FLAG_HIDE_SPINEL_GYM_MELODY)
+    clearflag(FLAG_HIDE_SPINEL_CITY_JASMINE)
+    removeobject(OBJ_MELODY)
+
+
     call(Common_EventScript_SetGymTrainers)
+
     release
 }
 
@@ -69,15 +84,16 @@ text SpinelCity_Gym_Text_ReceivedGlintBadge {
 }
 
 text SpinelCity_Gym_Text_GlintBadgeInfo {
-    format("With two badges, Pokémon up to Level 35 will listen to you!\p"
-           "Oh, and you can use the HM move Cut outside of battle, too!\p"
-           "Oh, oh! Melody has a special gift as a thank-you! This TM!")
+    format("With two badges, Pokémon up to Level 35 will listen to you...\p"
+           "You can also use the HM move Cut outside of battle now...\p"
+           "A-and... Melody has a little gift for you—just to say thank you!")
 }
 
+
 text SpinelCity_Gym_Text_ExplainDrainingKiss {
-    format("This is the TM for Draining Kiss!\p"
-           "It's a Fairy move that's super cute and heals you!\p"
-           "Melody thinks it's perfect, and she hopes you like it too!")
+    format("It's the TM for Draining Kiss...\p"
+           "It's a Fairy move... It's r-really cute, and it even heals you a bit...\p"
+           "Melody thinks it's perfect for you... s-so please like it, okay?")
 }
 
 script SpinelCity_Gym_EventScript_GiveDrainingKiss {
