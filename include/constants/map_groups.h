@@ -70,9 +70,6 @@
 #define MAP_ROUTE503            (61 | (0 << 8))
 #define MAP_STEMFORD_TOWN       (62 | (0 << 8))
 #define MAP_STARRIDGE_CITY      (63 | (0 << 8))
-#define MAP_ROUTE305            (64 | (0 << 8))
-#define MAP_ROUTE306            (65 | (0 << 8))
-#define MAP_ROUTE304            (66 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -637,6 +634,10 @@
 #define MAP_ZIRCON_TOWN   (4 | (39 << 8))
 #define MAP_ROUTE303      (5 | (39 << 8))
 #define MAP_SPINEL_CITY   (6 | (39 << 8))
+#define MAP_ROUTE304      (7 | (39 << 8))
+#define MAP_ROUTE305      (8 | (39 << 8))
+#define MAP_LARIMAR_TOWN  (9 | (39 << 8))
+#define MAP_ROUTE306      (10 | (39 << 8))
 
 // gMapGroup_AvaroDungeons
 #define MAP_DOLOMITE_GROTTO (0 | (40 << 8))

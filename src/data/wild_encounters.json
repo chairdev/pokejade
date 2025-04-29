@@ -12433,64 +12433,64 @@
             "encounter_rate": 20,
             "mons": [
               {
+                "min_level": 15,
+                "max_level": 18,
+                "species": "SPECIES_PIDGEY"
+              },
+              {
+                "min_level": 16,
+                "max_level": 18,
+                "species": "SPECIES_CUTIEFLY"
+              },
+              {
+                "min_level": 16,
+                "max_level": 18,
+                "species": "SPECIES_PIDGEY"
+              },
+              {
+                "min_level": 16,
+                "max_level": 18,
+                "species": "SPECIES_PIDGEY"
+              },
+              {
+                "min_level": 16,
+                "max_level": 18,
+                "species": "SPECIES_MANKEY"
+              },
+              {
+                "min_level": 16,
+                "max_level": 18,
+                "species": "SPECIES_MANKEY"
+              },
+              {
+                "min_level": 16,
+                "max_level": 18,
+                "species": "SPECIES_ROCKRUFF"
+              },
+              {
+                "min_level": 16,
+                "max_level": 18,
+                "species": "SPECIES_ROCKRUFF_OWN_TEMPO"
+              },
+              {
+                "min_level": 16,
+                "max_level": 18,
+                "species": "SPECIES_CUTIEFLY"
+              },
+              {
                 "min_level": 16,
                 "max_level": 19,
                 "species": "SPECIES_NIDORINO"
               },
               {
                 "min_level": 16,
-                "max_level": 19,
-                "species": "SPECIES_SLOWPOKE"
-              },
-              {
-                "min_level": 16,
-                "max_level": 19,
+                "max_level": 18,
                 "species": "SPECIES_NIDORINO"
               },
               {
                 "min_level": 16,
-                "max_level": 19,
-                "species": "SPECIES_SLOWPOKE"
-              },
-              {
-                "min_level": 16,
-                "max_level": 19,
-                "species": "SPECIES_SHELLOS"
-              },
-              {
-                "min_level": 16,
-                "max_level": 19,
-                "species": "SPECIES_SHELLOS"
-              },
-              {
-                "min_level": 16,
-                "max_level": 19,
-                "species": "SPECIES_BINACLE"
-              },
-              {
-                "min_level": 16,
-                "max_level": 19,
-                "species": "SPECIES_BINACLE"
-              },
-              {
-                "min_level": 16,
-                "max_level": 19,
-                "species": "SPECIES_BINACLE"
-              },
-              {
-                "min_level": 16,
-                "max_level": 19,
-                "species": "SPECIES_INKAY"
-              },
-              {
-                "min_level": 16,
-                "max_level": 19,
-                "species": "SPECIES_INKAY"
-              },
-              {
-                "min_level": 16,
-                "max_level": 19,
-                "species": "SPECIES_INKAY"
+                "max_level": 18,
+                "species": "SPECIES_NIDORINO"
               }
             ]
           },
@@ -13269,27 +13269,27 @@
               {
                 "min_level": 14,
                 "max_level": 17,
-                "species": "SPECIES_RIBOMBEE"
+                "species": "SPECIES_CUTIEFLY"
               },
               {
                 "min_level": 14,
                 "max_level": 17,
-                "species": "SPECIES_RIBOMBEE"
+                "species": "SPECIES_CUTIEFLY"
               },
               {
                 "min_level": 14,
                 "max_level": 17,
-                "species": "SPECIES_RIBOMBEE"
+                "species": "SPECIES_CUTIEFLY"
               },
               {
                 "min_level": 14,
                 "max_level": 17,
-                "species": "SPECIES_GULPIN"
+                "species": "SPECIES_ODDISH"
               },
               {
                 "min_level": 14,
                 "max_level": 17,
-                "species": "SPECIES_GULPIN"
+                "species": "SPECIES_ODDISH"
               },
               {
                 "min_level": 14,

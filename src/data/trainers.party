@@ -4839,7 +4839,7 @@ AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn / A
 
 Snubbull  
 Ability: Intimidate
-Level: 16  
+Level: 17  
 Brave Nature  
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe   
 - Lick  
@@ -4848,7 +4848,7 @@ IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 Tinkatink  
 Ability: Mold Breaker  
-Level: 16
+Level: 17
 Jolly Nature
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe    
 - Astonish  
@@ -4857,7 +4857,7 @@ IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 Clefable @ Kebia Berry  
 Ability: Cute Charm  
-Level: 17   
+Level: 18   
 Bold Nature
 IVs: 25 HP / 25 Atk / 25 Def / 26 SpA / 26 SpD / 25 Spe
 - Hidden Power  
@@ -11243,16 +11243,8 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Ralts
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Nidoran_F
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Nidoran_M
-Level: 14
+Nidorina
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ANDREA ===
@@ -11489,12 +11481,12 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Dwebble
-Level: 8
+Roggenrola
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Nacli
-Level: 9
+Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DENNIS_1 ===
@@ -12032,12 +12024,12 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Tranquill
-Level: 23
+Bunnelby
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Litleo
-Level: 22
+Marill
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ASHLEY ===

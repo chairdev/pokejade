@@ -4665,9 +4665,9 @@
       "id": "LAYOUT_ROUTE304",
       "name": "Route304_Layout",
       "width": 40,
-      "height": 60,
+      "height": 30,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Mauville",
+      "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/Route304/border.bin",
       "blockdata_filepath": "data/layouts/Route304/map.bin"
     },
@@ -4920,6 +4920,16 @@
       "secondary_tileset": "gTileset_MossdeepGym",
       "border_filepath": "data/layouts/SpinelCity_Gym/border.bin",
       "blockdata_filepath": "data/layouts/SpinelCity_Gym/map.bin"
+    },
+    {
+      "id": "LAYOUT_LARIMAR_TOWN",
+      "name": "LarimarTown_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/LarimarTown/border.bin",
+      "blockdata_filepath": "data/layouts/LarimarTown/map.bin"
     }
   ]
 }

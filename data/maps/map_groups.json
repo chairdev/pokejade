@@ -111,10 +111,7 @@
     "Route502",
     "Route503",
     "StemfordTown",
-    "StarridgeCity",
-    "Route305",
-    "Route306",
-    "Route304"
+    "StarridgeCity"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -678,7 +675,11 @@
     "Route302",
     "ZirconTown",
     "Route303",
-    "SpinelCity"
+    "SpinelCity",
+    "Route304",
+    "Route305",
+    "LarimarTown",
+    "Route306"
   ],
   "gMapGroup_AvaroDungeons": [
     "DolomiteGrotto",
