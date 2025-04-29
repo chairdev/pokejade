@@ -20,24 +20,22 @@ script SpinelCity_Gym_EventScript_Melody { //leader
 }
 
 text SpinelCity_Gym_Text_MelodyIntro {
-    format("Hi there! Melody's the new Gym Leader in Spinel City!\p"
-           "Melody only just moved here from Johto, so everything feels so... new and sparkly!\p"
-           "Ms. Jasmine, Melody's role model, says to just 'be herself'...\nSo, here Melody is!\p"
-           "Let's have a battle filled with sparkles and magic!\nFairy-style!")
+    format("Yay~! A challenger!\nMelody's so excited!\p"
+           "Ms. Jasmine said there'd be days like this--when someone special walks through the door~!\p"
+           "Melody is Spinel's Gym Leader, the 'Melodic Dreamer'!\p"
+           "People think Melody is just cute and sparkly, but I trained suuuper hard to be here!\p"
+           "So... are you ready to play a tune with Melody?\p"
+           "Let's make this battle sing!")
 }
 
 text SpinelCity_Gym_Text_MelodyDefeat {
-    format("Wahhh! Melody... lost?\p"
-           "Melody was so sure she was ready to be a Gym Leader!\p"
-           "This is... so embarrassing!\p"
-           "Melody feels like hiding under her covers for a week!\nSniff...")
+    format( "Waaaahh--! Melody really thought she had that one!\p"
+            "But... Melody promised she wouldn't cry every time she lost...\p")
 }
 
 text SpinelCity_Gym_Text_MelodyDefeated {
-    format("Sniff... Melody's sorry for crying.\p"
-           "Melody wanted to be strong, but maybe she still has more to learn.\p"
-           "You and your Pokémon taught Melody a lot today...\nThank you, {PLAYER}.\p"
-           "You deserve this badge, and Melody hopes you'll accept it with a sprinkle of magic!")
+    format( "Sniff! You were amazing!\nYou really sparkled!"
+            "This is for you—The Harmony Badge~!")
 }
 
 text SpinelCity_Gym_Text_MelodyPostBattle {
@@ -67,7 +65,7 @@ script SpinelCity_Gym_EventScript_MelodyDefeated {
 }
 
 text SpinelCity_Gym_Text_ReceivedGlintBadge {
-    format("You received the Glint Badge!")
+    format("You received the Glint Badge from Melody!")
 }
 
 text SpinelCity_Gym_Text_GlintBadgeInfo {
