@@ -79,14 +79,16 @@ Route303_MapScript_SeeJasmine_1:
 # 62 "data/maps/Route303/scripts.pory"
 	setflag FLAG_RECEIVED_TM_HIDDEN_POWER
 # 63 "data/maps/Route303/scripts.pory"
-	setvar VAR_ROUTE303_STATE, 1
+	clearflag FLAG_HIDE_SPINEL_GYM_MELODY
 # 64 "data/maps/Route303/scripts.pory"
-	playse SE_EXIT
+	setvar VAR_ROUTE303_STATE, 1
 # 65 "data/maps/Route303/scripts.pory"
-	waitse
+	playse SE_EXIT
 # 66 "data/maps/Route303/scripts.pory"
+	waitse
+# 67 "data/maps/Route303/scripts.pory"
 	fadescreen FADE_FROM_BLACK
-# 68 "data/maps/Route303/scripts.pory"
+# 69 "data/maps/Route303/scripts.pory"
 	releaseall
 	return
 
@@ -97,21 +99,21 @@ Route303_MapScript_SeeJasmine_2:
 
 
 Route303_EventScript_IntriguedGuy::
-# 108 "data/maps/Route303/scripts.pory"
-	lock
 # 109 "data/maps/Route303/scripts.pory"
+	lock
+# 110 "data/maps/Route303/scripts.pory"
 	faceplayer
-# 111 "data/maps/Route303/scripts.pory"
+# 112 "data/maps/Route303/scripts.pory"
 	msgbox Route303_EventScript_IntriguedGuy_Text_0
-# 118 "data/maps/Route303/scripts.pory"
+# 119 "data/maps/Route303/scripts.pory"
 	release
 	return
 
 
 Route303_EventScript_Susan::
-# 123 "data/maps/Route303/scripts.pory"
-	trainerbattle_single TRAINER_SUSAN, Route303_Text_SusanIntro, Route303_Text_SusanDefeat
 # 124 "data/maps/Route303/scripts.pory"
+	trainerbattle_single TRAINER_SUSAN, Route303_Text_SusanIntro, Route303_Text_SusanDefeat
+# 125 "data/maps/Route303/scripts.pory"
 	msgbox Route303_Text_SusanPostBattle, MSGBOX_AUTOCLOSE
 	return
 
@@ -149,7 +151,7 @@ Route303_MapScript_SeeJasmine_Text_1:
 	.string "Jasmine$"
 
 Route303_EventScript_IntriguedGuy_Text_0:
-# 111 "data/maps/Route303/scripts.pory"
+# 112 "data/maps/Route303/scripts.pory"
 	.string "Have you noticed something about the\n"
 	.string "Pokémon around here?\p"
 	.string "In this area, you'll see a lot of Pidgey\n"
@@ -167,7 +169,7 @@ Route303_EventScript_IntriguedGuy_Text_0:
 	.string "there!$"
 
 Route303_Text_Jasmine_1::
-# 71 "data/maps/Route303/scripts.pory"
+# 72 "data/maps/Route303/scripts.pory"
 	.string "Oh... hello there.\n"
 	.string "You're a Pokémon Trainer... right?\p"
 	.string "Sorry... I didn't mean to be strange.\p"
@@ -175,7 +177,7 @@ Route303_Text_Jasmine_1::
 	.string "Johto region... Olivine City.$"
 
 Route303_Text_Jasmine_2::
-# 77 "data/maps/Route303/scripts.pory"
+# 78 "data/maps/Route303/scripts.pory"
 	.string "You know... you remind me of someone.\n"
 	.string "A quiet boy I met back home.\p"
 	.string "He was kind, and strong.\n"
@@ -199,14 +201,14 @@ Route303_Text_Jasmine_2::
 	.string "Can I... ask your name?$"
 
 Route303_Text_Jasmine_3::
-# 92 "data/maps/Route303/scripts.pory"
+# 93 "data/maps/Route303/scripts.pory"
 	.string "Oh... I see.\p"
 	.string "It's nice to meet you, {PLAYER}.\p"
 	.string "I know this is a bit strange, but... I\n"
 	.string "have something for you.$"
 
 Route303_Text_Jasmine_4::
-# 98 "data/maps/Route303/scripts.pory"
+# 99 "data/maps/Route303/scripts.pory"
 	.string "This TM contains Hidden Power.\n"
 	.string "It's a popular move back in Johto.\p"
 	.string "Hidden Power changes type depending on\n"
@@ -220,16 +222,16 @@ Route303_Text_Jasmine_4::
 	.string "Take care... and thank you for listening.$"
 
 Route303_Text_SusanIntro::
-# 127 "data/maps/Route303/scripts.pory"
+# 128 "data/maps/Route303/scripts.pory"
 	.string "It's a beautiful day for a picnic!\n"
 	.string "It's also a beautiful day for a battle!$"
 
 Route303_Text_SusanDefeat::
-# 131 "data/maps/Route303/scripts.pory"
+# 132 "data/maps/Route303/scripts.pory"
 	.string "...I think I'll stick to picnics from now\n"
 	.string "on.$"
 
 Route303_Text_SusanPostBattle::
-# 135 "data/maps/Route303/scripts.pory"
+# 136 "data/maps/Route303/scripts.pory"
 	.string "You might have beaten me, but I still\n"
 	.string "have a picnic to enjoy!$"

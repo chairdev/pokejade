@@ -146,7 +146,7 @@ StarridgeCity_EventScript_Rival_19:
 
 StarridgeCity_Trigger_HostageSituation1::
 # 159 "data/maps/StarridgeCity/scripts.pory"
-	clearflag FLAG_HIDE_STARRIDGE_RUINS_B1F_UPSILON_GRUNTS
+	clearflag FLAG_HIDE_ROUTE_304_ETERNITY_GRUNT
 # 160 "data/maps/StarridgeCity/scripts.pory"
 	addobject 2
 # 161 "data/maps/StarridgeCity/scripts.pory"
@@ -166,7 +166,7 @@ StarridgeCity_Trigger_HostageSituation1::
 
 StarridgeCity_Trigger_HostageSituation2::
 # 170 "data/maps/StarridgeCity/scripts.pory"
-	clearflag FLAG_HIDE_STARRIDGE_RUINS_B1F_UPSILON_GRUNTS
+	clearflag FLAG_HIDE_ROUTE_304_ETERNITY_GRUNT
 # 171 "data/maps/StarridgeCity/scripts.pory"
 	addobject 2
 # 172 "data/maps/StarridgeCity/scripts.pory"
@@ -186,7 +186,7 @@ StarridgeCity_Trigger_HostageSituation2::
 
 StarridgeCity_Trigger_HostageSituation3::
 # 181 "data/maps/StarridgeCity/scripts.pory"
-	clearflag FLAG_HIDE_STARRIDGE_RUINS_B1F_UPSILON_GRUNTS
+	clearflag FLAG_HIDE_ROUTE_304_ETERNITY_GRUNT
 # 182 "data/maps/StarridgeCity/scripts.pory"
 	addobject 2
 # 183 "data/maps/StarridgeCity/scripts.pory"
@@ -565,12 +565,12 @@ StarridgeCity_Text_Rival2M::
 StarridgeCity_Text_HostageSituation_Scientist1::
 # 318 "data/maps/StarridgeCity/scripts.pory"
 	.string "You there! Please, I need your help!\p"
-	.string "T-Team Upsilon... they... they barged\n"
+	.string "T-Team Eternity... they... they barged\n"
 	.string "into the ruins on Route 306 and are\l"
 	.string "holding our boss hostage...\p"
 	.string "It happened so fast! I was about to\n"
 	.string "head out when a couple of those Team\l"
-	.string "Upsilon grunts stormed in.\p"
+	.string "Eternity grunts stormed in.\p"
 	.string "They grabbed our boss and ran off! I\n"
 	.string "tried to stop them, but they were too\l"
 	.string "fast!\p"

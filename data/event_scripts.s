@@ -1259,3 +1259,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/SpinelCity_Gym/scripts.inc"
 
 	.include "data/maps/LarimarTown/scripts.inc"
+
+	.include "data/maps/ZirconQuarry/scripts.inc"

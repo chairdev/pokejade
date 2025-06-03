@@ -1,70 +1,76 @@
 SpinelCity_MapScripts::
-# 6 "data/maps/SpinelCity/scripts.pory"
+# 9 "data/maps/SpinelCity/scripts.pory"
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, SpinelCity_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE
 	.byte 0
 
 SpinelCity_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
-# 7 "data/maps/SpinelCity/scripts.pory"
+# 10 "data/maps/SpinelCity/scripts.pory"
 	map_script_2 VAR_SPINEL_CITY_STATE, 1, SpinelCity_JasmineReassurance
 	.2byte 0
 
 
 SpinelCity_JasmineReassurance::
-# 12 "data/maps/SpinelCity/scripts.pory"
-	lockall
-# 14 "data/maps/SpinelCity/scripts.pory"
-	playse SE_PIN
 # 15 "data/maps/SpinelCity/scripts.pory"
-	applymovement OBJ_JASMINE, Common_Movement_ExclamationMark
-# 16 "data/maps/SpinelCity/scripts.pory"
-	waitse
+	lockall
 # 17 "data/maps/SpinelCity/scripts.pory"
-	waitmovement 0
+	playse SE_PIN
 # 18 "data/maps/SpinelCity/scripts.pory"
-	delay 32
+	applymovement 1, Common_Movement_ExclamationMark
 # 19 "data/maps/SpinelCity/scripts.pory"
-	applymovement OBJ_JASMINE, Common_Movement_WalkInPlaceFasterRight
+	waitse
+# 20 "data/maps/SpinelCity/scripts.pory"
+	waitmovement 0
 # 21 "data/maps/SpinelCity/scripts.pory"
-	speakername SpinelCity_JasmineReassurance_Text_0
+	delay 32
 # 22 "data/maps/SpinelCity/scripts.pory"
+	applymovement 1, Common_Movement_WalkInPlaceFasterRight
+# 24 "data/maps/SpinelCity/scripts.pory"
+	speakername SpinelCity_JasmineReassurance_Text_0
+# 25 "data/maps/SpinelCity/scripts.pory"
 	msgbox SpinelCity_Text_JasmineReassurance1, MSGBOX_YESNO
 SpinelCity_JasmineReassurance_2:
-# 24 "data/maps/SpinelCity/scripts.pory"
+# 27 "data/maps/SpinelCity/scripts.pory"
 	compare VAR_RESULT, NO
 	goto_if_eq SpinelCity_JasmineReassurance_3
-# 29 "data/maps/SpinelCity/scripts.pory"
+# 32 "data/maps/SpinelCity/scripts.pory"
 	msgbox SpinelCity_Text_JasmineSaysThankYou
-# 31 "data/maps/SpinelCity/scripts.pory"
+# 34 "data/maps/SpinelCity/scripts.pory"
+	setvar VAR_SPINEL_CITY_STATE, 2
+# 35 "data/maps/SpinelCity/scripts.pory"
+	setflag FLAG_HIDE_ROUTE_304_ETERNITY_GRUNT
+# 36 "data/maps/SpinelCity/scripts.pory"
+	clearflag FLAG_HIDE_ZIRCON_QUARRY_ETERNITY_GRUNTS
+# 38 "data/maps/SpinelCity/scripts.pory"
 	releaseall
 	return
 
 SpinelCity_JasmineReassurance_3:
-# 26 "data/maps/SpinelCity/scripts.pory"
+# 29 "data/maps/SpinelCity/scripts.pory"
 	msgbox SpinelCity_Text_JasmineForceYes, MSGBOX_YESNO
 	goto SpinelCity_JasmineReassurance_2
 
 
 SpinelCity_Jasmine::
-# 57 "data/maps/SpinelCity/scripts.pory"
+# 64 "data/maps/SpinelCity/scripts.pory"
 	lock
-# 58 "data/maps/SpinelCity/scripts.pory"
-	faceplayer
-# 60 "data/maps/SpinelCity/scripts.pory"
+# 65 "data/maps/SpinelCity/scripts.pory"
+	facePLAYER
+# 67 "data/maps/SpinelCity/scripts.pory"
 	speakername SpinelCity_JasmineReassurance_Text_0
-# 61 "data/maps/SpinelCity/scripts.pory"
+# 68 "data/maps/SpinelCity/scripts.pory"
 	msgbox SpinelCity_Text_JasmineSaysThankYou
-# 63 "data/maps/SpinelCity/scripts.pory"
+# 70 "data/maps/SpinelCity/scripts.pory"
 	release
 	return
 
 
 SpinelCity_JasmineReassurance_Text_0:
-# 21 "data/maps/SpinelCity/scripts.pory"
+# 24 "data/maps/SpinelCity/scripts.pory"
 	.string "Jasmine$"
 
 SpinelCity_Text_JasmineReassurance1::
-# 34 "data/maps/SpinelCity/scripts.pory"
-	.string "Oh... {Player}, there you are.\p"
+# 41 "data/maps/SpinelCity/scripts.pory"
+	.string "Oh... {PLAYER}, there you are.\p"
 	.string "Melody just ran off crying... so, I\n"
 	.string "guess... you won?\p"
 	.string "She tries so hard, and when she loses...\n"
@@ -76,7 +82,7 @@ SpinelCity_Text_JasmineReassurance1::
 	.string "Would... would you go check on her?$"
 
 SpinelCity_Text_JasmineSaysThankYou::
-# 43 "data/maps/SpinelCity/scripts.pory"
+# 50 "data/maps/SpinelCity/scripts.pory"
 	.string "Thank you...\p"
 	.string "She may act cheerful, but she's\n"
 	.string "sensitive underneath.\p"
@@ -84,9 +90,9 @@ SpinelCity_Text_JasmineSaysThankYou::
 	.string "probably you.$"
 
 SpinelCity_Text_JasmineForceYes::
-# 49 "data/maps/SpinelCity/scripts.pory"
+# 56 "data/maps/SpinelCity/scripts.pory"
 	.string "I... I really think you should.\p"
 	.string "She looks up to you... more than she\n"
 	.string "says.\p"
-	.string "Please, {Player}...\p"
+	.string "Please, {PLAYER}...\p"
 	.string "She needs someone right now.$"

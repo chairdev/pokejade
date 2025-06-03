@@ -3,32 +3,21 @@ SpinelCity_Gym_MapScripts::
 
 
 SpinelCity_Gym_EventScript_Melody::
-# 6 "data/maps/SpinelCity_Gym/scripts.pory"
-	trainerbattle_single TRAINER_MELODY_1, SpinelCity_Gym_Text_MelodyIntro, SpinelCity_Gym_Text_MelodyDefeat, SpinelCity_Gym_EventScript_MelodyDefeated, NO_MUSIC
-# 7 "data/maps/SpinelCity_Gym/scripts.pory"
+# 10 "data/maps/SpinelCity_Gym/scripts.pory"
 	goto_if_unset FLAG_RECEIVED_TM_DRAINING_KISS, SpinelCity_Gym_EventScript_Melody_2
 SpinelCity_Gym_EventScript_Melody_1:
-# 12 "data/maps/SpinelCity_Gym/scripts.pory"
-	compare VAR_SPINEL_CITY_STATE, 0
-	goto_if_eq SpinelCity_Gym_EventScript_Melody_5
-SpinelCity_Gym_EventScript_Melody_4:
-# 17 "data/maps/SpinelCity_Gym/scripts.pory"
+# 15 "data/maps/SpinelCity_Gym/scripts.pory"
 	speakername SpinelCity_Gym_EventScript_Melody_Text_0
-# 18 "data/maps/SpinelCity_Gym/scripts.pory"
+# 16 "data/maps/SpinelCity_Gym/scripts.pory"
 	msgbox SpinelCity_Gym_Text_MelodyPostBattle, MSGBOX_AUTOCLOSE
 # 19 "data/maps/SpinelCity_Gym/scripts.pory"
 	release
 	return
 
 SpinelCity_Gym_EventScript_Melody_2:
-# 9 "data/maps/SpinelCity_Gym/scripts.pory"
+# 12 "data/maps/SpinelCity_Gym/scripts.pory"
 	goto SpinelCity_Gym_EventScript_GiveDrainingKiss
 	goto SpinelCity_Gym_EventScript_Melody_1
-
-SpinelCity_Gym_EventScript_Melody_5:
-# 14 "data/maps/SpinelCity_Gym/scripts.pory"
-	setvar VAR_SPINEL_CITY_STATE, 1
-	goto SpinelCity_Gym_EventScript_Melody_4
 
 
 SpinelCity_Gym_EventScript_MelodyDefeated::
@@ -54,147 +43,153 @@ SpinelCity_Gym_EventScript_MelodyDefeated::
 	setflag FLAG_BADGE02_GET
 # 63 "data/maps/SpinelCity_Gym/scripts.pory"
 	goto SpinelCity_Gym_EventScript_GiveDrainingKiss
-# 65 "data/maps/SpinelCity_Gym/scripts.pory"
-	msgbox SpinelCity_Gym_EventScript_MelodyDefeated_Text_0
-# 71 "data/maps/SpinelCity_Gym/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 72 "data/maps/SpinelCity_Gym/scripts.pory"
-	setflag FLAG_HIDE_SPINEL_GYM_MELODY
-# 73 "data/maps/SpinelCity_Gym/scripts.pory"
-	clearflag FLAG_HIDE_SPINEL_CITY_JASMINE
-# 74 "data/maps/SpinelCity_Gym/scripts.pory"
-	removeobject OBJ_MELODY
-# 77 "data/maps/SpinelCity_Gym/scripts.pory"
+# 64 "data/maps/SpinelCity_Gym/scripts.pory"
 	call Common_EventScript_SetGymTrainers
-# 79 "data/maps/SpinelCity_Gym/scripts.pory"
-	release
 	return
 
 
 SpinelCity_Gym_EventScript_GiveDrainingKiss::
-# 100 "data/maps/SpinelCity_Gym/scripts.pory"
+# 85 "data/maps/SpinelCity_Gym/scripts.pory"
 	giveitem ITEM_TM_DRAINING_KISS
-# 102 "data/maps/SpinelCity_Gym/scripts.pory"
+# 87 "data/maps/SpinelCity_Gym/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq SpinelCity_Gym_EventScript_GiveDrainingKiss_2
 SpinelCity_Gym_EventScript_GiveDrainingKiss_1:
-# 107 "data/maps/SpinelCity_Gym/scripts.pory"
+# 92 "data/maps/SpinelCity_Gym/scripts.pory"
 	setflag FLAG_RECEIVED_TM_DRAINING_KISS
-# 108 "data/maps/SpinelCity_Gym/scripts.pory"
+# 93 "data/maps/SpinelCity_Gym/scripts.pory"
 	speakername SpinelCity_Gym_EventScript_Melody_Text_0
-# 109 "data/maps/SpinelCity_Gym/scripts.pory"
+# 94 "data/maps/SpinelCity_Gym/scripts.pory"
 	msgbox SpinelCity_Gym_Text_ExplainDrainingKiss
+# 96 "data/maps/SpinelCity_Gym/scripts.pory"
+	setvar VAR_SPINEL_CITY_STATE, 1
+# 98 "data/maps/SpinelCity_Gym/scripts.pory"
+	speakername SpinelCity_Gym_EventScript_Melody_Text_0
+# 99 "data/maps/SpinelCity_Gym/scripts.pory"
+	msgbox SpinelCity_Gym_EventScript_GiveDrainingKiss_Text_0
+# 105 "data/maps/SpinelCity_Gym/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 106 "data/maps/SpinelCity_Gym/scripts.pory"
+	setflag FLAG_HIDE_SPINEL_GYM_MELODY
+# 107 "data/maps/SpinelCity_Gym/scripts.pory"
+	clearflag FLAG_HIDE_SPINEL_CITY_JASMINE
+# 108 "data/maps/SpinelCity_Gym/scripts.pory"
+	removeobject 5
+# 109 "data/maps/SpinelCity_Gym/scripts.pory"
+	playse SE_EXIT
 # 110 "data/maps/SpinelCity_Gym/scripts.pory"
-	release
+	waitse
+# 111 "data/maps/SpinelCity_Gym/scripts.pory"
+	fadescreen FADE_FROM_BLACK
 	return
 
 SpinelCity_Gym_EventScript_GiveDrainingKiss_2:
-# 104 "data/maps/SpinelCity_Gym/scripts.pory"
+# 89 "data/maps/SpinelCity_Gym/scripts.pory"
 	goto Common_EventScript_ShowBagIsFull
 	goto SpinelCity_Gym_EventScript_GiveDrainingKiss_1
 
 
 SpinelCity_Gym_EventScript_GymGuide::
-# 115 "data/maps/SpinelCity_Gym/scripts.pory"
-	lock
 # 116 "data/maps/SpinelCity_Gym/scripts.pory"
-	faceplayer
+	lock
 # 117 "data/maps/SpinelCity_Gym/scripts.pory"
+	faceplayer
+# 118 "data/maps/SpinelCity_Gym/scripts.pory"
 	goto_if_set FLAG_DEFEATED_SPINEL_GYM, SpinelCity_Gym_EventScript_GymGuide_2
-# 123 "data/maps/SpinelCity_Gym/scripts.pory"
-	msgbox SpinelCity_Gym_Text_GymGuide
 # 124 "data/maps/SpinelCity_Gym/scripts.pory"
+	msgbox SpinelCity_Gym_Text_GymGuide
+# 125 "data/maps/SpinelCity_Gym/scripts.pory"
 	goto_if_unset FLAG_RECEIVED_SODA_POP_SPINEL_GYM, SpinelCity_Gym_EventScript_GymGuide_5
 SpinelCity_Gym_EventScript_GymGuide_1:
-# 132 "data/maps/SpinelCity_Gym/scripts.pory"
+# 133 "data/maps/SpinelCity_Gym/scripts.pory"
 	release
 	return
 
 SpinelCity_Gym_EventScript_GymGuide_2:
-# 119 "data/maps/SpinelCity_Gym/scripts.pory"
+# 120 "data/maps/SpinelCity_Gym/scripts.pory"
 	msgbox SpinelCity_Gym_Text_GymGuideYouWon
 	goto SpinelCity_Gym_EventScript_GymGuide_1
 
 SpinelCity_Gym_EventScript_GymGuide_5:
-# 126 "data/maps/SpinelCity_Gym/scripts.pory"
-	msgbox SpinelCity_Gym_Text_GymGuideYouLookNervous
 # 127 "data/maps/SpinelCity_Gym/scripts.pory"
-	giveitem ITEM_SODA_POP
+	msgbox SpinelCity_Gym_Text_GymGuideYouLookNervous
 # 128 "data/maps/SpinelCity_Gym/scripts.pory"
+	giveitem ITEM_SODA_POP
+# 129 "data/maps/SpinelCity_Gym/scripts.pory"
 	setflag FLAG_RECEIVED_SODA_POP_SPINEL_GYM
 	goto SpinelCity_Gym_EventScript_GymGuide_1
 
 
 SpinelCity_Gym_Sign_Hint1::
-# 166 "data/maps/SpinelCity_Gym/scripts.pory"
-	lock
 # 167 "data/maps/SpinelCity_Gym/scripts.pory"
-	msgbox SpinelCity_Gym_Sign_Hint1_Text_0
+	lock
 # 168 "data/maps/SpinelCity_Gym/scripts.pory"
+	msgbox SpinelCity_Gym_Sign_Hint1_Text_0
+# 169 "data/maps/SpinelCity_Gym/scripts.pory"
 	release
 	return
 
 
 SpinelCity_Gym_Sign_Hint2::
-# 172 "data/maps/SpinelCity_Gym/scripts.pory"
-	lock
 # 173 "data/maps/SpinelCity_Gym/scripts.pory"
-	msgbox SpinelCity_Gym_Sign_Hint2_Text_0
+	lock
 # 174 "data/maps/SpinelCity_Gym/scripts.pory"
+	msgbox SpinelCity_Gym_Sign_Hint2_Text_0
+# 175 "data/maps/SpinelCity_Gym/scripts.pory"
 	release
 	return
 
 
 SpinelCity_Gym_Sign_Hint3::
-# 178 "data/maps/SpinelCity_Gym/scripts.pory"
-	lock
 # 179 "data/maps/SpinelCity_Gym/scripts.pory"
-	msgbox SpinelCity_Gym_Sign_Hint3_Text_0
+	lock
 # 180 "data/maps/SpinelCity_Gym/scripts.pory"
+	msgbox SpinelCity_Gym_Sign_Hint3_Text_0
+# 181 "data/maps/SpinelCity_Gym/scripts.pory"
 	release
 	return
 
 
 SpinelCity_Gym_Sign_Hint4::
-# 184 "data/maps/SpinelCity_Gym/scripts.pory"
-	lock
 # 185 "data/maps/SpinelCity_Gym/scripts.pory"
-	msgbox SpinelCity_Gym_Sign_Hint4_Text_0
+	lock
 # 186 "data/maps/SpinelCity_Gym/scripts.pory"
+	msgbox SpinelCity_Gym_Sign_Hint4_Text_0
+# 187 "data/maps/SpinelCity_Gym/scripts.pory"
 	release
 	return
 
 
 SpinelCity_Gym_EventScript_LassBetty::
-# 191 "data/maps/SpinelCity_Gym/scripts.pory"
-	trainerbattle_single TRAINER_BETTY, SpinelCity_Gym_Text_BettyIntro, SpinelCity_Gym_Text_BettyDefeat
 # 192 "data/maps/SpinelCity_Gym/scripts.pory"
+	trainerbattle_single TRAINER_BETTY, SpinelCity_Gym_Text_BettyIntro, SpinelCity_Gym_Text_BettyDefeat
+# 193 "data/maps/SpinelCity_Gym/scripts.pory"
 	msgbox SpinelCity_Gym_Text_BettyPostBattle, MSGBOX_AUTOCLOSE
 	return
 
 
 SpinelCity_Gym_EventScript_BeautyHelen::
-# 210 "data/maps/SpinelCity_Gym/scripts.pory"
-	trainerbattle_single TRAINER_HELEN, SpinelCity_Gym_Text_HelenIntro, SpinelCity_Gym_Text_HelenDefeat
 # 211 "data/maps/SpinelCity_Gym/scripts.pory"
+	trainerbattle_single TRAINER_HELEN, SpinelCity_Gym_Text_HelenIntro, SpinelCity_Gym_Text_HelenDefeat
+# 212 "data/maps/SpinelCity_Gym/scripts.pory"
 	msgbox SpinelCity_Gym_Text_HelenPostBattle, MSGBOX_AUTOCLOSE
 	return
 
 
 SpinelCity_Gym_EventScript_AceTrainerFiona::
-# 229 "data/maps/SpinelCity_Gym/scripts.pory"
-	trainerbattle_single TRAINER_FIONA, SpinelCity_Gym_Text_FionaIntro, SpinelCity_Gym_Text_FionaDefeat
 # 230 "data/maps/SpinelCity_Gym/scripts.pory"
+	trainerbattle_single TRAINER_FIONA, SpinelCity_Gym_Text_FionaIntro, SpinelCity_Gym_Text_FionaDefeat
+# 231 "data/maps/SpinelCity_Gym/scripts.pory"
 	msgbox SpinelCity_Gym_Text_FionaPostBattle, MSGBOX_AUTOCLOSE
 	return
 
 
 SpinelCity_Gym_EventScript_Melody_Text_0:
-# 17 "data/maps/SpinelCity_Gym/scripts.pory"
+# 15 "data/maps/SpinelCity_Gym/scripts.pory"
 	.string "Melody$"
 
-SpinelCity_Gym_EventScript_MelodyDefeated_Text_0:
-# 66 "data/maps/SpinelCity_Gym/scripts.pory"
+SpinelCity_Gym_EventScript_GiveDrainingKiss_Text_0:
+# 100 "data/maps/SpinelCity_Gym/scripts.pory"
 	.string "Melody... tried her best... but she still\n"
 	.string "wasn't good enough... Sorry, but... I\l"
 	.string "think I need some time. To think.\p"
@@ -205,32 +200,32 @@ SpinelCity_Gym_EventScript_MelodyDefeated_Text_0:
 	.string "for now...$"
 
 SpinelCity_Gym_Sign_Hint1_Text_0:
-# 167 "data/maps/SpinelCity_Gym/scripts.pory"
+# 168 "data/maps/SpinelCity_Gym/scripts.pory"
 	.string "Fairies love the morning light.\n"
 	.string "The brighter path will guide you.$"
 
 SpinelCity_Gym_Sign_Hint2_Text_0:
-# 173 "data/maps/SpinelCity_Gym/scripts.pory"
+# 174 "data/maps/SpinelCity_Gym/scripts.pory"
 	.string "At dusk, fairies dance in the twilight.\n"
 	.string "The softer glow is their choice.$"
 
 SpinelCity_Gym_Sign_Hint3_Text_0:
-# 179 "data/maps/SpinelCity_Gym/scripts.pory"
+# 180 "data/maps/SpinelCity_Gym/scripts.pory"
 	.string "Fairies follow the golden rays.\n"
 	.string "The sunlit way is the right way.$"
 
 SpinelCity_Gym_Sign_Hint4_Text_0:
-# 185 "data/maps/SpinelCity_Gym/scripts.pory"
+# 186 "data/maps/SpinelCity_Gym/scripts.pory"
 	.string "Fairies love the moonlight.\n"
 	.string "The darker path is where they wander.$"
 
 SpinelCity_Gym_Text_MelodyIntro::
 # 22 "data/maps/SpinelCity_Gym/scripts.pory"
-	.string "Yay~! A challenger!\n"
+	.string "Yay! A challenger!\n"
 	.string "Melody's so excited!\p"
 	.string "Ms. Jasmine said there'd be days like\n"
 	.string "this--when someone special walks\l"
-	.string "through the door~!\p"
+	.string "through the door!\p"
 	.string "Melody is Spinel's Gym Leader, the\n"
 	.string "'Melodic Dreamer'!\p"
 	.string "People think Melody is just cute and\n"
@@ -267,21 +262,21 @@ SpinelCity_Gym_Text_MelodyPostBattle::
 	.string "{PLAYER}!$"
 
 SpinelCity_Gym_Text_ReceivedGlintBadge::
-# 82 "data/maps/SpinelCity_Gym/scripts.pory"
+# 67 "data/maps/SpinelCity_Gym/scripts.pory"
 	.string "You received the Glint Badge from\n"
 	.string "Melody!$"
 
 SpinelCity_Gym_Text_GlintBadgeInfo::
-# 86 "data/maps/SpinelCity_Gym/scripts.pory"
+# 71 "data/maps/SpinelCity_Gym/scripts.pory"
 	.string "With two badges, Pokémon up to Level 35\n"
 	.string "will listen to you...\p"
 	.string "You can also use the HM move Cut\n"
 	.string "outside of battle now...\p"
 	.string "A-and... Melody has a little gift for\n"
-	.string "you—just to say thank you!$"
+	.string "you--just to say thank you!$"
 
 SpinelCity_Gym_Text_ExplainDrainingKiss::
-# 93 "data/maps/SpinelCity_Gym/scripts.pory"
+# 78 "data/maps/SpinelCity_Gym/scripts.pory"
 	.string "It's the TM for Draining Kiss...\p"
 	.string "It's a Fairy move... It's r-really cute,\n"
 	.string "and it even heals you a bit...\p"
@@ -289,7 +284,7 @@ SpinelCity_Gym_Text_ExplainDrainingKiss::
 	.string "s-so please like it, okay?$"
 
 SpinelCity_Gym_Text_GymGuideYouWon::
-# 135 "data/maps/SpinelCity_Gym/scripts.pory"
+# 136 "data/maps/SpinelCity_Gym/scripts.pory"
 	.string "You won?\n"
 	.string "I knew you could do it, champ!\p"
 	.string "You sent Melody and her Pokémon crying!\n"
@@ -299,7 +294,7 @@ SpinelCity_Gym_Text_GymGuideYouWon::
 	.string "Keep it up, kid!$"
 
 SpinelCity_Gym_Text_GymGuide::
-# 143 "data/maps/SpinelCity_Gym/scripts.pory"
+# 144 "data/maps/SpinelCity_Gym/scripts.pory"
 	.string "Yo! Champion-to-be!\n"
 	.string "It's me, Gyde!\p"
 	.string "I'm here to guide you through the Spinel\n"
@@ -320,53 +315,53 @@ SpinelCity_Gym_Text_GymGuide::
 	.string "Break a leg, champ!$"
 
 SpinelCity_Gym_Text_GymGuideYouLookNervous::
-# 156 "data/maps/SpinelCity_Gym/scripts.pory"
+# 157 "data/maps/SpinelCity_Gym/scripts.pory"
 	.string "You look nervous!\n"
 	.string "Don't worry, I got your back!\p"
 	.string "Take this Soda Pop to calm your nerves!$"
 
 SpinelCity_Gym_Text_BettyIntro::
-# 195 "data/maps/SpinelCity_Gym/scripts.pory"
+# 196 "data/maps/SpinelCity_Gym/scripts.pory"
 	.string "Oops! Looks like you took a wrong turn!\n"
 	.string "Ready for a dazzling battle?$"
 
 SpinelCity_Gym_Text_BettyDefeat::
-# 201 "data/maps/SpinelCity_Gym/scripts.pory"
+# 202 "data/maps/SpinelCity_Gym/scripts.pory"
 	.string "Wow, you've got some dazzling moves!$"
 
 SpinelCity_Gym_Text_BettyPostBattle::
-# 205 "data/maps/SpinelCity_Gym/scripts.pory"
+# 206 "data/maps/SpinelCity_Gym/scripts.pory"
 	.string "You didn't take the right path, but hey,\n"
 	.string "battling me was totally worth it, right?$"
 
 SpinelCity_Gym_Text_HelenIntro::
-# 214 "data/maps/SpinelCity_Gym/scripts.pory"
+# 215 "data/maps/SpinelCity_Gym/scripts.pory"
 	.string "Did you lose your way, kid?\n"
 	.string "Don't worry, I'll guide you to the right\l"
 	.string "path!$"
 
 SpinelCity_Gym_Text_HelenDefeat::
-# 218 "data/maps/SpinelCity_Gym/scripts.pory"
+# 219 "data/maps/SpinelCity_Gym/scripts.pory"
 	.string "You sure have a knack for this!\p"
 	.string "Oh, I meant battling, not your sense of\n"
 	.string "direction!$"
 
 SpinelCity_Gym_Text_HelenPostBattle::
-# 224 "data/maps/SpinelCity_Gym/scripts.pory"
+# 225 "data/maps/SpinelCity_Gym/scripts.pory"
 	.string "You're wrong, but you're getting closer\n"
 	.string "to the end!$"
 
 SpinelCity_Gym_Text_FionaIntro::
-# 233 "data/maps/SpinelCity_Gym/scripts.pory"
+# 234 "data/maps/SpinelCity_Gym/scripts.pory"
 	.string "I've been wandering for what feels like\n"
 	.string "forever... trying to find my way.$"
 
 SpinelCity_Gym_Text_FionaDefeat::
-# 237 "data/maps/SpinelCity_Gym/scripts.pory"
+# 238 "data/maps/SpinelCity_Gym/scripts.pory"
 	.string "You're strong...\n"
 	.string "Maybe you'll find your way out of here.$"
 
 SpinelCity_Gym_Text_FionaPostBattle::
-# 241 "data/maps/SpinelCity_Gym/scripts.pory"
+# 242 "data/maps/SpinelCity_Gym/scripts.pory"
 	.string "The Gym Leader is just ahead.\n"
 	.string "But be careful...$"

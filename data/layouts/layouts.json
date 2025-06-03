@@ -4930,6 +4930,16 @@
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/LarimarTown/border.bin",
       "blockdata_filepath": "data/layouts/LarimarTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_ZIRCON_QUARRY",
+      "name": "ZirconQuarry_Layout",
+      "width": 39,
+      "height": 46,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/ZirconQuarry/border.bin",
+      "blockdata_filepath": "data/layouts/ZirconQuarry/map.bin"
     }
   ]
 }

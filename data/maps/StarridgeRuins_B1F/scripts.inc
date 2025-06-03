@@ -97,7 +97,7 @@ StarridgeRuins_B1F_EventScript_MeetAmelio_1:
 # 75 "data/maps/StarridgeRuins_B1F/scripts.pory"
 	fadedefaultbgm
 # 77 "data/maps/StarridgeRuins_B1F/scripts.pory"
-	setflag FLAG_HIDE_STARRIDGE_RUINS_1F_UPSILON_GRUNTS
+	setflag FLAG_HIDE_ZIRCON_QUARRY_ETERNITY_GRUNTS
 # 78 "data/maps/StarridgeRuins_B1F/scripts.pory"
 	removeobject 3
 # 79 "data/maps/StarridgeRuins_B1F/scripts.pory"
@@ -318,7 +318,7 @@ StarridgeRuins_B1F_Text_MeetAmelio_No::
 StarridgeRuins_B1F_Text_MeetAmelio_Amelio_2::
 # 135 "data/maps/StarridgeRuins_B1F/scripts.pory"
 	.string "Name's Amelio. I'm an Admin for Team\n"
-	.string "Upsilon.\p"
+	.string "Eternity.\p"
 	.string "You know, just in case you were\n"
 	.string "wondering.\p"
 	.string "...Which you probably weren't.$"
@@ -363,7 +363,7 @@ StarridgeRuins_B1F_Text_ReceieveFossil_Rival_1::
 
 StarridgeRuins_B1F_Text_ReceieveFossil_Rival_2::
 # 167 "data/maps/StarridgeRuins_B1F/scripts.pory"
-	.string "I saw a bunch of those Team Upsilon\n"
+	.string "I saw a bunch of those Team Eternity\n"
 	.string "people running away.\p"
 	.string "What happened?$"
 

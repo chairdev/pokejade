@@ -1,7 +1,10 @@
 //VAR_SPINEL_CITY_STATE
 //0: Haven't beaten Melody
 //1: Jasmine pep talk
-//2:
+//2 Go to Quarry
+
+const OBJ_JASMINE = 1
+
 mapscripts SpinelCity_MapScripts {
     MAP_SCRIPT_ON_FRAME_TABLE [
         VAR_SPINEL_CITY_STATE, 1: SpinelCity_JasmineReassurance
@@ -17,6 +20,7 @@ script SpinelCity_JasmineReassurance {
     waitmovement(0)
     delay(32)
     applymovement(OBJ_JASMINE, Common_Movement_WalkInPlaceFasterRight)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft)
     
     speakername("Jasmine")
     msgbox(SpinelCity_Text_JasmineReassurance1, MSGBOX_YESNO)
@@ -28,11 +32,15 @@ script SpinelCity_JasmineReassurance {
 
     msgbox(SpinelCity_Text_JasmineSaysThankYou)
 
+    setvar(VAR_SPINEL_CITY_STATE, 2)
+    setflag(FLAG_HIDE_ROUTE_304_ETERNITY_GRUNT)
+    clearflag(FLAG_HIDE_ZIRCON_QUARRY_ETERNITY_GRUNTS)
+
     releaseall
 }
 
 text SpinelCity_Text_JasmineReassurance1 {
-    format("Oh... {Player}, there you are.\p"
+    format("Oh... {PLAYER}, there you are.\p"
            "Melody just ran off crying... so, I guess... you won?\p"
            "She tries so hard, and when she loses... it really hurts her.\p"
            "I know what that feels like... I used to struggle with it too.\p"
@@ -49,17 +57,17 @@ text SpinelCity_Text_JasmineSaysThankYou {
 text SpinelCity_Text_JasmineForceYes {
     format("I... I really think you should.\p"
            "She looks up to you... more than she says.\p"
-           "Please, {Player}...\p"
+           "Please, {PLAYER}...\p"
            "She needs someone right now.")
 }
 
-script SpinelCity_Jasmine {
+script SpinelCity_EventScript_Jasmine {
     lock
-    faceplayer
+    facePLAYER
 
     speakername("Jasmine")
     msgbox(SpinelCity_Text_JasmineSaysThankYou)
-    
+
     release
 }
 

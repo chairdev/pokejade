@@ -77,7 +77,7 @@
       "x": 14,
       "y": 15,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WANDER_DOWN_AND_UP",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_LEFT_AND_RIGHT",
       "movement_range_x": 1,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
@@ -87,20 +87,39 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CAMPER",
-      "x": 28,
-      "y": 25,
+      "x": 20,
+      "y": 26,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_UP_RIGHT_LEFT_DOWN",
-      "movement_range_x": 2,
+      "movement_type": "MOVEMENT_TYPE_WALK_UP_AND_DOWN",
+      "movement_range_x": 0,
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "Route304_EventScript_CamperPatrick",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
+      "x": 15,
+      "y": 26,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route304_EventScript_EternityGrunt",
+      "flag": "FLAG_HIDE_ROUTE_304_ETERNITY_GRUNT"
     }
   ],
   "warp_events": [
-
+    {
+      "x": 15,
+      "y": 25,
+      "elevation": 0,
+      "dest_map": "MAP_ZIRCON_QUARRY",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
 

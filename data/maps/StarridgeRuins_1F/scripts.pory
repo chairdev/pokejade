@@ -110,7 +110,7 @@ script StarridgeRuins_1F_EventScript_Grunts {
         msgbox(StarridgeRuins_1F_Text_GruntA_Retreat)
         closemessage
         fadescreen(FADE_TO_BLACK)
-        setflag(FLAG_HIDE_STARRIDGE_RUINS_B1F_UPSILON_GRUNTS)
+        setflag(FLAG_HIDE_ROUTE_304_ETERNITY_GRUNT)
         removeobject(OBJ_GRUNT_A)
         removeobject(OBJ_GRUNT_B)
         setvar(VAR_SPINEL_CITY_STATE, 3)
@@ -147,11 +147,11 @@ text StarridgeRuins_1F_Text_Grunts_Caden_Entrance {
 text StarridgeRuins_1F_Text_Grunts_GruntA_Response{
     format( "You think you can just stroll in here and stop us?\p" 
             "Well, think again!\p"
-            "It's Upsilon and beyond for us, kid!\nPrepare to lose!")
+            "It's Eternity and beyond for us, kid!\nPrepare to lose!")
 }
 
 text StarridgeRuins_1F_Text_Grunts_Caden_Taunt {
-    format("Team Upsilon, huh? Big talk for a couple of grunts.\p"
+    format("Team Eternity, huh? Big talk for a couple of grunts.\p"
            "Let's see if you're as tough as you think!")
 }
 
@@ -185,7 +185,7 @@ text StarridgeRuins_1F_Text_Holly_Response {
 
 text StarridgeRuins_1F_Text_GruntA_Retreat {
     format("Fine! You may have won this time,\p"
-           "but Team Upsilon doesn't back down that easily!\p"
+           "but Team Eternity doesn't back down that easily!\p"
            "Let's go tell the boss. This isn't over!")
 }
 

@@ -49,7 +49,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "StarridgeCity_EventScript_Scientist",
-      "flag": "FLAG_HIDE_STARRIDGE_RUINS_B1F_UPSILON_GRUNTS"
+      "flag": "FLAG_HIDE_ROUTE_304_ETERNITY_GRUNT"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY",

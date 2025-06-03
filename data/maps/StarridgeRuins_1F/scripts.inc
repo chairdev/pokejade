@@ -126,7 +126,7 @@ StarridgeRuins_1F_EventScript_Grunts_5:
 # 112 "data/maps/StarridgeRuins_1F/scripts.pory"
 	fadescreen FADE_TO_BLACK
 # 113 "data/maps/StarridgeRuins_1F/scripts.pory"
-	setflag FLAG_HIDE_STARRIDGE_RUINS_B1F_UPSILON_GRUNTS
+	setflag FLAG_HIDE_ROUTE_304_ETERNITY_GRUNT
 # 114 "data/maps/StarridgeRuins_1F/scripts.pory"
 	removeobject 3
 # 115 "data/maps/StarridgeRuins_1F/scripts.pory"
@@ -338,13 +338,13 @@ StarridgeRuins_1F_Text_Grunts_GruntA_Response::
 	.string "You think you can just stroll in here\n"
 	.string "and stop us?\p"
 	.string "Well, think again!\p"
-	.string "It's Upsilon and beyond for us, kid!\n"
+	.string "It's Eternity and beyond for us, kid!\n"
 	.string "Prepare to lose!$"
 
 StarridgeRuins_1F_Text_Grunts_Caden_Taunt::
 # 153 "data/maps/StarridgeRuins_1F/scripts.pory"
-	.string "Team Upsilon, huh? Big talk for a couple\n"
-	.string "of grunts.\p"
+	.string "Team Eternity, huh? Big talk for a\n"
+	.string "couple of grunts.\p"
 	.string "Let's see if you're as tough as you\n"
 	.string "think!$"
 
@@ -387,7 +387,7 @@ StarridgeRuins_1F_Text_Holly_Response::
 StarridgeRuins_1F_Text_GruntA_Retreat::
 # 186 "data/maps/StarridgeRuins_1F/scripts.pory"
 	.string "Fine! You may have won this time,\p"
-	.string "but Team Upsilon doesn't back down\n"
+	.string "but Team Eternity doesn't back down\n"
 	.string "that easily!\p"
 	.string "Let's go tell the boss. This isn't over!$"
 

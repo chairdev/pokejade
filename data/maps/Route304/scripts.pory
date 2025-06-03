@@ -1,14 +1,25 @@
+//VAR_ROUTE304_STATE
+// 0: Haven't alerted Team Eternity
+// 1: Defeated Amelio
+// 2: Met Looker
+
 mapscripts Route304_MapScripts {}
 
-script Route304_EventScript_UpsilonGrunt {
+script Route304_EventScript_EternityGrunt {
     lock
     faceplayer
-
-    if(!flag(FLAG_HIDE_STARRIDGE_RUINS_B1F_UPSILON_GRUNTS))
-    {
-        
-    }
+    msgbox(Route304_Text_EternityGrunt)
+    release
+    end
 }
+
+text Route304_Text_EternityGrunt {
+    format("Uh... hey, kid!\nYou can't go this way!\p"
+           "There's, uh... construction! Yeah, construction!\p"
+           "Big, scary machines and stuff. Totally dangerous.\p"
+           "So, uh... curry off! I mean, scurry off!")
+}
+
 
 // Trainers //
 

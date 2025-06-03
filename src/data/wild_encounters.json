@@ -12433,63 +12433,63 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "min_level": 15,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 17,
                 "species": "SPECIES_PIDGEY"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 15,
+                "max_level": 17,
                 "species": "SPECIES_CUTIEFLY"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 15,
+                "max_level": 17,
                 "species": "SPECIES_PIDGEY"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 15,
+                "max_level": 17,
                 "species": "SPECIES_PIDGEY"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 15,
+                "max_level": 17,
                 "species": "SPECIES_MANKEY"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 15,
+                "max_level": 17,
                 "species": "SPECIES_MANKEY"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 15,
+                "max_level": 17,
                 "species": "SPECIES_ROCKRUFF"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 15,
+                "max_level": 17,
                 "species": "SPECIES_ROCKRUFF_OWN_TEMPO"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 15,
+                "max_level": 17,
                 "species": "SPECIES_CUTIEFLY"
               },
               {
-                "min_level": 16,
-                "max_level": 19,
+                "min_level": 15,
+                "max_level": 17,
                 "species": "SPECIES_NIDORINO"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 15,
+                "max_level": 17,
                 "species": "SPECIES_NIDORINO"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 15,
+                "max_level": 17,
                 "species": "SPECIES_NIDORINO"
               }
             ]
@@ -13305,6 +13305,105 @@
                 "min_level": 14,
                 "max_level": 17,
                 "species": "SPECIES_EEVEE"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_ZIRCON_QUARRY",
+          "base_label": "gZirconQuarry",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 17,
+                "max_level": 20,
+                "species": "SPECIES_WOOBAT"
+              },
+              {
+                "min_level": 17,
+                "max_level": 20,
+                "species": "SPECIES_DRILBUR"
+              },
+              {
+                "min_level": 17,
+                "max_level": 20,
+                "species": "SPECIES_DRILBUR"
+              },
+              {
+                "min_level": 17,
+                "max_level": 20,
+                "species": "SPECIES_WOOBAT"
+              },
+              {
+                "min_level": 17,
+                "max_level": 20,
+                "species": "SPECIES_MACHOP"
+              },
+              {
+                "min_level": 17,
+                "max_level": 20,
+                "species": "SPECIES_ROLYCOLY"
+              },
+              {
+                "min_level": 17,
+                "max_level": 20,
+                "species": "SPECIES_ROLYCOLY"
+              },
+              {
+                "min_level": 17,
+                "max_level": 20,
+                "species": "SPECIES_MACHOP"
+              },
+              {
+                "min_level": 17,
+                "max_level": 20,
+                "species": "SPECIES_MACHOP"
+              },
+              {
+                "min_level": 17,
+                "max_level": 20,
+                "species": "SPECIES_GLIMMET"
+              },
+              {
+                "min_level": 17,
+                "max_level": 20,
+                "species": "SPECIES_GLIMMET"
+              },
+              {
+                "min_level": 17,
+                "max_level": 20,
+                "species": "SPECIES_GLIMMET"
+              }
+            ]
+          },
+          "rock_smash_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
               }
             ]
           }

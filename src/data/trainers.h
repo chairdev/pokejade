@@ -28805,7 +28805,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 11484
-            .species = SPECIES_ROGGENROLA,
+            .species = SPECIES_ROLYCOLY,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11486
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),

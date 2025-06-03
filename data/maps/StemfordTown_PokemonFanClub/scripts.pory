@@ -3,11 +3,11 @@ const OBJ_NURSERY_MAN = 6
 
 mapscripts StemfordTown_PokemonFanClub_MapScripts {
     MAP_SCRIPT_ON_FRAME_TABLE [
-        VAR_ZIRCON_TOWN_STATE, 0: StemfordTown_PokemonFanClub_TeamUpsilonIntro
+        VAR_ZIRCON_TOWN_STATE, 0: StemfordTown_PokemonFanClub_TeamEternityIntro
     ]
 }
 
-script StemfordTown_PokemonFanClub_TeamUpsilonIntro {
+script StemfordTown_PokemonFanClub_TeamEternityIntro {
     lockall
     getplayerxy(VAR_TEMP_0, VAR_TEMP_1)
     playbgm(MUS_ENCOUNTER_AQUA, FALSE)
@@ -21,7 +21,7 @@ script StemfordTown_PokemonFanClub_TeamUpsilonIntro {
 
     applymovement(OBJ_NURSERY_MAN, StemfordTown_PokemonFanClub_Movement_LookDown)
     waitmovement(0)
-    msgbox(StemfordTown_PokemonFanClub_Text_UpsilonIntro_NurseryManHelp)
+    msgbox(StemfordTown_PokemonFanClub_Text_EternityIntro_NurseryManHelp)
     closemessage
 
     if(var(VAR_TEMP_0) == 7)
@@ -37,10 +37,10 @@ script StemfordTown_PokemonFanClub_TeamUpsilonIntro {
     applymovement(OBJ_GRUNT, StemfordTown_PokemonFanClub_Movement_LookDown)
 
     speakername("???")
-    msgbox(StemfordTown_PokemonFanClub_Text_UpsilonGrunt1)
-    trainerbattle_no_intro(TRAINER_GRUNT_PKMN_FAN_CLUB, StemfordTown_PokemonFanClub_Text_UpsilonGruntDefeated)
+    msgbox(StemfordTown_PokemonFanClub_Text_EternityGrunt1)
+    trainerbattle_no_intro(TRAINER_GRUNT_PKMN_FAN_CLUB, StemfordTown_PokemonFanClub_Text_EternityGruntDefeated)
     speakername("Grunt")
-    msgbox(StemfordTown_PokemonFanClub_Text_UpsilonGrunt2)
+    msgbox(StemfordTown_PokemonFanClub_Text_EternityGrunt2)
     closemessage
 
     applymovement(OBJ_EVENT_ID_PLAYER, StemfordTown_PokemonFanClub_Movement_MoveOutOfWay)
@@ -71,7 +71,7 @@ script StemfordTown_PokemonFanClub_NurseryMan {
     if(var(VAR_RESULT) == NO)
     {
         do {
-        msgbox(format("But... I'm scared I won't be able to protect it from Team Upsilon..."), MSGBOX_YESNO)
+        msgbox(format("But... I'm scared I won't be able to protect it from Team Eternity..."), MSGBOX_YESNO)
         } 
         while (var(VAR_RESULT) != YES)
     }
@@ -143,17 +143,17 @@ movement StemfordTown_PokemonFanClub_Movement_RunAway {
     walk_down * 2
 }
 
-text StemfordTown_PokemonFanClub_Text_UpsilonIntro_NurseryManHelp {
+text StemfordTown_PokemonFanClub_Text_EternityIntro_NurseryManHelp {
     format( "Oh, thank goodness there's a trainer here! There's trouble!\p"
             "Some thug has come to steal my precious Pokémon Egg!\p"
             "Please, you have to help me!"
     )
 }
 
-text StemfordTown_PokemonFanClub_Text_UpsilonGrunt1 {
+text StemfordTown_PokemonFanClub_Text_EternityGrunt1 {
     format( "Stay out of this, kid!\nThis Egg is coming with me.\p"
             "It's got some real value, and I ain't leaving without it!\p"
-            "Surely you're smart enough not to mess with Team Upsilon, right?\p"
+            "Surely you're smart enough not to mess with Team Eternity, right?\p"
             "I get it, sometimes you need someone to rough you up a bit to get the message across.\p"
             "I'll teach ya a lesson you'll remember for a long time!"
 
@@ -161,13 +161,13 @@ text StemfordTown_PokemonFanClub_Text_UpsilonGrunt1 {
     )
 }
 
-text StemfordTown_PokemonFanClub_Text_UpsilonGruntDefeated {
+text StemfordTown_PokemonFanClub_Text_EternityGruntDefeated {
     format( "You got lucky this time!")
 }
 
 
-text StemfordTown_PokemonFanClub_Text_UpsilonGrunt2 {
-    format( "But don't think you've seen the last of Team Upsilon!\p"
+text StemfordTown_PokemonFanClub_Text_EternityGrunt2 {
+    format( "But don't think you've seen the last of Team Eternity!\p"
             "You can count on that!"
     )
 }
@@ -178,7 +178,7 @@ text StemfordTown_PokemonFanClub_Text_NurseryMan1 {
             "... ... ...\n{PLAYER}?\p"
             "Thank you, {PLAYER}.\nI'm the man that runs the Pokémon Nursery back on Route 303.\p"
             "This Egg belongs to a very rare Pokémon, and I was going to keep it safe here at the Fan Club.\p"
-            "But now I'm worried that Team Upsilon will come back for it..."
+            "But now I'm worried that Team Eternity will come back for it..."
     )
 }
 

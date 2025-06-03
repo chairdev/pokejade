@@ -156,7 +156,7 @@ text StarridgeCity_Text_Rival2M {
 }
 
 script StarridgeCity_Trigger_HostageSituation1 {
-    clearflag(FLAG_HIDE_STARRIDGE_RUINS_B1F_UPSILON_GRUNTS)
+    clearflag(FLAG_HIDE_ROUTE_304_ETERNITY_GRUNT)
     addobject(OBJ_SCIENTIST)
     setobjectxy(OBJ_SCIENTIST, 29, 9)
     call(StarridgeCity_EventScript_HostageSituation)
@@ -167,7 +167,7 @@ script StarridgeCity_Trigger_HostageSituation1 {
 }
 
 script StarridgeCity_Trigger_HostageSituation2 {
-    clearflag(FLAG_HIDE_STARRIDGE_RUINS_B1F_UPSILON_GRUNTS)
+    clearflag(FLAG_HIDE_ROUTE_304_ETERNITY_GRUNT)
     addobject(OBJ_SCIENTIST)
     setobjectxy(OBJ_SCIENTIST, 30, 9)
     call(StarridgeCity_EventScript_HostageSituation)
@@ -178,7 +178,7 @@ script StarridgeCity_Trigger_HostageSituation2 {
 }
 
 script StarridgeCity_Trigger_HostageSituation3 {
-    clearflag(FLAG_HIDE_STARRIDGE_RUINS_B1F_UPSILON_GRUNTS)
+    clearflag(FLAG_HIDE_ROUTE_304_ETERNITY_GRUNT)
     addobject(OBJ_SCIENTIST)
     setobjectxy(OBJ_SCIENTIST, 31, 9)
     call(StarridgeCity_EventScript_HostageSituation)
@@ -317,8 +317,8 @@ movement StarridgeCity_Movement_ScientistWait3 {
 
 text StarridgeCity_Text_HostageSituation_Scientist1 {
     format("You there! Please, I need your help!\p"
-            "T-Team Upsilon... they... they barged into the ruins on Route 306 and are holding our boss hostage...\p"
-            "It happened so fast! I was about to head out when a couple of those Team Upsilon grunts stormed in.\p"
+            "T-Team Eternity... they... they barged into the ruins on Route 306 and are holding our boss hostage...\p"
+            "It happened so fast! I was about to head out when a couple of those Team Eternity grunts stormed in.\p"
             "They grabbed our boss and ran off! I tried to stop them, but they were too fast!\p"
             "I've been running around trying to find someone to help, but no one's been able to do anything!\p"
             "You look strong--can you go after them?"

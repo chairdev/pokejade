@@ -74,7 +74,7 @@ script StarridgeRuins_B1F_EventScript_MeetAmelio {
 
     fadedefaultbgm
 
-    setflag(FLAG_HIDE_STARRIDGE_RUINS_1F_UPSILON_GRUNTS)
+    setflag(FLAG_HIDE_ZIRCON_QUARRY_ETERNITY_GRUNTS)
     removeobject(OBJ_GRUNT_A)
     removeobject(OBJ_GRUNT_B)
     removeobject(OBJ_AMELIO)
@@ -133,7 +133,7 @@ text StarridgeRuins_B1F_Text_MeetAmelio_No {
 }
 
 text StarridgeRuins_B1F_Text_MeetAmelio_Amelio_2 {
-   format("Name's Amelio. I'm an Admin for Team Upsilon.\p"
+   format("Name's Amelio. I'm an Admin for Team Eternity.\p"
            "You know, just in case you were wondering.\p"
            "...Which you probably weren't.")
 }
@@ -165,7 +165,7 @@ text StarridgeRuins_B1F_Text_ReceieveFossil_Rival_1 {
 }
 
 text StarridgeRuins_B1F_Text_ReceieveFossil_Rival_2 {
-    format("I saw a bunch of those Team Upsilon people running away.\p"
+    format("I saw a bunch of those Team Eternity people running away.\p"
            "What happened?")
 }
 

@@ -60,6 +60,7 @@ script Route303_MapScript_SeeJasmine {
     fadescreen(FADE_TO_BLACK)
     removeobject(OBJ_JASMINE)
     setflag(FLAG_RECEIVED_TM_HIDDEN_POWER)
+    clearflag(FLAG_HIDE_SPINEL_GYM_MELODY)
     setvar(VAR_ROUTE303_STATE, 1)
     playse(SE_EXIT)
     waitse

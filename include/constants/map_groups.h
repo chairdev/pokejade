@@ -642,6 +642,7 @@
 // gMapGroup_AvaroDungeons
 #define MAP_DOLOMITE_GROTTO (0 | (40 << 8))
 #define MAP_KISMET_FOREST   (1 | (40 << 8))
+#define MAP_ZIRCON_QUARRY   (2 | (40 << 8))
 
 // gMapGroup_IndoorArgil
 #define MAP_ARGIL_TOWN_PLAYERS_HOUSE_1F (0 | (41 << 8))

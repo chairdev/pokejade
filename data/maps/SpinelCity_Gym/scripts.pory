@@ -1,3 +1,6 @@
+const OBJ_MELODY = 5
+
+
 mapscripts SpinelCity_Gym_MapScripts {}
 
 //Gym Leader
@@ -8,20 +11,17 @@ script SpinelCity_Gym_EventScript_Melody { //leader
     {
         goto(SpinelCity_Gym_EventScript_GiveDrainingKiss)
     }
-
-    if(var(VAR_SPINEL_CITY_STATE) == 0)
-    {
-        setvar(VAR_SPINEL_CITY_STATE, 1)
-    }
-
+    
     speakername("Melody")
     msgbox(SpinelCity_Gym_Text_MelodyPostBattle, MSGBOX_AUTOCLOSE)
+
+    
     release
 }
 
 text SpinelCity_Gym_Text_MelodyIntro {
-    format("Yay~! A challenger!\nMelody's so excited!\p"
-           "Ms. Jasmine said there'd be days like this--when someone special walks through the door~!\p"
+    format("Yay! A challenger!\nMelody's so excited!\p"
+           "Ms. Jasmine said there'd be days like this--when someone special walks through the door!\p"
            "Melody is Spinel's Gym Leader, the 'Melodic Dreamer'!\p"
            "People think Melody is just cute and sparkly, but I trained suuuper hard to be here!\p"
            "So... are you ready to play a tune with Melody?\p"
@@ -61,22 +61,7 @@ script SpinelCity_Gym_EventScript_MelodyDefeated {
     setflag(FLAG_BADGE02_GET)
 
     goto(SpinelCity_Gym_EventScript_GiveDrainingKiss)
-
-    msgbox(format(
-        "Melody... tried her best... but she still wasn't good enough..."
-        "Sorry, but... I think I need some time. To think.\p"
-        "You know... to figure out whether or not I'm cut out for this whole Gym Leader thing.\p"
-        "I'm sorry, but the Gym's gonna be closed for now..."))
-    
-    fadescreen(FADE_TO_BLACK)
-    setflag(FLAG_HIDE_SPINEL_GYM_MELODY)
-    clearflag(FLAG_HIDE_SPINEL_CITY_JASMINE)
-    removeobject(OBJ_MELODY)
-
-
     call(Common_EventScript_SetGymTrainers)
-
-    release
 }
 
 text SpinelCity_Gym_Text_ReceivedGlintBadge {
@@ -86,7 +71,7 @@ text SpinelCity_Gym_Text_ReceivedGlintBadge {
 text SpinelCity_Gym_Text_GlintBadgeInfo {
     format("With two badges, Pokémon up to Level 35 will listen to you...\p"
            "You can also use the HM move Cut outside of battle now...\p"
-           "A-and... Melody has a little gift for you—just to say thank you!")
+           "A-and... Melody has a little gift for you--just to say thank you!")
 }
 
 
@@ -107,7 +92,24 @@ script SpinelCity_Gym_EventScript_GiveDrainingKiss {
     setflag(FLAG_RECEIVED_TM_DRAINING_KISS)
     speakername("Melody")
     msgbox(SpinelCity_Gym_Text_ExplainDrainingKiss)
-    release
+
+    setvar(VAR_SPINEL_CITY_STATE, 1)
+            
+        speakername("Melody")
+        msgbox(format(
+        "Melody... tried her best... but she still wasn't good enough..."
+        "Sorry, but... I think I need some time. To think.\p"
+        "You know... to figure out whether or not I'm cut out for this whole Gym Leader thing.\p"
+        "I'm sorry, but the Gym's gonna be closed for now..."))
+        closemessage
+        
+        fadescreen(FADE_TO_BLACK)
+        setflag(FLAG_HIDE_SPINEL_GYM_MELODY)
+        clearflag(FLAG_HIDE_SPINEL_CITY_JASMINE)
+        removeobject(OBJ_MELODY)
+        playse(SE_EXIT)
+        waitse
+        fadescreen(FADE_FROM_BLACK)
 }
 
 //Gym Guide

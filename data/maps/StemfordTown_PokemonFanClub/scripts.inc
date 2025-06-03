@@ -5,11 +5,11 @@ StemfordTown_PokemonFanClub_MapScripts::
 
 StemfordTown_PokemonFanClub_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 # 6 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
-	map_script_2 VAR_ZIRCON_TOWN_STATE, 0, StemfordTown_PokemonFanClub_TeamUpsilonIntro
+	map_script_2 VAR_ZIRCON_TOWN_STATE, 0, StemfordTown_PokemonFanClub_TeamEternityIntro
 	.2byte 0
 
 
-StemfordTown_PokemonFanClub_TeamUpsilonIntro::
+StemfordTown_PokemonFanClub_TeamEternityIntro::
 # 11 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
 	lockall
 # 12 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
@@ -17,13 +17,13 @@ StemfordTown_PokemonFanClub_TeamUpsilonIntro::
 # 13 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
 	playbgm MUS_ENCOUNTER_AQUA, FALSE
 # 15 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
-	speakername StemfordTown_PokemonFanClub_TeamUpsilonIntro_Text_0
+	speakername StemfordTown_PokemonFanClub_TeamEternityIntro_Text_0
 # 16 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
-	msgbox StemfordTown_PokemonFanClub_TeamUpsilonIntro_Text_1
+	msgbox StemfordTown_PokemonFanClub_TeamEternityIntro_Text_1
 # 17 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
 	closemessage
 # 19 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
-	msgbox StemfordTown_PokemonFanClub_TeamUpsilonIntro_Text_2
+	msgbox StemfordTown_PokemonFanClub_TeamEternityIntro_Text_2
 # 20 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
 	closemessage
 # 22 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
@@ -31,15 +31,15 @@ StemfordTown_PokemonFanClub_TeamUpsilonIntro::
 # 23 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
 	waitmovement 0
 # 24 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
-	msgbox StemfordTown_PokemonFanClub_Text_UpsilonIntro_NurseryManHelp
+	msgbox StemfordTown_PokemonFanClub_Text_EternityIntro_NurseryManHelp
 # 25 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
 	closemessage
 # 27 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
 	compare VAR_TEMP_0, 7
-	goto_if_eq StemfordTown_PokemonFanClub_TeamUpsilonIntro_2
+	goto_if_eq StemfordTown_PokemonFanClub_TeamEternityIntro_2
 # 33 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, StemfordTown_PokemonFanClub_Movement_ApproachGrunt2
-StemfordTown_PokemonFanClub_TeamUpsilonIntro_1:
+StemfordTown_PokemonFanClub_TeamEternityIntro_1:
 # 35 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
 	waitmovement 0
 # 36 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
@@ -47,15 +47,15 @@ StemfordTown_PokemonFanClub_TeamUpsilonIntro_1:
 # 37 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
 	applymovement 3, StemfordTown_PokemonFanClub_Movement_LookDown
 # 39 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
-	speakername StemfordTown_PokemonFanClub_TeamUpsilonIntro_Text_0
+	speakername StemfordTown_PokemonFanClub_TeamEternityIntro_Text_0
 # 40 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
-	msgbox StemfordTown_PokemonFanClub_Text_UpsilonGrunt1
+	msgbox StemfordTown_PokemonFanClub_Text_EternityGrunt1
 # 41 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
-	trainerbattle_no_intro TRAINER_GRUNT_PKMN_FAN_CLUB, StemfordTown_PokemonFanClub_Text_UpsilonGruntDefeated
+	trainerbattle_no_intro TRAINER_GRUNT_PKMN_FAN_CLUB, StemfordTown_PokemonFanClub_Text_EternityGruntDefeated
 # 42 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
-	speakername StemfordTown_PokemonFanClub_TeamUpsilonIntro_Text_3
+	speakername StemfordTown_PokemonFanClub_TeamEternityIntro_Text_3
 # 43 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
-	msgbox StemfordTown_PokemonFanClub_Text_UpsilonGrunt2
+	msgbox StemfordTown_PokemonFanClub_Text_EternityGrunt2
 # 44 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
 	closemessage
 # 46 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
@@ -84,10 +84,10 @@ StemfordTown_PokemonFanClub_TeamUpsilonIntro_1:
 	goto StemfordTown_PokemonFanClub_NurseryMan
 	return
 
-StemfordTown_PokemonFanClub_TeamUpsilonIntro_2:
+StemfordTown_PokemonFanClub_TeamEternityIntro_2:
 # 29 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, StemfordTown_PokemonFanClub_Movement_ApproachGrunt1
-	goto StemfordTown_PokemonFanClub_TeamUpsilonIntro_1
+	goto StemfordTown_PokemonFanClub_TeamEternityIntro_1
 
 
 StemfordTown_PokemonFanClub_NurseryMan::
@@ -232,21 +232,21 @@ StemfordTown_PokemonFanClub_EventScript_Chairman::
 	return
 
 
-StemfordTown_PokemonFanClub_TeamUpsilonIntro_Text_0:
+StemfordTown_PokemonFanClub_TeamEternityIntro_Text_0:
 # 15 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
 	.string "???$"
 
-StemfordTown_PokemonFanClub_TeamUpsilonIntro_Text_1:
+StemfordTown_PokemonFanClub_TeamEternityIntro_Text_1:
 # 16 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
 	.string "Hand over the rare Egg, and no one gets\n"
 	.string "hurt.$"
 
-StemfordTown_PokemonFanClub_TeamUpsilonIntro_Text_2:
+StemfordTown_PokemonFanClub_TeamEternityIntro_Text_2:
 # 19 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
 	.string "No! I won't let you take my precious\n"
 	.string "little Eggy!$"
 
-StemfordTown_PokemonFanClub_TeamUpsilonIntro_Text_3:
+StemfordTown_PokemonFanClub_TeamEternityIntro_Text_3:
 # 42 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
 	.string "Grunt$"
 
@@ -259,7 +259,7 @@ StemfordTown_PokemonFanClub_NurseryMan_Text_0:
 StemfordTown_PokemonFanClub_NurseryMan_Text_1:
 # 74 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
 	.string "But... I'm scared I won't be able to\n"
-	.string "protect it from Team Upsilon...$"
+	.string "protect it from Team Eternity...$"
 
 StemfordTown_PokemonFanClub_NurseryMan_Text_2:
 # 84 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
@@ -276,7 +276,7 @@ StemfordTown_PokemonFanClub_NurseryMan_Text_4:
 # 95 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
 	.string "You received the Egg!$"
 
-StemfordTown_PokemonFanClub_Text_UpsilonIntro_NurseryManHelp::
+StemfordTown_PokemonFanClub_Text_EternityIntro_NurseryManHelp::
 # 146 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
 	.string "Oh, thank goodness there's a trainer\n"
 	.string "here! There's trouble!\p"
@@ -284,28 +284,28 @@ StemfordTown_PokemonFanClub_Text_UpsilonIntro_NurseryManHelp::
 	.string "Pokémon Egg!\p"
 	.string "Please, you have to help me!$"
 
-StemfordTown_PokemonFanClub_Text_UpsilonGrunt1::
+StemfordTown_PokemonFanClub_Text_EternityGrunt1::
 # 153 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
 	.string "Stay out of this, kid!\n"
 	.string "This Egg is coming with me.\p"
 	.string "It's got some real value, and I ain't\n"
 	.string "leaving without it!\p"
 	.string "Surely you're smart enough not to mess\n"
-	.string "with Team Upsilon, right?\p"
+	.string "with Team Eternity, right?\p"
 	.string "I get it, sometimes you need someone to\n"
 	.string "rough you up a bit to get the message\l"
 	.string "across.\p"
 	.string "I'll teach ya a lesson you'll remember\n"
 	.string "for a long time!$"
 
-StemfordTown_PokemonFanClub_Text_UpsilonGruntDefeated::
+StemfordTown_PokemonFanClub_Text_EternityGruntDefeated::
 # 164 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
 	.string "You got lucky this time!$"
 
-StemfordTown_PokemonFanClub_Text_UpsilonGrunt2::
+StemfordTown_PokemonFanClub_Text_EternityGrunt2::
 # 169 "data/maps/StemfordTown_PokemonFanClub/scripts.pory"
 	.string "But don't think you've seen the last of\n"
-	.string "Team Upsilon!\p"
+	.string "Team Eternity!\p"
 	.string "You can count on that!$"
 
 StemfordTown_PokemonFanClub_Text_NurseryMan1::
@@ -323,7 +323,7 @@ StemfordTown_PokemonFanClub_Text_NurseryMan1::
 	.string "This Egg belongs to a very rare\n"
 	.string "Pokémon, and I was going to keep it\l"
 	.string "safe here at the Fan Club.\p"
-	.string "But now I'm worried that Team Upsilon\n"
+	.string "But now I'm worried that Team Eternity\n"
 	.string "will come back for it...$"
 
 StemfordTown_PokemonFanClub_Text_NurseryMan2::
